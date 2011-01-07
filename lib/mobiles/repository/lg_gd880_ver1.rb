@@ -1,0 +1,225 @@
+module Mobiles
+ module Repository
+   class LgGd880Ver1 < LgGeneric
+def self.user_agent
+ "Mozilla/5.0 (LG/GD880 Browser/AppleWebKit/531 Widget/LGMW/3.0 MMS/LG-MMS-V1.0/1.2 MediaPlayer/LGPlayer/1.0 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)"
+end
+  def mobile_browser
+  "Safari"
+end
+def pointing_method
+  "touchscreen"
+end
+def device_claims_web_support?
+  true
+end
+def uaprof
+  "http://gsm.lge.com/html/gsm/GD880-M6-D1.xml"
+end
+def model_name
+  "GD880"
+end
+def brand_name
+  "LG"
+end
+def marketing_name
+  "Mini"
+end
+def release_date
+  "2010_april"
+end
+def table_support?
+  true
+end
+def html_web_3_2?
+  true
+end
+def wml_1_1?
+  true
+end
+def xhtml_support_level
+  4
+end
+def preferred_markup
+  "html_web_4_0"
+end
+def wml_1_3?
+  true
+end
+def html_web_4_0?
+  true
+end
+def columns
+  25
+end
+def max_image_width
+  240
+end
+def rows
+  15
+end
+def resolution_width
+  480
+end
+def resolution_height
+  854
+end
+def max_image_height
+  400
+end
+def jpg?
+  true
+end
+def gif?
+  true
+end
+def bmp?
+  true
+end
+def wbmp?
+  true
+end
+def transparent_png_alpha?
+  true
+end
+def png?
+  true
+end
+def colors
+  65536
+end
+def nokia_voice_call?
+  true
+end
+def wta_phonebook?
+  true
+end
+def max_deck_size
+  49152
+end
+def wap_push_support?
+  true
+end
+def mms_png?
+  true
+end
+def mms_max_size
+  614400
+end
+def mms_max_width
+  2048
+end
+def mms_spmidi?
+  true
+end
+def mms_max_height
+  1536
+end
+def mms_gif_static?
+  true
+end
+def mms_wav?
+  true
+end
+def mms_vcard?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_bmp?
+  true
+end
+def mms_wbmp?
+  true
+end
+def mms_amr?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
+def wav?
+  true
+end
+def aac?
+  true
+end
+def sp_midi?
+  true
+end
+def mp3?
+  true
+end
+def amr?
+  true
+end
+def midi_monophonic?
+  true
+end
+def imelody?
+  true
+end
+def streaming_vcodec_h263_0
+  10
+end
+def streaming_3g2?
+  true
+end
+def streaming_3gpp?
+  true
+end
+def streaming_acodec_amr
+  "wb"
+end
+def streaming_vcodec_h263_3
+  20
+end
+def streaming_video?
+  true
+end
+def streaming_mp4?
+  true
+end
+def directdownload_support?
+  true
+end
+def oma_support?
+  true
+end
+def oma_v_1_0_separate_delivery?
+  true
+end
+def viewport_width
+  "device_width_token"
+end
+def viewport_supported?
+  true
+end
+def max_data_rate
+  1800
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_cldc_1_1?
+  true
+end
+def j2me_midp_1_0?
+  true
+end
+def ajax_xhr_type
+  "standard"
+end
+def ajax_support_javascript?
+  true
+end
+
+end
+
+end
+end
+

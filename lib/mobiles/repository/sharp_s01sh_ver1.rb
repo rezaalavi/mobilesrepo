@@ -1,0 +1,84 @@
+module Mobiles
+ module Repository
+   class SharpS01shVer1 < GenericMsWinmo5
+def self.user_agent
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) S01SH"
+end
+  def has_qwerty_keyboard?
+  true
+end
+def mobile_browser_version
+  6.12
+end
+def model_name
+  "S01SH"
+end
+def brand_name
+  "Sharp"
+end
+def marketing_name
+  "EM-ONE"
+end
+def wifi?
+  true
+end
+def max_data_rate
+  1800
+end
+def physical_screen_height
+  54
+end
+def physical_screen_width
+  90
+end
+def max_image_width
+  790
+end
+def resolution_width
+  800
+end
+def resolution_height
+  480
+end
+def max_image_height
+  460
+end
+def playback_mp4?
+  true
+end
+def playback_3gpp?
+  true
+end
+def playback_acodec_amr
+  "nb"
+end
+def playback_wmv
+  7
+end
+def playback_3g2?
+  true
+end
+def pdf_support?
+  true
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_cldc_1_1?
+  true
+end
+def j2me_midp_1_0?
+  true
+end
+def streaming_real_media
+  "none"
+end
+
+end
+
+end
+end
+

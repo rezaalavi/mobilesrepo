@@ -1,0 +1,270 @@
+module Mobiles
+ module Repository
+   class SagemMyx6Ver1 < OpwvV61Generic
+def self.user_agent
+ "SAGEM-myX-6/1.0 UP.Browser/6.1.0.6.1 (GUI) MMP/1.0"
+end
+  def mobile_browser_version
+  6.2
+end
+def uaprof
+  "http://extranet.sagem.com/UAProfile/823622.xml"
+end
+def model_name
+  "MyX6"
+end
+def brand_name
+  "Sagem"
+end
+def bmp?
+  true
+end
+def colors
+  65536
+end
+def max_deck_size
+  16384
+end
+def max_image_width
+  126
+end
+def resolution_height
+  160
+end
+def resolution_width
+  128
+end
+def max_image_height
+  122
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_bits_per_pixel
+  16
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_storage_size
+  4194304
+end
+def j2me_screen_height
+  160
+end
+def j2me_screen_width
+  128
+end
+def j2me_canvas_height
+  128
+end
+def j2me_canvas_width
+  128
+end
+def j2me_heap_size
+  524288
+end
+def j2me_midp_1_0?
+  true
+end
+def screensaver_jpg?
+  true
+end
+def screensaver_preferred_width
+  126
+end
+def picture_jpg?
+  true
+end
+def downloadfun_support?
+  true
+end
+def ringtone_voices
+  16
+end
+def wallpaper_png?
+  true
+end
+def ringtone_amr?
+  true
+end
+def wallpaper_colors
+  16
+end
+def wallpaper_max_height
+  640
+end
+def wallpaper?
+  true
+end
+def screensaver_max_height
+  640
+end
+def wallpaper_max_width
+  640
+end
+def screensaver_gif?
+  true
+end
+def screensaver_max_width
+  640
+end
+def ringtone_midi_monophonic?
+  true
+end
+def picture_gif?
+  true
+end
+def picture_df_size_limit
+  256000
+end
+def picture_max_width
+  640
+end
+def wallpaper_preferred_width
+  128
+end
+def wallpaper_wbmp?
+  true
+end
+def wallpaper_jpg?
+  true
+end
+def screensaver_wbmp?
+  true
+end
+def screensaver_bmp?
+  true
+end
+def screensaver_df_size_limit
+  256000
+end
+def picture_bmp?
+  true
+end
+def screensaver_preferred_height
+  122
+end
+def ringtone_imelody?
+  true
+end
+def wallpaper_preferred_height
+  160
+end
+def ringtone?
+  true
+end
+def picture_colors
+  32
+end
+def wallpaper_gif?
+  true
+end
+def wallpaper_df_size_limit
+  256000
+end
+def ringtone_df_size_limit
+  32768
+end
+def picture_max_height
+  640
+end
+def ringtone_wav?
+  true
+end
+def wallpaper_bmp?
+  true
+end
+def screensaver_png?
+  true
+end
+def ringtone_midi_polyphonic?
+  true
+end
+def picture_wbmp?
+  true
+end
+def picture_png?
+  true
+end
+def picture?
+  true
+end
+def screensaver?
+  true
+end
+def screensaver_colors
+  32
+end
+def wav?
+  true
+end
+def sp_midi?
+  true
+end
+def voices
+  8
+end
+def amr?
+  true
+end
+def imelody?
+  true
+end
+def midi_monophonic?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def mms_png?
+  true
+end
+def mms_max_size
+  102400
+end
+def mms_max_width
+  640
+end
+def mms_max_height
+  640
+end
+def mms_gif_static?
+  true
+end
+def sender?
+  true
+end
+def mms_wav?
+  true
+end
+def mms_vcard?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_wbmp?
+  true
+end
+def mms_amr?
+  true
+end
+def receiver?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
+def ems?
+  true
+end
+def streaming_real_media
+  "none"
+end
+
+end
+
+end
+end
+

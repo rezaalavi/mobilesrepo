@@ -1,0 +1,240 @@
+module Mobiles
+ module Repository
+   class SamsungX680vVer1 < Generic
+def self.user_agent
+ "SAMSUNG-SGH-X680V"
+end
+  def model_name
+  "SGH X680"
+end
+def uaprof
+  "http://wap.samsungmobile.com/uaprof/x680_10.xml"
+end
+def brand_name
+  "Samsung"
+end
+def model_extra_info
+  "Vodafone"
+end
+def softkey_support?
+  true
+end
+def html_wi_oma_xhtmlmp_1_0?
+  true
+end
+def html_wi_w3_xhtmlbasic?
+  true
+end
+def wml_1_2?
+  true
+end
+def wml_1_3?
+  true
+end
+def preferred_markup
+  "html_wi_oma_xhtmlmp_1_0"
+end
+def xhtml_support_level
+  1
+end
+def physical_screen_height
+  36
+end
+def physical_screen_width
+  29
+end
+def max_image_width
+  122
+end
+def resolution_height
+  160
+end
+def resolution_width
+  128
+end
+def max_image_height
+  140
+end
+def max_deck_size
+  20480
+end
+def jpg?
+  true
+end
+def gif?
+  true
+end
+def gif_animated?
+  true
+end
+def colors
+  65536
+end
+def png?
+  true
+end
+def nokia_voice_call?
+  true
+end
+def wta_phonebook?
+  true
+end
+def screensaver_preferred_width
+  128
+end
+def wallpaper_png?
+  true
+end
+def ringtone_voices
+  40
+end
+def ringtone_mp3?
+  true
+end
+def directdownload_support?
+  true
+end
+def wallpaper?
+  true
+end
+def wallpaper_colors
+  16
+end
+def ringtone_mmf?
+  true
+end
+def ringtone_amr?
+  true
+end
+def wallpaper_directdownload_size_limit
+  307200
+end
+def screensaver_gif?
+  true
+end
+def picture_directdownload_size_limit
+  307200
+end
+def screensaver_directdownload_size_limit
+  307200
+end
+def ringtone_midi_monophonic?
+  true
+end
+def wallpaper_preferred_width
+  128
+end
+def wallpaper_jpg?
+  true
+end
+def screensaver_preferred_height
+  160
+end
+def wallpaper_preferred_height
+  160
+end
+def ringtone_imelody?
+  true
+end
+def ringtone?
+  true
+end
+def ringtone_directdownload_size_limit
+  307200
+end
+def wallpaper_gif?
+  true
+end
+def ringtone_midi_polyphonic?
+  true
+end
+def oma_support?
+  true
+end
+def screensaver?
+  true
+end
+def video?
+  true
+end
+def ringtone_aac?
+  true
+end
+def connectionoriented_confirmed_service_indication?
+  true
+end
+def wap_push_support?
+  true
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_screen_height
+  160
+end
+def j2me_screen_width
+  128
+end
+def j2me_midp_1_0?
+  true
+end
+def aac?
+  true
+end
+def voices
+  40
+end
+def mp3?
+  true
+end
+def mmf?
+  true
+end
+def amr?
+  true
+end
+def midi_monophonic?
+  true
+end
+def imelody?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def oma_v_1_0_forwardlock?
+  true
+end
+def streaming_real_media
+  "none"
+end
+def streaming_3gpp?
+  true
+end
+def streaming_video?
+  true
+end
+def max_data_rate
+  200
+end
+def playback_vcodec_h263_3
+  10
+end
+def playback_3gpp?
+  true
+end
+def playback_acodec_amr
+  "nb"
+end
+def playback_vcodec_h263_0
+  10
+end
+
+end
+
+end
+end
+

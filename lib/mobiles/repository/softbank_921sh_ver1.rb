@@ -1,0 +1,78 @@
+module Mobiles
+ module Repository
+   class Softbank921shVer1 < SoftbankGeneric
+def self.user_agent
+ "SoftBank/1.0/921SH/SHJ001 Browser/NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+end
+  def mobile_browser
+  "Access Netfront"
+end
+def pointing_method
+  "touchscreen"
+end
+def mobile_browser_version
+  3.4
+end
+def model_name
+  "921SH"
+end
+def model_extra_info
+  "For use in Japan only"
+end
+def marketing_name
+  "Fullface2"
+end
+def max_image_width
+  468
+end
+def resolution_width
+  480
+end
+def resolution_height
+  854
+end
+def max_image_height
+  754
+end
+def playback_mp4?
+  true
+end
+def playback_3gpp?
+  true
+end
+def playback_acodec_amr
+  "nb"
+end
+def playback_vcodec_h263_0
+  10
+end
+def streaming_real_media
+  "none"
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_cldc_1_1?
+  true
+end
+def j2me_midp_1_0?
+  true
+end
+def max_data_rate
+  1800
+end
+def flash_lite_version
+  2_0
+end
+def xhtml_support_level
+  3
+end
+
+end
+
+end
+end
+

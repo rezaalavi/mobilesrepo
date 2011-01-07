@@ -1,0 +1,81 @@
+module Mobiles
+ module Repository
+   class SamsungSghC238Ver1 < Generic
+def self.user_agent
+ "SAMSUNG-SGH-C238"
+end
+  def model_name
+  "SGH-C238"
+end
+def brand_name
+  "Samsung"
+end
+def wml_1_2?
+  true
+end
+def preferred_markup
+  "wml_1_2"
+end
+def max_image_width
+  128
+end
+def resolution_height
+  128
+end
+def resolution_width
+  128
+end
+def max_image_height
+  128
+end
+def colors
+  65536
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_midp_1_0?
+  true
+end
+def ems?
+  true
+end
+def ringtone_voices
+  40
+end
+def directdownload_support?
+  true
+end
+def wallpaper_colors
+  16
+end
+def ringtone_midi_monophonic?
+  true
+end
+def ringtone?
+  true
+end
+def ringtone_midi_polyphonic?
+  true
+end
+def voices
+  40
+end
+def midi_monophonic?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def streaming_real_media
+  "none"
+end
+
+end
+
+end
+end
+

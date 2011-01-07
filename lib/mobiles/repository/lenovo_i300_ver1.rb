@@ -1,0 +1,45 @@
+module Mobiles
+ module Repository
+   class LenovoI300Ver1 < GenericXhtml
+def self.user_agent
+ "Lenovo-i300/S003 LMP/LML Release/2009.03.19 Profile/MIDP2.0 Configuration/CLDC1.1"
+end
+  def model_name
+  "i300"
+end
+def brand_name
+  "Lenovo"
+end
+def max_image_width
+  228
+end
+def resolution_width
+  240
+end
+def resolution_height
+  320
+end
+def max_image_height
+  280
+end
+def max_data_rate
+  40
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_cldc_1_1?
+  true
+end
+def j2me_midp_1_0?
+  true
+end
+
+end
+
+end
+end
+

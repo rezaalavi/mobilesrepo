@@ -1,0 +1,90 @@
+module Mobiles
+ module Repository
+   class VkmobileVk4500Ver1 < VkmobileVk4000Ver1
+def self.user_agent
+ "VK-VK4500"
+end
+  def model_name
+  "VK4500"
+end
+def brand_name
+  "VK Mobile"
+end
+def physical_screen_height
+  40
+end
+def physical_screen_width
+  32
+end
+def max_image_width
+  176
+end
+def resolution_height
+  220
+end
+def resolution_width
+  176
+end
+def max_image_height
+  144
+end
+def greyscale?
+  false
+end
+def jpg?
+  true
+end
+def gif?
+  true
+end
+def wbmp?
+  true
+end
+def gif_animated?
+  true
+end
+def colors
+  262144
+end
+def html_wi_oma_xhtmlmp_1_0?
+  true
+end
+def wml_1_1?
+  true
+end
+def wml_1_2?
+  true
+end
+def wml_1_3?
+  true
+end
+def preferred_markup
+  "html_wi_oma_xhtmlmp_1_0"
+end
+def xhtml_support_level
+  1
+end
+def aac?
+  true
+end
+def mp3?
+  true
+end
+def amr?
+  true
+end
+def midi_monophonic?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def streaming_real_media
+  "none"
+end
+
+end
+
+end
+end
+

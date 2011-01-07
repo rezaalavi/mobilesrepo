@@ -1,0 +1,222 @@
+module Mobiles
+ module Repository
+   class SonyericssonT230Ver1 < EricssonGeneric
+def self.user_agent
+ "SonyEricssonT230/R"
+end
+  def uaprof
+  "http://wap.sonyericsson.com/UAprof/T230R101.xml"
+end
+def model_name
+  "T230"
+end
+def brand_name
+  "SonyEricsson"
+end
+def xhtml_table_support?
+  true
+end
+def html_wi_w3_xhtmlbasic?
+  true
+end
+def xhtml_support_level
+  -1
+end
+def preferred_markup
+  "wml_1_1"
+end
+def columns
+  15
+end
+def max_image_width
+  101
+end
+def rows
+  6
+end
+def resolution_height
+  80
+end
+def resolution_width
+  101
+end
+def max_image_height
+  80
+end
+def jpg?
+  true
+end
+def gif?
+  true
+end
+def colors
+  4096
+end
+def nokia_voice_call?
+  true
+end
+def wta_phonebook?
+  true
+end
+def max_deck_size
+  3000
+end
+def mms_max_size
+  51200
+end
+def mms_max_width
+  160
+end
+def mms_max_height
+  120
+end
+def mms_gif_static?
+  true
+end
+def sender?
+  true
+end
+def mms_vcard?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_wbmp?
+  true
+end
+def mms_amr?
+  true
+end
+def receiver?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
+def sp_midi?
+  true
+end
+def voices
+  32
+end
+def amr?
+  true
+end
+def midi_monophonic?
+  true
+end
+def imelody?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def connectionless_cache_operation?
+  true
+end
+def connectionoriented_confirmed_service_indication?
+  true
+end
+def connectionoriented_confirmed_service_load?
+  true
+end
+def connectionoriented_confirmed_cache_operation?
+  true
+end
+def wap_push_support?
+  true
+end
+def connectionoriented_unconfirmed_cache_operation?
+  true
+end
+def ringtone_voices
+  32
+end
+def directdownload_support?
+  true
+end
+def wallpaper_max_height
+  35
+end
+def wallpaper_colors
+  12
+end
+def wallpaper?
+  true
+end
+def ringtone_amr?
+  true
+end
+def screensaver_gif?
+  true
+end
+def wallpaper_max_width
+  96
+end
+def ringtone_midi_monophonic?
+  true
+end
+def wallpaper_jpg?
+  true
+end
+def wallpaper_preferred_width
+  101
+end
+def ringtone_oma_size_limit
+  143360
+end
+def wallpaper_preferred_height
+  80
+end
+def ringtone_imelody?
+  true
+end
+def ringtone?
+  true
+end
+def wallpaper_gif?
+  true
+end
+def ringtone_directdownload_size_limit
+  143360
+end
+def ringtone_midi_polyphonic?
+  true
+end
+def oma_support?
+  true
+end
+def screensaver?
+  true
+end
+def ringtone_spmidi?
+  true
+end
+def inline_support?
+  true
+end
+def oma_v_1_0_forwardlock?
+  true
+end
+def ems?
+  true
+end
+def max_data_rate
+  40
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_midp_1_0?
+  true
+end
+def streaming_real_media
+  "none"
+end
+
+end
+
+end
+end
+

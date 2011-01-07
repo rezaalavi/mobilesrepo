@@ -1,0 +1,51 @@
+module Mobiles
+ module Repository
+   class SonyMyloVer1 < GenericXhtml
+def self.user_agent
+ "Mozilla/5.0 (Linux, Sony/COM2/1.01 [en]; like Gecko/2007) Firefox/2"
+end
+  def mobile_browser
+  "Access Netfront"
+end
+def has_qwerty_keyboard?
+  true
+end
+def model_name
+  "mylo COM-2"
+end
+def brand_name
+  "Sony"
+end
+def release_date
+  "2006_july"
+end
+def wifi?
+  true
+end
+def xhtml_can_embed_video
+  "plain"
+end
+def max_image_width
+  308
+end
+def resolution_width
+  320
+end
+def resolution_height
+  240
+end
+def max_image_height
+  180
+end
+def xhtml_support_level
+  3
+end
+def preferred_markup
+  "html_wi_w3_xhtmlbasic"
+end
+
+end
+
+end
+end
+

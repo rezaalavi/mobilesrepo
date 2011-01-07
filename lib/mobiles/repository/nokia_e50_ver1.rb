@@ -1,0 +1,123 @@
+module Mobiles
+ module Repository
+   class NokiaE50Ver1 < NokiaGenericSeries60Dp30
+def self.user_agent
+ "NokiaE50"
+end
+  def uaprof
+  "http://nds1.nds.nokia.com/uaprof/NE50-1r100.xml"
+end
+def model_name
+  "E50"
+end
+def device_os_version
+  9.1
+end
+def physical_screen_height
+  43
+end
+def physical_screen_width
+  32
+end
+def max_image_width
+  229
+end
+def resolution_height
+  320
+end
+def resolution_width
+  240
+end
+def max_image_height
+  320
+end
+def ringtone_voices
+  48
+end
+def wallpaper_colors
+  18
+end
+def wallpaper_max_height
+  320
+end
+def wallpaper_max_width
+  240
+end
+def wallpaper_preferred_width
+  240
+end
+def wallpaper_preferred_height
+  320
+end
+def video?
+  true
+end
+def aac?
+  true
+end
+def preferred_markup
+  "html_wi_w3_xhtmlbasic"
+end
+def flash_lite_version
+  1_1
+end
+def fl_wallpaper?
+  false
+end
+def fl_browser?
+  true
+end
+def fl_screensaver?
+  false
+end
+def fl_standalone?
+  true
+end
+def fl_sub_lcd?
+  false
+end
+def max_data_rate
+  200
+end
+def j2me_cldc_1_1?
+  true
+end
+def streaming_acodec_aac
+  "heaac2"
+end
+def streaming_real_media
+  8
+end
+def streaming_3gpp?
+  true
+end
+def streaming_vcodec_mpeg4_sp
+  0
+end
+def playback_acodec_aac
+  "heaac2"
+end
+def playback_mp4?
+  true
+end
+def playback_3gpp?
+  true
+end
+def playback_acodec_amr
+  "nb"
+end
+def playback_real_media
+  8
+end
+def playback_vcodec_h263_0
+  10
+end
+def playback_vcodec_h264_bp
+  1
+end
+
+end
+
+end
+end
+
