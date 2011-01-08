@@ -13,8 +13,10 @@ require 'rake/testtask'
 spec = Gem::Specification.new do |s|
   s.name = 'mobilesrepo'
   s.version = '1.0.0'
+  s.homepage = "http://mobilesrepo.rubyforge.org"
+  s.rubyforge_project = "mobilesrepo"
   s.has_rdoc = true
-  s.extra_rdoc_files = ['README', 'LICENSE']
+  s.extra_rdoc_files = ['README.rdoc', 'LICENSE']
   s.summary = 'This is a collection of Ruby classes representing all the mobile phones in wurlf. This library can be used to retrieve a mobile specification.'
   s.description = s.summary
   s.author = 'Reza Alavi'
