@@ -12,13 +12,13 @@ require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
   s.name = 'mobilesrepo'
-  s.version = '0.0.1'
+  s.version = '1.0.0'
   s.has_rdoc = true
   s.extra_rdoc_files = ['README', 'LICENSE']
-  s.summary = 'Your summary here'
+  s.summary = 'This is a collection of Ruby classes representing all the mobile phones in wurlf. This library can be used to retrieve a mobile specification.'
   s.description = s.summary
-  s.author = ''
-  s.email = ''
+  s.author = 'Reza Alavi'
+  s.email = 'rezaalavi@rubyforge.org'
   # s.executables = ['your_executable_here']
   s.files = %w(LICENSE README Rakefile) + Dir.glob("{bin,lib,spec}/**/*")
   s.require_path = "lib"
