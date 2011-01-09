@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_f1200_ver1'
 module Mobiles
  module Repository
-   class LgF1200Ver1Subua < LgF1200Ver1
+   class Lg_f1200_ver1_subua < Lg_f1200_ver1
 def self.user_agent
- "LG-F1200 UP.Browser/6.2.3 (GUI) MMP/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "LG-F1200 UP.Browser/6.2.3 (GUI) MMP/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-F1200.xml"

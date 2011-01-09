@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class SamsungZ300Ver1 < OpwvV7Generic
+   class Samsung_z300_ver1 < Opwv_v7_generic
 def self.user_agent
- "SGH-Z300"
+ "SGH-Z300".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/Z300UAProf.rdf"

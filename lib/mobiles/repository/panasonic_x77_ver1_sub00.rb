@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_x77_ver1'
 module Mobiles
  module Repository
-   class PanasonicX77Ver1Sub00 < PanasonicX77Ver1
+   class Panasonic_x77_ver1_sub00 < Panasonic_x77_ver1
 def self.user_agent
- "Panasonic-X77/R01 Profile"
+ "Panasonic-X77/R01 Profile".gsub(/\a/, '\\')
 end
   def max_image_width
   121

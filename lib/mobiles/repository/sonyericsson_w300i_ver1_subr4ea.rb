@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w300i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW300iVer1Subr4ea < SonyericssonW300iVer1
+   class Sonyericsson_w300i_ver1_subr4ea < Sonyericsson_w300i_ver1
 def self.user_agent
- "SonyEricssonW300i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonW300i/R4EA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

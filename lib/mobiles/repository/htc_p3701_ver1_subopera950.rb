@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3701_ver1'
 module Mobiles
  module Repository
-   class HtcP3701Ver1Subopera950 < HtcP3701Ver1
+   class Htc_p3701_ver1_subopera950 < Htc_p3701_ver1
 def self.user_agent
- "HTC_P3701 Opera/9.50 (Windows NT 5.1; U; es-ES)"
+ "HTC_P3701 Opera/9.50 (Windows NT 5.1; U; es-ES)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

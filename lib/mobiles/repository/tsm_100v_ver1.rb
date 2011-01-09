@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tsm_100_ver1'
 module Mobiles
  module Repository
-   class Tsm100vVer1 < Tsm100Ver1
+   class Tsm_100v_ver1 < Tsm_100_ver1
 def self.user_agent
- "TSM-100v"
+ "TSM-100v".gsub(/\a/, '\\')
 end
   def model_name
   "TSM-100v"

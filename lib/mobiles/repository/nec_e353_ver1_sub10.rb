@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_e353_ver1'
 module Mobiles
  module Repository
-   class NecE353Ver1Sub10 < NecE353Ver1
+   class Nec_e353_ver1_sub10 < Nec_e353_ver1
 def self.user_agent
- "NEC-e353/001.00 ACS-NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Qtv/1.0"
+ "NEC-e353/001.00 ACS-NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Qtv/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

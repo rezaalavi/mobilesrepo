@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i900_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI908Ver1 < SamsungSghI900Ver1
+   class Samsung_sgh_i908_ver1 < Samsung_sgh_i900_ver1
 def self.user_agent
- "SAMSUNG-SGH-i908/1.0 Release/03.07 Browser/IE6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "SAMSUNG-SGH-i908/1.0 Release/03.07 Browser/IE6 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.11

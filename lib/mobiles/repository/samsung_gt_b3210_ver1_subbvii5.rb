@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_b3210_ver1'
 module Mobiles
  module Repository
-   class SamsungGtB3210Ver1Subbvii5 < SamsungGtB3210Ver1
+   class Samsung_gt_b3210_ver1_subbvii5 < Samsung_gt_b3210_ver1
 def self.user_agent
- "SAMSUNG-GT-B3210-ORANGE/B3210BVII5 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-GT-B3210-ORANGE/B3210BVII5 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Orange"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_x450_ver1'
 module Mobiles
  module Repository
-   class SecX450Ver1Sub25 < SecX450Ver1
+   class Sec_x450_ver1_sub25 < Sec_x450_ver1
 def self.user_agent
- "SEC-SGHX450/1.0 TSS/2.5"
+ "SEC-SGHX450/1.0 TSS/2.5".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

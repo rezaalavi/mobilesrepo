@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_d830_ver1_sub10'
 module Mobiles
  module Repository
-   class SecSghD836Ver1Sub10 < SamsungSghD830Ver1Sub10
+   class Sec_sgh_d836_ver1_sub10 < Samsung_sgh_d830_ver1_sub10
 def self.user_agent
- "SEC-SGHD836/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHD836/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/d836_10.xml"

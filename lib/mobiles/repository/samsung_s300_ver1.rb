@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_s100_ver1'
 module Mobiles
  module Repository
-   class SamsungS300Ver1 < SamsungS100Ver1
+   class Samsung_s300_ver1 < Samsung_s100_ver1
 def self.user_agent
- "SEC-SGHS300/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
+ "SEC-SGHS300/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.1

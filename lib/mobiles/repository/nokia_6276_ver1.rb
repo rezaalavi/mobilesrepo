@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_opwv62_generic'
 module Mobiles
  module Repository
-   class Nokia6276Ver1 < NokiaOpwv62Generic
+   class Nokia_6276_ver1 < Nokia_opwv62_generic
 def self.user_agent
- "Nokia6276/2.0 (BL200V0400.nep) UP.Browser/6.2.3.8 MMP/2.0"
+ "Nokia6276/2.0 (BL200V0400.nep) UP.Browser/6.2.3.8 MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   6276

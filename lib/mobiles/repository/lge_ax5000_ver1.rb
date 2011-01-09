@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic'
 module Mobiles
  module Repository
-   class LgeAx5000Ver1 < LgGeneric
+   class Lge_ax5000_ver1 < Lg_generic
 def self.user_agent
- "LGE-AX5000"
+ "LGE-AX5000".gsub(/\a/, '\\')
 end
   def model_name
   "AX5000"

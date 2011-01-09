@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_km900_ver1'
 module Mobiles
  module Repository
-   class LgKm900Ver1Subv10b < LgKm900Ver1
+   class Lg_km900_ver1_subv10b < Lg_km900_ver1
 def self.user_agent
- "LG-KM900/V10b Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "LG-KM900/V10b Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KM900N.xml"

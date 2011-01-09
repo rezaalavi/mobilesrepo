@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_symbian'
 module Mobiles
  module Repository
-   class MotZ8Ver1 < GenericOperaSymbian
+   class Mot_z8_ver1 < Generic_opera_symbian
 def self.user_agent
- "MOTORIZR-Z8/46.00.00 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 342) Opera 8.65"
+ "MOTORIZR-Z8/46.00.00 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 342) Opera 8.65".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

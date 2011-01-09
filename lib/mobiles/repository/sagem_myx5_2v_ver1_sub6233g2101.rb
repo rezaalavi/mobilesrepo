@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx5_2v_ver1'
 module Mobiles
  module Repository
-   class SagemMyx52vVer1Sub6233g2101 < SagemMyx52vVer1
+   class Sagem_myx5_2v_ver1_sub6233g2101 < Sagem_myx5_2v_ver1
 def self.user_agent
- "SAGEM-myX5-2v/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.g.2.101 (GUI) MMP/2.0"
+ "SAGEM-myX5-2v/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.g.2.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

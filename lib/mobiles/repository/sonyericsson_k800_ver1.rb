@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_3'
 module Mobiles
  module Repository
-   class SonyericssonK800Ver1 < GenericSonyericssonNetfrontVer33
+   class Sonyericsson_k800_ver1 < Generic_sonyericsson_netfront_ver3_3
 def self.user_agent
- "SonyEricssonK800"
+ "SonyEricssonK800".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/K800iR101.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SunriseXpVer1 < GenericXhtml
+   class Sunrise_xp_ver1 < Generic_xhtml
 def self.user_agent
- "Sunrise XP/2.0"
+ "Sunrise XP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "XP"

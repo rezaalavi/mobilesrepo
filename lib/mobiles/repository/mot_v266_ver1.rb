@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v265_ver1'
 module Mobiles
  module Repository
-   class MotV266Ver1 < MotV265Ver1
+   class Mot_v266_ver1 < Mot_v265_ver1
 def self.user_agent
- "MOT-V266_/00.62 UP.Browser/6.2.3.2.m.1.100 (GUI) MMP/2.0"
+ "MOT-V266_/00.62 UP.Browser/6.2.3.2.m.1.100 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "V266"

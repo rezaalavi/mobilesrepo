@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_td7130_ver1'
 module Mobiles
  module Repository
-   class LgTd7130Ver1Sub41263 < LgTd7130Ver1
+   class Lg_td7130_ver1_sub41263 < Lg_td7130_ver1
 def self.user_agent
- "LG-TD7130/1.0 UP.Browser/4.1.26l3"
+ "LG-TD7130/1.0 UP.Browser/4.1.26l3".gsub(/\a/, '\\')
 end
   
 end

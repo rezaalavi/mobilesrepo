@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_s720i_ver1'
 module Mobiles
  module Repository
-   class SamsungS720iVer1subc10tb < SamsungS720iVer1
+   class Samsung_s720i_ver1subc10tb < Samsung_s720i_ver1
 def self.user_agent
- "portalmmm/2.0 S720i(c10;TB)"
+ "portalmmm/2.0 S720i(c10;TB)".gsub(/\a/, '\\')
 end
   
 end

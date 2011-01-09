@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k550im_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK550imSub20c100tb < SonyericssonK550imVer1
+   class Sonyericsson_k550im_sub20c100tb < Sonyericsson_k550im_ver1
 def self.user_agent
- "portalmmm/2.0 K550im(c100;TB)"
+ "portalmmm/2.0 K550im(c100;TB)".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

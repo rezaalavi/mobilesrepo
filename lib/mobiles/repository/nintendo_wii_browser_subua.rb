@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nintendo_wii_browser_subua910'
 module Mobiles
  module Repository
-   class NintendoWiiBrowserSubua < NintendoWiiBrowserSubua910
+   class Nintendo_wii_browser_subua < Nintendo_wii_browser_subua910
 def self.user_agent
- "Opera/9.30 (Nintendo Wii; U; ; 2047-7; en)"
+ "Opera/9.30 (Nintendo Wii; U; ; 2047-7; en)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   9.30

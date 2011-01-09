@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v1075_ver1'
 module Mobiles
  module Repository
-   class MotV1075Ver1Sub8597c6p < MotV1075Ver1
+   class Mot_v1075_ver1_sub8597c6p < Mot_v1075_ver1
 def self.user_agent
- "MOT-V1075/85.97.C6P MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-V1075/85.97.C6P MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def release_date
   "2009_march"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g210_ver1'
 module Mobiles
  module Repository
-   class LgG210Ver1Sub20 < LgG210Ver1
+   class Lg_g210_ver1_sub20 < Lg_g210_ver1
 def self.user_agent
- "LG-G210/SW100/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "LG-G210/SW100/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

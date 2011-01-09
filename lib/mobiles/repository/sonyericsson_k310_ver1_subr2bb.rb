@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k310_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK310Ver1Subr2bb < SonyericssonK310Ver1
+   class Sonyericsson_k310_ver1_subr2bb < Sonyericsson_k310_ver1
 def self.user_agent
- "SonyEricssonK310i/R2BB SEMC-Browser/4.0.3 Profile/MIDP-2.0 Config"
+ "SonyEricssonK310i/R2BB SEMC-Browser/4.0.3 Profile/MIDP-2.0 Config".gsub(/\a/, '\\')
 end
   def model_name
   "K310i"

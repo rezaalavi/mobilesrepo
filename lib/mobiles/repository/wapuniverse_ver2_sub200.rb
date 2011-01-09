@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/wapuniverse_ver2'
 module Mobiles
  module Repository
-   class WapuniverseVer2Sub200 < WapuniverseVer2
+   class Wapuniverse_ver2_sub200 < Wapuniverse_ver2
 def self.user_agent
- "WAPUniverse/2.0.0 (PalmOS; N; X-Scale; en) MobileToken/20041222 (WAP 1.3; WAPUniverse.com)"
+ "WAPUniverse/2.0.0 (PalmOS; N; X-Scale; en) MobileToken/20041222 (WAP 1.3; WAPUniverse.com)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

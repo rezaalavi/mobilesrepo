@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q7'
 module Mobiles
  module Repository
-   class SharpAlexUoVer1 < LgGenericObigoQ7
+   class Sharp_alex_uo_ver1 < Lg_generic_obigo_q7
 def self.user_agent
- "Alex-uo/1.0 Qualcom/6290 Release/3.20.2010 Browser/Obigo Q7 Profile/MIDP-2.0 Configuration/CLDC1.1"
+ "Alex-uo/1.0 Qualcom/6290 Release/3.20.2010 Browser/Obigo Q7 Profile/MIDP-2.0 Configuration/CLDC1.1".gsub(/\a/, '\\')
 end
   def model_name
   "Alex-uo"

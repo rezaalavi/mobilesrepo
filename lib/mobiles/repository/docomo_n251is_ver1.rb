@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_jap_ver1'
 module Mobiles
  module Repository
-   class DocomoN251isVer1 < DocomoGenericJapVer1
+   class Docomo_n251is_ver1 < Docomo_generic_jap_ver1
 def self.user_agent
- "DoCoMo/1.0/N251iS"
+ "DoCoMo/1.0/N251iS".gsub(/\a/, '\\')
 end
   def max_image_width
   132

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_7270_ver1'
 module Mobiles
  module Repository
-   class Nokia7270Ver1Sub0318 < Nokia7270Ver1
+   class Nokia_7270_ver1_sub0318 < Nokia_7270_ver1
 def self.user_agent
- "Nokia7270/2.0 (03.18) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia7270/2.0 (03.18) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6233_ver1_sub0543'
 module Mobiles
  module Repository
-   class Nokia6233Ver1Sub0560 < Nokia6233Ver1Sub0543
+   class Nokia_6233_ver1_sub0560 < Nokia_6233_ver1_sub0543
 def self.user_agent
- "Nokia6233/2.0 (05.60) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia6233/2.0 (05.60) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

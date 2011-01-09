@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_shadow_ver1'
 module Mobiles
  module Repository
-   class WinwapTzonesJunoVer1 < TmobileShadowVer1
+   class Winwap_tzones_juno_ver1 < Tmobile_shadow_ver1
 def self.user_agent
- "WinWAPJunoMR/4.0 (Juno 2.0.000.0; 4.0.2.107; WM; SP; t-zones)"
+ "WinWAPJunoMR/4.0 (Juno 2.0.000.0; 4.0.2.107; WM; SP; t-zones)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "WinWAP"

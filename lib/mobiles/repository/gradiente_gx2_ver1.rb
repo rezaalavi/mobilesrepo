@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx_2_ver1'
 module Mobiles
  module Repository
-   class GradienteGx2Ver1 < SagemMyx2Ver1
+   class Gradiente_gx2_ver1 < Sagem_myx_2_ver1
 def self.user_agent
- "FAKE_SAGEM-myX-2"
+ "FAKE_SAGEM-myX-2".gsub(/\a/, '\\')
 end
   def model_name
   "Concept GX-2"

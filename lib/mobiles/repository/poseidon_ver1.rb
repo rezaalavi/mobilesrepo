@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class PoseidonVer1 < OpwvV61Generic
+   class Poseidon_ver1 < Opwv_v61_generic
 def self.user_agent
- "Poseidon"
+ "Poseidon".gsub(/\a/, '\\')
 end
   def brand_name
   "Poseidon"

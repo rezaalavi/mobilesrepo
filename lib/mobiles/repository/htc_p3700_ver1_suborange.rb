@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3700_ver1'
 module Mobiles
  module Repository
-   class HtcP3700Ver1Suborange < HtcP3700Ver1
+   class Htc_p3700_ver1_suborange < Htc_p3700_ver1
 def self.user_agent
- "HTC-P3700-orange/PPC; 480x640; OpVer 30.137.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "HTC-P3700-orange/PPC; 480x640; OpVer 30.137.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def columns
   16

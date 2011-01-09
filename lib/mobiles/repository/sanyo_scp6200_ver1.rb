@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SanyoScp6200Ver1 < UptextGeneric
+   class Sanyo_scp6200_ver1 < Uptext_generic
 def self.user_agent
- "Sanyo-SCP6200"
+ "Sanyo-SCP6200".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

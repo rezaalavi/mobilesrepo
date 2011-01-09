@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cdm_8500_ver1'
 module Mobiles
  module Repository
-   class Cdm8500Ver1Sub4126 < Cdm8500Ver1
+   class Cdm_8500_ver1_sub4126 < Cdm_8500_ver1
 def self.user_agent
- "CDM-8500/T10 UP.Browser/4.1.26l"
+ "CDM-8500/T10 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

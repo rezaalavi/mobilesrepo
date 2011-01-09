@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_symbian'
 module Mobiles
  module Repository
-   class SharpZaurusC750Ver1 < GenericOperaSymbian
+   class Sharp_zaurus_c750_ver1 < Generic_opera_symbian
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.18-rmk7-pxa3-embedix armv5tel; 480x640) Opera 6.0 [en]"
+ "Mozilla/4.0 (compatible; MSIE 5.0; Linux 2.4.18-rmk7-pxa3-embedix armv5tel; 480x640) Opera 6.0 [en]".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

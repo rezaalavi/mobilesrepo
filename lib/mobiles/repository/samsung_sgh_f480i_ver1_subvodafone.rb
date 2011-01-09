@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_f480i_ver1'
 module Mobiles
  module Repository
-   class SamsungSghF480iVer1Subvodafone < SamsungSghF480iVer1
+   class Samsung_sgh_f480i_ver1_subvodafone < Samsung_sgh_f480i_ver1
 def self.user_agent
- "SAMSUNG-SGH-F480I-Vodafone/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-F480I-Vodafone/1.0 SHP/VPP/R5 NetFront/3.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.5

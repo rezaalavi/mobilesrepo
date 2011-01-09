@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sgh_p930_ver1'
 module Mobiles
  module Repository
-   class SghP930Ver1Subua < SghP930Ver1
+   class Sgh_p930_ver1_subua < Sgh_p930_ver1
 def self.user_agent
- "SGH-P930"
+ "SGH-P930".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-P930"

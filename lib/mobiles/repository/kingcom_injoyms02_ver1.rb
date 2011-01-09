@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class KingcomInjoyms02Ver1 < GenericXhtml
+   class Kingcom_injoyms02_ver1 < Generic_xhtml
 def self.user_agent
- "Kingcom Injoy MS02"
+ "Kingcom Injoy MS02".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m800_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM800Ver1Subua < SamsungSphM800Ver1
+   class Samsung_sph_m800_ver1_subua < Samsung_sph_m800_ver1
 def self.user_agent
- "Mozilla/4.1 (U; BREW 3.1.5; en-US; Teleca/Q05A/INT)"
+ "Mozilla/4.1 (U; BREW 3.1.5; en-US; Teleca/Q05A/INT)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_generic'
 module Mobiles
  module Repository
-   class SoftbankV702nk2Ver1 < SoftbankGeneric
+   class Softbank_v702nk2_ver1 < Softbank_generic
 def self.user_agent
- "Vodafone/1.0/V702NK2/NKJ001 Series60/2.6 Nokia6680/4.04.28 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Vodafone/1.0/V702NK2/NKJ001 Series60/2.6 Nokia6680/4.04.28 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def physical_screen_height
   41

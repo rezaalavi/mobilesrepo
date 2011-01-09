@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SamsungX660Ver1 < Generic
+   class Samsung_x660_ver1 < Generic
 def self.user_agent
- "SAMSUNG-SGH-X660"
+ "SAMSUNG-SGH-X660".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/x660_10.xml"

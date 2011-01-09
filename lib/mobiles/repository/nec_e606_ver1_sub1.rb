@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_e606_ver1'
 module Mobiles
  module Repository
-   class NecE606Ver1Sub1 < NecE606Ver1
+   class Nec_e606_ver1_sub1 < Nec_e606_ver1
 def self.user_agent
- "Hutc3G/1 (e606 for Hutchison 3G/c100;ser351070702865112;icc8939991010001266544F)"
+ "Hutc3G/1 (e606 for Hutchison 3G/c100;ser351070702865112;icc8939991010001266544F)".gsub(/\a/, '\\')
 end
   
 end

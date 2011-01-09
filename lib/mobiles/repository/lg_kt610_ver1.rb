@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ks10_symbian_ver1'
 module Mobiles
  module Repository
-   class LgKt610Ver1 < LgKs10SymbianVer1
+   class Lg_kt610_ver1 < Lg_ks10_symbian_ver1
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML; like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 LGKT610/v10A; Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML; like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/KT610.xml"

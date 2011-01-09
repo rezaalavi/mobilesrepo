@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_u10i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonU10iVer1Subua2 < SonyericssonU10iVer1
+   class Sonyericsson_u10i_ver1_subua2 < Sonyericsson_u10i_ver1
 def self.user_agent
- "SonyEricssonU10i/R7AA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0"
+ "SonyEricssonU10i/R7AA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0".gsub(/\a/, '\\')
 end
   def release_date
   "2010_february"

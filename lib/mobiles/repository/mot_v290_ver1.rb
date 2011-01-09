@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class MotV290Ver1 < OpwvV61Generic
+   class Mot_v290_ver1 < Opwv_v61_generic
 def self.user_agent
- "MOT-V290"
+ "MOT-V290".gsub(/\a/, '\\')
 end
   def model_name
   "V290"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i900_ver1_subopera95'
 module Mobiles
  module Repository
-   class SamsungSghI900Ver1Subopera95Sub20061208 < SamsungSghI900Ver1Subopera95
+   class Samsung_sgh_i900_ver1_subopera95_sub20061208 < Samsung_sgh_i900_ver1_subopera95
 def self.user_agent
- "Mozilla/5.0 (SAMSUNG-SGH-i900/1.0 Opera 9.5; U; (null); rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.5"
+ "Mozilla/5.0 (SAMSUNG-SGH-i900/1.0 Opera 9.5; U; (null); rv:1.8.1) Gecko/20061208 Firefox/2.0.0 Opera 9.5".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

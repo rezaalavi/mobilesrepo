@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_i9000_ver1'
 module Mobiles
  module Repository
-   class SamsungGtI9000Ver1Subm < SamsungGtI9000Ver1
+   class Samsung_gt_i9000_ver1_subm < Samsung_gt_i9000_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-ca; GT-I9000M Build/ECLAIR) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-ca; GT-I9000M Build/ECLAIR) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def marketing_name
   "Galaxy S/Vibrant"

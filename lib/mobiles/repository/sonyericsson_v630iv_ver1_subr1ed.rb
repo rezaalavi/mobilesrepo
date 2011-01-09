@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_v630iv_ver1'
 module Mobiles
  module Repository
-   class SonyericssonV630ivVer1Subr1ed < SonyericssonV630ivVer1
+   class Sonyericsson_v630iv_ver1_subr1ed < Sonyericsson_v630iv_ver1
 def self.user_agent
- "SonyEricssonV630iv/R1ED Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonV630iv/R1ED Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

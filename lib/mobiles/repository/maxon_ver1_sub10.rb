@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/maxon_ver1'
 module Mobiles
  module Repository
-   class MaxonVer1Sub10 < MaxonVer1
+   class Maxon_ver1_sub10 < Maxon_ver1
 def self.user_agent
- "Maxon O2-X1 ver1.0"
+ "Maxon O2-X1 ver1.0".gsub(/\a/, '\\')
 end
   
 end

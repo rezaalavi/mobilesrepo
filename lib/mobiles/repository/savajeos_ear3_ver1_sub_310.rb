@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/savajeos_ver1'
 module Mobiles
  module Repository
-   class SavajeosEar3Ver1Sub310 < SavajeosVer1
+   class Savajeos_ear3_ver1_sub_310 < Savajeos_ver1
 def self.user_agent
- "SavaJeOS_EAR3/jBrowser1.0"
+ "SavaJeOS_EAR3/jBrowser1.0".gsub(/\a/, '\\')
 end
   
 end

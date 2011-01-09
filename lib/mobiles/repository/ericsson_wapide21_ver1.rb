@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class EricssonWapide21Ver1 < UptextGeneric
+   class Ericsson_wapide21_ver1 < Uptext_generic
 def self.user_agent
- "WapIDE-SDK/2.1; (R320s (Arial))"
+ "WapIDE-SDK/2.1; (R320s (Arial))".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_p777_ver1'
 module Mobiles
  module Repository
-   class SecP777Ver1Sub20nospace < SecP777Ver1
+   class Sec_p777_ver1_sub20nospace < Sec_p777_ver1
 def self.user_agent
- "SEC-SGHP777, TSS/2.5, Rev2.0"
+ "SEC-SGHP777, TSS/2.5, Rev2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

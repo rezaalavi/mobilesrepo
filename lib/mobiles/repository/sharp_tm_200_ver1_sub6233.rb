@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_tm_200_ver1'
 module Mobiles
  module Repository
-   class SharpTm200Ver1Sub6233 < SharpTm200Ver1
+   class Sharp_tm_200_ver1_sub6233 < Sharp_tm_200_ver1
 def self.user_agent
- "SHARP-TM-200/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3 (GUI) MMP/2.0"
+ "SHARP-TM-200/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

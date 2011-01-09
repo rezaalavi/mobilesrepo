@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_af51_ver1'
 module Mobiles
  module Repository
-   class SieAf51Ver1Sub07 < SieAf51Ver1
+   class Sie_af51_ver1_sub07 < Sie_af51_ver1
 def self.user_agent
- "SIE-AF51/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0"
+ "SIE-AF51/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

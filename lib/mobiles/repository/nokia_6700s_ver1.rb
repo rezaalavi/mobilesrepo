@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60_dp30_webkit'
 module Mobiles
  module Repository
-   class Nokia6700sVer1 < NokiaGenericSeries60Dp30Webkit
+   class Nokia_6700s_ver1 < Nokia_generic_series60_dp30_webkit
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/031.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.1"
+ "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 Nokia6700s/031.008; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia BrowserNG"

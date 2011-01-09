@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_iris_browser'
 module Mobiles
  module Repository
-   class Iris1013Browser < GenericIrisBrowser
+   class Iris_1013_browser < Generic_iris_browser
 def self.user_agent
- "Mozilla/5.0 (Windows NT; U; en) AppleWebKit/522+ (KHTML, like Gecko) Iris/1.0.13 Safari/419.3"
+ "Mozilla/5.0 (Windows NT; U; en) AppleWebKit/522+ (KHTML, like Gecko) Iris/1.0.13 Safari/419.3".gsub(/\a/, '\\')
 end
   
 end

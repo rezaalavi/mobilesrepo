@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class AlcatelOtC700aVer1 < OpwvV62Generic
+   class Alcatel_ot_c700a_ver1 < Opwv_v62_generic
 def self.user_agent
- "Alcatel-OT-C700A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C"
+ "Alcatel-OT-C700A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

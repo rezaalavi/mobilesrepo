@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx6_2_ver1'
 module Mobiles
  module Repository
-   class SagemMyx62Ver1Birdd600 < SagemMyx62Ver1
+   class Sagem_myx6_2_ver1_birdd600 < Sagem_myx6_2_ver1
 def self.user_agent
- "BIRD D600/L05,1E/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.130 (GUI)"
+ "BIRD D600/L05,1E/WAP2.0/MIDP-2.0/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.130 (GUI)".gsub(/\a/, '\\')
 end
   def marketing_name
   "Bird D600"

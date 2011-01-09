@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_i5700_ver1'
 module Mobiles
  module Repository
-   class SamsungGtI5700Ver1Subua < SamsungGtI5700Ver1
+   class Samsung_gt_i5700_ver1_subua < Samsung_gt_i5700_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.5; en-ca; GT-I5700R Build/CUPCAKE) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 1.5; en-ca; GT-I5700R Build/CUPCAKE) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   
 end

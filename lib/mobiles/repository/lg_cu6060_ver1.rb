@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class LgCu6060Ver1 < UptextGeneric
+   class Lg_cu6060_ver1 < Uptext_generic
 def self.user_agent
- "LG-CU6060"
+ "LG-CU6060".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

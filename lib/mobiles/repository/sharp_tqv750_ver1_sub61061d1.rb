@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_tqv750_ver1'
 module Mobiles
  module Repository
-   class SharpTqv750Ver1Sub61061d1 < SharpTqv750Ver1
+   class Sharp_tqv750_ver1_sub61061d1 < Sharp_tqv750_ver1
 def self.user_agent
- "SHARP-TQ-V750/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.6.1.d.1 (GUI) MMP/1.0"
+ "SHARP-TQ-V750/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.6.1.d.1 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

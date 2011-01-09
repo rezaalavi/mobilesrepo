@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kf510_ver1'
 module Mobiles
  module Repository
-   class LgKf510Ver1Subobigo < LgKf510Ver1
+   class Lg_kf510_ver1_subobigo < Lg_kf510_ver1
 def self.user_agent
- "LG-KF510 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KF510 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "KF510"

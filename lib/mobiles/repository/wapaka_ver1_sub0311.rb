@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/wapaka_ver1'
 module Mobiles
  module Repository
-   class WapakaVer1Sub0311 < WapakaVer1
+   class Wapaka_ver1_sub0311 < Wapaka_ver1
 def self.user_agent
- "Wapaka/03.11"
+ "Wapaka/03.11".gsub(/\a/, '\\')
 end
   
 end

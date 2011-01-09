@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class SieEf81Ver1 < OpwvV7Generic
+   class Sie_ef81_ver1 < Opwv_v7_generic
 def self.user_agent
- "SIE-EF81"
+ "SIE-EF81".gsub(/\a/, '\\')
 end
   def uaprof
   "http://communication-market.siemens.de/portal/UAProf/UAP.aspx?DeviceID=EF81"

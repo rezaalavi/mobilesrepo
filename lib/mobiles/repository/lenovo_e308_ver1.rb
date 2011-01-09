@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LenovoE308Ver1 < GenericXhtml
+   class Lenovo_e308_ver1 < Generic_xhtml
 def self.user_agent
- "LENOVO-E308"
+ "LENOVO-E308".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.lenovomobile.com/admin/module/product/DownFile/download_2006815899599.xml"

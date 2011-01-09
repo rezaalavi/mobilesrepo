@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vodafone_vpa_compactiv_ver1_subartist'
 module Mobiles
  module Repository
-   class HtcArtistVer1Subnetfront < VodafoneVpaCompactivVer1Subartist
+   class Htc_artist_ver1_subnetfront < Vodafone_vpa_compactiv_ver1_subartist
 def self.user_agent
- "Mozilla/5.0 (PDA; NF35WMPRO/1.0; like Gecko) NetFront/3.5"
+ "Mozilla/5.0 (PDA; NF35WMPRO/1.0; like Gecko) NetFront/3.5".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40_dp50'
 module Mobiles
  module Repository
-   class Nokia6600sVer1 < NokiaGenericSeries40Dp50
+   class Nokia_6600s_ver1 < Nokia_generic_series40_dp50
 def self.user_agent
- "Mozilla/5.0 ( Nokia6600s/2.0 (p) Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 ( Nokia6600s/2.0 (p) Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N6600sr100.xml"

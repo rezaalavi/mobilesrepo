@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_gb170_ver1'
 module Mobiles
  module Repository
-   class LgGb175Ver1 < LgGb170Ver1
+   class Lg_gb175_ver1 < Lg_gb170_ver1
 def self.user_agent
- "LG-GB175/V01 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-GB175/V01 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "GB175"

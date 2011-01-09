@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class ZteF102Ver1 < GenericNetfrontVer34
+   class Zte_f102_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "ZTE-F102 H3G/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "ZTE-F102 H3G/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.zte.com.cn/mobile/uaprof/ZTE-F102(YoigoF102).xml"

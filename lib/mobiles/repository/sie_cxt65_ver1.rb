@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_cx65_ver1'
 module Mobiles
  module Repository
-   class SieCxt65Ver1 < SieCx65Ver1
+   class Sie_cxt65_ver1 < Sie_cx65_ver1
 def self.user_agent
- "SIE-CXT65"
+ "SIE-CXT65".gsub(/\a/, '\\')
 end
   def model_name
   "CXT65"

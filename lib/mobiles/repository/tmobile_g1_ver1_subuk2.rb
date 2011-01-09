@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_g1_ver1_subuk'
 module Mobiles
  module Repository
-   class TmobileG1Ver1Subuk2 < TmobileG1Ver1Subuk
+   class Tmobile_g1_ver1_subuk2 < Tmobile_g1_ver1_subuk
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.6; en-gb; T-Mobile G1 Build/DRC83) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
+ "Mozilla/5.0 (Linux; U; Android 1.6; en-gb; T-Mobile G1 Build/DRC83) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1".gsub(/\a/, '\\')
 end
   def device_os_version
   1.6

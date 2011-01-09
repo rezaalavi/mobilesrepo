@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60'
 module Mobiles
  module Repository
-   class NokiaNgageVer1 < NokiaGenericSeries60
+   class Nokia_ngage_ver1 < Nokia_generic_series60
 def self.user_agent
- "NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   4194304

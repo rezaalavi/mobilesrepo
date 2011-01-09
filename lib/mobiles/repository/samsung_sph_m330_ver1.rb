@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m300_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM330Ver1 < SamsungSphM300Ver1
+   class Samsung_sph_m330_ver1 < Samsung_sph_m300_ver1
 def self.user_agent
- "Mozilla/4.0 (BREW 3.1.5; U; en-us; Samsung; SPH_M330; POLARIS/6.1/WAP) MMP/2.0 Configuration/CLDC-1.1"
+ "Mozilla/4.0 (BREW 3.1.5; U; en-us; Samsung; SPH_M330; POLARIS/6.1/WAP) MMP/2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Polaris"

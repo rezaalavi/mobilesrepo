@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a45_eco_ver1'
 module Mobiles
  module Repository
-   class MotA45EcoVer1Subua < MotA45EcoVer1
+   class Mot_a45_eco_ver1_subua < Mot_a45_eco_ver1
 def self.user_agent
- "MOT-A45ECO/13.10.0DR Release/09.24.2008 OPERA/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-A45ECO/13.10.0DR Release/09.24.2008 OPERA/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

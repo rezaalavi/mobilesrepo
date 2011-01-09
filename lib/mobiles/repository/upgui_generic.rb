@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class UpguiGeneric < UptextGeneric
+   class Upgui_generic < Uptext_generic
 def self.user_agent
- "UP.Browser/5"
+ "UP.Browser/5".gsub(/\a/, '\\')
 end
   def empty_option_value_support?
   false

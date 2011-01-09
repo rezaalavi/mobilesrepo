@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3650_ver1'
 module Mobiles
  module Repository
-   class Nokia3650Ver1Subv11 < Nokia3650Ver1
+   class Nokia_3650_ver1_subv11 < Nokia_3650_ver1
 def self.user_agent
- "Nokia3650/1.1"
+ "Nokia3650/1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

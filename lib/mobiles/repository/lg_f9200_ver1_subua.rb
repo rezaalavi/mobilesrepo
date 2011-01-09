@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_f9200_ver1'
 module Mobiles
  module Repository
-   class LgF9200Ver1Subua < LgF9200Ver1
+   class Lg_f9200_ver1_subua < Lg_f9200_ver1
 def self.user_agent
- "LG9200"
+ "LG9200".gsub(/\a/, '\\')
 end
   
 end

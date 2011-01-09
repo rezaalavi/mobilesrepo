@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5100_ver1_subus'
 module Mobiles
  module Repository
-   class Nokia5100Ver1Subus2 < Nokia5100Ver1Subus
+   class Nokia_5100_ver1_subus2 < Nokia_5100_ver1_subus
 def self.user_agent
- "Nokia5100/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "Nokia5100/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t630_ver1_subr601'
 module Mobiles
  module Repository
-   class SonyericssonT630Ver1Subr601upbrowser < SonyericssonT630Ver1Subr601
+   class Sonyericsson_t630_ver1_subr601upbrowser < Sonyericsson_t630_ver1_subr601
 def self.user_agent
- "SonyEricssonT630/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO"
+ "SonyEricssonT630/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO".gsub(/\a/, '\\')
 end
   def html_wi_oma_xhtmlmp_1_0?
   true

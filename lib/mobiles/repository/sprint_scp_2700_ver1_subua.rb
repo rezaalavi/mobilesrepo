@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sprint_scp_2700_ver1'
 module Mobiles
  module Repository
-   class SprintScp2700Ver1Subua < SprintScp2700Ver1
+   class Sprint_scp_2700_ver1_subua < Sprint_scp_2700_ver1
 def self.user_agent
- "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) PL2700"
+ "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; Polaris/6.0/AMB) PL2700".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Sanyo/PL2700/1001PLS.rdf"

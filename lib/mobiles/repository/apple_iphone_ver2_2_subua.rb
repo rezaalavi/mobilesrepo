@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_iphone_ver2_2'
 module Mobiles
  module Repository
-   class AppleIphoneVer22Subua < AppleIphoneVer22
+   class Apple_iphone_ver2_2_subua < Apple_iphone_ver2_2
 def self.user_agent
- "mozilla/5.0 (iphone; u; cpu iphone os 2_2 like mac os x; en-us) applewebkit/525.18.1 (khtml, like gecko) mobile/5g77"
+ "mozilla/5.0 (iphone; u; cpu iphone os 2_2 like mac os x; en-us) applewebkit/525.18.1 (khtml, like gecko) mobile/5g77".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3_ver1'
 module Mobiles
  module Repository
-   class MotV3xVer1 < MotV3Ver1
+   class Mot_v3x_ver1 < Mot_v3_ver1
 def self.user_agent
- "MOT-RAZRV3x"
+ "MOT-RAZRV3x".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/razrv3xx/Profile/RAZRV3xx.rdf"

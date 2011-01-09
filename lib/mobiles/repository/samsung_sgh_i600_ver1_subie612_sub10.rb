@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i600_ver1_subie612'
 module Mobiles
  module Repository
-   class SamsungSghI600Ver1Subie612Sub10 < SamsungSghI600Ver1Subie612
+   class Samsung_sgh_i600_ver1_subie612_sub10 < Samsung_sgh_i600_ver1_subie612
 def self.user_agent
- "SAMSUNG-SGH-i600/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+ "SAMSUNG-SGH-i600/1.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)".gsub(/\a/, '\\')
 end
   def max_data_rate
   1800

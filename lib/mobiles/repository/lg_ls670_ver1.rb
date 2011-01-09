@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2_2'
 module Mobiles
  module Repository
-   class LgLs670Ver1 < GenericAndroidVer22
+   class Lg_ls670_ver1 < Generic_android_ver2_2
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; LS670 Build/FRG83) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 2.2.1; en-us; LS670 Build/FRG83) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def model_name
   "LS670"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotZn5Ver1 < GenericXhtml
+   class Mot_zn5_ver1 < Generic_xhtml
 def self.user_agent
- "MOT-ZN5/R6637_G_81.00.4FI Mozilla/4.0 (compatible; OSS/1.0; Linux MOTOZINE ZN5) Profile/MIDP-2.0 Configuration/CLDC-1.1 Symphony 1.0"
+ "MOT-ZN5/R6637_G_81.00.4FI Mozilla/4.0 (compatible; OSS/1.0; Linux MOTOZINE ZN5) Profile/MIDP-2.0 Configuration/CLDC-1.1 Symphony 1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Symphony browser"

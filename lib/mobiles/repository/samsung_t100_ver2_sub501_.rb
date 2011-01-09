@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_t100_ver2'
 module Mobiles
  module Repository
-   class SamsungT100Ver2Sub501_ < SamsungT100Ver2
+   class Samsung_t100_ver2_sub501_ < Samsung_t100_ver2
 def self.user_agent
- "SAMSUNG-SGH-T100/1.0 UP.Browser/5.0.1 (GUI)"
+ "SAMSUNG-SGH-T100/1.0 UP.Browser/5.0.1 (GUI)".gsub(/\a/, '\\')
 end
   
 end

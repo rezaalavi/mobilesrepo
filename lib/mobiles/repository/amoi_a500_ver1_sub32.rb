@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_a500_ver1'
 module Mobiles
  module Repository
-   class AmoiA500Ver1Sub32 < AmoiA500Ver1
+   class Amoi_a500_ver1_sub32 < Amoi_a500_ver1
 def self.user_agent
- "Amoi A500/R5.0 NF-Browser/3.2"
+ "Amoi A500/R5.0 NF-Browser/3.2".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_jap_ver2'
 module Mobiles
  module Repository
-   class DocomoSa800iVer1 < DocomoGenericJapVer2
+   class Docomo_sa800i_ver1 < Docomo_generic_jap_ver2
 def self.user_agent
- "DoCoMo/2.0 SA800i"
+ "DoCoMo/2.0 SA800i".gsub(/\a/, '\\')
 end
   def model_name
   "SA800i"

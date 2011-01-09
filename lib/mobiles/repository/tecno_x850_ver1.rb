@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class TecnoX850Ver1 < GenericXhtml
+   class Tecno_x850_ver1 < Generic_xhtml
 def self.user_agent
- "RT240X320/M.RF2221001.M02002.V1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "RT240X320/M.RF2221001.M02002.V1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def model_name
   "X850"

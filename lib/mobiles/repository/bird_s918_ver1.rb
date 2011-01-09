@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class BirdS918Ver1 < GenericXhtml
+   class Bird_s918_ver1 < Generic_xhtml
 def self.user_agent
- "BIRD S918/1.00 Nucleus RTOS/V1.11.19 MTK6225/06B Release/06.20.2007 Browser/Teleca Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "BIRD S918/1.00 Nucleus RTOS/V1.11.19 MTK6225/06B Release/06.20.2007 Browser/Teleca Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_n8_ver1'
 module Mobiles
  module Repository
-   class NecN8Ver1Sub6104128 < NecN8Ver1
+   class Nec_n8_ver1_sub6104128 < Nec_n8_ver1
 def self.user_agent
- "NEC-N8/1.0 UP.Browser/6.1.0.4.128 (GUI) MMP/1.0"
+ "NEC-N8/1.0 UP.Browser/6.1.0.4.128 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

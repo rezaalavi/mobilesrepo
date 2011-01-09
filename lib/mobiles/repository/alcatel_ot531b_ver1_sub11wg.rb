@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_ot531b_ver1'
 module Mobiles
  module Repository
-   class AlcatelOt531bVer1Sub11wg < AlcatelOt531bVer1
+   class Alcatel_ot531b_ver1_sub11wg < Alcatel_ot531b_ver1
 def self.user_agent
- "Mitsu/1.2.B (OT531) MMP/1.1-WG"
+ "Mitsu/1.2.B (OT531) MMP/1.1-WG".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

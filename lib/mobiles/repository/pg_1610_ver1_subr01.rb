@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pg_1610_ver1'
 module Mobiles
  module Repository
-   class Pg1610Ver1Subr01 < Pg1610Ver1
+   class Pg_1610_ver1_subr01 < Pg_1610_ver1
 def self.user_agent
- "PG-1610/R01"
+ "PG-1610/R01".gsub(/\a/, '\\')
 end
   
 end

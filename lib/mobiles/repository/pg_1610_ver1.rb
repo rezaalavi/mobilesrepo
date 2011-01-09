@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_generic'
 module Mobiles
  module Repository
-   class Pg1610Ver1 < PantechGeneric
+   class Pg_1610_ver1 < Pantech_generic
 def self.user_agent
- "PG-1610"
+ "PG-1610".gsub(/\a/, '\\')
 end
   def model_name
   1610

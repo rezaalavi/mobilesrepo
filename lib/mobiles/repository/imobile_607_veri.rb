@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_i_mobile'
 module Mobiles
  module Repository
-   class Imobile607Veri < GenericIMobile
+   class Imobile_607_veri < Generic_i_mobile
 def self.user_agent
- "i-mobile607"
+ "i-mobile607".gsub(/\a/, '\\')
 end
   def uaprof
   "http://asmobile.ehosting.com.tw/uaprof/i-mobile607.xml"

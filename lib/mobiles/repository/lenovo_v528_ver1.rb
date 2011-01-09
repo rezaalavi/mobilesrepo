@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LenovoV528Ver1 < GenericXhtml
+   class Lenovo_v528_ver1 < Generic_xhtml
 def self.user_agent
- "LENOVO-V528/A7"
+ "LENOVO-V528/A7".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nec-uap.com/prof/N6206V01.xml"

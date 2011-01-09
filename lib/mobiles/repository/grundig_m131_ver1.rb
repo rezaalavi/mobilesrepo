@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class GrundigM131Ver1 < Generic
+   class Grundig_m131_ver1 < Generic
 def self.user_agent
- "GRUNDIG M131"
+ "GRUNDIG M131".gsub(/\a/, '\\')
 end
   def model_name
   "M131"

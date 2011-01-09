@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/grundig_m131_ver1'
 module Mobiles
  module Repository
-   class GrundigM131Ver1Sub85108709 < GrundigM131Ver1
+   class Grundig_m131_ver1_sub85108709 < Grundig_m131_ver1
 def self.user_agent
- "GRUNDIG M131/85108709 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "GRUNDIG M131/85108709 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

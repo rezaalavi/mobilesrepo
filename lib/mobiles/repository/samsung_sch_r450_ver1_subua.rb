@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sch_r450_ver1'
 module Mobiles
  module Repository
-   class SamsungSchR450Ver1Subua < SamsungSchR450Ver1
+   class Samsung_sch_r450_ver1_subua < Samsung_sch_r450_ver1
 def self.user_agent
- "Sam-r450 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "Sam-r450 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vertu_generic'
 module Mobiles
  module Repository
-   class VertuAscentiVer1 < VertuGeneric
+   class Vertu_ascenti_ver1 < Vertu_generic
 def self.user_agent
- "VertuAscentTi/2.0 (402.00) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "VertuAscentTi/2.0 (402.00) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds.nokia.com/uaprof/NVAscentTir100_3G.xml"

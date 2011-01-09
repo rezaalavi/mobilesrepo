@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_a310_ver1'
 module Mobiles
  module Repository
-   class SecA310Ver1Sub41263 < SecA310Ver1
+   class Sec_a310_ver1_sub41263 < Sec_a310_ver1
 def self.user_agent
- "SEC-scha310 UP.Browser/4.1.26c3"
+ "SEC-scha310 UP.Browser/4.1.26c3".gsub(/\a/, '\\')
 end
   
 end

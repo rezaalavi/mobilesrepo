@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bird_g118_ver1'
 module Mobiles
  module Repository
-   class BirdG118Ver1Sub10 < BirdG118Ver1
+   class Bird_g118_ver1_sub10 < Bird_g118_ver1
 def self.user_agent
- "BIRD.G118 MO130m-128x160/1.1 UP.Browser/6.1.0.6.1.c.4 (GUI) MMP/1.0"
+ "BIRD.G118 MO130m-128x160/1.1 UP.Browser/6.1.0.6.1.c.4 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_image_width
   120

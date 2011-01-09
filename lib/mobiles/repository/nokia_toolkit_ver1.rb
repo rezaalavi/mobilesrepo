@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic'
 module Mobiles
  module Repository
-   class NokiaToolkitVer1 < NokiaGeneric
+   class Nokia_toolkit_ver1 < Nokia_generic
 def self.user_agent
- "Nokia-WAP-Toolkit/1"
+ "Nokia-WAP-Toolkit/1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/danger_hiptop_ver1'
 module Mobiles
  module Repository
-   class TmobileSidekick3Ver1 < DangerHiptopVer1
+   class Tmobile_sidekick3_ver1 < Danger_hiptop_ver1
 def self.user_agent
- "FAKE_Mozilla/5.0 (compatible; AvantGo 3.2; ProxiNet; Danger hiptop 1.0)"
+ "FAKE_Mozilla/5.0 (compatible; AvantGo 3.2; ProxiNet; Danger hiptop 1.0)".gsub(/\a/, '\\')
 end
   def model_name
   "Sidekick 3"

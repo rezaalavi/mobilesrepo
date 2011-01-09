@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotA45EcoVer1 < GenericXhtml
+   class Mot_a45_eco_ver1 < Generic_xhtml
 def self.user_agent
- "MOT-A45 ECO/13.10.09R_C Release/09.24.2008 OPERA/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-A45 ECO/13.10.09R_C Release/09.24.2008 OPERA/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

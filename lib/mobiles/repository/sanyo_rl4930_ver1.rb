@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_rl4920_ver1'
 module Mobiles
  module Repository
-   class SanyoRl4930Ver1 < SanyoRl4920Ver1
+   class Sanyo_rl4930_ver1 < Sanyo_rl4920_ver1
 def self.user_agent
- "Mozilla/4.0 (MobilePhone RL-4930/US/1.0) NetFront/3.1 MMP/2.0"
+ "Mozilla/4.0 (MobilePhone RL-4930/US/1.0) NetFront/3.1 MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "HTML Web browser"

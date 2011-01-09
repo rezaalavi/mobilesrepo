@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/dopod_d600_ver1'
 module Mobiles
  module Repository
-   class DopodD600Ver1Sub51422 < DopodD600Ver1
+   class Dopod_d600_ver1_sub51422 < Dopod_d600_ver1
 def self.user_agent
- "dopod D600_CMCC/5.1.422/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)"
+ "dopod D600_CMCC/5.1.422/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)".gsub(/\a/, '\\')
 end
   def columns
   16

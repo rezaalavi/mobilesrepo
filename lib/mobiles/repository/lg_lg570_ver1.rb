@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_lx570_ver1'
 module Mobiles
  module Repository
-   class LgLg570Ver1 < LgLx570Ver1
+   class Lg_lg570_ver1 < Lg_lx570_ver1
 def self.user_agent
- "LGE-LG570 AU-OBIGO/Q04C1-1.27 MMP/2.0"
+ "LGE-LG570 AU-OBIGO/Q04C1-1.27 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/BMC_LGE_LG570_CX57BL05.rdf"

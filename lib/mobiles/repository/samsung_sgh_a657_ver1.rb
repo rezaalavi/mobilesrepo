@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SamsungSghA657Ver1 < GenericXhtml
+   class Samsung_sgh_a657_ver1 < Generic_xhtml
 def self.user_agent
- "SAMSUNG-SGH-A657/A657UCIB5 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-A657/A657UCIB5 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

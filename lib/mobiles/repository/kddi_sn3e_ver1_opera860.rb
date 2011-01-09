@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_sn3e_ver1'
 module Mobiles
  module Repository
-   class KddiSn3eVer1Opera860 < KddiSn3eVer1
+   class Kddi_sn3e_ver1_opera860 < Kddi_sn3e_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3E) Opera 8.60 [ja]"
+ "Mozilla/4.0 (compatible; MSIE 6.0; KDDI-SN3E) Opera 8.60 [ja]".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

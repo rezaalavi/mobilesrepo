@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6_1'
 module Mobiles
  module Repository
-   class SamsungGtB7610Ver1 < GenericMsWinmo61
+   class Samsung_gt_b7610_ver1 < Generic_ms_winmo6_1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SAMSUNG_B7610/1.0; Windows Phone 6.5)"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SAMSUNG_B7610/1.0; Windows Phone 6.5)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/GT-B7610_2G.xml"

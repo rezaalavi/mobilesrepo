@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class SiePlatform65Generic < OpwvV7Generic
+   class Sie_platform65_generic < Opwv_v7_generic
 def self.user_agent
- "Siemens_Platform_65"
+ "Siemens_Platform_65".gsub(/\a/, '\\')
 end
   def brand_name
   "Siemens"

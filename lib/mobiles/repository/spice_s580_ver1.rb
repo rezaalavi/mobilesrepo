@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/spice_s570_ver1'
 module Mobiles
  module Repository
-   class SpiceS580Ver1 < SpiceS570Ver1
+   class Spice_s580_ver1 < Spice_s570_ver1
 def self.user_agent
- "Spice S580"
+ "Spice S580".gsub(/\a/, '\\')
 end
   def model_name
   "S580"

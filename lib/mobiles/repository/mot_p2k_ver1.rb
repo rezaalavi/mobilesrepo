@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class MotP2kVer1 < UptextGeneric
+   class Mot_p2k_ver1 < Uptext_generic
 def self.user_agent
- "MOT-P2K-C"
+ "MOT-P2K-C".gsub(/\a/, '\\')
 end
   def streaming_real_media
   "none"

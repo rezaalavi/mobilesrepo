@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class MotorolaT730Ver1 < Generic
+   class Motorola_t730_ver1 < Generic
 def self.user_agent
- "MOT-T730"
+ "MOT-T730".gsub(/\a/, '\\')
 end
   def model_name
   "T730"

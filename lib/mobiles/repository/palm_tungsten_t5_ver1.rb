@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_tungsten_t3_ver1'
 module Mobiles
  module Repository
-   class PalmTungstenT5Ver1 < PalmTungstenT3Ver1
+   class Palm_tungsten_t5_ver1 < Palm_tungsten_t3_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-TnT5; Blazer/4.0) 16;320x320"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-TnT5; Blazer/4.0) 16;320x320".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

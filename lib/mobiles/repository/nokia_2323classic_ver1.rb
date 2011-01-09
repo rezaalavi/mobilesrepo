@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40_dp50'
 module Mobiles
  module Repository
-   class Nokia2323classicVer1 < NokiaGenericSeries40Dp50
+   class Nokia_2323classic_ver1 < Nokia_generic_series40_dp50
 def self.user_agent
- "Nokia2323c-2/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia2323c-2/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   1

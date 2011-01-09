@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_z710i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonZ710iVer1Subua < SonyericssonZ710iVer1
+   class Sonyericsson_z710i_ver1_subua < Sonyericsson_z710i_ver1
 def self.user_agent
- "SonyEricssonZ710i"
+ "SonyEricssonZ710i".gsub(/\a/, '\\')
 end
   def wallpaper_preferred_height
   144

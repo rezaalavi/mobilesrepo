@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mg125_ver1'
 module Mobiles
  module Repository
-   class LgMg130Ver1 < LgMg125Ver1
+   class Lg_mg130_ver1 < Lg_mg125_ver1
 def self.user_agent
- "LG-MG130 UP.Browser/6.2.3 GUI MMP/1.0"
+ "LG-MG130 UP.Browser/6.2.3 GUI MMP/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

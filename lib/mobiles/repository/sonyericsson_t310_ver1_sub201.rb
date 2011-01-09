@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t310_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT310Ver1Sub201 < SonyericssonT310Ver1
+   class Sonyericsson_t310_ver1_sub201 < Sonyericsson_t310_ver1
 def self.user_agent
- "SonyEricssonT310/R201"
+ "SonyEricssonT310/R201".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

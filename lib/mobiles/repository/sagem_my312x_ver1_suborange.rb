@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my312x_ver1'
 module Mobiles
  module Repository
-   class SagemMy312xVer1Suborange < SagemMy312xVer1
+   class Sagem_my312x_ver1_suborange < Sagem_my312x_ver1
 def self.user_agent
- "SAGEM-my312X-ora-orange/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)"
+ "SAGEM-my312X-ora-orange/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

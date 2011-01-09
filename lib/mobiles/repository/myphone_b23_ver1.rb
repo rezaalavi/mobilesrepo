@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MyphoneB23Ver1 < GenericXhtml
+   class Myphone_b23_ver1 < Generic_xhtml
 def self.user_agent
- "MyPhoneB23DuoAM/MTK Release/V0.1 Aug-25-2008 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "MyPhoneB23DuoAM/MTK Release/V0.1 Aug-25-2008 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "MAUI Wap Browser"

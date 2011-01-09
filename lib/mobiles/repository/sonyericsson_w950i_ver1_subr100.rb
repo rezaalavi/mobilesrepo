@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w950i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW950iVer1Subr100 < SonyericssonW950iVer1
+   class Sonyericsson_w950i_ver1_subr100 < Sonyericsson_w950i_ver1
 def self.user_agent
- "SonyEricssonW950i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 276) Opera 8.60 [fr]1"
+ "SonyEricssonW950i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 276) Opera 8.60 [fr]1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

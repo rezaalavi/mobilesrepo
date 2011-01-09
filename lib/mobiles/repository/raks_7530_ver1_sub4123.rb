@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/raks_7530_ver1'
 module Mobiles
  module Repository
-   class Raks7530Ver1Sub4123 < Raks7530Ver1
+   class Raks_7530_ver1_sub4123 < Raks_7530_ver1
 def self.user_agent
- "RAKS 7530 UP.Browser/4.1.23c"
+ "RAKS 7530 UP.Browser/4.1.23c".gsub(/\a/, '\\')
 end
   
 end

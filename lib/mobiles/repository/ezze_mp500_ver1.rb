@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class EzzeMp500Ver1 < GenericXhtml
+   class Ezze_mp500_ver1 < Generic_xhtml
 def self.user_agent
- "EZIO-MP500/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "EZIO-MP500/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/MP500D.xml"

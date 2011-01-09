@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i780_ver1_subie77'
 module Mobiles
  module Repository
-   class SamsungSghI780Ver1Subie77Suborange < SamsungSghI780Ver1Subie77
+   class Samsung_sgh_i780_ver1_subie77_suborange < Samsung_sgh_i780_ver1_subie77
 def self.user_agent
- "SAMSUNG-SGH-i780ORANGE/AFGI1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)"
+ "SAMSUNG-SGH-i780ORANGE/AFGI1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)".gsub(/\a/, '\\')
 end
   def ajax_support_getelementbyid?
   true

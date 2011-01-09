@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i900_ver1_subopera95'
 module Mobiles
  module Repository
-   class SamsungSghI900Ver1Subopera95Subwin < SamsungSghI900Ver1Subopera95
+   class Samsung_sgh_i900_ver1_subopera95_subwin < Samsung_sgh_i900_ver1_subopera95
 def self.user_agent
- "SAMSUNG-SGH-i900/1.0 (Windows NT 5.1; U; en) Opera 9.5"
+ "SAMSUNG-SGH-i900/1.0 (Windows NT 5.1; U; en) Opera 9.5".gsub(/\a/, '\\')
 end
   def image_inlining?
   true

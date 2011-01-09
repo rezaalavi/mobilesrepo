@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k600_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK600cVer1 < SonyericssonK600Ver1
+   class Sonyericsson_k600c_ver1 < Sonyericsson_k600_ver1
 def self.user_agent
- "SonyEricssonK600c/R2G Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK600c/R2G Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/K600cR101.xml"

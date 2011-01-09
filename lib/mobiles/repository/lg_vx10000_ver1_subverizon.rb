@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_vx10000_ver1'
 module Mobiles
  module Repository
-   class LgVx10000Ver1Subverizon < LgVx10000Ver1
+   class Lg_vx10000_ver1_subverizon < Lg_vx10000_ver1
 def self.user_agent
- "vx10kv1"
+ "vx10kv1".gsub(/\a/, '\\')
 end
   def model_name
   "VX10000"

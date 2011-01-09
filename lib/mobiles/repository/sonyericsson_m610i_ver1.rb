@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_m600i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonM610iVer1 < SonyericssonM600iVer1
+   class Sonyericsson_m610i_ver1 < Sonyericsson_m600i_ver1
 def self.user_agent
- "SonyEricssonM610i"
+ "SonyEricssonM610i".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAProf/M610iR100.xml"

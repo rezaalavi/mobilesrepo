@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class NecN710Ver1 < OpwvV62Generic
+   class Nec_n710_ver1 < Opwv_v62_generic
 def self.user_agent
- "NEC-N710"
+ "NEC-N710".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nec-uap.com/prof/N710V01.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic'
 module Mobiles
  module Repository
-   class LgKf750Ver1Operamini < LgGeneric
+   class Lg_kf750_ver1_operamini < Lg_generic
 def self.user_agent
- "lg-kf750-v10a browser/obigo-q05a/3.12 mms/lg-mms-v1.0/1.2 java/asvm/1.1 profile/midp-2.1 configuration/cldc-1.1; Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.10269/hifi/tmobile/uk; en; U)"
+ "lg-kf750-v10a browser/obigo-q05a/3.12 mms/lg-mms-v1.0/1.2 java/asvm/1.1 profile/midp-2.1 configuration/cldc-1.1; Opera/9.50 (J2ME/MIDP; Opera Mini/4.0.10269/hifi/tmobile/uk; en; U)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KF750-OPEN1.xml"

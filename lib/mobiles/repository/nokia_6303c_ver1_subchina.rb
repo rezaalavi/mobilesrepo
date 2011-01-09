@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6303c_ver1'
 module Mobiles
  module Repository
-   class Nokia6303cVer1Subchina < Nokia6303cVer1
+   class Nokia_6303c_ver1_subchina < Nokia_6303c_ver1
 def self.user_agent
- "Nokia6303c_CMCC/2.0 (08.55) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia6303c_CMCC/2.0 (08.55) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N6303cr100.xml"

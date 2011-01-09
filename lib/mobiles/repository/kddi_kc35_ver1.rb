@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_wap20_generic'
 module Mobiles
  module Repository
-   class KddiKc35Ver1 < KddiWap20Generic
+   class Kddi_kc35_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-KC35 UP.Browser/6.2.0.10.2.2 (GUI) MMP/2.0"
+ "KDDI-KC35 UP.Browser/6.2.0.10.2.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "W41K"

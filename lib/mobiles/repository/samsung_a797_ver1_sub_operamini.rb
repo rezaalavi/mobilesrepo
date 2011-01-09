@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_a797_ver1'
 module Mobiles
  module Repository
-   class SamsungA797Ver1SubOperamini < SamsungA797Ver1
+   class Samsung_a797_ver1_sub_operamini < Samsung_a797_ver1
 def self.user_agent
- "SAMSUNG-SGH-A797/A797UCIG3; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14928; U; en-US) Opera 9.50"
+ "SAMSUNG-SGH-A797/A797UCIG3; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14928; U; en-US) Opera 9.50".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   4.2

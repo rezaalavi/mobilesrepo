@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vodafone_vpa_compactiv_ver1_subartist'
 module Mobiles
  module Repository
-   class HtcArtistVer1Sub111204 < VodafoneVpaCompactivVer1Subartist
+   class Htc_artist_ver1_sub111204 < Vodafone_vpa_compactiv_ver1_subartist
 def self.user_agent
- "HTCArtist/111204 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "HTCArtist/111204 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   
 end

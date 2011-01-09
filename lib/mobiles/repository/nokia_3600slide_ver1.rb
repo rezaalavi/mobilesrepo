@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40_dp30'
 module Mobiles
  module Repository
-   class Nokia3600slideVer1 < NokiaGenericSeries40Dp30
+   class Nokia_3600slide_ver1 < Nokia_generic_series40_dp30
 def self.user_agent
- "Nokia3600slide/2.0 (04.11) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia3600slide/2.0 (04.11) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N3600slider100.xml"

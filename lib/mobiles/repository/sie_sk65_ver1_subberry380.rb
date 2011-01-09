@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_sk65_ver1'
 module Mobiles
  module Repository
-   class SieSk65Ver1Subberry380 < SieSk65Ver1
+   class Sie_sk65_ver1_subberry380 < Sie_sk65_ver1
 def self.user_agent
- "BlackBerrySiemens SK65/3.8.0"
+ "BlackBerrySiemens SK65/3.8.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

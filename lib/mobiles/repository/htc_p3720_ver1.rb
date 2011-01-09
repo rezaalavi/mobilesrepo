@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3700_ver1'
 module Mobiles
  module Repository
-   class HtcP3720Ver1 < HtcP3700Ver1
+   class Htc_p3720_ver1 < Htc_p3700_ver1
 def self.user_agent
- "HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720"
+ "HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en) P3720".gsub(/\a/, '\\')
 end
   def physical_screen_height
   57

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry9300_ver1'
 module Mobiles
  module Repository
-   class Blackberry9300Ver1SubOs6 < Blackberry9300Ver1
+   class Blackberry9300_ver1_sub_os6 < Blackberry9300_ver1
 def self.user_agent
- "Mozilla/5.0 (BlackBerry; U; BlackBerry 9300; en-GB) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.344 Mobile Safari/534.8+"
+ "Mozilla/5.0 (BlackBerry; U; BlackBerry 9300; en-GB) AppleWebKit/534.8+ (KHTML, like Gecko) Version/6.0.0.344 Mobile Safari/534.8+".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.0

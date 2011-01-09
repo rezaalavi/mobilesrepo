@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class AlcatelCth3Ver1 < OpwvV62Generic
+   class Alcatel_cth3_ver1 < Opwv_v62_generic
 def self.user_agent
- "Alcatel-CTH3"
+ "Alcatel-CTH3".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www-ccpp-mpd.alcatel.com/files/ALCATEL-CTH3_MMS11_1.0.rdf"

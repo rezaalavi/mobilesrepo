@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_dolfin'
 module Mobiles
  module Repository
-   class SamsungGtS5560Ver1 < GenericDolfin
+   class Samsung_gt_s5560_ver1 < Generic_dolfin
 def self.user_agent
- "SAMSUNG-GT-S5560/S5560XXIK3 SHP/VPP/R5 Dolfin/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-S5560/S5560XXIK3 SHP/VPP/R5 Dolfin/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/GT-S5560.rdf"

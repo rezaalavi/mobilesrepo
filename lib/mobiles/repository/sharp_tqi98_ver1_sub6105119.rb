@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_tqi98_ver1'
 module Mobiles
  module Repository
-   class SharpTqi98Ver1Sub6105119 < SharpTqi98Ver1
+   class Sharp_tqi98_ver1_sub6105119 < Sharp_tqi98_ver1
 def self.user_agent
- "SHARP-TQ-GX-i98/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.5.119 (GUI) MMP/1.0"
+ "SHARP-TQ-GX-i98/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.5.119 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

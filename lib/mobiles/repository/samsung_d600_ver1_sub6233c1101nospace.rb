@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_d600_ver1'
 module Mobiles
  module Repository
-   class SamsungD600Ver1Sub6233c1101nospace < SamsungD600Ver1
+   class Samsung_d600_ver1_sub6233c1101nospace < Samsung_d600_ver1
 def self.user_agent
- "SAMSUNG-SCH-D600/1.0 profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101(GUI) MMP/2.0"
+ "SAMSUNG-SCH-D600/1.0 profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101(GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

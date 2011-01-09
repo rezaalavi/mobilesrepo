@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_mobile'
 module Mobiles
  module Repository
-   class LgGm750Ver1 < GenericMsMobile
+   class Lg_gm750_ver1 < Generic_ms_mobile
 def self.user_agent
- "Mozilla/5.0 Vodafone/1.0/LG-GM750/V10a Browser/IE8.12 MMS/LGMMSv1.0/1.2 Java/LGVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)"
+ "Mozilla/5.0 Vodafone/1.0/LG-GM750/V10a Browser/IE8.12 MMS/LGMMSv1.0/1.2 Java/LGVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-GM750.xml"

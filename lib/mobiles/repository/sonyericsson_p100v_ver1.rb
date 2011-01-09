@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p100_ver1'
 module Mobiles
  module Repository
-   class SonyericssonP100vVer1 < SonyericssonP100Ver1
+   class Sonyericsson_p100v_ver1 < Sonyericsson_p100_ver1
 def self.user_agent
- "SonyEricssonP100v/01; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525"
+ "SonyEricssonP100v/01; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

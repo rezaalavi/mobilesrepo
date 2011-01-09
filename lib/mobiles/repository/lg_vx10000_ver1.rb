@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic'
 module Mobiles
  module Repository
-   class LgVx10000Ver1 < LgGeneric
+   class Lg_vx10000_ver1 < Lg_generic
 def self.user_agent
- "Mozilla/4.1 (compatible; MSIE 6.0; ) 400x240 LGE VX10000"
+ "Mozilla/4.1 (compatible; MSIE 6.0; ) 400x240 LGE VX10000".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

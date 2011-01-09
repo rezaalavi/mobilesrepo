@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_dm005sh_ver1'
 module Mobiles
  module Repository
-   class SoftbankDm007shVer1 < SoftbankDm005shVer1
+   class Softbank_dm007sh_ver1 < Softbank_dm005sh_ver1
 def self.user_agent
- "SoftBank/1.0/DM007SH/SHJ001/SNXXXXXXXXXXXXXXX Browser/NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SoftBank/1.0/DM007SH/SHJ001/SNXXXXXXXXXXXXXXX Browser/NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "DM007SH"

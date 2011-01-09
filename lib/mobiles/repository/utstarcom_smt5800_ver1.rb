@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_libra_ver1'
 module Mobiles
  module Repository
-   class UtstarcomSmt5800Ver1 < HtcLibraVer1
+   class Utstarcom_smt5800_ver1 < Htc_libra_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) 320x320; VZW; UTStar-SMT5800; Window Mobile 6.0 Standard;"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) 320x320; VZW; UTStar-SMT5800; Window Mobile 6.0 Standard;".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

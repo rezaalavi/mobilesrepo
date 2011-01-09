@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/motorola_t33_ver1'
 module Mobiles
  module Repository
-   class MotorolaT33Ver1Sub151a < MotorolaT33Ver1
+   class Motorola_t33_ver1_sub151a < Motorola_t33_ver1
 def self.user_agent
- "Motorola-T33/1.5.1a UP.Browser/5.0.1.7 (GUI)"
+ "Motorola-T33/1.5.1a UP.Browser/5.0.1.7 (GUI)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_m650_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM650Ver1Sub211842732 < OrangeSpvM650Ver1
+   class Orange_spv_m650_ver1_sub211842732 < Orange_spv_m650_ver1
 def self.user_agent
- "240x320; SPV M650; OpVer 21.184.2.732"
+ "240x320; SPV M650; OpVer 21.184.2.732".gsub(/\a/, '\\')
 end
   
 end

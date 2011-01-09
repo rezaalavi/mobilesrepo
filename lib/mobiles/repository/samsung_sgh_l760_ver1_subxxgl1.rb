@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_l760_ver1'
 module Mobiles
  module Repository
-   class SamsungSghL760Ver1Subxxgl1 < SamsungSghL760Ver1
+   class Samsung_sgh_l760_ver1_subxxgl1 < Samsung_sgh_l760_ver1
 def self.user_agent
- "SAMSUNG-SGH-L760/XXGL1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0"
+ "SAMSUNG-SGH-L760/XXGL1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0".gsub(/\a/, '\\')
 end
   
 end

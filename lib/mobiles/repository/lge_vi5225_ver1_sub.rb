@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_vi5225_ver1'
 module Mobiles
  module Repository
-   class LgeVi5225Ver1Sub < LgeVi5225Ver1
+   class Lge_vi5225_ver1_sub < Lge_vi5225_ver1
 def self.user_agent
- "LGE-VI5225/1.0"
+ "LGE-VI5225/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

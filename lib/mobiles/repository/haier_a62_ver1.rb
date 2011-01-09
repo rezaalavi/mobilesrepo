@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HaierA62Ver1 < GenericXhtml
+   class Haier_a62_ver1 < Generic_xhtml
 def self.user_agent
- "Haier-A62/1.0 Release/11.11.2005 Browser/CMS1.5.58 Profile/MIDP-2.0"
+ "Haier-A62/1.0 Release/11.11.2005 Browser/CMS1.5.58 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://mobile.haier.com/UAProf/uapA62.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e100_ver1'
 module Mobiles
  module Repository
-   class SamsungE100Ver1Sub6106 < SamsungE100Ver1
+   class Samsung_e100_ver1_sub6106 < Samsung_e100_ver1
 def self.user_agent
- "SAMSUNG-SGH-E100/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
+ "SAMSUNG-SGH-E100/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

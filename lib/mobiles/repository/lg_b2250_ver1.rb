@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LgB2250Ver1 < GenericXhtml
+   class Lg_b2250_ver1 < Generic_xhtml
 def self.user_agent
- "LG-B2250 MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
+ "LG-B2250 MIC/WAP2.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-B2250.xml"

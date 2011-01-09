@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_t319_ver1'
 module Mobiles
  module Repository
-   class SamsungT319rVer1 < SamsungSghT319Ver1
+   class Samsung_t319r_ver1 < Samsung_sgh_t319_ver1
 def self.user_agent
- "SAMSUNG-SGH-T319R"
+ "SAMSUNG-SGH-T319R".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-T319R"

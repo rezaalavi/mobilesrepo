@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_so905i_ver1'
 module Mobiles
  module Repository
-   class DocomoSo905iVer1Subua < DocomoSo905iVer1
+   class Docomo_so905i_ver1_subua < Docomo_so905i_ver1
 def self.user_agent
- "DoCoMo/2.0 SO905i"
+ "DoCoMo/2.0 SO905i".gsub(/\a/, '\\')
 end
   
 end

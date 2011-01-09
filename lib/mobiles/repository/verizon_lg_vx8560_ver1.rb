@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_vx8560_ver1'
 module Mobiles
  module Repository
-   class VerizonLgVx8560Ver1 < LgVx8560Ver1
+   class Verizon_lg_vx8560_ver1 < Lg_vx8560_ver1
 def self.user_agent
- "VX8560v1"
+ "VX8560v1".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Verizon Wireless"

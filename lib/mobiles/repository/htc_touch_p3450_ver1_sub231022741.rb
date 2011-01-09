@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_p3450_ver1'
 module Mobiles
  module Repository
-   class HtcTouchP3450Ver1Sub231022741 < HtcTouchP3450Ver1
+   class Htc_touch_p3450_ver1_sub231022741 < Htc_touch_p3450_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.102.2.741"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 240x320; HTC P3450; OpVer 23.102.2.741".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

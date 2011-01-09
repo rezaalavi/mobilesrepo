@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ericy_r278d_ver1'
 module Mobiles
  module Repository
-   class EricyR278dVer1Sub4119i < EricyR278dVer1
+   class Ericy_r278d_ver1_sub4119i < Ericy_r278d_ver1
 def self.user_agent
- "ERICY-R278d/R2B.00 UP/4.1.19i"
+ "ERICY-R278d/R2B.00 UP/4.1.19i".gsub(/\a/, '\\')
 end
   
 end

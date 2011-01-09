@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k790a_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK790aVer1Subr1cb < SonyericssonK790aVer1
+   class Sonyericsson_k790a_ver1_subr1cb < Sonyericsson_k790a_ver1
 def self.user_agent
- "SonyEricssonK790a/R1CB"
+ "SonyEricssonK790a/R1CB".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2_2'
 module Mobiles
  module Repository
-   class MotA953Ver1 < GenericAndroidVer22
+   class Mot_a953_ver1 < Generic_android_ver2_2
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.2; it-it; MotoA953 Build/S251) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+ "Mozilla/5.0 (Linux; U; Android 2.2; it-it; MotoA953 Build/S251) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.motorola.com/phoneconfig/motandroidgeneric/Profile/motandroidgeneric.rdf"

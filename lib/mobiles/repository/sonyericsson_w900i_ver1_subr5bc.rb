@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w900i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW900iVer1Subr5bc < SonyericssonW900iVer1
+   class Sonyericsson_w900i_ver1_subr5bc < Sonyericsson_w900i_ver1
 def self.user_agent
- "SonyEricssonW900i/R5BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-13G"
+ "SonyEricssonW900i/R5BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-13G".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

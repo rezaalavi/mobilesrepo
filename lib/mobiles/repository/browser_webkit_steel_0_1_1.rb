@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_webkit_steel_0_0_19'
 module Mobiles
  module Repository
-   class BrowserWebkitSteel011 < BrowserWebkitSteel0019
+   class Browser_webkit_steel_0_1_1 < Browser_webkit_steel_0_0_19
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_WEBKIT_STEEL_0_1_1"
+ "DO_NOT_MATCH_BROWSER_WEBKIT_STEEL_0_1_1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   "0.1.1"

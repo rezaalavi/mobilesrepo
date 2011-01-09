@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_c238_ver1'
 module Mobiles
  module Repository
-   class SamsungSghC238Ver1Sub10245 < SamsungSghC238Ver1
+   class Samsung_sgh_c238_ver1_sub10245 < Samsung_sgh_c238_ver1
 def self.user_agent
- "SAMSUNG-SGH-C238/RAINBOW 3.0/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.0*MzU2NzU4MDAwMDUyMDc5"
+ "SAMSUNG-SGH-C238/RAINBOW 3.0/WAP1.2 Profile/MIDP-2.0 Configuration/CLDC-1.0*MzU2NzU4MDAwMDUyMDc5".gsub(/\a/, '\\')
 end
   
 end

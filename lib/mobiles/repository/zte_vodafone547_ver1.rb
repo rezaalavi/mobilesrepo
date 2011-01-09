@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZteVodafone547Ver1 < GenericXhtml
+   class Zte_vodafone547_ver1 < Generic_xhtml
 def self.user_agent
- "Mozilla/4.0(Vodafone/1.0/Vodafone547/VF_UK_EN_P107A4V1.1.0/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1)"
+ "Mozilla/4.0(Vodafone/1.0/Vodafone547/VF_UK_EN_P107A4V1.1.0/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.zte.com.cn/mobile/uaprof/Vodafone547.xml"

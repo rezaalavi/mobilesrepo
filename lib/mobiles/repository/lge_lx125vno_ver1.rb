@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_lx125_ver1'
 module Mobiles
  module Repository
-   class LgeLx125vnoVer1 < LgeLx125Ver1
+   class Lge_lx125vno_ver1 < Lge_lx125_ver1
 def self.user_agent
- "LGE-LX125VNO"
+ "LGE-LX125VNO".gsub(/\a/, '\\')
 end
   def max_image_width
   120

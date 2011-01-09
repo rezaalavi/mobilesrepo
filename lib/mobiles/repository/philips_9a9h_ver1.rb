@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class Philips9a9hVer1 < Generic
+   class Philips_9a9h_ver1 < Generic
 def self.user_agent
- "PHILIPS9@9H ObigoInternetBrowser/2.0"
+ "PHILIPS9@9H ObigoInternetBrowser/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "9@9H"

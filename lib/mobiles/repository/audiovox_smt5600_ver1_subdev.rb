@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/audiovox_smt5600_ver1'
 module Mobiles
  module Repository
-   class AudiovoxSmt5600Ver1Subdev < AudiovoxSmt5600Ver1
+   class Audiovox_smt5600_ver1_subdev < Audiovox_smt5600_ver1
 def self.user_agent
- "SMT5600"
+ "SMT5600".gsub(/\a/, '\\')
 end
   
 end

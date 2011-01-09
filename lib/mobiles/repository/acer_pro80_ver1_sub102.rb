@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/acer_pro80_ver1'
 module Mobiles
  module Repository
-   class AcerPro80Ver1Sub102 < AcerPro80Ver1
+   class Acer_pro80_ver1_sub102 < Acer_pro80_ver1
 def self.user_agent
- "ACER-Pro80/1.02 UP/4.1.20i UP.Browser/4.1.20i-XXXX"
+ "ACER-Pro80/1.02 UP/4.1.20i UP.Browser/4.1.20i-XXXX".gsub(/\a/, '\\')
 end
   
 end

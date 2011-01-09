@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mobi'
 module Mobiles
  module Repository
-   class OperaMobiWindowsSub2528 < GenericOperaMobi
+   class Opera_mobi_windows_sub2528 < Generic_opera_mobi
 def self.user_agent
- "Opera/9.80 (Windows NT 6.1; Opera Mobi/7457; U; en) Presto/2.5.28 Version/10.1"
+ "Opera/9.80 (Windows NT 6.1; Opera Mobi/7457; U; en) Presto/2.5.28 Version/10.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   9.8

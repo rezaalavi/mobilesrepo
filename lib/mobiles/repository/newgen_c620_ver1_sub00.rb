@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/newgen_c620_ver1'
 module Mobiles
  module Repository
-   class NewgenC620Ver1Sub00 < NewgenC620Ver1
+   class Newgen_c620_ver1_sub00 < Newgen_c620_ver1
 def self.user_agent
- "NEWGEN-C620/REV 2.2.2/WAP1.2.1 Profile"
+ "NEWGEN-C620/REV 2.2.2/WAP1.2.1 Profile".gsub(/\a/, '\\')
 end
   
 end

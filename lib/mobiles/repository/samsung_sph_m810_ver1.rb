@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m800_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM810Ver1 < SamsungSphM800Ver1
+   class Samsung_sph_m810_ver1 < Samsung_sph_m800_ver1
 def self.user_agent
- "TELECA-/2.0 (BREW 3.1.5; U; EN-US; SAMSUNG; SPH-M810; Teleca/Q05A/INT) MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "TELECA-/2.0 (BREW 3.1.5; U; EN-US; SAMSUNG; SPH-M810; Teleca/Q05A/INT) MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Samsung/SPH-M810/CB23.rdf"

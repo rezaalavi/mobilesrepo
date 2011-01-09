@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_k3_ver1'
 module Mobiles
  module Repository
-   class MotK3Ver1Sub991300r < MotK3Ver1
+   class Mot_k3_ver1_sub991300r < Mot_k3_ver1
 def self.user_agent
- "MOT-K3/99.13.00R BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 12003131) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [en]"
+ "MOT-K3/99.13.00R BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 12003131) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [en]".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/K3/Profile/K3.rdf"

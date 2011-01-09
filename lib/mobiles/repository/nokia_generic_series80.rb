@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60'
 module Mobiles
  module Repository
-   class NokiaGenericSeries80 < NokiaGenericSeries60
+   class Nokia_generic_series80 < Nokia_generic_series60
 def self.user_agent
- "DO_NOT_MATCH_NOKIA_SERIES80"
+ "DO_NOT_MATCH_NOKIA_SERIES80".gsub(/\a/, '\\')
 end
   def nokia_series
   80

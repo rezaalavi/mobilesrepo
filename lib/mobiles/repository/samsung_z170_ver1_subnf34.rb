@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z170_ver1'
 module Mobiles
  module Repository
-   class SamsungZ170Ver1Subnf34 < SamsungZ170Ver1
+   class Samsung_z170_ver1_subnf34 < Samsung_z170_ver1
 def self.user_agent
- "SAMSUNG-SGH-Z170/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0"
+ "SAMSUNG-SGH-Z170/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

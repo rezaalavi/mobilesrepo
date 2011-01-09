@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_910sh_ver1'
 module Mobiles
  module Repository
-   class Softbank910shVer1Submozilla < Softbank910shVer1
+   class Softbank_910sh_ver1_submozilla < Softbank_910sh_ver1
 def self.user_agent
- "Mozilla/4.08 (910SH;SoftBank) NetFront/3.3"
+ "Mozilla/4.08 (910SH;SoftBank) NetFront/3.3".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sharp-mobile.com/UAProf/910SH_SHJ001_3g.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class MotTimeport250Ver1 < Generic
+   class Mot_timeport_250_ver1 < Generic
 def self.user_agent
- "MOT-Timeport250"
+ "MOT-Timeport250".gsub(/\a/, '\\')
 end
   def model_name
   "Timeport 250"

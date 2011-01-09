@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p4550_ver1'
 module Mobiles
  module Repository
-   class HtcP4550Ver1Subie612 < HtcP4550Ver1
+   class Htc_p4550_ver1_subie612 < Htc_p4550_ver1
 def self.user_agent
- "HTC-P4550-orange/PPC; 240x320; OpVer 24.103.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+ "HTC-P4550-orange/PPC; 240x320; OpVer 24.103.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

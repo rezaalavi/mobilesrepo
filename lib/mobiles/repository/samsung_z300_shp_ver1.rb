@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z300_ver1'
 module Mobiles
  module Repository
-   class SamsungZ300ShpVer1 < SamsungZ300Ver1
+   class Samsung_z300_shp_ver1 < Samsung_z300_ver1
 def self.user_agent
- "SGH-Z300 SHP"
+ "SGH-Z300 SHP".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_9290_ver1'
 module Mobiles
  module Repository
-   class Nokia9290Ver1Sub60 < Nokia9290Ver1
+   class Nokia_9290_ver1_sub60 < Nokia_9290_ver1
 def self.user_agent
- "Nokia9290/Symbian-Crystal/6.0 (1.00)"
+ "Nokia9290/Symbian-Crystal/6.0 (1.00)".gsub(/\a/, '\\')
 end
   
 end

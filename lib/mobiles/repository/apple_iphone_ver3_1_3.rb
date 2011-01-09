@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_iphone_ver3_1_2'
 module Mobiles
  module Repository
-   class AppleIphoneVer313 < AppleIphoneVer312
+   class Apple_iphone_ver3_1_3 < Apple_iphone_ver3_1_2
 def self.user_agent
- "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_3 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko)"
+ "Mozilla/5.0 (iPhone; U; CPU iPhone OS 3_1_3 like Mac OS X; en-us) AppleWebKit/525.18.1 (KHTML, like Gecko)".gsub(/\a/, '\\')
 end
   def device_os_version
   "3.1.3"

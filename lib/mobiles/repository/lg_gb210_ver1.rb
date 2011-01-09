@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q5'
 module Mobiles
  module Repository
-   class LgGb210Ver1 < LgGenericObigoQ5
+   class Lg_gb210_ver1 < Lg_generic_obigo_q5
 def self.user_agent
- "LG-GB210 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-GB210 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_hermes_ver1'
 module Mobiles
  module Repository
-   class SprintPpc6800Ver1 < HtcHermesVer1
+   class Sprint_ppc6800_ver1 < Htc_hermes_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Sprint:PPC6800"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Sprint:PPC6800".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

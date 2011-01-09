@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SamsungSchx609Ver1 < UptextGeneric
+   class Samsung_schx609_ver1 < Uptext_generic
 def self.user_agent
- "SEC-schx609 UP.Browser/4.1.26l"
+ "SEC-schx609 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   4.1

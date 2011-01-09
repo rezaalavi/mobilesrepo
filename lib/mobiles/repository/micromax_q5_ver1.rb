@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mini_version1'
 module Mobiles
  module Repository
-   class MicromaxQ5Ver1 < GenericOperaMiniVersion1
+   class Micromax_q5_ver1 < Generic_opera_mini_version1
 def self.user_agent
- "MICROMAX Q5"
+ "MICROMAX Q5".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

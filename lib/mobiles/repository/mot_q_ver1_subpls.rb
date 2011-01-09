@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_q_ver1'
 module Mobiles
  module Repository
-   class MotQVer1Subpls < MotQVer1
+   class Mot_q_ver1_subpls < Mot_q_ver1
 def self.user_agent
- "Mozilla/4.0 PLS:MotoQ (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)"
+ "Mozilla/4.0 PLS:MotoQ (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   
 end

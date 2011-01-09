@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lenovo_e307_ver1'
 module Mobiles
  module Repository
-   class LenovoE307Ver1Sub20060614s273 < LenovoE307Ver1
+   class Lenovo_e307_ver1_sub20060614s273 < Lenovo_e307_ver1
 def self.user_agent
- "LENOVO-E307_ENG_FRE_A/(2006.06.14)s273/WAP1.2.1 Profile//"
+ "LENOVO-E307_ENG_FRE_A/(2006.06.14)s273/WAP1.2.1 Profile//".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.lenovomobile.com/admin/module/product/DownFile/download_2006815885872.xml"

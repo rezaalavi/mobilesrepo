@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w705_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW705aVer1 < SonyericssonW705Ver1
+   class Sonyericsson_w705a_ver1 < Sonyericsson_w705_ver1
 def self.user_agent
- "SonyEricssonW705a"
+ "SonyEricssonW705a".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/Uaprof/W705aR101.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_android_g1_ver1_5'
 module Mobiles
  module Repository
-   class TmobileG1Ver15Subcrc37 < HtcAndroidG1Ver15
+   class Tmobile_g1_ver1_5_subcrc37 < Htc_android_g1_ver1_5
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.5; en-gb; T-Mobile G1 Build/CRC37) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
+ "Mozilla/5.0 (Linux; U; Android 1.5; en-gb; T-Mobile G1 Build/CRC37) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1".gsub(/\a/, '\\')
 end
   
 end

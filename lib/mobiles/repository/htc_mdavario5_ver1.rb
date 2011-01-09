@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_rhodium_ver1'
 module Mobiles
  module Repository
-   class HtcMdavario5Ver1 < TmobileRhodiumVer1
+   class Htc_mdavario5_ver1 < Tmobile_rhodium_ver1
 def self.user_agent
- "Opera/9.50 (Windows NT 5.1; MDA_Vario_V/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; U; nl)"
+ "Opera/9.50 (Windows NT 5.1; MDA_Vario_V/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; U; nl)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

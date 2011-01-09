@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q7'
 module Mobiles
  module Repository
-   class KyoceraC4700Ver1 < LgGenericObigoQ7
+   class Kyocera_c4700_ver1 < Lg_generic_obigo_q7
 def self.user_agent
- "KyoceraC4700/Obigo/Q7 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "KyoceraC4700/Obigo/Q7 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

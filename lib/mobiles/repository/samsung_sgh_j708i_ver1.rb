@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungSghJ708iVer1 < OpwvV62Generic
+   class Samsung_sgh_j708i_ver1 < Opwv_v62_generic
 def self.user_agent
- "SAMSUNG-SGH-J708i_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/12.18.2008 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-SGH-J708i_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/12.18.2008 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "SGH J708i"

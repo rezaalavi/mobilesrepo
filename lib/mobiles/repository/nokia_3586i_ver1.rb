@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_uptext_generic'
 module Mobiles
  module Repository
-   class Nokia3586iVer1 < NokiaUptextGeneric
+   class Nokia_3586i_ver1 < Nokia_uptext_generic
 def self.user_agent
- "NOKIA-RH-44/V"
+ "NOKIA-RH-44/V".gsub(/\a/, '\\')
 end
   def model_name
   "3586i/3589i"

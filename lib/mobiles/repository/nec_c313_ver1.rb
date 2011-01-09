@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3'
 module Mobiles
  module Repository
-   class NecC313Ver1 < GenericNetfrontVer3
+   class Nec_c313_ver1 < Generic_netfront_ver3
 def self.user_agent
- "ACS-NF/3.0 NEC-c313"
+ "ACS-NF/3.0 NEC-c313".gsub(/\a/, '\\')
 end
   def model_name
   "c313"

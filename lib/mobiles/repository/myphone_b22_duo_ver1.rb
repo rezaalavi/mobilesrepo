@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MyphoneB22DuoVer1 < GenericXhtml
+   class Myphone_b22_duo_ver1 < Generic_xhtml
 def self.user_agent
- "MyPhoneB22Duo/MTK Release/V0.44 Apr-01-2008 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "MyPhoneB22Duo/MTK Release/V0.44 Apr-01-2008 Browser/MAUI Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def model_name
   "B22 Duo"

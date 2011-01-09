@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gtm8800_ver1'
 module Mobiles
  module Repository
-   class SamsungGtm8800Ver1Suborange < SamsungGtm8800Ver1
+   class Samsung_gtm8800_ver1_suborange < Samsung_gtm8800_ver1
 def self.user_agent
- "SAMSUNG-GT-M8800-ORANGE/M8800BVHK2 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-GT-M8800-ORANGE/M8800BVHK2 SHP/VPP/R5 NetFront/3.5 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def release_date
   "2008_december"

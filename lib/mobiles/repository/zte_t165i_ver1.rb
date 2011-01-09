@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class ZteT165iVer1 < GenericNetfrontVer32
+   class Zte_t165i_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "ZTE-T165i/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "ZTE-T165i/1.0 ACS-NF/3.2 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.zte.com.cn/mobile/uaprof/ZTE-T165i.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/utstarcom_xv6800_ver1'
 module Mobiles
  module Repository
-   class UtstarcomXv6800Ver1Subie612 < UtstarcomXv6800Ver1
+   class Utstarcom_xv6800_ver1_subie612 < Utstarcom_xv6800_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) 320x320; VZW; UTStar-XV6800; Window Mobile 6.0 Professional;"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) 320x320; VZW; UTStar-XV6800; Window Mobile 6.0 Professional;".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

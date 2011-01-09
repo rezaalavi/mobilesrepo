@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w760i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW760iSubr3aa < SonyericssonW760iVer1
+   class Sonyericsson_w760i_subr3aa < Sonyericsson_w760i_ver1
 def self.user_agent
- "SonyEricssonW760i/R3AA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-9.0"
+ "SonyEricssonW760i/R3AA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-9.0".gsub(/\a/, '\\')
 end
   def max_image_width
   225

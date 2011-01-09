@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ku380_ver1'
 module Mobiles
  module Repository
-   class LgKu380Ver1Subv10b < LgKu380Ver1
+   class Lg_ku380_ver1_subv10b < Lg_ku380_ver1
 def self.user_agent
- "LG/KU380/v10b Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "LG/KU380/v10b Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

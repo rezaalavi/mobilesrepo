@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_eris_ver1_subdesire'
 module Mobiles
  module Repository
-   class HtcErisVer1SubdesireSub21 < HtcErisVer1Subdesire
+   class Htc_eris_ver1_subdesire_sub21 < Htc_eris_ver1_subdesire
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1; en-us; desirec) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 2.1; en-us; desirec) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def device_os_version
   2.1

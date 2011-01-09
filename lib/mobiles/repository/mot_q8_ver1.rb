@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6'
 module Mobiles
  module Repository
-   class MotQ8Ver1 < GenericMsWinmo6
+   class Mot_q8_ver1 < Generic_ms_winmo6
 def self.user_agent
- "MOT-Q8_CMCC/1.0 Release/01.10.2007 Profile/MIDP-2.0 Configuration/CLDC-1.1 Software/WM6.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)"
+ "MOT-Q8_CMCC/1.0 Release/01.10.2007 Profile/MIDP-2.0 Configuration/CLDC-1.1 Software/WM6.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

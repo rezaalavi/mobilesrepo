@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class Philips162Ver1 < Generic
+   class Philips_162_ver1 < Generic
 def self.user_agent
- "PHILIPS 162"
+ "PHILIPS 162".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

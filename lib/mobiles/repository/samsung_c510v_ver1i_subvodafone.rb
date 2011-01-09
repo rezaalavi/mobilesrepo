@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_c510v_ver1'
 module Mobiles
  module Repository
-   class SamsungC510vVer1iSubvodafone < SamsungC510vVer1
+   class Samsung_c510v_ver1i_subvodafone < Samsung_c510v_ver1
 def self.user_agent
- "Vodafone/1.0/SamsungSGHC510V"
+ "Vodafone/1.0/SamsungSGHC510V".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

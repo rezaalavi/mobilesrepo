@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_tytnii_ver1'
 module Mobiles
  module Repository
-   class HtcTytniiVer1Subua < HtcTytniiVer1
+   class Htc_tytnii_ver1_subua < Htc_tytnii_ver1
 def self.user_agent
- "HTC_TyTN-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; HTC TyTN2)"
+ "HTC_TyTN-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; HTC TyTN2)".gsub(/\a/, '\\')
 end
   def model_name
   "Hermes"

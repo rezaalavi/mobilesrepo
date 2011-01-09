@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_g_x760_ver1'
 module Mobiles
  module Repository
-   class ZteGX760Ver1Suborange < ZteGX760Ver1
+   class Zte_g_x760_ver1_suborange < Zte_g_x760_ver1
 def self.user_agent
- "ZTE-G-X760-vegas-orange/X760_Z15UK_FS_B07A105_ORANGE Obigo/Q03C"
+ "ZTE-G-X760-vegas-orange/X760_Z15UK_FS_B07A105_ORANGE Obigo/Q03C".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class AlcatelGenericV5 < UpguiGeneric
+   class Alcatel_generic_v5 < Upgui_generic
 def self.user_agent
- "Alcatel UP/5"
+ "Alcatel UP/5".gsub(/\a/, '\\')
 end
   def brand_name
   "Alcatel"

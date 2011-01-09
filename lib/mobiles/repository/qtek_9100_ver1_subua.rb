@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/qtek_9100_ver1'
 module Mobiles
  module Repository
-   class Qtek9100Ver1Subua < Qtek9100Ver1
+   class Qtek_9100_ver1_subua < Qtek_9100_ver1
 def self.user_agent
- "Qtek9100"
+ "Qtek9100".gsub(/\a/, '\\')
 end
   def model_name
   9100

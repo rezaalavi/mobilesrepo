@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_p906_ver1'
 module Mobiles
  module Repository
-   class SecP906Sub6233c1101 < SecP906Ver1
+   class Sec_p906_sub6233c1101 < Sec_p906_ver1
 def self.user_agent
- "SAMSUNG-SGH-P906/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-P906/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

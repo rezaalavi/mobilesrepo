@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_root_webkit'
 module Mobiles
  module Repository
-   class BrowserWebkitDolfinJasmine08 < BrowserRootWebkit
+   class Browser_webkit_dolfin_jasmine_0_8 < Browser_root_webkit
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_WEBKIT_DOLFIN_JASMINE_0_8"
+ "DO_NOT_MATCH_BROWSER_WEBKIT_DOLFIN_JASMINE_0_8".gsub(/\a/, '\\')
 end
   
 end

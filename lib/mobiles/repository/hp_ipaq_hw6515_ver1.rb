@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/hp_ipaq_hw6500_ver1'
 module Mobiles
  module Repository
-   class HpIpaqHw6515Ver1 < HpIpaqHw6500Ver1
+   class Hp_ipaq_hw6515_ver1 < Hp_ipaq_hw6500_ver1
 def self.user_agent
- "HP iPAQ hw6515"
+ "HP iPAQ hw6515".gsub(/\a/, '\\')
 end
   def model_name
   "iPAQ HW6515"

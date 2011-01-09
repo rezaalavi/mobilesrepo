@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_e650_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvE650Ver1Sub22103 < OrangeSpvE650Ver1
+   class Orange_spv_e650_ver1_sub22103 < Orange_spv_e650_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.9) Smartphone; 240x320; SPV E650; OpVer 22.103.2.731"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.9) Smartphone; 240x320; SPV E650; OpVer 22.103.2.731".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

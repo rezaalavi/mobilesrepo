@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z520_ver1'
 module Mobiles
  module Repository
-   class SamsungZ520Ver1Subvodafone < SamsungZ520Ver1
+   class Samsung_z520_ver1_subvodafone < Samsung_z520_ver1
 def self.user_agent
- "SAMSUNG-SGH-Z520-Vodafone"
+ "SAMSUNG-SGH-Z520-Vodafone".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/yourwap_ver1'
 module Mobiles
  module Repository
-   class YourwapVer1Sub091 < YourwapVer1
+   class Yourwap_ver1_sub091 < Yourwap_ver1
 def self.user_agent
- "YourWap/0.91"
+ "YourWap/0.91".gsub(/\a/, '\\')
 end
   
 end

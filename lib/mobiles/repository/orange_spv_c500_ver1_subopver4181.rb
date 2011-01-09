@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_c500_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvC500Ver1Subopver4181 < OrangeSpvC500Ver1
+   class Orange_spv_c500_ver1_subopver4181 < Orange_spv_c500_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220; SPV C500; OpVer 4.1.8.1)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220; SPV C500; OpVer 4.1.8.1)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

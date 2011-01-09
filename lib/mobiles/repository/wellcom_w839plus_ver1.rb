@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class WellcomW839plusVer1 < GenericXhtml
+   class Wellcom_w839plus_ver1 < Generic_xhtml
 def self.user_agent
- "WellcoM_W839+_Browser"
+ "WellcoM_W839+_Browser".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

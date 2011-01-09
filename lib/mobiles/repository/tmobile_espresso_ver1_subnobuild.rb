@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_espresso_ver1'
 module Mobiles
  module Repository
-   class TmobileEspressoVer1Subnobuild < TmobileEspressoVer1
+   class Tmobile_espresso_ver1_subnobuild < Tmobile_espresso_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; espresso) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; espresso) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   
 end

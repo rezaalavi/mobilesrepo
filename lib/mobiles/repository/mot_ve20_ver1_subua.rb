@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_ve20_ver1'
 module Mobiles
  module Repository
-   class MotVe20Ver1Subua < MotVe20Ver1
+   class Mot_ve20_ver1_subua < Mot_ve20_ver1
 def self.user_agent
- "MOT-VE20/1.0 UP.Browser/7.2.6.1.731 (GUI) MMP/2.0"
+ "MOT-VE20/1.0 UP.Browser/7.2.6.1.731 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.telusmobility.com/motorola/VE20-0.rdf"

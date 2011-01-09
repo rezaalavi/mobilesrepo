@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsungxhtml_ver1'
 module Mobiles
  module Repository
-   class SamsungF900Ver1 < SamsungxhtmlVer1
+   class Samsung_f900_ver1 < Samsungxhtml_ver1
 def self.user_agent
- "SEC-SGHF900/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHF900/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class ArgogroupwapdeviceVer1 < Generic
+   class Argogroupwapdevice_ver1 < Generic
 def self.user_agent
- "ArgogroupWAPDevice"
+ "ArgogroupWAPDevice".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3_ver1'
 module Mobiles
  module Repository
-   class MotV3sVer1 < MotV3Ver1
+   class Mot_v3s_ver1 < Mot_v3_ver1
 def self.user_agent
- "MOT-V3s/00.62 UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0"
+ "MOT-V3s/00.62 UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic'
 module Mobiles
  module Repository
-   class SamsungSghC240Ver1 < NokiaGeneric
+   class Samsung_sgh_c240_ver1 < Nokia_generic
 def self.user_agent
- "SAMSUNG-SGH-C240/1.0"
+ "SAMSUNG-SGH-C240/1.0".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-C240"

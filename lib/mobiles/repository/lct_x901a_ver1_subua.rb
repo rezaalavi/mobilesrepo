@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lct_x901a_ver1'
 module Mobiles
  module Repository
-   class LctX901aVer1Subua < LctX901aVer1
+   class Lct_x901a_ver1_subua < Lct_x901a_ver1
 def self.user_agent
- "MQS_X901A_07/LK5M511B/WAP2.0 Profile"
+ "MQS_X901A_07/LK5M511B/WAP2.0 Profile".gsub(/\a/, '\\')
 end
   
 end

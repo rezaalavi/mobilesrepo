@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_em325_ver1'
 module Mobiles
  module Repository
-   class MotEm326gVer1 < MotEm325Ver1
+   class Mot_em326g_ver1 < Mot_em325_ver1
 def self.user_agent
- "MOT-EM326g/1.0 Release/03.23.2009 Browser/CMCS1.0 Software/1.64F Profile/MIDP-2.0 Configuration/CLDC-1.1[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]"
+ "MOT-EM326g/1.0 Release/03.23.2009 Browser/CMCS1.0 Software/1.64F Profile/MIDP-2.0 Configuration/CLDC-1.1[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX]".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.motorola.com/phoneconfig/em326g/Profile/em326g.rdf"

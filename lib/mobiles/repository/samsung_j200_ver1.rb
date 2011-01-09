@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_j750_ver1'
 module Mobiles
  module Repository
-   class SamsungJ200Ver1 < SamsungSghJ750Ver1
+   class Samsung_j200_ver1 < Samsung_sgh_j750_ver1
 def self.user_agent
- "SAMSUNG-SGH-J200/J200XBGJ1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-J200/J200XBGJ1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.4

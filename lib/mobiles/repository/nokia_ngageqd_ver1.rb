@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_ngage_ver1'
 module Mobiles
  module Repository
-   class NokiaNgageqdVer1 < NokiaNgageVer1
+   class Nokia_ngageqd_ver1 < Nokia_ngage_ver1
 def self.user_agent
- "NokiaN-GageQD"
+ "NokiaN-GageQD".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/NNGageQDr100.xml"

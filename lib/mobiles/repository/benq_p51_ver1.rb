@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class BenqP51Ver1 < GenericMsWinmo5
+   class Benq_p51_ver1 < Generic_ms_winmo5
 def self.user_agent
- "BenQ P51/5.1.65/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "BenQ P51/5.1.65/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

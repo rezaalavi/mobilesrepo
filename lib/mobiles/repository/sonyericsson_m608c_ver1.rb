@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_xhtml_generic'
 module Mobiles
  module Repository
-   class SonyericssonM608cVer1 < SonyericssonXhtmlGeneric
+   class Sonyericsson_m608c_ver1 < Sonyericsson_xhtml_generic
 def self.user_agent
- "SonyEricssonM608c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 513) Opera 8.65 [zh-CN]"
+ "SonyEricssonM608c/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 513) Opera 8.65 [zh-CN]".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

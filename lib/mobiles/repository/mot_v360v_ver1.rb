@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v360_ver1'
 module Mobiles
  module Repository
-   class MotV360vVer1 < MotV360Ver1
+   class Mot_v360v_ver1 < Mot_v360_ver1
 def self.user_agent
- "MOT-V360v/08.B7.AFR MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-V360v/08.B7.AFR MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "V360"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_dolfin_1_0'
 module Mobiles
  module Repository
-   class GenericDolfin15 < GenericDolfin10
+   class Generic_dolfin1_5 < Generic_dolfin_1_0
 def self.user_agent
- "DO_NOT_MATCH_DOLFIN_1_5"
+ "DO_NOT_MATCH_DOLFIN_1_5".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   1.5

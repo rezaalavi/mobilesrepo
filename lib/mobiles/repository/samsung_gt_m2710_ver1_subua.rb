@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_m2710_ver1'
 module Mobiles
  module Repository
-   class SamsungGtM2710Ver1Subua < SamsungGtM2710Ver1
+   class Samsung_gt_m2710_ver1_subua < Samsung_gt_m2710_ver1
 def self.user_agent
- "SAMSUNG-GT-M2710C/1.0 RTK-E/1.0 DF/1.0 Release/07.01.2008 Browser/NetFront3.4 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-GT-M2710C/1.0 RTK-E/1.0 DF/1.0 Release/07.01.2008 Browser/NetFront3.4 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a768_ver1'
 module Mobiles
  module Repository
-   class MotA768Ver1Subr503g0016a1r < MotA768Ver1
+   class Mot_a768_ver1_subr503g0016a1r < Mot_a768_ver1
 def self.user_agent
- "MOT-A768/R503_G_00.16.A1R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "MOT-A768/R503_G_00.16.A1R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g5600_ver1'
 module Mobiles
  module Repository
-   class LgG5600Ver1Sub2 < LgG5600Ver1
+   class Lg_g5600_ver1_sub2 < Lg_g5600_ver1
 def self.user_agent
- "G5600 MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
+ "G5600 MIC/WAP2.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

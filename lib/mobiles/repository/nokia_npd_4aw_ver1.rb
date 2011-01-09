@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_uptext_generic'
 module Mobiles
  module Repository
-   class NokiaNpd4awVer1 < NokiaUptextGeneric
+   class Nokia_npd_4aw_ver1 < Nokia_uptext_generic
 def self.user_agent
- "NOKIA-NPD-4AW"
+ "NOKIA-NPD-4AW".gsub(/\a/, '\\')
 end
   
 end

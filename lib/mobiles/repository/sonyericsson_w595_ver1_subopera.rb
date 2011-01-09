@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w595_ver1_subr3da'
 module Mobiles
  module Repository
-   class SonyericssonW595Ver1Subopera < SonyericssonW595Ver1Subr3da
+   class Sonyericsson_w595_ver1_subopera < Sonyericsson_w595_ver1_subr3da
 def self.user_agent
- "SonyEricssonW595/R3DA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0"
+ "SonyEricssonW595/R3DA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0".gsub(/\a/, '\\')
 end
   
 end

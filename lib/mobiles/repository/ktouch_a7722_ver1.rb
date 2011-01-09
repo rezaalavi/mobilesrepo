@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class KtouchA7722Ver1 < GenericXhtml
+   class Ktouch_a7722_ver1 < Generic_xhtml
 def self.user_agent
- "A7722/MIDP2.0/CLDC1.1/Screen-128X160"
+ "A7722/MIDP2.0/CLDC1.1/Screen-128X160".gsub(/\a/, '\\')
 end
   def model_name
   "A7722"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry8820_ver1'
 module Mobiles
  module Repository
-   class Blackberry8820Ver1Sub422 < Blackberry8820Ver1
+   class Blackberry8820_ver1_sub422 < Blackberry8820_ver1
 def self.user_agent
- "BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/119"
+ "BlackBerry8820/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/119".gsub(/\a/, '\\')
 end
   def wifi?
   true

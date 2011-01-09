@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3600_ver1'
 module Mobiles
  module Repository
-   class HtcP3600Ver1Subua1 < HtcP3600Ver1
+   class Htc_p3600_ver1_subua1 < Htc_p3600_ver1
 def self.user_agent
- "HTCP3600"
+ "HTCP3600".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_c3510_ver1'
 module Mobiles
  module Repository
-   class SamsungGtC3510Ver1Subdolfin < SamsungGtC3510Ver1
+   class Samsung_gt_c3510_ver1_subdolfin < Samsung_gt_c3510_ver1
 def self.user_agent
- "SAMSUNG-GT-C3510T/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-C3510T/1.0 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Dolfin/Jasmine Webkit"

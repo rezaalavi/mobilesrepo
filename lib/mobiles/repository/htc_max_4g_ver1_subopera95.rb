@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_max_4g_ver1'
 module Mobiles
  module Repository
-   class HtcMax4gVer1Subopera95 < HtcMax4gVer1
+   class Htc_max_4g_ver1_subopera95 < Htc_max_4g_ver1
 def self.user_agent
- "HTC MAX 4G Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)"
+ "HTC MAX 4G Opera/9.5 (Microsoft Windows; PPC; Opera Mobi/1409; U; ru)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

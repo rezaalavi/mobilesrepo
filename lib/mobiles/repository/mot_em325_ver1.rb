@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotEm325Ver1 < GenericXhtml
+   class Mot_em325_ver1 < Generic_xhtml
 def self.user_agent
- "MOT-EM325/1.0 Release/07.31.2008 Browser/CMCS1.0 Software/0.240 Profile/MIDP-2.0 Configuretion/CLDC-1.1"
+ "MOT-EM325/1.0 Release/07.31.2008 Browser/CMCS1.0 Software/0.240 Profile/MIDP-2.0 Configuretion/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.motorola.com/phoneconfig/em325/Profile/em325.rdf"

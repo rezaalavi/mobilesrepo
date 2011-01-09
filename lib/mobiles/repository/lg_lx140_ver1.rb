@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class LgLx140Ver1 < OpwvV62Generic
+   class Lg_lx140_ver1 < Opwv_v62_generic
 def self.user_agent
- "LG-LX140/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "LG-LX140/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vmobl.com/LG/LX-140/VMU_lx140_UAProf.xml"

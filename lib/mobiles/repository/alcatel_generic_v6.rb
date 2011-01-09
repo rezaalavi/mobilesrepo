@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class AlcatelGenericV6 < OpwvV62Generic
+   class Alcatel_generic_v6 < Opwv_v62_generic
 def self.user_agent
- "Alcatel UP/6.2"
+ "Alcatel UP/6.2".gsub(/\a/, '\\')
 end
   def brand_name
   "Alcatel"

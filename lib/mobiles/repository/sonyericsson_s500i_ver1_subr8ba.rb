@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_s500i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonS500iVer1Subr8ba < SonyericssonS500iVer1
+   class Sonyericsson_s500i_ver1_subr8ba < Sonyericsson_s500i_ver1
 def self.user_agent
- "SonyEricssonS500i/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonS500i/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

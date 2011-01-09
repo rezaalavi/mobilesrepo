@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_root'
 module Mobiles
  module Repository
-   class BrowserUcwebRelease51 < BrowserRoot
+   class Browser_ucweb_release_5_1 < Browser_root
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_UCWEB_5"
+ "DO_NOT_MATCH_BROWSER_UCWEB_5".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   5.1

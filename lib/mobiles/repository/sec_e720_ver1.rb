@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SecE720Ver1 < Generic
+   class Sec_e720_ver1 < Generic
 def self.user_agent
- "SEC-SGHE720"
+ "SEC-SGHE720".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/e720_00.xml"

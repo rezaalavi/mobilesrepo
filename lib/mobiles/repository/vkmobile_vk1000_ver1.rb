@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class VkmobileVk1000Ver1 < Generic
+   class Vkmobile_vk1000_ver1 < Generic
 def self.user_agent
- "VK-VK1000"
+ "VK-VK1000".gsub(/\a/, '\\')
 end
   def model_name
   "VK1000"

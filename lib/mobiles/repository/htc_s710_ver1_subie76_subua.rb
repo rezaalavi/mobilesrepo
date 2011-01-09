@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_s710_ver1_subie76'
 module Mobiles
  module Repository
-   class HtcS710Ver1Subie76Subua < HtcS710Ver1Subie76
+   class Htc_s710_ver1_subie76_subua < Htc_s710_ver1_subie76
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS710;Smartphone;240x320"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) HTCS710;Smartphone;240x320".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/vox-1.0.xml"

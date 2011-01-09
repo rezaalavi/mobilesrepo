@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_sgh_x800_ver1'
 module Mobiles
  module Repository
-   class SecSghX800Ver110netfront32 < SecSghX800Ver1
+   class Sec_sgh_x800_ver110netfront32 < Sec_sgh_x800_ver1
 def self.user_agent
- "SEC-SGHX800/1.0 NetFront/3.2"
+ "SEC-SGHX800/1.0 NetFront/3.2".gsub(/\a/, '\\')
 end
   
 end

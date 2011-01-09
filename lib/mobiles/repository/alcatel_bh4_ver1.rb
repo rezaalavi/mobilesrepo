@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_generic_v6'
 module Mobiles
  module Repository
-   class AlcatelBh4Ver1 < AlcatelGenericV6
+   class Alcatel_bh4_ver1 < Alcatel_generic_v6
 def self.user_agent
- "Alcatel-BH4/1.0 UP.Browser/6.2"
+ "Alcatel-BH4/1.0 UP.Browser/6.2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www-ccpp-mpd.alcatel.com/files/ALCATEL-BH4_1.0.rdf"

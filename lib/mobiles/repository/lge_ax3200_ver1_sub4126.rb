@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_ax3200_ver1'
 module Mobiles
  module Repository
-   class LgeAx3200Ver1Sub4126 < LgeAx3200Ver1
+   class Lge_ax3200_ver1_sub4126 < Lge_ax3200_ver1
 def self.user_agent
- "LGE-AX3200 UP.Browser/4.1.26l"
+ "LGE-AX3200 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   def model_name
   "AX3200"

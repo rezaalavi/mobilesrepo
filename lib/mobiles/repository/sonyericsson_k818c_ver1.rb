@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k810c_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK818cVer1 < SonyericssonK810cVer1
+   class Sonyericsson_k818c_ver1 < Sonyericsson_k810c_ver1
 def self.user_agent
- "SonyEricssonK818c/R6BC Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK818c/R6BC Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.3

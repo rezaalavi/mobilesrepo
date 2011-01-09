@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_vs7_ver1'
 module Mobiles
  module Repository
-   class PanasonicVs7Ver1Sub11 < PanasonicVs7Ver1
+   class Panasonic_vs7_ver1_sub11 < Panasonic_vs7_ver1
 def self.user_agent
- "Panasonic-VS7/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Panasonic-VS7/1.0/RP1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

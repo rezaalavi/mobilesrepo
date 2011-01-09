@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k300i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK300iVer1Subr2ba < SonyericssonK300iVer1
+   class Sonyericsson_k300i_ver1_subr2ba < Sonyericsson_k300i_ver1
 def self.user_agent
- "SonyEricssonK300i/R2BA SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK300i/R2BA SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/K300iR301.xml"

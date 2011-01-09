@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3c_ver1'
 module Mobiles
  module Repository
-   class MotorolaV3cCanadaVer1 < MotV3cVer1
+   class Motorola_v3c_canada_ver1 < Mot_v3c_ver1
 def self.user_agent
- "Motorola_V3c UP.Browser/6.2.3.4.c.1.109 (GUI) MMP/2.0"
+ "Motorola_V3c UP.Browser/6.2.3.4.c.1.109 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/BMC_Motorola_V3c_070301P.rdf"

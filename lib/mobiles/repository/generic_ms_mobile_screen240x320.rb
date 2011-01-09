@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_mobile'
 module Mobiles
  module Repository
-   class GenericMsMobileScreen240x320 < GenericMsMobile
+   class Generic_ms_mobile_screen240x320 < Generic_ms_mobile
 def self.user_agent
- "DO_NOT_MATCH_MS_MOBILE_BROWSER_1_SUB240X320"
+ "DO_NOT_MATCH_MS_MOBILE_BROWSER_1_SUB240X320".gsub(/\a/, '\\')
 end
   def max_image_width
   228

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_da8_ver1'
 module Mobiles
  module Repository
-   class AmoiDa8Ver1Sub10 < AmoiDa8Ver1
+   class Amoi_da8_ver1_sub10 < Amoi_da8_ver1
 def self.user_agent
- "Amoi-DA8/1.0"
+ "Amoi-DA8/1.0".gsub(/\a/, '\\')
 end
   
 end

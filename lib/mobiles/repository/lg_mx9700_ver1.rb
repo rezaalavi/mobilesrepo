@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LgMx9700Ver1 < GenericXhtml
+   class Lg_mx9700_ver1 < Generic_xhtml
 def self.user_agent
- "LGE-MX9700_VEZ/1.0 Mozilla/4.1 (compatible; MSIE 6.0; ) 240X400"
+ "LGE-MX9700_VEZ/1.0 Mozilla/4.1 (compatible; MSIE 6.0; ) 240X400".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

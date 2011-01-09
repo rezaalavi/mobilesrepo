@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class InfosonicsVerykoolI250Ver1 < GenericXhtml
+   class Infosonics_verykool_i250_ver1 < Generic_xhtml
 def self.user_agent
- "VeryKool-i250"
+ "VeryKool-i250".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

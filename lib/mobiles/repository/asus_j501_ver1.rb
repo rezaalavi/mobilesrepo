@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class AsusJ501Ver1 < GenericXhtml
+   class Asus_j501_ver1 < Generic_xhtml
 def self.user_agent
- "ASUS-J501/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "ASUS-J501/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprofile.asus.com/uaprof/ASUS-J501_UAProf.xml"

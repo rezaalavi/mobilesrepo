@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g5300_ver1'
 module Mobiles
  module Repository
-   class LgG5300Ver1Sub410 < LgG5300Ver1
+   class Lg_g5300_ver1_sub410 < Lg_g5300_ver1
 def self.user_agent
- "LG-G5300 AU/4.10"
+ "LG-G5300 AU/4.10".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

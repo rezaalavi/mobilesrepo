@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class HtcStarTrekVer1 < GenericMsWinmo5
+   class Htc_star_trek_ver1 < Generic_ms_winmo5
 def self.user_agent
- "NON_UNIQUE_HTC_STAR_TREK"
+ "NON_UNIQUE_HTC_STAR_TREK".gsub(/\a/, '\\')
 end
   def pointing_method
   ""

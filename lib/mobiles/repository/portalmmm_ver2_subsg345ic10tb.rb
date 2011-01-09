@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_sg345i_ver1'
 module Mobiles
  module Repository
-   class PortalmmmVer2Subsg345ic10tb < SagemSg345iVer1
+   class Portalmmm_ver2_subsg345ic10tb < Sagem_sg345i_ver1
 def self.user_agent
- "portalmmm/2.0 SG345i(c10;TB)"
+ "portalmmm/2.0 SG345i(c10;TB)".gsub(/\a/, '\\')
 end
   def max_deck_size
   10240

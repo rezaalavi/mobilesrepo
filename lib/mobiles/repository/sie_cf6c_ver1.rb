@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_cf62_ver1'
 module Mobiles
  module Repository
-   class SieCf6cVer1 < SieCf62Ver1
+   class Sie_cf6c_ver1 < Sie_cf62_ver1
 def self.user_agent
- "SIE-CF6C"
+ "SIE-CF6C".gsub(/\a/, '\\')
 end
   def model_name
   "CF6C"

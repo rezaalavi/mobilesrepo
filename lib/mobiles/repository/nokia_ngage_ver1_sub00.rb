@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_ngage_ver1'
 module Mobiles
  module Repository
-   class NokiaNgageVer1Sub00 < NokiaNgageVer1
+   class Nokia_ngage_ver1_sub00 < Nokia_ngage_ver1
 def self.user_agent
- "NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "NokiaN-Gage/1.0 SymbianOS/6.1 Series60/1.2Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

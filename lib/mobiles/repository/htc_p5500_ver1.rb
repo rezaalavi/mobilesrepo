@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_nike_ver1'
 module Mobiles
  module Repository
-   class HtcP5500Ver1 < HtcNikeVer1
+   class Htc_p5500_ver1 < Htc_nike_ver1
 def self.user_agent
- "HTC-P5500"
+ "HTC-P5500".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.6

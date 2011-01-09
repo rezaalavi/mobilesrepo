@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n73_ver1_sub5'
 module Mobiles
  module Repository
-   class NokiaN73Ver1Sub520628003 < NokiaN73Ver1Sub5
+   class Nokia_n73_ver1_sub5_20628003 < Nokia_n73_ver1_sub5
 def self.user_agent
- "NokiaN73-5/2.0628.0.0.3 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaN73-5/2.0628.0.0.3 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds.nokia.com/uaprof/NN73-5r100.xml"

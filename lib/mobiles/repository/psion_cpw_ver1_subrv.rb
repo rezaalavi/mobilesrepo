@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class PsionCpwVer1Subrv < Generic
+   class Psion_cpw_ver1_subrv < Generic
 def self.user_agent
- "Psion Cpw/1.00f(RV) War/1.00f"
+ "Psion Cpw/1.00f(RV) War/1.00f".gsub(/\a/, '\\')
 end
   
 end

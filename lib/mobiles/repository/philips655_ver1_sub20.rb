@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips655_ver1'
 module Mobiles
  module Repository
-   class Philips655Ver1Sub20 < Philips655Ver1
+   class Philips655_ver1_sub20 < Philips655_ver1
 def self.user_agent
- "PHILIPS655 ObigoInternetBrowser/2.0"
+ "PHILIPS655 ObigoInternetBrowser/2.0".gsub(/\a/, '\\')
 end
   
 end

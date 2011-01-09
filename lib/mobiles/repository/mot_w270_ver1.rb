@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class MotW270Ver1 < OpwvV62Generic
+   class Mot_w270_ver1 < Opwv_v62_generic
 def self.user_agent
- "MOT-W270/0.0.36 UP.Browser/6.3.0.6.c.21 (GUI) MMP/2.0"
+ "MOT-W270/0.0.36 UP.Browser/6.3.0.6.c.21 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.3

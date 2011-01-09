@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic'
 module Mobiles
  module Repository
-   class SamsungSghx530Ver1 < NokiaGeneric
+   class Samsung_sghx530_ver1 < Nokia_generic
 def self.user_agent
- "SEC-SGHX530/1.0"
+ "SEC-SGHX530/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   "3.0.1"

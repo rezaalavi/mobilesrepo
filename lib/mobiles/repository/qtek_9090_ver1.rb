@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_blueangel_ver1'
 module Mobiles
  module Repository
-   class Qtek9090Ver1 < HtcBlueangelVer1
+   class Qtek_9090_ver1 < Htc_blueangel_ver1
 def self.user_agent
- "Qtek9090; Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "Qtek9090; Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def model_name
   9090

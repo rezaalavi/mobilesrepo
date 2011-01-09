@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class MotQVer1 < GenericMsWinmo5
+   class Mot_q_ver1 < Generic_ms_winmo5
 def self.user_agent
- "Mozilla/4.0 Sprint:MotoQ (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)"
+ "Mozilla/4.0 Sprint:MotoQ (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

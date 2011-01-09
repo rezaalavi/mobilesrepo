@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_xda_orbit_ver1'
 module Mobiles
  module Repository
-   class O2XdaOrbitVer1Subie711 < O2XdaOrbitVer1
+   class O2_xda_orbit_ver1_subie711 < O2_xda_orbit_ver1
 def self.user_agent
- "Xda Orbit; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "Xda Orbit; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.11

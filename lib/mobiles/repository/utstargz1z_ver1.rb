@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/utstargz1s_ver1'
 module Mobiles
  module Repository
-   class Utstargz1zVer1 < Utstargz1sVer1
+   class Utstargz1z_ver1 < Utstargz1s_ver1
 def self.user_agent
- "utstargz1/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "utstargz1/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "G'zOne Type-Z"

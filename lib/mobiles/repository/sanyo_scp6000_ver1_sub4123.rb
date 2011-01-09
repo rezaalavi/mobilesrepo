@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_scp6000_ver1'
 module Mobiles
  module Repository
-   class SanyoScp6000Ver1Sub4123 < SanyoScp6000Ver1
+   class Sanyo_scp6000_ver1_sub4123 < Sanyo_scp6000_ver1
 def self.user_agent
- "Sanyo-SCP6000/1.1 UP.Browser/4.1.23a"
+ "Sanyo-SCP6000/1.1 UP.Browser/4.1.23a".gsub(/\a/, '\\')
 end
   
 end

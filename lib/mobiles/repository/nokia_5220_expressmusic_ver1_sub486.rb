@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5220_ver1'
 module Mobiles
  module Repository
-   class Nokia5220ExpressmusicVer1Sub486 < Nokia5220Ver1
+   class Nokia_5220_expressmusic_ver1_sub486 < Nokia_5220_ver1
 def self.user_agent
- "Nokia5220XpressMusic/2.0 (04.86) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia5220XpressMusic/2.0 (04.86) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

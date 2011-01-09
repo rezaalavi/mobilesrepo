@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_285_ver1'
 module Mobiles
  module Repository
-   class Lg285Ver1Sub11 < Lg285Ver1
+   class Lg_285_ver1_sub11 < Lg_285_ver1
 def self.user_agent
- "LG285/1.1 UP.Browser/6.2.3.9 (GUI) MMP/2.0"
+ "LG285/1.1 UP.Browser/6.2.3.9 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

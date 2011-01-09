@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/dopod_p800w_ver1'
 module Mobiles
  module Repository
-   class DopodP800wVer1Subua < DopodP800wVer1
+   class Dopod_p800w_ver1_subua < Dopod_p800w_ver1
 def self.user_agent
- "dopod P800/5.1.342/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "dopod P800/5.1.342/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   
 end

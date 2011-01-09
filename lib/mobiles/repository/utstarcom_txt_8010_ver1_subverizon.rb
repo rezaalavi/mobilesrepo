@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/utstarcom_txt_8010_ver1'
 module Mobiles
  module Repository
-   class UtstarcomTxt8010Ver1Subverizon < UtstarcomTxt8010Ver1
+   class Utstarcom_txt_8010_ver1_subverizon < Utstarcom_txt_8010_ver1
 def self.user_agent
- "utstart8010"
+ "utstart8010".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Verizon Wireless"

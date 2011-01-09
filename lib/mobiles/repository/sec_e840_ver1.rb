@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SecE840Ver1 < GenericNetfrontVer34
+   class Sec_e840_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "SEC-SGHE840/1.0 NetFront/3.4"
+ "SEC-SGHE840/1.0 NetFront/3.4".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-E840"

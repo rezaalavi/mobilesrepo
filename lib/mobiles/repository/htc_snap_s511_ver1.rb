@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class HtcSnapS511Ver1 < GenericMsWinmo5
+   class Htc_snap_s511_ver1 < Generic_ms_winmo5
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint S511"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Sprint S511".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

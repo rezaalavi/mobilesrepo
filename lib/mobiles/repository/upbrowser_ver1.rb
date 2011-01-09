@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class UpbrowserVer1 < UptextGeneric
+   class Upbrowser_ver1 < Uptext_generic
 def self.user_agent
- "UP.Browser/4.1.2a-XXXX"
+ "UP.Browser/4.1.2a-XXXX".gsub(/\a/, '\\')
 end
   
 end

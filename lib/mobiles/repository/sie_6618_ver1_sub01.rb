@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_6618_ver1'
 module Mobiles
  module Repository
-   class Sie6618Ver1Sub01 < Sie6618Ver1
+   class Sie_6618_ver1_sub01 < Sie_6618_ver1
 def self.user_agent
- "SIE-6618/01 UP.Browser/5.0.1.1.102 (GUI)"
+ "SIE-6618/01 UP.Browser/5.0.1.1.102 (GUI)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/qtek_9000_ver1'
 module Mobiles
  module Repository
-   class Qtek9000Ver1Sub40 < Qtek9000Ver1
+   class Qtek_9000_ver1_sub40 < Qtek_9000_ver1
 def self.user_agent
- "QTEK9000-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "QTEK9000-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class HuaweiC5589Ver1 < GenericNetfrontVer32
+   class Huawei_c5589_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "C5589/001.00 ACS-NetFront/3.2"
+ "C5589/001.00 ACS-NetFront/3.2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.uni-wise.com/uaprof/HW/HW-C5589.xml"

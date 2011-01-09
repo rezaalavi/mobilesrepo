@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/fly_mp600_ver1'
 module Mobiles
  module Repository
-   class FlyMp600Ver1Sub1 < FlyMp600Ver1
+   class Fly_mp600_ver1_sub1 < Fly_mp600_ver1
 def self.user_agent
- "FLY MP600 WAP Browser"
+ "FLY MP600 WAP Browser".gsub(/\a/, '\\')
 end
   
 end

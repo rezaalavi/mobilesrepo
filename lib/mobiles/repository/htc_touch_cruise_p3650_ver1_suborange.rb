@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_cruise_p3650_ver1'
 module Mobiles
  module Repository
-   class HtcTouchCruiseP3650Ver1Suborange < HtcTouchCruiseP3650Ver1
+   class Htc_touch_cruise_p3650_ver1_suborange < Htc_touch_cruise_p3650_ver1
 def self.user_agent
- "HTC-P3650-orange/PPC; 240x320; OpVer 28.129.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "HTC-P3650-orange/PPC; 240x320; OpVer 28.129.2.732 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def columns
   16

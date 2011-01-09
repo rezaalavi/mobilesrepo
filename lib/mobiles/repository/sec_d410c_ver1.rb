@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_d410_ver1'
 module Mobiles
  module Repository
-   class SecD410cVer1 < SecD410Ver1
+   class Sec_d410c_ver1 < Sec_d410_ver1
 def self.user_agent
- "SEC-SGHD410C"
+ "SEC-SGHD410C".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-D410C"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6_1'
 module Mobiles
  module Repository
-   class HtcTouchdiamond2Ver1 < GenericMsWinmo61
+   class Htc_touchdiamond2_ver1 < Generic_ms_winmo6_1
 def self.user_agent
- "HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)"
+ "HTC_Touch_Diamond2_T5353 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0)".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

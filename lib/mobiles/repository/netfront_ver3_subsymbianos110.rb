@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_1'
 module Mobiles
  module Repository
-   class NetfrontVer3Subsymbianos110 < GenericNetfrontVer31
+   class Netfront_ver3_subsymbianos110 < Generic_netfront_ver3_1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.0; SmartPhone; Symbian OS/1.1.0) NetFront/3.1"
+ "Mozilla/4.0 (compatible; MSIE 4.0; SmartPhone; Symbian OS/1.1.0) NetFront/3.1".gsub(/\a/, '\\')
 end
   def screensaver_gif?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class WellcomW3329Ver1 < GenericXhtml
+   class Wellcom_w3329_ver1 < Generic_xhtml
 def self.user_agent
- "WellcoM/W3329/176X220"
+ "WellcoM/W3329/176X220".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

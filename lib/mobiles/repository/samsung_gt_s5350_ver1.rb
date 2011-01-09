@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class SamsungGtS5350Ver1 < GenericNetfrontVer35
+   class Samsung_gt_s5350_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "SAMSUNG-GT-S5350/S5350DDJA3 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N"
+ "SAMSUNG-GT-S5350/S5350DDJA3 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-N".gsub(/\a/, '\\')
 end
   def model_name
   "GT S5350"

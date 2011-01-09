@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t715_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT715aVer1 < SonyericssonT715Ver1
+   class Sonyericsson_t715a_ver1 < Sonyericsson_t715_ver1
 def self.user_agent
- "SonyEricssonT715a/R1GA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4"
+ "SonyEricssonT715a/R1GA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4".gsub(/\a/, '\\')
 end
   def model_name
   "T715a"

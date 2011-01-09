@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ViboT588Ver1 < GenericXhtml
+   class Vibo_t588_ver1 < Generic_xhtml
 def self.user_agent
- "Vibo-T588/Obigo/Q7 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Vibo-T588/Obigo/Q7 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

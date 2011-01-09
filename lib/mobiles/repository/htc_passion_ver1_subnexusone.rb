@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_passion_ver1'
 module Mobiles
  module Repository
-   class HtcPassionVer1Subnexusone < HtcPassionVer1
+   class Htc_passion_ver1_subnexusone < Htc_passion_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD78) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 2.1; en-us; Nexus One Build/ERD78) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def model_name
   "Nexus One"

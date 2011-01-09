@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_novarra_nweb_vision_5_2'
 module Mobiles
  module Repository
-   class BrowserNovarraNwebVision8 < BrowserNovarraNwebVision52
+   class Browser_novarra_nweb_vision_8 < Browser_novarra_nweb_vision_5_2
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_NOVARRA_NWEB_VISION_8"
+ "DO_NOT_MATCH_BROWSER_NOVARRA_NWEB_VISION_8".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   8.0

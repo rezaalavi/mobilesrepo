@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bird_s710_ver1'
 module Mobiles
  module Repository
-   class BirdS710Ver1Subbleu < BirdS710Ver1
+   class Bird_s710_ver1_subbleu < Bird_s710_ver1
 def self.user_agent
- "BIRD S710_BLEU/1.00 Nucleus RTOS/V1.11.19 MTK6223/07A Release/07.28.2007 Browser/Teleca"
+ "BIRD S710_BLEU/1.00 Nucleus RTOS/V1.11.19 MTK6223/07A Release/07.28.2007 Browser/Teleca".gsub(/\a/, '\\')
 end
   
 end

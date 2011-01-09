@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_x701_ver1'
 module Mobiles
  module Repository
-   class PanasonicX701Ver1Sub10 < PanasonicX701Ver1
+   class Panasonic_x701_ver1_sub10 < Panasonic_x701_ver1
 def self.user_agent
- "Panasonic-X701/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "Panasonic-X701/1.0 SymbianOS/7.0 Series60/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

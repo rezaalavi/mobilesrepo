@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_xda_atom_ver1'
 module Mobiles
  module Repository
-   class O2XdaAtomVer1Subie77 < O2XdaAtomVer1
+   class O2_xda_atom_ver1_subie77 < O2_xda_atom_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) O2 Xda Atom"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) O2 Xda Atom".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.7

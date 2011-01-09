@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class BenqElc1Ver1 < OpwvV7Generic
+   class Benq_elc1_ver1 < Opwv_v7_generic
 def self.user_agent
- "SIE-ELC1/36 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SIE-ELC1/36 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.1

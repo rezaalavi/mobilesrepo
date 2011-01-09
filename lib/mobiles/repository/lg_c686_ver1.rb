@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class LgC686Ver1 < UptextGeneric
+   class Lg_c686_ver1 < Uptext_generic
 def self.user_agent
- "LG-C686"
+ "LG-C686".gsub(/\a/, '\\')
 end
   def model_name
   "C686"

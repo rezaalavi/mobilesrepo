@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/winwap_ver3'
 module Mobiles
  module Repository
-   class WinwapVer3Sub32128 < WinwapVer3
+   class Winwap_ver3_sub32128 < Winwap_ver3
 def self.user_agent
- "WinWAP/3.2 (3.2.1.28; Win32)"
+ "WinWAP/3.2 (3.2.1.28; Win32)".gsub(/\a/, '\\')
 end
   
 end

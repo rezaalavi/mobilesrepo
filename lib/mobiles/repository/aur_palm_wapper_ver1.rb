@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class AurPalmWapperVer1 < Generic
+   class Aur_palm_wapper_ver1 < Generic
 def self.user_agent
- "AUR PALM WAPPER"
+ "AUR PALM WAPPER".gsub(/\a/, '\\')
 end
   
 end

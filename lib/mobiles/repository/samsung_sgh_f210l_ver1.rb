@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_f210_ver1_sub1'
 module Mobiles
  module Repository
-   class SamsungSghF210lVer1 < SamsungSghF210Ver1Sub1
+   class Samsung_sgh_f210l_ver1 < Samsung_sgh_f210_ver1_sub1
 def self.user_agent
- "SEC-SGHF210L/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHF210L/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/f210_10.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_w220_ver1'
 module Mobiles
  module Repository
-   class MotW220Ver1Sub8202007 < MotW220Ver1
+   class Mot_w220_ver1_sub8202007 < Mot_w220_ver1
 def self.user_agent
- "MOT-W220/1.0 Release/20.08.2007 Browser/CMCS1.0 Software/1.360"
+ "MOT-W220/1.0 Release/20.08.2007 Browser/CMCS1.0 Software/1.360".gsub(/\a/, '\\')
 end
   def oma_support?
   false

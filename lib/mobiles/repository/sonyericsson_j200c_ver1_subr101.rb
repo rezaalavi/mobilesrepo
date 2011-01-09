@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_j200c_ver1'
 module Mobiles
  module Repository
-   class SonyericssonJ200cVer1Subr101 < SonyericssonJ200cVer1
+   class Sonyericsson_j200c_ver1_subr101 < Sonyericsson_j200c_ver1
 def self.user_agent
- "SonyEricssonJ200c/R101"
+ "SonyEricssonJ200c/R101".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

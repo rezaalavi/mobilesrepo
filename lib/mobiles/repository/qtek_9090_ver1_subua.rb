@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/qtek_9090_ver1'
 module Mobiles
  module Repository
-   class Qtek9090Ver1Subua < Qtek9090Ver1
+   class Qtek_9090_ver1_subua < Qtek_9090_ver1
 def self.user_agent
- "Qtek9090"
+ "Qtek9090".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

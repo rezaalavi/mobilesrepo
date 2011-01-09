@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_x656_ver1'
 module Mobiles
  module Repository
-   class SamsungSghX656Ver1Sub1020 < SamsungSghX656Ver1
+   class Samsung_sgh_x656_ver1_sub1020 < Samsung_sgh_x656_ver1
 def self.user_agent
- "SAMSUNG-SGH-X656/1.0 Profile/MIDP-2.0"
+ "SAMSUNG-SGH-X656/1.0 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_z400_ver1'
 module Mobiles
  module Repository
-   class SamsungSphZ400Ver1Subsprint < SamsungSphZ400Ver1
+   class Samsung_sph_z400_ver1_subsprint < Samsung_sph_z400_ver1
 def self.user_agent
- "Samsung-SPHZ400 AU-MIC-Z400/2.0 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Samsung-SPHZ400 AU-MIC-Z400/2.0 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Samsung/SPH-Z400/BI22.rdf"

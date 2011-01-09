@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_s500i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonS500cVer1 < SonyericssonS500iVer1
+   class Sonyericsson_s500c_ver1 < Sonyericsson_s500i_ver1
 def self.user_agent
- "SonyEricssonS500c/R6BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonS500c/R6BC Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/S500cR201.xml"

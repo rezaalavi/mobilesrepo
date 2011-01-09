@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kyocera_7135_ver1'
 module Mobiles
  module Repository
-   class Kyocera7135Ver1Sub1038 < Kyocera7135Ver1
+   class Kyocera_7135_ver1_sub1038 < Kyocera_7135_ver1
 def self.user_agent
- "QC-7135/1.0.38 UP.Browser/4.1.25i"
+ "QC-7135/1.0.38 UP.Browser/4.1.25i".gsub(/\a/, '\\')
 end
   
 end

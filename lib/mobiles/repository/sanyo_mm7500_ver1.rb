@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_1'
 module Mobiles
  module Repository
-   class SanyoMm7500Ver1 < GenericNetfrontVer31
+   class Sanyo_mm7500_ver1 < Generic_netfront_ver3_1
 def self.user_agent
- "Sanyo MM-7500"
+ "Sanyo MM-7500".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Sanyo/SCP7500/1022SP.rdf"

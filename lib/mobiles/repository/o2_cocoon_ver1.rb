@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_x2i_ver1'
 module Mobiles
  module Repository
-   class O2CocoonVer1 < O2X2iVer1
+   class O2_cocoon_ver1 < O2_x2i_ver1
 def self.user_agent
- "COCOON"
+ "COCOON".gsub(/\a/, '\\')
 end
   def model_name
   "COCOON"

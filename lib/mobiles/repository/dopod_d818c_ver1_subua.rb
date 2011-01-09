@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/dopod_d818c_ver1'
 module Mobiles
  module Repository
-   class DopodD818cVer1Subua < DopodD818cVer1
+   class Dopod_d818c_ver1_subua < Dopod_d818c_ver1
 def self.user_agent
- "DopodD818c"
+ "DopodD818c".gsub(/\a/, '\\')
 end
   def columns
   16

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_u900_ver1'
 module Mobiles
  module Repository
-   class SamsungU900Ver1Subbvhd3 < SamsungU900Ver1
+   class Samsung_u900_ver1_subbvhd3 < Samsung_u900_ver1
 def self.user_agent
- "SAMSUNG-SGH-U900/BVHD3 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-U900/BVHD3 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/U900UAProf3G.xml"

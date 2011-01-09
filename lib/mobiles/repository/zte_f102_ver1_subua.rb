@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_f102_ver1'
 module Mobiles
  module Repository
-   class ZteF102Ver1Subua < ZteF102Ver1
+   class Zte_f102_ver1_subua < Zte_f102_ver1
 def self.user_agent
- "ZTE-F102/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "ZTE-F102/1.0 ACS-NF/3.4 QTV5.1 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

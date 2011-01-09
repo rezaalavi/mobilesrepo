@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_u8130_ver1'
 module Mobiles
  module Repository
-   class LgU8130Ver1Subv13g < LgU8130Ver1
+   class Lg_u8130_ver1_subv13g < Lg_u8130_ver1
 def self.user_agent
- "LG/U8130/v13G"
+ "LG/U8130/v13G".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

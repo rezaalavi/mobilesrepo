@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_x427m_ver1'
 module Mobiles
  module Repository
-   class SecX427mVer1Subm < SecX427mVer1
+   class Sec_x427m_ver1_subm < Sec_x427m_ver1
 def self.user_agent
- "SEC-SGHX427M"
+ "SEC-SGHX427M".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia"

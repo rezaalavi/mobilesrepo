@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tsm_5_ver1'
 module Mobiles
  module Repository
-   class Tsm5Ver1Sub26 < Tsm5Ver1
+   class Tsm_5_ver1_sub26 < Tsm_5_ver1
 def self.user_agent
- "TSM-5/2.6 UP.Browser/5.0.2.2 (GUI)"
+ "TSM-5/2.6 UP.Browser/5.0.2.2 (GUI)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v6_generic'
 module Mobiles
  module Repository
-   class OpwvV61Generic < OpwvV6Generic
+   class Opwv_v61_generic < Opwv_v6_generic
 def self.user_agent
- "DO_NOT_MATCH_UP.Browser/6.1"
+ "DO_NOT_MATCH_UP.Browser/6.1".gsub(/\a/, '\\')
 end
   def oma_support?
   true

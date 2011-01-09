@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e350_ver1'
 module Mobiles
  module Repository
-   class SamsungE356Ver1 < SamsungE350Ver1
+   class Samsung_e356_ver1 < Samsung_e350_ver1
 def self.user_agent
- "SAMSUNG-SGH-E356"
+ "SAMSUNG-SGH-E356".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-E356.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_elf_ver1'
 module Mobiles
  module Repository
-   class HtcP3450Ver1 < HtcElfVer1
+   class Htc_p3450_ver1 < Htc_elf_ver1
 def self.user_agent
- "HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kyocera_3225_ver1'
 module Mobiles
  module Repository
-   class Kyocera3225Ver1Sub4126l < Kyocera3225Ver1
+   class Kyocera_3225_ver1_sub4126l < Kyocera_3225_ver1
 def self.user_agent
- "QC-3225/1.0.35 UP.Browser/4.1.26l"
+ "QC-3225/1.0.35 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

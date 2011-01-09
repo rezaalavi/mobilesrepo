@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class PanasonicGd75Ver1 < UptextGeneric
+   class Panasonic_gd75_ver1 < Uptext_generic
 def self.user_agent
- "Panasonic-GAD75"
+ "Panasonic-GAD75".gsub(/\a/, '\\')
 end
   def model_name
   "GD75"

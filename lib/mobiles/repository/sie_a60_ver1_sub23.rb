@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_a60_ver1'
 module Mobiles
  module Repository
-   class SieA60Ver1Sub23 < SieA60Ver1
+   class Sie_a60_ver1_sub23 < Sie_a60_ver1
 def self.user_agent
- "SIE-A60/23 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "SIE-A60/23 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

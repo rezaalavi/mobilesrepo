@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kp130_ver1'
 module Mobiles
  module Repository
-   class LgKp130Ver1Subua < LgKp130Ver1
+   class Lg_kp130_ver1_subua < Lg_kp130_ver1
 def self.user_agent
- "LG-KP130 Obigo/WAP2.0"
+ "LG-KP130 Obigo/WAP2.0".gsub(/\a/, '\\')
 end
   
 end

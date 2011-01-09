@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class MitacMioA701Ver1 < GenericMsWinmo5
+   class Mitac_mio_a701_ver1 < Generic_ms_winmo5
 def self.user_agent
- "Mio A701/4.0 (SmartPhone; Windows Mobile 5.0/0.9.1) Opera/9.1"
+ "Mio A701/4.0 (SmartPhone; Windows Mobile 5.0/0.9.1) Opera/9.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.mio-tech.com.tw/download/smartphone/MioA701.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n800_ver1'
 module Mobiles
  module Repository
-   class NokiaN810Ver1 < NokiaN800Ver1
+   class Nokia_n810_ver1 < Nokia_n800_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux armv6l; U) Opera 8.5 [en_US] Tablet browser 0.0.14 RX-34_2007SE_4.2007.26-8"
+ "Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux armv6l; U) Opera 8.5 [en_US] Tablet browser 0.0.14 RX-34_2007SE_4.2007.26-8".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_polaris_6'
 module Mobiles
  module Repository
-   class SamsungSphM240Ver1 < GenericPolaris6
+   class Samsung_sph_m240_ver1 < Generic_polaris_6
 def self.user_agent
- "Mozilla/4.0 (BREW 3.1.5; U; en-us; Samsung; SPH_M240; POLARIS/6.1/WAP) MMP/2.0 Configuration/CLDC-1.1"
+ "Mozilla/4.0 (BREW 3.1.5; U; en-us; Samsung; SPH_M240; POLARIS/6.1/WAP) MMP/2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Samsung/SPH-M240/CG21.rdf"

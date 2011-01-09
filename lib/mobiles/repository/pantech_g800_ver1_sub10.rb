@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_g800_ver1'
 module Mobiles
  module Repository
-   class PantechG800Ver1Sub10 < PantechG800Ver1
+   class Pantech_g800_ver1_sub10 < Pantech_g800_ver1
 def self.user_agent
- "PT-G800 CLDC/CLDC-1.0 MIDP/MIDP-1.0"
+ "PT-G800 CLDC/CLDC-1.0 MIDP/MIDP-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

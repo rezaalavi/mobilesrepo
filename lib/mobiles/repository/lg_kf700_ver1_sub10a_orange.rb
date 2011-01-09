@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kf700_ver1_sub10a'
 module Mobiles
  module Repository
-   class LgKf700Ver1Sub10aOrange < LgKf700Ver1Sub10a
+   class Lg_kf700_ver1_sub10a_orange < Lg_kf700_ver1_sub10a
 def self.user_agent
- "LG-KF700-Orange/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "LG-KF700-Orange/v10a Browser/Obigo-Q05A/3.12 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def j2me_midp_2_0?
   true

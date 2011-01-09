@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_3'
 module Mobiles
  module Repository
-   class NetfrontVer33 < GenericNetfrontVer33
+   class Netfront_ver3_3 < Generic_netfront_ver3_3
 def self.user_agent
- "DO_NOT_MATCH_REMOVE_NETFRONT_3_3"
+ "DO_NOT_MATCH_REMOVE_NETFRONT_3_3".gsub(/\a/, '\\')
 end
   def max_image_width
   120

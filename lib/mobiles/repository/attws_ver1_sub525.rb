@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic'
 module Mobiles
  module Repository
-   class AttwsVer1Sub525 < DocomoGeneric
+   class Attws_ver1_sub525 < Docomo_generic
 def self.user_agent
- "ATTWS/2.0 N525i-10(c100;TB)"
+ "ATTWS/2.0 N525i-10(c100;TB)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.nechdm.com/profiles/525/a525.rdf"

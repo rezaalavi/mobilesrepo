@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mg210_ver1'
 module Mobiles
  module Repository
-   class LgMg210Ver1Sub10 < LgMg210Ver1
+   class Lg_mg210_ver1_sub10 < Lg_mg210_ver1
 def self.user_agent
- "LG-MG210 UP.Browser/6.2.3 (GUI) MMP/1.0"
+ "LG-MG210 UP.Browser/6.2.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-MG210.xml"

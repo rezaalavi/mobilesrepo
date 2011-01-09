@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SamsungSchU960Ver1 < GenericXhtml
+   class Samsung_sch_u960_ver1 < Generic_xhtml
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; BREW 3.1.5; en )/800x480 Samsung SCH-U960"
+ "Mozilla/4.0 (compatible; MSIE 6.0; BREW 3.1.5; en )/800x480 Samsung SCH-U960".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

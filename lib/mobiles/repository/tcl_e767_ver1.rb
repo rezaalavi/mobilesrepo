@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_tcl'
 module Mobiles
  module Repository
-   class TclE767Ver1 < GenericTcl
+   class Tcl_e767_ver1 < Generic_tcl
 def self.user_agent
- "TCL-E767"
+ "TCL-E767".gsub(/\a/, '\\')
 end
   def model_name
   "e767"

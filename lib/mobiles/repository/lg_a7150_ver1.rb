@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic'
 module Mobiles
  module Repository
-   class LgA7150Ver1 < LgGeneric
+   class Lg_a7150_ver1 < Lg_generic
 def self.user_agent
- "LG-A7150"
+ "LG-A7150".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

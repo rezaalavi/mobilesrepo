@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class AlcatelOtS692Ver1 < GenericXhtml
+   class Alcatel_ot_s692_ver1 < Generic_xhtml
 def self.user_agent
- "OT-S692/1.0 MTK/W07.12 Release/06.01.2008 Browser/Teleca-1.2"
+ "OT-S692/1.0 MTK/W07.12 Release/06.01.2008 Browser/Teleca-1.2".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z150_ver1'
 module Mobiles
  module Repository
-   class SamsungZ150Ver1Sub1011 < SamsungZ150Ver1
+   class Samsung_z150_ver1_sub1011 < Samsung_z150_ver1
 def self.user_agent
- "SAMSUNG-SGH-Z150/1.0 SHP/VPP/R5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-Z150/1.0 SHP/VPP/R5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

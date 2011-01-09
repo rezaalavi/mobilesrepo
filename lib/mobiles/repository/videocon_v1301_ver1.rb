@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class VideoconV1301Ver1 < GenericXhtml
+   class Videocon_v1301_ver1 < Generic_xhtml
 def self.user_agent
- "V1301"
+ "V1301".gsub(/\a/, '\\')
 end
   def model_name
   "V1301"

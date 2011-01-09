@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_c3300_ver1'
 module Mobiles
  module Repository
-   class SamsungGtC3300Ver1Sub1 < SamsungGtC3300Ver1
+   class Samsung_gt_c3300_ver1_sub1 < Samsung_gt_c3300_ver1
 def self.user_agent
- "SAMSUNG-GT-C3300K/1.0"
+ "SAMSUNG-GT-C3300K/1.0".gsub(/\a/, '\\')
 end
   
 end

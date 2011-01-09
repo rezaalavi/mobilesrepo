@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n79_ver1'
 module Mobiles
  module Repository
-   class NokiaN79Ver1110046 < NokiaN79Ver1
+   class Nokia_n79_ver1_110046 < Nokia_n79_ver1
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-1/10.046; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.3; U; Series60/3.2 NokiaN79-1/10.046; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def j2me_cldc_1_1?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class O2XdaGraphiteVer1 < GenericMsWinmo5
+   class O2_xda_graphite_ver1 < Generic_ms_winmo5
 def self.user_agent
- "O2 Xda Graphite"
+ "O2 Xda Graphite".gsub(/\a/, '\\')
 end
   def pointing_method
   ""

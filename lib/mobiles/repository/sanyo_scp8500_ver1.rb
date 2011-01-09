@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_1'
 module Mobiles
  module Repository
-   class SanyoScp8500Ver1 < GenericNetfrontVer31
+   class Sanyo_scp8500_ver1 < Generic_netfront_ver3_1
 def self.user_agent
- "Mozilla/4.0 (MobilePhone SCP-8500/US/1.0) NetFront/3.3 MMP/2.0"
+ "Mozilla/4.0 (MobilePhone SCP-8500/US/1.0) NetFront/3.3 MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.3

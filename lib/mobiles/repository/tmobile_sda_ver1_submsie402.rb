@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_sda_ver1'
 module Mobiles
  module Repository
-   class TmobileSdaVer1Submsie402 < TmobileSdaVer1
+   class Tmobile_sda_ver1_submsie402 < Tmobile_sda_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.02; Windows CE; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)"
+ "Mozilla/4.0 (compatible; MSIE 4.02; Windows CE; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

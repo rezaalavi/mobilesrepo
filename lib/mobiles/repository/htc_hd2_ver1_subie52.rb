@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_hd2_ver1'
 module Mobiles
  module Repository
-   class HtcHd2Ver1Subie52 < HtcHd2Ver1
+   class Htc_hd2_ver1_subie52 < Htc_hd2_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0)"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; Windows Phone 6.5 HTC_HD2/1.0)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "IEMobile"

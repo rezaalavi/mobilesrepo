@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_diamond_ver1'
 module Mobiles
  module Repository
-   class HtcDiamondVer1Moz40 < HtcDiamondVer1
+   class Htc_diamond_ver1_moz40 < Htc_diamond_ver1
 def self.user_agent
- "HTC_Diamond Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "HTC_Diamond Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   
 end

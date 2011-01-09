@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/qc_5135_ver1'
 module Mobiles
  module Repository
-   class Qc5135Ver1Sub41221 < Qc5135Ver1
+   class Qc_5135_ver1_sub41221 < Qc_5135_ver1
 def self.user_agent
- "QC-5135/1.0.17 UP.Browser/4.1.22b1"
+ "QC-5135/1.0.17 UP.Browser/4.1.22b1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6680_ver1'
 module Mobiles
  module Repository
-   class Nokia6680Ver1Sub7023119 < Nokia6680Ver1
+   class Nokia_6680_ver1_sub7023119 < Nokia_6680_ver1
 def self.user_agent
- "nokia6680 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO"
+ "nokia6680 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO".gsub(/\a/, '\\')
 end
   def html_wi_oma_xhtmlmp_1_0?
   true

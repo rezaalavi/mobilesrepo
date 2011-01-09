@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mini_version4'
 module Mobiles
  module Repository
-   class PantechP2020Ver1 < GenericOperaMiniVersion4
+   class Pantech_p2020_ver1 < Generic_opera_mini_version4
 def self.user_agent
- "PantechP2020/JIUS05172010R; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; en-US) Opera 9.50"
+ "PantechP2020/JIUS05172010R; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19039; U; en-US) Opera 9.50".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

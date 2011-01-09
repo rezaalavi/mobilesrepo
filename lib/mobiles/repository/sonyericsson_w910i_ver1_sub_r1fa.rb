@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w910i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW910iVer1SubR1fa < SonyericssonW910iVer1
+   class Sonyericsson_w910i_ver1_sub_r1fa < Sonyericsson_w910i_ver1
 def self.user_agent
- "SonyEricssonW910i/R1FA"
+ "SonyEricssonW910i/R1FA".gsub(/\a/, '\\')
 end
   
 end

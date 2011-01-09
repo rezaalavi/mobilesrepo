@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_treo700p_ver1'
 module Mobiles
  module Repository
-   class PalmTreo700pVer1Subhsprd052 < PalmTreo700pVer1
+   class Palm_treo700p_ver1_subhsprd052 < Palm_treo700p_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/hspr-D052; Blazer/4.5) 16;320x320"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/hspr-D052; Blazer/4.5) 16;320x320".gsub(/\a/, '\\')
 end
   def uaprof
   "http://downloads.palm.com/profiles/Blazer450.rdf"

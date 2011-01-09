@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5800d_ver1_sub1100006'
 module Mobiles
  module Repository
-   class Nokia5800dVer1Sub2000121 < Nokia5800dVer1Sub1100006
+   class Nokia_5800d_ver1_sub200012_1 < Nokia_5800d_ver1_sub1100006
 def self.user_agent
- "Nokia5800d-1/20.0.012; Series60/5.0 Profile MIDP2.1 Configuration/CLDC-1.1"
+ "Nokia5800d-1/20.0.012; Series60/5.0 Profile MIDP2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

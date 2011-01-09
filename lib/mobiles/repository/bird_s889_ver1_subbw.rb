@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bird_s889_ver1'
 module Mobiles
  module Repository
-   class BirdS889Ver1Subbw < BirdS889Ver1
+   class Bird_s889_ver1_subbw < Bird_s889_ver1
 def self.user_agent
- "Bird.S889/JL3,BW/WAP2.0 UP.Browser/6.2.2.5.d.3 (GUI) MMP/1.0"
+ "Bird.S889/JL3,BW/WAP2.0 UP.Browser/6.2.2.5.d.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

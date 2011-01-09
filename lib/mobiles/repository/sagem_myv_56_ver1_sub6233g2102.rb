@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myv_56_ver1'
 module Mobiles
  module Repository
-   class SagemMyv56Ver1Sub6233g2102 < SagemMyv56Ver1
+   class Sagem_myv_56_ver1_sub6233g2102 < Sagem_myv_56_ver1
 def self.user_agent
- "SAGEM-myV-56/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.g.2.102 (GUI) MMP/2.0"
+ "SAGEM-myV-56/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.g.2.102 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

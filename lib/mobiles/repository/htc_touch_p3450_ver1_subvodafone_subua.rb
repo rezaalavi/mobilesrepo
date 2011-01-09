@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_p3450_ver1_subvodafone'
 module Mobiles
  module Repository
-   class HtcTouchP3450Ver1SubvodafoneSubua < HtcTouchP3450Ver1Subvodafone
+   class Htc_touch_p3450_ver1_subvodafone_subua < Htc_touch_p3450_ver1_subvodafone
 def self.user_agent
- "Vodafone/1.0/HTC_Elf/1.15.162.1"
+ "Vodafone/1.0/HTC_Elf/1.15.162.1".gsub(/\a/, '\\')
 end
   def model_name
   "P3450"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class EzzeTouch7Ver1 < GenericXhtml
+   class Ezze_touch7_ver1 < Generic_xhtml
 def self.user_agent
- "Touch7/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "Touch7/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/Touch7.xml"

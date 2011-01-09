@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_d730_ver1'
 module Mobiles
  module Repository
-   class SamsungSghD730Ver1 < SecD730Ver1
+   class Samsung_sgh_d730_ver1 < Sec_d730_ver1
 def self.user_agent
- "SAMSUNG-SGH-D730"
+ "SAMSUNG-SGH-D730".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

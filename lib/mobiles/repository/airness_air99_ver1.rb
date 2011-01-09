@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class AirnessAir99Ver1 < Generic
+   class Airness_air99_ver1 < Generic
 def self.user_agent
- "AIRNESS-AIR99"
+ "AIRNESS-AIR99".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

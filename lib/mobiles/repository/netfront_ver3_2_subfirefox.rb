@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class NetfrontVer32Subfirefox < GenericNetfrontVer32
+   class Netfront_ver3_2_subfirefox < Generic_netfront_ver3_2
 def self.user_agent
- "FireFOX 2008 (SmartPhone; Symbian OS-Series60/1.03) FireFOX 2008"
+ "FireFOX 2008 (SmartPhone; Symbian OS-Series60/1.03) FireFOX 2008".gsub(/\a/, '\\')
 end
   def device_os
   "Symbian OS"

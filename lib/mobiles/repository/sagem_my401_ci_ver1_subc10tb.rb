@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my401_ci_ver1'
 module Mobiles
  module Repository
-   class SagemMy401CiVer1Subc10tb < SagemMy401CiVer1
+   class Sagem_my401_ci_ver1_subc10tb < Sagem_my401_ci_ver1
 def self.user_agent
- "portalmmm/2.0 my401Ci(c10;TB)"
+ "portalmmm/2.0 my401Ci(c10;TB)".gsub(/\a/, '\\')
 end
   
 end

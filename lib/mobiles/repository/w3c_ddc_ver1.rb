@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class W3cDdcVer1 < GenericXhtml
+   class W3c_ddc_ver1 < Generic_xhtml
 def self.user_agent
- "W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)"
+ "W3C-mobileOK/DDC-1.0 (see http://www.w3.org/2006/07/mobileok-ddc)".gsub(/\a/, '\\')
 end
   def device_claims_web_support?
   false

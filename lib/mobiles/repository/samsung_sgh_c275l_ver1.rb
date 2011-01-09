@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SamsungSghC275lVer1 < Generic
+   class Samsung_sgh_c275l_ver1 < Generic
 def self.user_agent
- "SEC-SGHC275L/1.0"
+ "SEC-SGHC275L/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia"

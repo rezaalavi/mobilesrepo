@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_series40_opwv62_generic'
 module Mobiles
  module Repository
-   class Nokia2228Ver1 < NokiaSeries40Opwv62Generic
+   class Nokia_2228_ver1 < Nokia_series40_opwv62_generic
 def self.user_agent
- "Nokia-2228 UP.Browser/6.3.0.8.c.1.1041 (GUI) MMP/2.0"
+ "Nokia-2228 UP.Browser/6.3.0.8.c.1.1041 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.3

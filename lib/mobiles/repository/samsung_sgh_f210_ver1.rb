@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SamsungSghF210Ver1 < GenericNetfrontVer34
+   class Samsung_sgh_f210_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "Vodafone/1.0/SamsungSGHF210/F210BAHB1 Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Vodafone/1.0/SamsungSGHF210/F210BAHB1 Browser/NF/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/f210_10.xml"

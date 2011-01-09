@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_m5000_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM5000Ver1Sub480640 < OrangeSpvM5000Ver1
+   class Orange_spv_m5000_ver1_sub480640 < Orange_spv_m5000_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 480x640; SPV M5000; OpVer 7.130.1.145)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 480x640; SPV M5000; OpVer 7.130.1.145)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/pu10-2.0.xml"

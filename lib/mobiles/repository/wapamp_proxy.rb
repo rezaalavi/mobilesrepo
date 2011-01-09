@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bloody_transcoder'
 module Mobiles
  module Repository
-   class WapampProxy < BloodyTranscoder
+   class Wapamp_proxy < Bloody_transcoder
 def self.user_agent
- "N73[ejatd29.wapamp.com]editby:m4ster_v4      /1.03) NetFront/3.2"
+ "N73[ejatd29.wapamp.com]editby:m4ster_v4      /1.03) NetFront/3.2".gsub(/\a/, '\\')
 end
   def model_name
   "Proxy"

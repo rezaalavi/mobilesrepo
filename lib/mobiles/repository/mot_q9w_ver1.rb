@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotQ9wVer1 < GenericXhtml
+   class Mot_q9w_ver1 < Generic_xhtml
 def self.user_agent
- "MOT-Q9W/01.11.22I Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320) Opera 8.65"
+ "MOT-Q9W/01.11.22I Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320) Opera 8.65".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_r810_ver1'
 module Mobiles
  module Repository
-   class SamsungR810Ver1Subnetfront35 < SamsungR810Ver1
+   class Samsung_r810_ver1_subnetfront35 < Samsung_r810_ver1
 def self.user_agent
- "sam-r810 NetFront/3.5 Mozilla/5.0 like Gecko/20060426"
+ "sam-r810 NetFront/3.5 Mozilla/5.0 like Gecko/20060426".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.5

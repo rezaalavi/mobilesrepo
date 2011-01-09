@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sony_generic'
 module Mobiles
  module Repository
-   class SonyCmdJ5Ver1 < SonyGeneric
+   class Sony_cmd_j5_ver1 < Sony_generic
 def self.user_agent
- "Mozilla/1.22 (compatible; MMEF20; Cellphone; Sony CMD-J5)"
+ "Mozilla/1.22 (compatible; MMEF20; Cellphone; Sony CMD-J5)".gsub(/\a/, '\\')
 end
   def model_name
   "CMD-J5"

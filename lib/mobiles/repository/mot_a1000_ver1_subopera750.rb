@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a1000_ver1'
 module Mobiles
  module Repository
-   class MotA1000Ver1Subopera750 < MotA1000Ver1
+   class Mot_a1000_ver1_subopera750 < Mot_a1000_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;696) Opera 7.50 [en]./MOT-A925./P243"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; Motorola A1000;696) Opera 7.50 [en]./MOT-A925./P243".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

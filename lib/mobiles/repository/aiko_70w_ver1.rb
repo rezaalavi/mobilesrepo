@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Aiko70wVer1 < GenericXhtml
+   class Aiko_70w_ver1 < Generic_xhtml
 def self.user_agent
- "AIKO 70W/WAP2.0"
+ "AIKO 70W/WAP2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://profile.aiko.com.br/aiko70w.xml"

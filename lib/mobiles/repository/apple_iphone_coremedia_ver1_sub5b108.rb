@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_iphone_coremedia_ver1'
 module Mobiles
  module Repository
-   class AppleIphoneCoremediaVer1Sub5b108 < AppleIphoneCoremediaVer1
+   class Apple_iphone_coremedia_ver1_sub5b108 < Apple_iphone_coremedia_ver1
 def self.user_agent
- "Apple iPhone OS v2.0.1 CoreMedia v1.0.0.5B108"
+ "Apple iPhone OS v2.0.1 CoreMedia v1.0.0.5B108".gsub(/\a/, '\\')
 end
   def device_os_version
   "2.0.1"

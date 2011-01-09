@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_x610_ver1'
 module Mobiles
  module Repository
-   class SecX610Ver1Sub10 < SecX610Ver1
+   class Sec_x610_ver1_sub10 < Sec_x610_ver1
 def self.user_agent
- "SEC-SGHX610/1.0"
+ "SEC-SGHX610/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

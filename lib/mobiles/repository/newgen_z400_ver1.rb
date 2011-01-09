@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class NewgenZ400Ver1 < Generic
+   class Newgen_z400_ver1 < Generic
 def self.user_agent
- "MERIDIAN-Z400"
+ "MERIDIAN-Z400".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

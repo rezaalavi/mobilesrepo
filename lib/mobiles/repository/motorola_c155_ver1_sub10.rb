@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/motorola_c155_ver1'
 module Mobiles
  module Repository
-   class MotorolaC155Ver1Sub10 < MotorolaC155Ver1
+   class Motorola_c155_ver1_sub10 < Motorola_c155_ver1
 def self.user_agent
- "Motorola-C155 UP.Browser/6.2.2.7 (GUI) MMP/1.0"
+ "Motorola-C155 UP.Browser/6.2.2.7 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

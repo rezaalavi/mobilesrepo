@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kyocera_s2410_ver1'
 module Mobiles
  module Repository
-   class KyoceraStreakVer1 < KyoceraS2410Ver1
+   class Kyocera_streak_ver1 < Kyocera_s2410_ver1
 def self.user_agent
- "KWC/ABH0311 UP.Browser/7.2.7.2.537 (GUI) MMP/2.0"
+ "KWC/ABH0311 UP.Browser/7.2.7.2.537 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "Streak"

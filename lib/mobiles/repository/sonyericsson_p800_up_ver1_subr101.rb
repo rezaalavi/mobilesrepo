@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p800_ver1_subua'
 module Mobiles
  module Repository
-   class SonyericssonP800UpVer1Subr101 < SonyericssonP800Ver1Subua
+   class Sonyericsson_p800_up_ver1_subr101 < Sonyericsson_p800_ver1_subua
 def self.user_agent
- "SonyEricssonP800/R101 UP.Browser/6.2.2.1.208 (GUI) MMP/1.0"
+ "SonyEricssonP800/R101 UP.Browser/6.2.2.1.208 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

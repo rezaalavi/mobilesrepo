@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_m600_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM600Ver1Sub1310112 < OrangeSpvM600Ver1
+   class Orange_spv_m600_ver1_sub1310112 < Orange_spv_m600_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M600; OpVer 13.10.2.112)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M600; OpVer 13.10.2.112)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/prophet-2.0.xml"

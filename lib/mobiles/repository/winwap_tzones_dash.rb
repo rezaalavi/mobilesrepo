@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_dash_ver1'
 module Mobiles
  module Repository
-   class WinwapTzonesDash < TmobileDashVer1
+   class Winwap_tzones_dash < Tmobile_dash_ver1
 def self.user_agent
- "WinWAPDashMR/4.0 (Dash 2.0.000.0; 4.0.2.70; WM; SP; t-zones)"
+ "WinWAPDashMR/4.0 (Dash 2.0.000.0; 4.0.2.70; WM; SP; t-zones)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "WinWAP"

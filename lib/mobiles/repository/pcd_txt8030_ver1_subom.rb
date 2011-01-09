@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pcd_txt8030_ver1'
 module Mobiles
  module Repository
-   class PcdTxt8030Ver1Subom < PcdTxt8030Ver1
+   class Pcd_txt8030_ver1_subom < Pcd_txt8030_ver1
 def self.user_agent
- "TXT8030OM/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "TXT8030OM/T05_0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Open Mobile"

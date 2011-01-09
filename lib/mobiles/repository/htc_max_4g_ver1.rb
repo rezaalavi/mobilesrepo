@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_quartz_ver1'
 module Mobiles
  module Repository
-   class HtcMax4gVer1 < HtcQuartzVer1
+   class Htc_max_4g_ver1 < Htc_quartz_ver1
 def self.user_agent
- "HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "HTC MAX 4G Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.11

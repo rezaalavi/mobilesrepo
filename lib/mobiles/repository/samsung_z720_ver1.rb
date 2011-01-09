@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_3'
 module Mobiles
  module Repository
-   class SamsungZ720Ver1 < GenericNetfrontVer33
+   class Samsung_z720_ver1 < Generic_netfront_ver3_3
 def self.user_agent
- "SGH-Z720"
+ "SGH-Z720".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-Z720"

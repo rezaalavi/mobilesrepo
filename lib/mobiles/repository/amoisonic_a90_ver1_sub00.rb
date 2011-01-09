@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoisonic_a90_ver1'
 module Mobiles
  module Repository
-   class AmoisonicA90Ver1Sub00 < AmoisonicA90Ver1
+   class Amoisonic_a90_ver1_sub00 < Amoisonic_a90_ver1
 def self.user_agent
- "Amoisonic-A90/1.0 UP.Browser/5.0.3.2 (GUI)"
+ "Amoisonic-A90/1.0 UP.Browser/5.0.3.2 (GUI)".gsub(/\a/, '\\')
 end
   
 end

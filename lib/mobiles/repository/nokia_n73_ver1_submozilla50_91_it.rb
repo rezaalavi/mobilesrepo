@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n73_ver1_submozilla50'
 module Mobiles
  module Repository
-   class NokiaN73Ver1Submozilla5091It < NokiaN73Ver1Submozilla50
+   class Nokia_n73_ver1_submozilla50_91_it < Nokia_n73_ver1_submozilla50
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.1; U; [it]; NokiaN73-1"
+ "Mozilla/5.0 (SymbianOS/9.1; U; [it]; NokiaN73-1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

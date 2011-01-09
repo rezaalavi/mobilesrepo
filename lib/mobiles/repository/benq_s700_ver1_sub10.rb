@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_s700_ver1'
 module Mobiles
  module Repository
-   class BenqS700Ver1Sub10 < BenqS700Ver1
+   class Benq_s700_ver1_sub10 < Benq_s700_ver1
 def self.user_agent
- "BENQ-S700/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.1.0.5 (GUI) MMP/1.0"
+ "BENQ-S700/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.1.0.5 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def wallpaper_jpg?
   true

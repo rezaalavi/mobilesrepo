@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_c88_ver1'
 module Mobiles
  module Repository
-   class ZteC79Ver1 < ZteC88Ver1
+   class Zte_c79_ver1 < Zte_c88_ver1
 def self.user_agent
- "ZTE-C79/1.0 SMIT-Browser/2.0.0"
+ "ZTE-C79/1.0 SMIT-Browser/2.0.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "SMIT Browser"

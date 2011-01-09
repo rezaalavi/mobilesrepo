@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class FlyMc170dsVer1 < GenericXhtml
+   class Fly_mc170ds_ver1 < Generic_xhtml
 def self.user_agent
- "Fly_MC170DS/MIDP2.0/ConfigurationWap2.0"
+ "Fly_MC170DS/MIDP2.0/ConfigurationWap2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.fly-phone.ru/UAP/Fly_MC170DS.xml"

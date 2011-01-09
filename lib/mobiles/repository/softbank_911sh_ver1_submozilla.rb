@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_911sh_ver1'
 module Mobiles
  module Repository
-   class Softbank911shVer1Submozilla < Softbank911shVer1
+   class Softbank_911sh_ver1_submozilla < Softbank_911sh_ver1
 def self.user_agent
- "Mozilla/4.08 (911SH;SoftBank;SNXXXXXXXXXXXXXXX) NetFront/3.3"
+ "Mozilla/4.08 (911SH;SoftBank;SNXXXXXXXXXXXXXXX) NetFront/3.3".gsub(/\a/, '\\')
 end
   
 end

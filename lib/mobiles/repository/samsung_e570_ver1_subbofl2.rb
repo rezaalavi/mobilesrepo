@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e570_ver1'
 module Mobiles
  module Repository
-   class SamsungE570Ver1Subbofl2 < SamsungE570Ver1
+   class Samsung_e570_ver1_subbofl2 < Samsung_e570_ver1
 def self.user_agent
- "SEC-SGHE570/BOFL2 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHE570/BOFL2 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

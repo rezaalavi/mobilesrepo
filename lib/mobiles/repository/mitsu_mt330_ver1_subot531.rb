@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitsu_mt330_ver1'
 module Mobiles
  module Repository
-   class MitsuMt330Ver1Subot531 < MitsuMt330Ver1
+   class Mitsu_mt330_ver1_subot531 < Mitsu_mt330_ver1
 def self.user_agent
- "Mitsu/1.2.C (OT531)"
+ "Mitsu/1.2.C (OT531)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class HuaweiU7519Ver1 < GenericNetfrontVer35
+   class Huawei_u7519_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "HuaweiU7519/B001 Browser/ACCESS NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1/QTV-Player/5.3"
+ "HuaweiU7519/B001 Browser/ACCESS NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1/QTV-Player/5.3".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

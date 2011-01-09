@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_f188_ver1'
 module Mobiles
  module Repository
-   class YoigoF188Ver1 < ZteF188Ver1
+   class Yoigo_f188_ver1 < Zte_f188_ver1
 def self.user_agent
- "Yoigo F188/1.0 ACS-NF/3.3 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Yoigo F188/1.0 ACS-NF/3.3 QTV5.02 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.zte.com.cn/mobile/uaprof/ZTE-F188(YoigoF188).xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class SonyericssonB10Ver1 < GenericMsWinmo5
+   class Sonyericsson_b10_ver1 < Generic_ms_winmo5
 def self.user_agent
- "SonyEricssonB10/R1AA Vodafone/1.0 Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "SonyEricssonB10/R1AA Vodafone/1.0 Browser/Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/uaprof/B10R101.xml"

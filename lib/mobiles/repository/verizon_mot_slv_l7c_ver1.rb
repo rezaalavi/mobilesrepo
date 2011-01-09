@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_slv_l7c_ver1'
 module Mobiles
  module Repository
-   class VerizonMotSlvL7cVer1 < MotSlvL7cVer1
+   class Verizon_mot_slv_l7c_ver1 < Mot_slv_l7c_ver1
 def self.user_agent
- "motol7c"
+ "motol7c".gsub(/\a/, '\\')
 end
   def wallpaper_jpg?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_8800si_ver1'
 module Mobiles
  module Repository
-   class Nokia8800siVer1Sub0410 < Nokia8800siVer1
+   class Nokia_8800si_ver1_sub0410 < Nokia_8800si_ver1
 def self.user_agent
- "Nokia8800SI/2.0 (04.10) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia8800SI/2.0 (04.10) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mms_max_size
   307200

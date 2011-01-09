@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_magician_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM500Ver1 < HtcMagicianVer1
+   class Orange_spv_m500_ver1 < Htc_magician_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M500; OpVer 6.06.3.123)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M500; OpVer 6.06.3.123)".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

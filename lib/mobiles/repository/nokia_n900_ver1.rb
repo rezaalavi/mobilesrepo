@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_maemo'
 module Mobiles
  module Repository
-   class NokiaN900Ver1 < NokiaGenericMaemo
+   class Nokia_n900_ver1 < Nokia_generic_maemo
 def self.user_agent
- "Mozilla/5.0 (X11; U; Linux armv7l; fi-FI; rv:1.9.2a1pre) Gecko/20090928 Firefox/3.5 Maemo Browser 1.4.1.15 RX-51 N900"
+ "Mozilla/5.0 (X11; U; Linux armv7l; fi-FI; rv:1.9.2a1pre) Gecko/20090928 Firefox/3.5 Maemo Browser 1.4.1.15 RX-51 N900".gsub(/\a/, '\\')
 end
   def mobile_browser
   "FireFox"

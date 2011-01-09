@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6_1'
 module Mobiles
  module Repository
-   class O2XdaZestVer1 < GenericMsWinmo61
+   class O2_xda_zest_ver1 < Generic_ms_winmo6_1
 def self.user_agent
- "Xda_Zest_Opera/480x640 Opera/8.65 (Windows NT 5.1; U; en)"
+ "Xda_Zest_Opera/480x640 Opera/8.65 (Windows NT 5.1; U; en)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprofile.asus.com/uaprof/Xda_Zest.xml"

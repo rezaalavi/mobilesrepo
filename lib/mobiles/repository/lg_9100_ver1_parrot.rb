@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_9100_ver1'
 module Mobiles
  module Repository
-   class Lg9100Ver1Parrot < Lg9100Ver1
+   class Lg_9100_ver1_parrot < Lg_9100_ver1
 def self.user_agent
- "LG9100-parrot/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0"
+ "LG9100-parrot/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def marketing_name
   "Parrot"

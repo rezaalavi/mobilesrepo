@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my411v_ver1'
 module Mobiles
  module Repository
-   class SagemMy411cVer1 < SagemMy411vVer1
+   class Sagem_my411c_ver1 < Sagem_my411v_ver1
 def self.user_agent
- "SAGEM-my411C"
+ "SAGEM-my411C".gsub(/\a/, '\\')
 end
   def uaprof
   "http://extranet.sagem.com/UAProfile/897750.xml"

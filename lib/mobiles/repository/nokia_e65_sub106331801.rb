@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e65_ver1'
 module Mobiles
  module Repository
-   class NokiaE65Sub106331801 < NokiaE65Ver1
+   class Nokia_e65_sub106331801 < Nokia_e65_ver1
 def self.user_agent
- "NokiaE65-1/3.0 (1.0633.18.01) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaE65-1/3.0 (1.0633.18.01) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def wifi?
   true

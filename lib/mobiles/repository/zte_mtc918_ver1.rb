@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2_1'
 module Mobiles
  module Repository
-   class ZteMtc918Ver1 < GenericAndroidVer21
+   class Zte_mtc918_ver1 < Generic_android_ver2_1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1-update1; ru-ru; MTC 918 Build/ERE27) AppleWebKit/530.17 (KHTML,like Gecko) Version/4.0 Mobile Safari/530.17"
+ "Mozilla/5.0 (Linux; U; Android 2.1-update1; ru-ru; MTC 918 Build/ERE27) AppleWebKit/530.17 (KHTML,like Gecko) Version/4.0 Mobile Safari/530.17".gsub(/\a/, '\\')
 end
   def uaprof
   ""

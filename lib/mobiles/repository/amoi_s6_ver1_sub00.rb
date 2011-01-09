@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_s6_ver1'
 module Mobiles
  module Repository
-   class AmoiS6Ver1Sub00 < AmoiS6Ver1
+   class Amoi_s6_ver1_sub00 < Amoi_s6_ver1
 def self.user_agent
- "Amoi-S6/1.0 UP.Browser/5.0.3.2 (GUI)"
+ "Amoi-S6/1.0 UP.Browser/5.0.3.2 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

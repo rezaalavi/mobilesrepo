@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_co210_ver1'
 module Mobiles
  module Repository
-   class SagemCo210Ver1Subgmobile < SagemCo210Ver1
+   class Sagem_co210_ver1_subgmobile < Sagem_co210_ver1
 def self.user_agent
- "G-Mobile GM1 UP.Browser/6.1.0.6.1.c.5 (GUI) MMP/1.0"
+ "G-Mobile GM1 UP.Browser/6.1.0.6.1.c.5 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

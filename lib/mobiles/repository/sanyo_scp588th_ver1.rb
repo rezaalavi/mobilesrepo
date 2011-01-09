@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_scp588cn_ver1'
 module Mobiles
  module Repository
-   class SanyoScp588thVer1 < SanyoScp588cnVer1
+   class Sanyo_scp588th_ver1 < Sanyo_scp588cn_ver1
 def self.user_agent
- "SCP-588TH-A UP.Browser/6.1.0.6.2 (GUI) MMP/2.0"
+ "SCP-588TH-A UP.Browser/6.1.0.6.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.1

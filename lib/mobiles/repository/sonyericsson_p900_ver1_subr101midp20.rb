@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p900_ver1'
 module Mobiles
  module Repository
-   class SonyericssonP900Ver1Subr101midp20 < SonyericssonP900Ver1
+   class Sonyericsson_p900_ver1_subr101midp20 < Sonyericsson_p900_ver1
 def self.user_agent
- "SonyEricssonP900/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "SonyEricssonP900/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sonyericsson.com/UAProf/P900R101.xml"

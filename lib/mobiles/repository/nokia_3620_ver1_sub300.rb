@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3620_ver1'
 module Mobiles
  module Repository
-   class Nokia3620Ver1Sub300 < Nokia3620Ver1
+   class Nokia_3620_ver1_sub300 < Nokia_3620_ver1
 def self.user_agent
- "Nokia3620/1.0 (3.00) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "Nokia3620/1.0 (3.00) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

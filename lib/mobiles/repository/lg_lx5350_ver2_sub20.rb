@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_lx5350_ver2'
 module Mobiles
  module Repository
-   class LgLx5350Ver2Sub20 < LgLx5350Ver2
+   class Lg_lx5350_ver2_sub20 < Lg_lx5350_ver2
 def self.user_agent
- "LGE-LX5350/4.0 UP.Browser/6.2.2.1.208 (GUI) MMP/2.0"
+ "LGE-LX5350/4.0 UP.Browser/6.2.2.1.208 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

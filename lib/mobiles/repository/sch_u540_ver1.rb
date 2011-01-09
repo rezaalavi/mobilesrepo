@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SchU540Ver1 < GenericXhtml
+   class Sch_u540_ver1 < Generic_xhtml
 def self.user_agent
- "SCH-U540/1.0 NetFront/3.0.22.2.5 (GUI) MMP/2.0"
+ "SCH-U540/1.0 NetFront/3.0.22.2.5 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx6_2_ver1_subege'
 module Mobiles
  module Repository
-   class SagemMyx62Ver1Suble5 < SagemMyx62Ver1Subege
+   class Sagem_myx6_2_ver1_suble5 < Sagem_myx6_2_ver1_subege
 def self.user_agent
- "SAGEM-myX6-2ege/LE5,1B Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAGEM-myX6-2ege/LE5,1B Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

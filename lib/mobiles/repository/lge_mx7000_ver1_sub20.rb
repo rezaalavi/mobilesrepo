@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_mx7000_ver1'
 module Mobiles
  module Repository
-   class LgeMx7000Ver1Sub20 < LgeMx7000Ver1
+   class Lge_mx7000_ver1_sub20 < Lge_mx7000_ver1
 def self.user_agent
- "LGE-MX7000/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "LGE-MX7000/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

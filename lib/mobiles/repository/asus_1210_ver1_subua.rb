@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/asus_1210_ver1'
 module Mobiles
  module Repository
-   class Asus1210Ver1Subua < Asus1210Ver1
+   class Asus_1210_ver1_subua < Asus_1210_ver1
 def self.user_agent
- "ASUS1210/V4.2.4A Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320; ASUS1210)"
+ "ASUS1210/V4.2.4A Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320; ASUS1210)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprofile.asus.com/uaprof/ASUS1210-1.0.xml"

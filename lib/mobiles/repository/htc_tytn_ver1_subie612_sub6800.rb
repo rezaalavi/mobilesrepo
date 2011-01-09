@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_tytn_ver1_subie612'
 module Mobiles
  module Repository
-   class HtcTytnVer1Subie612Sub6800 < HtcTytnVer1Subie612
+   class Htc_tytn_ver1_subie612_sub6800 < Htc_tytn_ver1_subie612
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Qwest:Titan6800"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Qwest:Titan6800".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

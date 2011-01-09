@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class TianyuB830Ver1 < GenericXhtml
+   class Tianyu_b830_ver1 < Generic_xhtml
 def self.user_agent
- "TIANYU B830 wap browser"
+ "TIANYU B830 wap browser".gsub(/\a/, '\\')
 end
   def model_name
   "B830"

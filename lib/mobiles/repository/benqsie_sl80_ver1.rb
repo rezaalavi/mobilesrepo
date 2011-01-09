@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class BenqsieSl80Ver1 < OpwvV62Generic
+   class Benqsie_sl80_ver1 < Opwv_v62_generic
 def self.user_agent
- "BenQ-SL80/1.01 Browser/Openwave/6.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "BenQ-SL80/1.01 Browser/Openwave/6.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.3

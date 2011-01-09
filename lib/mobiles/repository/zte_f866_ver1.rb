@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class ZteF866Ver1 < GenericNetfrontVer32
+   class Zte_f866_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "ZTE-F866/1.0 ACS-NF/3.2 Qtv/4.3"
+ "ZTE-F866/1.0 ACS-NF/3.2 Qtv/4.3".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

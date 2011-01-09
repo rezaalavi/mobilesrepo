@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_f700_ver1'
 module Mobiles
  module Repository
-   class SamsungSchu940Ver1 < SamsungF700Ver1
+   class Samsung_schu940_ver1 < Samsung_f700_ver1
 def self.user_agent
- "Mozilla/5.0 440x240 Samsung SCH-U940 NetFront/3.4"
+ "Mozilla/5.0 440x240 Samsung SCH-U940 NetFront/3.4".gsub(/\a/, '\\')
 end
   def model_name
   "SCH-U940"

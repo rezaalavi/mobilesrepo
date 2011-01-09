@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_c3_ver1'
 module Mobiles
  module Repository
-   class NokiaC301Ver1 < NokiaC3Ver1
+   class Nokia_c3_01_ver1 < Nokia_c3_ver1
 def self.user_agent
- "NokiaC3-01/5.0 (03.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+ "NokiaC3-01/5.0 (03.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+".gsub(/\a/, '\\')
 end
   def model_name
   "NC3-01"

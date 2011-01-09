@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n80_ver1_submozilla40'
 module Mobiles
  module Repository
-   class NokiaN80Ver1Submozilla40Subjataayu < NokiaN80Ver1Submozilla40
+   class Nokia_n80_ver1_submozilla40_subjataayu < Nokia_n80_ver1_submozilla40
 def self.user_agent
- "Mozilla/5.0 (compatible; Jataayu/jB5/5.0; Symbian Series 60; Generic; en;)"
+ "Mozilla/5.0 (compatible; Jataayu/jB5/5.0; Symbian Series 60; Generic; en;)".gsub(/\a/, '\\')
 end
   
 end

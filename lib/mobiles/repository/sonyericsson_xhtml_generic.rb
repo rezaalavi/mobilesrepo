@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_generic'
 module Mobiles
  module Repository
-   class SonyericssonXhtmlGeneric < SonyericssonGeneric
+   class Sonyericsson_xhtml_generic < Sonyericsson_generic
 def self.user_agent
- "DO_NOT_MATCH_SONYERICSSON_XHTML_BROWSER"
+ "DO_NOT_MATCH_SONYERICSSON_XHTML_BROWSER".gsub(/\a/, '\\')
 end
   def softkey_support?
   true

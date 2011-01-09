@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class BenqS660cVer1 < Generic
+   class Benq_s660c_ver1 < Generic
 def self.user_agent
- "BENQS660C/1.36/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.1.0.7.8.c.1.100 (GUI) MMP/1.0"
+ "BENQS660C/1.36/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.1.0.7.8.c.1.100 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def model_name
   "S660C"

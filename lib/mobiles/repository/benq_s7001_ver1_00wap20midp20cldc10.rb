@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_s7001_ver1'
 module Mobiles
  module Repository
-   class BenqS7001Ver100wap20midp20cldc10 < BenqS7001Ver1
+   class Benq_s7001_ver1_00wap20midp20cldc10 < Benq_s7001_ver1
 def self.user_agent
- "BENQS7001.00WAP2.0MIDP2.0CLDC1.0"
+ "BENQS7001.00WAP2.0MIDP2.0CLDC1.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t68_ver2'
 module Mobiles
  module Repository
-   class SonyericssonT68Ver2Subj2me < SonyericssonT68Ver2
+   class Sonyericsson_t68_ver2_subj2me < Sonyericsson_t68_ver2
 def self.user_agent
- "SonyEricssonT68/R201A Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "SonyEricssonT68/R201A Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

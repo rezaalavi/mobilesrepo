@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/imate_jasjam_ver1'
 module Mobiles
  module Repository
-   class ImateJasjamVer1Subie76 < ImateJasjamVer1
+   class Imate_jasjam_ver1_subie76 < Imate_jasjam_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) i-mate JASJAM"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) i-mate JASJAM".gsub(/\a/, '\\')
 end
   def uaprof
   "http://imatemms.imate.com/gen/Hermes-1.0.xml"

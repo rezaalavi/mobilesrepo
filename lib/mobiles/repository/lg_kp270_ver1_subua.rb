@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kp270_ver1'
 module Mobiles
  module Repository
-   class LgKp270Ver1Subua < LgKp270Ver1
+   class Lg_kp270_ver1_subua < Lg_kp270_ver1
 def self.user_agent
- "LG-KP270 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KP270 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

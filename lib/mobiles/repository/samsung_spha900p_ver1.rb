@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_spha900_ver1'
 module Mobiles
  module Repository
-   class SamsungSpha900pVer1 < SamsungSpha900Ver1
+   class Samsung_spha900p_ver1 < Samsung_spha900_ver1
 def self.user_agent
- "Samsung-SPHA900P"
+ "Samsung-SPHA900P".gsub(/\a/, '\\')
 end
   def model_name
   "SPH-A900P"

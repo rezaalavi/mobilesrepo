@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_polaris_6'
 module Mobiles
  module Repository
-   class LgLx600Ver1 < GenericPolaris6
+   class Lg_lx600_ver1 < Generic_polaris_6
 def self.user_agent
- "LG-LX600 Polaris/6.0 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "LG-LX600 Polaris/6.0 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Polaris"

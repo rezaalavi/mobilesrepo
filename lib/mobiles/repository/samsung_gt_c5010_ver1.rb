@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class SamsungGtC5010Ver1 < GenericNetfrontVer35
+   class Samsung_gt_c5010_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "SAMSUNG-GT-C5010/C5010DDJF3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-GT-C5010/C5010DDJF3 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "GT-C5010"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class SamsungSghT629Ver1 < GenericNetfrontVer32
+   class Samsung_sgh_t629_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "SAMSUNG-SGH-T629/T629UVFG8 Profile/MIDP-2.0 Configuration/CLDC-1.1 NetFront/3.2"
+ "SAMSUNG-SGH-T629/T629UVFG8 Profile/MIDP-2.0 Configuration/CLDC-1.1 NetFront/3.2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/t629_10.xml"

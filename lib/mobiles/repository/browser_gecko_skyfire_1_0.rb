@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_root_gecko'
 module Mobiles
  module Repository
-   class BrowserGeckoSkyfire10 < BrowserRootGecko
+   class Browser_gecko_skyfire_1_0 < Browser_root_gecko
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_GECKO_SKYFIRE_1_0"
+ "DO_NOT_MATCH_BROWSER_GECKO_SKYFIRE_1_0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Gecko/Skyfire"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class SamsungSghe100Ver1 < OpwvV61Generic
+   class Samsung_sghe100_ver1 < Opwv_v61_generic
 def self.user_agent
- "SAMSUNG-SGH-E100A/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
+ "SAMSUNG-SGH-E100A/T2 UP.Browser/6.1.0.6 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-E100A.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z370_ver1'
 module Mobiles
  module Repository
-   class SamsungZ370Ver1Sub1 < SamsungZ370Ver1
+   class Samsung_z370_ver1_sub1 < Samsung_z370_ver1
 def self.user_agent
- "SGH-Z370/1.0 NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SGH-Z370/1.0 NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

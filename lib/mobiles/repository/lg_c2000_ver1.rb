@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class LgC2000Ver1 < OpwvV62Generic
+   class Lg_c2000_ver1 < Opwv_v62_generic
 def self.user_agent
- "LG-C2000"
+ "LG-C2000".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-C2000.xml"

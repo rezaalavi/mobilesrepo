@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_winwap_1_0'
 module Mobiles
  module Repository
-   class BrowserWinwap11 < BrowserWinwap10
+   class Browser_winwap_1_1 < Browser_winwap_1_0
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_WINWAP_1_1"
+ "DO_NOT_MATCH_BROWSER_WINWAP_1_1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   1.1

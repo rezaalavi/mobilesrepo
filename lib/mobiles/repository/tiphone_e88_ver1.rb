@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nexian_nx_g801_ver1'
 module Mobiles
  module Repository
-   class TiphoneE88Ver1 < NexianNxG801Ver1
+   class Tiphone_e88_ver1 < Nexian_nx_g801_ver1
 def self.user_agent
- "tiphoneE88/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "tiphoneE88/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "E88"

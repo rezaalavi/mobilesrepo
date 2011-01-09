@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class ZteF950Ver1 < GenericNetfrontVer35
+   class Zte_f950_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "ZTE-F950/1.0 ACS-NF/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "ZTE-F950/1.0 ACS-NF/3.5 QTV5.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

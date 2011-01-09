@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class UptextGeneric < Generic
+   class Uptext_generic < Generic
 def self.user_agent
- "DO_NOT_MATCH_UP.Browser/4"
+ "DO_NOT_MATCH_UP.Browser/4".gsub(/\a/, '\\')
 end
   def icons_on_menu_items_support?
   true

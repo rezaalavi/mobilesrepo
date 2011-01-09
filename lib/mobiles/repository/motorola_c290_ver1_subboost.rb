@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/motorola_c290_ver1'
 module Mobiles
  module Repository
-   class MotorolaC290Ver1Subboost < MotorolaC290Ver1
+   class Motorola_c290_ver1_subboost < Motorola_c290_ver1
 def self.user_agent
- "Motorola-C290-boost Obigo/Q04C1-1.9 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Motorola-C290-boost Obigo/Q04C1-1.9 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Motorola/C290-boost/0070.rdf"

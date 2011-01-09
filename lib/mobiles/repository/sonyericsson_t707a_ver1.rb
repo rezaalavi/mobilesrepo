@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t707_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT707aVer1 < SonyericssonT707Ver1
+   class Sonyericsson_t707a_ver1 < Sonyericsson_t707_ver1
 def self.user_agent
- "SonyEricssonT707a/R1GA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4"
+ "SonyEricssonT707a/R1GA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.4".gsub(/\a/, '\\')
 end
   def model_name
   "T707a"

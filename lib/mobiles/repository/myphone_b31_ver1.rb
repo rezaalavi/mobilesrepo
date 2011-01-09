@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MyphoneB31Ver1 < GenericXhtml
+   class Myphone_b31_ver1 < Generic_xhtml
 def self.user_agent
- "MyPhoneB31/1.0/WAP2.0"
+ "MyPhoneB31/1.0/WAP2.0".gsub(/\a/, '\\')
 end
   def model_name
   "B31"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_magic_ver1_cupcake'
 module Mobiles
  module Repository
-   class HtcMagicVer1CupcakeSe < HtcMagicVer1Cupcake
+   class Htc_magic_ver1_cupcake_se < Htc_magic_ver1_cupcake
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.5; sv-se; HTC Magic Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko)"
+ "Mozilla/5.0 (Linux; U; Android 1.5; sv-se; HTC Magic Build/CUPCAKE) AppleWebKit/528.5+ (KHTML, like Gecko)".gsub(/\a/, '\\')
 end
   
 end

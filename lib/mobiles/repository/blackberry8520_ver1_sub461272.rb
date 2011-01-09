@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry8520_ver1'
 module Mobiles
  module Repository
-   class Blackberry8520Ver1Sub461272 < Blackberry8520Ver1
+   class Blackberry8520_ver1_sub461272 < Blackberry8520_ver1
 def self.user_agent
- "BlackBerry8520/4.6.1.272 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/121"
+ "BlackBerry8520/4.6.1.272 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/121".gsub(/\a/, '\\')
 end
   
 end

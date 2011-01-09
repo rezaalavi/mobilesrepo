@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_k1m_ver1'
 module Mobiles
  module Repository
-   class MotK1mVer1Boost < MotK1mVer1
+   class Mot_k1m_ver1_boost < Mot_k1m_ver1
 def self.user_agent
- "Motorola-K1m-boost Obigo/Q04C1 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Motorola-K1m-boost Obigo/Q04C1 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Motorola/K1m-boost/10E0.rdf"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SonyericssonA195Ver1 < GenericNetfrontVer34
+   class Sonyericsson_a195_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "SonyEricssonA195i/R1AA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0"
+ "SonyEricssonA195i/R1AA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0".gsub(/\a/, '\\')
 end
   def pointing_method
   "joystick"

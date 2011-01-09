@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class SonyericssonJ10i2Ver1 < GenericNetfrontVer35
+   class Sonyericsson_j10i2_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "SonyEricssonJ10i2/R7AB Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0"
+ "SonyEricssonJ10i2/R7AB Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/J10i2R101.xml"

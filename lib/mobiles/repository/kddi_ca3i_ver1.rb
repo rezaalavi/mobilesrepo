@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_ca3h_ver1'
 module Mobiles
  module Repository
-   class KddiCa3iVer1 < KddiCa3hVer1
+   class Kddi_ca3i_ver1 < Kddi_ca3h_ver1
 def self.user_agent
- "KDDI-CA3I UP.Browser/6.2_7.2.7.1.K.5.205 (GUI) MMP/2.0"
+ "KDDI-CA3I UP.Browser/6.2_7.2.7.1.K.5.205 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "G'zOne TYPE-X"

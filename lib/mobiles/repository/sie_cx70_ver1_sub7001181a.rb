@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_cx70_ver1'
 module Mobiles
  module Repository
-   class SieCx70Ver1Sub7001181a < SieCx70Ver1
+   class Sie_cx70_ver1_sub7001181a < Sie_cx70_ver1
 def self.user_agent
- "SIE-CX70/00 UP.Browser/7.0.0.1.181a (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SIE-CX70/00 UP.Browser/7.0.0.1.181a (GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

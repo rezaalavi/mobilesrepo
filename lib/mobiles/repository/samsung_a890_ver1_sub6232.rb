@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_a890_ver1'
 module Mobiles
  module Repository
-   class SamsungA890Ver1Sub6232 < SamsungA890Ver1
+   class Samsung_a890_ver1_sub6232 < Samsung_a890_ver1
 def self.user_agent
- "SCH-A890 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "SCH-A890 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

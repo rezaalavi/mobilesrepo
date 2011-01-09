@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/w3c_ddc_ver1'
 module Mobiles
  module Repository
-   class W3cDdcVer1Old < W3cDdcVer1
+   class W3c_ddc_ver1_old < W3c_ddc_ver1
 def self.user_agent
- "W3C mobileOK DDC (http://www.w3.org/2006/07/mobileOK-ddc)"
+ "W3C mobileOK DDC (http://www.w3.org/2006/07/mobileOK-ddc)".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

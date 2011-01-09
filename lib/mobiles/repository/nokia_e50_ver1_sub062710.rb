@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e50_ver1_sub21000'
 module Mobiles
  module Repository
-   class NokiaE50Ver1Sub062710 < NokiaE50Ver1Sub21000
+   class Nokia_e50_ver1_sub062710 < Nokia_e50_ver1_sub21000
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.1; U; [de]; NokiaE50-2/06.27.1.0 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.1; U; [de]; NokiaE50-2/06.27.1.0 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def css_supports_width_as_percentage?
   true

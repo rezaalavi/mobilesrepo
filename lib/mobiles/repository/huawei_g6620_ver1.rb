@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HuaweiG6620Ver1 < GenericXhtml
+   class Huawei_g6620_ver1 < Generic_xhtml
 def self.user_agent
- "Huawei/1.0/0HuaweiG6620/G6620.C210.M40.04.02Browser/Obigo-Browser/Q03C MMS/Obigo-MMS1/1.0/MIDP-2.0 Configuration/CLD-1.1"
+ "Huawei/1.0/0HuaweiG6620/G6620.C210.M40.04.02Browser/Obigo-Browser/Q03C MMS/Obigo-MMS1/1.0/MIDP-2.0 Configuration/CLD-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

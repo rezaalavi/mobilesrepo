@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lenovo_e308_ver1'
 module Mobiles
  module Repository
-   class LenovoE308Ver1Sub20060815 < LenovoE308Ver1
+   class Lenovo_e308_ver1_sub20060815 < Lenovo_e308_ver1
 def self.user_agent
- "LENOVO-E308/(2006.08.15)Ver1.0.4WAP1.2 Profile//"
+ "LENOVO-E308/(2006.08.15)Ver1.0.4WAP1.2 Profile//".gsub(/\a/, '\\')
 end
   def softkey_support?
   true

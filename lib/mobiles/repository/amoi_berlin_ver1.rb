@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_3'
 module Mobiles
  module Repository
-   class AmoiBerlinVer1 < GenericNetfrontVer33
+   class Amoi_berlin_ver1 < Generic_netfront_ver3_3
 def self.user_agent
- "Berlin/R12 NF-Browser/3.3"
+ "Berlin/R12 NF-Browser/3.3".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.amobile.com.cn/ua/Amoi-Berlin.xml"

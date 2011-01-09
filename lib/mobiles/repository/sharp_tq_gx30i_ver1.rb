@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_tqgx30_ver1'
 module Mobiles
  module Repository
-   class SharpTqGx30iVer1 < SharpTqgx30Ver1
+   class Sharp_tq_gx30i_ver1 < Sharp_tqgx30_ver1
 def self.user_agent
- "SHARP-TQ-GX30i"
+ "SHARP-TQ-GX30i".gsub(/\a/, '\\')
 end
   def uaprof
   "http://sharp-mobile.com/UAprof/GX30i.xml"

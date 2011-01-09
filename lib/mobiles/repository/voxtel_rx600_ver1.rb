@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class VoxtelRx600Ver1 < GenericXhtml
+   class Voxtel_rx600_ver1 < Generic_xhtml
 def self.user_agent
- "RX600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 MIDP-2.0/CLDC-1.0"
+ "RX600/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.voxtel.ru/UAProf/Voxtel_rx600.xml"

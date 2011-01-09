@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class O2XmVer1 < GenericXhtml
+   class O2_xm_ver1 < Generic_xhtml
 def self.user_agent
- "FLT O2-XM/1.0"
+ "FLT O2-XM/1.0".gsub(/\a/, '\\')
 end
   def model_name
   "XM"

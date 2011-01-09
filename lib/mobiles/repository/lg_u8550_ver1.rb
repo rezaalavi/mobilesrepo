@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic'
 module Mobiles
  module Repository
-   class LgU8550Ver1 < LgGeneric
+   class Lg_u8550_ver1 < Lg_generic
 def self.user_agent
- "LG-U8550"
+ "LG-U8550".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

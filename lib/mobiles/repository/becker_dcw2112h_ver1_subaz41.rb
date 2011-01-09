@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/becker_dcw2112h_ver1'
 module Mobiles
  module Repository
-   class BeckerDcw2112hVer1Subaz41 < BeckerDcw2112hVer1
+   class Becker_dcw2112h_ver1_subaz41 < Becker_dcw2112h_ver1
 def self.user_agent
- "Becker-DCW2112H/Az.41 UP.Browser/4.1.24c"
+ "Becker-DCW2112H/Az.41 UP.Browser/4.1.24c".gsub(/\a/, '\\')
 end
   
 end

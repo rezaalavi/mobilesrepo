@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sght539_ver1'
 module Mobiles
  module Repository
-   class SamsungSght539Ver1Subt539uvha1 < SamsungSght539Ver1
+   class Samsung_sght539_ver1_subt539uvha1 < Samsung_sght539_ver1
 def self.user_agent
- "SAMSUNG-SGH-T539/T539UVHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 NetFront/3.2"
+ "SAMSUNG-SGH-T539/T539UVHA1 Profile/MIDP-2.0 Configuration/CLDC-1.1 NetFront/3.2".gsub(/\a/, '\\')
 end
   
 end

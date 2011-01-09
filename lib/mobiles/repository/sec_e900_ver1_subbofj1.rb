@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e900_ver1'
 module Mobiles
  module Repository
-   class SecE900Ver1Subbofj1 < SecE900Ver1
+   class Sec_e900_ver1_subbofj1 < Sec_e900_ver1
 def self.user_agent
- "SEC-SGHE900/BOFJ1 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHE900/BOFJ1 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

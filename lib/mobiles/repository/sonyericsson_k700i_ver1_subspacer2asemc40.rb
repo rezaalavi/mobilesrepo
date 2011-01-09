@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k700i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK700iVer1Subspacer2asemc40 < SonyericssonK700iVer1
+   class Sonyericsson_k700i_ver1_subspacer2asemc40 < Sonyericsson_k700i_ver1
 def self.user_agent
- "SonyEricsson K700i/R2A SEMC-Browser/4.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO"
+ "SonyEricsson K700i/R2A SEMC-Browser/4.0 UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

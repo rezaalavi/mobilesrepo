@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_f2250_ver1'
 module Mobiles
  module Repository
-   class LgF2250Ver1Subv08i < LgF2250Ver1
+   class Lg_f2250_ver1_subv08i < Lg_f2250_ver1
 def self.user_agent
- "LG-F2250/V08i Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-F2250/V08i Obigo/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

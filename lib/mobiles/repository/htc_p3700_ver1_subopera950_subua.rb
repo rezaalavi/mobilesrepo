@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3700_ver1_subopera950'
 module Mobiles
  module Repository
-   class HtcP3700Ver1Subopera950Subua < HtcP3700Ver1Subopera950
+   class Htc_p3700_ver1_subopera950_subua < Htc_p3700_ver1_subopera950
 def self.user_agent
- "PPC; 480x640; HTC P3700; OpVer 30.193.15.752 Opera/9.50 (Microsoft Windows 5.1; U; es)"
+ "PPC; 480x640; HTC P3700; OpVer 30.193.15.752 Opera/9.50 (Microsoft Windows 5.1; U; es)".gsub(/\a/, '\\')
 end
   
 end

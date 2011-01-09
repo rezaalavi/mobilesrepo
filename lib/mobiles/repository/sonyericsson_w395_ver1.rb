@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class SonyericssonW395Ver1 < OpwvV72Generic
+   class Sonyericsson_w395_ver1 < Opwv_v72_generic
 def self.user_agent
- "SonyEricssonW395"
+ "SonyEricssonW395".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sonyericsson.com/downloads/W395R101.xml"

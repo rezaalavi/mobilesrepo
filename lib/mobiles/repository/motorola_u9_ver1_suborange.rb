@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/motorola_u9_ver1'
 module Mobiles
  module Repository
-   class MotorolaU9Ver1Suborange < MotorolaU9Ver1
+   class Motorola_u9_ver1_suborange < Motorola_u9_ver1
 def self.user_agent
- "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) U9-orange/R6632_G_81.11.15I BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/9.0"
+ "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) U9-orange/R6632_G_81.11.15I BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/9.0".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

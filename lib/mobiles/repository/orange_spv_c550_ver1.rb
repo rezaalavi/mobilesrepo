@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_hurricane_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvC550Ver1 < HtcHurricaneVer1
+   class Orange_spv_c550_ver1 < Htc_hurricane_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320; SPV C550; OpVer 8.2.1.10)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320; SPV C550; OpVer 8.2.1.10)".gsub(/\a/, '\\')
 end
   def pointing_method
   "joystick"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_tornado_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvC600Ver1 < HtcTornadoVer1
+   class Orange_spv_c600_ver1 < Htc_tornado_ver1
 def self.user_agent
- "SPV-C600"
+ "SPV-C600".gsub(/\a/, '\\')
 end
   def model_name
   "SPV C600"

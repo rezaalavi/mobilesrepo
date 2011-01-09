@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry8310_ver1_rogers'
 module Mobiles
  module Repository
-   class Blackberry8310Ver1RogersIe < Blackberry8310Ver1Rogers
+   class Blackberry8310_ver1_rogers_ie < Blackberry8310_ver1_rogers
 def self.user_agent
- "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107"
+ "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; PPC; 240x320) BlackBerry8310/4.2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/107".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.blackberry.net/go/mobile/profiles/uaprof/8310/4.2.2.rdf"

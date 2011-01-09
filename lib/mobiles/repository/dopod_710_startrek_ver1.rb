@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003'
 module Mobiles
  module Repository
-   class Dopod710StartrekVer1 < GenericMsWinmo2003
+   class Dopod_710_startrek_ver1 < Generic_ms_winmo2003
 def self.user_agent
- "dopod710/5.1.195/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (come; MSIE 4.01; Windows CE; Smartphone;176x220)"
+ "dopod710/5.1.195/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (come; MSIE 4.01; Windows CE; Smartphone;176x220)".gsub(/\a/, '\\')
 end
   def model_name
   "S710"

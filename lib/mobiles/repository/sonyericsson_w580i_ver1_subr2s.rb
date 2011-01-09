@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w580i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW580iVer1Subr2s < SonyericssonW580iVer1
+   class Sonyericsson_w580i_ver1_subr2s < Sonyericsson_w580i_ver1
 def self.user_agent
- "SonyEricssonW580i/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonW580i/R8BE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

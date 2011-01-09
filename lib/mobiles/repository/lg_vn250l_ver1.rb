@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class LgVn250lVer1 < OpwvV62Generic
+   class Lg_vn250l_ver1 < Opwv_v62_generic
 def self.user_agent
- "LGE-VN250L/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "LGE-VN250L/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

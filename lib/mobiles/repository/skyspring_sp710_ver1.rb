@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SkyspringSp710Ver1 < GenericXhtml
+   class Skyspring_sp710_ver1 < Generic_xhtml
 def self.user_agent
- "SP710/Teleca/1.1.14 Profile/MIDP-1.0 Configuration/CLDC-1.0 MIDP-2.0/CLDC-1.0"
+ "SP710/Teleca/1.1.14 Profile/MIDP-1.0 Configuration/CLDC-1.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

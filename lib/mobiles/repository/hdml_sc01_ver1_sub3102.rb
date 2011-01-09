@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sc01_ver1'
 module Mobiles
  module Repository
-   class HdmlSc01Ver1Sub3102 < Sc01Ver1
+   class Hdml_sc01_ver1_sub3102 < Sc01_ver1
 def self.user_agent
- "UP.Browser/3.1.02-SC01"
+ "UP.Browser/3.1.02-SC01".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.1

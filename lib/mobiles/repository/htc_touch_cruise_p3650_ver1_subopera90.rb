@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_cruise_p3650_ver1'
 module Mobiles
  module Repository
-   class HtcTouchCruiseP3650Ver1Subopera90 < HtcTouchCruiseP3650Ver1
+   class Htc_touch_cruise_p3650_ver1_subopera90 < Htc_touch_cruise_p3650_ver1
 def self.user_agent
- "Opera/9.0 (Microsoft Windows; PPC; 240x320; HTC_P3650; Opera Mobile/331; U; en)"
+ "Opera/9.0 (Microsoft Windows; PPC; 240x320; HTC_P3650; Opera Mobile/331; U; en)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

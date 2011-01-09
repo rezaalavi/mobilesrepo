@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_tq_gx15_ver1'
 module Mobiles
  module Repository
-   class SharpTqGxl15Ver1Sub < SharpTqGx15Ver1
+   class Sharp_tq_gxl15_ver1_sub < Sharp_tq_gx15_ver1
 def self.user_agent
- "SHARP-TQ-GX-L15"
+ "SHARP-TQ-GX-L15".gsub(/\a/, '\\')
 end
   
 end

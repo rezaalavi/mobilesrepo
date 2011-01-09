@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lenovo_p708_ver1'
 module Mobiles
  module Repository
-   class LenovoP708Ver1Sub20050930s272 < LenovoP708Ver1
+   class Lenovo_p708_ver1_sub20050930s272 < Lenovo_p708_ver1
 def self.user_agent
- "LENOVO-P708_ENG_FRE_DIRLAND/(2005.09.30)S272/WAP1.2.1 Profile"
+ "LENOVO-P708_ENG_FRE_DIRLAND/(2005.09.30)S272/WAP1.2.1 Profile".gsub(/\a/, '\\')
 end
   
 end

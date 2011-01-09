@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ccwap_browser_ver1'
 module Mobiles
  module Repository
-   class CcwapBrowserVer1Sub0 < CcwapBrowserVer1
+   class Ccwap_browser_ver1_sub0 < Ccwap_browser_ver1
 def self.user_agent
- "ccWAP-Browser (www.ccwap.com)"
+ "ccWAP-Browser (www.ccwap.com)".gsub(/\a/, '\\')
 end
   
 end

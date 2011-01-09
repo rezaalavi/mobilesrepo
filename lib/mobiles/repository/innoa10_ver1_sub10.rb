@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class Innoa10Ver1Sub10 < Generic
+   class Innoa10_ver1_sub10 < Generic
 def self.user_agent
- "INNOA10, INNOA10"
+ "INNOA10, INNOA10".gsub(/\a/, '\\')
 end
   
 end

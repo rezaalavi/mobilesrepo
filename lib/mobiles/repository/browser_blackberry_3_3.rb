@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_blackberry_3_2'
 module Mobiles
  module Repository
-   class BrowserBlackberry33 < BrowserBlackberry32
+   class Browser_blackberry_3_3 < Browser_blackberry_3_2
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_BLACKBERRY_3_3"
+ "DO_NOT_MATCH_BROWSER_BLACKBERRY_3_3".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.3

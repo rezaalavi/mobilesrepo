@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_th4_ver1_obigo'
 module Mobiles
  module Repository
-   class AlcatelOt717Ver1 < AlcatelTh4Ver1Obigo
+   class Alcatel_ot717_ver1 < Alcatel_th4_ver1_obigo
 def self.user_agent
- "Alcatel-OT-C717/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C"
+ "Alcatel-OT-C717/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www-ccpp.tcl-ta.com/files/ALCATEL-OT-C717.rdf"

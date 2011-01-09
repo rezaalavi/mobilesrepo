@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i900_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI900Ver1Suborange < SamsungSghI900Ver1
+   class Samsung_sgh_i900_ver1_suborange < Samsung_sgh_i900_ver1
 def self.user_agent
- "SAMSUNG-SGH-i900Orange/BVHH1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "SAMSUNG-SGH-i900Orange/BVHH1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def columns
   16

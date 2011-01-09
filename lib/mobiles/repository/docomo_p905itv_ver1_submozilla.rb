@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_p905itv_ver1'
 module Mobiles
  module Repository
-   class DocomoP905itvVer1Submozilla < DocomoP905itvVer1
+   class Docomo_p905itv_ver1_submozilla < Docomo_p905itv_ver1
 def self.user_agent
- "Mozilla/4.08 (P905iTV;FOMA;c500;TB)"
+ "Mozilla/4.08 (P905iTV;FOMA;c500;TB)".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_zm60_ver1'
 module Mobiles
  module Repository
-   class SamsungZm60Ver1Subr5 < SamsungZm60Ver1
+   class Samsung_zm60_ver1_subr5 < Samsung_zm60_ver1
 def self.user_agent
- "SGH-ZM60 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SGH-ZM60 SHP/VPP/R5 SMB3.1 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

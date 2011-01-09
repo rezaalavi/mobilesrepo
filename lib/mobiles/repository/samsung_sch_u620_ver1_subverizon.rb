@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_u620_verizon'
 module Mobiles
  module Repository
-   class SamsungSchU620Ver1Subverizon < SamsungU620Verizon
+   class Samsung_sch_u620_ver1_subverizon < Samsung_u620_verizon
 def self.user_agent
- "samu620"
+ "samu620".gsub(/\a/, '\\')
 end
   def model_name
   "SCH-U620"

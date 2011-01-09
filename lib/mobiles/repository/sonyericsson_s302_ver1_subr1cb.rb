@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_s302_ver1'
 module Mobiles
  module Repository
-   class SonyericssonS302Ver1Subr1cb < SonyericssonS302Ver1
+   class Sonyericsson_s302_ver1_subr1cb < Sonyericsson_s302_ver1
 def self.user_agent
- "SonyEricssonS302/R1CB Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonS302/R1CB Browser/OpenWave/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sonyericsson.com/uaprof/S302R201.xml"

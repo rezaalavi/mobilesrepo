@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx_5_ver2'
 module Mobiles
  module Repository
-   class SagemMyx5Ver2Sub < SagemMyx5Ver2
+   class Sagem_myx_5_ver2_sub < Sagem_myx_5_ver2
 def self.user_agent
- "SAGEM-myX5-2/1.0"
+ "SAGEM-myX5-2/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

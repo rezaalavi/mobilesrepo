@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class KyoceraGlideVer1 < OpwvV72Generic
+   class Kyocera_glide_ver1 < Opwv_v72_generic
 def self.user_agent
- "KWC-Glide/ABJ0305 UP.Browser/7.2.7.2.536 (GUI) MMP/2.0"
+ "KWC-Glide/ABJ0305 UP.Browser/7.2.7.2.536 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://stage.kyocera-wireless.com/ringtest/UAProf/model/Glide-COX.xml"

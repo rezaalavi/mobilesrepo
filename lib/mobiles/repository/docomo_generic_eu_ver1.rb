@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic'
 module Mobiles
  module Repository
-   class DocomoGenericEuVer1 < DocomoGeneric
+   class Docomo_generic_eu_ver1 < Docomo_generic
 def self.user_agent
- "DO_NOT_MATCH_PORTALMMM"
+ "DO_NOT_MATCH_PORTALMMM".gsub(/\a/, '\\')
 end
   def max_image_width
   120

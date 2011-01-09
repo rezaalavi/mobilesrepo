@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_vx9700_ver1'
 module Mobiles
  module Repository
-   class LgVx9600Ver1 < LgVx9700Ver1
+   class Lg_vx9600_ver1 < Lg_vx9700_ver1
 def self.user_agent
- "Mozilla/5.0 (compatible; Teleca Q7; Brew 3.1.5; U; en) 240X480 LGE VX9600"
+ "Mozilla/5.0 (compatible; Teleca Q7; Brew 3.1.5; U; en) 240X480 LGE VX9600".gsub(/\a/, '\\')
 end
   def model_name
   "VX9600"

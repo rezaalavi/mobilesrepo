@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003_se'
 module Mobiles
  module Repository
-   class HtcBlueangelVer1 < GenericMsWinmo2003Se
+   class Htc_blueangel_ver1 < Generic_ms_winmo2003_se
 def self.user_agent
- "NON_UNIQUE_HTC_BLUEANGEL"
+ "NON_UNIQUE_HTC_BLUEANGEL".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

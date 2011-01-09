@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pt_g670_ver1'
 module Mobiles
  module Repository
-   class PtG670Ver1Sub10 < PtG670Ver1
+   class Pt_g670_ver1_sub10 < Pt_g670_ver1
 def self.user_agent
- "PT-G670 CLDC/CLDC-1.0 MIDP/MIDP-1.0"
+ "PT-G670 CLDC/CLDC-1.0 MIDP/MIDP-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

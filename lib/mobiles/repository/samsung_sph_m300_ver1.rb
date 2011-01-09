@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_sghm300_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM300Ver1 < SecSghm300Ver1
+   class Samsung_sph_m300_ver1 < Sec_sghm300_ver1
 def self.user_agent
- "Samsung-SPHM300 AU-MIC-M300/2.0 MMP/2.0"
+ "Samsung-SPHM300 AU-MIC-M300/2.0 MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "SPH-M300"

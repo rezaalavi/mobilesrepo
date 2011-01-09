@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3155i_ver1'
 module Mobiles
  module Repository
-   class Nokia3155iVer1Subq12504w4711nbr < Nokia3155iVer1
+   class Nokia_3155i_ver1_subq125_04w47_11nbr < Nokia_3155i_ver1
 def self.user_agent
- "Nokia3155i/2.0 (Q125_04w47_11.nbr) UP.Browser/6.2.3.8.d.1.100 (GUI) MMP/2.0"
+ "Nokia3155i/2.0 (Q125_04w47_11.nbr) UP.Browser/6.2.3.8.d.1.100 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

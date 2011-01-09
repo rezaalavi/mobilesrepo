@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/google_nexusone_ver1_sub1'
 module Mobiles
  module Repository
-   class GoogleNexusoneVer1Sub22 < GoogleNexusoneVer1Sub1
+   class Google_nexusone_ver1_sub22 < Google_nexusone_ver1_sub1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.2; en-gb; Nexus One Build/FRF50) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+ "Mozilla/5.0 (Linux; U; Android 2.2; en-gb; Nexus One Build/FRF50) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1".gsub(/\a/, '\\')
 end
   def device_os_version
   2.2

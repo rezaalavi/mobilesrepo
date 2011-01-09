@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t68_ver3'
 module Mobiles
  module Repository
-   class SonyericssonT68Ver5 < SonyericssonT68Ver3
+   class Sonyericsson_t68_ver5 < Sonyericsson_t68_ver3
 def self.user_agent
- "SonyEricssonT68/R50"
+ "SonyEricssonT68/R50".gsub(/\a/, '\\')
 end
   def max_deck_size
   10000

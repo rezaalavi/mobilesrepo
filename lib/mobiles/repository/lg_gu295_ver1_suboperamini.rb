@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_gu295_ver1'
 module Mobiles
  module Repository
-   class LgGu295Ver1Suboperamini < LgGu295Ver1
+   class Lg_gu295_ver1_suboperamini < Lg_gu295_ver1
 def self.user_agent
- "LG-GU295/V08l;Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15957; U; en-US) Opera 9.50"
+ "LG-GU295/V08l;Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.15957; U; en-US) Opera 9.50".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

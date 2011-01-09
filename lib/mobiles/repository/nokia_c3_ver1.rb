@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40_dp60'
 module Mobiles
  module Repository
-   class NokiaC3Ver1 < NokiaGenericSeries40Dp60
+   class Nokia_c3_ver1 < Nokia_generic_series40_dp60
 def self.user_agent
- "NokiaC3-00/5.0 (03.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+ "NokiaC3-00/5.0 (03.35) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungD500Ver1 < OpwvV62Generic
+   class Samsung_d500_ver1 < Opwv_v62_generic
 def self.user_agent
- "SAMSUNG-SGH-D500"
+ "SAMSUNG-SGH-D500".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-D500.xml"

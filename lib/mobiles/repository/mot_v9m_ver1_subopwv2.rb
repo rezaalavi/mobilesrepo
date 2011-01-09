@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v9m_ver1'
 module Mobiles
  module Repository
-   class MotV9mVer1Subopwv2 < MotV9mVer1
+   class Mot_v9m_ver1_subopwv2 < Mot_v9m_ver1
 def self.user_agent
- "Motorola-V9m UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0"
+ "Motorola-V9m UP.Browser/6.2.3.4.c.1.123 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

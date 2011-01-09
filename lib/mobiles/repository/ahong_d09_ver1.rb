@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class AhongD09Ver1 < GenericXhtml
+   class Ahong_d09_ver1 < Generic_xhtml
 def self.user_agent
- "AHONG_D09-1/1.0"
+ "AHONG_D09-1/1.0".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

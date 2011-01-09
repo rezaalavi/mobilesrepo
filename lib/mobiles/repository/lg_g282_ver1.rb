@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic'
 module Mobiles
  module Repository
-   class LgG282Ver1 < LgGeneric
+   class Lg_g282_ver1 < Lg_generic
 def self.user_agent
- "LG-G282 MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-G282 MIC/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-G282.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_elle_n1_ver1'
 module Mobiles
  module Repository
-   class AlcatelElleN1Ver1Sub710i1105 < AlcatelElleN1Ver1
+   class Alcatel_elle_n1_ver1_sub710i1105 < Alcatel_elle_n1_ver1
 def self.user_agent
- "Alcatel-ELLE-N1/1.0 UP.Browser/7.1.0.i.1.105 (GUI) MMP/2.0"
+ "Alcatel-ELLE-N1/1.0 UP.Browser/7.1.0.i.1.105 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

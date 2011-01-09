@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_blueangel_ver1'
 module Mobiles
  module Repository
-   class O2XdaiisVer1 < HtcBlueangelVer1
+   class O2_xdaiis_ver1 < Htc_blueangel_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2s;PPC;240x320; PPC; 240x320)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; O2 Xda 2s;PPC;240x320; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def model_name
   "Xda IIs"

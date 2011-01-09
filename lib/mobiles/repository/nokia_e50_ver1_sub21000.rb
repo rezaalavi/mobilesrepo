@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e50_ver1'
 module Mobiles
  module Repository
-   class NokiaE50Ver1Sub21000 < NokiaE50Ver1
+   class Nokia_e50_ver1_sub21000 < Nokia_e50_ver1
 def self.user_agent
- "NokiaE50-2/1.00.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaE50-2/1.00.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

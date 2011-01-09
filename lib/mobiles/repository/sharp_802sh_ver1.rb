@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class Sharp802shVer1 < OpwvV7Generic
+   class Sharp_802sh_ver1 < Opwv_v7_generic
 def self.user_agent
- "802SH"
+ "802SH".gsub(/\a/, '\\')
 end
   def model_name
   "802SH"

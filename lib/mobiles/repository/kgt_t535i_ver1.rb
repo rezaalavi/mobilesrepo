@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_portalmmm'
 module Mobiles
  module Repository
-   class KgtT535iVer1 < GenericPortalmmm
+   class Kgt_t535i_ver1 < Generic_portalmmm
 def self.user_agent
- "KGT/1.0 T535i-10(c10)"
+ "KGT/1.0 T535i-10(c10)".gsub(/\a/, '\\')
 end
   def model_name
   "T535i"

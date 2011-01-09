@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_2118_ver1'
 module Mobiles
  module Repository
-   class Zte2118Ver1Sub4127 < Zte2118Ver1
+   class Zte_2118_ver1_sub4127 < Zte_2118_ver1
 def self.user_agent
- "ZTE-2118/1.0 UP.Browser/4.1.27"
+ "ZTE-2118/1.0 UP.Browser/4.1.27".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_xda_zest_ver1'
 module Mobiles
  module Repository
-   class O2XdaZestVer1Subie711 < O2XdaZestVer1
+   class O2_xda_zest_ver1_subie711 < O2_xda_zest_ver1
 def self.user_agent
- "Xda_Zest_MSIE/480x640 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "Xda_Zest_MSIE/480x640 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.11

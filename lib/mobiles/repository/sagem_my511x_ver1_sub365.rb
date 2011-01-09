@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my511x_ver1'
 module Mobiles
  module Repository
-   class SagemMy511xVer1Sub365 < SagemMy511xVer1
+   class Sagem_my511x_ver1_sub365 < Sagem_my511x_ver1
 def self.user_agent
- "Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)"
+ "Sagem-my511X/1.0/ MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.6.c.1.365 (GUI)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://extranet.sagem.com/UAProfile/898012.xml"

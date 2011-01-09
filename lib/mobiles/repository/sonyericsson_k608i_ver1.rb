@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k608_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK608iVer1 < SonyericssonK608Ver1
+   class Sonyericsson_k608i_ver1 < Sonyericsson_k608_ver1
 def self.user_agent
- "SonyEricssonK608i"
+ "SonyEricssonK608i".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Semc"

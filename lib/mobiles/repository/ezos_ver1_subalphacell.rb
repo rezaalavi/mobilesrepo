@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ezos'
 module Mobiles
  module Repository
-   class EzosVer1Subalphacell < GenericEzos
+   class Ezos_ver1_subalphacell < Generic_ezos
 def self.user_agent
- "EZOS - AlphaCell WAP Browser"
+ "EZOS - AlphaCell WAP Browser".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/goodaccess_ver1'
 module Mobiles
  module Repository
-   class GoodaccessVer1Sub3806desktop < GoodaccessVer1
+   class Goodaccess_ver1_sub3806desktop < Goodaccess_ver1
 def self.user_agent
- "GoodAccess 3.8.0.6 Beta (Desktop; GoodLink; OS 5.1)"
+ "GoodAccess 3.8.0.6 Beta (Desktop; GoodLink; OS 5.1)".gsub(/\a/, '\\')
 end
   
 end

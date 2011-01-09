@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_xda_ignito_ver1'
 module Mobiles
  module Repository
-   class O2XdaIgnitoVer1Subopera950 < O2XdaIgnitoVer1
+   class O2_xda_ignito_ver1_subopera950 < O2_xda_ignito_ver1
 def self.user_agent
- "Xda_Ignito/480x640 Opera/9.50 (Windows NT 5.1; U; en)"
+ "Xda_Ignito/480x640 Opera/9.50 (Windows NT 5.1; U; en)".gsub(/\a/, '\\')
 end
   def physical_screen_height
   57

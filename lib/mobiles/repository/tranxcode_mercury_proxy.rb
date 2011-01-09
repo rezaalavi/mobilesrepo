@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bloody_transcoder'
 module Mobiles
  module Repository
-   class TranxcodeMercuryProxy < BloodyTranscoder
+   class Tranxcode_mercury_proxy < Bloody_transcoder
 def self.user_agent
- "DO_NOT_MATCH_TRANXCODE_MERCUY_PROXY"
+ "DO_NOT_MATCH_TRANXCODE_MERCUY_PROXY".gsub(/\a/, '\\')
 end
   def model_name
   "Mercury Web Gateway"

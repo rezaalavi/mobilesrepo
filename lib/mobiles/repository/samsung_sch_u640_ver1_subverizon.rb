@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sch_u640_ver1'
 module Mobiles
  module Repository
-   class SamsungSchU640Ver1Subverizon < SamsungSchU640Ver1
+   class Samsung_sch_u640_ver1_subverizon < Samsung_sch_u640_ver1
 def self.user_agent
- "samu640"
+ "samu640".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Verizon Wireless"

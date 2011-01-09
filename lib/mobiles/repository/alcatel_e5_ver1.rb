@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class AlcatelE5Ver1 < OpwvV7Generic
+   class Alcatel_e5_ver1 < Opwv_v7_generic
 def self.user_agent
- "Alcatel-E5"
+ "Alcatel-E5".gsub(/\a/, '\\')
 end
   def model_name
   "E5"

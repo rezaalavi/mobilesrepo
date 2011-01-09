@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_typhoon_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvC500Ver1 < HtcTyphoonVer1
+   class Orange_spv_c500_ver1 < Htc_typhoon_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220; SPV C500; OpVer 4.1.1.0)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220; SPV C500; OpVer 4.1.1.0)".gsub(/\a/, '\\')
 end
   def model_name
   "SPV C500"

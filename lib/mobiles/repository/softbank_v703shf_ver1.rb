@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_generic'
 module Mobiles
  module Repository
-   class SoftbankV703shfVer1 < SoftbankGeneric
+   class Softbank_v703shf_ver1 < Softbank_generic
 def self.user_agent
- "Vodafone/1.0/V703SHf/SHJ001"
+ "Vodafone/1.0/V703SHf/SHJ001".gsub(/\a/, '\\')
 end
   def flash_lite_version
   1_1

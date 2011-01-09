@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/skyzen_ez700'
 module Mobiles
  module Repository
-   class SkyzenEz700Subbsiau < SkyzenEz700
+   class Skyzen_ez700_subbsiau < Skyzen_ez700
 def self.user_agent
- "EZ700/BSIAU.Browser/2.0 QO3C1 MMP/1.0"
+ "EZ700/BSIAU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_z750a_ver1'
 module Mobiles
  module Repository
-   class SonyericssonZ750aVer1Subr1ca < SonyericssonZ750aVer1
+   class Sonyericsson_z750a_ver1_subr1ca < Sonyericsson_z750a_ver1
 def self.user_agent
- "SonyEricssonZ750a/R1CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "SonyEricssonZ750a/R1CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

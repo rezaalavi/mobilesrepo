@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v870_ver1'
 module Mobiles
  module Repository
-   class MotV875Ver1 < MotV870Ver1
+   class Mot_v875_ver1 < Mot_v870_ver1
 def self.user_agent
- "MOT-V875"
+ "MOT-V875".gsub(/\a/, '\\')
 end
   def model_name
   "V875"

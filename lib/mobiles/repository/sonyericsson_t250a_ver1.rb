@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t250i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT250aVer1 < SonyericssonT250iVer1
+   class Sonyericsson_t250a_ver1 < Sonyericsson_t250i_ver1
 def self.user_agent
- "SonyEricssonT250a/R5CA005 TelecaBrowser/1.1.14.20"
+ "SonyEricssonT250a/R5CA005 TelecaBrowser/1.1.14.20".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sonyericsson.com/uaprof/T250aR101.xml"

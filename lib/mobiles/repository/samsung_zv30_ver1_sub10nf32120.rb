@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_zv30_ver1'
 module Mobiles
  module Repository
-   class SamsungZv30Ver1Sub10nf32120 < SamsungZv30Ver1
+   class Samsung_zv30_ver1_sub10nf32120 < Samsung_zv30_ver1
 def self.user_agent
- "SamsungSGH-ZV30/1.0 SHP/VPP/R5 NetFront/3.2 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SamsungSGH-ZV30/1.0 SHP/VPP/R5 NetFront/3.2 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

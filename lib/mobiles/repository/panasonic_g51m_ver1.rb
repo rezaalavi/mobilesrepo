@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_g51e_ver1'
 module Mobiles
  module Repository
-   class PanasonicG51mVer1 < PanasonicG51eVer1
+   class Panasonic_g51m_ver1 < Panasonic_g51e_ver1
 def self.user_agent
- "Panasonic-g51M"
+ "Panasonic-g51M".gsub(/\a/, '\\')
 end
   def model_name
   "G51M"

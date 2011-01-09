@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3205_ver1'
 module Mobiles
  module Repository
-   class Nokia3205sprVer1 < Nokia3205Ver1
+   class Nokia_3205spr_ver1 < Nokia_3205_ver1
 def self.user_agent
- "NOKIA-RM-11"
+ "NOKIA-RM-11".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Nokia/NOK3205SPR/H125V1003.rdf"

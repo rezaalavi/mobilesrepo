@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i780_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI780vVer1 < SamsungSghI780Ver1
+   class Samsung_sgh_i780v_ver1 < Samsung_sgh_i780_ver1
 def self.user_agent
- "SAMSUNG-SGH-i780V/MJHA3 (compatible; MSIE 6.0; Windows CE; PPC) Opera 8.65"
+ "SAMSUNG-SGH-i780V/MJHA3 (compatible; MSIE 6.0; Windows CE; PPC) Opera 8.65".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

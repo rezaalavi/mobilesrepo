@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_centro_ver1'
 module Mobiles
  module Repository
-   class PalmCentroVer1Subgsm < PalmCentroVer1
+   class Palm_centro_ver1_subgsm < Palm_centro_ver1
 def self.user_agent
- "PalmCentro/v0001/RC1 Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D061; Blazer/4.5) 16;320x320"
+ "PalmCentro/v0001/RC1 Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D061; Blazer/4.5) 16;320x320".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Palm"

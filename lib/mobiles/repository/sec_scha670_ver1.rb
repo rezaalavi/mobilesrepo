@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SecScha670Ver1 < UptextGeneric
+   class Sec_scha670_ver1 < Uptext_generic
 def self.user_agent
- "SEC-scha670"
+ "SEC-scha670".gsub(/\a/, '\\')
 end
   def model_name
   "SCH-A670"

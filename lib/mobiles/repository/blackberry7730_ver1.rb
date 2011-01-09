@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver3_sub70'
 module Mobiles
  module Repository
-   class Blackberry7730Ver1 < BlackberryGenericVer3Sub70
+   class Blackberry7730_ver1 < Blackberry_generic_ver3_sub70
 def self.user_agent
- "BlackBerry7730"
+ "BlackBerry7730".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.blackberry.net/go/mobile/profiles/uaprof/7730/3.7.0.rdf"

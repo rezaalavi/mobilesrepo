@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class Tsm6Ver1 < UpguiGeneric
+   class Tsm_6_ver1 < Upgui_generic
 def self.user_agent
- "TSM-6"
+ "TSM-6".gsub(/\a/, '\\')
 end
   def model_name
   "TSM-6"

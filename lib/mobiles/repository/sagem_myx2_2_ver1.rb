@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class SagemMyx22Ver1 < UpguiGeneric
+   class Sagem_myx2_2_ver1 < Upgui_generic
 def self.user_agent
- "SAGEM-myX2-2"
+ "SAGEM-myX2-2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://extranet.sagem.com/UAProfile/891863.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_3'
 module Mobiles
  module Repository
-   class SonyericssonK610imVer1 < GenericNetfrontVer33
+   class Sonyericsson_k610im_ver1 < Generic_netfront_ver3_3
 def self.user_agent
- "SonyEricssonK610im/R1JE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK610im/R1JE Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/K610imR201.xml"

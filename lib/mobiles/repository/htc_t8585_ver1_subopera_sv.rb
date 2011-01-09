@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_t8585_ver1_subopera'
 module Mobiles
  module Repository
-   class HtcT8585Ver1SuboperaSv < HtcT8585Ver1Subopera
+   class Htc_t8585_ver1_subopera_sv < Htc_t8585_ver1_subopera
 def self.user_agent
- "HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; sv)"
+ "HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; sv)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opera_nokia_series60_sub452'
 module Mobiles
  module Repository
-   class OperaNokiaSeries60Sub934fr < OperaNokiaSeries60Sub452
+   class Opera_nokia_series60_sub934fr < Opera_nokia_series60_sub452
 def self.user_agent
- "Opera/9.80 (S60; SymbOS; Opera Mobi/934; U; fr) Presto/2.5.28 Version/10.1"
+ "Opera/9.80 (S60; SymbOS; Opera Mobi/934; U; fr) Presto/2.5.28 Version/10.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   10.1

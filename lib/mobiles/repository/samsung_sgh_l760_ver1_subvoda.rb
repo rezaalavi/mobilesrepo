@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_l760_ver1'
 module Mobiles
  module Repository
-   class SamsungSghL760Ver1Subvoda < SamsungSghL760Ver1
+   class Samsung_sgh_l760_ver1_subvoda < Samsung_sgh_l760_ver1
 def self.user_agent
- "SAMSUNG-SGH-L760-Vodafone/BUGH2 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-L760-Vodafone/BUGH2 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

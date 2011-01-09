@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v6_generic'
 module Mobiles
  module Repository
-   class WonuS3Ver1 < OpwvV6Generic
+   class Wonu_s3_ver1 < Opwv_v6_generic
 def self.user_agent
- "Wonu S3"
+ "Wonu S3".gsub(/\a/, '\\')
 end
   def model_name
   "S3"

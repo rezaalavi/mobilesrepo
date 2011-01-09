@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_n700i_v2_w24'
 module Mobiles
  module Repository
-   class DocomoN700iV2W30 < DocomoN700iV2W24
+   class Docomo_n700i_v2_w30 < Docomo_n700i_v2_w24
 def self.user_agent
- "DoCoMo/2.0 N700i(c100;TB;W30H15)"
+ "DoCoMo/2.0 N700i(c100;TB;W30H15)".gsub(/\a/, '\\')
 end
   
 end

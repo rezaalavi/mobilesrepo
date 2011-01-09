@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_i876_ver1'
 module Mobiles
  module Repository
-   class MotI876Ver1Subua < MotI876Ver1
+   class Mot_i876_ver1_subua < Mot_i876_ver1
 def self.user_agent
- "MOT-A-B2/02.00 UP.Browser/7.2.7.1.c.1.101 (GUI) MMP/2.0 Push/PO"
+ "MOT-A-B2/02.00 UP.Browser/7.2.7.1.c.1.101 (GUI) MMP/2.0 Push/PO".gsub(/\a/, '\\')
 end
   def model_extra_info
   "South America"

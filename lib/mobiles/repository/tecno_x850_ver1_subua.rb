@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tecno_x850_ver1'
 module Mobiles
  module Repository
-   class TecnoX850Ver1Subua < TecnoX850Ver1
+   class Tecno_x850_ver1_subua < Tecno_x850_ver1
 def self.user_agent
- "RT240X320/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "RT240X320/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

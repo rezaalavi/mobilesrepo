@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/stupid_novarra_proxy'
 module Mobiles
  module Repository
-   class StupidNovarraProxySub73 < StupidNovarraProxy
+   class Stupid_novarra_proxy_sub73 < Stupid_novarra_proxy
 def self.user_agent
- "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7 Novarra-Vision/7.3"
+ "Mozilla/5.0 (X11; U; Linux i686; en-US; rv:1.8.0.7) Gecko/20060909 Firefox/1.5.0.7 Novarra-Vision/7.3".gsub(/\a/, '\\')
 end
   
 end

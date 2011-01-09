@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40_dp20'
 module Mobiles
  module Repository
-   class VertuGeneric < NokiaGenericSeries40Dp20
+   class Vertu_generic < Nokia_generic_series40_dp20
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_VERTU"
+ "DO_NOT_MATCH_GENERIC_VERTU".gsub(/\a/, '\\')
 end
   def model_name
   "Unrecognized Vertu"

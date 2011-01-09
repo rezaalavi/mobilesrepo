@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a768_ver1'
 module Mobiles
  module Repository
-   class MotA768Ver1Subezxg00afa2ra768g00b0a2r < MotA768Ver1
+   class Mot_a768_ver1_subezxg00afa2ra768g00b0a2r < Mot_a768_ver1
 def self.user_agent
- "MOT-A768/EZX_G_00.AF.A2R/A768_G_00.B0.A2R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "MOT-A768/EZX_G_00.AF.A2R/A768_G_00.B0.A2R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_bh4r_ver1'
 module Mobiles
  module Repository
-   class AlcatelBh4rVer1Sub62 < AlcatelBh4rVer1
+   class Alcatel_bh4r_ver1_sub62 < Alcatel_bh4r_ver1
 def self.user_agent
- "Alcatel-BH4R/1.0 UP.Browser/6.2.ALCATEL MMP/1.0"
+ "Alcatel-BH4R/1.0 UP.Browser/6.2.ALCATEL MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

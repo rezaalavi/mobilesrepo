@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_a600_ver1'
 module Mobiles
  module Repository
-   class SamsungA600Ver1Sub6223d1105 < SamsungA600Ver1
+   class Samsung_a600_ver1_sub6223d1105 < Samsung_a600_ver1
 def self.user_agent
- "SCH-A600 UP.Browser/6.2.2.3.d.1.105 (GUI) MMP/2.0"
+ "SCH-A600 UP.Browser/6.2.2.3.d.1.105 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

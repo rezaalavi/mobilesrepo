@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e630_ver1'
 module Mobiles
  module Repository
-   class SamsungE630Ver1Submidp < SamsungE630Ver1
+   class Samsung_e630_ver1_submidp < Samsung_e630_ver1
 def self.user_agent
- "SAMSUNG-SGH-E630/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0"
+ "SAMSUNG-SGH-E630/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

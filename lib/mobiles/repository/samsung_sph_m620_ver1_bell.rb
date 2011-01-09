@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m620_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM620Ver1Bell < SamsungSphM620Ver1
+   class Samsung_sph_m620_ver1_bell < Samsung_sph_m620_ver1
 def self.user_agent
- "Samsung-SPHM620 AU-OBIGO/Q04C1-1.22 MMP/2.0"
+ "Samsung-SPHM620 AU-OBIGO/Q04C1-1.22 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/BMC_Samsung_SPH-M620_AF22.rdf"

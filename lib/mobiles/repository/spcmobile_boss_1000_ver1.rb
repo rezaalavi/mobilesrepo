@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SpcmobileBoss1000Ver1 < GenericXhtml
+   class Spcmobile_boss_1000_ver1 < Generic_xhtml
 def self.user_agent
- "SPC MOBILE BOSS 1000"
+ "SPC MOBILE BOSS 1000".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

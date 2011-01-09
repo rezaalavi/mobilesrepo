@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_ngageqd_ver2'
 module Mobiles
  module Repository
-   class NokiaNgageqdVer2Sub307 < NokiaNgageqdVer2
+   class Nokia_ngageqd_ver2_sub307 < Nokia_ngageqd_ver2
 def self.user_agent
- "NokiaN-GageQD/2.0 (3.07) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "NokiaN-GageQD/2.0 (3.07) SymbianOS/6.1 Series60/1.2 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

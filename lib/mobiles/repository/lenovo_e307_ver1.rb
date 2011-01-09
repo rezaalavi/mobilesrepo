@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class LenovoE307Ver1 < Generic
+   class Lenovo_e307_ver1 < Generic
 def self.user_agent
- "Lenovo-E307"
+ "Lenovo-E307".gsub(/\a/, '\\')
 end
   def model_name
   "E307"

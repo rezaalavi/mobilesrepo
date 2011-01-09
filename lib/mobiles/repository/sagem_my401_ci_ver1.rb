@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2'
 module Mobiles
  module Repository
-   class SagemMy401CiVer1 < PortalmmmVer2
+   class Sagem_my401_ci_ver1 < Portalmmm_ver2
 def self.user_agent
- "portalmmm/2.0 my401Ci"
+ "portalmmm/2.0 my401Ci".gsub(/\a/, '\\')
 end
   def model_name
   "my401Ci"

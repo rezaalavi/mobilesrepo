@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3m_ver1'
 module Mobiles
  module Repository
-   class MotV3mVer1Sub6234c1112 < MotV3mVer1
+   class Mot_v3m_ver1_sub6234c1112 < Mot_v3m_ver1
 def self.user_agent
- "MOT-GATW_/00.62 UP.Browser/6.2.3.4.c.1.112 (GUI) MMP/2.0"
+ "MOT-GATW_/00.62 UP.Browser/6.2.3.4.c.1.112 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

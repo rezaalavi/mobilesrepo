@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_mx500_ver1'
 module Mobiles
  module Repository
-   class LgMx500Ver1Subvez < LgeMx500Ver1
+   class Lg_mx500_ver1_subvez < Lge_mx500_ver1
 def self.user_agent
- "LGE-MX500_VEZ/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "LGE-MX500_VEZ/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

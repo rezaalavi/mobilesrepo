@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class MotF9Ver1 < Generic
+   class Mot_f9_ver1 < Generic
 def self.user_agent
- "MOT-F9"
+ "MOT-F9".gsub(/\a/, '\\')
 end
   
 end

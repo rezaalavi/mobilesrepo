@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6800_ver1_subus'
 module Mobiles
  module Repository
-   class Nokia6800Ver1Sub413 < Nokia6800Ver1Subus
+   class Nokia_6800_ver1_sub413 < Nokia_6800_ver1_subus
 def self.user_agent
- "Nokia6800/2.0 (4.13) Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "Nokia6800/2.0 (4.13) Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

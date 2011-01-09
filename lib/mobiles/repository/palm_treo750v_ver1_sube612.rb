@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_treo750v_ver1'
 module Mobiles
  module Repository
-   class PalmTreo750vVer1Sube612 < PalmTreo750vVer1
+   class Palm_treo750v_ver1_sube612 < Palm_treo750v_ver1
 def self.user_agent
- "Treo750 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+ "Treo750 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2_1'
 module Mobiles
  module Repository
-   class HtcLegendVer1 < GenericAndroidVer21
+   class Htc_legend_ver1 < Generic_android_ver2_1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1; es-es; HTC Legend Build/ERD79) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 NGP"
+ "Mozilla/5.0 (Linux; U; Android 2.1; es-es; HTC Legend Build/ERD79) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 NGP".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/Android/Common/Legend/ua-profile.xml"

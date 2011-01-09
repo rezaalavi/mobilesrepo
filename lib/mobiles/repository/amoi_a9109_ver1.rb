@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_a500_ver1'
 module Mobiles
  module Repository
-   class AmoiA9109Ver1 < AmoiA500Ver1
+   class Amoi_a9109_ver1 < Amoi_a500_ver1
 def self.user_agent
- "Amoi 9109"
+ "Amoi 9109".gsub(/\a/, '\\')
 end
   def model_name
   9109

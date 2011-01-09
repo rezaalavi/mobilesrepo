@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class ToshibaT618xVer1 < OpwvV61Generic
+   class Toshiba_t618x_ver1 < Opwv_v61_generic
 def self.user_agent
- "T618X"
+ "T618X".gsub(/\a/, '\\')
 end
   def model_name
   "T618X"

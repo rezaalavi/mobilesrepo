@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class GioneeA280Ver1 < GenericXhtml
+   class Gionee_a280_ver1 < Generic_xhtml
 def self.user_agent
- "GIONEE-A280/SW1.0.0/WAP2.0"
+ "GIONEE-A280/SW1.0.0/WAP2.0".gsub(/\a/, '\\')
 end
   def xhtmlmp_preferred_mime_type
   "application/xhtml+xml"

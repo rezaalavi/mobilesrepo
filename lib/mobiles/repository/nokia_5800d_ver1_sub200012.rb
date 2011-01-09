@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5800d_ver1_sub1100008'
 module Mobiles
  module Repository
-   class Nokia5800dVer1Sub200012 < Nokia5800dVer1Sub1100008
+   class Nokia_5800d_ver1_sub200012 < Nokia_5800d_ver1_sub1100008
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1/20.0.012; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5800d-1/20.0.012; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/Nokia5800d-1r100-3G.xml"

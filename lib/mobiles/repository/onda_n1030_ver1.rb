@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/onda_n1020_ver1'
 module Mobiles
  module Repository
-   class OndaN1030Ver1 < OndaN1020Ver1
+   class Onda_n1030_ver1 < Onda_n1020_ver1
 def self.user_agent
- "N1030 ONDA/Plat-F-VIM/WAP2.0 UP.Browser/6.2.2.7.c.1.102 (GUI)"
+ "N1030 ONDA/Plat-F-VIM/WAP2.0 UP.Browser/6.2.2.7.c.1.102 (GUI)".gsub(/\a/, '\\')
 end
   def model_name
   "N1030"

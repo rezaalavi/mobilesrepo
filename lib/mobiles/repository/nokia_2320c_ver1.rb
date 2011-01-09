@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40'
 module Mobiles
  module Repository
-   class Nokia2320cVer1 < NokiaGenericSeries40
+   class Nokia_2320c_ver1 < Nokia_generic_series40
 def self.user_agent
- "Nokia2320c-2b/2.0(ATT.06.88) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia2320c-2b/2.0(ATT.06.88) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N2320c-2br100.xml"

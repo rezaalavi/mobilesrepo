@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_8800_ver1'
 module Mobiles
  module Repository
-   class Nokia8800eVer1 < Nokia8800Ver1
+   class Nokia_8800e_ver1 < Nokia_8800_ver1
 def self.user_agent
- "Nokia8800e-1/2.0 (05.21) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia8800e-1/2.0 (05.21) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds.nokia.com/uaprof/N8800e-1r100.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class SonyericssonW302Ver1 < OpwvV72Generic
+   class Sonyericsson_w302_ver1 < Opwv_v72_generic
 def self.user_agent
- "SonyEricssonW302"
+ "SonyEricssonW302".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

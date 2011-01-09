@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_l1400i_ver1'
 module Mobiles
  module Repository
-   class LgL1400iVer1Sub623 < LgL1400iVer1
+   class Lg_l1400i_ver1_sub623 < Lg_l1400i_ver1
 def self.user_agent
- "LG-L1400i UP.Browser/6.2.3 (GUI) MMP/1.0"
+ "LG-L1400i UP.Browser/6.2.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

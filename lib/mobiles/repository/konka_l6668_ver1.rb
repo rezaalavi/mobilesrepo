@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class KonkaL6668Ver1 < Generic
+   class Konka_l6668_ver1 < Generic
 def self.user_agent
- "L6668/(2006.01.01)1.0/WAP2.0 Profile"
+ "L6668/(2006.01.01)1.0/WAP2.0 Profile".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.mobilesoft.com.cn/UAProfile/CMSMMS2003.xml"

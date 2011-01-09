@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40_dp20'
 module Mobiles
  module Repository
-   class Nokia1006Ver1 < NokiaGenericSeries40Dp20
+   class Nokia_1006_ver1 < Nokia_generic_series40_dp20
 def self.user_agent
- "Nokia-1006 UP.Browser/6.3.0.8.c.1.104 (GUI) MMP/2.0"
+ "Nokia-1006 UP.Browser/6.3.0.8.c.1.104 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

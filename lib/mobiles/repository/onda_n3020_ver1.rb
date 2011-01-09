@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/onda_n3000_ver1'
 module Mobiles
  module Repository
-   class OndaN3020Ver1 < OndaN3000Ver1
+   class Onda_n3020_ver1 < Onda_n3000_ver1
 def self.user_agent
- "N3020"
+ "N3020".gsub(/\a/, '\\')
 end
   def model_name
   "N3020"

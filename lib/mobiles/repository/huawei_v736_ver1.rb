@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q5'
 module Mobiles
  module Repository
-   class HuaweiV736Ver1 < LgGenericObigoQ5
+   class Huawei_v736_ver1 < Lg_generic_obigo_q5
 def self.user_agent
- "MTC/1.0/0MTC 736/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
+ "MTC/1.0/0MTC 736/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.huawei.com/uaprof/HuaweiV736v100GPRS.xml"

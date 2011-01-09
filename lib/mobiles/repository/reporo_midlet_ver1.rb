@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ReporoMidletVer1 < GenericXhtml
+   class Reporo_midlet_ver1 < Generic_xhtml
 def self.user_agent
- "Reporo Generic MIDP2.0 CLDC1.0"
+ "Reporo Generic MIDP2.0 CLDC1.0".gsub(/\a/, '\\')
 end
   def model_name
   "Midlet"

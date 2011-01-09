@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_dream_ver1'
 module Mobiles
  module Repository
-   class HtcDreamVer1SubEpe54b < HtcDreamVer1
+   class Htc_dream_ver1_sub_epe54b < Htc_dream_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; HTC Dream Build/EPE54B) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17"
+ "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; HTC Dream Build/EPE54B) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17".gsub(/\a/, '\\')
 end
   
 end

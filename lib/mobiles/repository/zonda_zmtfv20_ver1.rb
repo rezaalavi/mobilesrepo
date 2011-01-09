@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZondaZmtfv20Ver1 < GenericXhtml
+   class Zonda_zmtfv20_ver1 < Generic_xhtml
 def self.user_agent
- "ZMTFTV20/R01 Browser/Obigo/Q03C/WAP2.0"
+ "ZMTFTV20/R01 Browser/Obigo/Q03C/WAP2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

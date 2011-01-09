@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bloody_transcoder'
 module Mobiles
  module Repository
-   class CoralwebProxy < BloodyTranscoder
+   class Coralweb_proxy < Bloody_transcoder
 def self.user_agent
- "CoralWebPrx/0.1.19 (See http://coralcdn.org/)"
+ "CoralWebPrx/0.1.19 (See http://coralcdn.org/)".gsub(/\a/, '\\')
 end
   def model_name
   "Proxy"

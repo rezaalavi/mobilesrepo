@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3mobigo_ver1'
 module Mobiles
  module Repository
-   class MotV3mobigoVer1Red < MotV3mobigoVer1
+   class Mot_v3mobigo_ver1_red < Mot_v3mobigo_ver1
 def self.user_agent
- "Motorola-V3m-Red Obigo/Q04C1 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Motorola-V3m-Red Obigo/Q04C1 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Motorola/V3m-Red/0481.rdf"

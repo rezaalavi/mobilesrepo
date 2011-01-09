@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LctX700b01Ver1 < GenericXhtml
+   class Lct_x700b_01_ver1 < Generic_xhtml
 def self.user_agent
- "LCT_X700B_01/LBFM401A/WAP2.0Profile"
+ "LCT_X700B_01/LBFM401A/WAP2.0Profile".gsub(/\a/, '\\')
 end
   def model_name
   "X700B"

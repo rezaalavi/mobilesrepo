@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003_se'
 module Mobiles
  module Repository
-   class HpIpaqHw6500Ver1 < GenericMsWinmo2003Se
+   class Hp_ipaq_hw6500_ver1 < Generic_ms_winmo2003_se
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240; HP iPAQ hw6500)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240; HP iPAQ hw6500)".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

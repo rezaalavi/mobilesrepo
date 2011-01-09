@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_s82_ver1'
 module Mobiles
  module Repository
-   class BenqS82Ver1Subv10 < BenqS82Ver1
+   class Benq_s82_ver1_subv10 < Benq_s82_ver1
 def self.user_agent
- "Vodafone/1.0/BenQ-S82"
+ "Vodafone/1.0/BenQ-S82".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_opal100_ver1'
 module Mobiles
  module Repository
-   class HtcTouchVivaT2223Ver1 < HtcOpal100Ver1
+   class Htc_touch_viva_t2223_ver1 < Htc_opal100_ver1
 def self.user_agent
- "HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "HTC_Touch_Viva_T2223 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def model_name
   "HTC Touch Viva T2223"

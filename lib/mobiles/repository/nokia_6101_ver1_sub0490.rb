@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6101_ver1'
 module Mobiles
  module Repository
-   class Nokia6101Ver1Sub0490 < Nokia6101Ver1
+   class Nokia_6101_ver1_sub0490 < Nokia_6101_ver1
 def self.user_agent
- "Nokia6101/2.0 (04.90) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia6101/2.0 (04.90) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N6101r100.xml"

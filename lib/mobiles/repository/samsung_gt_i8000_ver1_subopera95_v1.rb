@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_i8000_ver1_subopera95'
 module Mobiles
  module Repository
-   class SamsungGtI8000Ver1Subopera95V1 < SamsungGtI8000Ver1Subopera95
+   class Samsung_gt_i8000_ver1_subopera95_v1 < Samsung_gt_i8000_ver1_subopera95
 def self.user_agent
- "SAMSUNG-GT-i8000/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5"
+ "SAMSUNG-GT-i8000/1.0 (Windows CE; Opera Mobi; U; en) Opera 9.5".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_ca27_ver1'
 module Mobiles
  module Repository
-   class KddiCa27Ver1Subua < KddiCa27Ver1
+   class Kddi_ca27_ver1_subua < Kddi_ca27_ver1
 def self.user_agent
- "KDDI-CA27"
+ "KDDI-CA27".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_lguplus_android2'
 module Mobiles
  module Repository
-   class GenericLguplusAndroidWebkitBrowser < GenericLguplusAndroid2
+   class Generic_lguplus_android_webkit_browser < Generic_lguplus_android2
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_LGUPLUS_ANDROID_WEBKIT"
+ "DO_NOT_MATCH_GENERIC_LGUPLUS_ANDROID_WEBKIT".gsub(/\a/, '\\')
 end
   def mobile_browser
   "LGUPlus WebKit"

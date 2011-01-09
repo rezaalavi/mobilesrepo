@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_x480_ver1'
 module Mobiles
  module Repository
-   class SamsungSghX480Ver1Subsec < SamsungSghX480Ver1
+   class Samsung_sgh_x480_ver1_subsec < Samsung_sgh_x480_ver1
 def self.user_agent
- "SEC-SGHX480"
+ "SEC-SGHX480".gsub(/\a/, '\\')
 end
   
 end

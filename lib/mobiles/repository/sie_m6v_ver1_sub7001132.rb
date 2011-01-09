@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_m6v_ver1'
 module Mobiles
  module Repository
-   class SieM6vVer1Sub7001132 < SieM6vVer1
+   class Sie_m6v_ver1_sub7001132 < Sie_m6v_ver1
 def self.user_agent
- "SIE-M6V/00 UP.Browser/7.0.0.1.132 (GUI) MMP/2.0"
+ "SIE-M6V/00 UP.Browser/7.0.0.1.132 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

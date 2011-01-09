@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sphm520_ver1'
 module Mobiles
  module Repository
-   class SamsungSphm520Ver1Sprint < SamsungSphm520Ver1
+   class Samsung_sphm520_ver1_sprint < Samsung_sphm520_ver1
 def self.user_agent
- "Samsung-SPHM520 AU-MIC-M520/2.0 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Samsung-SPHM520 AU-MIC-M520/2.0 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Samsung/SPH-M520/BA11.rdf"

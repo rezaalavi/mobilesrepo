@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a780_ver1'
 module Mobiles
  module Repository
-   class MotA780Ver1Submozr52g0d55a1r < MotA780Ver1
+   class Mot_a780_ver1_submozr52g0d55a1r < Mot_a780_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A780; 935) MOT-A780/R52_G_0D.55.A1R Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 7.50 [en]"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A780; 935) MOT-A780/R52_G_0D.55.A1R Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 7.50 [en]".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

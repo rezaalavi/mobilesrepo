@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_2760_ver1'
 module Mobiles
  module Repository
-   class Nokia2760Ver2Sub0682 < Nokia2760Ver1
+   class Nokia_2760_ver2_sub0682 < Nokia_2760_ver1
 def self.user_agent
- "Nokia2760/2.0 (06.82) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia2760/2.0 (06.82) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N2760r100.xml"

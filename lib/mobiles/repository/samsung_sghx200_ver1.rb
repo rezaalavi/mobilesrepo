@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_x200_ver1'
 module Mobiles
  module Repository
-   class SamsungSghx200Ver1 < SecX200Ver1
+   class Samsung_sghx200_ver1 < Sec_x200_ver1
 def self.user_agent
- "SAMSUNG-SGH-X200"
+ "SAMSUNG-SGH-X200".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

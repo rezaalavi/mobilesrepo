@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class AmoiV600Ver1 < OpwvV62Generic
+   class Amoi_v600_ver1 < Opwv_v62_generic
 def self.user_agent
- "Amoi-V600"
+ "Amoi-V600".gsub(/\a/, '\\')
 end
   def model_name
   "V600"

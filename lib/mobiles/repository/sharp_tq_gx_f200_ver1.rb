@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SharpTqGxF200Ver1 < OpwvV62Generic
+   class Sharp_tq_gx_f200_ver1 < Opwv_v62_generic
 def self.user_agent
- "SHARP-TQ-GX-F200/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.d.1.110 (GUI) MMP/2.0"
+ "SHARP-TQ-GX-F200/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.3.d.1.110 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://sharp-mobile.com/UAprof/GX-F200.xml"

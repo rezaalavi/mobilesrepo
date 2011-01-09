@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_vx8100_ver1_sub6232'
 module Mobiles
  module Repository
-   class LgeVx8700Ver1 < LgeVx8100Ver1Sub6232
+   class Lge_vx8700_ver1 < Lge_vx8100_ver1_sub6232
 def self.user_agent
- "LGE-VX8700/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "LGE-VX8700/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vtext.com/lg/vx8700/vx8700.xml"

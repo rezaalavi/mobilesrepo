@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z240_ver1'
 module Mobiles
  module Repository
-   class SamsungZ240eVer1 < SamsungZ240Ver1
+   class Samsung_z240e_ver1 < Samsung_z240_ver1
 def self.user_agent
- "SAMSUNG-SGH-Z240E/"
+ "SAMSUNG-SGH-Z240E/".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-Z240E"

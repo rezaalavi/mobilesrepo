@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p910i_ver1'
 module Mobiles
  module Repository
-   class OperaSonyericssonP910iVer1 < SonyericssonP910iVer1
+   class Opera_sonyericsson_p910i_ver1 < Sonyericsson_p910i_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; SonyEricsson P910"
+ "Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; SonyEricsson P910".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

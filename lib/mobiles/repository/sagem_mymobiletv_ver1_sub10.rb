@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_mymobiletv_ver1'
 module Mobiles
  module Repository
-   class SagemMymobiletvVer1Sub10 < SagemMymobiletvVer1
+   class Sagem_mymobiletv_ver1_sub10 < Sagem_mymobiletv_ver1
 def self.user_agent
- "SAGEM-MyMobileTv/1.0 Browser/UP.Browser/7.1.0.f.1.130 (GUI)"
+ "SAGEM-MyMobileTv/1.0 Browser/UP.Browser/7.1.0.f.1.130 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

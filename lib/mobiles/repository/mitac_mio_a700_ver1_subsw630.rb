@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitac_mio_a700_ver1'
 module Mobiles
  module Repository
-   class MitacMioA700Ver1Subsw630 < MitacMioA700Ver1
+   class Mitac_mio_a700_ver1_subsw630 < Mitac_mio_a700_ver1
 def self.user_agent
- "MiTAC-A700/(2006.04.13)SW6.3.0/Mozilla4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MiTAC-A700/(2006.04.13)SW6.3.0/Mozilla4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.mio-tech.com.tw/download/smartphone/MioA700.xml"

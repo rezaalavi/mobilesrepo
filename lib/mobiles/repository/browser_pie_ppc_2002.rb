@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_pie_4_0'
 module Mobiles
  module Repository
-   class BrowserPiePpc2002 < BrowserPie40
+   class Browser_pie_ppc_2002 < Browser_pie_4_0
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_PIE_PPC_2002"
+ "DO_NOT_MATCH_BROWSER_PIE_PPC_2002".gsub(/\a/, '\\')
 end
   
 end

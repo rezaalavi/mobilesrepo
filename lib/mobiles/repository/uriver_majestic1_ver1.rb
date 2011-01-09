@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q7'
 module Mobiles
  module Repository
-   class UriverMajestic1Ver1 < LgGenericObigoQ7
+   class Uriver_majestic1_ver1 < Lg_generic_obigo_q7
 def self.user_agent
- "Majestic1/Obigo/Q7 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Majestic1/Obigo/Q7 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

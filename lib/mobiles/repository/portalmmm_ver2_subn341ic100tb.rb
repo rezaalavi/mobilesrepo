@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2_subn341i'
 module Mobiles
  module Repository
-   class PortalmmmVer2Subn341ic100tb < PortalmmmVer2Subn341i
+   class Portalmmm_ver2_subn341ic100tb < Portalmmm_ver2_subn341i
 def self.user_agent
- "portalmmm/2.0 N341i(c100;TB)"
+ "portalmmm/2.0 N341i(c100;TB)".gsub(/\a/, '\\')
 end
   def max_deck_size
   40000

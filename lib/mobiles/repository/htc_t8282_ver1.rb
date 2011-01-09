@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6_1'
 module Mobiles
  module Repository
-   class HtcT8282Ver1 < GenericMsWinmo61
+   class Htc_t8282_ver1 < Generic_ms_winmo6_1
 def self.user_agent
- "HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)"
+ "HTC_Touch_HD_T8282 Opera/9.50 (Windows NT 5.1; U; de)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

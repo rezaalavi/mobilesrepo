@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mib22_generic'
 module Mobiles
  module Repository
-   class Mot886Ver1 < MotMib22Generic
+   class Mot_886_ver1 < Mot_mib22_generic
 def self.user_agent
- "MOT-886/0E.30.48R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-886/0E.30.48R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   "2.2.1"

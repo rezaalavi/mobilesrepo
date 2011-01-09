@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_c810_ver1'
 module Mobiles
  module Repository
-   class PantechC810Ver1Subie711 < PantechC810Ver1
+   class Pantech_c810_ver1_subie711 < Pantech_c810_ver1
 def self.user_agent
- "PANTECH-C810/M044.33 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "PANTECH-C810/M044.33 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.11

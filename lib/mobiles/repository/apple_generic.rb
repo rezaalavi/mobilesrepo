@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class AppleGeneric < GenericXhtml
+   class Apple_generic < Generic_xhtml
 def self.user_agent
- "DO_NOT_MATCH_APPLE_GENERIC"
+ "DO_NOT_MATCH_APPLE_GENERIC".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Safari"

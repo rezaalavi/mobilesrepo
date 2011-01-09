@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_e250_ver1'
 module Mobiles
  module Repository
-   class SamsungSghE250Ver1Subboga3 < SamsungSghE250Ver1
+   class Samsung_sgh_e250_ver1_subboga3 < Samsung_sgh_e250_ver1
 def self.user_agent
- "SAMSUNG-SGH-E250/E250BOGA3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-SGH-E250/E250BOGA3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

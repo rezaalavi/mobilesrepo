@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/newgen_x7_ver1'
 module Mobiles
  module Repository
-   class NewgenX7Ver1Sub221 < NewgenX7Ver1
+   class Newgen_x7_ver1_sub221 < Newgen_x7_ver1
 def self.user_agent
- "Newgen-X7/REV2.2.1/WAP1.2.1 Profile"
+ "Newgen-X7/REV2.2.1/WAP1.2.1 Profile".gsub(/\a/, '\\')
 end
   
 end

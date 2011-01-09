@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class SamsungSghf308Ver1 < GenericNetfrontVer32
+   class Samsung_sghf308_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "SAMSUNG-SGH-F308/NetFront 3.2/WAP2.0"
+ "SAMSUNG-SGH-F308/NetFront 3.2/WAP2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/f308_10.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotWx390Ver1 < GenericXhtml
+   class Mot_wx390_ver1 < Generic_xhtml
 def self.user_agent
- "Mot-WX390/1.0 ObigoInternetBrowser/Q03C"
+ "Mot-WX390/1.0 ObigoInternetBrowser/Q03C".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

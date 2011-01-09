@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_me45_ver1'
 module Mobiles
  module Repository
-   class SieM46Ver1 < SieMe45Ver1
+   class Sie_m46_ver1 < Sie_me45_ver1
 def self.user_agent
- "SIE-M46"
+ "SIE-M46".gsub(/\a/, '\\')
 end
   def j2me_midi?
   true

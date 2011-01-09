@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bloody_transcoder'
 module Mobiles
  module Repository
-   class InfoginTranscoder < BloodyTranscoder
+   class Infogin_transcoder < Bloody_transcoder
 def self.user_agent
- "DO_NOT_MATCH_INFOGIN_IMP_TRANSCODER"
+ "DO_NOT_MATCH_INFOGIN_IMP_TRANSCODER".gsub(/\a/, '\\')
 end
   
 end

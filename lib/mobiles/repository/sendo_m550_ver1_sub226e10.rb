@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sendo_m550_ver1'
 module Mobiles
  module Repository
-   class SendoM550Ver1Sub226e10 < SendoM550Ver1
+   class Sendo_m550_ver1_sub226e10 < Sendo_m550_ver1
 def self.user_agent
- "SendoM550/226-E-10"
+ "SendoM550/226-E-10".gsub(/\a/, '\\')
 end
   
 end

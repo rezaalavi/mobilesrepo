@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitsu_ver2c_generic'
 module Mobiles
  module Repository
-   class MitsuMt330Ver1 < MitsuVer2cGeneric
+   class Mitsu_mt330_ver1 < Mitsu_ver2c_generic
 def self.user_agent
- "Mitsu/1.2.C (MT330) MMP/1.1"
+ "Mitsu/1.2.C (MT330) MMP/1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.mitsubishi-telecom.com/profiles/m330.xml"

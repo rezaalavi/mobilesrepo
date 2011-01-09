@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amazon_kindle_ver1'
 module Mobiles
  module Repository
-   class AmazonKindleVer1Sublinux < AmazonKindleVer1
+   class Amazon_kindle_ver1_sublinux < Amazon_kindle_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; Linux 2.6.10) NetFront/3.3 Kindle/1.0 (screen 600x800)"
+ "Mozilla/4.0 (compatible; Linux 2.6.10) NetFront/3.3 Kindle/1.0 (screen 600x800)".gsub(/\a/, '\\')
 end
   
 end

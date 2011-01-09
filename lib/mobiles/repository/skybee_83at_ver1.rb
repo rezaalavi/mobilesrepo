@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Skybee83atVer1 < GenericXhtml
+   class Skybee_83at_ver1 < Generic_xhtml
 def self.user_agent
- "SKYBEE-83AT"
+ "SKYBEE-83AT".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_a270_ver1'
 module Mobiles
  module Repository
-   class SonyericssonA270Ver1Subr3da < SonyericssonA270Ver1
+   class Sonyericsson_a270_ver1_subr3da < Sonyericsson_a270_ver1
 def self.user_agent
- "SonyEricssonA270/R3DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.2"
+ "SonyEricssonA270/R3DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.2".gsub(/\a/, '\\')
 end
   
 end

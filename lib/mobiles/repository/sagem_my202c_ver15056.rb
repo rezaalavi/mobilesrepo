@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my202c_ver1'
 module Mobiles
  module Repository
-   class SagemMy202cVer15056 < SagemMy202cVer1
+   class Sagem_my202c_ver15056 < Sagem_my202c_ver1
 def self.user_agent
- "SAGEM-my202C/Orange1.0 UP.Browser/5.0.5.6 (GUI)"
+ "SAGEM-my202C/Orange1.0 UP.Browser/5.0.5.6 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

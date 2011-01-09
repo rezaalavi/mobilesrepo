@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_dolfin2_0'
 module Mobiles
  module Repository
-   class SamsungGtS5530Ver1 < GenericDolfin20
+   class Samsung_gt_s5530_ver1 < Generic_dolfin2_0
 def self.user_agent
- "SAMSUNG-GT-S5530/S5530XXJE5 SHP/VPP/R5 Dolfin/2.0 QTV/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
+ "SAMSUNG-GT-S5530/S5530XXJE5 SHP/VPP/R5 Dolfin/2.0 QTV/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B".gsub(/\a/, '\\')
 end
   def model_name
   "GT-S5530"

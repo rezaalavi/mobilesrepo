@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_diamond_ver1'
 module Mobiles
  module Repository
-   class O2XdaDiamondVer1 < HtcTouchDiamondVer1
+   class O2_xda_diamond_ver1 < Htc_touch_diamond_ver1
 def self.user_agent
- "Xda_diamond Opera/9.50 (Windows NT 5.1; U; de)"
+ "Xda_diamond Opera/9.50 (Windows NT 5.1; U; de)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

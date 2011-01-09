@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6630_ver1'
 module Mobiles
  module Repository
-   class Nokia6630Ver1Voda239126imei < Nokia6630Ver1
+   class Nokia_6630_ver1_voda239126imei < Nokia_6630_ver1
 def self.user_agent
- "Vodafone/1.0/V702NK/NKJ001/IMEI/SNXXXXXXXXXXXXXXX Series60/2.6 Nokia6630/2.39.126 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Vodafone/1.0/V702NK/NKJ001/IMEI/SNXXXXXXXXXXXXXXX Series60/2.6 Nokia6630/2.39.126 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

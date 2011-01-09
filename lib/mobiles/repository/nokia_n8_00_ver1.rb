@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60_symbian3'
 module Mobiles
  module Repository
-   class NokiaN800Ver1 < NokiaGenericSeries60Symbian3
+   class Nokia_n8_00_ver1 < Nokia_generic_series60_symbian3
 def self.user_agent
- "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/010.021; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6 3gpp-gba"
+ "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaN8-00/010.021; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6 3gpp-gba".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia BrowserNG"

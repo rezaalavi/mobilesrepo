@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class Philips9a9kVer1 < Generic
+   class Philips_9a9k_ver1 < Generic
 def self.user_agent
- "Philips9@9k/R08 NXP5210/DV7 Release/9.12.2007 Obigo/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "Philips9@9k/R08 NXP5210/DV7 Release/9.12.2007 Obigo/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def model_name
   "9@9k"

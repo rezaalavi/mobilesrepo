@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class GtranN120Ver1 < GenericXhtml
+   class Gtran_n120_ver1 < Generic_xhtml
 def self.user_agent
- "Gtran_N120"
+ "Gtran_N120".gsub(/\a/, '\\')
 end
   def model_name
   "N110"

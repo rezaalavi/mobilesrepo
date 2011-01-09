@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_scp9000_ver1'
 module Mobiles
  module Repository
-   class SanyoScp9000SubMm < SanyoScp9000Ver1
+   class Sanyo_scp9000_sub_mm < Sanyo_scp9000_ver1
 def self.user_agent
- "Mozilla/4.0 (MobilePhone MM-9000/NZ/1.0) NetFront/3.1 MMP/2.0"
+ "Mozilla/4.0 (MobilePhone MM-9000/NZ/1.0) NetFront/3.1 MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

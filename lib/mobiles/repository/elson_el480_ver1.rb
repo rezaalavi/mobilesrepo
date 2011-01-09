@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ElsonEl480Ver1 < GenericXhtml
+   class Elson_el480_ver1 < Generic_xhtml
 def self.user_agent
- "EL480/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "EL480/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/EL480.xml"

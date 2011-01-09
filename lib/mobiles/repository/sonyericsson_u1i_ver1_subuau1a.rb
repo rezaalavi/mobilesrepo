@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_u1i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonU1iVer1Subuau1a < SonyericssonU1iVer1
+   class Sonyericsson_u1i_ver1_subuau1a < Sonyericsson_u1i_ver1
 def self.user_agent
- "SonyEricssonU1a/R1BB; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525"
+ "SonyEricssonU1a/R1BB; Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 Safari/525".gsub(/\a/, '\\')
 end
   
 end

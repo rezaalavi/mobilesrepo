@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_f906i_ver1'
 module Mobiles
  module Repository
-   class DocomoF906iVer1Submozilla < DocomoF906iVer1
+   class Docomo_f906i_ver1_submozilla < Docomo_f906i_ver1
 def self.user_agent
- "Mozilla/5.0 (F906i;FOMA;like Gecko)"
+ "Mozilla/5.0 (F906i;FOMA;like Gecko)".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

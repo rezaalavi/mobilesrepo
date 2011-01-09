@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class SagemMy750cVer1 < OpwvV7Generic
+   class Sagem_my750c_ver1 < Opwv_v7_generic
 def self.user_agent
- "SAGEM-my750C/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.162 (GUI)"
+ "SAGEM-my750C/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.162 (GUI)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.1

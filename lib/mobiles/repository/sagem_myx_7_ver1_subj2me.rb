@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx_7_ver1'
 module Mobiles
  module Repository
-   class SagemMyx7Ver1Subj2me < SagemMyx7Ver1
+   class Sagem_myx_7_ver1_subj2me < Sagem_myx_7_ver1
 def self.user_agent
- "SAGEM-myX-7/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.5.d.2 (GUI) MMP/1.0"
+ "SAGEM-myX-7/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.5.d.2 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

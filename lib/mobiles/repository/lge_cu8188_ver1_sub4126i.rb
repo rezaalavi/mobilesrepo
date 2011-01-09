@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_cu8188_ver1'
 module Mobiles
  module Repository
-   class LgeCu8188Ver1Sub4126i < LgeCu8188Ver1
+   class Lge_cu8188_ver1_sub4126i < Lge_cu8188_ver1
 def self.user_agent
- "LGE-CU8188/1.0 UP.Browser/4.1.26l"
+ "LGE-CU8188/1.0 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

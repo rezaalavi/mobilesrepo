@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HuaweiJatulc2Ver1 < GenericXhtml
+   class Huawei_jatulc2_ver1 < Generic_xhtml
 def self.user_agent
- "JAT-WAP ULC2"
+ "JAT-WAP ULC2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap1.huawei.com/uaprof/JATULC2UAP.rdf"

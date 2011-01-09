@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vodafone_v1240_ver1'
 module Mobiles
  module Repository
-   class VodafoneV1240Ver1Subua < VodafoneV1240Ver1
+   class Vodafone_v1240_ver1_subua < Vodafone_v1240_ver1
 def self.user_agent
- "VodafoneV1240/B532 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3"
+ "VodafoneV1240/B532 Browser/NetFront/3.5 MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Player/QTV-Player/5.3".gsub(/\a/, '\\')
 end
   
 end

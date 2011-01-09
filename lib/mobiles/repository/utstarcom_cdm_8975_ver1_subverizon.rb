@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/utstarcom_cdm_8975_ver1'
 module Mobiles
  module Repository
-   class UtstarcomCdm8975Ver1Subverizon < UtstarcomCdm8975Ver1
+   class Utstarcom_cdm_8975_ver1_subverizon < Utstarcom_cdm_8975_ver1
 def self.user_agent
- "utstar8975"
+ "utstar8975".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Verizon Wireless"

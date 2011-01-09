@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_zv10_ver1'
 module Mobiles
  module Repository
-   class SamsungZv10Ver1Sub < SamsungZv10Ver1
+   class Samsung_zv10_ver1_sub < Samsung_zv10_ver1
 def self.user_agent
- "SAMSUNG-SGH-ZV10/1.0"
+ "SAMSUNG-SGH-ZV10/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

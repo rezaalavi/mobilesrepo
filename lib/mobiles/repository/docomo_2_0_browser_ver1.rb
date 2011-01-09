@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Docomo20BrowserVer1 < GenericXhtml
+   class Docomo_2_0_browser_ver1 < Generic_xhtml
 def self.user_agent
- "Generic docomo 2.0 browser"
+ "Generic docomo 2.0 browser".gsub(/\a/, '\\')
 end
   def model_name
   "DoCoMo 2.0"

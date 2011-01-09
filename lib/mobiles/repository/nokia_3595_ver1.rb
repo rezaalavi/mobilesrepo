@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40'
 module Mobiles
  module Repository
-   class Nokia3595Ver1 < NokiaGenericSeries40
+   class Nokia_3595_ver1 < Nokia_generic_series40
 def self.user_agent
- "Nokia3595"
+ "Nokia3595".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds.nokia.com/uaprof/N3595r100.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kg240_ver1'
 module Mobiles
  module Repository
-   class LgKg240Ver1Subv08aobigo < LgKg240Ver1
+   class Lg_kg240_ver1_subv08aobigo < Lg_kg240_ver1
 def self.user_agent
- "LG-KG240/V08a Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KG240/V08a Obigo/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

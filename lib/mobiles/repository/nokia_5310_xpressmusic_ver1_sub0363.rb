@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5310_xpressmusic_ver1'
 module Mobiles
  module Repository
-   class Nokia5310XpressmusicVer1Sub0363 < Nokia5310XpressmusicVer1
+   class Nokia_5310_xpressmusic_ver1_sub0363 < Nokia_5310_xpressmusic_ver1
 def self.user_agent
- "Nokia5310XpressMusic/2.0 (03.63) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia5310XpressMusic/2.0 (03.63) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def colors
   262144

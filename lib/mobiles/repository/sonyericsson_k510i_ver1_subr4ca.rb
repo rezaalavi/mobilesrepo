@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k510i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK510iVer1Subr4ca < SonyericssonK510iVer1
+   class Sonyericsson_k510i_ver1_subr4ca < Sonyericsson_k510i_ver1
 def self.user_agent
- "SonyEricssonK510i/R4CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK510i/R4CA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

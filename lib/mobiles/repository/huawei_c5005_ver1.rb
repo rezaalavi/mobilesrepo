@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class HuaweiC5005Ver1 < GenericNetfrontVer32
+   class Huawei_c5005_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "C5005/001.00 ACS-NetFront/3.2"
+ "C5005/001.00 ACS-NetFront/3.2".gsub(/\a/, '\\')
 end
   def model_name
   "C5005"

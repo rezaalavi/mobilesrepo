@@ -12,12 +12,22 @@ This library can be used to retrieve a mobile specification.
 
 == EXAMPLE:
 
-In file rubyglot.rb, define and register a file type handler:
-
+=== Initializing the device repository
     require 'mobile_device'
 
     pantech_g300 = PantechG300Ver1.new
     puts pantech_g300.max_image_width
+
+The above method is time consuming and slow. Unless you want to initialize all
+the devices it is better to retrieve a device based on its user-agent similar to
+the next example
+
+=== Obtaining a device object based on user-agent
+
+    require 'mobiles/device_locator'
+    Mobiles::DeviceLocator.init #should be called only once
+    device = Mobiles::DeviceLocator.locate("AUDIOVOX-CDM8450");
+    puts device.uaprof
 
 == INSTALL:
 

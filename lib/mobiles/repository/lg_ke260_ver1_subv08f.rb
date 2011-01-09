@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ke260_ver1'
 module Mobiles
  module Repository
-   class LgKe260Ver1Subv08f < LgKe260Ver1
+   class Lg_ke260_ver1_subv08f < Lg_ke260_ver1
 def self.user_agent
- "LG-KE260/V08f Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KE260/V08f Obigo/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

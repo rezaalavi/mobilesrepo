@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/medion_2860_ver1'
 module Mobiles
  module Repository
-   class Medion2860Ver1Sub11 < Medion2860Ver1
+   class Medion_2860_ver1_sub11 < Medion_2860_ver1
 def self.user_agent
- "MEDION 2860 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MEDION 2860 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

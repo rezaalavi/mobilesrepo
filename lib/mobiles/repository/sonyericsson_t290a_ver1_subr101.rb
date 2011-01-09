@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t290a_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT290aVer1Subr101 < SonyericssonT290aVer1
+   class Sonyericsson_t290a_ver1_subr101 < Sonyericsson_t290a_ver1
 def self.user_agent
- "SonyEricssonT290a/R101"
+ "SonyEricssonT290a/R101".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

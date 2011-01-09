@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e65_ver1'
 module Mobiles
  module Repository
-   class NokiaE66Ver1 < NokiaE65Ver1
+   class Nokia_e66_ver1 < Nokia_e65_ver1
 def self.user_agent
- "Mozilla/5.0(SymbianOS/9.2;U;Series60/3.1NokiaE66-1"
+ "Mozilla/5.0(SymbianOS/9.2;U;Series60/3.1NokiaE66-1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Safari"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5300_ver1'
 module Mobiles
  module Repository
-   class Nokia5300Ver1Sub0551 < Nokia5300Ver1
+   class Nokia_5300_ver1_sub0551 < Nokia_5300_ver1
 def self.user_agent
- "Nokia5300/2.0 (05.51) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia5300/2.0 (05.51) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N5300r100.xml"

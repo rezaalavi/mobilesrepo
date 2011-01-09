@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_himalaya_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM1000Ver1 < HtcHimalayaVer1
+   class Orange_spv_m1000_ver1 < Htc_himalaya_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M1000;"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M1000;".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

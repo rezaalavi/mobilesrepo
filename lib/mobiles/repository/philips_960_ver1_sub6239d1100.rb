@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_960_ver1'
 module Mobiles
  module Repository
-   class Philips960Ver1Sub6239d1100 < Philips960Ver1
+   class Philips_960_ver1_sub6239d1100 < Philips_960_ver1
 def self.user_agent
- "PHILIPS 960 UP.Browser/6.2.3.9.d.1.100 (GUI) MMP/2.0"
+ "PHILIPS 960 UP.Browser/6.2.3.9.d.1.100 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_n600_ver1'
 module Mobiles
  module Repository
-   class SamsungN600Ver1Sub4119kxxxx < SamsungN600Ver1
+   class Samsung_n600_ver1_sub4119kxxxx < Samsung_n600_ver1
 def self.user_agent
- "SAMSUNG-SGH-N600/1.0 UP/4.1.19k UP.Browser/4.1.19k-XXXX"
+ "SAMSUNG-SGH-N600/1.0 UP/4.1.19k UP.Browser/4.1.19k-XXXX".gsub(/\a/, '\\')
 end
   
 end

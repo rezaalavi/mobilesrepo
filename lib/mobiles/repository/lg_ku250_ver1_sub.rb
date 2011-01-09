@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ku250_ver1'
 module Mobiles
  module Repository
-   class LgKu250Ver1Sub < LgKu250Ver1
+   class Lg_ku250_ver1_sub < Lg_ku250_ver1
 def self.user_agent
- "LG/KU250"
+ "LG/KU250".gsub(/\a/, '\\')
 end
   def screensaver_gif?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p4550_ver1_subie711'
 module Mobiles
  module Repository
-   class HtcP4550Ver1Subie711Sub243281610 < HtcP4550Ver1Subie711
+   class Htc_p4550_ver1_subie711_sub243281610 < Htc_p4550_ver1_subie711
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.328.1.610"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 240x320; HTC P4550; OpVer 24.328.1.610".gsub(/\a/, '\\')
 end
   def columns
   16

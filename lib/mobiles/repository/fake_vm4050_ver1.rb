@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vm4050_ver1'
 module Mobiles
  module Repository
-   class FakeVm4050Ver1 < Vm4050Ver1
+   class Fake_vm4050_ver1 < Vm4050_ver1
 def self.user_agent
- "FAKE_USER_AGENT Toshiba VM-4050"
+ "FAKE_USER_AGENT Toshiba VM-4050".gsub(/\a/, '\\')
 end
   def model_name
   "VM-4050"

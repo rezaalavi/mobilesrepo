@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cdm_8450_ver1'
 module Mobiles
  module Repository
-   class Cdm8450Ver1Sub6221 < Cdm8450Ver1
+   class Cdm_8450_ver1_sub6221 < Cdm_8450_ver1
 def self.user_agent
- "CDM-8450 UP.Browser/6.2.2.1 (GUI) MMP/2.0"
+ "CDM-8450 UP.Browser/6.2.2.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

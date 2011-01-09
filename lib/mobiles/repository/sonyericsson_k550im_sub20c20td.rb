@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k550im_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK550imSub20c20td < SonyericssonK550imVer1
+   class Sonyericsson_k550im_sub20c20td < Sonyericsson_k550im_ver1
 def self.user_agent
- "portalmmm/2.0 K550im(c20;TD)"
+ "portalmmm/2.0 K550im(c20;TD)".gsub(/\a/, '\\')
 end
   def max_deck_size
   20480

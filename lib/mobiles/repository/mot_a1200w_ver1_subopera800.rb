@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a1200_ver1'
 module Mobiles
  module Repository
-   class MotA1200wVer1Subopera800 < MotA1200Ver1
+   class Mot_a1200w_ver1_subopera800 < Mot_a1200_ver1
 def self.user_agent
- "MOT-A1200w/1.0/R541L7_G_11.10.11R Mozilla/4.0 (compatible; MSIE 6.0; Linux; A1200w; 781) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00"
+ "MOT-A1200w/1.0/R541L7_G_11.10.11R Mozilla/4.0 (compatible; MSIE 6.0; Linux; A1200w; 781) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

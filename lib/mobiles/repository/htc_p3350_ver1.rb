@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_love_ver1'
 module Mobiles
  module Repository
-   class HtcP3350Ver1 < HtcLoveVer1
+   class Htc_p3350_ver1 < Htc_love_ver1
 def self.user_agent
- "HTC_P3350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "HTC_P3350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

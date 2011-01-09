@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_sh700i_ver1'
 module Mobiles
  module Repository
-   class DocomoSh700iV2W24 < DocomoSh700iVer1
+   class Docomo_sh700i_v2_w24 < Docomo_sh700i_ver1
 def self.user_agent
- "DoCoMo/2.0 SH700i(c100;TB;W24H12)"
+ "DoCoMo/2.0 SH700i(c100;TB;W24H12)".gsub(/\a/, '\\')
 end
   def model_name
   "SH700i"

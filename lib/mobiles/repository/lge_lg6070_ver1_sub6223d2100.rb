@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_lg6070_ver1'
 module Mobiles
  module Repository
-   class LgeLg6070Ver1Sub6223d2100 < LgeLg6070Ver1
+   class Lge_lg6070_ver1_sub6223d2100 < Lge_lg6070_ver1
 def self.user_agent
- "LGE-LG6070 UP.Browser/6.2.2.3.d.2.100 (GUI) MMP/2.0"
+ "LGE-LG6070 UP.Browser/6.2.2.3.d.2.100 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

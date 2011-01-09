@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/fly_mp500_ver1'
 module Mobiles
  module Repository
-   class Mp500Ver1 < FlyMp500Ver1
+   class Mp500_ver1 < Fly_mp500_ver1
 def self.user_agent
- "MP500"
+ "MP500".gsub(/\a/, '\\')
 end
   
 end

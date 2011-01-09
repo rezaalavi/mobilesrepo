@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/imate_jamin_ver1'
 module Mobiles
  module Repository
-   class HtcProphetVer1Jamin < ImateJaminVer1
+   class Htc_prophet_ver1_jamin < Imate_jamin_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; i-mate K-JAM PPC; 240x320; i-mate JAMin PPC; 240x320; PPC; 240x320)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; i-mate K-JAM PPC; 240x320; i-mate JAMin PPC; 240x320; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def device_os_version
   5.0

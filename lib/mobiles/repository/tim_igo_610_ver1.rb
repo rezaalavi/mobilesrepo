@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/i_go610_ver1'
 module Mobiles
  module Repository
-   class TimIgo610Ver1 < IGo610Ver1
+   class Tim_igo_610_ver1 < I_go610_ver1
 def self.user_agent
- "TIM-iGO610"
+ "TIM-iGO610".gsub(/\a/, '\\')
 end
   
 end

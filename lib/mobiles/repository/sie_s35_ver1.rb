@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SieS35Ver1 < UptextGeneric
+   class Sie_s35_ver1 < Uptext_generic
 def self.user_agent
- "SIE-S35/1.0 UP/4"
+ "SIE-S35/1.0 UP/4".gsub(/\a/, '\\')
 end
   def max_image_width
   101

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mib22_generic'
 module Mobiles
  module Repository
-   class MotL71Ver1 < MotMib22Generic
+   class Mot_l71_ver1 < Mot_mib22_generic
 def self.user_agent
- "MOT-L71/AAUG2128AA 08.02.06R/10.21.2005 MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/1.0"
+ "MOT-L71/AAUG2128AA 08.02.06R/10.21.2005 MIB/BER2.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/1.0".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

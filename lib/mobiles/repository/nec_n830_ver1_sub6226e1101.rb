@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_n830_ver1'
 module Mobiles
  module Repository
-   class NecN830Ver1Sub6226e1101 < NecN830Ver1
+   class Nec_n830_ver1_sub6226e1101 < Nec_n830_ver1
 def self.user_agent
- "NEC-N830/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0"
+ "NEC-N830/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

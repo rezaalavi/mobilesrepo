@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5300_ver1'
 module Mobiles
  module Repository
-   class Nokia5300Ver1Suboperamini < Nokia5300Ver1
+   class Nokia_5300_ver1_suboperamini < Nokia_5300_ver1
 def self.user_agent
- "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.5005/hifi/tmobile/hu; Nokia 5300; hu; U; ssr)"
+ "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.5005/hifi/tmobile/hu; Nokia 5300; hu; U; ssr)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

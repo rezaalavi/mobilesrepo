@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_web_browser'
 module Mobiles
  module Repository
-   class SonyPlaystation3Ver1 < GenericWebBrowser
+   class Sony_playstation3_ver1 < Generic_web_browser
 def self.user_agent
- "Mozilla/4.0 (PS3 (PlayStation 3); 1.00)"
+ "Mozilla/4.0 (PS3 (PlayStation 3); 1.00)".gsub(/\a/, '\\')
 end
   def model_name
   "Playstation 3"

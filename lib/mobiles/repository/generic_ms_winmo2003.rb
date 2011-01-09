@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_pocketpc2002'
 module Mobiles
  module Repository
-   class GenericMsWinmo2003 < GenericMsPocketpc2002
+   class Generic_ms_winmo2003 < Generic_ms_pocketpc2002
 def self.user_agent
- "DO_NOT_MATCH_WINMO_2003"
+ "DO_NOT_MATCH_WINMO_2003".gsub(/\a/, '\\')
 end
   def model_name
   "Windows Mobile"

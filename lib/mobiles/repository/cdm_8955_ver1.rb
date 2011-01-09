@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class Cdm8955Ver1 < OpwvV62Generic
+   class Cdm_8955_ver1 < Opwv_v62_generic
 def self.user_agent
- "CDM-8955 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "CDM-8955 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://pix.cellularsouth.com/UA/profile/utstarcom/cdm8955/cdm8955.xml"

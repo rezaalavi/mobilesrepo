@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SamsungSghP308Ver1 < GenericXhtml
+   class Samsung_sgh_p308_ver1 < Generic_xhtml
 def self.user_agent
- "SAMSUNG-SGH-P308"
+ "SAMSUNG-SGH-P308".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-P308"

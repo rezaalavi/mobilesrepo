@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6'
 module Mobiles
  module Repository
-   class GigabyteT600Ver1 < GenericMsWinmo6
+   class Gigabyte_t600_ver1 < Generic_ms_winmo6
 def self.user_agent
- "T600; V3.02.E8 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 480x640; GIGABYTE-g-Smart"
+ "T600; V3.02.E8 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) PPC; 480x640; GIGABYTE-g-Smart".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

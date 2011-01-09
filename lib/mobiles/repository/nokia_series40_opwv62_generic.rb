@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_opwv62_generic'
 module Mobiles
  module Repository
-   class NokiaSeries40Opwv62Generic < NokiaOpwv62Generic
+   class Nokia_series40_opwv62_generic < Nokia_opwv62_generic
 def self.user_agent
- "DO_NOT_MATCH_NOKIA_SERIES40_RUNNING_UPBROWSER6"
+ "DO_NOT_MATCH_NOKIA_SERIES40_RUNNING_UPBROWSER6".gsub(/\a/, '\\')
 end
   def columns
   18

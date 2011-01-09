@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class MotMccbVer1 < UptextGeneric
+   class Mot_mccb_ver1 < Uptext_generic
 def self.user_agent
- "MOT-MCCB/7568 UP.Browser/4.1.23"
+ "MOT-MCCB/7568 UP.Browser/4.1.23".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   4.1

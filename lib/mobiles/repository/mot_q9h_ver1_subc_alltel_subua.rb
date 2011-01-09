@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_q9h_ver1_subc_alltel'
 module Mobiles
  module Repository
-   class MotQ9hVer1SubcAlltelSubua < MotQ9hVer1SubcAlltel
+   class Mot_q9h_ver1_subc_alltel_subua < Mot_q9h_ver1_subc_alltel
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel:MotoQ9c"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Alltel:MotoQ9c".gsub(/\a/, '\\')
 end
   def playback_acodec_amr
   "nb"

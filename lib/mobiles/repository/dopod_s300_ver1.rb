@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_star_trek_ver1'
 module Mobiles
  module Repository
-   class DopodS300Ver1 < HtcStarTrekVer1
+   class Dopod_s300_ver1 < Htc_star_trek_ver1
 def self.user_agent
- "DopodS300/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)"
+ "DopodS300/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 240x320)".gsub(/\a/, '\\')
 end
   def columns
   10

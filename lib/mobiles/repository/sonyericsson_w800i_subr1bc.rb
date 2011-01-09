@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w800i'
 module Mobiles
  module Repository
-   class SonyericssonW800iSubr1bc < SonyericssonW800i
+   class Sonyericsson_w800i_subr1bc < Sonyericsson_w800i
 def self.user_agent
- "SonyEricssonW800i/R1BC Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonW800i/R1BC Browser/SEMC-Browser/4.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

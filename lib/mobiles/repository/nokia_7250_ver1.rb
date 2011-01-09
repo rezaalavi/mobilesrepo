@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40'
 module Mobiles
  module Repository
-   class Nokia7250Ver1 < NokiaGenericSeries40
+   class Nokia_7250_ver1 < Nokia_generic_series40
 def self.user_agent
- "Nokia7250"
+ "Nokia7250".gsub(/\a/, '\\')
 end
   def j2me_cldc_1_0?
   true

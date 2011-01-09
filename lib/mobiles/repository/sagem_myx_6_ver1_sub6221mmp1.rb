@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx_6_ver1_sub622'
 module Mobiles
  module Repository
-   class SagemMyx6Ver1Sub6221mmp1 < SagemMyx6Ver1Sub622
+   class Sagem_myx_6_ver1_sub6221mmp1 < Sagem_myx_6_ver1_sub622
 def self.user_agent
- "SAGEM-myX-6/1.0 UP.Browser/6.2.2.1 (GUI) MMP/1.0"
+ "SAGEM-myX-6/1.0 UP.Browser/6.2.2.1 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def xhtml_support_level
   2

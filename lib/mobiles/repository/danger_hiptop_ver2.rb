@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/danger_hiptop_ver1'
 module Mobiles
  module Repository
-   class DangerHiptopVer2 < DangerHiptopVer1
+   class Danger_hiptop_ver2 < Danger_hiptop_ver1
 def self.user_agent
- "Mozilla/5.0 (Danger hiptop 2.0"
+ "Mozilla/5.0 (Danger hiptop 2.0".gsub(/\a/, '\\')
 end
   def model_name
   "Sidekick II"

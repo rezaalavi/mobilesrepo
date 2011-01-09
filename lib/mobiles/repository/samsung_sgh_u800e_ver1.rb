@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SamsungSghU800eVer1 < GenericNetfrontVer34
+   class Samsung_sgh_u800e_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "SAMSUNG-SGH-U800E/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-SGH-U800E/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-U800E.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w150i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW150iVer1Subr2ad006 < SonyericssonW150iVer1
+   class Sonyericsson_w150i_ver1_subr2ad006 < Sonyericsson_w150i_ver1
 def self.user_agent
- "SonyEricssonW150i/R2AD006 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonW150i/R2AD006 TelecaBrowser/Q07C1-1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

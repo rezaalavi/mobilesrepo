@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/huawei_vf715_ver1'
 module Mobiles
  module Repository
-   class HuaweiVf716Ver1 < HuaweiVf715Ver1
+   class Huawei_vf716_ver1 < Huawei_vf715_ver1
 def self.user_agent
- "Vodafone/1.0/0Vodafone716"
+ "Vodafone/1.0/0Vodafone716".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap1.huawei.com/uaprof/HuaweiV716v100WCDMA.xml"

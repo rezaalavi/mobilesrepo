@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_p506icii_ver1'
 module Mobiles
  module Repository
-   class DocomoP506icVer1Subtc10506203014 < DocomoP506iciiVer1
+   class Docomo_p506ic_ver1_subtc10506203014 < Docomo_p506icii_ver1
 def self.user_agent
- "DoCoMo/1.0/P506iC/c20/TC/W30H14"
+ "DoCoMo/1.0/P506iC/c20/TC/W30H14".gsub(/\a/, '\\')
 end
   
 end

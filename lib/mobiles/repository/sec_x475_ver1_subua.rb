@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_x475_ver1'
 module Mobiles
  module Repository
-   class SecX475Ver1Subua < SecX475Ver1
+   class Sec_x475_ver1_subua < Sec_x475_ver1
 def self.user_agent
- "SEC-SGHX475-X475UVEB2-NW.Browser3.01"
+ "SEC-SGHX475-X475UVEB2-NW.Browser3.01".gsub(/\a/, '\\')
 end
   def columns
   16

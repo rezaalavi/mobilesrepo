@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_wizard_prodigy_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM3000Ver1 < HtcWizardProdigyVer1
+   class Orange_spv_m3000_ver1 < Htc_wizard_prodigy_ver1
 def self.user_agent
- "SPV-M3000"
+ "SPV-M3000".gsub(/\a/, '\\')
 end
   def model_name
   "SPV M3000"

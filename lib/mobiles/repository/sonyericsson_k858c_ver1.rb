@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k850i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK858cVer1 < SonyericssonK850iVer1
+   class Sonyericsson_k858c_ver1 < Sonyericsson_k850i_ver1
 def self.user_agent
- "SonyEricssonK858c/R2N SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK858c/R2N SEMC-Browser/4.0.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Semc"

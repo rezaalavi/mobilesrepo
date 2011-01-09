@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_s700_ver1'
 module Mobiles
  module Repository
-   class SonyericssonS700cVer1 < SonyericssonS700Ver1
+   class Sonyericsson_s700c_ver1 < Sonyericsson_s700_ver1
 def self.user_agent
- "SonyEricssonS700c"
+ "SonyEricssonS700c".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/S700cR201.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_prophet_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM600Ver2 < HtcProphetVer1
+   class Orange_spv_m600_ver2 < Htc_prophet_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; M600)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; M600)".gsub(/\a/, '\\')
 end
   def model_name
   "M600"

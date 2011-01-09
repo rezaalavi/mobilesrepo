@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungGtE1360bVer1 < OpwvV62Generic
+   class Samsung_gt_e1360b_ver1 < Opwv_v62_generic
 def self.user_agent
- "SAMSUNG-E1360B-ORANGE/E1360BBNIC2 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-E1360B-ORANGE/E1360BBNIC2 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "E1360B"

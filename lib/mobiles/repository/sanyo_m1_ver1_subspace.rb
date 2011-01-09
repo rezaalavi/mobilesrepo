@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_m1_ver1'
 module Mobiles
  module Repository
-   class SanyoM1Ver1Subspace < SanyoM1Ver1
+   class Sanyo_m1_ver1_subspace < Sanyo_m1_ver1
 def self.user_agent
- "Mozilla/4.0 (MobilePhone SCP-M1/1.0) NetFront/3.3 MMP/2.0"
+ "Mozilla/4.0 (MobilePhone SCP-M1/1.0) NetFront/3.3 MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

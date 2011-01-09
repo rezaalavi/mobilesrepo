@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mpx220_ver1'
 module Mobiles
  module Repository
-   class MotMpx220Ver1Sub1030 < MotMpx220Ver1
+   class Mot_mpx220_ver1_sub1030 < Mot_mpx220_ver1
 def self.user_agent
- "MOT-MPx220/1.030 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)"
+ "MOT-MPx220/1.030 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

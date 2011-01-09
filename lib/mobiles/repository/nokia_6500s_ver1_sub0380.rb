@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6500s_ver1'
 module Mobiles
  module Repository
-   class Nokia6500sVer1Sub0380 < Nokia6500sVer1
+   class Nokia_6500s_ver1_sub0380 < Nokia_6500s_ver1
 def self.user_agent
- "Nokia6500s-1/2.0 (03.80) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia6500s-1/2.0 (03.80) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

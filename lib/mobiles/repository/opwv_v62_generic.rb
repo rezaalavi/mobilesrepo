@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class OpwvV62Generic < OpwvV61Generic
+   class Opwv_v62_generic < Opwv_v61_generic
 def self.user_agent
- "DO_NOT_MATCH_UP.Browser/6.2"
+ "DO_NOT_MATCH_UP.Browser/6.2".gsub(/\a/, '\\')
 end
   def cookie_support?
   true

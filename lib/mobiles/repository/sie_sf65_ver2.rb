@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_sf65_ver1'
 module Mobiles
  module Repository
-   class SieSf65Ver2 < SieSf65Ver1
+   class Sie_sf65_ver2 < Sie_sf65_ver1
 def self.user_agent
- "SIE-SF65v2"
+ "SIE-SF65v2".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

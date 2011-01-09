@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_x500_ver1'
 module Mobiles
  module Repository
-   class PhillipsX520Ver1 < PhilipsX500Ver1
+   class Phillips_x520_ver1 < Philips_x500_ver1
 def self.user_agent
- "PhilipsX520/1.0 NXP5210/DV9 Release/9.01.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "PhilipsX520/1.0 NXP5210/DV9 Release/9.01.2008 Browser/Obigo2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.consumer.philips.com/wbu/uapX520.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_artemis_ver1'
 module Mobiles
  module Repository
-   class O2XdaOrbitVer1 < HtcArtemisVer1
+   class O2_xda_orbit_ver1 < Htc_artemis_ver1
 def self.user_agent
- "Xda Orbit; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+ "Xda Orbit; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

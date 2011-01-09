@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_g2_ver1_6_subandroid16'
 module Mobiles
  module Repository
-   class TmobileG2Ver16Subandroid22 < TmobileG2Ver16Subandroid16
+   class Tmobile_g2_ver1_6_subandroid22 < Tmobile_g2_ver1_6_subandroid16
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.2; en-us; T-Mobile G2 Build/FRF91) AppleWebKit/533.1(KHTML, like Gecko) Version/4.0 Mobile Safari/533.1"
+ "Mozilla/5.0 (Linux; U; Android 2.2; en-us; T-Mobile G2 Build/FRF91) AppleWebKit/533.1(KHTML, like Gecko) Version/4.0 Mobile Safari/533.1".gsub(/\a/, '\\')
 end
   def model_name
   "G2"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kyocera_m1400_ver1'
 module Mobiles
  module Repository
-   class KyoceraM1400Ver1Sublaylo < KyoceraM1400Ver1
+   class Kyocera_m1400_ver1_sublaylo < Kyocera_m1400_ver1
 def self.user_agent
- "KWC-laylo/AAR1004 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0"
+ "KWC-laylo/AAR1004 UP.Browser/7.2.7.2.531 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver3_sub70'
 module Mobiles
  module Repository
-   class Blackberry7780Ver1 < BlackberryGenericVer3Sub70
+   class Blackberry7780_ver1 < Blackberry_generic_ver3_sub70
 def self.user_agent
- "BlackBerry7780"
+ "BlackBerry7780".gsub(/\a/, '\\')
 end
   def model_name
   "BlackBerry 7780"

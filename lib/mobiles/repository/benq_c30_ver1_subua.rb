@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_c30_ver1'
 module Mobiles
  module Repository
-   class BenqC30Ver1Subua < BenqC30Ver1
+   class Benq_c30_ver1_subua < Benq_c30_ver1
 def self.user_agent
- "BenQ-C30/1.0/WAP2.0/MIDP2.0/CLDC1.1"
+ "BenQ-C30/1.0/WAP2.0/MIDP2.0/CLDC1.1".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

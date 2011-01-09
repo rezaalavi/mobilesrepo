@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class PanasonicSc3Ver1 < OpwvV61Generic
+   class Panasonic_sc3_ver1 < Opwv_v61_generic
 def self.user_agent
- "Panasonic-SC3"
+ "Panasonic-SC3".gsub(/\a/, '\\')
 end
   def wallpaper_jpg?
   true

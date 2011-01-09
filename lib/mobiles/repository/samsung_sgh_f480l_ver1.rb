@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_f480_ver1'
 module Mobiles
  module Repository
-   class SamsungSghF480lVer1 < SamsungSghF480Ver1
+   class Samsung_sgh_f480l_ver1 < Samsung_sgh_f480_ver1
 def self.user_agent
- "SAMSUNG-SGH-F480L/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-SGH-F480L/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-F480L.xml"

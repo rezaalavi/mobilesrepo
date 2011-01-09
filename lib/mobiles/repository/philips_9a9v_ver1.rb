@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Philips9a9vVer1 < GenericXhtml
+   class Philips_9a9v_ver1 < Generic_xhtml
 def self.user_agent
- "PHILIPS9@9V ObigoInternetBrowser/2.0"
+ "PHILIPS9@9V ObigoInternetBrowser/2.0".gsub(/\a/, '\\')
 end
   def release_date
   "2010_october"

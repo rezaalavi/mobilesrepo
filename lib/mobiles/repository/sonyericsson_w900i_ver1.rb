@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3'
 module Mobiles
  module Repository
-   class SonyericssonW900iVer1 < GenericSonyericssonNetfrontVer3
+   class Sonyericsson_w900i_ver1 < Generic_sonyericsson_netfront_ver3
 def self.user_agent
- "SonyEricssonW900i"
+ "SonyEricssonW900i".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.3

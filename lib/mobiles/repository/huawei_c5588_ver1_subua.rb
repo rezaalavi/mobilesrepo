@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/huawei_c5588_ver1'
 module Mobiles
  module Repository
-   class HuaweiC5588Ver1Subua < HuaweiC5588Ver1
+   class Huawei_c5588_ver1_subua < Huawei_c5588_ver1
 def self.user_agent
- "C5588/001.00 ACS-NetFront/3.2"
+ "C5588/001.00 ACS-NetFront/3.2".gsub(/\a/, '\\')
 end
   
 end

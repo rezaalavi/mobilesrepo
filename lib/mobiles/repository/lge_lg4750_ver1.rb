@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_lg4600_ver1'
 module Mobiles
  module Repository
-   class LgeLg4750Ver1 < LgeLg4600Ver1
+   class Lge_lg4750_ver1 < Lge_lg4600_ver1
 def self.user_agent
- "LG4750"
+ "LG4750".gsub(/\a/, '\\')
 end
   def model_name
   "LG4750"

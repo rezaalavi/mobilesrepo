@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40'
 module Mobiles
  module Repository
-   class Nokia3587iVer1 < NokiaGenericSeries40
+   class Nokia_3587i_ver1 < Nokia_generic_series40
 def self.user_agent
- "Nokia3587i"
+ "Nokia3587i".gsub(/\a/, '\\')
 end
   def j2me_bits_per_pixel
   12

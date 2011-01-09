@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003_se'
 module Mobiles
  module Repository
-   class Qtek8020Ver1 < GenericMsWinmo2003Se
+   class Qtek_8020_ver1 < Generic_ms_winmo2003_se
 def self.user_agent
- "Qtek8020 (Mozilla\4.0 compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)"
+ "Qtek8020 (Mozilla\a4.0 compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/st20-1.0.xml"

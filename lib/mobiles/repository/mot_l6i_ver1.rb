@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_l6_ver1'
 module Mobiles
  module Repository
-   class MotL6iVer1 < MotL6Ver1
+   class Mot_l6i_ver1 < Mot_l6_ver1
 def self.user_agent
- "MOT-L6i/0A.65.07R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-L6i/0A.65.07R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/l6i/Profile/l6i.rdf"

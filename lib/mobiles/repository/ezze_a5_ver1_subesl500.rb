@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ezze_a5_ver1'
 module Mobiles
  module Repository
-   class EzzeA5Ver1Subesl500 < EzzeA5Ver1
+   class Ezze_a5_ver1_subesl500 < Ezze_a5_ver1
 def self.user_agent
- "EZZE-ESL500/1.0"
+ "EZZE-ESL500/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver5'
 module Mobiles
  module Repository
-   class Blackberry9520Ver1 < BlackberryGenericVer5
+   class Blackberry9520_ver1 < Blackberry_generic_ver5
 def self.user_agent
- "BlackBerry9520/5.0.0.306 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/120"
+ "BlackBerry9520/5.0.0.306 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/120".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   false

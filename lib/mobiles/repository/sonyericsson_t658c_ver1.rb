@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t650i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT658cVer1 < SonyericssonT650iVer1
+   class Sonyericsson_t658c_ver1 < Sonyericsson_t650i_ver1
 def self.user_agent
- "SonyEricssonT658c/R7AA024"
+ "SonyEricssonT658c/R7AA024".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

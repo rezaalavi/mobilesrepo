@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/dbtel_8038_ver1'
 module Mobiles
  module Repository
-   class Dbtel8038Ver1Sub5035 < Dbtel8038Ver1
+   class Dbtel_8038_ver1_sub5035 < Dbtel_8038_ver1
 def self.user_agent
- "DBTEL-8038 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/5.0.3.5"
+ "DBTEL-8038 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/5.0.3.5".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_d820_ver1'
 module Mobiles
  module Repository
-   class SamsungSghD820Ver1Sub20 < SamsungSghD820Ver1
+   class Samsung_sgh_d820_ver1_sub20 < Samsung_sgh_d820_ver1
 def self.user_agent
- "SAMSUNG-SGH-D820/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-D820/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

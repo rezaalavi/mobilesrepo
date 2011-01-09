@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cingular_8100_ver1'
 module Mobiles
  module Repository
-   class Cingular8100Ver1Sub1 < Cingular8100Ver1
+   class Cingular_8100_ver1_sub1 < Cingular_8100_ver1
 def self.user_agent
- "HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)"
+ "HTC-8100/1.2 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   
 end

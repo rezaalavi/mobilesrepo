@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_x410_ver1'
 module Mobiles
  module Repository
-   class PanasonicX410Ver1Subvoda301 < PanasonicX410Ver1
+   class Panasonic_x410_ver1_subvoda301 < Panasonic_x410_ver1
 def self.user_agent
- "Vodafone/1.0/VS3/01 Browser/Obigo-Browser/3.0 MMS/Obigo-MMS/2.0 Java/Jblend/1.0 Sync/Panasonic/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Vodafone/1.0/VS3/01 Browser/Obigo-Browser/3.0 MMS/Obigo-MMS/2.0 Java/Jblend/1.0 Sync/Panasonic/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

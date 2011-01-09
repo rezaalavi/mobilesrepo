@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_c5130_ver1'
 module Mobiles
  module Repository
-   class SamsungGtC5130Ver1Subvodafone < SamsungGtC5130Ver1
+   class Samsung_gt_c5130_ver1_subvodafone < Samsung_gt_c5130_ver1
 def self.user_agent
- "SAMSUNG-GT-C5130S-Vodafone/SBAIJ4 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-GT-C5130S-Vodafone/SBAIJ4 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

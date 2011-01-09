@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60_dp50'
 module Mobiles
  module Repository
-   class NokiaN97MiniVer1 < NokiaGenericSeries60Dp50
+   class Nokia_n97_mini_ver1 < Nokia_generic_series60_dp50
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/10.0.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.17125"
+ "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaN97-4/10.0.001; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.1.17125".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

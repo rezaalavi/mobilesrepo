@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class HeiHgc600eVer1 < UptextGeneric
+   class Hei_hgc600e_ver1 < Uptext_generic
 def self.user_agent
- "HEI-HGC600E/001.1a UP/4.1.20e"
+ "HEI-HGC600E/001.1a UP/4.1.20e".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   4.1

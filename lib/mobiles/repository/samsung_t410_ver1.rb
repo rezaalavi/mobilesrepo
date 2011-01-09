@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class SamsungT410Ver1 < UpguiGeneric
+   class Samsung_t410_ver1 < Upgui_generic
 def self.user_agent
- "SAMSUNG-SGH-T410"
+ "SAMSUNG-SGH-T410".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-T410"

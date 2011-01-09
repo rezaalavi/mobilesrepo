@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t230_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT237Ver1 < SonyericssonT230Ver1
+   class Sonyericsson_t237_ver1 < Sonyericsson_t230_ver1
 def self.user_agent
- "SonyEricssonT237"
+ "SonyEricssonT237".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/T237R101.xml"

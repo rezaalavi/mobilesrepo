@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_mta_mail_ver1'
 module Mobiles
  module Repository
-   class HtcMtaMailVer2 < HtcMtaMailVer1
+   class Htc_mta_mail_ver2 < Htc_mta_mail_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Smartphone; 320x240; Mail/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Smartphone; 320x240; Mail/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def columns
   10

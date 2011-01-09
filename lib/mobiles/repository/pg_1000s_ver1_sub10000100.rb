@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pg_1000s_ver1'
 module Mobiles
  module Repository
-   class Pg1000sVer1Sub10000100 < Pg1000sVer1
+   class Pg_1000s_ver1_sub10000100 < Pg_1000s_ver1
 def self.user_agent
- "PG-1000S/01.00BR"
+ "PG-1000S/01.00BR".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/elson_esl808_ver1'
 module Mobiles
  module Repository
-   class ElsonEsl808Ver1Subqo3c1 < ElsonEsl808Ver1
+   class Elson_esl808_ver1_subqo3c1 < Elson_esl808_ver1
 def self.user_agent
- "ESL808/BSI AU.Browser/2.0 QO3C1 MMP/1.0"
+ "ESL808/BSI AU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/ESL808.xml"

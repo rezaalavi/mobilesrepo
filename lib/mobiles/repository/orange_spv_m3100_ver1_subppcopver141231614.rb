@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_m3100_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM3100Ver1Subppcopver141231614 < OrangeSpvM3100Ver1
+   class Orange_spv_m3100_ver1_subppcopver141231614 < Orange_spv_m3100_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M3100; OpVer 14.123.1.614)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M3100; OpVer 14.123.1.614)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/hermes-1.0.xml"

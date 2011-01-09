@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_e71_ver1'
 module Mobiles
  module Repository
-   class SieE71Ver1Sub < SieE71Ver1
+   class Sie_e71_ver1_sub < Sie_e71_ver1
 def self.user_agent
- "SIE-E71F/28 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0"
+ "SIE-E71F/28 UP.Browser/7.1.0.e.24(GUI) MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.e.24 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

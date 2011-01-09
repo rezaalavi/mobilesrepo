@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e317_ver1'
 module Mobiles
  module Repository
-   class SecE315Ver1 < SecE317Ver1
+   class Sec_e315_ver1 < Sec_e317_ver1
 def self.user_agent
- "SEC-SGHE315"
+ "SEC-SGHE315".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/e315_10.xml"

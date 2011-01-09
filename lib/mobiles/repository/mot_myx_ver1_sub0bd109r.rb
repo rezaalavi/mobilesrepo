@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_myx_ver1'
 module Mobiles
  module Repository
-   class MotMyxVer1Sub0bd109r < MotMyxVer1
+   class Mot_myx_ver1_sub0bd109r < Mot_myx_ver1
 def self.user_agent
- "MOT-M Y X/0B.D1.09R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "MOT-M Y X/0B.D1.09R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

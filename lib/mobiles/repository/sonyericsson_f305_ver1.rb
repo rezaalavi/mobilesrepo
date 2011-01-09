@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class SonyericssonF305Ver1 < OpwvV72Generic
+   class Sonyericsson_f305_ver1 < Opwv_v72_generic
 def self.user_agent
- "SonyEricssonF305/R1AA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.7.1.351 (GUI)"
+ "SonyEricssonF305/R1AA Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.7.1.351 (GUI)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sonyericsson.com/uaprof/F305R101.xml"

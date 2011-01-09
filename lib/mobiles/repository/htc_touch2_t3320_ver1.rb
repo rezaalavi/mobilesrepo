@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch2_ver1'
 module Mobiles
  module Repository
-   class HtcTouch2T3320Ver1 < HtcTouch2Ver1
+   class Htc_touch2_t3320_ver1 < Htc_touch2_ver1
 def self.user_agent
- "HTC_Touch2_T3320 Opera/9.50 (Windows NT 5.1; U; en)"
+ "HTC_Touch2_T3320 Opera/9.50 (Windows NT 5.1; U; en)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/HTC_Touch2_T3320-1.0.xml"

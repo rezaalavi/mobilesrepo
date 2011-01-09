@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6620_ver1'
 module Mobiles
  module Repository
-   class Nokia6620Ver1Sub4221 < Nokia6620Ver1
+   class Nokia_6620_ver1_sub4221 < Nokia_6620_ver1
 def self.user_agent
- "Nokia6620/2.0 (4.22.1) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "Nokia6620/2.0 (4.22.1) SymbianOS/7.0s Series60/2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   1

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungP510Ver1 < OpwvV62Generic
+   class Samsung_p510_ver1 < Opwv_v62_generic
 def self.user_agent
- "SEC-SGHP510"
+ "SEC-SGHP510".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-P510"

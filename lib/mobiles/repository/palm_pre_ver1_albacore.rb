@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_pre_plus_ver1'
 module Mobiles
  module Repository
-   class PalmPreVer1Albacore < PalmPrePlusVer1
+   class Palm_pre_ver1_albacore < Palm_pre_plus_ver1
 def self.user_agent
- "Mozilla/5.0 (webOS/Albacore; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1"
+ "Mozilla/5.0 (webOS/Albacore; U; fr-FR) AppleWebKit/532.2 (KHTML, like Gecko) Version/1.0 Safari/532.2 Pre/1.1".gsub(/\a/, '\\')
 end
   def device_os_version
   "Albacore"

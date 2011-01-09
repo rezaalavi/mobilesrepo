@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SonyericssonA320Ver1 < GenericSonyericssonNetfrontVer34
+   class Sonyericsson_a320_ver1 < Generic_sonyericsson_netfront_ver3_4
 def self.user_agent
- "SonyEricssonA320/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3"
+ "SonyEricssonA320/R1FA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.3".gsub(/\a/, '\\')
 end
   def model_name
   "A320"

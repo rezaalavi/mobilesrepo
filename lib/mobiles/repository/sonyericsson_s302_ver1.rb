@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class SonyericssonS302Ver1 < OpwvV72Generic
+   class Sonyericsson_s302_ver1 < Opwv_v72_generic
 def self.user_agent
- "S302 /EI,A02: 180608 1458"
+ "S302 /EI,A02: 180608 1458".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/S302R101.xml"

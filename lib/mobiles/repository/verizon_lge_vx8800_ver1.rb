@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_vx8800_ver1'
 module Mobiles
  module Repository
-   class VerizonLgeVx8800Ver1 < LgeVx8800Ver1
+   class Verizon_lge_vx8800_ver1 < Lge_vx8800_ver1
 def self.user_agent
- "VX8800v1"
+ "VX8800v1".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Verizon Wireless"

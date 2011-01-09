@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic'
 module Mobiles
  module Repository
-   class LgKe600Ver1 < LgGeneric
+   class Lg_ke600_ver1 < Lg_generic
 def self.user_agent
- "LG-KE600 MIC/1.1.14 MIDP-2.0/CLDC-1.1"
+ "LG-KE600 MIC/1.1.14 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "KE600"

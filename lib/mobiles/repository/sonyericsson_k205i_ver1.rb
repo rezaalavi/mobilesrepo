@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k200i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK205iVer1 < SonyericssonK200iVer1
+   class Sonyericsson_k205i_ver1 < Sonyericsson_k200i_ver1
 def self.user_agent
- "SonyEricssonK205i"
+ "SonyEricssonK205i".gsub(/\a/, '\\')
 end
   def model_name
   "K205i"

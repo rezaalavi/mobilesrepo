@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_f188_ver1'
 module Mobiles
  module Repository
-   class ZteF188Ver1Subnetfront34 < ZteF188Ver1
+   class Zte_f188_ver1_subnetfront34 < Zte_f188_ver1
 def self.user_agent
- "ZTE-F188-Tigo/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "ZTE-F188-Tigo/1.0 ACS-NF/3.4 QTV2.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.4

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_mys_7_ver1'
 module Mobiles
  module Repository
-   class SagemMys7Ver1Sub176220 < SagemMys7Ver1
+   class Sagem_mys_7_ver1_sub176220 < Sagem_mys_7_ver1
 def self.user_agent
- "SAGEM-myS-7/1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)"
+ "SAGEM-myS-7/1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   
 end

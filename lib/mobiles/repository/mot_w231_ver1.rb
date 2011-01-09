@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_w230_ver1'
 module Mobiles
  module Repository
-   class MotW231Ver1 < MotW230Ver1
+   class Mot_w231_ver1 < Mot_w230_ver1
 def self.user_agent
- "MOT-W231/0.0.41 UP.Browser/6.3.0.6.c.22 (GUI) MMP/2.0"
+ "MOT-W231/0.0.41 UP.Browser/6.3.0.6.c.22 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def release_date
   "2008_july"

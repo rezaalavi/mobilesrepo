@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6_1'
 module Mobiles
  module Repository
-   class HpIpaqDatamessengerVer1 < GenericMsWinmo61
+   class Hp_ipaq_datamessenger_ver1 < Generic_ms_winmo6_1
 def self.user_agent
- "HPiPAQDataMessenger/1.0/Mozilla/4.0(compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC;320x240"
+ "HPiPAQDataMessenger/1.0/Mozilla/4.0(compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC;320x240".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_c260_ver1'
 module Mobiles
  module Repository
-   class SecSghC266Ver1 < SamsungSghC260Ver1
+   class Sec_sgh_c266_ver1 < Samsung_sgh_c260_ver1
 def self.user_agent
- "SEC-SGHC266/1.0"
+ "SEC-SGHC266/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia"

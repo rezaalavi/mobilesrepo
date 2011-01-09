@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class RonD09Ver1 < GenericXhtml
+   class Ron_d09_ver1 < Generic_xhtml
 def self.user_agent
- "RON_D09_01/DG_D09/WAP2.0 Profile RON_D09_01/DG_D09/WAP2.0 Profile"
+ "RON_D09_01/DG_D09/WAP2.0 Profile RON_D09_01/DG_D09/WAP2.0 Profile".gsub(/\a/, '\\')
 end
   def model_name
   "D09"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class UniscopeU2ver1 < GenericXhtml
+   class Uniscope_u2ver1 < Generic_xhtml
 def self.user_agent
- "UNISCOPE-U2/(2006.01.01)Ver1.0.1/WAP1.2"
+ "UNISCOPE-U2/(2006.01.01)Ver1.0.1/WAP1.2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.uniscope.com.cn/wapup/unipu2.xml"

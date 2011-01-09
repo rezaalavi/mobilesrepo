@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HsC1110Ver1 < GenericXhtml
+   class Hs_c1110_ver1 < Generic_xhtml
 def self.user_agent
- "HS-C1110/CIR.4.00.00.NR OBIGO/Q04A1-1.11 CTC/1.0"
+ "HS-C1110/CIR.4.00.00.NR OBIGO/Q04A1-1.11 CTC/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

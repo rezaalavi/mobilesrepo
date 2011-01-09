@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_ef51_ver1'
 module Mobiles
  module Repository
-   class BenqsieEf51Ver1 < SieEf51Ver1
+   class Benqsie_ef51_ver1 < Sie_ef51_ver1
 def self.user_agent
- "BenQ-EF51"
+ "BenQ-EF51".gsub(/\a/, '\\')
 end
   def brand_name
   "BenQ-Siemens"

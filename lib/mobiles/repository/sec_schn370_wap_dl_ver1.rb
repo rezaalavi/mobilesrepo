@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SecSchn370WapDlVer1 < UptextGeneric
+   class Sec_schn370_wap_dl_ver1 < Uptext_generic
 def self.user_agent
- "SEC-schn370_WAP_DL"
+ "SEC-schn370_WAP_DL".gsub(/\a/, '\\')
 end
   def model_name
   "SCH-N370"

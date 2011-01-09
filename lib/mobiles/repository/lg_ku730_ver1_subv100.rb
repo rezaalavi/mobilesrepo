@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ku730_ver1'
 module Mobiles
  module Repository
-   class LgKu730Ver1Subv100 < LgKu730Ver1
+   class Lg_ku730_ver1_subv100 < Lg_ku730_ver1
 def self.user_agent
- "LG-KU730/V100 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KU730/V100 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

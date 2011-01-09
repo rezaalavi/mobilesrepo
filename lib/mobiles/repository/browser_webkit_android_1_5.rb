@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_webkit_android_1_1'
 module Mobiles
  module Repository
-   class BrowserWebkitAndroid15 < BrowserWebkitAndroid11
+   class Browser_webkit_android_1_5 < Browser_webkit_android_1_1
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_WEBKIT_ANDROID_1_5"
+ "DO_NOT_MATCH_BROWSER_WEBKIT_ANDROID_1_5".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   1.5

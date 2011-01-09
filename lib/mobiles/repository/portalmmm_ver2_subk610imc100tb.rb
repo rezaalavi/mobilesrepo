@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k610im_ver1_subua'
 module Mobiles
  module Repository
-   class PortalmmmVer2Subk610imc100tb < SonyericssonK610imVer1Subua
+   class Portalmmm_ver2_subk610imc100tb < Sonyericsson_k610im_ver1_subua
 def self.user_agent
- "portalmmm/2.0 K610im(c100;TB)"
+ "portalmmm/2.0 K610im(c100;TB)".gsub(/\a/, '\\')
 end
   def max_deck_size
   40000

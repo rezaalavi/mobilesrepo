@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/huawei_u535_ver1'
 module Mobiles
  module Repository
-   class HuaweiU550Ver1 < HuaweiU535Ver1
+   class Huawei_u550_ver1 < Huawei_u535_ver1
 def self.user_agent
- "Huawei/1.0/Huawei U550/b000 Browser/Obigo-Browser/Q04A MMS/Obigo-MMS/Q04A SyncML/HW-SyncML/1.0 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Huawei/1.0/Huawei U550/b000 Browser/Obigo-Browser/Q04A MMS/Obigo-MMS/Q04A SyncML/HW-SyncML/1.0 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.huawei.com/uaprof/HuaweiU550v100.xml"

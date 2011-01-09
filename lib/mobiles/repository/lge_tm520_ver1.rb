@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class LgeTm520Ver1 < UptextGeneric
+   class Lge_tm520_ver1 < Uptext_generic
 def self.user_agent
- "LGE-TM520/1.0 UP.Browser/4.1.22b"
+ "LGE-TM520/1.0 UP.Browser/4.1.22b".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   4.1

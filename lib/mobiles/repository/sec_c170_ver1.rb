@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SecC170Ver1 < Generic
+   class Sec_c170_ver1 < Generic
 def self.user_agent
- "SEC-SGHC170"
+ "SEC-SGHC170".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia"

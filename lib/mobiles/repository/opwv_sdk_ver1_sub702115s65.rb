@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class OpwvSdkVer1Sub702115s65 < OpwvV7Generic
+   class Opwv_sdk_ver1_sub702115s65 < Opwv_v7_generic
 def self.user_agent
- "OPWV-SDK/S65 UP.Browser/7.0.2.115 (GUI) MMP/2.0"
+ "OPWV-SDK/S65 UP.Browser/7.0.2.115 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

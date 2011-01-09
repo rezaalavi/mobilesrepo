@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_w755_ver1'
 module Mobiles
  module Repository
-   class MotW755Ver1Subverizon < MotW755Ver1
+   class Mot_w755_ver1_subverizon < Mot_w755_ver1
 def self.user_agent
- "motow755"
+ "motow755".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Verizon Wireless"

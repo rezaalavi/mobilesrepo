@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_i_mobile'
 module Mobiles
  module Repository
-   class Imobile902Ver1 < GenericIMobile
+   class Imobile_902_ver1 < Generic_i_mobile
 def self.user_agent
- "i-mobile902"
+ "i-mobile902".gsub(/\a/, '\\')
 end
   def model_name
   902

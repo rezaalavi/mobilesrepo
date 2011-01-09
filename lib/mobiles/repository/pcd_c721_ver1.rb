@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class PcdC721Ver1 < GenericNetfrontVer35
+   class Pcd_c721_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "Mozilla/5.0(compatible; Access NetFront/3.5; BREW 3.1.5; en,es)/240x320 PCD C721"
+ "Mozilla/5.0(compatible; Access NetFront/3.5; BREW 3.1.5; en,es)/240x320 PCD C721".gsub(/\a/, '\\')
 end
   def model_name
   "C721"

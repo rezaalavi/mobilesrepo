@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bloody_transcoder'
 module Mobiles
  module Repository
-   class GoogleWirelessTranscoderVer1 < BloodyTranscoder
+   class Google_wireless_transcoder_ver1 < Bloody_transcoder
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Google Wireless Transcoder;)"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.0; Google Wireless Transcoder;)".gsub(/\a/, '\\')
 end
   def model_name
   "Wireless Transcoder"

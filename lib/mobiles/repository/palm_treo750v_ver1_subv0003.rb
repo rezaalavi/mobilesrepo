@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_treo750v_ver1'
 module Mobiles
  module Repository
-   class PalmTreo750vVer1Subv0003 < PalmTreo750vVer1
+   class Palm_treo750v_ver1_subv0003 < Palm_treo750v_ver1
 def self.user_agent
- "Palm750/v0003 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "Palm750/v0003 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://downloads.palm.com/profiles/Treo750R1.rdf"

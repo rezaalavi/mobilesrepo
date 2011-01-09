@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_t5100_ver1'
 module Mobiles
  module Repository
-   class LgT5100Ver1Sub6232 < LgT5100Ver1
+   class Lg_t5100_ver1_sub6232 < Lg_t5100_ver1
 def self.user_agent
- "LG-T5100 UP.Browser/6.2.3 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "LG-T5100 UP.Browser/6.2.3 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

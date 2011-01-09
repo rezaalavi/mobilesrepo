@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_hermes_ver1'
 module Mobiles
  module Repository
-   class VodafoneV1605Ver1 < HtcHermesVer1
+   class Vodafone_v1605_ver1 < Htc_hermes_ver1
 def self.user_agent
- "Vodafone/1.0/HTC_Mercury"
+ "Vodafone/1.0/HTC_Mercury".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_2330c_ver1'
 module Mobiles
  module Repository
-   class Nokia2330cVer1Sub2b < Nokia2330cVer1
+   class Nokia_2330c_ver1_sub2b < Nokia_2330c_ver1
 def self.user_agent
- "Nokia2330c-2b/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia2330c-2b/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "2330 Classic 2B"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p908_ver1'
 module Mobiles
  module Repository
-   class SonyericssonP908Ver1Subr101 < SonyericssonP908Ver1
+   class Sonyericsson_p908_ver1_subr101 < Sonyericsson_p908_ver1
 def self.user_agent
- "SonyEricssonP908/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "SonyEricssonP908/R101 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

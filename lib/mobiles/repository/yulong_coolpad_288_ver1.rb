@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class YulongCoolpad288Ver1 < GenericXhtml
+   class Yulong_coolpad_288_ver1 < Generic_xhtml
 def self.user_agent
- "Yulong-CoolPAD 288/1.0 Browser/1.5.62"
+ "Yulong-CoolPAD 288/1.0 Browser/1.5.62".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

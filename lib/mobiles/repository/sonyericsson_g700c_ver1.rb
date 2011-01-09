@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_g700_ver1'
 module Mobiles
  module Repository
-   class SonyericssonG700cVer1 < SonyericssonG700Ver1
+   class Sonyericsson_g700c_ver1 < Sonyericsson_g700_ver1
 def self.user_agent
- "SonyEricssonG700c/R100 Symbian/9.1 UIQ/3.0 Release/08.04.16 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0(compatible;MSIE6.0;SymbianOS;878)Opera8.65[zh]"
+ "SonyEricssonG700c/R100 Symbian/9.1 UIQ/3.0 Release/08.04.16 Profile/MIDP-2.0 Configuration/CLDC-1.1 Mozilla/4.0(compatible;MSIE6.0;SymbianOS;878)Opera8.65[zh]".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAProf/G700cR100.xml"

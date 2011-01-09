@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_safari_generic'
 module Mobiles
  module Repository
-   class SamsungSghI560Ver1 < SamsungSafariGeneric
+   class Samsung_sgh_i560_ver1 < Samsung_safari_generic
 def self.user_agent
- "Samsung/SGH-i560"
+ "Samsung/SGH-i560".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   1

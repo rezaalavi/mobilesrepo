@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3600_ver1'
 module Mobiles
  module Repository
-   class HtcP3600Ver1Subua < HtcP3600Ver1
+   class Htc_p3600_ver1_subua < Htc_p3600_ver1
 def self.user_agent
- "HTC_P3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "HTC_P3600-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/Trinity-1.0.xml"

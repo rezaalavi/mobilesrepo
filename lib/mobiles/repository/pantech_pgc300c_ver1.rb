@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_pgc300_ver1'
 module Mobiles
  module Repository
-   class PantechPgc300cVer1 < PantechPgc300Ver1
+   class Pantech_pgc300c_ver1 < Pantech_pgc300_ver1
 def self.user_agent
- "PG-C300/R03 MIC/1.1.14 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "PG-C300/R03 MIC/1.1.14 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

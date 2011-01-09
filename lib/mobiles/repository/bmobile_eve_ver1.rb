@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class BmobileEveVer1 < GenericXhtml
+   class Bmobile_eve_ver1 < Generic_xhtml
 def self.user_agent
- "EVE/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1"
+ "EVE/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://343761.ctc-w228.dns.com.cn/UAProfile/EVE.xml"

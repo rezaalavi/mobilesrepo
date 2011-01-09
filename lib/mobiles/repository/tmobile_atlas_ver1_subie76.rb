@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_atlas_ver1'
 module Mobiles
  module Repository
-   class TmobileAtlasVer1Subie76 < TmobileAtlasVer1
+   class Tmobile_atlas_ver1_subie76 < Tmobile_atlas_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) T-Mobile_Atlas"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) T-Mobile_Atlas".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

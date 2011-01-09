@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class NecDb7000Ver1 < UptextGeneric
+   class Nec_db7000_ver1 < Uptext_generic
 def self.user_agent
- "NEC-DB7000/1.0 UP.Browser/4"
+ "NEC-DB7000/1.0 UP.Browser/4".gsub(/\a/, '\\')
 end
   def model_name
   "DB7000"

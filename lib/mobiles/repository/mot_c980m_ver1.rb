@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_c980_ver1'
 module Mobiles
  module Repository
-   class MotC980mVer1 < MotC980Ver1
+   class Mot_c980m_ver1 < Mot_c980_ver1
 def self.user_agent
- "MOT-C980M"
+ "MOT-C980M".gsub(/\a/, '\\')
 end
   def model_name
   "C980M"

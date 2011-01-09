@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class VkVk5000Ver1 < GenericXhtml
+   class Vk_vk5000_ver1 < Generic_xhtml
 def self.user_agent
- "VK-VK5000/1.0"
+ "VK-VK5000/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

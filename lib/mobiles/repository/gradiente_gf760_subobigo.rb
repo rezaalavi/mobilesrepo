@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/gradiente_gf760'
 module Mobiles
  module Repository
-   class GradienteGf760Subobigo < GradienteGf760
+   class Gradiente_gf760_subobigo < Gradiente_gf760
 def self.user_agent
- "Gradiente-GF760 OBIGO"
+ "Gradiente-GF760 OBIGO".gsub(/\a/, '\\')
 end
   
 end

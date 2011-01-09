@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class SamsungGtC3200Ver1 < GenericNetfrontVer35
+   class Samsung_gt_c3200_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "SAMSUNG-GT-C3200/1.0 NetFront/3.5 Profile/M IDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-GT-C3200/1.0 NetFront/3.5 Profile/M IDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/GT-C3200UAProf.xml"

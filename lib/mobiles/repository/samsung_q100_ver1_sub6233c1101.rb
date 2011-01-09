@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_p850_ver1'
 module Mobiles
  module Repository
-   class SamsungQ100Ver1Sub6233c1101 < SamsungP850Ver1
+   class Samsung_q100_ver1_sub6233c1101 < Samsung_p850_ver1
 def self.user_agent
- "SAMSUNG-SGH-P850/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-P850/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

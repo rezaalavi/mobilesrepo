@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class EzzeAc831Ver1 < GenericXhtml
+   class Ezze_ac831_ver1 < Generic_xhtml
 def self.user_agent
- "AC831"
+ "AC831".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/AC831.xml"

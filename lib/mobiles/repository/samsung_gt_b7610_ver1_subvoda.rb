@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_b7610_ver1_subopera'
 module Mobiles
  module Repository
-   class SamsungGtB7610Ver1Subvoda < SamsungGtB7610Ver1Subopera
+   class Samsung_gt_b7610_ver1_subvoda < Samsung_gt_b7610_ver1_subopera
 def self.user_agent
- "Vodafone/1.0/SAMSUNG-GT-B7610/NBUIH1 Browser/Opera/9.5 Profile/MIDP-2.0"
+ "Vodafone/1.0/SAMSUNG-GT-B7610/NBUIH1 Browser/Opera/9.5 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Vodafone"

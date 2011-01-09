@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_p51_ver1'
 module Mobiles
  module Repository
-   class SieP51Ver1benq < SieP51Ver1
+   class Sie_p51_ver1benq < Sie_p51_ver1
 def self.user_agent
- "BenQ-P51"
+ "BenQ-P51".gsub(/\a/, '\\')
 end
   
 end

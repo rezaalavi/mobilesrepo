@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ke800_ver1'
 module Mobiles
  module Repository
-   class LgKe800Ver1Sub1114 < LgKe800Ver1
+   class Lg_ke800_ver1_sub1114 < Lg_ke800_ver1
 def self.user_agent
- "LG-KE800 MIC/1.1.14 MIDP-2.0/CLDC-1.1"
+ "LG-KE800 MIC/1.1.14 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

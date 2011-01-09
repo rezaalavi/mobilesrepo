@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m810_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM810Ver1Subua < SamsungSphM810Ver1
+   class Samsung_sph_m810_ver1_subua < Samsung_sph_m810_ver1
 def self.user_agent
- "Samsung-SPHM810 AU-MIC-M810/2.0 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Samsung-SPHM810 AU-MIC-M810/2.0 MMP/2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

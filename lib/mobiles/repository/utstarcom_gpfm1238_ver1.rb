@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class UtstarcomGpfm1238Ver1 < GenericXhtml
+   class Utstarcom_gpfm1238_ver1 < Generic_xhtml
 def self.user_agent
- "GPFM1238/1.0 MTK6223C/07B Release/03.16.2009 Browser/Obigo2.0"
+ "GPFM1238/1.0 MTK6223C/07B Release/03.16.2009 Browser/Obigo2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

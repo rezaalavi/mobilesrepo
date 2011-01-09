@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_s3650_ver1'
 module Mobiles
  module Repository
-   class SamsungGtS3650Amiii2 < SamsungGtS3650Ver1
+   class Samsung_gt_s3650_amiii2 < Samsung_gt_s3650_ver1
 def self.user_agent
- "SAMSUNG-GT-S3650/S3650AMII2 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-S3650/S3650AMII2 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

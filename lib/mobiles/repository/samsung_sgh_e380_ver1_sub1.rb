@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_e380_ver1_subua'
 module Mobiles
  module Repository
-   class SamsungSghE380Ver1Sub1 < SamsungSghE380Ver1Subua
+   class Samsung_sgh_e380_ver1_sub1 < Samsung_sgh_e380_ver1_subua
 def self.user_agent
- "SAMSUNG-SGH-E380/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-SGH-E380/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   100000

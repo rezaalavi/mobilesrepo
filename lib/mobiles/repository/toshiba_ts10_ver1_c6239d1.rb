@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/toshiba_ts10_ver1'
 module Mobiles
  module Repository
-   class ToshibaTs10Ver1C6239d1 < ToshibaTs10Ver1
+   class Toshiba_ts10_ver1_c6239d1 < Toshiba_ts10_ver1
 def self.user_agent
- "Toshiba-TS10/1.0 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0"
+ "Toshiba-TS10/1.0 UP.Browser/6.2.3.9.d.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def softkey_support?
   true

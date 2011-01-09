@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_z300i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonZ300iVer1Subr3f < SonyericssonZ300iVer1
+   class Sonyericsson_z300i_ver1_subr3f < Sonyericsson_z300i_ver1
 def self.user_agent
- "SonyEricssonZ300i/R3F/TelecaBrowser/4.08"
+ "SonyEricssonZ300i/R3F/TelecaBrowser/4.08".gsub(/\a/, '\\')
 end
   
 end

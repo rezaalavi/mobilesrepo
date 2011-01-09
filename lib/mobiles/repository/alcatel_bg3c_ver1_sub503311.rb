@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_bg3c_ver1'
 module Mobiles
  module Repository
-   class AlcatelBg3cVer1Sub503311 < AlcatelBg3cVer1
+   class Alcatel_bg3c_ver1_sub503311 < Alcatel_bg3c_ver1
 def self.user_agent
- "Alcatel-BG3-color/1.0 UP.Browser/5.0.3.3.11"
+ "Alcatel-BG3-color/1.0 UP.Browser/5.0.3.3.11".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

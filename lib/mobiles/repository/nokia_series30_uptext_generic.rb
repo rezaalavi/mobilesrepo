@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_series20_uptext_generic'
 module Mobiles
  module Repository
-   class NokiaSeries30UptextGeneric < NokiaSeries20UptextGeneric
+   class Nokia_series30_uptext_generic < Nokia_series20_uptext_generic
 def self.user_agent
- "NOKIA_SERIES30_RUNNING_UPBROWSER4"
+ "NOKIA_SERIES30_RUNNING_UPBROWSER4".gsub(/\a/, '\\')
 end
   def columns
   11

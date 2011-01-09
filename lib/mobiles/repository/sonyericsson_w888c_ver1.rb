@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w888_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW888cVer1 < SonyericssonW888Ver1
+   class Sonyericsson_w888c_ver1 < Sonyericsson_w888_ver1
 def self.user_agent
- "SonyEricssonW888c/R8BA024"
+ "SonyEricssonW888c/R8BA024".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.3

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cdm_8450sp_ver1'
 module Mobiles
  module Repository
-   class Cdm8450spVer1Subt060sp2t37 < Cdm8450spVer1
+   class Cdm_8450sp_ver1_subt060sp2t37 < Cdm_8450sp_ver1
 def self.user_agent
- "AUDIOVOX-CDM8450SP/T060SP2T37 UP.Browser/6.2.2.1 (GUI) MMP/2.0"
+ "AUDIOVOX-CDM8450SP/T060SP2T37 UP.Browser/6.2.2.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

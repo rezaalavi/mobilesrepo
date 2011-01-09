@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_openwave_6_3'
 module Mobiles
  module Repository
-   class BrowserOpenwave7 < BrowserOpenwave63
+   class Browser_openwave_7 < Browser_openwave_6_3
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_OPENWAVE_7"
+ "DO_NOT_MATCH_BROWSER_OPENWAVE_7".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.0

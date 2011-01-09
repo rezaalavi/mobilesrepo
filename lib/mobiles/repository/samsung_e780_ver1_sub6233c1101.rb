@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e780_ver1'
 module Mobiles
  module Repository
-   class SamsungE780Ver1Sub6233c1101 < SamsungE780Ver1
+   class Samsung_e780_ver1_sub6233c1101 < Samsung_e780_ver1
 def self.user_agent
- "SAMSUNG-SGH-E780/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-E780/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

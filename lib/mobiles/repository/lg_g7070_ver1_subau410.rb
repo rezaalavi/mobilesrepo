@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g7070_ver1'
 module Mobiles
  module Repository
-   class LgG7070Ver1Subau410 < LgG7070Ver1
+   class Lg_g7070_ver1_subau410 < Lg_g7070_ver1
 def self.user_agent
- "LG-G7070 AU/4.10 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "LG-G7070 AU/4.10 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

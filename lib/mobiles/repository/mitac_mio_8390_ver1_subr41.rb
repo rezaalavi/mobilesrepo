@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitac_mio_8390_ver1'
 module Mobiles
  module Repository
-   class MitacMio8390Ver1Subr41 < MitacMio8390Ver1
+   class Mitac_mio_8390_ver1_subr41 < Mitac_mio_8390_ver1
 def self.user_agent
- "MIO8390/R41 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)"
+ "MIO8390/R41 Profile/MIDP-1.0 MIDP-2.0 Configuration/CLDC-1.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

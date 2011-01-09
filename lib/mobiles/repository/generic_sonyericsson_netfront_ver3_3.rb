@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3'
 module Mobiles
  module Repository
-   class GenericSonyericssonNetfrontVer33 < GenericSonyericssonNetfrontVer3
+   class Generic_sonyericsson_netfront_ver3_3 < Generic_sonyericsson_netfront_ver3
 def self.user_agent
- "DO_NOT_MATCH_SONYERICSSON_NETFRONT_3_3"
+ "DO_NOT_MATCH_SONYERICSSON_NETFRONT_3_3".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.3

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_ameo_ver1'
 module Mobiles
  module Repository
-   class TmobileAmeoVer1Subie76 < TmobileAmeoVer1
+   class Tmobile_ameo_ver1_subie76 < Tmobile_ameo_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 640x480; Ameo/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 640x480; Ameo/1.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/tmo/ameo-1.1.xml"

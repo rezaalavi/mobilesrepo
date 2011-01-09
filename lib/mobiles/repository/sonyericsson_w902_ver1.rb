@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w900i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW902Ver1 < SonyericssonW900iVer1
+   class Sonyericsson_w902_ver1 < Sonyericsson_w900i_ver1
 def self.user_agent
- "SonyEricssonW902/R3CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.1"
+ "SonyEricssonW902/R3CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.4

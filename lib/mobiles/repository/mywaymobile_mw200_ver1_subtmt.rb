@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mywaymobile_mw200_ver1'
 module Mobiles
  module Repository
-   class MywaymobileMw200Ver1Subtmt < MywaymobileMw200Ver1
+   class Mywaymobile_mw200_ver1_subtmt < Mywaymobile_mw200_ver1
 def self.user_agent
- "ML-MW200 TMT/WAP 2.0 MIDP-2.0/CLDC-1.0"
+ "ML-MW200 TMT/WAP 2.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

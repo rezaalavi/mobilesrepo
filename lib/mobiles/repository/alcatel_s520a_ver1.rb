@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_s520_ver1'
 module Mobiles
  module Repository
-   class AlcatelS520aVer1 < AlcatelS520Ver1
+   class Alcatel_s520a_ver1 < Alcatel_s520_ver1
 def self.user_agent
- "Alcatel-OT-S520A/1.0 ObigoInternetBrowser/Q03C"
+ "Alcatel-OT-S520A/1.0 ObigoInternetBrowser/Q03C".gsub(/\a/, '\\')
 end
   def model_name
   "OT-S520A"

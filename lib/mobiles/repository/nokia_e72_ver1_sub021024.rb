@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e72_ver1_sub021018'
 module Mobiles
  module Repository
-   class NokiaE72Ver1Sub021024 < NokiaE72Ver1Sub021018
+   class Nokia_e72_ver1_sub021024 < Nokia_e72_ver1_sub021018
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/021.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424"
+ "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaE72-1/021.024; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.19424".gsub(/\a/, '\\')
 end
   def image_inlining?
   true

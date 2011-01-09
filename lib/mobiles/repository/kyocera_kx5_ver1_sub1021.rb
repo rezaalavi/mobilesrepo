@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kyocera_kx5_ver1'
 module Mobiles
  module Repository
-   class KyoceraKx5Ver1Sub1021 < KyoceraKx5Ver1
+   class Kyocera_kx5_ver1_sub1021 < Kyocera_kx5_ver1
 def self.user_agent
- "KWC-KX5/1.0.21 UP.Browser/6.2.3.9 (GUI) MMP/2.0"
+ "KWC-KX5/1.0.21 UP.Browser/6.2.3.9 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungD908Ver1 < OpwvV62Generic
+   class Samsung_d908_ver1 < Opwv_v62_generic
 def self.user_agent
- "SAMSUNG-SGH-D908/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/"
+ "SAMSUNG-SGH-D908/1.0/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1/".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-D908.xml"

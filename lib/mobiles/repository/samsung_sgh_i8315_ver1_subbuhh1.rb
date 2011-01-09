@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i8315_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI8315Ver1Subbuhh1 < SamsungSghI8315Ver1
+   class Samsung_sgh_i8315_ver1_subbuhh1 < Samsung_sgh_i8315_ver1
 def self.user_agent
- "SAMSUNG-SGH-I8315-Vodafone/I8315BUHH1 Linux/XOcean/R1 Opera/9.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-I8315-Vodafone/I8315BUHH1 Linux/XOcean/R1 Opera/9.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_otc551_ver1'
 module Mobiles
  module Repository
-   class AlcatelOtc551Ver1Sub71 < AlcatelOtc551Ver1
+   class Alcatel_otc551_ver1_sub71 < Alcatel_otc551_ver1
 def self.user_agent
- "Alcatel-OT-C551/1.0 UP.Browser/7.1 (GUI) MMP/2.0"
+ "Alcatel-OT-C551/1.0 UP.Browser/7.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def html_wi_oma_xhtmlmp_1_0?
   true

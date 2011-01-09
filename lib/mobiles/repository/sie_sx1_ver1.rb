@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60'
 module Mobiles
  module Repository
-   class SieSx1Ver1 < NokiaGenericSeries60
+   class Sie_sx1_ver1 < Nokia_generic_series60
 def self.user_agent
- "SIE-SX1"
+ "SIE-SX1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://communication-market.siemens.de/uaprof/SX1_02.xml"

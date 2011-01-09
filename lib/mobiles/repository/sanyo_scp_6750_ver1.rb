@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SanyoScp6750Ver1 < GenericNetfrontVer34
+   class Sanyo_scp_6750_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "Mozilla/4.0 (REX; U; en-us; Sanyo; SCP-6750/US; NetFront/3.4/AMB)"
+ "Mozilla/4.0 (REX; U; en-us; Sanyo; SCP-6750/US; NetFront/3.4/AMB)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Sanyo/SCP6750/1002SP.rdf"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k750i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK750iVer1Subr1a < SonyericssonK750iVer1
+   class Sonyericsson_k750i_ver1_subr1a < Sonyericsson_k750i_ver1
 def self.user_agent
- "SonyEricssonK750i/R1A Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK750i/R1A Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

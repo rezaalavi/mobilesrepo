@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_tm240_ver1'
 module Mobiles
  module Repository
-   class LgTm240Ver1Sub4126 < LgTm240Ver1
+   class Lg_tm240_ver1_sub4126 < Lg_tm240_ver1
 def self.user_agent
- "LGE-TM240/1.0 UP.Browser/4.1.26l"
+ "LGE-TM240/1.0 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

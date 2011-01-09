@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotC168iVer1 < GenericXhtml
+   class Mot_c168i_ver1 < Generic_xhtml
 def self.user_agent
- "MOT-C168i/1.0 Release/7.24.2006 Browser/CMCS1.0 Software/0.080"
+ "MOT-C168i/1.0 Release/7.24.2006 Browser/CMCS1.0 Software/0.080".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/C168i/Profile/C168i-cingular.rdf"

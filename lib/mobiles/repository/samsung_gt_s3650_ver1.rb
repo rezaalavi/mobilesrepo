@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_dolfin'
 module Mobiles
  module Repository
-   class SamsungGtS3650Ver1 < GenericDolfin
+   class Samsung_gt_s3650_ver1 < Generic_dolfin
 def self.user_agent
- "SMMSAMSUNG-GT-S3650/S3650ACIG1 SHP/VPP/R5 Jasmine/1.0 Nextreaming -MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SMMSAMSUNG-GT-S3650/S3650ACIG1 SHP/VPP/R5 Jasmine/1.0 Nextreaming -MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p4350_ver1'
 module Mobiles
  module Repository
-   class HtcP4350Ver1Subua < HtcP4350Ver1
+   class Htc_p4350_ver1_subua < Htc_p4350_ver1
 def self.user_agent
- "HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+ "HTC_P4350 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)".gsub(/\a/, '\\')
 end
   
 end

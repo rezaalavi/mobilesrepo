@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_w377_ver1'
 module Mobiles
  module Repository
-   class MotW377Ver1Sub0032 < MotW377Ver1
+   class Mot_w377_ver1_sub0032 < Mot_w377_ver1
 def self.user_agent
- "MOT-W377/0.0.32 MMP/2.0"
+ "MOT-W377/0.0.32 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.motorola.com/phoneconfig/W377/Profile/W377.rdf"

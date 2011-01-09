@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6265_ver1'
 module Mobiles
  module Repository
-   class Nokia6265Ver1Subhl100v0401Vivnep < Nokia6265Ver1
+   class Nokia_6265_ver1_subhl100v0401_vivnep < Nokia_6265_ver1
 def self.user_agent
- "Nokia6265/2.0 (HL100V0401_viv.nep) UP.Browser/6.2.3.8 MMP/2.0"
+ "Nokia6265/2.0 (HL100V0401_viv.nep) UP.Browser/6.2.3.8 MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

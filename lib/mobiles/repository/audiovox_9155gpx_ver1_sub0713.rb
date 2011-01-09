@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/audiovox_9155gpx_ver1'
 module Mobiles
  module Repository
-   class Audiovox9155gpxVer1Sub0713 < Audiovox9155gpxVer1
+   class Audiovox_9155gpx_ver1_sub0713 < Audiovox_9155gpx_ver1
 def self.user_agent
- "AUDIOVOX-9155GPX/07.13 UP.Browser/4.1.26c3"
+ "AUDIOVOX-9155GPX/07.13 UP.Browser/4.1.26c3".gsub(/\a/, '\\')
 end
   
 end

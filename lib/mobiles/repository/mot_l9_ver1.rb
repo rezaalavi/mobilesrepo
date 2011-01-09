@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_l7_ver1'
 module Mobiles
  module Repository
-   class MotL9Ver1 < MotL7Ver1
+   class Mot_l9_ver1 < Mot_l7_ver1
 def self.user_agent
- "MOT-L9"
+ "MOT-L9".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

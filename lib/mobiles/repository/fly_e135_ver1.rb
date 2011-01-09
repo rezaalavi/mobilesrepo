@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class FlyE135Ver1 < GenericXhtml
+   class Fly_e135_ver1 < Generic_xhtml
 def self.user_agent
- "Fly_E135/MAUIBrowser/Configuration/WAP2.0"
+ "Fly_E135/MAUIBrowser/Configuration/WAP2.0".gsub(/\a/, '\\')
 end
   
 end

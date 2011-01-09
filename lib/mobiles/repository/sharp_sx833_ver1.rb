@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_903sh_ver1'
 module Mobiles
  module Repository
-   class SharpSx833Ver1 < Softbank903shVer1
+   class Sharp_sx833_ver1 < Softbank_903sh_ver1
 def self.user_agent
- "SharpSX833"
+ "SharpSX833".gsub(/\a/, '\\')
 end
   def model_name
   "SX833"

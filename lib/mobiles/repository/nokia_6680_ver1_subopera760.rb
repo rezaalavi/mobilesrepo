@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6680_ver1'
 module Mobiles
  module Repository
-   class Nokia6680Ver1Subopera760 < Nokia6680Ver1
+   class Nokia_6680_ver1_subopera760 < Nokia_6680_ver1
 def self.user_agent
- "Mozilla/4.1 (compatible; MSIE 6.0; Symbian OS; Nokia 6680; 857) Opera 7.60 [ru]"
+ "Mozilla/4.1 (compatible; MSIE 6.0; Symbian OS; Nokia 6680; 857) Opera 7.60 [ru]".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_ot_c652_ver1'
 module Mobiles
  module Repository
-   class AlcatelOtC652aVer1 < AlcatelOtC652Ver1
+   class Alcatel_ot_c652a_ver1 < Alcatel_ot_c652_ver1
 def self.user_agent
- "Alcatel-OT-C652a"
+ "Alcatel-OT-C652a".gsub(/\a/, '\\')
 end
   def model_name
   "OT-C652a"

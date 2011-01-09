@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_gt350_ver1'
 module Mobiles
  module Repository
-   class LgGt350Ver1Subv100 < LgGt350Ver1
+   class Lg_gt350_ver1_subv100 < Lg_gt350_ver1
 def self.user_agent
- "LG-GT350/V100 Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "LG-GT350/V100 Obigo/WAP2.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "LG-GT350"

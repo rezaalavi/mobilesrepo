@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class UtecS800Ver1 < GenericXhtml
+   class Utec_s800_ver1 < Generic_xhtml
 def self.user_agent
- "utecS800"
+ "utecS800".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/Utec_S800.xml"

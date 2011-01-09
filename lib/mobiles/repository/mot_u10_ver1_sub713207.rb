@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_u10_ver1'
 module Mobiles
  module Repository
-   class MotU10Ver1Sub713207 < MotU10Ver1
+   class Mot_u10_ver1_sub713207 < Mot_u10_ver1
 def self.user_agent
- "MOT-U10/71.32.07. MIB/2.2 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "MOT-U10/71.32.07. MIB/2.2 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

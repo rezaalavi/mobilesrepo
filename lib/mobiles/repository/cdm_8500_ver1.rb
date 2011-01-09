@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class Cdm8500Ver1 < UptextGeneric
+   class Cdm_8500_ver1 < Uptext_generic
 def self.user_agent
- "CDM-8500"
+ "CDM-8500".gsub(/\a/, '\\')
 end
   def model_name
   "CDM-8500"

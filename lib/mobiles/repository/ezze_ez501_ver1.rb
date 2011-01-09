@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class EzzeEz501Ver1 < GenericXhtml
+   class Ezze_ez501_ver1 < Generic_xhtml
 def self.user_agent
- "EZ501/BSI AU.Browser/2.0 QO3C1 MMP/1.0"
+ "EZ501/BSI AU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/EZ501.xml"

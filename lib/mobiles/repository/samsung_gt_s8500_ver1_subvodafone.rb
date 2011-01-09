@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_s8500_ver1_subnomozilla'
 module Mobiles
  module Repository
-   class SamsungGtS8500Ver1Subvodafone < SamsungGtS8500Ver1Subnomozilla
+   class Samsung_gt_s8500_ver1_subvodafone < Samsung_gt_s8500_ver1_subnomozilla
 def self.user_agent
- "SAMSUNG-GT-S8500-Vodafone/S8500BUJC1 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-S8500-Vodafone/S8500BUJC1 SHP/VPP/R5 Dolfin/2.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/GT-S8500_3G.rdf"

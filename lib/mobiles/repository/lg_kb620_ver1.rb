@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LgKb620Ver1 < GenericXhtml
+   class Lg_kb620_ver1 < Generic_xhtml
 def self.user_agent
- "LG/KB620/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "LG/KB620/v1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

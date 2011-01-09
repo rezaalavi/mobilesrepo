@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/gradiente_gf970_ver1'
 module Mobiles
  module Repository
-   class GradienteGf970Ver1sub1 < GradienteGf970Ver1
+   class Gradiente_gf970_ver1sub1 < Gradiente_gf970_ver1
 def self.user_agent
- "GF970/BSI AU.Browser/2.0 QO3C1 MMP/1.0"
+ "GF970/BSI AU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

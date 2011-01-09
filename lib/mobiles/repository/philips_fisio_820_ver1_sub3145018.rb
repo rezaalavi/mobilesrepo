@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_fisio_820_ver1'
 module Mobiles
  module Repository
-   class PhilipsFisio820Ver1Sub3145018 < PhilipsFisio820Ver1
+   class Philips_fisio_820_ver1_sub3145018 < Philips_fisio_820_ver1
 def self.user_agent
- "PHILIPS-FISIO 820/3.14 UP.Browser/5.0.1.8"
+ "PHILIPS-FISIO 820/3.14 UP.Browser/5.0.1.8".gsub(/\a/, '\\')
 end
   
 end

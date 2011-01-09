@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_n110_ver1'
 module Mobiles
  module Repository
-   class NecN110Ver1Sub61078 < NecN110Ver1
+   class Nec_n110_ver1_sub61078 < Nec_n110_ver1
 def self.user_agent
- "NEC-N110/0730MAWC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0"
+ "NEC-N110/0730MAWC/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

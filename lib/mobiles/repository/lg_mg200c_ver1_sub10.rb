@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mg200c_ver1'
 module Mobiles
  module Repository
-   class LgMg200cVer1Sub10 < LgMg200cVer1
+   class Lg_mg200c_ver1_sub10 < Lg_mg200c_ver1
 def self.user_agent
- "LG-MG200c UP.Browser/6.2.3 GUI MMP/1.0"
+ "LG-MG200c UP.Browser/6.2.3 GUI MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

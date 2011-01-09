@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2_subtsm7i'
 module Mobiles
  module Repository
-   class PortalmmmVer2Subtsm7ic10tb < PortalmmmVer2Subtsm7i
+   class Portalmmm_ver2_subtsm7ic10tb < Portalmmm_ver2_subtsm7i
 def self.user_agent
- "portalmmm/2.0 TSM7i(c10;TB)"
+ "portalmmm/2.0 TSM7i(c10;TB)".gsub(/\a/, '\\')
 end
   
 end

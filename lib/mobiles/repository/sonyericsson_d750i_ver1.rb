@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_42_generic'
 module Mobiles
  module Repository
-   class SonyericssonD750iVer1 < Sonyericsson42Generic
+   class Sonyericsson_d750i_ver1 < Sonyericsson_42_generic
 def self.user_agent
- "SonyEricssonD750i"
+ "SonyEricssonD750i".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/D750iR101.xml"

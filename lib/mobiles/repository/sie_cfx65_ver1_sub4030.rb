@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_cfx65_ver1'
 module Mobiles
  module Repository
-   class SieCfx65Ver1Sub4030 < SieCfx65Ver1
+   class Sie_cfx65_ver1_sub4030 < Sie_cfx65_ver1
 def self.user_agent
- "SIE-CFX65/4.030 Obigo/Q03C1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SIE-CFX65/4.030 Obigo/Q03C1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

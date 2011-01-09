@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e900_ver1'
 module Mobiles
  module Repository
-   class SamsungSghE950Ver1 < SecE900Ver1
+   class Samsung_sgh_e950_ver1 < Sec_e900_ver1
 def self.user_agent
- "SEC-SGHE950"
+ "SEC-SGHE950".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/e950_10.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kwc_e1000_ver1'
 module Mobiles
  module Repository
-   class KwcE1000Ver1Subua < KwcE1000Ver1
+   class Kwc_e1000_ver1_subua < Kwc_e1000_ver1
 def self.user_agent
- "kyoe1000/1.0.09 UP.Browser/7.2.6.1.475 (GUI) MMP/2.0"
+ "kyoe1000/1.0.09 UP.Browser/7.2.6.1.475 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "E1000"

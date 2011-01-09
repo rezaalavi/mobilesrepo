@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class BwNe100Tmt < Generic
+   class Bw_ne100_tmt < Generic
 def self.user_agent
- "BW-NEO100 TMT"
+ "BW-NEO100 TMT".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.bellwave.co.uk/uaprof/Neo100.xml"

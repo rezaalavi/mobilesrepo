@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_me850d_ver1'
 module Mobiles
  module Repository
-   class LgMe830 < LgMe850dVer1
+   class Lg_me830 < Lg_me850d_ver1
 def self.user_agent
- "LG-ME830"
+ "LG-ME830".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-ME830.xml"

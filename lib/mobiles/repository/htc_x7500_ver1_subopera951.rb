@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_x7500_ver1_subopera865'
 module Mobiles
  module Repository
-   class HtcX7500Ver1Subopera951 < HtcX7500Ver1Subopera865
+   class Htc_x7500_ver1_subopera951 < Htc_x7500_ver1_subopera865
 def self.user_agent
- "Opera/9.51 Beta (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/1718; U; en)"
+ "Opera/9.51 Beta (Microsoft Windows; PPC; 640x480; HTC_X7500/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mobi/1718; U; en)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

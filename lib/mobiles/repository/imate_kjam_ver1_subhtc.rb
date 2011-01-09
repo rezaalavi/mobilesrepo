@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/imate_kjam_ver1'
 module Mobiles
  module Repository
-   class ImateKjamVer1Subhtc < ImateKjamVer1
+   class Imate_kjam_ver1_subhtc < Imate_kjam_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC PPC; i-mate K-JAM PPC; 240x320; PPC; 240x320)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; HTC PPC; i-mate K-JAM PPC; 240x320; PPC; 240x320)".gsub(/\a/, '\\')
 end
   
 end

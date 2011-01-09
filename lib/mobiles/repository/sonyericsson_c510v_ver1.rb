@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_c510_ver1'
 module Mobiles
  module Repository
-   class SonyericssonC510vVer1 < SonyericssonC510Ver1
+   class Sonyericsson_c510v_ver1 < Sonyericsson_c510_ver1
 def self.user_agent
- "Mozilla/4.0 SonyEricssonC510v/R1EA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.2"
+ "Mozilla/4.0 SonyEricssonC510v/R1EA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.2".gsub(/\a/, '\\')
 end
   def max_image_width
   228

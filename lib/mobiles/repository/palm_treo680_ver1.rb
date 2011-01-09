@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_treo680_ver1_subblazer45'
 module Mobiles
  module Repository
-   class PalmTreo680Ver1 < PalmTreo680Ver1Subblazer45
+   class Palm_treo680_ver1 < Palm_treo680_ver1_subblazer45
 def self.user_agent
- "Palm680"
+ "Palm680".gsub(/\a/, '\\')
 end
   def uaprof
   "http://downloads.palm.com/profiles/Blazer453-ROW.rdf"

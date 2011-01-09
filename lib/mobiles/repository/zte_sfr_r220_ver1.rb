@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZteSfrR220Ver1 < GenericXhtml
+   class Zte_sfr_r220_ver1 < Generic_xhtml
 def self.user_agent
- "SFR114/g8eA/FES-FR-SFR-P103D1V1.0.1/R220/2.0 Profile/MIDP-2.0"
+ "SFR114/g8eA/FES-FR-SFR-P103D1V1.0.1/R220/2.0 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.zte.com.cn/mobile/uaprof/R220.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class AmoiM300Ver1 < GenericXhtml
+   class Amoi_m300_ver1 < Generic_xhtml
 def self.user_agent
- "AMOI-M300/Plat-M38002/WAP2.0 Profile"
+ "AMOI-M300/Plat-M38002/WAP2.0 Profile".gsub(/\a/, '\\')
 end
   def model_name
   "M300"

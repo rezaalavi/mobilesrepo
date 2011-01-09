@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_root'
 module Mobiles
  module Repository
-   class BrowserOperaMiniRelease10 < BrowserRoot
+   class Browser_opera_mini_release_1_0 < Browser_root
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_OPERA_MINI_1_0"
+ "DO_NOT_MATCH_BROWSER_OPERA_MINI_1_0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_q9h_ver1'
 module Mobiles
  module Repository
-   class MotQ9hVer2 < MotQ9hVer1
+   class Mot_q9h_ver2 < Mot_q9h_ver1
 def self.user_agent
- "MOT-Q9/01.04.35R Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 320x240) Opera 8.65"
+ "MOT-Q9/01.04.35R Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 320x240) Opera 8.65".gsub(/\a/, '\\')
 end
   
 end

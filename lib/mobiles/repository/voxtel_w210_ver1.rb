@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class VoxtelW210Ver1 < GenericMsWinmo5
+   class Voxtel_w210_ver1 < Generic_ms_winmo5
 def self.user_agent
- "VOXTEL_W210_TO_BE_FIXED"
+ "VOXTEL_W210_TO_BE_FIXED".gsub(/\a/, '\\')
 end
   def pointing_method
   ""

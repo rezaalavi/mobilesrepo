@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_902sh_ver1'
 module Mobiles
  module Repository
-   class Sharp902shVer1Sub10 < Sharp902shVer1
+   class Sharp_902sh_ver1_sub10 < Sharp_902sh_ver1
 def self.user_agent
- "Vodafone/1.0/902SH"
+ "Vodafone/1.0/902SH".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

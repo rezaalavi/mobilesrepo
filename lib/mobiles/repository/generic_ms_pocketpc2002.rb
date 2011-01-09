@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_pocketpc2000'
 module Mobiles
  module Repository
-   class GenericMsPocketpc2002 < GenericMsPocketpc2000
+   class Generic_ms_pocketpc2002 < Generic_ms_pocketpc2000
 def self.user_agent
- "DO_NOT_MATCH_WINMO_VERPOCKETPC2002"
+ "DO_NOT_MATCH_WINMO_VERPOCKETPC2002".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   "PIE 4"

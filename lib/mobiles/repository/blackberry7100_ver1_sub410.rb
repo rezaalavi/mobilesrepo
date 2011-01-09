@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry7100_ver1'
 module Mobiles
  module Repository
-   class Blackberry7100Ver1Sub410 < Blackberry7100Ver1
+   class Blackberry7100_ver1_sub410 < Blackberry7100_ver1
 def self.user_agent
- "BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100"
+ "BlackBerry7100/4.1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/100".gsub(/\a/, '\\')
 end
   def uaprof2
   "http://www.blackberry.net/go/mobile/profiles/uaprof/7100/4.1.03.rdf"

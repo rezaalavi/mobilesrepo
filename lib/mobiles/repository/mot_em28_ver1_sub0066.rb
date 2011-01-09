@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_em28_ver1'
 module Mobiles
  module Repository
-   class MotEm28Ver1Sub0066 < MotEm28Ver1
+   class Mot_em28_ver1_sub0066 < Mot_em28_ver1
 def self.user_agent
- "MOT-EM28/0.0.66 UP.Browser/6.3.0.6.c.29 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-EM28/0.0.66 UP.Browser/6.3.0.6.c.29 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

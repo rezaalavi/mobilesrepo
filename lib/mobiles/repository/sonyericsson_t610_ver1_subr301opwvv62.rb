@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SonyericssonT610Ver1Subr301opwvv62 < OpwvV62Generic
+   class Sonyericsson_t610_ver1_subr301opwvv62 < Opwv_v62_generic
 def self.user_agent
- "SonyEricssonT610/R301 UP.Browser/6.2.2.1.208 (GUI) MMP/1.0"
+ "SonyEricssonT610/R301 UP.Browser/6.2.2.1.208 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def model_name
   "T610"

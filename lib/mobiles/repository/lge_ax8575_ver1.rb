@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_vx8575_ver1'
 module Mobiles
  module Repository
-   class LgeAx8575Ver1 < LgeVx8575Ver1
+   class Lge_ax8575_ver1 < Lge_vx8575_ver1
 def self.user_agent
- "Mozilla/4.0(compatible; Polaris 6.2; Brew 3.1.5; U; en) 240X400 LGE LG-AX8575"
+ "Mozilla/4.0(compatible; Polaris 6.2; Brew 3.1.5; U; en) 240X400 LGE LG-AX8575".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.2

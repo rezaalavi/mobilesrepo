@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_s88_ver1'
 module Mobiles
  module Repository
-   class SieS88Ver1Sub1 < SieS88Ver1
+   class Sie_s88_ver1_sub1 < Sie_s88_ver1
 def self.user_agent
- "BenQ-S88/1.00/WAP2.0/MIDP2.0/CLDC1.0"
+ "BenQ-S88/1.00/WAP2.0/MIDP2.0/CLDC1.0".gsub(/\a/, '\\')
 end
   def brand_name
   "BenQ-Siemens"

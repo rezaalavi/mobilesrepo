@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_pu_p7000_ver1'
 module Mobiles
  module Repository
-   class PantechPuP7000Ver1SubOperamini < PantechPuP7000Ver1
+   class Pantech_pu_p7000_ver1_sub_operamini < Pantech_pu_p7000_ver1
 def self.user_agent
- "PantechP7000/JDUS08102009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14822; U; en-US) Opera 9.50"
+ "PantechP7000/JDUS08102009; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.14822; U; en-US) Opera 9.50".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/capitel_c8188_ver1'
 module Mobiles
  module Repository
-   class CapitelC8188Ver1Sub10 < CapitelC8188Ver1
+   class Capitel_c8188_ver1_sub10 < Capitel_c8188_ver1
 def self.user_agent
- "Capitel-C8188/1.4 CLDC/CLDC-1.0 MIDP/MIDP-1.0 UP.Browser/6.2.2.6.f.1.100 (GUI) MMP/1.0"
+ "Capitel-C8188/1.4 CLDC/CLDC-1.0 MIDP/MIDP-1.0 UP.Browser/6.2.2.6.f.1.100 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

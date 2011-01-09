@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v9m_ver1_subverizon'
 module Mobiles
  module Repository
-   class MotV9mVer1SubverizonSubua < MotV9mVer1Subverizon
+   class Mot_v9m_ver1_subverizon_subua < Mot_v9m_ver1_subverizon
 def self.user_agent
- "motov9m"
+ "motov9m".gsub(/\a/, '\\')
 end
   
 end

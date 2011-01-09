@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class FlyDs170Ver1 < GenericXhtml
+   class Fly_ds170_ver1 < Generic_xhtml
 def self.user_agent
- "Fly_DS170 Configuration/WAP2.0/Browser"
+ "Fly_DS170 Configuration/WAP2.0/Browser".gsub(/\a/, '\\')
 end
   def model_name
   "DS170"

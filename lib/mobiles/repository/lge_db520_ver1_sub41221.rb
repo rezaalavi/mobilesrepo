@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_db520_ver1'
 module Mobiles
  module Repository
-   class LgeDb520Ver1Sub41221 < LgeDb520Ver1
+   class Lge_db520_ver1_sub41221 < Lge_db520_ver1
 def self.user_agent
- "LGE-DB520/1.0 UP.Browser/4.1.22b1"
+ "LGE-DB520/1.0 UP.Browser/4.1.22b1".gsub(/\a/, '\\')
 end
   
 end

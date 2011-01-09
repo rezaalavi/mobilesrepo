@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3'
 module Mobiles
  module Repository
-   class SonyericssonW580Ver1 < GenericSonyericssonNetfrontVer3
+   class Sonyericsson_w580_ver1 < Generic_sonyericsson_netfront_ver3
 def self.user_agent
- "SonyEricssonW580/1.0 (05.02) Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "SonyEricssonW580/1.0 (05.02) Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/W580iR201.xml"

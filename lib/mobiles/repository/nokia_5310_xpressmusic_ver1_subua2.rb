@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5310_xpressmusic_ver1'
 module Mobiles
  module Repository
-   class Nokia5310XpressmusicVer1Subua2 < Nokia5310XpressmusicVer1
+   class Nokia_5310_xpressmusic_ver1_subua2 < Nokia_5310_xpressmusic_ver1
 def self.user_agent
- "Nokia-5310xpressmusic"
+ "Nokia-5310xpressmusic".gsub(/\a/, '\\')
 end
   
 end

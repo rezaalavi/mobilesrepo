@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/daiteg83_ver1'
 module Mobiles
  module Repository
-   class Daiteg83Ver1Sub6106c2 < Daiteg83Ver1
+   class Daiteg83_ver1_sub6106c2 < Daiteg83_ver1
 def self.user_agent
- "DaiTeG83/5.01 UP.Browser/6.1.0.6.c.2 (GUI) MMP/1.0"
+ "DaiTeG83/5.01 UP.Browser/6.1.0.6.c.2 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

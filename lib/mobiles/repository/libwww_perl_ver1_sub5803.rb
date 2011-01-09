@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/libwww_perl_ver1'
 module Mobiles
  module Repository
-   class LibwwwPerlVer1Sub5803 < LibwwwPerlVer1
+   class Libwww_perl_ver1_sub5803 < Libwww_perl_ver1
 def self.user_agent
- "libwww-perl/5.803"
+ "libwww-perl/5.803".gsub(/\a/, '\\')
 end
   
 end

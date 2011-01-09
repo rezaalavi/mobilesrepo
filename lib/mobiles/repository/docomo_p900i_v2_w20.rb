@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_p900i_ver1'
 module Mobiles
  module Repository
-   class DocomoP900iV2W20 < DocomoP900iVer1
+   class Docomo_p900i_v2_w20 < Docomo_p900i_ver1
 def self.user_agent
- "DoCoMo/2.0 P900i(c100;TB;W20H09)"
+ "DoCoMo/2.0 P900i(c100;TB;W20H09)".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

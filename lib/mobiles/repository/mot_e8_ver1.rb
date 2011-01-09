@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotE8Ver1 < GenericXhtml
+   class Mot_e8_ver1 < Generic_xhtml
 def self.user_agent
- "MOT-E8/R6713_G_71.03.01R_B MotoWebKit/417.19 (KHTML, like Gecko) BER/2.0 Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/9.0"
+ "MOT-E8/R6713_G_71.03.01R_B MotoWebKit/417.19 (KHTML, like Gecko) BER/2.0 Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) Profile/MIDP-2.0 Configuration/CLDC-1.1 EGE/9.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Symphony browser"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/iac_ver1'
 module Mobiles
  module Repository
-   class IacVer1Subi3698 < IacVer1
+   class Iac_ver1_subi3698 < Iac_ver1
 def self.user_agent
- "IAC/i-3698/"
+ "IAC/i-3698/".gsub(/\a/, '\\')
 end
   
 end

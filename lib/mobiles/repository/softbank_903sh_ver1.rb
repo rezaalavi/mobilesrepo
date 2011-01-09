@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_generic'
 module Mobiles
  module Repository
-   class Softbank903shVer1 < SoftbankGeneric
+   class Softbank_903sh_ver1 < Softbank_generic
 def self.user_agent
- "Vodafone/903SH"
+ "Vodafone/903SH".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2_subn400ic20tb'
 module Mobiles
  module Repository
-   class KgtN400iVer1 < PortalmmmVer2Subn400ic20tb
+   class Kgt_n400i_ver1 < Portalmmm_ver2_subn400ic20tb
 def self.user_agent
- "KGT/2.0 N400i(c20;TB)"
+ "KGT/2.0 N400i(c20;TB)".gsub(/\a/, '\\')
 end
   
 end

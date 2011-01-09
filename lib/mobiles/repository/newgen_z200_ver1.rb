@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class NewgenZ200Ver1 < Generic
+   class Newgen_z200_ver1 < Generic
 def self.user_agent
- "MERIDIAN-Z200/REV 2.2.2/WAP1.2.1 Profile"
+ "MERIDIAN-Z200/REV 2.2.2/WAP1.2.1 Profile".gsub(/\a/, '\\')
 end
   def model_name
   "Z200"

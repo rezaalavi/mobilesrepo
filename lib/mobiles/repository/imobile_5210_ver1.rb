@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Imobile5210Ver1 < GenericXhtml
+   class Imobile_5210_ver1 < Generic_xhtml
 def self.user_agent
- "i-mobile 5210"
+ "i-mobile 5210".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.ua-profile.com:808/profiles/UAP_imobile5210.xml"

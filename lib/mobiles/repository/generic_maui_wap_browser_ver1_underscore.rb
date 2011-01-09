@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_maui_wap_browser_ver1'
 module Mobiles
  module Repository
-   class GenericMauiWapBrowserVer1Underscore < GenericMauiWapBrowserVer1
+   class Generic_maui_wap_browser_ver1_underscore < Generic_maui_wap_browser_ver1
 def self.user_agent
- "MAUI_WAP_Browser"
+ "MAUI_WAP_Browser".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

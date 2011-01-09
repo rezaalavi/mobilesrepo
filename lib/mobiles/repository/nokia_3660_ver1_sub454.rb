@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3660_ver1'
 module Mobiles
  module Repository
-   class Nokia3660Ver1Sub454 < Nokia3660Ver1
+   class Nokia_3660_ver1_sub454 < Nokia_3660_ver1
 def self.user_agent
- "Nokia3660/1.0 (4.54) SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "Nokia3660/1.0 (4.54) SymbianOS/6.1 Series60/0.9 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def nokia_edition
   0

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_e770_ver1'
 module Mobiles
  module Repository
-   class MotE770vVer1 < MotE770Ver1
+   class Mot_e770v_ver1 < Mot_e770_ver1
 def self.user_agent
- "MOT-E770v"
+ "MOT-E770v".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/E770v/Profile/E770v.rdf"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_f300_ver1'
 module Mobiles
  module Repository
-   class SamsungF300Ver1Sub1032 < SamsungF300Ver1
+   class Samsung_f300_ver1_sub1032 < Samsung_f300_ver1
 def self.user_agent
- "SEC-SGHF300/1.0 NetFront/3.2"
+ "SEC-SGHF300/1.0 NetFront/3.2".gsub(/\a/, '\\')
 end
   
 end

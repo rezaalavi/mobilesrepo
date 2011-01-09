@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3109c_ver1'
 module Mobiles
  module Repository
-   class Nokia3109cVer1Sub1 < Nokia3109cVer1
+   class Nokia_3109c_ver1_sub1 < Nokia_3109c_ver1
 def self.user_agent
- "Nokia3109c/2.0 (cp06w15_07w16) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia3109c/2.0 (cp06w15_07w16) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

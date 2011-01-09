@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class HdmlSy02Ver1Sub310402 < UptextGeneric
+   class Hdml_sy02_ver1_sub310402 < Uptext_generic
 def self.user_agent
- "UP.Browser/3.1.04-SY02"
+ "UP.Browser/3.1.04-SY02".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.1

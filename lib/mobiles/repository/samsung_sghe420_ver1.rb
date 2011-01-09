@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e420_ver1'
 module Mobiles
  module Repository
-   class SamsungSghe420Ver1 < SecE420Ver1
+   class Samsung_sghe420_ver1 < Sec_e420_ver1
 def self.user_agent
- "SAMSUNG-SGH-E420"
+ "SAMSUNG-SGH-E420".gsub(/\a/, '\\')
 end
   def wallpaper_colors
   16

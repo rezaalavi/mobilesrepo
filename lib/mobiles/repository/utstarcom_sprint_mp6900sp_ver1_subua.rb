@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/utstarcom_sprint_mp6900sp_ver1'
 module Mobiles
  module Repository
-   class UtstarcomSprintMp6900spVer1Subua < UtstarcomSprintMp6900spVer1
+   class Utstarcom_sprint_mp6900sp_ver1_subua < Utstarcom_sprint_mp6900sp_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Sprint MP6900SP"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Sprint MP6900SP".gsub(/\a/, '\\')
 end
   def table_support?
   true

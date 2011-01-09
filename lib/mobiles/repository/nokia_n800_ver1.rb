@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_maemo'
 module Mobiles
  module Repository
-   class NokiaN800Ver1 < NokiaGenericMaemo
+   class Nokia_n800_ver1 < Nokia_generic_maemo
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux armv6l; U) Opera 8.5 [en_US] Maemo browser 0.7.6 RX-34_2007SE_2.2006.51-6"
+ "Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux armv6l; U) Opera 8.5 [en_US] Maemo browser 0.7.6 RX-34_2007SE_2.2006.51-6".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

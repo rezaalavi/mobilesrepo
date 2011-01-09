@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myc4_2_ver1'
 module Mobiles
  module Repository
-   class GradienteGf690Ver1 < SagemMyc42Ver1
+   class Gradiente_gf690_ver1 < Sagem_myc4_2_ver1
 def self.user_agent
- "Gradiente GF-690"
+ "Gradiente GF-690".gsub(/\a/, '\\')
 end
   def model_name
   "GF-690"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SecSghx507Ver1 < GenericXhtml
+   class Sec_sghx507_ver1 < Generic_xhtml
 def self.user_agent
- "SEC-SGHX507, TSS/2.5, Rev 1.4"
+ "SEC-SGHX507, TSS/2.5, Rev 1.4".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/x507_10.xml"

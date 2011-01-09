@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_ot_v670_ver1'
 module Mobiles
  module Repository
-   class AlcatelOtV670aVer1 < AlcatelOtV670Ver1
+   class Alcatel_ot_v670a_ver1 < Alcatel_ot_v670_ver1
 def self.user_agent
- "Alcatel-OT-V670A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C"
+ "Alcatel-OT-V670A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C".gsub(/\a/, '\\')
 end
   def model_name
   "OT V670A"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_blazer_2'
 module Mobiles
  module Repository
-   class BrowserBlazer3 < BrowserBlazer2
+   class Browser_blazer_3 < Browser_blazer_2
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_BLAZER_3"
+ "DO_NOT_MATCH_BROWSER_BLAZER_3".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3

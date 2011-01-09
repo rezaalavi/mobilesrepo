@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_iphone_ver1'
 module Mobiles
  module Repository
-   class AppleIphoneVer1Suboperamini5 < AppleIphoneVer1
+   class Apple_iphone_ver1_suboperamini5 < Apple_iphone_ver1
 def self.user_agent
- "Opera/9.80 (iPhone; Opera Mini/5.0.0176/764; U; en) Presto/2.4.15"
+ "Opera/9.80 (iPhone; Opera Mini/5.0.0176/764; U; en) Presto/2.4.15".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

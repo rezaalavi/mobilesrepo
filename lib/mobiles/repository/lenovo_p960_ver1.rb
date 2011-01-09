@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LenovoP960Ver1 < GenericXhtml
+   class Lenovo_p960_ver1 < Generic_xhtml
 def self.user_agent
- "LENOVO-P960"
+ "LENOVO-P960".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

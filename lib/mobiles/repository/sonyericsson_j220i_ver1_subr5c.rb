@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_j220i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonJ220iVer1Subr5c < SonyericssonJ220iVer1
+   class Sonyericsson_j220i_ver1_subr5c < Sonyericsson_j220i_ver1
 def self.user_agent
- "SonyEricssonJ220i/R5C TelecaBrowser/4.08"
+ "SonyEricssonJ220i/R5C TelecaBrowser/4.08".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

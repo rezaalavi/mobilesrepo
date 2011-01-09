@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_8512_ver1'
 module Mobiles
  module Repository
-   class Amoi8512Ver1Subr18 < Amoi8512Ver1
+   class Amoi_8512_ver1_subr18 < Amoi_8512_ver1
 def self.user_agent
- "Amoi 8512/R18"
+ "Amoi 8512/R18".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

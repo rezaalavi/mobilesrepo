@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_ipad_ver1'
 module Mobiles
  module Repository
-   class AppleIpadVer1Subos < AppleIpadVer1
+   class Apple_ipad_ver1_subos < Apple_ipad_ver1
 def self.user_agent
- "Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B367"
+ "Mozilla/5.0 (iPad; U; CPU OS 3_2 like Mac OS X; en-us) AppleWebKit/531.21.10 (KHTML, like Gecko) Mobile/7B367".gsub(/\a/, '\\')
 end
   
 end

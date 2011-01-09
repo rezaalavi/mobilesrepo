@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class SieS55Ver1 < OpwvV61Generic
+   class Sie_s55_ver1 < Opwv_v61_generic
 def self.user_agent
- "SIE-S55"
+ "SIE-S55".gsub(/\a/, '\\')
 end
   def uaprof
   "http://communication-market.siemens.de/UAProf/S55_06.xml"

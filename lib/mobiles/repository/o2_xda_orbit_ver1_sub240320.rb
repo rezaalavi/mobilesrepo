@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_xda_orbit_ver1'
 module Mobiles
  module Repository
-   class O2XdaOrbitVer1Sub240320 < O2XdaOrbitVer1
+   class O2_xda_orbit_ver1_sub240320 < O2_xda_orbit_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Orbit; 240x320)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Xda Orbit; 240x320)".gsub(/\a/, '\\')
 end
   def wallpaper_max_height
   320

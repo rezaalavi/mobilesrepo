@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n810_ver1'
 module Mobiles
  module Repository
-   class NokiaN810Ver1Subua2 < NokiaN810Ver1
+   class Nokia_n810_ver1_subua2 < Nokia_n810_ver1
 def self.user_agent
- "Mozilla/5.0 (X11; U; Linux armv6l; en-GB; rv:1.9a6pre) Gecko/20080606 Firefox/3.0a1 Tablet browser 0.3.7 RX-34+RX-44+RX-48_DIABLO_4.2008.23-14"
+ "Mozilla/5.0 (X11; U; Linux armv6l; en-GB; rv:1.9a6pre) Gecko/20080606 Firefox/3.0a1 Tablet browser 0.3.7 RX-34+RX-44+RX-48_DIABLO_4.2008.23-14".gsub(/\a/, '\\')
 end
   def mobile_browser
   "FireFox"

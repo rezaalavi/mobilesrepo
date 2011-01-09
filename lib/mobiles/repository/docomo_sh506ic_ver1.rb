@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_jap_ver1'
 module Mobiles
  module Repository
-   class DocomoSh506icVer1 < DocomoGenericJapVer1
+   class Docomo_sh506ic_ver1 < Docomo_generic_jap_ver1
 def self.user_agent
- "DoCoMo/1.0/SH506iC"
+ "DoCoMo/1.0/SH506iC".gsub(/\a/, '\\')
 end
   def flash_lite_version
   1_0

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_dolfin2_0'
 module Mobiles
  module Repository
-   class SamsungGtS7230eVer1 < GenericDolfin20
+   class Samsung_gt_s7230e_ver1 < Generic_dolfin2_0
 def self.user_agent
- "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7230E-VODAFONE/S7230EBUJJ2; U; Bada/1.0; es-es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
+ "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S7230E-VODAFONE/S7230EBUJJ2; U; Bada/1.0; es-es) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WQVGA SMM-MMS/1.2.0 NexPlayer/3.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B".gsub(/\a/, '\\')
 end
   def device_os
   "Bada OS"

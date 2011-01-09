@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SecE105Ver1 < Generic
+   class Sec_e105_ver1 < Generic
 def self.user_agent
- "SEC-SGHE105-E1"
+ "SEC-SGHE105-E1".gsub(/\a/, '\\')
 end
   def j2me_midp_2_0?
   true

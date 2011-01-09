@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p6500_ver1'
 module Mobiles
  module Repository
-   class HtcP6500Ver1Suborange < HtcP6500Ver1
+   class Htc_p6500_ver1_suborange < Htc_p6500_ver1
 def self.user_agent
- "HTC-P6500-orange/PPC; 240x320; OpVer 27.107.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "HTC-P6500-orange/PPC; 240x320; OpVer 27.107.2.731 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Orange"

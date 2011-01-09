@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/elson_sl900_ver1'
 module Mobiles
  module Repository
-   class ElsonSl900Ver1Submidp20 < ElsonSl900Ver1
+   class Elson_sl900_ver1_submidp20 < Elson_sl900_ver1
 def self.user_agent
- "SL900/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "SL900/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/SL900.xml"

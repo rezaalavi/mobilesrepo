@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3_ver1'
 module Mobiles
  module Repository
-   class MotV3ieVer1 < MotV3Ver1
+   class Mot_v3ie_ver1 < Mot_v3_ver1
 def self.user_agent
- "MOT-V3ie/08.02.05R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-V3ie/08.02.05R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "V3ie"

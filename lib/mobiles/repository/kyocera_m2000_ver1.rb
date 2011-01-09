@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class KyoceraM2000Ver1 < OpwvV72Generic
+   class Kyocera_m2000_ver1 < Opwv_v72_generic
 def self.user_agent
- "KWC-M2000/AAN1002 UP.Browser/7.2.7.2.530 (GUI) MMP/2.0"
+ "KWC-M2000/AAN1002 UP.Browser/7.2.7.2.530 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

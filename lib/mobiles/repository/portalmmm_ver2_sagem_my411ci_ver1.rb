@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2'
 module Mobiles
  module Repository
-   class PortalmmmVer2SagemMy411ciVer1 < PortalmmmVer2
+   class Portalmmm_ver2_sagem_my411ci_ver1 < Portalmmm_ver2
 def self.user_agent
- "portalmmm/2.0 my411Ci(c10;TB)"
+ "portalmmm/2.0 my411Ci(c10;TB)".gsub(/\a/, '\\')
 end
   def screensaver_jpg?
   true

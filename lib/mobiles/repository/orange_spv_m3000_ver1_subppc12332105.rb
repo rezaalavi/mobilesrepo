@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_m3000_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM3000Ver1Subppc12332105 < OrangeSpvM3000Ver1
+   class Orange_spv_m3000_ver1_subppc12332105 < Orange_spv_m3000_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M3000; OpVer 12.33.2.105)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; SPV M3000; OpVer 12.33.2.105)".gsub(/\a/, '\\')
 end
   
 end

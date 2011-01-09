@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitsu_generic'
 module Mobiles
  module Repository
-   class MitsuVer2aGeneric < MitsuGeneric
+   class Mitsu_ver2a_generic < Mitsu_generic
 def self.user_agent
- "Mitsu/1.2.A"
+ "Mitsu/1.2.A".gsub(/\a/, '\\')
 end
   def max_deck_size
   2500

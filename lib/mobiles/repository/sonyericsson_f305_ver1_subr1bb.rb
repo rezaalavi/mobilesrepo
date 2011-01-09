@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_f305_ver1'
 module Mobiles
  module Repository
-   class SonyericssonF305Ver1Subr1bb < SonyericssonF305Ver1
+   class Sonyericsson_f305_ver1_subr1bb < Sonyericsson_f305_ver1
 def self.user_agent
- "SonyEricssonF305/R1BB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "SonyEricssonF305/R1BB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

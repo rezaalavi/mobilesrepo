@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_42_generic'
 module Mobiles
  module Repository
-   class GenericSonyericssonW710 < Sonyericsson42Generic
+   class Generic_sonyericsson_w710 < Sonyericsson_42_generic
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_W710"
+ "DO_NOT_MATCH_GENERIC_W710".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

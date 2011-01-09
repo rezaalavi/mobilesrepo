@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n72_ver1'
 module Mobiles
  module Repository
-   class NokiaN72Ver1Sub50706401 < NokiaN72Ver1
+   class Nokia_n72_ver1_sub50706401 < Nokia_n72_ver1
 def self.user_agent
- "NokiaN72/5.0706.4.0.1/SNXXXXXXXXXXXXXXX Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaN72/5.0706.4.0.1/SNXXXXXXXXXXXXXXX Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   3

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t630_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT630Ver1Subr401 < SonyericssonT630Ver1
+   class Sonyericsson_t630_ver1_subr401 < Sonyericsson_t630_ver1
 def self.user_agent
- "SonyEricssonT630/R401 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "SonyEricssonT630/R401 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def oma_support?
   true

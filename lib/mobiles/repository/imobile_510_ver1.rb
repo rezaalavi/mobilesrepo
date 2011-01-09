@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_i_mobile'
 module Mobiles
  module Repository
-   class Imobile510Ver1 < GenericIMobile
+   class Imobile_510_ver1 < Generic_i_mobile
 def self.user_agent
- "i-mobile510 WAP Browser"
+ "i-mobile510 WAP Browser".gsub(/\a/, '\\')
 end
   def model_name
   510

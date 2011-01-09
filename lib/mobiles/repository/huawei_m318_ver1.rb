@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class HuaweiM318Ver1 < GenericNetfrontVer32
+   class Huawei_m318_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "HUAWEI-M318/001.00 ACS-NetFront/3.2"
+ "HUAWEI-M318/001.00 ACS-NetFront/3.2".gsub(/\a/, '\\')
 end
   def model_name
   "M318"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcot500_ver1'
 module Mobiles
  module Repository
-   class Alcot500Ver1Sub4120axxxx < Alcot500Ver1
+   class Alcot500_ver1_sub4120axxxx < Alcot500_ver1
 def self.user_agent
- "AlcOT500 UP/4.1.20a UP.Browser/4.1.20a-XXXX"
+ "AlcOT500 UP/4.1.20a UP.Browser/4.1.20a-XXXX".gsub(/\a/, '\\')
 end
   
 end

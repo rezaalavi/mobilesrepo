@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m800_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM850Ver1 < SamsungSphM800Ver1
+   class Samsung_sph_m850_ver1 < Samsung_sph_m800_ver1
 def self.user_agent
- "Opera/9.70 (BREW 4.0.3; U; en; Samsung; Opera Mobi; Presto/2.2.1/INT) Sprint M850 SprintTitan/OSGi-4.1 Profile/MIDP-2.1 Configuration/CDC-1.1"
+ "Opera/9.70 (BREW 4.0.3; U; en; Samsung; Opera Mobi; Presto/2.2.1/INT) Sprint M850 SprintTitan/OSGi-4.1 Profile/MIDP-2.1 Configuration/CDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_t720m_ver1'
 module Mobiles
  module Repository
-   class MotT720mVer1Subg050620r < MotT720mVer1
+   class Mot_t720m_ver1_subg050620r < Mot_t720m_ver1
 def self.user_agent
- "MOT-T720M/G_05.06.20R MIB/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "MOT-T720M/G_05.06.20R MIB/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

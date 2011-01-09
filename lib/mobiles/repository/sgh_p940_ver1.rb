@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sgh_p930_ver1'
 module Mobiles
  module Repository
-   class SghP940Ver1 < SghP930Ver1
+   class Sgh_p940_ver1 < Sgh_p930_ver1
 def self.user_agent
- "SAMSUNG-SGH-P940/1.0"
+ "SAMSUNG-SGH-P940/1.0".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-P940"

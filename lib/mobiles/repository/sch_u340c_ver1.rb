@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sch_u340_ver1'
 module Mobiles
  module Repository
-   class SchU340cVer1 < SchU340Ver1
+   class Sch_u340c_ver1 < Sch_u340_ver1
 def self.user_agent
- "SCH-U340C UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "SCH-U340C UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "SCH-U340"

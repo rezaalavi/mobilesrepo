@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3xxi_ver1'
 module Mobiles
  module Repository
-   class MotV3xxiSub20v3xxic100tb < MotV3xxiVer1
+   class Mot_v3xxi_sub20v3xxic100tb < Mot_v3xxi_ver1
 def self.user_agent
- "portalmmm/2.0 v3xximode(c100;TB)"
+ "portalmmm/2.0 v3xximode(c100;TB)".gsub(/\a/, '\\')
 end
   
 end

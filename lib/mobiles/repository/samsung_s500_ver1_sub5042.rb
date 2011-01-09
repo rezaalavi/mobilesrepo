@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_s500_ver1'
 module Mobiles
  module Repository
-   class SamsungS500Ver1Sub5042 < SamsungS500Ver1
+   class Samsung_s500_ver1_sub5042 < Samsung_s500_ver1
 def self.user_agent
- "SAMSUNG-SGH-S500/SHARK UP.Browser/5.0.4.2 (GUI)"
+ "SAMSUNG-SGH-S500/SHARK UP.Browser/5.0.4.2 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SonyericssonC903Ver1 < GenericSonyericssonNetfrontVer34
+   class Sonyericsson_c903_ver1 < Generic_sonyericsson_netfront_ver3_4
 def self.user_agent
- "SonyEricssonC903/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.1"
+ "SonyEricssonC903/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/C903R101.xml"

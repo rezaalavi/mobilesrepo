@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_polaris_6'
 module Mobiles
  module Repository
-   class SamsungSchU820Ver1 < GenericPolaris6
+   class Samsung_sch_u820_ver1 < Generic_polaris_6
 def self.user_agent
- "Mozilla/4.0(compatible;Polaris 6.2;Brew 3.1.5;U;en)/400x240 Samsung SCH-U820"
+ "Mozilla/4.0(compatible;Polaris 6.2;Brew 3.1.5;U;en)/400x240 Samsung SCH-U820".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

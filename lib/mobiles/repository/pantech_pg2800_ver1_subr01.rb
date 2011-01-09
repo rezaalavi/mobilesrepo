@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_pg2800_ver1'
 module Mobiles
  module Repository
-   class PantechPg2800Ver1Subr01 < PantechPg2800Ver1
+   class Pantech_pg2800_ver1_subr01 < Pantech_pg2800_ver1
 def self.user_agent
- "PG-2800/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "PG-2800/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

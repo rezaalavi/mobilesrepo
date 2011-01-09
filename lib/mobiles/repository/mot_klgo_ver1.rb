@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mib22_generic'
 module Mobiles
  module Repository
-   class MotKlgoVer1 < MotMib22Generic
+   class Mot_klgo_ver1 < Mot_mib22_generic
 def self.user_agent
- "MOT-KLGO"
+ "MOT-KLGO".gsub(/\a/, '\\')
 end
   def model_name
   "KLGO"

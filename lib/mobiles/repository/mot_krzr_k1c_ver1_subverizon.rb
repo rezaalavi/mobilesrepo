@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_krzr_k1c_ver1'
 module Mobiles
  module Repository
-   class MotKrzrK1cVer1Subverizon < MotKrzrK1cVer1
+   class Mot_krzr_k1c_ver1_subverizon < Mot_krzr_k1c_ver1
 def self.user_agent
- "motok1c"
+ "motok1c".gsub(/\a/, '\\')
 end
   def model_name
   "KRZR K1c"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_safari_generic'
 module Mobiles
  module Repository
-   class SamsungI458Ver1 < SamsungSafariGeneric
+   class Samsung_i458_ver1 < Samsung_safari_generic
 def self.user_agent
- "Samsung-SGH-i458_CMCC/1.0 SymbianOS/9.2 Series60/3.1 Release/5.25.2007 Browser/OSS3.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "Samsung-SGH-i458_CMCC/1.0 SymbianOS/9.2 Series60/3.1 Release/5.25.2007 Browser/OSS3.1 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   1

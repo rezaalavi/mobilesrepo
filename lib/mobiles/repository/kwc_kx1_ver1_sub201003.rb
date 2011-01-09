@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kwc_kx1_ver1'
 module Mobiles
  module Repository
-   class KwcKx1Ver1Sub201003 < KwcKx1Ver1
+   class Kwc_kx1_ver1_sub201003 < Kwc_kx1_ver1
 def self.user_agent
- "KWC-KX1/1003 UP.Browser/6.2.3.2.c.1.101 (GUI) MMP/2.0"
+ "KWC-KX1/1003 UP.Browser/6.2.3.2.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

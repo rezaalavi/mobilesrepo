@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3700_ver1'
 module Mobiles
  module Repository
-   class HtcP3702VictorVer1 < HtcP3700Ver1
+   class Htc_p3702_victor_ver1 < Htc_p3700_ver1
 def self.user_agent
- "HTC_P3702 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "HTC_P3702 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/victor-1.0.xml"

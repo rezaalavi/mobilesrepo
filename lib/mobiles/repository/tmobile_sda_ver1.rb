@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_typhoon_ver1'
 module Mobiles
  module Repository
-   class TmobileSdaVer1 < HtcTyphoonVer1
+   class Tmobile_sda_ver1 < Htc_typhoon_ver1
 def self.user_agent
- "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; Smartphone; 176x220; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)"
+ "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; Smartphone; 176x220; Smartphone; SDA/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/tmo/sda-1.0.xml"

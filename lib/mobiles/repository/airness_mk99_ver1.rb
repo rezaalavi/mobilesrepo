@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/airness_air99_ver1'
 module Mobiles
  module Repository
-   class AirnessMk99Ver1 < AirnessAir99Ver1
+   class Airness_mk99_ver1 < Airness_air99_ver1
 def self.user_agent
- "MK99"
+ "MK99".gsub(/\a/, '\\')
 end
   def model_name
   "MK99"

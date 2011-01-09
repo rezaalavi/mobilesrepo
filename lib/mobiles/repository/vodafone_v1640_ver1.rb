@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_universal_ver1'
 module Mobiles
  module Repository
-   class VodafoneV1640Ver1 < HtcUniversalVer1
+   class Vodafone_v1640_ver1 < Htc_universal_ver1
 def self.user_agent
- "Vodafone/1.0/v1640/1.30.194 WWE/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1)"
+ "Vodafone/1.0/v1640/1.30.194 WWE/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/voda/v1640-2.0.xml"

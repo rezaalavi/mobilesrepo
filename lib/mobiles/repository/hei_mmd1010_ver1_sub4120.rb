@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class HeiMmd1010Ver1Sub4120 < UptextGeneric
+   class Hei_mmd1010_ver1_sub4120 < Uptext_generic
 def self.user_agent
- "HEI-MMD1010/001.1a UP/4.1.20i UP.Browser/4.1.20i-XXXX"
+ "HEI-MMD1010/001.1a UP/4.1.20i UP.Browser/4.1.20i-XXXX".gsub(/\a/, '\\')
 end
   
 end

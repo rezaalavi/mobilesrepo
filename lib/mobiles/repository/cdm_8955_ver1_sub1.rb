@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cdm_8955_ver1'
 module Mobiles
  module Repository
-   class Cdm8955Ver1Sub1 < Cdm8955Ver1
+   class Cdm_8955_ver1_sub1 < Cdm_8955_ver1
 def self.user_agent
- "CDM8955C UP.Browser/6.2.2.6 (GUI) MMP/2.0"
+ "CDM8955C UP.Browser/6.2.2.6 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

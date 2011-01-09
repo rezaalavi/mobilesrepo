@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_hero_ver1'
 module Mobiles
  module Repository
-   class TmobileG2Ver1 < HtcHeroVer1
+   class Tmobile_g2_ver1 < Htc_hero_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.5; en-gb; T-Mobile G2 Touch Build/CUPCAKE) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 1.5; en-gb; T-Mobile G2 Touch Build/CUPCAKE) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def model_name
   "G2 Touch"

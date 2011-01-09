@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_aura_nevis_ver1'
 module Mobiles
  module Repository
-   class MotAuraNevisVer1Subua < MotAuraNevisVer1
+   class Mot_aura_nevis_ver1_subua < Mot_aura_nevis_ver1
 def self.user_agent
- "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) MOT-AURA/R6639_G_81.21.05R BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Symphony %bv"
+ "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) MOT-AURA/R6639_G_81.21.05R BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Symphony %bv".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t610_ver1_subr501'
 module Mobiles
  module Repository
-   class SonyericssonT610Ver1Subr601 < SonyericssonT610Ver1Subr501
+   class Sonyericsson_t610_ver1_subr601 < Sonyericsson_t610_ver1_subr501
 def self.user_agent
- "SonyEricssonT610/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "SonyEricssonT610/R601 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/T610R601.xml"

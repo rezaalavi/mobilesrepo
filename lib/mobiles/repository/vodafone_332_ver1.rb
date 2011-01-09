@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Vodafone332Ver1 < GenericXhtml
+   class Vodafone_332_ver1 < Generic_xhtml
 def self.user_agent
- "Vodafone/1.0/0Vodafone332/B137 Browser/Obigo-Browser/Q04A MMS/Obigo-MMS/4.1 Profile"
+ "Vodafone/1.0/0Vodafone332/B137 Browser/Obigo-Browser/Q04A MMS/Obigo-MMS/4.1 Profile".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

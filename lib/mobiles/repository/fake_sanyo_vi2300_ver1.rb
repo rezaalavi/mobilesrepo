@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_vi2300_ver1'
 module Mobiles
  module Repository
-   class FakeSanyoVi2300Ver1 < SanyoVi2300Ver1
+   class Fake_sanyo_vi2300_ver1 < Sanyo_vi2300_ver1
 def self.user_agent
- "FAKE_USER_AGENT Sanyo VI-2300"
+ "FAKE_USER_AGENT Sanyo VI-2300".gsub(/\a/, '\\')
 end
   def model_name
   "VI-2300"

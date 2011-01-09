@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_symbian'
 module Mobiles
  module Repository
-   class MotA1000Ver1 < GenericOperaSymbian
+   class Mot_a1000_ver1 < Generic_opera_symbian
 def self.user_agent
- "MOT-A1000"
+ "MOT-A1000".gsub(/\a/, '\\')
 end
   def device_os
   "Symbian OS"

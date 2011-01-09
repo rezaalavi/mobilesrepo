@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m800_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM800Ver1Subbellmobility < SamsungSphM800Ver1
+   class Samsung_sph_m800_ver1_subbellmobility < Samsung_sph_m800_ver1
 def self.user_agent
- "Samsung-SPHM800 AU-OBIGO/Q05A-3.13 MMP/2.0"
+ "Samsung-SPHM800 AU-OBIGO/Q05A-3.13 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/Samsung_SPHM800.rdf"

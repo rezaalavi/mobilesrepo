@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class UbiquamU520Ver1 < OpwvV72Generic
+   class Ubiquam_u520_ver1 < Opwv_v72_generic
 def self.user_agent
- "Ubiquam U-520 (BREW/3.1) UP.Browser/7.2.6.1.517 (GUI) MMP/2.0"
+ "Ubiquam U-520 (BREW/3.1) UP.Browser/7.2.6.1.517 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "U520"

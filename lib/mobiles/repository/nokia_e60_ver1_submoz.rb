@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e60_ver1'
 module Mobiles
  module Repository
-   class NokiaE60Ver1Submoz < NokiaE60Ver1
+   class Nokia_e60_ver1_submoz < Nokia_e60_ver1
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es60"
+ "Mozilla/5.0 (SymbianOS/9.1; U; en-us) AppleWebKit/413 (KHTML, like Gecko) Safari/413 es60".gsub(/\a/, '\\')
 end
   def ajax_support_getelementbyid?
   true

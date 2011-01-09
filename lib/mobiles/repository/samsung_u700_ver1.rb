@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_u600_ver1'
 module Mobiles
  module Repository
-   class SamsungU700Ver1 < SamsungSghU600Ver1
+   class Samsung_u700_ver1 < Samsung_sgh_u600_ver1
 def self.user_agent
- "SAMSUNG-SGH-U700"
+ "SAMSUNG-SGH-U700".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.4

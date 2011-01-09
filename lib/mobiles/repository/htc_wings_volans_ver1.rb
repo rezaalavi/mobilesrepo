@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6'
 module Mobiles
  module Repository
-   class HtcWingsVolansVer1 < GenericMsWinmo6
+   class Htc_wings_volans_ver1 < Generic_ms_winmo6
 def self.user_agent
- "NON_UNIQUE_HTC_WING_VOLANS"
+ "NON_UNIQUE_HTC_WING_VOLANS".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

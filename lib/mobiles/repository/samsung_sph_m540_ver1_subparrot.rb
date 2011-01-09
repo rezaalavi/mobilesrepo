@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m540_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM540Ver1Subparrot < SamsungSphM540Ver1
+   class Samsung_sph_m540_ver1_subparrot < Samsung_sph_m540_ver1
 def self.user_agent
- "SPH-M540-parrot/1.0 AU-MIC/2.0 (GUI) MMP/2.0"
+ "SPH-M540-parrot/1.0 AU-MIC/2.0 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def release_date
   "2009_july"

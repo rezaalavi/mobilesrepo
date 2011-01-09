@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i320n_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI520Ver1 < SamsungSghI320nVer1
+   class Samsung_sgh_i520_ver1 < Samsung_sgh_i320n_ver1
 def self.user_agent
- "SAMSUNG-SGH-I520"
+ "SAMSUNG-SGH-I520".gsub(/\a/, '\\')
 end
   def nokia_series
   60

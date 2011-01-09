@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n90_ver1'
 module Mobiles
  module Repository
-   class NokiaN90Ver1Sub2052314 < NokiaN90Ver1
+   class Nokia_n90_ver1_sub2052314 < Nokia_n90_ver1
 def self.user_agent
- "NokiaN90-1/2.0523.1.4 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaN90-1/2.0523.1.4 Series60/2.8 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

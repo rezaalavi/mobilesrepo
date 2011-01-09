@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_cl71_ver1'
 module Mobiles
  module Repository
-   class SieCl71Ver1Sub100 < SieCl71Ver1
+   class Sie_cl71_ver1_sub100 < Sie_cl71_ver1
 def self.user_agent
- "BenQ-CL71/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.4.c.1.102 (GUI) MMP/2.0"
+ "BenQ-CL71/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.3.0.4.c.1.102 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.3

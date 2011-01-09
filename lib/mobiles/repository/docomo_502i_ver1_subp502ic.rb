@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_p502i_ver1'
 module Mobiles
  module Repository
-   class Docomo502iVer1Subp502ic < DocomoP502iVer1
+   class Docomo_502i_ver1_subp502ic < Docomo_p502i_ver1
 def self.user_agent
- "DoCoMo/1.0/P502i/c10"
+ "DoCoMo/1.0/P502i/c10".gsub(/\a/, '\\')
 end
   def max_deck_size
   10240

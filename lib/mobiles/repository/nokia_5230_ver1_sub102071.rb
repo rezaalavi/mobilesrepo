@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5230_ver1_sub100065'
 module Mobiles
  module Repository
-   class Nokia5230Ver1Sub102071 < Nokia5230Ver1Sub100065
+   class Nokia_5230_ver1_sub102071 < Nokia_5230_ver1_sub100065
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5230-1b/10.2.071; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5230-1b/10.2.071; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def uaprof2
   "http://nds1.nds.nokia.com/uaprof/Nokia5230-1br100-3G.xml"

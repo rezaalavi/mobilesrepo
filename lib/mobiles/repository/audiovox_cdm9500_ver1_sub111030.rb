@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/audiovox_cdm9500_ver1'
 module Mobiles
  module Repository
-   class AudiovoxCdm9500Ver1Sub111030 < AudiovoxCdm9500Ver1
+   class Audiovox_cdm9500_ver1_sub111030 < Audiovox_cdm9500_ver1
 def self.user_agent
- "AUDIOVOX-CDM9500/111.030 UP.Browser/5.0.4.1 (GUI)"
+ "AUDIOVOX-CDM9500/111.030 UP.Browser/5.0.4.1 (GUI)".gsub(/\a/, '\\')
 end
   
 end

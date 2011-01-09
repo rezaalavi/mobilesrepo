@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotZn200Ver1 < GenericXhtml
+   class Mot_zn200_ver1 < Generic_xhtml
 def self.user_agent
- "MOT-ZN200/1.0 Release/09.01.2008 Browser/CMCS1.0 Software/0.34D Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-ZN200/1.0 Release/09.01.2008 Browser/CMCS1.0 Software/0.34D Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.motorola.com/phoneconfig/ZN200/Profile/ZN200.rdf"

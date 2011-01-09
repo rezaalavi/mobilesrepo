@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_dual_ver1'
 module Mobiles
  module Repository
-   class HtcTouchDualVer1Subminimo < HtcTouchDualVer1
+   class Htc_touch_dual_ver1_subminimo < Htc_touch_dual_ver1
 def self.user_agent
- "Mozilla/5.0 (Windows; U; Windows CE 5.2; rv:1.8.1.4pre) Gecko/20070327 Minimo/0.020"
+ "Mozilla/5.0 (Windows; U; Windows CE 5.2; rv:1.8.1.4pre) Gecko/20070327 Minimo/0.020".gsub(/\a/, '\\')
 end
   
 end

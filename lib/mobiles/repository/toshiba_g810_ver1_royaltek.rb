@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/toshiba_g810_ver1'
 module Mobiles
  module Repository
-   class ToshibaG810Ver1Royaltek < ToshibaG810Ver1
+   class Toshiba_g810_ver1_royaltek < Toshiba_g810_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; RoyalTek RGP-N100"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)  PPC; 240x320; RoyalTek RGP-N100".gsub(/\a/, '\\')
 end
   
 end

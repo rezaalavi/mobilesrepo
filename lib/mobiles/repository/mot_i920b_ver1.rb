@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003_se'
 module Mobiles
  module Repository
-   class MotI920bVer1 < GenericMsWinmo2003Se
+   class Mot_i920b_ver1 < Generic_ms_winmo2003_se
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220; i920B; 4.21.1088; 000805200804330)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220; i920B; 4.21.1088; 000805200804330)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   4.0

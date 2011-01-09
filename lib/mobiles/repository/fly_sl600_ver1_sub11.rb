@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/fly_sl600_ver1'
 module Mobiles
  module Repository
-   class FlySl600Ver1Sub11 < FlySl600Ver1
+   class Fly_sl600_ver1_sub11 < Fly_sl600_ver1
 def self.user_agent
- "FLY-SL600/BSI AU.Browser/2.0 QO3C1"
+ "FLY-SL600/BSI AU.Browser/2.0 QO3C1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

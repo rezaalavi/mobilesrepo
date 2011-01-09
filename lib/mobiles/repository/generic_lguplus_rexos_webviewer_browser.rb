@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_lguplus_rexos'
 module Mobiles
  module Repository
-   class GenericLguplusRexosWebviewerBrowser < GenericLguplusRexos
+   class Generic_lguplus_rexos_webviewer_browser < Generic_lguplus_rexos
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_LGUPLUS_REXOS_WEBVIEWER"
+ "DO_NOT_MATCH_GENERIC_LGUPLUS_REXOS_WEBVIEWER".gsub(/\a/, '\\')
 end
   def mobile_browser
   "LGUPlus WebViewer"

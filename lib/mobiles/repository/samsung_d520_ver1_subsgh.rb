@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_d520_ver1'
 module Mobiles
  module Repository
-   class SamsungD520Ver1Subsgh < SamsungD520Ver1
+   class Samsung_d520_ver1_subsgh < Samsung_d520_ver1
 def self.user_agent
- "SAMSUNG-SGH-D520"
+ "SAMSUNG-SGH-D520".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   700000

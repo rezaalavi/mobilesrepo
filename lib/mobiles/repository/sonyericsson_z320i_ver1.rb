@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2_subz320i'
 module Mobiles
  module Repository
-   class SonyericssonZ320iVer1 < PortalmmmVer2Subz320i
+   class Sonyericsson_z320i_ver1 < Portalmmm_ver2_subz320i
 def self.user_agent
- "SonyEricssonZ320i/R1B017 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonZ320i/R1B017 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

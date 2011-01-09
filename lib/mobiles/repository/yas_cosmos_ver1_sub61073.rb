@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/yas_cosmos_ver1'
 module Mobiles
  module Repository
-   class YasCosmosVer1Sub61073 < YasCosmosVer1
+   class Yas_cosmos_ver1_sub61073 < Yas_cosmos_ver1
 def self.user_agent
- "YAS-COSMOS/1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0"
+ "YAS-COSMOS/1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

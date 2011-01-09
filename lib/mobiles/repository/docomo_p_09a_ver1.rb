@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_2_0_browser_ver1'
 module Mobiles
  module Repository
-   class DocomoP09aVer1 < Docomo20BrowserVer1
+   class Docomo_p_09a_ver1 < Docomo_2_0_browser_ver1
 def self.user_agent
- "DoCoMo/2.0 P09A3"
+ "DoCoMo/2.0 P09A3".gsub(/\a/, '\\')
 end
   def max_image_height
   331

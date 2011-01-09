@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_s668c_ver1'
 module Mobiles
  module Repository
-   class BenqS668cVer1Sub10 < BenqS668cVer1
+   class Benq_s668c_ver1_sub10 < Benq_s668c_ver1
 def self.user_agent
- "BENQ-S668C/CLDC_1.0 UP.Browser/6.1.0.7.8.c.1.100 (GUI) MMP/1.0"
+ "BENQ-S668C/CLDC_1.0 UP.Browser/6.1.0.7.8.c.1.100 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

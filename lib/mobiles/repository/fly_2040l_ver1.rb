@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/fly_2040_ver1'
 module Mobiles
  module Repository
-   class Fly2040lVer1 < Fly2040Ver1
+   class Fly_2040l_ver1 < Fly_2040_ver1
 def self.user_agent
- "FLY-2040L/BSI AU.Browser/2.0 QO3C1 MMP/1.0"
+ "FLY-2040L/BSI AU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/FLY-2040L.xml"

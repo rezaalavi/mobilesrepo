@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class GenericUntrustedMidlet < Generic
+   class Generic_untrusted_midlet < Generic
 def self.user_agent
- "UNTRUSTED/1.0"
+ "UNTRUSTED/1.0".gsub(/\a/, '\\')
 end
   def model_name
   "J2ME Midlet"

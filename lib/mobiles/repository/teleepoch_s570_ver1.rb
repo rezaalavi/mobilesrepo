@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class TeleepochS570Ver1 < Generic
+   class Teleepoch_s570_ver1 < Generic
 def self.user_agent
- "TELEEPOCH-S570/1.0 TECHSOFT-WAP/1.0 AI/1.0"
+ "TELEEPOCH-S570/1.0 TECHSOFT-WAP/1.0 AI/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://teleepoc.u8.dnsnd.com/s570.xml"

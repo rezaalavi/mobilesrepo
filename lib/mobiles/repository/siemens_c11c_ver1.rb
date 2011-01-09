@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v61_generic'
 module Mobiles
  module Repository
-   class SiemensC11cVer1 < OpwvV61Generic
+   class Siemens_c11c_ver1 < Opwv_v61_generic
 def self.user_agent
- "SIE-C11C/11 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0"
+ "SIE-C11C/11 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://communication-market.siemens.de/portal/UAProf/UAP.aspx?device=C11C&amp;v=11"

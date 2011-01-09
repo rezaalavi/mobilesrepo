@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v9x_ver1'
 module Mobiles
  module Repository
-   class MotV9xVer1Subopera860 < MotV9xVer1
+   class Mot_v9x_ver1_subopera860 < Mot_v9x_ver1
 def self.user_agent
- "MOT-MOTORAZRV9x/03.42.01I BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 13003291) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.60 [en]"
+ "MOT-MOTORAZRV9x/03.42.01I BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 13003291) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.60 [en]".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   8.60

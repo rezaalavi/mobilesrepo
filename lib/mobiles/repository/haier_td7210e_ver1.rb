@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HaierTd7210eVer1 < GenericXhtml
+   class Haier_td7210e_ver1 < Generic_xhtml
 def self.user_agent
- "G3/1.0 RTKE_OS/01.00 TD7210E/11.0 Release/10.23.2008 Browser/Techsoft-01.00.00 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "G3/1.0 RTKE_OS/01.00 TD7210E/11.0 Release/10.23.2008 Browser/Techsoft-01.00.00 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.globalhightech.fr/ght/uapG3.xml"

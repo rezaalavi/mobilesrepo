@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver4_sub70'
 module Mobiles
  module Repository
-   class Blackberry9500Ver1 < BlackberryGenericVer4Sub70
+   class Blackberry9500_ver1 < Blackberry_generic_ver4_sub70
 def self.user_agent
- "BlackBerry9500/4.7.0.34 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "BlackBerry9500/4.7.0.34 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

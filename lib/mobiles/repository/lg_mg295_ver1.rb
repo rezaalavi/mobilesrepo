@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mg280c_ver1_subobigowap20'
 module Mobiles
  module Repository
-   class LgMg295Ver1 < LgMg280cVer1Subobigowap20
+   class Lg_mg295_ver1 < Lg_mg280c_ver1_subobigowap20
 def self.user_agent
- "LG-MG295 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-MG295 Obigo/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-MG295.xml"

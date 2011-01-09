@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_sghe790_ver1'
 module Mobiles
  module Repository
-   class SecSghe790Ver1Sub10 < SecSghe790Ver1
+   class Sec_sghe790_ver1_sub10 < Sec_sghe790_ver1
 def self.user_agent
- "SEC-SGHE790/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHE790/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

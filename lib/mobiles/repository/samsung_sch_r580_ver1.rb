@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungSchR580Ver1 < OpwvV62Generic
+   class Samsung_sch_r580_ver1 < Opwv_v62_generic
 def self.user_agent
- "sam-r580, Myriad/6.2.3.8 (GUI) ,HTML 4.0; XHTML 1.0, WAP 2.0, Deck 40960,"
+ "sam-r580, Myriad/6.2.3.8 (GUI) ,HTML 4.0; XHTML 1.0, WAP 2.0, Deck 40960,".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

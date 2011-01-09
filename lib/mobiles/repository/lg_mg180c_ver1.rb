@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mg160_ver1'
 module Mobiles
  module Repository
-   class LgMg180cVer1 < LgMg160Ver1
+   class Lg_mg180c_ver1 < Lg_mg160_ver1
 def self.user_agent
- "LG-MG180c"
+ "LG-MG180c".gsub(/\a/, '\\')
 end
   def model_name
   "MG180c"

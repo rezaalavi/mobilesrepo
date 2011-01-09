@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6_5'
 module Mobiles
  module Repository
-   class ZteX990Ver1 < GenericMsWinmo65
+   class Zte_x990_ver1 < Generic_ms_winmo6_5
 def self.user_agent
- "ZTE-X990/X990_V2_Z5_FR_D13F104  Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C"
+ "ZTE-X990/X990_V2_Z5_FR_D13F104  Profile/MIDP-2.0 Configuration/CLDC-1.1 Obigo/Q03C".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

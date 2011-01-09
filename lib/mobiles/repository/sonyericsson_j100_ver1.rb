@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_xhtml_generic'
 module Mobiles
  module Repository
-   class SonyericssonJ100Ver1 < SonyericssonXhtmlGeneric
+   class Sonyericsson_j100_ver1 < Sonyericsson_xhtml_generic
 def self.user_agent
- "SonyEricssonJ100"
+ "SonyEricssonJ100".gsub(/\a/, '\\')
 end
   def model_name
   "J100"

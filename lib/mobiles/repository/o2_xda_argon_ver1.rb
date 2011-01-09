@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_panda_p6300_ver1'
 module Mobiles
  module Repository
-   class O2XdaArgonVer1 < HtcPandaP6300Ver1
+   class O2_xda_argon_ver1 < Htc_panda_p6300_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Xda Argon; 240x320"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Xda Argon; 240x320".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/panda-1.0.xml"

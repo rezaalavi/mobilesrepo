@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_t500_ver1'
 module Mobiles
  module Repository
-   class SamsungT500Ver1Sub5043 < SamsungT500Ver1
+   class Samsung_t500_ver1_sub5043 < Samsung_t500_ver1
 def self.user_agent
- "SAMSUNG-SGH-T500/1.0 UP.Browser/5.0.4.3 (GUI)"
+ "SAMSUNG-SGH-T500/1.0 UP.Browser/5.0.4.3 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

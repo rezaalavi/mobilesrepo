@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_netfront_3_1'
 module Mobiles
  module Repository
-   class BrowserNetfront32 < BrowserNetfront31
+   class Browser_netfront_3_2 < Browser_netfront_3_1
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_NETFRONT_3_2"
+ "DO_NOT_MATCH_BROWSER_NETFRONT_3_2".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.2

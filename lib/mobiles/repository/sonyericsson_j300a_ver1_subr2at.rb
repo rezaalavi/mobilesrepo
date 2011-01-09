@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_j300a_ver1'
 module Mobiles
  module Repository
-   class SonyericssonJ300aVer1Subr2at < SonyericssonJ300aVer1
+   class Sonyericsson_j300a_ver1_subr2at < Sonyericsson_j300a_ver1
 def self.user_agent
- "SonyEricssonJ300a/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonJ300a/R2AT SEMC-Browser/4.0.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

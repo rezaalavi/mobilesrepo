@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class Sk04Ver1 < UptextGeneric
+   class Sk04_ver1 < Uptext_generic
 def self.user_agent
- "SK-04/1.0 UP/4.1.21"
+ "SK-04/1.0 UP/4.1.21".gsub(/\a/, '\\')
 end
   
 end

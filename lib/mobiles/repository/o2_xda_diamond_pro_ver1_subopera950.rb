@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_xda_diamond_pro_ver1'
 module Mobiles
  module Repository
-   class O2XdaDiamondProVer1Subopera950 < O2XdaDiamondProVer1
+   class O2_xda_diamond_pro_ver1_subopera950 < O2_xda_diamond_pro_ver1
 def self.user_agent
- "Xda_diamond_pro Opera/9.50 (Windows NT 5.1; U; de)"
+ "Xda_diamond_pro Opera/9.50 (Windows NT 5.1; U; de)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

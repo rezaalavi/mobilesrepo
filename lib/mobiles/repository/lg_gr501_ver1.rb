@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_gr500_ver1'
 module Mobiles
  module Repository
-   class LgGr501Ver1 < LgGr500Ver1
+   class Lg_gr501_ver1 < Lg_gr500_ver1
 def self.user_agent
- "LG-GR501/V10c Obigo/Q7.1 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "LG-GR501/V10c Obigo/Q7.1 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.1

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_z9_ver1'
 module Mobiles
  module Repository
-   class MotZ10Ver1 < MotZ9Ver1
+   class Mot_z10_ver1 < Mot_z9_ver1
 def self.user_agent
- "MOTO-Z10/"
+ "MOTO-Z10/".gsub(/\a/, '\\')
 end
   def device_os
   "Symbian OS"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6590_ver1'
 module Mobiles
  module Repository
-   class Nokia6590Ver1Sub3034 < Nokia6590Ver1
+   class Nokia_6590_ver1_sub3034 < Nokia_6590_ver1
 def self.user_agent
- "Nokia6590/1.0(30.34)"
+ "Nokia6590/1.0(30.34)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_p500_ver1'
 module Mobiles
  module Repository
-   class SamsungP520Ver1 < SamsungP500Ver1
+   class Samsung_p520_ver1 < Samsung_p500_ver1
 def self.user_agent
- "SEC-SGHP520/1.0"
+ "SEC-SGHP520/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

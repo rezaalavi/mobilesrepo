@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i900_ver1_subvoda'
 module Mobiles
  module Repository
-   class SamsungSghI900Ver1Subachj2 < SamsungSghI900Ver1Subvoda
+   class Samsung_sgh_i900_ver1_subachj2 < Samsung_sgh_i900_ver1_subvoda
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SAMSUNG-SGH-i900V/ACHJ2"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SAMSUNG-SGH-i900V/ACHJ2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-i900V.xml"

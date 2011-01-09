@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kp202i_ver1'
 module Mobiles
  module Repository
-   class LgKp202iVer1subc10tb < LgKp202iVer1
+   class Lg_kp202i_ver1subc10tb < Lg_kp202i_ver1
 def self.user_agent
- "portalmmm/2.0 KP202i(c10;TB)"
+ "portalmmm/2.0 KP202i(c10;TB)".gsub(/\a/, '\\')
 end
   
 end

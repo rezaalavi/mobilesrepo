@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_650_ver1'
 module Mobiles
  module Repository
-   class Philips650Ver1Sub20 < Philips650Ver1
+   class Philips_650_ver1_sub20 < Philips_650_ver1
 def self.user_agent
- "PHILIPS650 ObigoInternetBrowser/2.0"
+ "PHILIPS650 ObigoInternetBrowser/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

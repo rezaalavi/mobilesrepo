@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_s710_ver1'
 module Mobiles
  module Repository
-   class HtcS710Ver1Subvodafone < HtcS710Ver1
+   class Htc_s710_ver1_subvodafone < Htc_s710_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.15.163.2"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_s710/1.15.163.2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/voda/HTC_s710-1.0.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_vthin_wap_ver1'
 module Mobiles
  module Repository
-   class PhilipsVthinWapVer1Sub4116 < PhilipsVthinWapVer1
+   class Philips_vthin_wap_ver1_sub4116 < Philips_vthin_wap_ver1
 def self.user_agent
- "PHILIPS-VTHIN_WAP UP/4.1.16r"
+ "PHILIPS-VTHIN_WAP UP/4.1.16r".gsub(/\a/, '\\')
 end
   
 end

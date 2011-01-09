@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/skyzen_generic'
 module Mobiles
  module Repository
-   class SkyzenSl308Ver1 < SkyzenGeneric
+   class Skyzen_sl308_ver1 < Skyzen_generic
 def self.user_agent
- "EZZE-SL308/BSI AU.Browser/2.0 QO3C1 MMP/1.0"
+ "EZZE-SL308/BSI AU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/sl308.xml"

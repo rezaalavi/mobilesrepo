@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_cx65_ver1'
 module Mobiles
  module Repository
-   class SieCx6cVer1 < SieCx65Ver1
+   class Sie_cx6c_ver1 < Sie_cx65_ver1
 def self.user_agent
- "SIE-CX6C"
+ "SIE-CX6C".gsub(/\a/, '\\')
 end
   def uaprof
   "http://communication-market.siemens.de/portal/UAProf/UAP.aspx?device=CX6C&amp;v=08"

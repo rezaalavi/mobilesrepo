@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver1_5'
 module Mobiles
  module Repository
-   class HuaweiU8220Ver1 < GenericAndroidVer15
+   class Huawei_u8220_ver1 < Generic_android_ver1_5
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.5; en-gb; U8220) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 1.5; en-gb; U8220) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap1.huawei.com/uaprof/HuaweiU8220v100WCDMA.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q5'
 module Mobiles
  module Repository
-   class AlcatelOt880aVer1 < LgGenericObigoQ5
+   class Alcatel_ot_880a_ver1 < Lg_generic_obigo_q5
 def self.user_agent
- "Alcatel-OT-880A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A"
+ "Alcatel-OT-880A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

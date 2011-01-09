@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_x7510_ver1'
 module Mobiles
  module Repository
-   class HtcX7510Opera < HtcX7510Ver1
+   class Htc_x7510_opera < Htc_x7510_ver1
 def self.user_agent
- "HTC-X7510/1.0 Opera 9.5"
+ "HTC-X7510/1.0 Opera 9.5".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

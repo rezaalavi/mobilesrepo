@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ku580_ver1'
 module Mobiles
  module Repository
-   class LgKu580Ver1Subua < LgKu580Ver1
+   class Lg_ku580_ver1_subua < Lg_ku580_ver1
 def self.user_agent
- "LG-KU580"
+ "LG-KU580".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

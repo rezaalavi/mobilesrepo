@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_portalmmm'
 module Mobiles
  module Repository
-   class KgtN530iVer1 < GenericPortalmmm
+   class Kgt_n530i_ver1 < Generic_portalmmm
 def self.user_agent
- "KGT/1.0 N530i-10"
+ "KGT/1.0 N530i-10".gsub(/\a/, '\\')
 end
   def max_image_width
   120

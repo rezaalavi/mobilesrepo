@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a925_ver1'
 module Mobiles
  module Repository
-   class MotA925Ver1Subennonumber < MotA925Ver1
+   class Mot_a925_ver1_subennonumber < Mot_a925_ver1
 def self.user_agent
- "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS) Opera 6.0 [en]./MOT-A925"
+ "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS) Opera 6.0 [en]./MOT-A925".gsub(/\a/, '\\')
 end
   
 end

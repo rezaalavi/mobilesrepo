@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_3'
 module Mobiles
  module Repository
-   class SanyoScp7050Ver1 < GenericNetfrontVer33
+   class Sanyo_scp7050_ver1 < Generic_netfront_ver3_3
 def self.user_agent
- "Mozilla/4.0 (MobilePhone SCP-7050/US/1.0) NetFront/3.3 MMP/2.0"
+ "Mozilla/4.0 (MobilePhone SCP-7050/US/1.0) NetFront/3.3 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Sanyo/SCP7050/1002SP.rdf"

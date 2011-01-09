@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungE2210Ver1 < OpwvV62Generic
+   class Samsung_e2210_ver1 < Opwv_v62_generic
 def self.user_agent
- "SAMSUNG-E2210/1.0"
+ "SAMSUNG-E2210/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/E2210.xml"

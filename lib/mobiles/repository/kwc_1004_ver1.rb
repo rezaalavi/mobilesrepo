@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class Kwc1004Ver1 < OpwvV72Generic
+   class Kwc_1004_ver1 < Opwv_v72_generic
 def self.user_agent
- "KWC/1004 UP.Browser/7.2.6.1.714 (GUI) MMP/2.0"
+ "KWC/1004 UP.Browser/7.2.6.1.714 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vmobl.com/kyocera/S2000i/VMU_S2000i_UAProf.xml"

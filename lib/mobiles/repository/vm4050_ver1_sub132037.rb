@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vm4050_ver1'
 module Mobiles
  module Repository
-   class Vm4050Ver1Sub132037 < Vm4050Ver1
+   class Vm4050_ver1_sub132037 < Vm4050_ver1
 def self.user_agent
- "VM4050/132.037 UP.Browser/6.2.2.4.e.1.100 (GUI) MMP/2.0"
+ "VM4050/132.037 UP.Browser/6.2.2.4.e.1.100 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

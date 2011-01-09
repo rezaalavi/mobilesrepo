@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6101_ver1'
 module Mobiles
  module Repository
-   class Nokia6103Ver1 < Nokia6101Ver1
+   class Nokia_6103_ver1 < Nokia_6101_ver1
 def self.user_agent
- "Nokia6103"
+ "Nokia6103".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/N6103r100.xml"

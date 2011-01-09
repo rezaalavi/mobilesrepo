@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kg245_ver1'
 module Mobiles
  module Repository
-   class LgKg245Ver1Submic20 < LgKg245Ver1
+   class Lg_kg245_ver1_submic20 < Lg_kg245_ver1
 def self.user_agent
- "LG-KG245/MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KG245/MIC/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

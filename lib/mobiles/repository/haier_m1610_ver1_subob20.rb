@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/haier_m1610_ver1'
 module Mobiles
  module Repository
-   class HaierM1610Ver1Subob20 < HaierM1610Ver1
+   class Haier_m1610_ver1_subob20 < Haier_m1610_ver1
 def self.user_agent
- "Haier-M1610 / Obigo Browser 2.0"
+ "Haier-M1610 / Obigo Browser 2.0".gsub(/\a/, '\\')
 end
   def max_image_width
   120

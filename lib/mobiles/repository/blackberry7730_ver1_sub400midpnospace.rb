@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry7730_ver1_sub400'
 module Mobiles
  module Repository
-   class Blackberry7730Ver1Sub400midpnospace < Blackberry7730Ver1Sub400
+   class Blackberry7730_ver1_sub400midpnospace < Blackberry7730_ver1_sub400
 def self.user_agent
- "BlackBerry7730/4.0.0 Profile/MIDP-2.0Configuration/CLDC-1.1"
+ "BlackBerry7730/4.0.0 Profile/MIDP-2.0Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

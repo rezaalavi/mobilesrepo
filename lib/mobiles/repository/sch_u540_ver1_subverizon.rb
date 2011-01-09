@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sch_u540_ver1'
 module Mobiles
  module Repository
-   class SchU540Ver1Subverizon < SchU540Ver1
+   class Sch_u540_ver1_subverizon < Sch_u540_ver1
 def self.user_agent
- "samu540"
+ "samu540".gsub(/\a/, '\\')
 end
   def model_name
   "SCH-U540"

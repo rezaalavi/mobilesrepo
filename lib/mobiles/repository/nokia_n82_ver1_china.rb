@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n82_ver1'
 module Mobiles
  module Repository
-   class NokiaN82Ver1China < NokiaN82Ver1
+   class Nokia_n82_ver1_china < Nokia_n82_ver1
 def self.user_agent
- "NokiaN82/1.0 (20.1.062) SymbianOS/9.2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaN82/1.0 (20.1.062) SymbianOS/9.2 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof2
   "http://nds1.nds.nokia.com/uaprof/NN82-5r100.xml"

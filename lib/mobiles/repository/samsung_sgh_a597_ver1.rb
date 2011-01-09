@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mini_version4'
 module Mobiles
  module Repository
-   class SamsungSghA597Ver1 < GenericOperaMiniVersion4
+   class Samsung_sgh_a597_ver1 < Generic_opera_mini_version4
 def self.user_agent
- "SAMSUNG-SGH-A597/A597UCJG1; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19903; U; en-US) Opera 9.50"
+ "SAMSUNG-SGH-A597/A597UCJG1; Mozilla/5.0 (Profile/MIDP-2.0 Configuration/CLDC-1.1; Opera Mini/att/4.2.19903; U; en-US) Opera 9.50".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

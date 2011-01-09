@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q7'
 module Mobiles
  module Repository
-   class LgGsCx700Ver1 < LgGenericObigoQ7
+   class Lg_gs_cx700_ver1 < Lg_generic_obigo_q7
 def self.user_agent
- "Mozilla/4.1 (compatible; Teleca/Q07/GS-CX700)"
+ "Mozilla/4.1 (compatible; Teleca/Q07/GS-CX700)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

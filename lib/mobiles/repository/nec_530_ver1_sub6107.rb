@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_530_ver1'
 module Mobiles
  module Repository
-   class Nec530Ver1Sub6107 < Nec530Ver1
+   class Nec_530_ver1_sub6107 < Nec_530_ver1
 def self.user_agent
- "NEC-530/1.0 UP.Browser/6.1.0.7 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "NEC-530/1.0 UP.Browser/6.1.0.7 (GUI) MMP/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

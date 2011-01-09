@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40'
 module Mobiles
  module Repository
-   class Nokia6088Ver1 < NokiaGenericSeries40
+   class Nokia_6088_ver1 < Nokia_generic_series40
 def self.user_agent
- "Nokia6088/2.0 ACS.Browser/3.2(GUI) MMP/2.0"
+ "Nokia6088/2.0 ACS.Browser/3.2(GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access"

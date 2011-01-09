@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60_dp30'
 module Mobiles
  module Repository
-   class NokiaGenericSeries60Dp30Webkit < NokiaGenericSeries60Dp30
+   class Nokia_generic_series60_dp30_webkit < Nokia_generic_series60_dp30
 def self.user_agent
- "DO_NOT_MATCH_NOKIA_SERIES60_DP_3_0_WEBKIT"
+ "DO_NOT_MATCH_NOKIA_SERIES60_DP_3_0_WEBKIT".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Safari"

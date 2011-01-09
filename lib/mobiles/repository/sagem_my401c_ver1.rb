@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class SagemMy401cVer1 < OpwvV7Generic
+   class Sagem_my401c_ver1 < Opwv_v7_generic
 def self.user_agent
- "Sagem-my401C"
+ "Sagem-my401C".gsub(/\a/, '\\')
 end
   def model_name
   "MY401C"

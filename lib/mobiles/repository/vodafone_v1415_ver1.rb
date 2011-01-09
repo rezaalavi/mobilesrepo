@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_vox_ver1'
 module Mobiles
  module Repository
-   class VodafoneV1415Ver1 < HtcVoxVer1
+   class Vodafone_v1415_ver1 < Htc_vox_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_v1415/1.18.161.3"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) Vodafone/1.0/HTC_v1415/1.18.161.3".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

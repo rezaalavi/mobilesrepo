@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_s5230_ver1_subjasmine1_0'
 module Mobiles
  module Repository
-   class SamsungGtS5230Ver1Submxi < SamsungGtS5230Ver1Subjasmine10
+   class Samsung_gt_s5230_ver1_submxi < Samsung_gt_s5230_ver1_subjasmine1_0
 def self.user_agent
- "SAMSUNG-GT-S5230/S523MXIIL4 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-S5230/S523MXIIL4 SHP/VPP/R5 Jasmine/1.0 Nextreaming SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

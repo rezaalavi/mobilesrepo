@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotorolaU9Ver1 < GenericXhtml
+   class Motorola_u9_ver1 < Generic_xhtml
 def self.user_agent
- "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) U9"
+ "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) U9".gsub(/\a/, '\\')
 end
   def model_name
   "U9"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class OndaN1010Ver1 < OpwvV62Generic
+   class Onda_n1010_ver1 < Opwv_v62_generic
 def self.user_agent
- "N1010 Onda/Plat-F-VIM/WAP2.0 UP.Browser/6.2.2.7.c.1.102 (GUI) MMP/1.0"
+ "N1010 Onda/Plat-F-VIM/WAP2.0 UP.Browser/6.2.2.7.c.1.102 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.ondacommunication.com/ua/N1010.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cect_a1000_ver1'
 module Mobiles
  module Repository
-   class CectA1000Ver1Subua < CectA1000Ver1
+   class Cect_a1000_ver1_subua < Cect_a1000_ver1
 def self.user_agent
- "CECT A1000 CECT A1000"
+ "CECT A1000 CECT A1000".gsub(/\a/, '\\')
 end
   
 end

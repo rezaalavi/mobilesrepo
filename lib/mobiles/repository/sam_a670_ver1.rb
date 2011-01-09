@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sch_a670_ver1'
 module Mobiles
  module Repository
-   class SamA670Ver1 < SamsungSchA670Ver1
+   class Sam_a670_ver1 < Samsung_sch_a670_ver1
 def self.user_agent
- "SAMA670 UP.Browser/6.2"
+ "SAMA670 UP.Browser/6.2".gsub(/\a/, '\\')
 end
   def model_name
   "A670"

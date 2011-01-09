@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3700_ver1'
 module Mobiles
  module Repository
-   class HtcP3700Ver1Subvodafone < HtcP3700Ver1
+   class Htc_p3700_ver1_subvodafone < Htc_p3700_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/1.26.161.1"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_P3700/1.26.161.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/voda/diamond-1.0.xml"

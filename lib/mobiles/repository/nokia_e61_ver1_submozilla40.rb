@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e61_ver1'
 module Mobiles
  module Repository
-   class NokiaE61Ver1Submozilla40 < NokiaE61Ver1
+   class Nokia_e61_ver1_submozilla40 < Nokia_e61_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 5.0; Series60/3.0 NokiaE61-1/05w38.2 Profile/MIDP-2.0 Configuration/CLDC-1.1)"
+ "Mozilla/4.0 (compatible; MSIE 5.0; Series60/3.0 NokiaE61-1/05w38.2 Profile/MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   def wifi?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_diamond_ver1_subvodafone'
 module Mobiles
  module Repository
-   class HtcDiamondVer1Subvodafone2 < HtcDiamondVer1Subvodafone
+   class Htc_diamond_ver1_subvodafone2 < Htc_diamond_ver1_subvodafone
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.161.2"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) Vodafone/1.0/HTC_Diamond/1.37.161.2".gsub(/\a/, '\\')
 end
   
 end

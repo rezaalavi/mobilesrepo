@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitsu_t250_ver1'
 module Mobiles
  module Repository
-   class MitsuT250Ver1Sub4120axxxx < MitsuT250Ver1
+   class Mitsu_t250_ver1_sub4120axxxx < Mitsu_t250_ver1
 def self.user_agent
- "T250 UP/4.1.20a UP.Browser/4.1.20a-XXXX"
+ "T250 UP/4.1.20a UP.Browser/4.1.20a-XXXX".gsub(/\a/, '\\')
 end
   
 end

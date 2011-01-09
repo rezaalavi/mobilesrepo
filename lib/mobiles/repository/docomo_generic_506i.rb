@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_504i'
 module Mobiles
  module Repository
-   class DocomoGeneric506i < DocomoGeneric504i
+   class Docomo_generic_506i < Docomo_generic_504i
 def self.user_agent
- "DO_NOT_MATCH_DOCOMO_506I"
+ "DO_NOT_MATCH_DOCOMO_506I".gsub(/\a/, '\\')
 end
   
 end

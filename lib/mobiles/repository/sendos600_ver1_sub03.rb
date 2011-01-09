@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sendos600_ver1'
 module Mobiles
  module Repository
-   class Sendos600Ver1Sub03 < Sendos600Ver1
+   class Sendos600_ver1_sub03 < Sendos600_ver1
 def self.user_agent
- "SendoS600/03"
+ "SendoS600/03".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

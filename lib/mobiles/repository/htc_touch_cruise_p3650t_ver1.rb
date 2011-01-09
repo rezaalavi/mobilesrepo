@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_cruise_p3650_ver1'
 module Mobiles
  module Repository
-   class HtcTouchCruiseP3650tVer1 < HtcTouchCruiseP3650Ver1
+   class Htc_touch_cruise_p3650t_ver1 < Htc_touch_cruise_p3650_ver1
 def self.user_agent
- "HTC_P3650t/1.27.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "HTC_P3650t/1.27.621.1 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/tme/polaris-1.0.xml"

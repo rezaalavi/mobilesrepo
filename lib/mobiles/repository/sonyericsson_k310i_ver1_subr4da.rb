@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k310i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK310iVer1Subr4da < SonyericssonK310iVer1
+   class Sonyericsson_k310i_ver1_subr4da < Sonyericsson_k310i_ver1
 def self.user_agent
- "SonyEricssonK310i/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonK310i/R4DA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/K310iR301.xml"

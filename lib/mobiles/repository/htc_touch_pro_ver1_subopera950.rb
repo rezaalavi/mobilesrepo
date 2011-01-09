@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_pro_ver1'
 module Mobiles
  module Repository
-   class HtcTouchProVer1Subopera950 < HtcTouchProVer1
+   class Htc_touch_pro_ver1_subopera950 < Htc_touch_pro_ver1
 def self.user_agent
- "HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; en)"
+ "HTC_Touch_Pro_T7272 Opera/9.50 (Windows NT 5.1; U; en)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

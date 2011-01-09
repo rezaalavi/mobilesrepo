@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mib21_generic'
 module Mobiles
  module Repository
-   class MotMib22Generic < MotMib21Generic
+   class Mot_mib22_generic < Mot_mib21_generic
 def self.user_agent
- "DO_NOT_MATCH_MIB_2_2"
+ "DO_NOT_MATCH_MIB_2_2".gsub(/\a/, '\\')
 end
   def html_wi_oma_xhtmlmp_1_0?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/google_wireless_transcoder_ver1'
 module Mobiles
  module Repository
-   class GoogleWirelessTranscoderVer1Subua < GoogleWirelessTranscoderVer1
+   class Google_wireless_transcoder_ver1_subua < Google_wireless_transcoder_ver1
 def self.user_agent
- "Mozilla/5.0 (en-us) AppleWebKit/525.13 (KHTML, like Gecko; Google Wireless Transcoder) Version/3.1 Safari/525.13"
+ "Mozilla/5.0 (en-us) AppleWebKit/525.13 (KHTML, like Gecko; Google Wireless Transcoder) Version/3.1 Safari/525.13".gsub(/\a/, '\\')
 end
   
 end

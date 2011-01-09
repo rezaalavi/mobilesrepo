@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class SamsungSghE490Ver1 < GenericNetfrontVer32
+   class Samsung_sgh_e490_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "SEC-SGHE490"
+ "SEC-SGHE490".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/e490_10.xml"

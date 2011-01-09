@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_gradiente'
 module Mobiles
  module Repository
-   class GradienteGf600Ver2 < GenericGradiente
+   class Gradiente_gf600_ver2 < Generic_gradiente
 def self.user_agent
- "Gradiente GF-600"
+ "Gradiente GF-600".gsub(/\a/, '\\')
 end
   def model_name
   "GF-600"

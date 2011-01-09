@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_s620_ver1'
 module Mobiles
  module Repository
-   class HtcS620Ver1Subie612 < HtcS620Ver1
+   class Htc_s620_ver1_subie612 < Htc_s620_ver1
 def self.user_agent
- "HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)"
+ "HTC_S620 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

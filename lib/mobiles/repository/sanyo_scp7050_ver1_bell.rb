@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_scp7050_ver1'
 module Mobiles
  module Repository
-   class SanyoScp7050Ver1Bell < SanyoScp7050Ver1
+   class Sanyo_scp7050_ver1_bell < Sanyo_scp7050_ver1
 def self.user_agent
- "Sanyo_SCP-7050CA NetFront/3.3 MMP/2.0"
+ "Sanyo_SCP-7050CA NetFront/3.3 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/BMC_Sanyo_SCP7050CA_1004BM.rdf"

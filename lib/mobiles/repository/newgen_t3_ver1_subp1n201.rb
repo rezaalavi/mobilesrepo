@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/newgen_t3_ver1'
 module Mobiles
  module Repository
-   class NewgenT3Ver1Subp1n201 < NewgenT3Ver1
+   class Newgen_t3_ver1_subp1n201 < Newgen_t3_ver1
 def self.user_agent
- "NEWGEN-T3/P1.N2.01 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "NEWGEN-T3/P1.N2.01 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

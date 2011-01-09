@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_voyager_ver1'
 module Mobiles
  module Repository
-   class Qtek8080Ver1 < HtcVoyagerVer1
+   class Qtek_8080_ver1 < Htc_voyager_ver1
 def self.user_agent
- "Qtek8080"
+ "Qtek8080".gsub(/\a/, '\\')
 end
   def model_name
   8080

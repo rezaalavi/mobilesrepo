@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g7000_ver1'
 module Mobiles
  module Repository
-   class LgG7000Ver1Sub410 < LgG7000Ver1
+   class Lg_g7000_ver1_sub410 < Lg_g7000_ver1
 def self.user_agent
- "LG-G7000 AU/4.10"
+ "LG-G7000 AU/4.10".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

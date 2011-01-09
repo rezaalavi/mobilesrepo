@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class HuaweiC6100Ver1 < GenericNetfrontVer32
+   class Huawei_c6100_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "C6100/001.00 ACS-Netfront/3.2"
+ "C6100/001.00 ACS-Netfront/3.2".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_charmer_ver1'
 module Mobiles
  module Repository
-   class TmobileMdaCompactiiVer1 < HtcCharmerVer1
+   class Tmobile_mda_compactii_ver1 < Htc_charmer_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; MDA compact II/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; MDA compact II/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/tmo/mdacp-2.0.xml"

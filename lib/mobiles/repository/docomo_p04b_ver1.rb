@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_2_0_browser_ver1'
 module Mobiles
  module Repository
-   class DocomoP04bVer1 < Docomo20BrowserVer1
+   class Docomo_p04b_ver1 < Docomo_2_0_browser_ver1
 def self.user_agent
- "DoCoMo/2.0 P04B(c500;TB;W24H16)"
+ "DoCoMo/2.0 P04B(c500;TB;W24H16)".gsub(/\a/, '\\')
 end
   def model_name
   "P-04B"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3'
 module Mobiles
  module Repository
-   class SamsungSchU350Ver1 < GenericNetfrontVer3
+   class Samsung_sch_u350_ver1 < Generic_netfront_ver3
 def self.user_agent
- "SCH-U350/1.0 NetFront/3.0.22.2.18 (GUI) MMP/2.0"
+ "SCH-U350/1.0 NetFront/3.0.22.2.18 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

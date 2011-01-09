@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/audiovox_cdm8912sp_ver1'
 module Mobiles
  module Repository
-   class FakeAudiovoxCdm8912spVer1 < AudiovoxCdm8912spVer1
+   class Fake_audiovox_cdm8912sp_ver1 < Audiovox_cdm8912sp_ver1
 def self.user_agent
- "AUDIOVOX-PM8910KIT"
+ "AUDIOVOX-PM8910KIT".gsub(/\a/, '\\')
 end
   def model_name
   "PM-8912"

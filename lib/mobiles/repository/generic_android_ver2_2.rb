@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2_1'
 module Mobiles
  module Repository
-   class GenericAndroidVer22 < GenericAndroidVer21
+   class Generic_android_ver2_2 < Generic_android_ver2_1
 def self.user_agent
- "DO_NOT_MATCH_ANDROID_2_2"
+ "DO_NOT_MATCH_ANDROID_2_2".gsub(/\a/, '\\')
 end
   def device_os_version
   2.2

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a835_ver1'
 module Mobiles
  module Repository
-   class MotA835Ver2 < MotA835Ver1
+   class Mot_a835_ver2 < Mot_a835_ver1
 def self.user_agent
- "MOT-A835/02"
+ "MOT-A835/02".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

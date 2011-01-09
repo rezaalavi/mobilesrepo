@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_bd2030_ver1'
 module Mobiles
  module Repository
-   class LgeBd2030Ver1Sub4126 < LgeBd2030Ver1
+   class Lge_bd2030_ver1_sub4126 < Lge_bd2030_ver1
 def self.user_agent
- "LGE-BD2030/1.0 UP.Browser/4.1.26l"
+ "LGE-BD2030/1.0 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60_dp50'
 module Mobiles
  module Repository
-   class Nokia5250Ver1 < NokiaGenericSeries60Dp50
+   class Nokia_5250_ver1 < Nokia_generic_series60_dp50
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5250/10.0.011; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413 3gpp-gba"
+ "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Nokia5250/10.0.011; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413 3gpp-gba".gsub(/\a/, '\\')
 end
   def model_name
   5250

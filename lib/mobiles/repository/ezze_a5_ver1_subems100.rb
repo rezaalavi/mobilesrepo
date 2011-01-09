@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ezze_a5_ver1'
 module Mobiles
  module Repository
-   class EzzeA5Ver1Subems100 < EzzeA5Ver1
+   class Ezze_a5_ver1_subems100 < Ezze_a5_ver1
 def self.user_agent
- "EMS100/1.0"
+ "EMS100/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/EMS100.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p990_ver1'
 module Mobiles
  module Repository
-   class SonyericssonP990Subr10060306860enus < SonyericssonP990Ver1
+   class Sonyericsson_p990_subr10060306860enus < Sonyericsson_p990_ver1
 def self.user_agent
- "SonyEricssonP990i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 306) Opera 8.60 [en-US]"
+ "SonyEricssonP990i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 306) Opera 8.60 [en-US]".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

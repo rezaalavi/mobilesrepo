@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_me970_ver1'
 module Mobiles
  module Repository
-   class LgMe970cVer1 < LgMe970Ver1
+   class Lg_me970c_ver1 < Lg_me970_ver1
 def self.user_agent
- "LG-ME970c MIC/1.1.14 MIDP-2.0/CLDC-1.1"
+ "LG-ME970c MIC/1.1.14 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

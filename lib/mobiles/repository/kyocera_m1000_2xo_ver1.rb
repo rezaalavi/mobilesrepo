@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class KyoceraM10002xoVer1 < OpwvV62Generic
+   class Kyocera_m1000_2xo_ver1 < Opwv_v62_generic
 def self.user_agent
- "M1000-2X0/1.0.11 UP.Browser/6.2.3.9.g.1.111 (GUI) MMP/2.0"
+ "M1000-2X0/1.0.11 UP.Browser/6.2.3.9.g.1.111 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "M1000"

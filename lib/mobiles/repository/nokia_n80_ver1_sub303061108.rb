@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n80_ver1'
 module Mobiles
  module Repository
-   class NokiaN80Ver1Sub303061108 < NokiaN80Ver1
+   class Nokia_n80_ver1_sub303061108 < Nokia_n80_ver1
 def self.user_agent
- "NokiaN80-1/3.0 (3.0611.0.8) Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaN80-1/3.0 (3.0611.0.8) Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def wifi?
   true

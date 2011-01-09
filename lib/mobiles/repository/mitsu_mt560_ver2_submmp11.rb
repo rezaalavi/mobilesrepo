@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitsu_mt560_ver2'
 module Mobiles
  module Repository
-   class MitsuMt560Ver2Submmp11 < MitsuMt560Ver2
+   class Mitsu_mt560_ver2_submmp11 < Mitsu_mt560_ver2
 def self.user_agent
- "Mitsu/1.2.B (MT560) MMP/1.1"
+ "Mitsu/1.2.B (MT560) MMP/1.1".gsub(/\a/, '\\')
 end
   
 end

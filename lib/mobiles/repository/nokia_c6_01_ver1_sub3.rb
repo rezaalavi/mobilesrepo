@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_c6_01_ver1'
 module Mobiles
  module Repository
-   class NokiaC601Ver1Sub3 < NokiaC601Ver1
+   class Nokia_c6_01_ver1_sub3 < Nokia_c6_01_ver1
 def self.user_agent
- "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaC6-01.3/012.006; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.6 3gpp-gba"
+ "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaC6-01.3/012.006; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.7.6 3gpp-gba".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/NC6-01.3r100.xml"

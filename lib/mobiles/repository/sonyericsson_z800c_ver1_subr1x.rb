@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_z800c_ver1'
 module Mobiles
  module Repository
-   class SonyericssonZ800cVer1Subr1x < SonyericssonZ800cVer1
+   class Sonyericsson_z800c_ver1_subr1x < Sonyericsson_z800c_ver1
 def self.user_agent
- "SonyEricssonZ800c/R1X Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonZ800c/R1X Browser/SEMC-Browser/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

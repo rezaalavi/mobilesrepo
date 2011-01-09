@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_e335_ver1'
 module Mobiles
  module Repository
-   class SamsungSghE335Ver1Subvee1 < SamsungSghE335Ver1
+   class Samsung_sgh_e335_ver1_subvee1 < Samsung_sgh_e335_ver1
 def self.user_agent
- "SAMSUNG-SGH-E335/E335UVEE1 UP.Browser/6.2.2.6 (GUI) MMP/1.0"
+ "SAMSUNG-SGH-E335/E335UVEE1 UP.Browser/6.2.2.6 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_pu_c710_ver1'
 module Mobiles
  module Repository
-   class PantechPuP7000Ver1 < PantechPuC710Ver1
+   class Pantech_pu_p7000_ver1 < Pantech_pu_c710_ver1
 def self.user_agent
- "PANTECH-P7000/"
+ "PANTECH-P7000/".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.pantech.com/Uaprof/umts/PU-P7000.xml"

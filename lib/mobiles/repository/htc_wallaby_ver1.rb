@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_pocketpc2002'
 module Mobiles
  module Repository
-   class HtcWallabyVer1 < GenericMsPocketpc2002
+   class Htc_wallaby_ver1 < Generic_ms_pocketpc2002
 def self.user_agent
- "NON_UNIQUE_HTC_WALLABY"
+ "NON_UNIQUE_HTC_WALLABY".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

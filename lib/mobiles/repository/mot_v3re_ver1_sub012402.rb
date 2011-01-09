@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3r_ver1'
 module Mobiles
  module Repository
-   class MotV3reVer1Sub012402 < MotV3rVer1
+   class Mot_v3re_ver1_sub012402 < Mot_v3r_ver1
 def self.user_agent
- "MOT-V3re/01.24.02 MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-V3re/01.24.02 MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

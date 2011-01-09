@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_i700_ver1'
 module Mobiles
  module Repository
-   class SecI700Ver1Sub700 < SecI700Ver1
+   class Sec_i700_ver1_sub700 < Sec_i700_ver1
 def self.user_agent
- "SEC-SGHI700, SEC-SGHI700"
+ "SEC-SGHI700, SEC-SGHI700".gsub(/\a/, '\\')
 end
   
 end

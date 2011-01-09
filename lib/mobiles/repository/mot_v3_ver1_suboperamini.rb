@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v3_ver1'
 module Mobiles
  module Repository
-   class MotV3Ver1Suboperamini < MotV3Ver1
+   class Mot_v3_ver1_suboperamini < Mot_v3_ver1
 def self.user_agent
- "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.4821/hifi/tmobile/uk; Motorola V3; en; U; ssr)"
+ "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.4821/hifi/tmobile/uk; Motorola V3; en; U; ssr)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

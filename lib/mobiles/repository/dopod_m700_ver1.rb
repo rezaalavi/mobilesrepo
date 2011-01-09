@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_love_ver1'
 module Mobiles
  module Repository
-   class DopodM700Ver1 < HtcLoveVer1
+   class Dopod_m700_ver1 < Htc_love_ver1
 def self.user_agent
- "DopodM700/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "DopodM700/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def model_name
   "M700"

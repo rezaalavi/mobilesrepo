@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e530c_ver1'
 module Mobiles
  module Repository
-   class SecE530cVer1Subtss25 < SecE530cVer1
+   class Sec_e530c_ver1_subtss25 < Sec_e530c_ver1
 def self.user_agent
- "SEC-SGHE530C/1.0 TSS/2.5"
+ "SEC-SGHE530C/1.0 TSS/2.5".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

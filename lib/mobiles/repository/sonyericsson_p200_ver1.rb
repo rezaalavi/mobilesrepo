@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_xhtml_generic'
 module Mobiles
  module Repository
-   class SonyericssonP200Ver1 < SonyericssonXhtmlGeneric
+   class Sonyericsson_p200_ver1 < Sonyericsson_xhtml_generic
 def self.user_agent
- "SonyEricssonP200/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; en-GB; 10000463) Opera 9.5"
+ "SonyEricssonP200/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; en-GB; 10000463) Opera 9.5".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

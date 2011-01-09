@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_jade_ver1'
 module Mobiles
  module Repository
-   class VodafoneHtcTouchJadeVer1 < HtcJadeVer1
+   class Vodafone_htc_touch_jade_ver1 < Htc_jade_ver1
 def self.user_agent
- "Vodafone/1.0/HTC_Jade/1.06.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)"
+ "Vodafone/1.0/HTC_Jade/1.06.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

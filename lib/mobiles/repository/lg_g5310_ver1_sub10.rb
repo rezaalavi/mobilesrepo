@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g5310_ver1'
 module Mobiles
  module Repository
-   class LgG5310Ver1Sub10 < LgG5310Ver1
+   class Lg_g5310_ver1_sub10 < Lg_g5310_ver1
 def self.user_agent
- "LG-G5310/JM AU/4.10 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "LG-G5310/JM AU/4.10 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

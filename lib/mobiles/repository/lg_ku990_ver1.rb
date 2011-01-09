@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_viewty_generic'
 module Mobiles
  module Repository
-   class LgKu990Ver1 < LgViewtyGeneric
+   class Lg_ku990_ver1 < Lg_viewty_generic
 def self.user_agent
- "LG/KU990"
+ "LG/KU990".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KU990.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_sl55_ver1'
 module Mobiles
  module Repository
-   class SieSl56Ver1 < SieSl55Ver1
+   class Sie_sl56_ver1 < Sie_sl55_ver1
 def self.user_agent
- "SIE-SL56"
+ "SIE-SL56".gsub(/\a/, '\\')
 end
   def uaprof
   "http://communication-market.siemens.de/UAProf/SL56_10.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_charm_ver1'
 module Mobiles
  module Repository
-   class BlackberryCharmVer1Sub380 < BlackberryCharmVer1
+   class Blackberry_charm_ver1_sub380 < Blackberry_charm_ver1
 def self.user_agent
- "BlackBerryCharm/3.8.0"
+ "BlackBerryCharm/3.8.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

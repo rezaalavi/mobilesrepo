@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_f904i_ver1'
 module Mobiles
  module Repository
-   class DocomoF904iVer1Submozilla < DocomoF904iVer1
+   class Docomo_f904i_ver1_submozilla < Docomo_f904i_ver1
 def self.user_agent
- "Mozilla/4.08 (F904i;FOMA;c500;TB)"
+ "Mozilla/4.08 (F904i;FOMA;c500;TB)".gsub(/\a/, '\\')
 end
   def device_os
   "Symbian OS"

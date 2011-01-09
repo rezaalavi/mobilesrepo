@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/winwap_ver4'
 module Mobiles
  module Repository
-   class TvcompassSmartremoteVer1 < WinwapVer4
+   class Tvcompass_smartremote_ver1 < Winwap_ver4
 def self.user_agent
- "WinWAP-X/3.0 (tvCompass Smart Remote)"
+ "WinWAP-X/3.0 (tvCompass Smart Remote)".gsub(/\a/, '\\')
 end
   def model_name
   "DMR1500"

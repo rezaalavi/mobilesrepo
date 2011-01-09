@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class O2JetVer1 < GenericXhtml
+   class O2_jet_ver1 < Generic_xhtml
 def self.user_agent
- "O2Jet"
+ "O2Jet".gsub(/\a/, '\\')
 end
   def uaprof
   "n/a"

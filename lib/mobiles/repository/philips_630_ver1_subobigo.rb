@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_fisio_630_ver1'
 module Mobiles
  module Repository
-   class Philips630Ver1Subobigo < PhilipsFisio630Ver1
+   class Philips_630_ver1_subobigo < Philips_fisio_630_ver1
 def self.user_agent
- "PHILIPS 630 / Obigo Internet Browser 2.0"
+ "PHILIPS 630 / Obigo Internet Browser 2.0".gsub(/\a/, '\\')
 end
   def max_image_width
   120

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_n400us_ver1'
 module Mobiles
  module Repository
-   class SamsungN400Ver1Sub116 < SamsungN400usVer1
+   class Samsung_n400_ver1_sub116 < Samsung_n400us_ver1
 def self.user_agent
- "AU-MIC/1.1.6 MMP/2.0"
+ "AU-MIC/1.1.6 MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

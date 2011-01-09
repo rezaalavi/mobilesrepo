@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6110_ver1sub0323'
 module Mobiles
  module Repository
-   class Nokia6110navigatorVer1Sub2 < Nokia6110Ver1sub0323
+   class Nokia_6110navigator_ver1_sub2 < Nokia_6110_ver1sub0323
 def self.user_agent
- "Nokia6110Navigator/2.0 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia6110Navigator/2.0 Series60/3.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   1

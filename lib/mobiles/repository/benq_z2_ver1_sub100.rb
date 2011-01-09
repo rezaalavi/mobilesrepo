@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_z2_ver1'
 module Mobiles
  module Repository
-   class BenqZ2Ver1Sub100 < BenqZ2Ver1
+   class Benq_z2_ver1_sub100 < Benq_z2_ver1
 def self.user_agent
- "BenQ-Z2/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0"
+ "BenQ-Z2/1.00/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

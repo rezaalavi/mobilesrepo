@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/winwap_ver4'
 module Mobiles
  module Repository
-   class WinwapVer40027 < WinwapVer4
+   class Winwap_ver4_0_0_27 < Winwap_ver4
 def self.user_agent
- "WinWAP/4.0 (4.0.0.27; Win32)"
+ "WinWAP/4.0 (4.0.0.27; Win32)".gsub(/\a/, '\\')
 end
   def model_name
   "WinWAP Browser for Windows 4.0"

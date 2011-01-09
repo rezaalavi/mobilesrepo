@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class WinwapVer4 < GenericXhtml
+   class Winwap_ver4 < Generic_xhtml
 def self.user_agent
- "WinWAP/4.0"
+ "WinWAP/4.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "WinWAP"

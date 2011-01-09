@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opera_sonyericsson_p800_ver1_sub630'
 module Mobiles
  module Repository
-   class OperaSonyericssonP800Ver1Sub306 < OperaSonyericssonP800Ver1Sub630
+   class Opera_sonyericsson_p800_ver1_sub306 < Opera_sonyericsson_p800_ver1_sub630
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; SonyEricsson P800; 306) Opera 6.30 [en]"
+ "Mozilla/4.0 (compatible; MSIE 5.0; Symbian OS; SonyEricsson P800; 306) Opera 6.30 [en]".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

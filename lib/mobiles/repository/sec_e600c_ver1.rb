@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e600_ver1'
 module Mobiles
  module Repository
-   class SecE600cVer1 < SecE600Ver1
+   class Sec_e600c_ver1 < Sec_e600_ver1
 def self.user_agent
- "SEC-SGHE600C"
+ "SEC-SGHE600C".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-E600C"

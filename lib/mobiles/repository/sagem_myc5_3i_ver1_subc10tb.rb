@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myc5_3i_ver1'
 module Mobiles
  module Repository
-   class SagemMyc53iVer1Subc10tb < SagemMyc53iVer1
+   class Sagem_myc5_3i_ver1_subc10tb < Sagem_myc5_3i_ver1
 def self.user_agent
- "portalmmm/2.0 myC5-3i(c10;TB)"
+ "portalmmm/2.0 myC5-3i(c10;TB)".gsub(/\a/, '\\')
 end
   
 end

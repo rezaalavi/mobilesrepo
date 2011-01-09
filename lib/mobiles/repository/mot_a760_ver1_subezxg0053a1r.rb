@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a760_ver1'
 module Mobiles
  module Repository
-   class MotA760Ver1Subezxg0053a1r < MotA760Ver1
+   class Mot_a760_ver1_subezxg0053a1r < Mot_a760_ver1
 def self.user_agent
- "MOT-A760/EZX_G_00.53.A1R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "MOT-A760/EZX_G_00.53.A1R MIB/2.2 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

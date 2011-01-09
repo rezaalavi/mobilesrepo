@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SamsungSghT609Ver1 < GenericXhtml
+   class Samsung_sgh_t609_ver1 < Generic_xhtml
 def self.user_agent
- "SAMSUNG-SGH-T609/T609UVFC8 Profile/MIDP-2.0 Configuration/CLDC-1.1 TSS/2.5"
+ "SAMSUNG-SGH-T609/T609UVFC8 Profile/MIDP-2.0 Configuration/CLDC-1.1 TSS/2.5".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Samsung"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_dolfin1_5'
 module Mobiles
  module Repository
-   class SamsungSghT669Ver1 < GenericDolfin15
+   class Samsung_sgh_t669_ver1 < Generic_dolfin1_5
 def self.user_agent
- "SAMSUNG-SGH-T669/T669UVJD9 SHP/VPP/R5 Dolfin/1.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-T669/T669UVJD9 SHP/VPP/R5 Dolfin/1.5 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

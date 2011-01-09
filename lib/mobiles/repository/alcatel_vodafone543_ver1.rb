@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mini_version4'
 module Mobiles
  module Repository
-   class AlcatelVodafone543Ver1 < GenericOperaMiniVersion4
+   class Alcatel_vodafone543_ver1 < Generic_opera_mini_version4
 def self.user_agent
- "Vodafone/1.0/0Vodafone543/W08.40.SP1.V32.F3 Browser/Opera Mini/v4.2.0099-2010-04-14(0)"
+ "Vodafone/1.0/0Vodafone543/W08.40.SP1.V32.F3 Browser/Opera Mini/v4.2.0099-2010-04-14(0)".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

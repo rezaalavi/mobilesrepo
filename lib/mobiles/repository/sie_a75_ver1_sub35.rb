@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_a75_ver1'
 module Mobiles
  module Repository
-   class SieA75Ver1Sub35 < SieA75Ver1
+   class Sie_a75_ver1_sub35 < Sie_a75_ver1
 def self.user_agent
- "SIE-A75/35 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0"
+ "SIE-A75/35 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.5.c.6 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.1

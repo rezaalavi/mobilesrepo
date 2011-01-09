@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6680_ver1'
 module Mobiles
  module Repository
-   class Nokia6680Ver1Sub1501 < Nokia6680Ver1
+   class Nokia_6680_ver1_sub1501 < Nokia_6680_ver1
 def self.user_agent
- "Nokia6680/1.0 (1.50.1) Series60/2.6 Profile/MIDP-2.0"
+ "Nokia6680/1.0 (1.50.1) Series60/2.6 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

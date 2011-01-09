@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_arm9_brcm_edge_ver1'
 module Mobiles
  module Repository
-   class NecArm9BrcmEdgeVer1Sub701240 < NecArm9BrcmEdgeVer1
+   class Nec_arm9_brcm_edge_ver1_sub701240 < Nec_arm9_brcm_edge_ver1
 def self.user_agent
- "NEC-ARM9-BRCM_EDGE/0.1 UP.Browser/7.0.1.240 (GUI) MMP/2.0"
+ "NEC-ARM9-BRCM_EDGE/0.1 UP.Browser/7.0.1.240 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

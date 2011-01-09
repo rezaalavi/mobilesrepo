@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p990_ver1'
 module Mobiles
  module Repository
-   class SonyericssonP990iVer1 < SonyericssonP990Ver1
+   class Sonyericsson_p990i_ver1 < Sonyericsson_p990_ver1
 def self.user_agent
- "SonyEricssonP990i"
+ "SonyEricssonP990i".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

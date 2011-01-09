@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver6'
 module Mobiles
  module Repository
-   class Blackberry9800Ver1 < BlackberryGenericVer6
+   class Blackberry9800_ver1 < Blackberry_generic_ver6
 def self.user_agent
- "Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.135 Mobile Safari/534.1+"
+ "Mozilla/5.0 (BlackBerry; U; BlackBerry 9800; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.135 Mobile Safari/534.1+".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

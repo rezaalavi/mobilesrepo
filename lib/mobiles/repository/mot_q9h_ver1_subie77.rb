@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_q9h_ver1'
 module Mobiles
  module Repository
-   class MotQ9hVer1Subie77 < MotQ9hVer1
+   class Mot_q9h_ver1_subie77 < Mot_q9h_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) MOT-Q9/01.07.09R"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) MOT-Q9/01.07.09R".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Microsoft Mobile Explorer"

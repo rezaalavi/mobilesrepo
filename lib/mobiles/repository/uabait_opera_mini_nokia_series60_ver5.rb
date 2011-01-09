@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60'
 module Mobiles
  module Repository
-   class UabaitOperaMiniNokiaSeries60Ver5 < NokiaGenericSeries60
+   class Uabait_opera_mini_nokia_series60_ver5 < Nokia_generic_series60
 def self.user_agent
- "Opera/9.80 (Series 60; Opera Mini/5.1.22395/21.529; U; fr) Presto/2.5.25 Version/10.54"
+ "Opera/9.80 (Series 60; Opera Mini/5.1.22395/21.529; U; fr) Presto/2.5.25 Version/10.54".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

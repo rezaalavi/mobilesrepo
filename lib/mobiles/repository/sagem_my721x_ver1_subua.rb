@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my721x_ver1'
 module Mobiles
  module Repository
-   class SagemMy721xVer1Subua < SagemMy721xVer1
+   class Sagem_my721x_ver1_subua < Sagem_my721x_ver1
 def self.user_agent
- "SAGEM-my721X/1.0/EAN_ET MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.1.352 (GUI)"
+ "SAGEM-my721X/1.0/EAN_ET MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.1.352 (GUI)".gsub(/\a/, '\\')
 end
   def j2me_midp_2_0?
   true

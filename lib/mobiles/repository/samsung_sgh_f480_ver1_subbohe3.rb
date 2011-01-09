@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_f480_ver1'
 module Mobiles
  module Repository
-   class SamsungSghF480Ver1Subbohe3 < SamsungSghF480Ver1
+   class Samsung_sgh_f480_ver1_subbohe3 < Samsung_sgh_f480_ver1
 def self.user_agent
- "SAMSUNG-SGH-F480/F480BOHE3 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-F480/F480BOHE3 SHP/VPP/R5 NetFront/3.4 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

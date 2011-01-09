@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_generic'
 module Mobiles
  module Repository
-   class SoftbankJSa06Ver1 < SoftbankGeneric
+   class Softbank_j_sa06_ver1 < Softbank_generic
 def self.user_agent
- "J-PHONE/3.0/J-SA06"
+ "J-PHONE/3.0/J-SA06".gsub(/\a/, '\\')
 end
   def model_name
   "J-SA06"

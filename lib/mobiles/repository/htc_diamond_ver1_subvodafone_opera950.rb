@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_diamond_ver1_subvodafone'
 module Mobiles
  module Repository
-   class HtcDiamondVer1SubvodafoneOpera950 < HtcDiamondVer1Subvodafone
+   class Htc_diamond_ver1_subvodafone_opera950 < Htc_diamond_ver1_subvodafone
 def self.user_agent
- "Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)"
+ "Vodafone/1.0/HTC_Diamond Opera/9.50 (Windows NT 5.1; U; en)".gsub(/\a/, '\\')
 end
   def physical_screen_height
   57

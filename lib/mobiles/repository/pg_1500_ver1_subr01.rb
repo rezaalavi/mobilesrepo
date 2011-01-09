@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pg_1500_ver1'
 module Mobiles
  module Repository
-   class Pg1500Ver1Subr01 < Pg1500Ver1
+   class Pg_1500_ver1_subr01 < Pg_1500_ver1
 def self.user_agent
- "PG-1500/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "PG-1500/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

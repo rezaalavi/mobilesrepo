@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6170_ver1'
 module Mobiles
  module Repository
-   class Nokia6170Ver1Sub03211 < Nokia6170Ver1
+   class Nokia_6170_ver1_sub03211 < Nokia_6170_ver1
 def self.user_agent
- "Nokia6170/2.0 (03.211) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia6170/2.0 (03.211) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

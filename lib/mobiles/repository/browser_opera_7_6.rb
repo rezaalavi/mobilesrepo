@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_opera_7_5'
 module Mobiles
  module Repository
-   class BrowserOpera76 < BrowserOpera75
+   class Browser_opera_7_6 < Browser_opera_7_5
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_OPERA_7_6"
+ "DO_NOT_MATCH_BROWSER_OPERA_7_6".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.6

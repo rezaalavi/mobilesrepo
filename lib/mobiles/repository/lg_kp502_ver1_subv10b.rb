@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kp502_ver1'
 module Mobiles
  module Repository
-   class LgKp502Ver1Subv10b < LgKp502Ver1
+   class Lg_kp502_ver1_subv10b < Lg_kp502_ver1
 def self.user_agent
- "LG-KP502-V10b Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KP502-V10b Teleca/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KP502.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a1200e_ver1'
 module Mobiles
  module Repository
-   class MotA1200eVer1Subr541l7g11000cr < MotA1200eVer1
+   class Mot_a1200e_ver1_subr541l7g11000cr < Mot_a1200e_ver1
 def self.user_agent
- "MOT-A1200e/1.0/R541L7_G_11.00.0CR Mozilla/4.0 (compatible; MSIE 6.0; Linux; A1200e; 781) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [zh-cn] UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO"
+ "MOT-A1200e/1.0/R541L7_G_11.00.0CR Mozilla/4.0 (compatible; MSIE 6.0; Linux; A1200e; 781) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [zh-cn] UP.Browser/7.0.2.3.119 (GUI) MMP/2.0 Push/PO".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/A1200e/profile/A1200e.rdf"

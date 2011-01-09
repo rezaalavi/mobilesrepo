@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/onda_n7000_ver1'
 module Mobiles
  module Repository
-   class OndaN7010Ver1 < OndaN7000Ver1
+   class Onda_n7010_ver1 < Onda_n7000_ver1
 def self.user_agent
- "N7010 Onda WAP2.0/MIDP2.0/CLDC1.1"
+ "N7010 Onda WAP2.0/MIDP2.0/CLDC1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.ondacommunication.com/ua/N7010.xml"

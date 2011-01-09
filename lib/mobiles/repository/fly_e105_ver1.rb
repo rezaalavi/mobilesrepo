@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mini_version1'
 module Mobiles
  module Repository
-   class FlyE105Ver1 < GenericOperaMiniVersion1
+   class Fly_e105_ver1 < Generic_opera_mini_version1
 def self.user_agent
- "Fly-E105/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "Fly-E105/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

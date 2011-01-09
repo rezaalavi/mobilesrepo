@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_t8585_ver1'
 module Mobiles
  module Repository
-   class HtcT8585Ver1Subopera < HtcT8585Ver1
+   class Htc_t8585_ver1_subopera < Htc_t8585_ver1
 def self.user_agent
- "HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; fr)"
+ "HTC_HD2_T8585 Opera/9.7 (Windows NT 5.1; U; fr)".gsub(/\a/, '\\')
 end
   def max_image_width
   230

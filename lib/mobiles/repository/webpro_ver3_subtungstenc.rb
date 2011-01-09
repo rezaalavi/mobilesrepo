@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_mt64_ver1'
 module Mobiles
  module Repository
-   class WebproVer3Subtungstenc < PalmMt64Ver1
+   class Webpro_ver3_subtungstenc < Palm_mt64_ver1
 def self.user_agent
- "Mozilla/4.76 (compatible; MSIE 6.0; U; Windows 95; PalmSource; PalmOS; WebPro; Tungsten Proxyless 1.1 320x320x16)"
+ "Mozilla/4.76 (compatible; MSIE 6.0; U; Windows 95; PalmSource; PalmOS; WebPro; Tungsten Proxyless 1.1 320x320x16)".gsub(/\a/, '\\')
 end
   def wifi?
   true

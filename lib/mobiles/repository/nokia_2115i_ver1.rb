@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class Nokia2115iVer1 < UptextGeneric
+   class Nokia_2115i_ver1 < Uptext_generic
 def self.user_agent
- "Nokia2115i/1.0 (R101V1100.nep) UP.Browser/4.1.26l1.c.2.101"
+ "Nokia2115i/1.0 (R101V1100.nep) UP.Browser/4.1.26l1.c.2.101".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   4.1

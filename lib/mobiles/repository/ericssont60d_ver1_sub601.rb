@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ericssont60d_ver1'
 module Mobiles
  module Repository
-   class Ericssont60dVer1Sub601 < Ericssont60dVer1
+   class Ericssont60d_ver1_sub601 < Ericssont60d_ver1
 def self.user_agent
- "EricssonT60d/R1A"
+ "EricssonT60d/R1A".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

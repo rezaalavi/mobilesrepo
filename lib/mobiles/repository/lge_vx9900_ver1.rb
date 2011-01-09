@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class LgeVx9900Ver1 < OpwvV62Generic
+   class Lge_vx9900_ver1 < Opwv_v62_generic
 def self.user_agent
- "LGE-VX9900/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0"
+ "LGE-VX9900/1.0 UP.Browser/6.2.3.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vtext.com/lg/vx9900/vx9900.xml"

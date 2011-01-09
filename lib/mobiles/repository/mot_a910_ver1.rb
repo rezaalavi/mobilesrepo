@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_symbian'
 module Mobiles
  module Repository
-   class MotA910Ver1 < GenericOperaSymbian
+   class Mot_a910_ver1 < Generic_opera_symbian
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A910;"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Linux; Motorola A910;".gsub(/\a/, '\\')
 end
   def model_name
   "A910"

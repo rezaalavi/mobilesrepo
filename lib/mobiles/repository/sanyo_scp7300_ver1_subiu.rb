@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_scp7300_ver1'
 module Mobiles
  module Repository
-   class SanyoScp7300Ver1Subiu < SanyoScp7300Ver1
+   class Sanyo_scp7300_ver1_subiu < Sanyo_scp7300_ver1
 def self.user_agent
- "Mozilla/4.0 (MobilePhone SCP-7300/IU/1.0) NetFront/3.0 MMP/2.0"
+ "Mozilla/4.0 (MobilePhone SCP-7300/IU/1.0) NetFront/3.0 MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

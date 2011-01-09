@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w890i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW890ivVer1 < SonyericssonW890iVer1
+   class Sonyericsson_w890iv_ver1 < Sonyericsson_w890i_ver1
 def self.user_agent
- "Mozilla/4.0 SonyEricssonW890iv/R1EA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Mozilla/4.0 SonyEricssonW890iv/R1EA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def columns
   16

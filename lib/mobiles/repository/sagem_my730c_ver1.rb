@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class SagemMy730cVer1 < OpwvV72Generic
+   class Sagem_my730c_ver1 < Opwv_v72_generic
 def self.user_agent
- "SAGEM-my730C/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAGEM-my730C/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://extranet.sagem.com/UAProfile/899207.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_wings_volans_ver1'
 module Mobiles
  module Repository
-   class SoftbankX03htVer1 < HtcWingsVolansVer1
+   class Softbank_x03ht_ver1 < Htc_wings_volans_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) HTC/X03HT"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) HTC/X03HT".gsub(/\a/, '\\')
 end
   def marketing_name
   "Softbank X03HT"

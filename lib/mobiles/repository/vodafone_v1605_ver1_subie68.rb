@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vodafone_v1605_ver1'
 module Mobiles
  module Repository
-   class VodafoneV1605Ver1Subie68 < VodafoneV1605Ver1
+   class Vodafone_v1605_ver1_subie68 < Vodafone_v1605_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.04.161.2"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Vodafone/1.0/HTC_Mercury/2.04.161.2".gsub(/\a/, '\\')
 end
   def softkey_support?
   true

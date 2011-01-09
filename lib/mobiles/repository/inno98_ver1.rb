@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class Inno98Ver1 < Generic
+   class Inno98_ver1 < Generic
 def self.user_agent
- "INNO98"
+ "INNO98".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.innostream.com/uaprof/INNO98.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/toshiba_ts705_ver1'
 module Mobiles
  module Repository
-   class ToshibaTs705Ver1Subua < ToshibaTs705Ver1
+   class Toshiba_ts705_ver1_subua < Toshiba_ts705_ver1
 def self.user_agent
- "TOSHIBA_TS705/1.0"
+ "TOSHIBA_TS705/1.0".gsub(/\a/, '\\')
 end
   def release_date
   "2010_september"

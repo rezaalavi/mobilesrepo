@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_hd_t8282ver1'
 module Mobiles
  module Repository
-   class HtcTouchHdT8282Submoz40 < HtcTouchHdT8282ver1
+   class Htc_touch_hd_t8282_submoz40 < Htc_touch_hd_t8282ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.1.611"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) PPC; 480x800; HTC_Touch_HD_T8282; OpVer 34.119.1.611".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/blackstone-1.0.xml"

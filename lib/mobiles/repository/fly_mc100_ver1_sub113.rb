@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/fly_mc100_ver1'
 module Mobiles
  module Repository
-   class FlyMc100Ver1Sub113 < FlyMc100Ver1
+   class Fly_mc100_ver1_sub113 < Fly_mc100_ver1
 def self.user_agent
- "Fly MC100/S113 Release/2007.12.11 Profile/MIDP2.0 Configuration/CLDC1.1"
+ "Fly MC100/S113 Release/2007.12.11 Profile/MIDP2.0 Configuration/CLDC1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.fly-phone.ru/UAP/Fly_MC100.xml"

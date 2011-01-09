@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q5'
 module Mobiles
  module Repository
-   class IxiogoCt25mVer1 < LgGenericObigoQ5
+   class Ixiogo_ct25m_ver1 < Lg_generic_obigo_q5
 def self.user_agent
- "IXI-CT-25m/v2.1/Mozilla/4.0 (compatible; 240x320) IXI/Q05A2.4"
+ "IXI-CT-25m/v2.1/Mozilla/4.0 (compatible; 240x320) IXI/Q05A2.4".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

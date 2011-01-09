@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class MobileexplorerVer3 < Generic
+   class Mobileexplorer_ver3 < Generic
 def self.user_agent
- "MobileExplorer/3.00 (MMEF300"
+ "MobileExplorer/3.00 (MMEF300".gsub(/\a/, '\\')
 end
   def device_claims_web_support?
   true

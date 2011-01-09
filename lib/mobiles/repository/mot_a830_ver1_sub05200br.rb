@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a830_ver1'
 module Mobiles
  module Repository
-   class MotA830Ver1Sub05200br < MotA830Ver1
+   class Mot_a830_ver1_sub05200br < Mot_a830_ver1
 def self.user_agent
- "MOT-A830/05.20.0BR MIB/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "MOT-A830/05.20.0BR MIB/2.0 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   100000

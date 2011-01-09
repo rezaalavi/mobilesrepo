@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class PalmCentroVer1 < GenericXhtml
+   class Palm_centro_ver1 < Generic_xhtml
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Palmsource/Palm-D062; Blazer/4.5) 16;320X320"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; Palmsource/Palm-D062; Blazer/4.5) 16;320X320".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

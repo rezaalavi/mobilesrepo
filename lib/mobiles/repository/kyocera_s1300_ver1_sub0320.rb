@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class KyoceraS1300Ver1Sub0320 < OpwvV72Generic
+   class Kyocera_s1300_ver1_sub0320 < Opwv_v72_generic
 def self.user_agent
- "KWC-S1300/0320 UP.Browser/7.2.6.1.714 (GUI) MMP/2.0"
+ "KWC-S1300/0320 UP.Browser/7.2.6.1.714 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "S1300/0320"

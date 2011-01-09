@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_q9h_ver1_subie77'
 module Mobiles
  module Repository
-   class MotQ9hVer1SubcSprint < MotQ9hVer1Subie77
+   class Mot_q9h_ver1_subc_sprint < Mot_q9h_ver1_subie77
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) Sprint:MotoQ9c"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7) Sprint:MotoQ9c".gsub(/\a/, '\\')
 end
   def model_name
   "Q9c"

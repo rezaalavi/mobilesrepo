@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_spha820_ver1'
 module Mobiles
  module Repository
-   class SamsungSpha820Ver1Sub6225 < SamsungSpha820Ver1
+   class Samsung_spha820_ver1_sub6225 < Samsung_spha820_ver1
 def self.user_agent
- "SPH-A820 UP.Browser/6.2.2.5 (GUI) MMP/2.0"
+ "SPH-A820 UP.Browser/6.2.2.5 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sgh_p300'
 module Mobiles
  module Repository
-   class SghP300Ver1 < SghP300
+   class Sgh_p300_ver1 < Sgh_p300
 def self.user_agent
- "SEC-SGHP300/1.0 TSS/2.5"
+ "SEC-SGHP300/1.0 TSS/2.5".gsub(/\a/, '\\')
 end
   def playback_acodec_aac
   "heaac2"

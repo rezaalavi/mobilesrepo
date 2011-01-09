@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_foma'
 module Mobiles
  module Repository
-   class PanasonicP904iVer1 < DocomoGenericFoma
+   class Panasonic_p904i_ver1 < Docomo_generic_foma
 def self.user_agent
- "Mozilla/4.08 (P904i;FOMA;c500;TB;W24H15)"
+ "Mozilla/4.08 (P904i;FOMA;c500;TB;W24H15)".gsub(/\a/, '\\')
 end
   def model_name
   "P904i"

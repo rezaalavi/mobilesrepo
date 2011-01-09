@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_e2120_ver1'
 module Mobiles
  module Repository
-   class SamsungGtE2120Ver1Sub10 < SamsungGtE2120Ver1
+   class Samsung_gt_e2120_ver1_sub10 < Samsung_gt_e2120_ver1
 def self.user_agent
- "SAMSUNG-GT-E2120L/1.0"
+ "SAMSUNG-GT-E2120L/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/GT-E2120L.xml"

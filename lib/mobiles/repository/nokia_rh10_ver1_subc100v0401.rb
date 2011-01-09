@@ -1,34 +1,24 @@
+#   Copyright [2011] [Seyed Mohammad Reza Alavi]
+
+#  Licensed under the Apache License, Version 2.0 (the "License");
+#  you may not use this file except in compliance with the License.
+#  You may obtain a copy of the License at
+
+#      http://www.apache.org/licenses/LICENSE-2.0
+
+#  Unless required by applicable law or agreed to in writing, software
+#  distributed under the License is distributed on an "AS IS" BASIS,
+#  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+#  See the License for the specific language governing permissions and
+#  limitations under the License.
+require 'mobiles/repository/nokia_rh10_ver1'
 module Mobiles
  module Repository
-   class NokiaRh10Ver1Subc100v0401 < NokiaRh10Ver1
+   class Nokia_rh10_ver1_subc100v0401 < Nokia_rh10_ver1
 def self.user_agent
- "NOKIA-RH-10/V C100v0401.nep.0 UP.Browser/4.1.26l1"
+ "NOKIA-RH-10/V C100v0401.nep.0 UP.Browser/4.1.26l1".gsub(/\a/, '\\')
 end
-  def model_name
-  "2280/2285"
-end
-def columns
-  9
-end
-def max_image_width
-  96
-end
-def rows
-  6
-end
-def resolution_height
-  65
-end
-def resolution_width
-  96
-end
-def max_image_height
-  48
-end
-def streaming_real_media
-  "none"
-end
-
+  
 end
 
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5310_xpressmusic_ver1'
 module Mobiles
  module Repository
-   class Nokia5310XpressmusicVer1Subua < Nokia5310XpressmusicVer1
+   class Nokia_5310_xpressmusic_ver1_subua < Nokia_5310_xpressmusic_ver1
 def self.user_agent
- "Nokia5310XpressMusic"
+ "Nokia5310XpressMusic".gsub(/\a/, '\\')
 end
   def physical_screen_height
   43

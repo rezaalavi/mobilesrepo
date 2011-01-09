@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_802sh_ver1'
 module Mobiles
  module Repository
-   class Sharp802shVer1Sub10 < Sharp802shVer1
+   class Sharp_802sh_ver1_sub10 < Sharp_802sh_ver1
 def self.user_agent
- "Vodafone/1.0/802SH"
+ "Vodafone/1.0/802SH".gsub(/\a/, '\\')
 end
   
 end

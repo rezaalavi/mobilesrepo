@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class MotW375Ver1 < OpwvV62Generic
+   class Mot_w375_ver1 < Opwv_v62_generic
 def self.user_agent
- "MOT-W375"
+ "MOT-W375".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/W375/Profile/W375.rdf"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_root'
 module Mobiles
  module Repository
-   class BrowserJig < BrowserRoot
+   class Browser_jig < Browser_root
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_JIG"
+ "DO_NOT_MATCH_BROWSER_JIG".gsub(/\a/, '\\')
 end
   def mobile_browser
   "jig browser"

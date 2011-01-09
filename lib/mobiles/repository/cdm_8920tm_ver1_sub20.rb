@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cdm_8920tm_ver1'
 module Mobiles
  module Repository
-   class Cdm8920tmVer1Sub20 < Cdm8920tmVer1
+   class Cdm_8920tm_ver1_sub20 < Cdm_8920tm_ver1
 def self.user_agent
- "CDM-8920TM/6.2 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0"
+ "CDM-8920TM/6.2 UP.Browser/6.2.2.6.h.1.100 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

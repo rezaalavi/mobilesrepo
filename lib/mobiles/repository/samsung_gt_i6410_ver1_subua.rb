@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_i6410_ver1'
 module Mobiles
  module Repository
-   class SamsungGtI6410Ver1Subua < SamsungGtI6410Ver1
+   class Samsung_gt_i6410_ver1_subua < Samsung_gt_i6410_ver1
 def self.user_agent
- "SAMSUNG-GT-I6410-Vodafone/I6410BUII8 Linux/X2/R1 Opera/9.6 SMS-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-I6410-Vodafone/I6410BUII8 Linux/X2/R1 Opera/9.6 SMS-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

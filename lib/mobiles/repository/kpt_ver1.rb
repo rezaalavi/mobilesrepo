@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class KptVer1 < Generic
+   class Kpt_ver1 < Generic
 def self.user_agent
- "KPT SD-528/MIDP-1.0 CLDC-1.0"
+ "KPT SD-528/MIDP-1.0 CLDC-1.0".gsub(/\a/, '\\')
 end
   def model_name
   "SD-528"

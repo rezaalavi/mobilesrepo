@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/phillips_x520_ver1'
 module Mobiles
  module Repository
-   class PhilipsE102Ver1 < PhillipsX520Ver1
+   class Philips_e102_ver1 < Phillips_x520_ver1
 def self.user_agent
- "PhilipsE102/1.0"
+ "PhilipsE102/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   ""

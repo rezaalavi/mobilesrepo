@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2_2'
 module Mobiles
  module Repository
-   class HtcDesirehdVer1 < GenericAndroidVer22
+   class Htc_desirehd_ver1 < Generic_android_ver2_2
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.2; en-gb; Desire HD Build/FRF91) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 2.2; en-gb; Desire HD Build/FRF91) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def model_name
   "Desire HD"

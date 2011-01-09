@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_symbian'
 module Mobiles
  module Repository
-   class Nokia770Ver1 < GenericOperaSymbian
+   class Nokia_770_ver1 < Generic_opera_symbian
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux armv6l; U) Opera 8.5 [en_GB] Tablet browser 0.1.16 RX-34_2007SE_4.2007.38-2"
+ "Mozilla/4.0 (compatible; MSIE 6.0; X11; Linux armv6l; U) Opera 8.5 [en_GB] Tablet browser 0.1.16 RX-34_2007SE_4.2007.38-2".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

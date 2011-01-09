@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_9300i_ver1_submozilla550'
 module Mobiles
  module Repository
-   class Nokia9300iVer1Submozilla627 < Nokia9300iVer1Submozilla550
+   class Nokia_9300i_ver1_submozilla627 < Nokia_9300i_ver1_submozilla550
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 5.0; Series80/2.0 Nokia9300i/6.27 Profile/MIDP-2.0 Configuration/CLDC-1.1)"
+ "Mozilla/4.0 (compatible; MSIE 5.0; Series80/2.0 Nokia9300i/6.27 Profile/MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   
 end

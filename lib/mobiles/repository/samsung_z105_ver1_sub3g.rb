@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z105_ver1'
 module Mobiles
  module Repository
-   class SamsungZ105Ver1Sub3g < SamsungZ105Ver1
+   class Samsung_z105_ver1_sub3g < Samsung_z105_ver1
 def self.user_agent
- "Mozilla/SMB3(Z105)/Samsu3G"
+ "Mozilla/SMB3(Z105)/Samsu3G".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

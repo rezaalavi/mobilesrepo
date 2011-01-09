@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_f8_ver1'
 module Mobiles
  module Repository
-   class AmoiF8Ver1Sub6227c1101 < AmoiF8Ver1
+   class Amoi_f8_ver1_sub6227c1101 < Amoi_f8_ver1
 def self.user_agent
- "Amoi-F8/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.101 (GUI) MMP/1.0"
+ "Amoi-F8/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.101 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kwc_kx444c_ver1'
 module Mobiles
  module Repository
-   class KwcKx444cVer1Sub41264 < KwcKx444cVer1
+   class Kwc_kx444c_ver1_sub41264 < Kwc_kx444c_ver1
 def self.user_agent
- "KWC-KX444c/1.0.00 UP.Browser/4.1.26l4"
+ "KWC-KX444c/1.0.00 UP.Browser/4.1.26l4".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

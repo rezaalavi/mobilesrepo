@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class FlySx205Ver1 < GenericXhtml
+   class Fly_sx205_ver1 < Generic_xhtml
 def self.user_agent
- "FLY-SX205/BSI AU.Browser/2.0 QO3C1 MMP/1.0"
+ "FLY-SX205/BSI AU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.fly-phone.ru/UAP/Fly_SX205.xml"

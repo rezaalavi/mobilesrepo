@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_p400_ver6226'
 module Mobiles
  module Repository
-   class SamsungP400Ver2Sub6233c1101 < SamsungP400Ver6226
+   class Samsung_p400_ver2_sub6233c1101 < Samsung_p400_ver6226
 def self.user_agent
- "SAMSUNG-SGH-P400/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-P400/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

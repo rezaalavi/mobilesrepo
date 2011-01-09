@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_oh2_ver1'
 module Mobiles
  module Repository
-   class AlcatelOh2Ver1Sub20 < AlcatelOh2Ver1
+   class Alcatel_oh2_ver1_sub20 < Alcatel_oh2_ver1
 def self.user_agent
- "Alcatel-OH2/1.0 ObigoInternetBrowser/2.0"
+ "Alcatel-OH2/1.0 ObigoInternetBrowser/2.0".gsub(/\a/, '\\')
 end
   
 end

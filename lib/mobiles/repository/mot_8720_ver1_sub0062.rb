@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_8720_ver1'
 module Mobiles
  module Repository
-   class Mot8720Ver1Sub0062 < Mot8720Ver1
+   class Mot_8720_ver1_sub0062 < Mot_8720_ver1
 def self.user_agent
- "MOT-8720_/00.62 UP.Browser/6.2.3.4.c.1.102 (GUI) MMP/2.0"
+ "MOT-8720_/00.62 UP.Browser/6.2.3.4.c.1.102 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

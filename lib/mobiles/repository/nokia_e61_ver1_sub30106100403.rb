@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e61_ver1'
 module Mobiles
  module Repository
-   class NokiaE61Ver1Sub30106100403 < NokiaE61Ver1
+   class Nokia_e61_ver1_sub30106100403 < Nokia_e61_ver1
 def self.user_agent
- "NokiaE61-1/1.00.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaE61-1/1.00.0 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def wifi?
   true

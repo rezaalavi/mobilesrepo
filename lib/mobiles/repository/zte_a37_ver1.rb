@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZteA37Ver1 < GenericXhtml
+   class Zte_a37_ver1 < Generic_xhtml
 def self.user_agent
- "ZTE-A37/P103B2SWV1.0.0/WAP1.2.1 Profile"
+ "ZTE-A37/P103B2SWV1.0.0/WAP1.2.1 Profile".gsub(/\a/, '\\')
 end
   def model_name
   "A37"

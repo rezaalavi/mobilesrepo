@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m330_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM330Ver1Subua < SamsungSphM330Ver1
+   class Samsung_sph_m330_ver1_subua < Samsung_sph_m330_ver1
 def self.user_agent
- "Samsung-SPHM330 Infraware-Polaris/6.1 MMP/2.0"
+ "Samsung-SPHM330 Infraware-Polaris/6.1 MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

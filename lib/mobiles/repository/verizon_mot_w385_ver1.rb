@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_w385_ver1'
 module Mobiles
  module Repository
-   class VerizonMotW385Ver1 < MotW385Ver1
+   class Verizon_mot_w385_ver1 < Mot_w385_ver1
 def self.user_agent
- "motow385"
+ "motow385".gsub(/\a/, '\\')
 end
   def model_name
   "W385m"

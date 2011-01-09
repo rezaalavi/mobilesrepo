@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6'
 module Mobiles
  module Repository
-   class GenericMsWinmo61 < GenericMsWinmo6
+   class Generic_ms_winmo6_1 < Generic_ms_winmo6
 def self.user_agent
- "DO_NOT_MATCH_WINMO_6_1"
+ "DO_NOT_MATCH_WINMO_6_1".gsub(/\a/, '\\')
 end
   def model_name
   "Windows Mobile 6.1"

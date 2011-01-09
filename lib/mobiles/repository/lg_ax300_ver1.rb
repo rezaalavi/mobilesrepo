@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ax275_ver1'
 module Mobiles
  module Repository
-   class LgAx300Ver1 < LgAx275Ver1
+   class Lg_ax300_ver1 < Lg_ax275_ver1
 def self.user_agent
- "LGE-AX300/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "LGE-AX300/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.alltel.net/uaprof/lg/ax300/ax300.xml"

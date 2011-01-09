@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_c975_ver1'
 module Mobiles
  module Repository
-   class MotC975Ver1Sub801202i < MotC975Ver1
+   class Mot_c975_ver1_sub801202i < Mot_c975_ver1
 def self.user_agent
- "MOT-C975/80.12.02I MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-C975/80.12.02I MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

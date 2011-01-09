@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SecD307Ver1 < Generic
+   class Sec_d307_ver1 < Generic
 def self.user_agent
- "SEC-SGHD307"
+ "SEC-SGHD307".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

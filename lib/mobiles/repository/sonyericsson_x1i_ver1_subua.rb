@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_x1i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonX1iVer1Subua < SonyericssonX1iVer1
+   class Sonyericsson_x1i_ver1_subua < Sonyericsson_x1i_ver1
 def self.user_agent
- "Sony Ericsson X1i/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "Sony Ericsson X1i/480x800 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   
 end

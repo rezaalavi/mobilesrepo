@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class MotAuraNevisVer1 < GenericXhtml
+   class Mot_aura_nevis_ver1 < Generic_xhtml
 def self.user_agent
- "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) MOT-Nevis/R6639_G_81.21.07R BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Mozilla/5.0 (compatible; OSS/1.0; Chameleon; Linux) MOT-Nevis/R6639_G_81.21.07R BER/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Symphony browser"

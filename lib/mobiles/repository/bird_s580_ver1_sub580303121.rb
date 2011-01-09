@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bird_s580_ver1'
 module Mobiles
  module Repository
-   class BirdS580Ver1Sub580303121 < BirdS580Ver1
+   class Bird_s580_ver1_sub580303121 < Bird_s580_ver1
 def self.user_agent
- "BIRD.S580/3.03/WAP1.2.1"
+ "BIRD.S580/3.03/WAP1.2.1".gsub(/\a/, '\\')
 end
   
 end

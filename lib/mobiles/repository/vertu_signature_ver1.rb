@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vertu_generic'
 module Mobiles
  module Repository
-   class VertuSignatureVer1 < VertuGeneric
+   class Vertu_signature_ver1 < Vertu_generic
 def self.user_agent
- "Vertu Signature/2.0 (08w31) IMEI/XXXXXXXXXXXXXXX Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Vertu Signature/2.0 (08w31) IMEI/XXXXXXXXXXXXXXX Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/NVSignaturer200.xml"

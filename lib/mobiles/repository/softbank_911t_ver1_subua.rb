@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_911t_ver1'
 module Mobiles
  module Repository
-   class Softbank911tVer1Subua < Softbank911tVer1
+   class Softbank_911t_ver1_subua < Softbank_911t_ver1
 def self.user_agent
- "SoftBank/1.0/911T/TJ002/SNXXXXXXXXXXXXXXX Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SoftBank/1.0/911T/TJ002/SNXXXXXXXXXXXXXXX Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

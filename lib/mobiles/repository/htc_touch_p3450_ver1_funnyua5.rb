@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_p3450_ver1'
 module Mobiles
  module Repository
-   class HtcTouchP3450Ver1Funnyua5 < HtcTouchP3450Ver1
+   class Htc_touch_p3450_ver1_funnyua5 < Htc_touch_p3450_ver1
 def self.user_agent
- "HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0"
+ "HTC P3450/2.20.621.1 Mozilla/4.0 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

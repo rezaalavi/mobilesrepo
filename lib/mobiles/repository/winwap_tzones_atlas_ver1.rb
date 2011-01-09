@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p4350_ver1'
 module Mobiles
  module Repository
-   class WinwapTzonesAtlasVer1 < HtcP4350Ver1
+   class Winwap_tzones_atlas_ver1 < Htc_p4350_ver1
 def self.user_agent
- "WinWAPAtlas/4.0 (Atlas 1.0.000.0; 4.0.1.68; WM; PPC; t-zones)"
+ "WinWAPAtlas/4.0 (Atlas 1.0.000.0; 4.0.1.68; WM; PPC; t-zones)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "WinWAP"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class KyoceraKz830Ver1 < GenericXhtml
+   class Kyocera_kz830_ver1 < Generic_xhtml
 def self.user_agent
- "kyocera-KZ-830/1.0 UP.Browser/4.1.27a2"
+ "kyocera-KZ-830/1.0 UP.Browser/4.1.27a2".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_sn29_ver1'
 module Mobiles
  module Repository
-   class KddiSn29Ver1Sub62062 < KddiSn29Ver1
+   class Kddi_sn29_ver1_sub62062 < Kddi_sn29_ver1
 def self.user_agent
- "KDDI-SN29 UP.Browser/6.2.0.6.2 (GUI) MMP/2.0"
+ "KDDI-SN29 UP.Browser/6.2.0.6.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

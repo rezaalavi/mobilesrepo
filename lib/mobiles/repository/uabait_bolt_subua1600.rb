@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uabait_bolt_release_0862'
 module Mobiles
  module Repository
-   class UabaitBoltSubua1600 < UabaitBoltRelease0862
+   class Uabait_bolt_subua1600 < Uabait_bolt_release_0862
 def self.user_agent
- "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17"
+ "Mozilla/5.0 (Windows; U; Windows NT 5.1; en-US; BOLT/1.600) AppleWebKit/530+ (KHTML, like Gecko) Version/4.0 Safari/530.17".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   1.6

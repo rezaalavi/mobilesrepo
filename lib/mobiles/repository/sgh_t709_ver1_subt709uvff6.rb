@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sgh_t709_ver1'
 module Mobiles
  module Repository
-   class SghT709Ver1Subt709uvff6 < SghT709Ver1
+   class Sgh_t709_ver1_subt709uvff6 < Sgh_t709_ver1
 def self.user_agent
- "SAMSUNG-SGH-T709/T709UVFF6 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-T709/T709UVFF6 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

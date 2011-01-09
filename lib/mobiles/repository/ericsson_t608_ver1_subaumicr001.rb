@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ericsson_t608_ver1'
 module Mobiles
  module Repository
-   class EricssonT608Ver1Subaumicr001 < EricssonT608Ver1
+   class Ericsson_t608_ver1_subaumicr001 < Ericsson_t608_ver1
 def self.user_agent
- "AU-MIC/2.0 MMP/2.0 SonyEricssonT608/R001"
+ "AU-MIC/2.0 MMP/2.0 SonyEricssonT608/R001".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

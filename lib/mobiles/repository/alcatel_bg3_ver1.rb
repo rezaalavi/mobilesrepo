@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_generic_v5'
 module Mobiles
  module Repository
-   class AlcatelBg3Ver1 < AlcatelGenericV5
+   class Alcatel_bg3_ver1 < Alcatel_generic_v5
 def self.user_agent
- "Alcatel-BG3"
+ "Alcatel-BG3".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www-ccpp-mpd.alcatel.com/files/ALCATEL-BG3_1.0.rdf"

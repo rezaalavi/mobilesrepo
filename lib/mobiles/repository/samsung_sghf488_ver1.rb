@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SamsungSghf488Ver1 < GenericNetfrontVer34
+   class Samsung_sghf488_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "SAMSUNG-SGH-F488/1.0 SHP/VPP/R5 NetFront/3.4 Qtv/5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-F488/1.0 SHP/VPP/R5 NetFront/3.4 Qtv/5.3 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def device_os
   ""

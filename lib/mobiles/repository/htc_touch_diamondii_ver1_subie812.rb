@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_diamondii_ver1'
 module Mobiles
  module Repository
-   class HtcTouchDiamondiiVer1Subie812 < HtcTouchDiamondiiVer1
+   class Htc_touch_diamondii_ver1_subie812 < Htc_touch_diamondii_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.29.164.1 (44865)"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) Vodafone/1.0/HTC_Touch_Diamond2/1.29.164.1 (44865)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   8.12

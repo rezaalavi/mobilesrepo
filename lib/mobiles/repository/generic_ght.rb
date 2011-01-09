@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class GenericGht < GenericXhtml
+   class Generic_ght < Generic_xhtml
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_GHT"
+ "DO_NOT_MATCH_GENERIC_GHT".gsub(/\a/, '\\')
 end
   def device_os
   "MTK/Nucleus OS"

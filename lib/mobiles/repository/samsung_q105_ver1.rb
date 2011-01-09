@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SamsungQ105Ver1 < UptextGeneric
+   class Samsung_q105_ver1 < Uptext_generic
 def self.user_agent
- "SEC-SGHQ105"
+ "SEC-SGHQ105".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-Q105"

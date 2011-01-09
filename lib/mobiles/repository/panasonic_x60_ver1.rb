@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class PanasonicX60Ver1 < Generic
+   class Panasonic_x60_ver1 < Generic
 def self.user_agent
- "Panasonic-X60"
+ "Panasonic-X60".gsub(/\a/, '\\')
 end
   def uaprof
   "http://mobileinternet.panasonicbox.com/UAprof/X60/R1.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kg300j_ver1'
 module Mobiles
  module Repository
-   class LgKg300Ver1 < LgKg300jVer1
+   class Lg_kg300_ver1 < Lg_kg300j_ver1
 def self.user_agent
- "LG-KG300/V01 Obigo/WAP2.0"
+ "LG-KG300/V01 Obigo/WAP2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KG300.xml"

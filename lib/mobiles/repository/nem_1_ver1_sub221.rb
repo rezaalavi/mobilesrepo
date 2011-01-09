@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nem_1_ver1'
 module Mobiles
  module Repository
-   class Nem1Ver1Sub221 < Nem1Ver1
+   class Nem_1_ver1_sub221 < Nem_1_ver1
 def self.user_agent
- "NEM-1/1.0 (2.21) Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "NEM-1/1.0 (2.21) Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

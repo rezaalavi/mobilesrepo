@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_e1_ver1'
 module Mobiles
  module Repository
-   class MotE1Ver1Subitunes < MotE1Ver1
+   class Mot_e1_ver1_subitunes < Mot_e1_ver1
 def self.user_agent
- "MOT-E1 iTunes"
+ "MOT-E1 iTunes".gsub(/\a/, '\\')
 end
   def model_name
   "E1"

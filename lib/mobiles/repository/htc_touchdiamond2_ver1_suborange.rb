@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touchdiamond2_ver1'
 module Mobiles
  module Repository
-   class HtcTouchdiamond2Ver1Suborange < HtcTouchdiamond2Ver1
+   class Htc_touchdiamond2_ver1_suborange < Htc_touchdiamond2_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.15.752"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 8.12; MSIEMobile 6.0) PPC; 480x800; HTC_Touch_Diamond2_T5353-Orange; OpVer 93.172.15.752".gsub(/\a/, '\\')
 end
   
 end

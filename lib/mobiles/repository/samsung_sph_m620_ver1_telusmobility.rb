@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sph_m620_ver1'
 module Mobiles
  module Repository
-   class SamsungSphM620Ver1Telusmobility < SamsungSphM620Ver1
+   class Samsung_sph_m620_ver1_telusmobility < Samsung_sph_m620_ver1
 def self.user_agent
- "SPH-M620/1.0 AU-MIC/2.0 (GUI) MMP/2.0"
+ "SPH-M620/1.0 AU-MIC/2.0 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def columns
   16

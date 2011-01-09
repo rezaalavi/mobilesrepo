@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_s8500_ver1'
 module Mobiles
  module Repository
-   class SamsungGtS8500Ver1Subr < SamsungGtS8500Ver1
+   class Samsung_gt_s8500_ver1_subr < Samsung_gt_s8500_ver1
 def self.user_agent
- "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500R/1.0; U; Bada/1.0; en-ca) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B"
+ "Mozilla/5.0 (SAMSUNG; SAMSUNG-GT-S8500R/1.0; U; Bada/1.0; en-ca) AppleWebKit/533.1 (KHTML, like Gecko) Dolfin/2.0 Mobile WVGA SMM-MMS/1.2.0 OPN-B".gsub(/\a/, '\\')
 end
   
 end

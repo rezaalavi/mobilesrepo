@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class LenovoI906Ver1 < OpwvV62Generic
+   class Lenovo_i906_ver1 < Opwv_v62_generic
 def self.user_agent
- "Lenovo-i906/S134 Release/2007.10.11 Profile/MIDP2.0 Configuration/CLDC1.1"
+ "Lenovo-i906/S134 Release/2007.10.11 Profile/MIDP2.0 Configuration/CLDC1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.lenovomobile.com/admin/module/product/DownFile/download_2007736634847.xml"

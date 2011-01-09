@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/inq_inq1_ver1'
 module Mobiles
  module Repository
-   class InqInq1Ver1Subr391 < InqInq1Ver1
+   class Inq_inq1_ver1_subr391 < Inq_inq1_ver1
 def self.user_agent
- "INQ1/R3.9.1 NF-Browser/3.5"
+ "INQ1/R3.9.1 NF-Browser/3.5".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.inqmobile.com/ua/inq1.xml"

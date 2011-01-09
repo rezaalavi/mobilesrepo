@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class NokiaGeneric < Generic
+   class Nokia_generic < Generic
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_NOKIA"
+ "DO_NOT_MATCH_GENERIC_NOKIA".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_d900_ver1'
 module Mobiles
  module Repository
-   class SamsungSghD900iVer1 < SamsungSghD900Ver1
+   class Samsung_sgh_d900i_ver1 < Samsung_sgh_d900_ver1
 def self.user_agent
- "SAMSUNG-SGH-D900i"
+ "SAMSUNG-SGH-D900i".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-D900i.xml"

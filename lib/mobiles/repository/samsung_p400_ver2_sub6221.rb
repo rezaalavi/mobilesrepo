@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_p400_ver6226'
 module Mobiles
  module Repository
-   class SamsungP400Ver2Sub6221 < SamsungP400Ver6226
+   class Samsung_p400_ver2_sub6221 < Samsung_p400_ver6226
 def self.user_agent
- "SEC-SGHP400/1.0 UP.Browser/6.2.2.1 (GUI) MMP/1.0"
+ "SEC-SGHP400/1.0 UP.Browser/6.2.2.1 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_568_ver1'
 module Mobiles
  module Repository
-   class Philips568Ver1Sub61078 < Philips568Ver1
+   class Philips_568_ver1_sub61078 < Philips_568_ver1
 def self.user_agent
- "PHILIPS568/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0"
+ "PHILIPS568/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

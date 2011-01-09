@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry8530_ver1'
 module Mobiles
  module Repository
-   class VerizonBlackberry8530Ver1 < Blackberry8530Ver1
+   class Verizon_blackberry8530_ver1 < Blackberry8530_ver1
 def self.user_agent
- "rim8530"
+ "rim8530".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Verizon Wireless"

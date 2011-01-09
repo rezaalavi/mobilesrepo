@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v6_generic'
 module Mobiles
  module Repository
-   class BenqS82Ver1 < OpwvV6Generic
+   class Benq_s82_ver1 < Opwv_v6_generic
 def self.user_agent
- "BenQ-S82"
+ "BenQ-S82".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uap.benq.com/mb_s82/benq_S82_voda_2g.xml"

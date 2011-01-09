@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_dm510_ver1'
 module Mobiles
  module Repository
-   class LgeDm510Ver1Sub4121 < LgeDm510Ver1
+   class Lge_dm510_ver1_sub4121 < Lge_dm510_ver1
 def self.user_agent
- "LGE-DM510/1.0 UP/4.1.21a"
+ "LGE-DM510/1.0 UP/4.1.21a".gsub(/\a/, '\\')
 end
   
 end

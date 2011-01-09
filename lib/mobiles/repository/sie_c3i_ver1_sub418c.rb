@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_c3i_ver1'
 module Mobiles
  module Repository
-   class SieC3iVer1Sub418c < SieC3iVer1
+   class Sie_c3i_ver1_sub418c < Sie_c3i_ver1
 def self.user_agent
- "SIE-C3I/1.0 UP/4.1.8c"
+ "SIE-C3I/1.0 UP/4.1.8c".gsub(/\a/, '\\')
 end
   
 end

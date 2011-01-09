@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_e50_ver1'
 module Mobiles
  module Repository
-   class NokiaE50Ver1Sub300736030 < NokiaE50Ver1
+   class Nokia_e50_ver1_sub300736030 < Nokia_e50_ver1
 def self.user_agent
- "NokiaE50-2/3.0 (07.36.0.30) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NokiaE50-2/3.0 (07.36.0.30) SymbianOS/9.1 Series60/3.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/NE50-1r100.xml"

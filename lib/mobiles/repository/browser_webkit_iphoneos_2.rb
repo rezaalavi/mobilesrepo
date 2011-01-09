@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_webkit_iphoneos_1'
 module Mobiles
  module Repository
-   class BrowserWebkitIphoneos2 < BrowserWebkitIphoneos1
+   class Browser_webkit_iphoneos_2 < Browser_webkit_iphoneos_1
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_WEBKIT_IPHONEOS_2"
+ "DO_NOT_MATCH_BROWSER_WEBKIT_IPHONEOS_2".gsub(/\a/, '\\')
 end
   def mobile_browser
   "WebKit/iPhone"

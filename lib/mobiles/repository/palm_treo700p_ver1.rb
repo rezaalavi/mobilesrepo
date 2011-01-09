@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upg1_ver1_subblazer40'
 module Mobiles
  module Repository
-   class PalmTreo700pVer1 < Upg1Ver1Subblazer40
+   class Palm_treo700p_ver1 < Upg1_ver1_subblazer40
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D052; Blazer/4.5) 16;320x320"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-D052; Blazer/4.5) 16;320x320".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Palm"

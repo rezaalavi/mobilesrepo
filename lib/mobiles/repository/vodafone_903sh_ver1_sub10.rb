@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_903sh_ver1'
 module Mobiles
  module Repository
-   class Vodafone903shVer1Sub10 < Softbank903shVer1
+   class Vodafone_903sh_ver1_sub10 < Softbank_903sh_ver1
 def self.user_agent
- "Vodafone/1.0/903SH"
+ "Vodafone/1.0/903SH".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

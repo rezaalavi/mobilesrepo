@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_c905_ver1'
 module Mobiles
  module Repository
-   class SonyericssonC905vVer1 < SonyericssonC905Ver1
+   class Sonyericsson_c905v_ver1 < Sonyericsson_c905_ver1
 def self.user_agent
- "Mozilla/4.0 SonyEricssonC905v/R1AA Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Mozilla/4.0 SonyEricssonC905v/R1AA Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/C905R101.xml"

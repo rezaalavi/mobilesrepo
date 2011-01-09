@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n96_ver1'
 module Mobiles
  module Repository
-   class NokiaN96Ver1sub1110 < NokiaN96Ver1
+   class Nokia_n96_ver1sub1110 < Nokia_n96_ver1
 def self.user_agent
- "NokiaN96-1/11.0 (11.101) SymbianOS/9.3 Series60/3.2 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "NokiaN96-1/11.0 (11.101) SymbianOS/9.3 Series60/3.2 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

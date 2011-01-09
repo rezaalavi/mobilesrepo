@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class AmoiS6Ver1 < UpguiGeneric
+   class Amoi_s6_ver1 < Upgui_generic
 def self.user_agent
- "Amoi-S6"
+ "Amoi-S6".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.amobile.com.cn/ua/S6.xml"

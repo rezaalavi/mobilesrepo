@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/danger_hiptop_ver4'
 module Mobiles
  module Repository
-   class DangerHiptopVer4Sub40 < DangerHiptopVer4
+   class Danger_hiptop_ver4_sub40 < Danger_hiptop_ver4
 def self.user_agent
- "Mozilla/5.0 (Danger hiptop 4.102; U; AvantGo 3.2)"
+ "Mozilla/5.0 (Danger hiptop 4.102; U; AvantGo 3.2)".gsub(/\a/, '\\')
 end
   
 end

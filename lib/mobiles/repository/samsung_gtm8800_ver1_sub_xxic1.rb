@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gtm8800_ver1'
 module Mobiles
  module Repository
-   class SamsungGtm8800Ver1SubXxic1 < SamsungGtm8800Ver1
+   class Samsung_gtm8800_ver1_sub_xxic1 < Samsung_gtm8800_ver1
 def self.user_agent
- "SAMSUNG-GT-M8800/M880BXXIC1 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-M8800/M880BXXIC1 SHP/VPP/R5 Jasmine/0.8 Qtv5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Dolfin/Jasmine Webkit"

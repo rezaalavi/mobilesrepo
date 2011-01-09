@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z720mv_ver1'
 module Mobiles
  module Repository
-   class SamsungZ720mvVer1Subbugb6 < SamsungZ720mvVer1
+   class Samsung_z720mv_ver1_subbugb6 < Samsung_z720mv_ver1
 def self.user_agent
- "SAMSUNG-SGH-Z720M-Vodafone/BUGB6 SHP/VPP/R5 NetFront/3.3 SMM-MMS/ 1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-Z720M-Vodafone/BUGB6 SHP/VPP/R5 NetFront/3.3 SMM-MMS/ 1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

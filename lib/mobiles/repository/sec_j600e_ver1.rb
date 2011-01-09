@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_j600_ver1'
 module Mobiles
  module Repository
-   class SecJ600eVer1 < SecJ600Ver1
+   class Sec_j600e_ver1 < Sec_j600_ver1
 def self.user_agent
- "SEC-SGHJ600E"
+ "SEC-SGHJ600E".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/j600e_11.xml"

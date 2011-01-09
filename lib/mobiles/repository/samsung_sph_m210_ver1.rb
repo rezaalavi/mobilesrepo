@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SamsungSphM210Ver1 < OpwvV62Generic
+   class Samsung_sph_m210_ver1 < Opwv_v62_generic
 def self.user_agent
- "SPH-M210/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "SPH-M210/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.telusmobility.com/samsung/sphm210-0.rdf"

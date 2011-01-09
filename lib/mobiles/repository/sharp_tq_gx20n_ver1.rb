@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_tqgx20_ver1'
 module Mobiles
  module Repository
-   class SharpTqGx20nVer1 < SharpTqgx20Ver1
+   class Sharp_tq_gx20n_ver1 < Sharp_tqgx20_ver1
 def self.user_agent
- "SHARP-TQ-GX20N"
+ "SHARP-TQ-GX20N".gsub(/\a/, '\\')
 end
   def model_name
   "TQ-GX20N"

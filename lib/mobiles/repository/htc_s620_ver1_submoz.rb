@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_s620_ver1'
 module Mobiles
  module Repository
-   class HtcS620Ver1Submoz < HtcS620Ver1
+   class Htc_s620_ver1_submoz < Htc_s620_ver1
 def self.user_agent
- "HTCS620-Mozilla/4.0"
+ "HTCS620-Mozilla/4.0".gsub(/\a/, '\\')
 end
   def model_name
   "S620"

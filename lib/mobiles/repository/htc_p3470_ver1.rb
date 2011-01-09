@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_pharos_ver1'
 module Mobiles
  module Repository
-   class HtcP3470Ver1 < HtcPharosVer1
+   class Htc_p3470_ver1 < Htc_pharos_ver1
 def self.user_agent
- "HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)"
+ "HTC_P3470 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

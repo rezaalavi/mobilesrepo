@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_c650_ver1'
 module Mobiles
  module Repository
-   class MotC650Ver1Submotoe398 < MotC650Ver1
+   class Mot_c650_ver1_submotoe398 < Mot_c650_ver1
 def self.user_agent
- "MOT- E 398/0B.D2.32R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "MOT- E 398/0B.D2.32R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

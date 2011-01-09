@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_excalibur_ver1'
 module Mobiles
  module Repository
-   class DopodC720Ver1 < HtcExcaliburVer1
+   class Dopod_c720_ver1 < Htc_excalibur_ver1
 def self.user_agent
- "dopod C720/5.1.342/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)"
+ "dopod C720/5.1.342/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone)".gsub(/\a/, '\\')
 end
   def playback_mp4?
   true

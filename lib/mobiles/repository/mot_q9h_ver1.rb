@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6'
 module Mobiles
  module Repository
-   class MotQ9hVer1 < GenericMsWinmo6
+   class Mot_q9h_ver1 < Generic_ms_winmo6
 def self.user_agent
- "MOT-Q9/01.02.22R Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320) Opera 8.65"
+ "MOT-Q9/01.02.22R Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 240x320) Opera 8.65".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

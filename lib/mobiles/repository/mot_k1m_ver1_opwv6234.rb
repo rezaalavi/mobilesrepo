@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_k1m_ver1'
 module Mobiles
  module Repository
-   class MotK1mVer1Opwv6234 < MotK1mVer1
+   class Mot_k1m_ver1_opwv6234 < Mot_k1m_ver1
 def self.user_agent
- "MOT-K1m/1.0 UP.Browser/6.2.3.4.c.1.116 (GUI) MMP/2.0"
+ "MOT-K1m/1.0 UP.Browser/6.2.3.4.c.1.116 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def columns
   7

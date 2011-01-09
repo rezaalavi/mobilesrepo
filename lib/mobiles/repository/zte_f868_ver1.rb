@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZteF868Ver1 < GenericXhtml
+   class Zte_f868_ver1 < Generic_xhtml
 def self.user_agent
- "ZTE F868/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "ZTE F868/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "F868"

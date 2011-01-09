@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_cu6160_ver1'
 module Mobiles
  module Repository
-   class LgCu6160Ver1Sub4126 < LgCu6160Ver1
+   class Lg_cu6160_ver1_sub4126 < Lg_cu6160_ver1
 def self.user_agent
- "LG-CU6160/1.0 UP.Browser/4.1.26l"
+ "LG-CU6160/1.0 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

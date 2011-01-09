@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class AlcatelTh4Ver1Obigo < Generic
+   class Alcatel_th4_ver1_obigo < Generic
 def self.user_agent
- "Alcatel-TH4/1.0 ObigoInternetBrowser/2.0"
+ "Alcatel-TH4/1.0 ObigoInternetBrowser/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

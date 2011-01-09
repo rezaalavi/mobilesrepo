@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t620_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT620Ver1Subr301 < SonyericssonT620Ver1
+   class Sonyericsson_t620_ver1_subr301 < Sonyericsson_t620_ver1
 def self.user_agent
- "SonyEricssonT620/R301 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "SonyEricssonT620/R301 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

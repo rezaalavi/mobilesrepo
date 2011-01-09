@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class AudiovoxCdm8615Ver1 < OpwvV62Generic
+   class Audiovox_cdm8615_ver1 < Opwv_v62_generic
 def self.user_agent
- "AUDIOVOX-CDM8615 UP.Browser/6.2.3.1 (GUI) MMP/2.0"
+ "AUDIOVOX-CDM8615 UP.Browser/6.2.3.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.pocket.com/phone_data/CDM8615.xml"

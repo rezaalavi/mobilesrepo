@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_c908_ver1'
 module Mobiles
  module Repository
-   class ZteC908Ver1Sub4127a2 < ZteC908Ver1
+   class Zte_c908_ver1_sub4127a2 < Zte_c908_ver1
 def self.user_agent
- "ZTE-C908/1.0 UP.Browser/4.1.27a2"
+ "ZTE-C908/1.0 UP.Browser/4.1.27a2".gsub(/\a/, '\\')
 end
   
 end

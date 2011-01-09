@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e315_ver1'
 module Mobiles
  module Repository
-   class SecE315Ver1sub01 < SecE315Ver1
+   class Sec_e315_ver1sub01 < Sec_e315_ver1
 def self.user_agent
- "SEC-SGHE315-E315UVDH1-TSS1.01"
+ "SEC-SGHE315-E315UVDH1-TSS1.01".gsub(/\a/, '\\')
 end
   
 end

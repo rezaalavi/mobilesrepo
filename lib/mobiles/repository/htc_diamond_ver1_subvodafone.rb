@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_diamond_ver1'
 module Mobiles
  module Repository
-   class HtcDiamondVer1Subvodafone < HtcDiamondVer1
+   class Htc_diamond_ver1_subvodafone < Htc_diamond_ver1
 def self.user_agent
- "Vodafone/1.0/HTC_Diamond/1.93.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)"
+ "Vodafone/1.0/HTC_Diamond/1.93.164.1 Opera/9.50 (Windows NT 5.1; U; es-ES)".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Vodafone"

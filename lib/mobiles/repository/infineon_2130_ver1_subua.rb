@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/infineon_2130_ver1'
 module Mobiles
  module Repository
-   class Infineon2130Ver1Subua < Infineon2130Ver1
+   class Infineon_2130_ver1_subua < Infineon_2130_ver1
 def self.user_agent
- "Infineon (XMM2130;profile/MIDP-2.1 Configuration/CLDC-1.1) WAP_JB/5.0"
+ "Infineon (XMM2130;profile/MIDP-2.1 Configuration/CLDC-1.1) WAP_JB/5.0".gsub(/\a/, '\\')
 end
   def j2me_midp_2_0?
   true

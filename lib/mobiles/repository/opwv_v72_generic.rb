@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class OpwvV72Generic < OpwvV7Generic
+   class Opwv_v72_generic < Opwv_v7_generic
 def self.user_agent
- "DO_NOT_MATCH_UP.Browser/7.2"
+ "DO_NOT_MATCH_UP.Browser/7.2".gsub(/\a/, '\\')
 end
   def xhtml_support_level
   4

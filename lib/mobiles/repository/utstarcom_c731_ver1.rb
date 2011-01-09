@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class UtstarcomC731Ver1 < OpwvV7Generic
+   class Utstarcom_c731_ver1 < Opwv_v7_generic
 def self.user_agent
- "pcdc731"
+ "pcdc731".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vtext.com/pcd/c731/c731.xml"

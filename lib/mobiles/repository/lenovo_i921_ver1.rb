@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class LenovoI921Ver1 < GenericMsWinmo5
+   class Lenovo_i921_ver1 < Generic_ms_winmo5
 def self.user_agent
- "LENOVO-i921/240A"
+ "LENOVO-i921/240A".gsub(/\a/, '\\')
 end
   def model_name
   "i921"

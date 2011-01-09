@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/softbank_930ca_ver1'
 module Mobiles
  module Repository
-   class Softbank930caVer1Subua < Softbank930caVer1
+   class Softbank_930ca_ver1_subua < Softbank_930ca_ver1
 def self.user_agent
- "SoftBank/1.0/930CA/CAJ002/SNXXXXXXXXXXXXXXX Browser/NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SoftBank/1.0/930CA/CAJ002/SNXXXXXXXXXXXXXXX Browser/NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

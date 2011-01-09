@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_x660_ver1'
 module Mobiles
  module Repository
-   class SamsungX660vVer1 < SamsungX660Ver1
+   class Samsung_x660v_ver1 < Samsung_x660_ver1
 def self.user_agent
- "SAMSUNG-SGH-X660V"
+ "SAMSUNG-SGH-X660V".gsub(/\a/, '\\')
 end
   def model_name
   "SGH X660"

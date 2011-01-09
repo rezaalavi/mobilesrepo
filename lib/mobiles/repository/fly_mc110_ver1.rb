@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class FlyMc110Ver1 < GenericXhtml
+   class Fly_mc110_ver1 < Generic_xhtml
 def self.user_agent
- "Fly MC110/1.0 RTKE_OS/01.00 SS5210/8.0 Release/12.31.2007 Browser/Techsoft-01.00.00 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Fly MC110/1.0 RTKE_OS/01.00 SS5210/8.0 Release/12.31.2007 Browser/Techsoft-01.00.00 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

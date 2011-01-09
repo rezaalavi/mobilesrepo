@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_q9h_ver1'
 module Mobiles
  module Repository
-   class MotQ9hVer1Sub010608rr < MotQ9hVer1
+   class Mot_q9h_ver1_sub010608rr < Mot_q9h_ver1
 def self.user_agent
- "MOT-Q9 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 320x240/01.06.08R) Opera 8.65 [en]"
+ "MOT-Q9 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; Smartphone; 320x240/01.06.08R) Opera 8.65 [en]".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.motorola.com/phoneconfig/q-umts/Profile/mot-q9h.rdf"

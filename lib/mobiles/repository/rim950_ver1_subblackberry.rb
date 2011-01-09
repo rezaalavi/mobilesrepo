@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/rim950_ver1'
 module Mobiles
  module Repository
-   class Rim950Ver1Subblackberry < Rim950Ver1
+   class Rim950_ver1_subblackberry < Rim950_ver1
 def self.user_agent
- "BlackBerry/2.5 (950)"
+ "BlackBerry/2.5 (950)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n91_ver1'
 module Mobiles
  module Repository
-   class NokiaN91Ver1Submoz < NokiaN91Ver1
+   class Nokia_n91_ver1_submoz < Nokia_n91_ver1
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.1; U; [en]; SymbianOS/9.1 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.1; U; [en]; SymbianOS/9.1 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def wifi?
   true

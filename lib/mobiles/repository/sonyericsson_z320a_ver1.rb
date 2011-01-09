@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_z320i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonZ320aVer1 < SonyericssonZ320iVer1
+   class Sonyericsson_z320a_ver1 < Sonyericsson_z320i_ver1
 def self.user_agent
- "SonyEricssonZ320a/R1C003 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonZ320a/R1C003 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/Z320aR101.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mg610c_ver1'
 module Mobiles
  module Repository
-   class LgMg610cVer1Submic < LgMg610cVer1
+   class Lg_mg610c_ver1_submic < Lg_mg610c_ver1
 def self.user_agent
- "LG-MG610c MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-MG610c MIC/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

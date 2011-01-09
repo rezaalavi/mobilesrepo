@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t650i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT700Ver1 < SonyericssonT650iVer1
+   class Sonyericsson_t700_ver1 < Sonyericsson_t650i_ver1
 def self.user_agent
- "SonyEricssonT700/R3DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.2"
+ "SonyEricssonT700/R3DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.2".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.4

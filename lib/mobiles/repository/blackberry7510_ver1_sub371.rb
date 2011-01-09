@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry7510_ver1'
 module Mobiles
  module Repository
-   class Blackberry7510Ver1Sub371 < Blackberry7510Ver1
+   class Blackberry7510_ver1_sub371 < Blackberry7510_ver1
 def self.user_agent
- "BlackBerry7510/3.7.1"
+ "BlackBerry7510/3.7.1".gsub(/\a/, '\\')
 end
   
 end

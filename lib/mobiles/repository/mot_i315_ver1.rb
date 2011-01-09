@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class MotI315Ver1 < UptextGeneric
+   class Mot_i315_ver1 < Uptext_generic
 def self.user_agent
- "MOT-A-1B"
+ "MOT-A-1B".gsub(/\a/, '\\')
 end
   def model_name
   "i315"

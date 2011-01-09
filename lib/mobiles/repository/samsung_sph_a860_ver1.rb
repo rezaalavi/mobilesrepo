@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SamsungSphA860Ver1 < GenericXhtml
+   class Samsung_sph_a860_ver1 < Generic_xhtml
 def self.user_agent
- "Samsung-SPHA860 AU-MIC/2.0 MMP/2.0"
+ "Samsung-SPHA860 AU-MIC/2.0 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/BMC_Samsung_SPH-A860_YF02.rdf"

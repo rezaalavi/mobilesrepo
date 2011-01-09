@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mitsu_mt330_ver1'
 module Mobiles
  module Repository
-   class MitsuM172Ver1 < MitsuMt330Ver1
+   class Mitsu_m172_ver1 < Mitsu_mt330_ver1
 def self.user_agent
- "Mitsu/1.3.A (M172)"
+ "Mitsu/1.3.A (M172)".gsub(/\a/, '\\')
 end
   def model_name
   "M172"

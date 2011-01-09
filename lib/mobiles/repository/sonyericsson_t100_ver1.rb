@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ericsson_generic'
 module Mobiles
  module Repository
-   class SonyericssonT100Ver1 < EricssonGeneric
+   class Sonyericsson_t100_ver1 < Ericsson_generic
 def self.user_agent
- "SonyEricssonT100"
+ "SonyEricssonT100".gsub(/\a/, '\\')
 end
   def model_name
   "T100"

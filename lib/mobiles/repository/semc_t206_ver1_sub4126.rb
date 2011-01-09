@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/semc_t206_ver1'
 module Mobiles
  module Repository
-   class SemcT206Ver1Sub4126 < SemcT206Ver1
+   class Semc_t206_ver1_sub4126 < Semc_t206_ver1
 def self.user_agent
- "SEMC-T206/R3A UP.Browser/4.1.26l"
+ "SEMC-T206/R3A UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

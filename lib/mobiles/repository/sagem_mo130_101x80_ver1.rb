@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class SagemMo130101x80Ver1 < UpguiGeneric
+   class Sagem_mo130_101x80_ver1 < Upgui_generic
 def self.user_agent
- "SAGEM-MO130-101x80"
+ "SAGEM-MO130-101x80".gsub(/\a/, '\\')
 end
   
 end

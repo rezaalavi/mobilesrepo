@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/audiovox_smt5600_ver1'
 module Mobiles
  module Repository
-   class AudiovoxSmt5600Ver1Sub17622012 < AudiovoxSmt5600Ver1
+   class Audiovox_smt5600_ver1_sub176220_12 < Audiovox_smt5600_ver1
 def self.user_agent
- "AUDIOVOX-SMT5600/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)"
+ "AUDIOVOX-SMT5600/1.2 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

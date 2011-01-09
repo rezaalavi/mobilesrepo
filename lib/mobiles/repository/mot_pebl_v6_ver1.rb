@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_pebl_ver1'
 module Mobiles
  module Repository
-   class MotPeblV6Ver1 < MotPeblVer1
+   class Mot_pebl_v6_ver1 < Mot_pebl_ver1
 def self.user_agent
- "MOT-PEBL V6"
+ "MOT-PEBL V6".gsub(/\a/, '\\')
 end
   def model_name
   "PEBL V6"

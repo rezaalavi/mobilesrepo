@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class MotPan4Ver1 < UptextGeneric
+   class Mot_pan4_ver1 < Uptext_generic
 def self.user_agent
- "MOT-PAN4_/11 UP.Browser/4"
+ "MOT-PAN4_/11 UP.Browser/4".gsub(/\a/, '\\')
 end
   def model_name
   "T280"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_a920_ver1'
 module Mobiles
  module Repository
-   class SamsungA920Ver1Submidp < SamsungA920Ver1
+   class Samsung_a920_ver1_submidp < Samsung_a920_ver1
 def self.user_agent
- "Samsung-SPHA920 AU-MIC-A920/2.0 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Samsung-SPHA920 AU-MIC-A920/2.0 MMP/2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

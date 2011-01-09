@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n81_ver1_sub1110045'
 module Mobiles
  module Repository
-   class NokiaN81Ver1Sub8gbFl3 < NokiaN81Ver1Sub1110045
+   class Nokia_n81_ver1_sub_8gb_fl3 < Nokia_n81_ver1_sub1110045
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-1/21.0.010 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.2; U; Series60/3.1 NokiaN81-1/21.0.010 Profile/MIDP-2.0 Configuration/CLDC-1.1 ) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds.nokia.com/uaprof/NN81-3r100.xml"

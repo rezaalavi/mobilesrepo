@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/hisense_c3698_ver1'
 module Mobiles
  module Repository
-   class HisenseC3698Ver1Sub4126 < HisenseC3698Ver1
+   class Hisense_c3698_ver1_sub4126 < Hisense_c3698_ver1
 def self.user_agent
- "HS-C3698/0.1 UP.Browser/4.1.26m"
+ "HS-C3698/0.1 UP.Browser/4.1.26m".gsub(/\a/, '\\')
 end
   
 end

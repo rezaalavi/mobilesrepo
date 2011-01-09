@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_x460c_ver1'
 module Mobiles
  module Repository
-   class SamsungX460cVer1Sub10 < SamsungX460cVer1
+   class Samsung_x460c_ver1_sub10 < Samsung_x460c_ver1
 def self.user_agent
- "SAMSUNG-SGH-X460C/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0"
+ "SAMSUNG-SGH-X460C/1.0 UP.Browser/6.1.0.6 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

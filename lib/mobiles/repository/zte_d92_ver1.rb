@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/zte_d90_ver1'
 module Mobiles
  module Repository
-   class ZteD92Ver1 < ZteD90Ver1
+   class Zte_d92_ver1 < Zte_d90_ver1
 def self.user_agent
- "ZTE-D92/1.0 SMIT-Browser/2.0.0"
+ "ZTE-D92/1.0 SMIT-Browser/2.0.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.telusmobility.com/zte/ZTED92-0.rdf"

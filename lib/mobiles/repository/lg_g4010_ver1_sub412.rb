@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g4010_ver1'
 module Mobiles
  module Repository
-   class LgG4010Ver1Sub412 < LgG4010Ver1
+   class Lg_g4010_ver1_sub412 < Lg_g4010_ver1
 def self.user_agent
- "LG-G4010 AU/4.12"
+ "LG-G4010 AU/4.12".gsub(/\a/, '\\')
 end
   
 end

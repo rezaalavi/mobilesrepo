@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/goweb_ver1'
 module Mobiles
  module Repository
-   class GowebVer1Sub957 < GowebVer1
+   class Goweb_ver1_sub957 < Goweb_ver1
 def self.user_agent
- "Go.Web/1.1 (compatible; HandHTTP 1.1; Mozilla/1.0; RIM957)"
+ "Go.Web/1.1 (compatible; HandHTTP 1.1; Mozilla/1.0; RIM957)".gsub(/\a/, '\\')
 end
   
 end

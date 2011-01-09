@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_5'
 module Mobiles
  module Repository
-   class SanyoScp6760Ver1 < GenericNetfrontVer35
+   class Sanyo_scp6760_ver1 < Generic_netfront_ver3_5
 def self.user_agent
- "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760"
+ "Mozilla/4.0 (BREW 3.1.5; U; en-us; Sanyo; NetFront/3.5.1/AMB) Boost SCP6760".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

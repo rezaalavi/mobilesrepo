@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class TclE300Ver1 < GenericXhtml
+   class Tcl_e300_ver1 < Generic_xhtml
 def self.user_agent
- "TCL-e300/w05.44.08/WAP-2.0/MIDP-2.0 Configuration/CLDC-1.0"
+ "TCL-e300/w05.44.08/WAP-2.0/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

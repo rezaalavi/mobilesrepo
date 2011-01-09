@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_x450_ver1'
 module Mobiles
  module Repository
-   class SecX458Ver1 < SecX450Ver1
+   class Sec_x458_ver1 < Sec_x450_ver1
 def self.user_agent
- "SEC-SGHX458"
+ "SEC-SGHX458".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/x458.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sch_a645_ver1'
 module Mobiles
  module Repository
-   class SamsungSchA645Ver1Sub10 < SamsungSchA645Ver1
+   class Samsung_sch_a645_ver1_sub10 < Samsung_sch_a645_ver1
 def self.user_agent
- "SCH-A645/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "SCH-A645/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

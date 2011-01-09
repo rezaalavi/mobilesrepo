@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_polaris_5'
 module Mobiles
  module Repository
-   class Lg260Ver1 < GenericPolaris5
+   class Lg_260_ver1 < Generic_polaris_5
 def self.user_agent
- "LGE-LG260 POLARIS-LG260/2.0(GUI) MMP/2.0"
+ "LGE-LG260 POLARIS-LG260/2.0(GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

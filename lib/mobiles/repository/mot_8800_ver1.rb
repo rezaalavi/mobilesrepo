@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class Mot8800Ver1 < OpwvV62Generic
+   class Mot_8800_ver1 < Opwv_v62_generic
 def self.user_agent
- "MOT-8800_"
+ "MOT-8800_".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vtext.com/mot/a840/a840v1.xml"

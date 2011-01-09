@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_sx1_ver1_subopwv'
 module Mobiles
  module Repository
-   class SieSx1Ver1Sub7001132 < SieSx1Ver1Subopwv
+   class Sie_sx1_ver1_sub7001132 < Sie_sx1_ver1_subopwv
 def self.user_agent
- "SIE-SX1/00 UP.Browser/7.0.0.1.132 (GUI) MMP/2.0"
+ "SIE-SX1/00 UP.Browser/7.0.0.1.132 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

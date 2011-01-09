@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w200i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW200aVer1 < SonyericssonW200iVer1
+   class Sonyericsson_w200a_ver1 < Sonyericsson_w200i_ver1
 def self.user_agent
- "SonyEricssonW200a/R4JA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonW200a/R4JA Browser/NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/W200aR301.xml"

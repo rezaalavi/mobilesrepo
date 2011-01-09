@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_ipod_touch_ver3_1_3'
 module Mobiles
  module Repository
-   class AppleIpodTouchVer4 < AppleIpodTouchVer313
+   class Apple_ipod_touch_ver4 < Apple_ipod_touch_ver3_1_3
 def self.user_agent
- "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko)"
+ "Mozilla/5.0 (iPod; U; CPU iPhone OS 4_0 like Mac OS X; en-us) AppleWebKit/532.9 (KHTML, like Gecko)".gsub(/\a/, '\\')
 end
   def device_os_version
   4.0

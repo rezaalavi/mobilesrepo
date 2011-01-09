@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class NecN6206Ver1 < GenericXhtml
+   class Nec_n6206_ver1 < Generic_xhtml
 def self.user_agent
- "NEC-N6206/1.0"
+ "NEC-N6206/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nec-uap.com/prof/N6206V01.xml"

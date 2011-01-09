@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_jap_ver1'
 module Mobiles
  module Repository
-   class DocomoGenericJapVer2 < DocomoGenericJapVer1
+   class Docomo_generic_jap_ver2 < Docomo_generic_jap_ver1
 def self.user_agent
- "DO_NOT_MATCH_DOCOMO_GENERIC_JAP_2"
+ "DO_NOT_MATCH_DOCOMO_GENERIC_JAP_2".gsub(/\a/, '\\')
 end
   def colors
   262144

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_ipod_touch_ver1'
 module Mobiles
  module Repository
-   class AppleIpodVer1 < AppleIpodTouchVer1
+   class Apple_ipod_ver1 < Apple_ipod_touch_ver1
 def self.user_agent
- "DO_NOT_MATCH_TEMP_IPOD_TOUCH_ENTRY"
+ "DO_NOT_MATCH_TEMP_IPOD_TOUCH_ENTRY".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_gw520_ver1'
 module Mobiles
  module Repository
-   class LgGw520Sub1v09b < LgGw520Ver1
+   class Lg_gw520_sub1v09b < Lg_gw520_ver1
 def self.user_agent
- "LG-GW520-H3G/V09b Teleca/WAP2.0 MIDP-2.1/CLDC-1.1"
+ "LG-GW520-H3G/V09b Teleca/WAP2.0 MIDP-2.1/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

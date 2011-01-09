@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_l1150_ver1'
 module Mobiles
  module Repository
-   class LgL1150Ver1Sub6225 < LgL1150Ver1
+   class Lg_l1150_ver1_sub6225 < Lg_l1150_ver1
 def self.user_agent
- "LG-L1150 UP.Browser/6.2.2.5 (GUI) MMP/1.0"
+ "LG-L1150 UP.Browser/6.2.2.5 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

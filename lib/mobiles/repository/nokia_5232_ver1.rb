@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60_dp50'
 module Mobiles
  module Repository
-   class Nokia5232Ver1 < NokiaGenericSeries60Dp50
+   class Nokia_5232_ver1 < Nokia_generic_series60_dp50
 def self.user_agent
- "Nokia5232/CMCC (SymbianOS/9.4; Series60/5.0; Release/12.1.091; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba"
+ "Nokia5232/CMCC (SymbianOS/9.4; Series60/5.0; Release/12.1.091; Mozilla/5.0; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) Safari/525 3gpp-gba".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

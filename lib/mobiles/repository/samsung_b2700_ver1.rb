@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_l700_ver1_subxbhh1'
 module Mobiles
  module Repository
-   class SamsungB2700Ver1 < SamsungSghL700Ver1Subxbhh1
+   class Samsung_b2700_ver1 < Samsung_sgh_l700_ver1_subxbhh1
 def self.user_agent
- "SAMSUNG-B2700/XBHI1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-B2700/XBHI1 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/B2700_3G.rdf"

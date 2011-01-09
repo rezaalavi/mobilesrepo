@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_s500_ver1'
 module Mobiles
  module Repository
-   class SamsungS508Ver1 < SamsungS500Ver1
+   class Samsung_s508_ver1 < Samsung_s500_ver1
 def self.user_agent
- "SAMSUNG-SGH-S508"
+ "SAMSUNG-SGH-S508".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-S508"

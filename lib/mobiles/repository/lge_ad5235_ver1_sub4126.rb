@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_ad5235_ver1'
 module Mobiles
  module Repository
-   class LgeAd5235Ver1Sub4126 < LgeAd5235Ver1
+   class Lge_ad5235_ver1_sub4126 < Lge_ad5235_ver1
 def self.user_agent
- "LGE-AD5235/1.0 UP.Browser/4.1.26l"
+ "LGE-AD5235/1.0 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   def model_name
   5235

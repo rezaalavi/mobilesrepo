@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kg130_ver1'
 module Mobiles
  module Repository
-   class LgKg130Ver1Subua < LgKg130Ver1
+   class Lg_kg130_ver1_subua < Lg_kg130_ver1
 def self.user_agent
- "LG-KG130 Obigo/WAP2.0"
+ "LG-KG130 Obigo/WAP2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/vodafone_vpa_compactiv_ver1'
 module Mobiles
  module Repository
-   class VodafoneVpaCompactivVer1Subartist < VodafoneVpaCompactivVer1
+   class Vodafone_vpa_compactiv_ver1_subartist < Vodafone_vpa_compactiv_ver1
 def self.user_agent
- "HTCArtist"
+ "HTCArtist".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/voda/VPACompactIV-1.0.xml"

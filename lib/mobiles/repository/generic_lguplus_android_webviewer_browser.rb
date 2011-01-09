@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_lguplus_winmo6_5'
 module Mobiles
  module Repository
-   class GenericLguplusAndroidWebviewerBrowser < GenericLguplusWinmo65
+   class Generic_lguplus_android_webviewer_browser < Generic_lguplus_winmo6_5
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_LGUPLUS_ANDROID_WEBVIEWER"
+ "DO_NOT_MATCH_GENERIC_LGUPLUS_ANDROID_WEBVIEWER".gsub(/\a/, '\\')
 end
   def mobile_browser
   "LGUPlus Webviewer"

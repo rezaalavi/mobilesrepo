@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k310i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK310ivVer1 < SonyericssonK310iVer1
+   class Sonyericsson_k310iv_ver1 < Sonyericsson_k310i_ver1
 def self.user_agent
- "SonyEricssonK310iv"
+ "SonyEricssonK310iv".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/K310iR301.xml"

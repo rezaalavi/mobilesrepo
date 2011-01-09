@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_e228_ver1'
 module Mobiles
  module Repository
-   class NecE228Ver1Sub00100 < NecE228Ver1
+   class Nec_e228_ver1_sub00100 < Nec_e228_ver1
 def self.user_agent
- "ACS-NF/3.0 NEC-e228/001.00"
+ "ACS-NF/3.0 NEC-e228/001.00".gsub(/\a/, '\\')
 end
   
 end

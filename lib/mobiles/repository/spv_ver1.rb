@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003'
 module Mobiles
  module Repository
-   class SpvVer1 < GenericMsWinmo2003
+   class Spv_ver1 < Generic_ms_winmo2003
 def self.user_agent
- "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; Smartphone; 176x220)"
+ "Mozilla/2.0 (compatible; MSIE 3.02; Windows CE; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/mpx200/Profile/mpx200.rdf"

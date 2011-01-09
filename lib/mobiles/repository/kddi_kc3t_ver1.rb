@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_wap20_generic'
 module Mobiles
  module Repository
-   class KddiKc3tVer1 < KddiWap20Generic
+   class Kddi_kc3t_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-KC3T UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0"
+ "KDDI-KC3T UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def flash_lite_version
   2_0

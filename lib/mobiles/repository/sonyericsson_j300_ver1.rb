@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_403_generic'
 module Mobiles
  module Repository
-   class SonyericssonJ300Ver1 < Sonyericsson403Generic
+   class Sonyericsson_j300_ver1 < Sonyericsson_403_generic
 def self.user_agent
- "SonyEricssonJ300"
+ "SonyEricssonJ300".gsub(/\a/, '\\')
 end
   def model_name
   "J300"

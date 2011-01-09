@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_vx8000_ver1'
 module Mobiles
  module Repository
-   class LgeVx8000Ver1Sub20 < LgeVx8000Ver1
+   class Lge_vx8000_ver1_sub20 < Lge_vx8000_ver1
 def self.user_agent
- "LGE-VX8000/1.0 UP.Browser/6.2.3.1 (GUI) MMP/2.0"
+ "LGE-VX8000/1.0 UP.Browser/6.2.3.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class AlcatelOtC550Ver1 < Generic
+   class Alcatel_ot_c550_ver1 < Generic
 def self.user_agent
- "Alcatel-OT-C550"
+ "Alcatel-OT-C550".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

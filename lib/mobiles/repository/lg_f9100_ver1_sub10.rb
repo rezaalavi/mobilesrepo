@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_f9100_ver1'
 module Mobiles
  module Repository
-   class LgF9100Ver1Sub10 < LgF9100Ver1
+   class Lg_f9100_ver1_sub10 < Lg_f9100_ver1
 def self.user_agent
- "LG-F9100 UP.Browser/6.2.3 (GUI) MMP/1.0"
+ "LG-F9100 UP.Browser/6.2.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/konka_l6668_ver1'
 module Mobiles
  module Repository
-   class KonkaV60Ver1 < KonkaL6668Ver1
+   class Konka_v60_ver1 < Konka_l6668_ver1
 def self.user_agent
- "V60/SW1.0.0/WAP2.0"
+ "V60/SW1.0.0/WAP2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_e950_ver1'
 module Mobiles
  module Repository
-   class SamsungSghE950Ver1Subnetfront34 < SamsungSghE950Ver1
+   class Samsung_sgh_e950_ver1_subnetfront34 < Samsung_sgh_e950_ver1
 def self.user_agent
- "SEC-SGHE950/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHE950/1.0 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.4

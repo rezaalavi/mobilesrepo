@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class PanasonicX500Ver1 < OpwvV62Generic
+   class Panasonic_x500_ver1 < Opwv_v62_generic
 def self.user_agent
- "Panasonic-X500"
+ "Panasonic-X500".gsub(/\a/, '\\')
 end
   def uaprof
   "http://mobileinternet.panasonicbox.com/UAprof/X500/R1.xml"

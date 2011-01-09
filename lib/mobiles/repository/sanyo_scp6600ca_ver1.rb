@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_1'
 module Mobiles
  module Repository
-   class SanyoScp6600caVer1 < GenericNetfrontVer31
+   class Sanyo_scp6600ca_ver1 < Generic_netfront_ver3_1
 def self.user_agent
- "Sanyo-SCP6600CA NetFront/3.1 MMP/2.0 Mozilla/4.0"
+ "Sanyo-SCP6600CA NetFront/3.1 MMP/2.0 Mozilla/4.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/BMC_Sanyo_SCP6600CA_1001BM.rdf"

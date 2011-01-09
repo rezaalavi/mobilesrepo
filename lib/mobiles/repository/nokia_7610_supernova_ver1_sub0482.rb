@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_7610_supernova_ver1'
 module Mobiles
  module Repository
-   class Nokia7610SupernovaVer1Sub0482 < Nokia7610SupernovaVer1
+   class Nokia_7610_supernova_ver1_sub0482 < Nokia_7610_supernova_ver1
 def self.user_agent
- "Nokia7610Supernova/2.0 (04.82) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia7610Supernova/2.0 (04.82) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def flash_lite_version
   3_0

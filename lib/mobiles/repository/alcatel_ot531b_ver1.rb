@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_bg3_ver1'
 module Mobiles
  module Repository
-   class AlcatelOt531bVer1 < AlcatelBg3Ver1
+   class Alcatel_ot531b_ver1 < Alcatel_bg3_ver1
 def self.user_agent
- "Mitsu/1.2.B (OT531)"
+ "Mitsu/1.2.B (OT531)".gsub(/\a/, '\\')
 end
   def model_name
   "One Touch 531"

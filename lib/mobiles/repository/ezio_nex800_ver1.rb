@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class EzioNex800Ver1 < GenericXhtml
+   class Ezio_nex800_ver1 < Generic_xhtml
 def self.user_agent
- "NEX800/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "NEX800/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/NEX-800.xml"

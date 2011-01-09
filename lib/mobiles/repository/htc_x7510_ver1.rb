@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_x7500_ver1_subua'
 module Mobiles
  module Repository
-   class HtcX7510Ver1 < HtcX7500Ver1Subua
+   class Htc_x7510_ver1 < Htc_x7500_ver1_subua
 def self.user_agent
- "HTC_X7510 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "HTC_X7510 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.11

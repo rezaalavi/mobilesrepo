@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/grundig_gr660_ver1'
 module Mobiles
  module Repository
-   class GrundigGr660Ver1Subua < GrundigGr660Ver1
+   class Grundig_gr660_ver1_subua < Grundig_gr660_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Grundig GR660)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Grundig GR660)".gsub(/\a/, '\\')
 end
   
 end

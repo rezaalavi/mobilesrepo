@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_5'
 module Mobiles
  module Repository
-   class SonyericssonU100iVer1 < GenericSonyericssonNetfrontVer35
+   class Sonyericsson_u100i_ver1 < Generic_sonyericsson_netfront_ver3_5
 def self.user_agent
- "SonyEricssonU100i/R1CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0"
+ "SonyEricssonU100i/R1CA Browser/NetFront/3.5 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.5.0".gsub(/\a/, '\\')
 end
   def model_name
   "U100i"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class FlyLx610Ver1 < GenericXhtml
+   class Fly_lx610_ver1 < Generic_xhtml
 def self.user_agent
- "Fly-LX610/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "Fly-LX610/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/Fly-LX610.xml"

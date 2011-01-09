@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SieSfg75Ver1 < Generic
+   class Sie_sfg75_ver1 < Generic
 def self.user_agent
- "SIEMENS-SFG75"
+ "SIEMENS-SFG75".gsub(/\a/, '\\')
 end
   def model_name
   "SFG75"

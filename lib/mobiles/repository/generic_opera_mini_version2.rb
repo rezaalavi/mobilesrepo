@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mini_version1'
 module Mobiles
  module Repository
-   class GenericOperaMiniVersion2 < GenericOperaMiniVersion1
+   class Generic_opera_mini_version2 < Generic_opera_mini_version1
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_OPERA_MINI_VERSION_2"
+ "DO_NOT_MATCH_GENERIC_OPERA_MINI_VERSION_2".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   2

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_gad87_ver1'
 module Mobiles
  module Repository
-   class PanasonicGad87Ver1Suba19 < PanasonicGad87Ver1
+   class Panasonic_gad87_ver1_suba19 < Panasonic_gad87_ver1
 def self.user_agent
- "Panasonic-GAD87/A19"
+ "Panasonic-GAD87/A19".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

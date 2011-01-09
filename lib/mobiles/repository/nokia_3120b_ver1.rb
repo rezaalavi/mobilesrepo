@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3120_ver1'
 module Mobiles
  module Repository
-   class Nokia3120bVer1 < Nokia3120Ver1
+   class Nokia_3120b_ver1 < Nokia_3120_ver1
 def self.user_agent
- "Nokia3120b/1.0 (05.01) Profile/MIDP-1.0 Configuration/CLDC-1.00"
+ "Nokia3120b/1.0 (05.01) Profile/MIDP-1.0 Configuration/CLDC-1.00".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds.nokia.com/uaprof/N3120br100.xml"

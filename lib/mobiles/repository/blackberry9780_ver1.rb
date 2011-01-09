@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver6'
 module Mobiles
  module Repository
-   class Blackberry9780Ver1 < BlackberryGenericVer6
+   class Blackberry9780_ver1 < Blackberry_generic_ver6
 def self.user_agent
- "Mozilla/5.0 (BlackBerry; U; BlackBerry 9780; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.131 Mobile Safari/534.1+"
+ "Mozilla/5.0 (BlackBerry; U; BlackBerry 9780; en) AppleWebKit/534.1+ (KHTML, like Gecko) Version/6.0.0.131 Mobile Safari/534.1+".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.blackberry.net/go/mobile/profiles/uaprof/9780/6.0.0.rdf"

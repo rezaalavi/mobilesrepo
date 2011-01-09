@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n95_ver1'
 module Mobiles
  module Repository
-   class NokiaN95Ver1Softbank < NokiaN95Ver1
+   class Nokia_n95_ver1_softbank < Nokia_n95_ver1
 def self.user_agent
- "SoftBank/1.0/X02NK/NKJ001 Series60/3.1 NokiaN95/20.0.273 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SoftBank/1.0/X02NK/NKJ001 Series60/3.1 NokiaN95/20.0.273 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   1

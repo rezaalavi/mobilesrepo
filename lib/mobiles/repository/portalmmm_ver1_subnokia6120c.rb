@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6120c_ver1'
 module Mobiles
  module Repository
-   class PortalmmmVer1Subnokia6120c < Nokia6120cVer1
+   class Portalmmm_ver1_subnokia6120c < Nokia_6120c_ver1
 def self.user_agent
- "portalmmm/2.0 6120(c100;TB)"
+ "portalmmm/2.0 6120(c100;TB)".gsub(/\a/, '\\')
 end
   def preferred_markup
   "html_wi_imode_html_3"

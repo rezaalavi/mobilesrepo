@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class Medion2860Ver1 < Generic
+   class Medion_2860_ver1 < Generic
 def self.user_agent
- "MEDION 2860"
+ "MEDION 2860".gsub(/\a/, '\\')
 end
   def model_name
   2860

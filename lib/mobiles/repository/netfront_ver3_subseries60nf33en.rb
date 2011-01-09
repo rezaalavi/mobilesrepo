@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_3'
 module Mobiles
  module Repository
-   class NetfrontVer3Subseries60nf33en < GenericNetfrontVer33
+   class Netfront_ver3_subseries60nf33en < Generic_netfront_ver3_3
 def self.user_agent
- "Mozilla/4.78 [en] (Symbian OS-Series60; U) NetFront/3.3"
+ "Mozilla/4.78 [en] (Symbian OS-Series60; U) NetFront/3.3".gsub(/\a/, '\\')
 end
   def max_image_width
   120

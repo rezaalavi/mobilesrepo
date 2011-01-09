@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sprint_ppc6800_ver1'
 module Mobiles
  module Repository
-   class SprintPpc6800Ver1Subie68 < SprintPpc6800Ver1
+   class Sprint_ppc6800_ver1_subie68 < Sprint_ppc6800_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Sprint:PPC6800"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) Sprint:PPC6800".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.8

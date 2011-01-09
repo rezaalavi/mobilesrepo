@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class GenericMsPhoneOs7 < GenericXhtml
+   class Generic_ms_phone_os7 < Generic_xhtml
 def self.user_agent
- "DO_NOT_MATCH_MS_PHONE_OS7"
+ "DO_NOT_MATCH_MS_PHONE_OS7".gsub(/\a/, '\\')
 end
   def mobile_browser
   "IEMobile"

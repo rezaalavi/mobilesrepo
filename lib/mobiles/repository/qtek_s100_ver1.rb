@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_magician_ver1'
 module Mobiles
  module Repository
-   class QtekS100Ver1 < HtcMagicianVer1
+   class Qtek_s100_ver1 < Htc_magician_ver1
 def self.user_agent
- "Qtek S100"
+ "Qtek S100".gsub(/\a/, '\\')
 end
   def model_name
   "S100"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class LgeAx3200Ver1 < UptextGeneric
+   class Lge_ax3200_ver1 < Uptext_generic
 def self.user_agent
- "LGE-AX3200"
+ "LGE-AX3200".gsub(/\a/, '\\')
 end
   def model_name
   "AX3200"

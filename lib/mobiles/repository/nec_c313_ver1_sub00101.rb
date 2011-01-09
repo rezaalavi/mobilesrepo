@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_c313_ver1'
 module Mobiles
  module Repository
-   class NecC313Ver1Sub00101 < NecC313Ver1
+   class Nec_c313_ver1_sub00101 < Nec_c313_ver1
 def self.user_agent
- "ACS-NF/3.0 NEC-c313/001.01"
+ "ACS-NF/3.0 NEC-c313/001.01".gsub(/\a/, '\\')
 end
   def max_image_width
   120

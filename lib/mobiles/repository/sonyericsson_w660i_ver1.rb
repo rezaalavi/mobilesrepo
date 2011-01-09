@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_3'
 module Mobiles
  module Repository
-   class SonyericssonW660iVer1 < GenericSonyericssonNetfrontVer33
+   class Sonyericsson_w660i_ver1 < Generic_sonyericsson_netfront_ver3_3
 def self.user_agent
- "SonyEricssonW660i"
+ "SonyEricssonW660i".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/W660iR201.xml"

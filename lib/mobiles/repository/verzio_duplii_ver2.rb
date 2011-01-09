@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class VerzioDupliiVer2 < Generic
+   class Verzio_duplii_ver2 < Generic
 def self.user_agent
- "Duplii/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1"
+ "Duplii/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.verzioworld.com/Duplii.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_wave_ver1'
 module Mobiles
  module Repository
-   class DopodD818cVer1 < HtcWaveVer1
+   class Dopod_d818c_ver1 < Htc_wave_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodD818c"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) DopodD818c".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.8

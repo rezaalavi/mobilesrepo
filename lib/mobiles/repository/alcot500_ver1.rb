@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_generic_v4'
 module Mobiles
  module Repository
-   class Alcot500Ver1 < AlcatelGenericV4
+   class Alcot500_ver1 < Alcatel_generic_v4
 def self.user_agent
- "AlcOT500"
+ "AlcOT500".gsub(/\a/, '\\')
 end
   def model_name
   "One Touch 500"

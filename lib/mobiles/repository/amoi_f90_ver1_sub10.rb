@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_f90_ver1'
 module Mobiles
  module Repository
-   class AmoiF90Ver1Sub10 < AmoiF90Ver1
+   class Amoi_f90_ver1_sub10 < Amoi_f90_ver1
 def self.user_agent
- "Amoi-F90/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.101 (GUI) MMP/1.0"
+ "Amoi-F90/Plat-F/WAP2.0/MIDP1.0/CLDC1.0 UP.Browser/6.2.2.7.c.1.101 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

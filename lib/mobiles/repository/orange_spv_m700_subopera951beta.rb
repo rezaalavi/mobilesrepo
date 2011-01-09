@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/orange_spv_m700_ver1'
 module Mobiles
  module Repository
-   class OrangeSpvM700Subopera951beta < OrangeSpvM700Ver1
+   class Orange_spv_m700_subopera951beta < Orange_spv_m700_ver1
 def self.user_agent
- "Opera/9.51 Beta (Microsoft Windows; PPC; 240x320; SPV M700; OpVer 19.123.1.615; Opera Mobi/1718; U; en)"
+ "Opera/9.51 Beta (Microsoft Windows; PPC; 240x320; SPV M700; OpVer 19.123.1.615; Opera Mobi/1718; U; en)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

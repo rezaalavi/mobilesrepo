@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_p2101v_ver1'
 module Mobiles
  module Repository
-   class DocomoP2101vVer1Subua < DocomoP2101vVer1
+   class Docomo_p2101v_ver1_subua < Docomo_p2101v_ver1
 def self.user_agent
- "DoCoMo/2.0 P2101V(c100)"
+ "DoCoMo/2.0 P2101V(c100)".gsub(/\a/, '\\')
 end
   def voices
   16

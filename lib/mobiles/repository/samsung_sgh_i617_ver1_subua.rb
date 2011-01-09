@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i617_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI617Ver1Subua < SamsungSghI617Ver1
+   class Samsung_sgh_i617_ver1_subua < Samsung_sgh_i617_ver1
 def self.user_agent
- "SAMSUNG-SGH-I617"
+ "SAMSUNG-SGH-I617".gsub(/\a/, '\\')
 end
   
 end

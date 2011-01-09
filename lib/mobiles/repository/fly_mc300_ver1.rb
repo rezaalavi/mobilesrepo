@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class FlyMc300Ver1 < GenericXhtml
+   class Fly_mc300_ver1 < Generic_xhtml
 def self.user_agent
- "Fly_MC300/ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Fly_MC300/ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "Fly_MC300"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q5'
 module Mobiles
  module Repository
-   class LgLg830 < LgGenericObigoQ5
+   class Lg_lg830 < Lg_generic_obigo_q5
 def self.user_agent
- "LGE-LG830 AU-OBIGO/Q05A1-3.8 MMP/2.0"
+ "LGE-LG830 AU-OBIGO/Q05A1-3.8 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.bellmobilite.ca/LGE_LG830.rdf"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/hp_ipaq_hw6515_ver1'
 module Mobiles
  module Repository
-   class HpIpaqHw6515Ver1Subua < HpIpaqHw6515Ver1
+   class Hp_ipaq_hw6515_ver1_subua < Hp_ipaq_hw6515_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240)"
+ "Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x240)".gsub(/\a/, '\\')
 end
   
 end

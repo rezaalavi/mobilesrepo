@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/wapsilon_ver2'
 module Mobiles
  module Repository
-   class WapsilonVer2Sub1 < WapsilonVer2
+   class Wapsilon_ver2_sub1 < Wapsilon_ver2
 def self.user_agent
- "Wapsilon/2.1 (www.wapsilon.com)"
+ "Wapsilon/2.1 (www.wapsilon.com)".gsub(/\a/, '\\')
 end
   
 end

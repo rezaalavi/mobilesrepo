@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/birda120_ver1'
 module Mobiles
  module Repository
-   class Birda120Ver1Sub121 < Birda120Ver1
+   class Birda120_ver1_sub121 < Birda120_ver1
 def self.user_agent
- "BIRD.A120 AU.Browser/1.2.1"
+ "BIRD.A120 AU.Browser/1.2.1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_polaris_ver1'
 module Mobiles
  module Repository
-   class DopodP860Ver1 < HtcPolarisVer1
+   class Dopod_p860_ver1 < Htc_polaris_ver1
 def self.user_agent
- "dopod P860_CMCC/5.2.1620/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)"
+ "dopod P860_CMCC/5.2.1620/WAP2.0 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/Polaris-1.0.xml"

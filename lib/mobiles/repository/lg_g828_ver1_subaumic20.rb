@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g828_ver1'
 module Mobiles
  module Repository
-   class LgG828Ver1Subaumic20 < LgG828Ver1
+   class Lg_g828_ver1_subaumic20 < Lg_g828_ver1
 def self.user_agent
- "LG-G828/V100/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0"
+ "LG-G828/V100/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

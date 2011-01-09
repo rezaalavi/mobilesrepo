@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6265i_ver1'
 module Mobiles
  module Repository
-   class Nokia6265iSub20hl100v1200 < Nokia6265iVer1
+   class Nokia_6265i_sub20hl100v1200 < Nokia_6265i_ver1
 def self.user_agent
- "Nokia6265i/2.0 (HL100V1200.nep) UP.Browser/6.2.3.8 MMP/2.0"
+ "Nokia6265i/2.0 (HL100V1200.nep) UP.Browser/6.2.3.8 MMP/2.0".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

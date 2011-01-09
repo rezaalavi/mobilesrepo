@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/utstarcom_gpfm1238_ver1'
 module Mobiles
  module Repository
-   class UtstarcomGpfm1238Ver1Subver1 < UtstarcomGpfm1238Ver1
+   class Utstarcom_gpfm1238_ver1_subver1 < Utstarcom_gpfm1238_ver1
 def self.user_agent
- "GPF168L"
+ "GPF168L".gsub(/\a/, '\\')
 end
   
 end

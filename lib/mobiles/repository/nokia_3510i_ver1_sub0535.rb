@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3510i_ver1_sub0500'
 module Mobiles
  module Repository
-   class Nokia3510iVer1Sub0535 < Nokia3510iVer1Sub0500
+   class Nokia_3510i_ver1_sub0535 < Nokia_3510i_ver1_sub0500
 def self.user_agent
- "Nokia3510i/1.0 (05.35) Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "Nokia3510i/1.0 (05.35) Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def wallpaper_max_height
   65

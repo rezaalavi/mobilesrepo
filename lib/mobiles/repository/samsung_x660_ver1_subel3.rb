@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_x660_ver1'
 module Mobiles
  module Repository
-   class SamsungX660Ver1Subel3 < SamsungX660Ver1
+   class Samsung_x660_ver1_subel3 < Samsung_x660_ver1
 def self.user_agent
- "SEC-SGHX660/EL3 TSS/2.5"
+ "SEC-SGHX660/EL3 TSS/2.5".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_u890_ver1'
 module Mobiles
  module Repository
-   class LgU890Ver1Subua < LgU890Ver1
+   class Lg_u890_ver1_subua < Lg_u890_ver1
 def self.user_agent
- "LG/U890/v1.0"
+ "LG/U890/v1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

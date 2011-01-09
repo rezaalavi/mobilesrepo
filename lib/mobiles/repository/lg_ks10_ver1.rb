@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_ks10_symbian_ver1'
 module Mobiles
  module Repository
-   class LgKs10Ver1 < LgKs10SymbianVer1
+   class Lg_ks10_ver1 < Lg_ks10_symbian_ver1
 def self.user_agent
- "LG-KS10"
+ "LG-KS10".gsub(/\a/, '\\')
 end
   def preferred_markup
   "html_wi_w3_xhtmlbasic"

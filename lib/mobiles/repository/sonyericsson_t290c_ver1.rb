@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_t290_ver1'
 module Mobiles
  module Repository
-   class SonyericssonT290cVer1 < SonyericssonT290Ver1
+   class Sonyericsson_t290c_ver1 < Sonyericsson_t290_ver1
 def self.user_agent
- "SonyEricssonT290c"
+ "SonyEricssonT290c".gsub(/\a/, '\\')
 end
   def model_name
   "T290c"

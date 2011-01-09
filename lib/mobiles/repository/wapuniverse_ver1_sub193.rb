@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/wapuniverse_ver1'
 module Mobiles
  module Repository
-   class WapuniverseVer1Sub193 < WapuniverseVer1
+   class Wapuniverse_ver1_sub193 < Wapuniverse_ver1
 def self.user_agent
- "WAPUniverse/1.9.3 (PalmOS; N; X-Scale; en) MobileToken/20041110 (WAP 1.1; WAPUniverse.com)"
+ "WAPUniverse/1.9.3 (PalmOS; N; X-Scale; en) MobileToken/20041110 (WAP 1.1; WAPUniverse.com)".gsub(/\a/, '\\')
 end
   def columns
   16

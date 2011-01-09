@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_safari_generic'
 module Mobiles
  module Repository
-   class SamsungI8910Ver1 < SamsungSafariGeneric
+   class Samsung_i8910_ver1 < Samsung_safari_generic
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Mozilla/5.0 (SymbianOS/9.4; U; Series60/5.0 Samsung/I8910-ORANGE/BVORAIE2; Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

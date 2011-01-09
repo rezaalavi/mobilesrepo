@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_901i'
 module Mobiles
  module Repository
-   class Docomo900iV2Isimw24 < DocomoGeneric901i
+   class Docomo_900i_v2_isimw24 < Docomo_generic_901i
 def self.user_agent
- "DoCoMo/2.0 ISIM0101(c100;TB;W24H16)"
+ "DoCoMo/2.0 ISIM0101(c100;TB;W24H16)".gsub(/\a/, '\\')
 end
   def model_name
   "Simulator II"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_s45_ver1_sub21'
 module Mobiles
  module Repository
-   class SieS45iVer1 < SieS45Ver1Sub21
+   class Sie_s45i_ver1 < Sie_s45_ver1_sub21
 def self.user_agent
- "SIE-S45i"
+ "SIE-S45i".gsub(/\a/, '\\')
 end
   def model_name
   "S45i"

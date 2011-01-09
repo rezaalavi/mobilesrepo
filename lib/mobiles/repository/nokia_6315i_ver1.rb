@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class Nokia6315iVer1 < OpwvV62Generic
+   class Nokia_6315i_ver1 < Opwv_v62_generic
 def self.user_agent
- "Nokia6315i"
+ "Nokia6315i".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vtext.com/nokia/nokia6315i/nokia6315i.xml"

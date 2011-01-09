@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p3700_ver1'
 module Mobiles
  module Repository
-   class HtcP3700Ver1Subua < HtcP3700Ver1
+   class Htc_p3700_ver1_subua < Htc_p3700_ver1
 def self.user_agent
- "htc_p3700/2.0 (03.92) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "htc_p3700/2.0 (03.92) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

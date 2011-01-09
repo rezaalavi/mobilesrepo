@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_pg_3810_ver1'
 module Mobiles
  module Repository
-   class PantechPg3810Ver1Sub < PantechPg3810Ver1
+   class Pantech_pg_3810_ver1_sub < Pantech_pg_3810_ver1
 def self.user_agent
- "PG-3810/R01 Profile/MIDP-2.0"
+ "PG-3810/R01 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   
 end

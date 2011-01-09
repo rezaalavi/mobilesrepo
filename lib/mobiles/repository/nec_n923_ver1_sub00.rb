@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_n923_ver1'
 module Mobiles
  module Repository
-   class NecN923Ver1Sub00 < NecN923Ver1
+   class Nec_n923_ver1_sub00 < Nec_n923_ver1
 def self.user_agent
- "NEC-N923/(2004.12.20)1.0/WAP1.2.1 Profile"
+ "NEC-N923/(2004.12.20)1.0/WAP1.2.1 Profile".gsub(/\a/, '\\')
 end
   
 end

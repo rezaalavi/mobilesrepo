@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sch_x859_ver1'
 module Mobiles
  module Repository
-   class SamsungSchX859Ver1Sub20 < SamsungSchX859Ver1
+   class Samsung_sch_x859_ver1_sub20 < Samsung_sch_x859_ver1
 def self.user_agent
- "SCH-X859 UP.Browser/6.2.2.5 (GUI) MMP/2.0"
+ "SCH-X859 UP.Browser/6.2.2.5 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

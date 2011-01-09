@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my721x_ver1'
 module Mobiles
  module Repository
-   class SagemMy721xVer1Suboperamini < SagemMy721xVer1
+   class Sagem_my721x_ver1_suboperamini < Sagem_my721x_ver1
 def self.user_agent
- "Sagem-my721X/1.0/ETN_EE MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.352 (GUI); Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.9872/hifi/tmobile/uk; en; U; ssr)"
+ "Sagem-my721X/1.0/ETN_EE MIDP-2.0 Configuration/CLDC-1.L Browser/UP.Browser/7.2.7.352 (GUI); Opera/8.01 (J2ME/MIDP; Opera Mini/3.1.9872/hifi/tmobile/uk; en; U; ssr)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

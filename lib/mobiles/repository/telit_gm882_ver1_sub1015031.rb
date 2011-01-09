@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/telit_gm882_ver1'
 module Mobiles
  module Repository
-   class TelitGm882Ver1Sub1015031 < TelitGm882Ver1
+   class Telit_gm882_ver1_sub1015031 < Telit_gm882_ver1
 def self.user_agent
- "Telit_Mobile_Terminals-GM882/1.01 UP.Browser/5.0.3.1 (GUI)"
+ "Telit_Mobile_Terminals-GM882/1.01 UP.Browser/5.0.3.1 (GUI)".gsub(/\a/, '\\')
 end
   
 end

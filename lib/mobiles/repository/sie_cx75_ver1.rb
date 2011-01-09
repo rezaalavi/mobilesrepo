@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_platform75_generic'
 module Mobiles
  module Repository
-   class SieCx75Ver1 < SiePlatform75Generic
+   class Sie_cx75_ver1 < Sie_platform75_generic
 def self.user_agent
- "SIE-CX75"
+ "SIE-CX75".gsub(/\a/, '\\')
 end
   def model_name
   "CX75"

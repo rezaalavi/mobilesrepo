@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_morpheus_ver1_sub6235'
 module Mobiles
  module Repository
-   class BenqMorpheusVer1Sub6236124 < BenqMorpheusVer1Sub6235
+   class Benq_morpheus_ver1_sub6236124 < Benq_morpheus_ver1_sub6235
 def self.user_agent
- "BENQ-Morpheus/0.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.6.124 (GUI) MMP/2.0"
+ "BENQ-Morpheus/0.1 Profile/MIDP-2.0 Configuration/CLDC-1.0 UP.Browser/6.2.3.6.124 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

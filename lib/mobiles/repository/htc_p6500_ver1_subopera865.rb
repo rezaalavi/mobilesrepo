@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p6500_ver1'
 module Mobiles
  module Repository
-   class HtcP6500Ver1Subopera865 < HtcP6500Ver1
+   class Htc_p6500_ver1_subopera865 < Htc_p6500_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC P6500; OpVer 27.110.1.612) Opera 8.65 [en]"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; PPC; 240x320; HTC P6500; OpVer 27.110.1.612) Opera 8.65 [en]".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

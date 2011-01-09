@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_a6277_ver1'
 module Mobiles
  module Repository
-   class HtcA6277Ver1Subandroid21 < HtcA6277Ver1
+   class Htc_a6277_ver1_subandroid21 < Htc_a6277_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; A6277 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 Sprint APA6277KT"
+ "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-us; A6277 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 Sprint APA6277KT".gsub(/\a/, '\\')
 end
   def device_os_version
   2.1

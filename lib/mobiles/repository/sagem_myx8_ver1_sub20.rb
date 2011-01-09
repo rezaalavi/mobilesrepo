@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx8_ver1'
 module Mobiles
  module Repository
-   class SagemMyx8Ver1Sub20 < SagemMyx8Ver1
+   class Sagem_myx8_ver1_sub20 < Sagem_myx8_ver1
 def self.user_agent
- "SAGEM-myX8/1.0 UP.Browser/6.2.3.3.178 (GUI) MMP/2.0"
+ "SAGEM-myX8/1.0 UP.Browser/6.2.3.3.178 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

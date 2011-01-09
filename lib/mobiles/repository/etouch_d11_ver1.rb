@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class EtouchD11Ver1 < GenericXhtml
+   class Etouch_d11_ver1 < Generic_xhtml
 def self.user_agent
- "eTouch D11"
+ "eTouch D11".gsub(/\a/, '\\')
 end
   def model_name
   "D11"

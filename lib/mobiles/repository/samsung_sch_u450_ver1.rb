@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3'
 module Mobiles
  module Repository
-   class SamsungSchU450Ver1 < GenericNetfrontVer3
+   class Samsung_sch_u450_ver1 < Generic_netfront_ver3
 def self.user_agent
- "SCH-U450/1.0 NetFront/3.0.22.2.20 (GUI) MMP/2.0"
+ "SCH-U450/1.0 NetFront/3.0.22.2.20 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

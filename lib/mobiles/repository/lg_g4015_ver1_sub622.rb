@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g4015_ver1'
 module Mobiles
  module Repository
-   class LgG4015Ver1Sub622 < LgG4015Ver1
+   class Lg_g4015_ver1_sub622 < Lg_g4015_ver1
 def self.user_agent
- "LG-G4015 UP.Browser/6.2.2 (GUI) MMP/1.0"
+ "LG-G4015 UP.Browser/6.2.2 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

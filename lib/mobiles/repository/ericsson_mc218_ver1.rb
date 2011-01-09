@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ericsson_generic'
 module Mobiles
  module Repository
-   class EricssonMc218Ver1 < EricssonGeneric
+   class Ericsson_mc218_ver1 < Ericsson_generic
 def self.user_agent
- "MC218 2.0 WAP1.1"
+ "MC218 2.0 WAP1.1".gsub(/\a/, '\\')
 end
   def max_image_width
   640

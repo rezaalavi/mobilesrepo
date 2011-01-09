@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/micromax_q5_ver1'
 module Mobiles
  module Repository
-   class MicromaxQ5Ver1Subua < MicromaxQ5Ver1
+   class Micromax_q5_ver1_subua < Micromax_q5_ver1
 def self.user_agent
- "MICROMAXQ5"
+ "MICROMAXQ5".gsub(/\a/, '\\')
 end
   
 end

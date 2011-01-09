@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mx8550_ver1'
 module Mobiles
  module Repository
-   class LgMx8550Ver1Subua < LgMx8550Ver1
+   class Lg_mx8550_ver1_subua < Lg_mx8550_ver1
 def self.user_agent
- "LGE-MX8550_VEZ/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0"
+ "LGE-MX8550_VEZ/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

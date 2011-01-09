@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android'
 module Mobiles
  module Repository
-   class GenericAndroidNover < GenericAndroid
+   class Generic_android_nover < Generic_android
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android"
+ "Mozilla/5.0 (Linux; U; Android".gsub(/\a/, '\\')
 end
   
 end

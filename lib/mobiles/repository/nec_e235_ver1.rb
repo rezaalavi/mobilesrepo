@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_e232_ver1'
 module Mobiles
  module Repository
-   class NecE235Ver1 < NecE232Ver1
+   class Nec_e235_ver1 < Nec_e232_ver1
 def self.user_agent
- "NEC-e235"
+ "NEC-e235".gsub(/\a/, '\\')
 end
   def model_name
   "E235"

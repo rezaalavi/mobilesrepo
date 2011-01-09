@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_c401hk_ver1'
 module Mobiles
  module Repository
-   class SanyoC401hkVer1Sub4123 < SanyoC401hkVer1
+   class Sanyo_c401hk_ver1_sub4123 < Sanyo_c401hk_ver1
 def self.user_agent
- "Sanyo-C401HK/1.0 UP.Browser/4.1.23a"
+ "Sanyo-C401HK/1.0 UP.Browser/4.1.23a".gsub(/\a/, '\\')
 end
   
 end

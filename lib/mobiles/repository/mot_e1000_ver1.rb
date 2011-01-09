@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mib22_generic'
 module Mobiles
  module Repository
-   class MotE1000Ver1 < MotMib22Generic
+   class Mot_e1000_ver1 < Mot_mib22_generic
 def self.user_agent
- "MOT-E1000"
+ "MOT-E1000".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/E1000/Profile/E1000_NO_BEARER.rdf"

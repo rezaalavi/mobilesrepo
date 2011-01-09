@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_cocoon_ver1'
 module Mobiles
  module Repository
-   class O2CocoonVer1Q05a < O2CocoonVer1
+   class O2_cocoon_ver1_q05a < O2_cocoon_ver1
 def self.user_agent
- "COCOON/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "COCOON/R01 Browser/Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.pantech.com/uaprof/umts/cocoon.xml"

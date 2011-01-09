@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_c5220_ver1'
 module Mobiles
  module Repository
-   class SamsungC5510Ver1 < SamsungC5220Ver1
+   class Samsung_c5510_ver1 < Samsung_c5220_ver1
 def self.user_agent
- "SAMSUNG-GT-C5510/C5510XBIG1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-GT-C5510/C5510XBIG1 SHP/VPP/R5 NetFront/3.5 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.5

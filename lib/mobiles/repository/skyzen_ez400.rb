@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/skyzen_generic'
 module Mobiles
  module Repository
-   class SkyzenEz400 < SkyzenGeneric
+   class Skyzen_ez400 < Skyzen_generic
 def self.user_agent
- "EZ400"
+ "EZ400".gsub(/\a/, '\\')
 end
   def model_name
   "EZ400"

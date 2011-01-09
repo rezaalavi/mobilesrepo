@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mib22_generic'
 module Mobiles
  module Repository
-   class MotC650Ver1 < MotMib22Generic
+   class Mot_c650_ver1 < Mot_mib22_generic
 def self.user_agent
- "MOT-C650"
+ "MOT-C650".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/c650/profile/c650.rdf"

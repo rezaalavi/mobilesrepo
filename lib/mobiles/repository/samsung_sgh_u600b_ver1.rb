@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_u600_ver1'
 module Mobiles
  module Repository
-   class SamsungSghU600bVer1 < SamsungSghU600Ver1
+   class Samsung_sgh_u600b_ver1 < Samsung_sgh_u600_ver1
 def self.user_agent
- "SEC-SGHU600B-ORANGE/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHU600B-ORANGE/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_extra_info
   "Orange"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SecI320Ver1 < Generic
+   class Sec_i320_ver1 < Generic
 def self.user_agent
- "SEC-SGHI320"
+ "SEC-SGHI320".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-I320"

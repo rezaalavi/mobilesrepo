@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_root_webkit'
 module Mobiles
  module Repository
-   class BrowserWebkitZetakey < BrowserRootWebkit
+   class Browser_webkit_zetakey < Browser_root_webkit
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_WEBKIT_ZETAKEY"
+ "DO_NOT_MATCH_BROWSER_WEBKIT_ZETAKEY".gsub(/\a/, '\\')
 end
   def mobile_browser
   "WebKit/Zetakey"

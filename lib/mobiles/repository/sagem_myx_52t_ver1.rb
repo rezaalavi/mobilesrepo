@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myx_5_ver2'
 module Mobiles
  module Repository
-   class SagemMyx52tVer1 < SagemMyx5Ver2
+   class Sagem_myx_52t_ver1 < Sagem_myx_5_ver2
 def self.user_agent
- "SAGEM-myX-5-2T"
+ "SAGEM-myX-5-2T".gsub(/\a/, '\\')
 end
   def uaprof
   "http://extranet.sagem.com/UAProfile/891391.xml"

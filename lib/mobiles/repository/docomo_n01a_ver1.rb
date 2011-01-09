@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_foma'
 module Mobiles
  module Repository
-   class DocomoN01aVer1 < DocomoGenericFoma
+   class Docomo_n01a_ver1 < Docomo_generic_foma
 def self.user_agent
- "Mozilla/5.0 (N01A;FOMA;like Gecko)"
+ "Mozilla/5.0 (N01A;FOMA;like Gecko)".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

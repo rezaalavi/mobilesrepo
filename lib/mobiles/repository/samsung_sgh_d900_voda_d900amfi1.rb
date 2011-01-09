@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_d900_voda1_ver1'
 module Mobiles
  module Repository
-   class SamsungSghD900VodaD900amfi1 < SamsungSghD900Voda1Ver1
+   class Samsung_sgh_d900_voda_d900amfi1 < Samsung_sgh_d900_voda1_ver1
 def self.user_agent
- "SAMSUNG-SGH-D900-VODA/D900AMFI1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-D900-VODA/D900AMFI1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

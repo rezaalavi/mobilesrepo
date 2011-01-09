@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_foma'
 module Mobiles
  module Repository
-   class DocomoD903iVer1Submozilla < DocomoGenericFoma
+   class Docomo_d903i_ver1_submozilla < Docomo_generic_foma
 def self.user_agent
- "Mozilla/4.08 (D903i;FOMA;c300;TB)"
+ "Mozilla/4.08 (D903i;FOMA;c300;TB)".gsub(/\a/, '\\')
 end
   def streaming_real_media
   "none"

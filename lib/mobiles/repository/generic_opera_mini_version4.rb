@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_opera_mini_version3'
 module Mobiles
  module Repository
-   class GenericOperaMiniVersion4 < GenericOperaMiniVersion3
+   class Generic_opera_mini_version4 < Generic_opera_mini_version3
 def self.user_agent
- "DO_NOT_MATCH_GENERIC_OPERA_MINI_VERSION_4"
+ "DO_NOT_MATCH_GENERIC_OPERA_MINI_VERSION_4".gsub(/\a/, '\\')
 end
   def ajax_xhr_type
   "standard"

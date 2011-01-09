@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/el490_ver1'
 module Mobiles
  module Repository
-   class ElsonEl370Ver1 < El490Ver1
+   class Elson_el370_ver1 < El490_ver1
 def self.user_agent
- "EL370"
+ "EL370".gsub(/\a/, '\\')
 end
   def model_name
   "EL370"

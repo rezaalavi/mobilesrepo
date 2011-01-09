@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g4011_ver1'
 module Mobiles
  module Repository
-   class LgG4011Ver1Sub412 < LgG4011Ver1
+   class Lg_g4011_ver1_sub412 < Lg_g4011_ver1
 def self.user_agent
- "LG-G4011 AU/4.12"
+ "LG-G4011 AU/4.12".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

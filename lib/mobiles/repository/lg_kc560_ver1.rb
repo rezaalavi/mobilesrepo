@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kc550_ver1'
 module Mobiles
  module Repository
-   class LgKc560Ver1 < LgKc550Ver1
+   class Lg_kc560_ver1 < Lg_kc550_ver1
 def self.user_agent
- "LG-KC560 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-KC560 Teleca/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KC560.xml"

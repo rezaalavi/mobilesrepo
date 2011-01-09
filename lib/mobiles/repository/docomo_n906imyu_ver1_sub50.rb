@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_n906imyu_ver1'
 module Mobiles
  module Repository
-   class DocomoN906imyuVer1Sub50 < DocomoN906imyuVer1
+   class Docomo_n906imyu_ver1_sub50 < Docomo_n906imyu_ver1
 def self.user_agent
- "Mozilla/5.0 (N906imyu;FOMA;like Gecko)"
+ "Mozilla/5.0 (N906imyu;FOMA;like Gecko)".gsub(/\a/, '\\')
 end
   
 end

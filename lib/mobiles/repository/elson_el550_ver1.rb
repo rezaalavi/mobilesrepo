@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ElsonEl550Ver1 < GenericXhtml
+   class Elson_el550_ver1 < Generic_xhtml
 def self.user_agent
- "EL550/BSI AU.Browser/2.0 QO3C1 MMP/1.0"
+ "EL550/BSI AU.Browser/2.0 QO3C1 MMP/1.0".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_universal_ver1'
 module Mobiles
  module Repository
-   class Dopod900Ver1 < HtcUniversalVer1
+   class Dopod_900_ver1 < Htc_universal_ver1
 def self.user_agent
- "Dopod900 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 480x640; Dopod900)"
+ "Dopod900 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 480x640; Dopod900)".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

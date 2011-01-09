@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class NecN908Ver1 < Generic
+   class Nec_n908_ver1 < Generic
 def self.user_agent
- "NEC-N908/1.0 Release/09.15.2006 Browser/CMS2.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "NEC-N908/1.0 Release/09.15.2006 Browser/CMS2.0.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nec-uap.com/prof/N908V01.xml"

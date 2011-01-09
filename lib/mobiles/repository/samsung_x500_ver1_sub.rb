@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_x500_ver1'
 module Mobiles
  module Repository
-   class SamsungX500Ver1Sub < SamsungX500Ver1
+   class Samsung_x500_ver1_sub < Samsung_x500_ver1
 def self.user_agent
- "SEC-SGHX500/1.0 TSS/2.5"
+ "SEC-SGHX500/1.0 TSS/2.5".gsub(/\a/, '\\')
 end
   
 end

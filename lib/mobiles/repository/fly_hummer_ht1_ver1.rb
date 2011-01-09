@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/fly_sx210_ver1'
 module Mobiles
  module Repository
-   class FlyHummerHt1Ver1 < FlySx210Ver1
+   class Fly_hummer_ht1_ver1 < Fly_sx210_ver1
 def self.user_agent
- "Fly-HUMMER HT1/Profile/MIDP.2.0Configuration/CLDC.1.0"
+ "Fly-HUMMER HT1/Profile/MIDP.2.0Configuration/CLDC.1.0".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

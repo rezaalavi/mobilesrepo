@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class ToshibaV921tVer1 < Generic
+   class Toshiba_v921t_ver1 < Generic
 def self.user_agent
- "Vodafone/ToshibaTS921"
+ "Vodafone/ToshibaTS921".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gphone.toshiba.co.jp/tech/profiles/UAPROF/EUR1/TS_921_r100.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_c62_ver1'
 module Mobiles
  module Repository
-   class SieC62Ver1Sub83 < SieC62Ver1
+   class Sie_c62_ver1_sub83 < Sie_c62_ver1
 def self.user_agent
- "SIE-C62/83"
+ "SIE-C62/83".gsub(/\a/, '\\')
 end
   def max_deck_size
   5000

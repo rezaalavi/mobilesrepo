@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_myc2_ver1'
 module Mobiles
  module Repository
-   class SagemMyc2Ver1Subbirdsc01 < SagemMyc2Ver1
+   class Sagem_myc2_ver1_subbirdsc01 < Sagem_myc2_ver1
 def self.user_agent
- "BIRD SC01 UP.Browser/5.0.5.5 (GUI)"
+ "BIRD SC01 UP.Browser/5.0.5.5 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

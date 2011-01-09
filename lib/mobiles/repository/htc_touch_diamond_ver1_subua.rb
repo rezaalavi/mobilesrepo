@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_diamond_ver1'
 module Mobiles
  module Repository
-   class HtcTouchDiamondVer1Subua < HtcTouchDiamondVer1
+   class Htc_touch_diamond_ver1_subua < Htc_touch_diamond_ver1
 def self.user_agent
- "HTC Touch Diamond P3700 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "HTC Touch Diamond P3700 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

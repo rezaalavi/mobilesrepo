@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class KarbonnK451Ver1 < GenericXhtml
+   class Karbonn_k451_ver1 < Generic_xhtml
 def self.user_agent
- "K451/1.0 MTK/MAUI.08A.W08.28.MP.V2 Release/7.30.2009 Browser/OBIGO-Q03C"
+ "K451/1.0 MTK/MAUI.08A.W08.28.MP.V2 Release/7.30.2009 Browser/OBIGO-Q03C".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_e6_ver1'
 module Mobiles
  module Repository
-   class MotE6Ver1Sub6e < MotE6Ver1
+   class Mot_e6_ver1_sub6e < Mot_e6_ver1
 def self.user_agent
- "MOT-MOTOROKRE6e/1.0 LinuxOS/2.4.20 Release/31.3.2007 Browser/Opera8.00 Profile/MIDP2.0 Configuration/CLDC1.1 Software/R535_G_11.81.07P"
+ "MOT-MOTOROKRE6e/1.0 LinuxOS/2.4.20 Release/31.3.2007 Browser/Opera8.00 Profile/MIDP2.0 Configuration/CLDC1.1 Software/R535_G_11.81.07P".gsub(/\a/, '\\')
 end
   def model_name
   "MOTOROKR E6e"

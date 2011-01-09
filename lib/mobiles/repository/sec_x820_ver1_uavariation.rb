@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_x820_ver1'
 module Mobiles
  module Repository
-   class SecX820Ver1Uavariation < SecX820Ver1
+   class Sec_x820_ver1_uavariation < Sec_x820_ver1
 def self.user_agent
- "SAMSUNG-SGH-X820"
+ "SAMSUNG-SGH-X820".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   700000

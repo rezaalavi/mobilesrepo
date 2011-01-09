@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class SagemVf533Ver1 < OpwvV72Generic
+   class Sagem_vf533_ver1 < Opwv_v72_generic
 def self.user_agent
- "SAGEM-VF533/1.0/EVN_ZE MIDP/2.0Configuration/CLDC-1.1Browser/UP.Browser/7.2.7.1.398(GUI)"
+ "SAGEM-VF533/1.0/EVN_ZE MIDP/2.0Configuration/CLDC-1.1Browser/UP.Browser/7.2.7.1.398(GUI)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://extranet.sagem.com/UAProfile/899483.xml"

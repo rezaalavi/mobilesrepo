@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_spha840_ver1'
 module Mobiles
  module Repository
-   class FakeSamsungSpha840Ver1 < SamsungSpha840Ver1
+   class Fake_samsung_spha840_ver1 < Samsung_spha840_ver1
 def self.user_agent
- "FAKE_USER_AGENT Samsung PM-A840"
+ "FAKE_USER_AGENT Samsung PM-A840".gsub(/\a/, '\\')
 end
   def model_name
   "PM-A840"

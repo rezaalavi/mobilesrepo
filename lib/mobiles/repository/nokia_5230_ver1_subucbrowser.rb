@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5230_ver1'
 module Mobiles
  module Repository
-   class Nokia5230Ver1Subucbrowser < Nokia5230Ver1
+   class Nokia_5230_ver1_subucbrowser < Nokia_5230_ver1
 def self.user_agent
- "Nokia5230/UC Browser7.2.2.51/50/351"
+ "Nokia5230/UC Browser7.2.2.51/50/351".gsub(/\a/, '\\')
 end
   def mobile_browser
   "UCWeb"

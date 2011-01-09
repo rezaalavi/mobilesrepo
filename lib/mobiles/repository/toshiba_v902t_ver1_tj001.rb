@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/toshiba_v902t_ver1'
 module Mobiles
  module Repository
-   class ToshibaV902tVer1Tj001 < ToshibaV902tVer1
+   class Toshiba_v902t_ver1_tj001 < Toshiba_v902t_ver1
 def self.user_agent
- "Vodafone/1.0/V902T/TJ001/SNXXXXXXXXXXXXXXX Browser/VF-Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0"
+ "Vodafone/1.0/V902T/TJ001/SNXXXXXXXXXXXXXXX Browser/VF-Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ext-J-Profile/JSCL-1.2.2 Ext-V-Profile/VSCL-2.0.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gphone.toshiba.co.jp/tech/profiles/UAPROF/VFKK/Vodafone_902T_r100_3G.xml"

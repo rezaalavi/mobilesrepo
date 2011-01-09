@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry7750_ver1_sub400'
 module Mobiles
  module Repository
-   class Blackberry7750Ver1Sub4005033 < Blackberry7750Ver1Sub400
+   class Blackberry7750_ver1_sub4005033 < Blackberry7750_ver1_sub400
 def self.user_agent
- "BlackBerry7750/4.0.0 UP.Browser/5.0.3.3"
+ "BlackBerry7750/4.0.0 UP.Browser/5.0.3.3".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

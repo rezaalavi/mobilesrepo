@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_winmo_pocket_internet_explorer_2'
 module Mobiles
  module Repository
-   class BrowserWinmoPocketInternetExplorer3 < BrowserWinmoPocketInternetExplorer2
+   class Browser_winmo_pocket_internet_explorer_3 < Browser_winmo_pocket_internet_explorer_2
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_WINMO_POCKET_IE_3"
+ "DO_NOT_MATCH_BROWSER_WINMO_POCKET_IE_3".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3

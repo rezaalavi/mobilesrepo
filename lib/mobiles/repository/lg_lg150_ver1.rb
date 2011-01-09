@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LgLg150Ver1 < GenericXhtml
+   class Lg_lg150_ver1 < Generic_xhtml
 def self.user_agent
- "LGE-LG150 AU-MIC/1.1.17.0 MMP/2.0"
+ "LGE-LG150 AU-MIC/1.1.17.0 MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "LG150"

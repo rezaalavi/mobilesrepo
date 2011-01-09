@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/ericsson_a2628s_ver1'
 module Mobiles
  module Repository
-   class EricssonA2628sVer1Subr2a < EricssonA2628sVer1
+   class Ericsson_a2628s_ver1_subr2a < Ericsson_a2628s_ver1
 def self.user_agent
- "EricssonA2628s/R2A"
+ "EricssonA2628s/R2A".gsub(/\a/, '\\')
 end
   
 end

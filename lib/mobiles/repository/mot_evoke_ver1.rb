@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_safari'
 module Mobiles
  module Repository
-   class MotEvokeVer1 < GenericSafari
+   class Mot_evoke_ver1 < Generic_safari
 def self.user_agent
- "Mozilla/5.0 (X11; U; Linux ARM; en-us) AppleWebKit/525.1+(KHTML, like Gecko) Safari/525 Mobile/MotorolaEvoke"
+ "Mozilla/5.0 (X11; U; Linux ARM; en-us) AppleWebKit/525.1+(KHTML, like Gecko) Safari/525 Mobile/MotorolaEvoke".gsub(/\a/, '\\')
 end
   def device_os
   "Linux Smartphone OS"

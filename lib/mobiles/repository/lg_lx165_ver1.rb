@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_lx160_ver1'
 module Mobiles
  module Repository
-   class LgLx165Ver1 < LgLx160Ver1
+   class Lg_lx165_ver1 < Lg_lx160_ver1
 def self.user_agent
- "LG-LX165/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "LG-LX165/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vmobl.com/LG/lx165/VMU_lx165_UAProf.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class VoxtelR310Ver1 < Generic
+   class Voxtel_r310_ver1 < Generic
 def self.user_agent
- "http://www.voxtel.ru/UAProf/Voxtel_V310.xml"
+ "http://www.voxtel.ru/UAProf/Voxtel_V310.xml".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.voxtel.ru/UAProf/Voxtel_V310.xml"

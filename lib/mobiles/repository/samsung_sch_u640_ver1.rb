@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3'
 module Mobiles
  module Repository
-   class SamsungSchU640Ver1 < GenericNetfrontVer3
+   class Samsung_sch_u640_ver1 < Generic_netfront_ver3
 def self.user_agent
- "SCH-U640/1.0 NetFront/3.0.22.1.19 (GUI) MMP/2.0"
+ "SCH-U640/1.0 NetFront/3.0.22.1.19 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vtext.com/sch/u640/u640.xml"

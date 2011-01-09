@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_gw620_ver1'
 module Mobiles
  module Repository
-   class LgKh5200Ver1 < LgGw620Ver1
+   class Lg_kh5200_ver1 < Lg_gw620_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.5; ko-kr; LG KH5200 Build/CUPCAKE) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2"
+ "Mozilla/5.0 (Linux; U; Android 1.5; ko-kr; LG KH5200 Build/CUPCAKE) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
   def model_name
   "KH5200"

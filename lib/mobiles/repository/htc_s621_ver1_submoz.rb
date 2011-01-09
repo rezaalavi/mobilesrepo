@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_s621_ver1'
 module Mobiles
  module Repository
-   class HtcS621Ver1Submoz < HtcS621Ver1
+   class Htc_s621_ver1_submoz < Htc_s621_ver1
 def self.user_agent
- "HTCS621-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)"
+ "HTCS621-Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; Smartphone; 320x240)".gsub(/\a/, '\\')
 end
   def brand_name
   "HTC"

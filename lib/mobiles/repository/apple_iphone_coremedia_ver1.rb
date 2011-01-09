@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/apple_generic'
 module Mobiles
  module Repository
-   class AppleIphoneCoremediaVer1 < AppleGeneric
+   class Apple_iphone_coremedia_ver1 < Apple_generic
 def self.user_agent
- "Apple iPhone v1.1.4 CoreMedia v1.0.0.4A102"
+ "Apple iPhone v1.1.4 CoreMedia v1.0.0.4A102".gsub(/\a/, '\\')
 end
   def mobile_browser
   ""

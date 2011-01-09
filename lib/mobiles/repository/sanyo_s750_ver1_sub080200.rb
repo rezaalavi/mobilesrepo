@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_s750_ver1'
 module Mobiles
  module Repository
-   class SanyoS750Ver1Sub080200 < SanyoS750Ver1
+   class Sanyo_s750_ver1_sub080200 < Sanyo_s750_ver1
 def self.user_agent
- "SANYO-S750/0.80200 UP.Browser/7.0.2.1.sn.1.106 (GUI) MMP/2.0"
+ "SANYO-S750/0.80200 UP.Browser/7.0.2.1.sn.1.106 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SonyMyloVer1 < GenericXhtml
+   class Sony_mylo_ver1 < Generic_xhtml
 def self.user_agent
- "Mozilla/5.0 (Linux, Sony/COM2/1.01 [en]; like Gecko/2007) Firefox/2"
+ "Mozilla/5.0 (Linux, Sony/COM2/1.01 [en]; like Gecko/2007) Firefox/2".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

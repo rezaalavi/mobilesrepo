@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_7100_ver1'
 module Mobiles
  module Repository
-   class Nokia7100sVer1Subfl502 < Nokia7100Ver1
+   class Nokia_7100s_ver1_subfl502 < Nokia_7100_ver1
 def self.user_agent
- "Nokia7100s-2/1.0 (fl5.02) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia7100s-2/1.0 (fl5.02) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_s300_ver1'
 module Mobiles
  module Repository
-   class SamsungS300Ver2 < SamsungS300Ver1
+   class Samsung_s300_ver2 < Samsung_s300_ver1
 def self.user_agent
- "SEC-SGHS300/1.0 UP.Browser/6.2"
+ "SEC-SGHS300/1.0 UP.Browser/6.2".gsub(/\a/, '\\')
 end
   def xhtml_format_as_css_property?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_fisio311_ver1'
 module Mobiles
  module Repository
-   class PhilipsFisio311Ver1Sub4119m < PhilipsFisio311Ver1
+   class Philips_fisio311_ver1_sub4119m < Philips_fisio311_ver1
 def self.user_agent
- "PHILIPS-Fisio311/2.1 UP/4.1.19m"
+ "PHILIPS-Fisio311/2.1 UP/4.1.19m".gsub(/\a/, '\\')
 end
   
 end

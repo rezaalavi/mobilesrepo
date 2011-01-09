@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_sa3d_ver1'
 module Mobiles
  module Repository
-   class KddiSa3dVer1Subopwv < KddiSa3dVer1
+   class Kddi_sa3d_ver1_subopwv < Kddi_sa3d_ver1
 def self.user_agent
- "KDDI-SA3D UP.Browser/6.2_7.2.7.1.K.1.5.1.116 (GUI) MMP/2.0"
+ "KDDI-SA3D UP.Browser/6.2_7.2.7.1.K.1.5.1.116 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def release_date
   "2008_october"

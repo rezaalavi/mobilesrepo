@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/qci_31_ver1'
 module Mobiles
  module Repository
-   class Qci31Ver1Sub6106d2100 < Qci31Ver1
+   class Qci_31_ver1_sub6106d2100 < Qci_31_ver1
 def self.user_agent
- "QCI-31/1.0 UP.Browser/6.1.0.6.d.2.100 (GUI)MMP/1.0"
+ "QCI-31/1.0 UP.Browser/6.1.0.6.d.2.100 (GUI)MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SieXelibri3Ver1 < Generic
+   class Sie_xelibri3_ver1 < Generic
 def self.user_agent
- "SIE-Xelibri 3"
+ "SIE-Xelibri 3".gsub(/\a/, '\\')
 end
   def model_name
   "Xelibri 3"

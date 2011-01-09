@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003_se'
 module Mobiles
  module Repository
-   class SamsungSghI300Ver1 < GenericMsWinmo2003Se
+   class Samsung_sgh_i300_ver1 < Generic_ms_winmo2003_se
 def self.user_agent
- "SEC-SGHI300"
+ "SEC-SGHI300".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-i300"

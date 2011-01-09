@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_n73_ver1_submozilla50'
 module Mobiles
  module Repository
-   class NokiaN80Ver1Submozilla50Subth < NokiaN73Ver1Submozilla50
+   class Nokia_n80_ver1_submozilla50_subth < Nokia_n73_ver1_submozilla50
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.1; U; [th]; SymbianOS/9.1 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413"
+ "Mozilla/5.0 (SymbianOS/9.1; U; [th]; SymbianOS/9.1 Series60/3.0) AppleWebKit/413 (KHTML, like Gecko) Safari/413".gsub(/\a/, '\\')
 end
   
 end

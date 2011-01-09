@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sgh_z130_ver1'
 module Mobiles
  module Repository
-   class SghZ130Ver1Subcldc11 < SghZ130Ver1
+   class Sgh_z130_ver1_subcldc11 < Sgh_z130_ver1
 def self.user_agent
- "SGH-Z130/1.0 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SGH-Z130/1.0 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

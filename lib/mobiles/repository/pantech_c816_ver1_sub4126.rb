@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_c816_ver1'
 module Mobiles
  module Repository
-   class PantechC816Ver1Sub4126 < PantechC816Ver1
+   class Pantech_c816_ver1_sub4126 < Pantech_c816_ver1
 def self.user_agent
- "Pantech c816 DK.00.00 UP.Browser/4.1.26l"
+ "Pantech c816 DK.00.00 UP.Browser/4.1.26l".gsub(/\a/, '\\')
 end
   
 end

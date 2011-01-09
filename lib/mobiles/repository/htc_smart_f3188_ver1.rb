@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q7'
 module Mobiles
  module Repository
-   class HtcSmartF3188Ver1 < LgGenericObigoQ7
+   class Htc_smart_f3188_ver1 < Lg_generic_obigo_q7
 def self.user_agent
- "HTC_Smart_F3188 Mozilla/5.0 (like Gecko) Obigo/Q7"
+ "HTC_Smart_F3188 Mozilla/5.0 (like Gecko) Obigo/Q7".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

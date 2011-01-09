@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_i700_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI710Ver1 < SecI700Ver1
+   class Samsung_sgh_i710_ver1 < Sec_i700_ver1
 def self.user_agent
- "SAMSUNG-SGH-I710"
+ "SAMSUNG-SGH-I710".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-i710.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_hermes_ver1'
 module Mobiles
  module Repository
-   class Qtek8020Ver1Feeler < HtcHermesVer1
+   class Qtek_8020_ver1_feeler < Htc_hermes_ver1
 def self.user_agent
- "Qtek8020 (Mozilla\\4.0 compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.613"
+ "Qtek8020 (Mozilla\a\a4.0 compatible; MSIE 4.01; Windows CE; Smartphone; 176x220)Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.8) PPC; 240x320;SPV M3100; OpVer 14.211.1.613".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/hermes-2.0.xml"

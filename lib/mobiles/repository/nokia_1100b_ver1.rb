@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_series30_uptext_generic'
 module Mobiles
  module Repository
-   class Nokia1100bVer1 < NokiaSeries30UptextGeneric
+   class Nokia_1100b_ver1 < Nokia_series30_uptext_generic
 def self.user_agent
- "Nokia1100b"
+ "Nokia1100b".gsub(/\a/, '\\')
 end
   def model_name
   "1100b"

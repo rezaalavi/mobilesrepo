@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lenovo_v800_ver1'
 module Mobiles
  module Repository
-   class LenovoV800Ver1Subua < LenovoV800Ver1
+   class Lenovo_v800_ver1_subua < Lenovo_v800_ver1
 def self.user_agent
- "LENOVO-V800 LENOVO-V800"
+ "LENOVO-V800 LENOVO-V800".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

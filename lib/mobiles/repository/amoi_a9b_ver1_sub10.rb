@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoi_a9b_ver1'
 module Mobiles
  module Repository
-   class AmoiA9bVer1Sub10 < AmoiA9bVer1
+   class Amoi_a9b_ver1_sub10 < Amoi_a9b_ver1
 def self.user_agent
- "Amoi-A9B/1.0 UP.Browser/6.2.2.6.f.1.100 (GUI) MMP/1.0"
+ "Amoi-A9B/1.0 UP.Browser/6.2.2.6.f.1.100 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

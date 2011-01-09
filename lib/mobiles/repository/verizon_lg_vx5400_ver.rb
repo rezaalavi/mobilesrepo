@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_vx5400_ver1'
 module Mobiles
  module Repository
-   class VerizonLgVx5400Ver < LgVx5400Ver1
+   class Verizon_lg_vx5400_ver < Lg_vx5400_ver1
 def self.user_agent
- "VX5400v1"
+ "VX5400v1".gsub(/\a/, '\\')
 end
   def model_name
   "VX-5400"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_p3450_ver1_subie76'
 module Mobiles
  module Repository
-   class HtcTouchP3450Ver1Subie76Subwhite < HtcTouchP3450Ver1Subie76
+   class Htc_touch_p3450_ver1_subie76_subwhite < Htc_touch_p3450_ver1_subie76
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450 White; OpVer 23.227.1.801"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) PPC; 240x320; HTC P3450 White; OpVer 23.227.1.801".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/elf-1.0.xml"

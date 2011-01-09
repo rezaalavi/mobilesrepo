@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_z6_ver1'
 module Mobiles
  module Repository
-   class MotZ6Ver1Subua < MotZ6Ver1
+   class Mot_z6_ver1_subua < Mot_z6_ver1
 def self.user_agent
- "MOTOROKR Z6/R60_G_80.33.4ER Mozilla/4.0 (compatible; MSIE 6.0 Linux; MOTOROKR Z6;nnn) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.50[yy]"
+ "MOTOROKR Z6/R60_G_80.33.4ER Mozilla/4.0 (compatible; MSIE 6.0 Linux; MOTOROKR Z6;nnn) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.50[yy]".gsub(/\a/, '\\')
 end
   
 end

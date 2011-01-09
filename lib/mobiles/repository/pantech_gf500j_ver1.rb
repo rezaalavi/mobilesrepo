@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_generic'
 module Mobiles
  module Repository
-   class PantechGf500jVer1 < PantechGeneric
+   class Pantech_gf500j_ver1 < Pantech_generic
 def self.user_agent
- "PT-GF500J"
+ "PT-GF500J".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.pantech.com/Uaprof/Gsm/PT-GF500J.xml"

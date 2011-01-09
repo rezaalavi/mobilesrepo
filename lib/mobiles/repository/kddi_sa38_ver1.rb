@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_wap20_generic'
 module Mobiles
  module Repository
-   class KddiSa38Ver1 < KddiWap20Generic
+   class Kddi_sa38_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-SA38 UP.Browser/6.2.0.11.1.2 (GUI) MMP/2.0"
+ "KDDI-SA38 UP.Browser/6.2.0.11.1.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

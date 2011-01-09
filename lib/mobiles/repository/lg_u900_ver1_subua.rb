@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_u900_ver1'
 module Mobiles
  module Repository
-   class LgU900Ver1Subua < LgU900Ver1
+   class Lg_u900_ver1_subua < Lg_u900_ver1
 def self.user_agent
- "LG/U900/v1.0"
+ "LG/U900/v1.0".gsub(/\a/, '\\')
 end
   def wml_1_2?
   true

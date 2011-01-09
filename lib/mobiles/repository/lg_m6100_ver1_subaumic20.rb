@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_m6100_ver1'
 module Mobiles
  module Repository
-   class LgM6100Ver1Subaumic20 < LgM6100Ver1
+   class Lg_m6100_ver1_subaumic20 < Lg_m6100_ver1
 def self.user_agent
- "LG-M6100 MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-M6100 MIC/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

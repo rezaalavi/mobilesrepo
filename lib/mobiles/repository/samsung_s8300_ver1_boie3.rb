@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_s8300_ver1'
 module Mobiles
  module Repository
-   class SamsungS8300Ver1Boie3 < SamsungS8300Ver1
+   class Samsung_s8300_ver1_boie3 < Samsung_s8300_ver1
 def self.user_agent
- "SAMSUNG-S8300/S8300BOIE3 SHP/VPP/R5 Opera/9.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-S8300/S8300BOIE3 SHP/VPP/R5 Opera/9.5 NexPlayer/2.9.1 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

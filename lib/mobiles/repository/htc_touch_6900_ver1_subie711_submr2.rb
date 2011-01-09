@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_6900_ver1_subie711'
 module Mobiles
  module Repository
-   class HtcTouch6900Ver1Subie711Submr2 < HtcTouch6900Ver1Subie711
+   class Htc_touch_6900_ver1_subie711_submr2 < Htc_touch_6900_ver1_subie711
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-6900-MR2 BM"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) HTC-6900-MR2 BM".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.11

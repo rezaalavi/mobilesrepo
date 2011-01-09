@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_sk65_ver1'
 module Mobiles
  module Repository
-   class SieSk6rVer1 < SieSk65Ver1
+   class Sie_sk6r_ver1 < Sie_sk65_ver1
 def self.user_agent
- "SIE-SK6R"
+ "SIE-SK6R".gsub(/\a/, '\\')
 end
   def uaprof
   "http://communication-market.siemens.de/portal/UAProf/UAP.aspx?device=SK6R"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sch_u740_ver1'
 module Mobiles
  module Repository
-   class SamsungSchU740Ver1Subobigo < SamsungSchU740Ver1
+   class Samsung_sch_u740_ver1_subobigo < Samsung_sch_u740_ver1
 def self.user_agent
- "Samsung-SCHU740 AU-OBIGO/Q04C1-1.22 MMP/2.0"
+ "Samsung-SCHU740 AU-OBIGO/Q04C1-1.22 MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

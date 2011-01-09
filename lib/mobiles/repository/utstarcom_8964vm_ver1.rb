@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class Utstarcom8964vmVer1 < OpwvV72Generic
+   class Utstarcom_8964vm_ver1 < Opwv_v72_generic
 def self.user_agent
- "UTSTARCOM-CDM-8964VM UP.Browser/7.2.7.2.398 (GUI) MMP/2.0"
+ "UTSTARCOM-CDM-8964VM UP.Browser/7.2.7.2.398 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uaprof.vmobl.com/utstarcom/cdma8964/VMU_utstarcom-CDM-8964VM_UAProf.xml"

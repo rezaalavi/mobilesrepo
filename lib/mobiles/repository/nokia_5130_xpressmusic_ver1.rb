@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series40_dp50'
 module Mobiles
  module Repository
-   class Nokia5130XpressmusicVer1 < NokiaGenericSeries40Dp50
+   class Nokia_5130_xpressmusic_ver1 < Nokia_generic_series40_dp50
 def self.user_agent
- "Nokia5130c-2/2.0 (05.80) Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Nokia5130c-2/2.0 (05.80) Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def nokia_feature_pack
   1

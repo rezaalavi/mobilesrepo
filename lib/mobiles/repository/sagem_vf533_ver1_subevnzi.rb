@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_vf533_ver1'
 module Mobiles
  module Repository
-   class SagemVf533Ver1Subevnzi < SagemVf533Ver1
+   class Sagem_vf533_ver1_subevnzi < Sagem_vf533_ver1
 def self.user_agent
- "SAGEM-VF533/1.0/EVN_ZI MIDP/2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.7.1.423 (GUI)"
+ "SAGEM-VF533/1.0/EVN_ZI MIDP/2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.2.7.1.423 (GUI)".gsub(/\a/, '\\')
 end
   
 end

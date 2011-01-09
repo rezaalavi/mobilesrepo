@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_9a9w_ver1'
 module Mobiles
  module Repository
-   class FlyHummerHt2Ver1 < Philips9a9wVer1
+   class Fly_hummer_ht2_ver1 < Philips_9a9w_ver1
 def self.user_agent
- "FlyHT2 ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "FlyHT2 ObigoInternetBrowser/QO3C Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.fly-phone.ru/UAP/uaprof_FLY_HT2.xml"

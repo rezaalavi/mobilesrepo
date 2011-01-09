@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_web_browser'
 module Mobiles
  module Repository
-   class NintendoWiiBrowser < GenericWebBrowser
+   class Nintendo_wii_browser < Generic_web_browser
 def self.user_agent
- "Opera/9.00 (Nintendo Wii"
+ "Opera/9.00 (Nintendo Wii".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

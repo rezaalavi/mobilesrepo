@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_wizard_prodigy_ver1'
 module Mobiles
  module Repository
-   class VodafoneVpaCompactiiVer1 < HtcWizardProdigyVer1
+   class Vodafone_vpa_compactii_ver1 < Htc_wizard_prodigy_ver1
 def self.user_agent
- "Vodafone/1.0/HTC_wizard/2.21.3.102/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "Vodafone/1.0/HTC_wizard/2.21.3.102/Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

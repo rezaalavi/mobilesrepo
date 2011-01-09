@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Zte547Ver1 < GenericXhtml
+   class Zte_547_ver1 < Generic_xhtml
 def self.user_agent
- "Mozilla/4.0(Vodafone/1.0/Vodafone547/VF_GER_DE_P107A4V1.0.1/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1)"
+ "Mozilla/4.0(Vodafone/1.0/Vodafone547/VF_GER_DE_P107A4V1.0.1/Obigo Q03C/MIDP-2.0 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

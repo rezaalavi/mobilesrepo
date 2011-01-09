@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p800_ver1'
 module Mobiles
  module Repository
-   class SonyericssonP900Ver1 < SonyericssonP800Ver1
+   class Sonyericsson_p900_ver1 < Sonyericsson_p800_ver1
 def self.user_agent
- "SonyEricssonP900"
+ "SonyEricssonP900".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

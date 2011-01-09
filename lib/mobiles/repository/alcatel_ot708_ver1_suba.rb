@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_ot708_ver1'
 module Mobiles
  module Repository
-   class AlcatelOt708Ver1Suba < AlcatelOt708Ver1
+   class Alcatel_ot708_ver1_suba < Alcatel_ot708_ver1
 def self.user_agent
- "Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C"
+ "Alcatel-OT-708A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q03C".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www-ccpp.tcl-ta.com/files/ALCATEL-OT-708A.rdf"

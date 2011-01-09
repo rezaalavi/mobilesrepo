@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p5500_ver1'
 module Mobiles
  module Repository
-   class HtcP5500Ver1Sub13162109 < HtcP5500Ver1
+   class Htc_p5500_ver1_sub13162109 < Htc_p5500_ver1
 def self.user_agent
- "HTC P5500/1.31.621.09 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "HTC P5500/1.31.621.09 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def softkey_support?
   true

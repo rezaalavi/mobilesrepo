@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60_dp30_fp2_webkit'
 module Mobiles
  module Repository
-   class NokiaC5Ver1 < NokiaGenericSeries60Dp30Fp2Webkit
+   class Nokia_c5_ver1 < Nokia_generic_series60_dp30_fp2_webkit
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/031.013; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5"
+ "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/031.013; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5".gsub(/\a/, '\\')
 end
   def uaprof
   "http://nds1.nds.nokia.com/uaprof/NC5-00r100.xml"

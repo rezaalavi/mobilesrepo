@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/compal_xg655_ver1'
 module Mobiles
  module Repository
-   class CompalXg655Ver1Sub10 < CompalXg655Ver1
+   class Compal_xg655_ver1_sub10 < Compal_xg655_ver1
 def self.user_agent
- "Compal-XG655/1.4 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.3 (GUI) MMP/1.0"
+ "Compal-XG655/1.4 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

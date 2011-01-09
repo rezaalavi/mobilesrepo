@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class GigabyteGsmartVer1 < GenericMsWinmo5
+   class Gigabyte_gsmart_ver1 < Generic_ms_winmo5
 def self.user_agent
- "GIGABYTE-g-Smart Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; GIGABYTE-g-Smart)"
+ "GIGABYTE-g-Smart Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320; GIGABYTE-g-Smart)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://eip2.gigabytecm.com/GIGABYTE-g-smart.xml"

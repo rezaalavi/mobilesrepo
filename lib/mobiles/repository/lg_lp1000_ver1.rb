@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class LgLp1000Ver1 < UptextGeneric
+   class Lg_lp1000_ver1 < Uptext_generic
 def self.user_agent
- "LG-LP1000/1.0 UP.Browser/4.1.22b"
+ "LG-LP1000/1.0 UP.Browser/4.1.22b".gsub(/\a/, '\\')
 end
   def model_name
   "LP1000"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z100_ver1'
 module Mobiles
  module Repository
-   class SamsungZ105Ver1 < SamsungZ100Ver1
+   class Samsung_z105_ver1 < Samsung_z100_ver1
 def self.user_agent
- "Mozilla/SMB3(Z105)/Samsung"
+ "Mozilla/SMB3(Z105)/Samsung".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-Z105"

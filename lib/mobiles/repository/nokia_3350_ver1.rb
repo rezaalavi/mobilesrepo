@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series30'
 module Mobiles
  module Repository
-   class Nokia3350Ver1 < NokiaGenericSeries30
+   class Nokia_3350_ver1 < Nokia_generic_series30
 def self.user_agent
- "Nokia3350"
+ "Nokia3350".gsub(/\a/, '\\')
 end
   def max_image_height
   51

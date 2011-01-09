@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_platform65_generic'
 module Mobiles
  module Repository
-   class SiePlatform75Generic < SiePlatform65Generic
+   class Sie_platform75_generic < Sie_platform65_generic
 def self.user_agent
- "Siemens_Platform_75"
+ "Siemens_Platform_75".gsub(/\a/, '\\')
 end
   def max_image_width
   132

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZteC77Ver1 < GenericXhtml
+   class Zte_c77_ver1 < Generic_xhtml
 def self.user_agent
- "ZTE-C77/1.0 SMIT-Browser/2.0.0"
+ "ZTE-C77/1.0 SMIT-Browser/2.0.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/ZTE/PLSC77ZTE/latest"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_e720_ver1'
 module Mobiles
  module Repository
-   class SecE720Ver1Sub25 < SecE720Ver1
+   class Sec_e720_ver1_sub25 < Sec_e720_ver1
 def self.user_agent
- "SEC-SGHE720/1.0 TSS/2.5"
+ "SEC-SGHE720/1.0 TSS/2.5".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

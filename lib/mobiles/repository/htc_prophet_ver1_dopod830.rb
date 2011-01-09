@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/imate_jamin_ver1'
 module Mobiles
  module Repository
-   class HtcProphetVer1Dopod830 < ImateJaminVer1
+   class Htc_prophet_ver1_dopod830 < Imate_jamin_ver1
 def self.user_agent
- "dopod830/5.1.65/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "dopod830/5.1.65/WAP1.2 Profile/MIDP2.0 Configuration/CLDC1.0 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   def physical_screen_height
   57

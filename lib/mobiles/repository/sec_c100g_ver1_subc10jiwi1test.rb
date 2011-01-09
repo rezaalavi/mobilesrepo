@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_c100g_ver1'
 module Mobiles
  module Repository
-   class SecC100gVer1Subc10jiwi1test < SecC100gVer1
+   class Sec_c100g_ver1_subc10jiwi1test < Sec_c100g_ver1
 def self.user_agent
- "SEC-SGHC100G/1.0/C10JIWI1_Test UP.Browser/5.0.5.1 (GUI)"
+ "SEC-SGHC100G/1.0/C10JIWI1_Test UP.Browser/5.0.5.1 (GUI)".gsub(/\a/, '\\')
 end
   
 end

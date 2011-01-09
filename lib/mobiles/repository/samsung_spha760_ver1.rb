@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class SamsungSpha760Ver1 < Generic
+   class Samsung_spha760_ver1 < Generic
 def self.user_agent
- "Samsung-SPHA760"
+ "Samsung-SPHA760".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

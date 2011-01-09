@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pt_gf500_ver1'
 module Mobiles
  module Repository
-   class PtGf500Ver1Subr01 < PtGf500Ver1
+   class Pt_gf500_ver1_subr01 < Pt_gf500_ver1
 def self.user_agent
- "GF-500/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "GF-500/R01 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

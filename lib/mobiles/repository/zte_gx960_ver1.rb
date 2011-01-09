@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZteGx960Ver1 < GenericXhtml
+   class Zte_gx960_ver1 < Generic_xhtml
 def self.user_agent
- "SFR342/X960_V2_Z0_C1_BFFA100 Obigo/Q03C"
+ "SFR342/X960_V2_Z0_C1_BFFA100 Obigo/Q03C".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

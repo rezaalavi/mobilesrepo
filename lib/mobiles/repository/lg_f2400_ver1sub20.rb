@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_f2400_ver1'
 module Mobiles
  module Repository
-   class LgF2400Ver1sub20 < LgF2400Ver1
+   class Lg_f2400_ver1sub20 < Lg_f2400_ver1
 def self.user_agent
- "LG-F2400 MIC/WAP2.0 MIDP-2.0/CLDC-1.1"
+ "LG-F2400 MIC/WAP2.0 MIDP-2.0/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

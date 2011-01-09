@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LynxTextonlyBrowser < GenericXhtml
+   class Lynx_textonly_browser < Generic_xhtml
 def self.user_agent
- "Lynx/2.8.6rel.4 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/2.0.4"
+ "Lynx/2.8.6rel.4 libwww-FM/2.14 SSL-MM/1.4.1 GNUTLS/2.0.4".gsub(/\a/, '\\')
 end
   def pointing_method
   ""

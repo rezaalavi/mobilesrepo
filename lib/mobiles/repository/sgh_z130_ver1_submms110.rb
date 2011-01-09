@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sgh_z130_ver1'
 module Mobiles
  module Repository
-   class SghZ130Ver1Submms110 < SghZ130Ver1
+   class Sgh_z130_ver1_submms110 < Sgh_z130_ver1
 def self.user_agent
- "SGH-Z130 SHP/VPP/R5 SMB3.1 SMM-MMS/1.1.0 profile/MIDP-2.0 configuration/CLDC-1.0"
+ "SGH-Z130 SHP/VPP/R5 SMB3.1 SMM-MMS/1.1.0 profile/MIDP-2.0 configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

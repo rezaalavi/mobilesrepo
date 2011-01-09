@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upg1_ver1_subblazer40'
 module Mobiles
  module Repository
-   class Upg1Ver1Subblazer40tnt5448 < Upg1Ver1Subblazer40
+   class Upg1_ver1_subblazer40tnt5448 < Upg1_ver1_subblazer40
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-TnT5; Blazer/4.0) 16;320x448"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows 98; PalmSource/Palm-TnT5; Blazer/4.0) 16;320x448".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

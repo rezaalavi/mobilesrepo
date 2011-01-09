@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2_1'
 module Mobiles
  module Repository
-   class HuaweiSmakitS7Ver1 < GenericAndroidVer21
+   class Huawei_smakit_s7_ver1 < Generic_android_ver2_1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-au; S7 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 S7V100R001C13B021"
+ "Mozilla/5.0 (Linux; U; Android 2.1-update1; en-au; S7 Build/ERE27) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17 S7V100R001C13B021".gsub(/\a/, '\\')
 end
   def dual_orientation?
   true

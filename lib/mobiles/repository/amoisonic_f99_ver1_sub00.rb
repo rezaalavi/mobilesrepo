@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/amoisonic_f99_ver1'
 module Mobiles
  module Repository
-   class AmoisonicF99Ver1Sub00 < AmoisonicF99Ver1
+   class Amoisonic_f99_ver1_sub00 < Amoisonic_f99_ver1
 def self.user_agent
- "Amoisonic-F99/1.0 UP.Browser/5.0.3.2 (GUI)"
+ "Amoisonic-F99/1.0 UP.Browser/5.0.3.2 (GUI)".gsub(/\a/, '\\')
 end
   def max_image_width
   118

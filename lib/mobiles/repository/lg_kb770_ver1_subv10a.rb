@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kb770_ver1'
 module Mobiles
  module Repository
-   class LgKb770Ver1Subv10a < LgKb770Ver1
+   class Lg_kb770_ver1_subv10a < Lg_kb770_ver1
 def self.user_agent
- "Mozilla/4.0 (Vodafone/1.0/LG-KB770/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)"
+ "Mozilla/4.0 (Vodafone/1.0/LG-KB770/v10a Browser/Teleca-Q7.1 MMS/LG-MMS-V1.0/1.2 Java/ASVM/1.1 Profile/MIDP-2.1 Configuration/CLDC-1.1)".gsub(/\a/, '\\')
 end
   
 end

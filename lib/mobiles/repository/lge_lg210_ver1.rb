@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lge_lg200_ver1'
 module Mobiles
  module Repository
-   class LgeLg210Ver1 < LgeLg200Ver1
+   class Lge_lg210_ver1 < Lge_lg200_ver1
 def self.user_agent
- "LG210/1.0"
+ "LG210/1.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.telusmobility.com/lg/LG210-0.rdf"

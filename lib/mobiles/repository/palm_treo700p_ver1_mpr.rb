@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_treo700p_ver1'
 module Mobiles
  module Repository
-   class PalmTreo700pVer1Mpr < PalmTreo700pVer1
+   class Palm_treo700p_ver1_mpr < Palm_treo700p_ver1
 def self.user_agent
- "MPR/1.0 (PalmOS v. 5.4.9)"
+ "MPR/1.0 (PalmOS v. 5.4.9)".gsub(/\a/, '\\')
 end
   
 end

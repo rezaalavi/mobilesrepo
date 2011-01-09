@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SamsungSghE818Ver1 < GenericXhtml
+   class Samsung_sgh_e818_ver1 < Generic_xhtml
 def self.user_agent
- "SEC-SGHE818*MzU0NDgyMDAwMjc5NDk5"
+ "SEC-SGHE818*MzU0NDgyMDAwMjc5NDk5".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/e818.xml"

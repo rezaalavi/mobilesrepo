@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i900_ver1'
 module Mobiles
  module Repository
-   class SamsungI900vVer1 < SamsungSghI900Ver1
+   class Samsung_i900v_ver1 < Samsung_sgh_i900_ver1
 def self.user_agent
- "SAMSUNG-SGH-i900V/AEHG4 Opera 9.5"
+ "SAMSUNG-SGH-i900V/AEHG4 Opera 9.5".gsub(/\a/, '\\')
 end
   def columns
   16

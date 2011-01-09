@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_a210_ver1'
 module Mobiles
  module Repository
-   class PanasonicA210Ver1Sub10 < PanasonicA210Ver1
+   class Panasonic_a210_ver1_sub10 < Panasonic_a210_ver1
 def self.user_agent
- "Panasonic-A210/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0"
+ "Panasonic-A210/1.0 UP.Browser/6.1.0.7.8 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

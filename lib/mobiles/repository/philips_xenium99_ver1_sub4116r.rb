@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/philips_xenium99_ver1'
 module Mobiles
  module Repository
-   class PhilipsXenium99Ver1Sub4116r < PhilipsXenium99Ver1
+   class Philips_xenium99_ver1_sub4116r < Philips_xenium99_ver1
 def self.user_agent
- "PHILIPS-Xenium9@9 UP/4.1.16r"
+ "PHILIPS-Xenium9@9 UP/4.1.16r".gsub(/\a/, '\\')
 end
   
 end

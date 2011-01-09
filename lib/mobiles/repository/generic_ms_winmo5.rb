@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003'
 module Mobiles
  module Repository
-   class GenericMsWinmo5 < GenericMsWinmo2003
+   class Generic_ms_winmo5 < Generic_ms_winmo2003
 def self.user_agent
- "DO_NOT_MATCH_WINMO_5"
+ "DO_NOT_MATCH_WINMO_5".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

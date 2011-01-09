@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sharp_tq_gx_21_ver1'
 module Mobiles
  module Repository
-   class SharpTqGx21Ver1Sub6222107 < SharpTqGx21Ver1
+   class Sharp_tq_gx_21_ver1_sub6222107 < Sharp_tq_gx_21_ver1
 def self.user_agent
- "SHARP-TQ-GX-21/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.2.107 (GUI) MMP/1.0"
+ "SHARP-TQ-GX-21/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.2.2.2.107 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

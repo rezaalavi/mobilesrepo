@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class ZteA39Ver1 < Generic
+   class Zte_a39_ver1 < Generic
 def self.user_agent
- "ZTEA39/VVP103C1/WAP1.2.1"
+ "ZTEA39/VVP103C1/WAP1.2.1".gsub(/\a/, '\\')
 end
   def model_name
   "A39"

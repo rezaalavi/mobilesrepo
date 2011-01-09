@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w205_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW205aVer1 < SonyericssonW205Ver1
+   class Sonyericsson_w205a_ver1 < Sonyericsson_w205_ver1
 def self.user_agent
- "SonyEricssonW205a/R1BA004 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SonyEricssonW205a/R1BA004 Browser/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "W205a"

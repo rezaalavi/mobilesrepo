@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_qcist60_ver1'
 module Mobiles
  module Repository
-   class SieQcist60Ver1Sub61073 < SieQcist60Ver1
+   class Sie_qcist60_ver1_sub61073 < Sie_qcist60_ver1
 def self.user_agent
- "QCI-MJ2/1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0"
+ "QCI-MJ2/1.0 UP.Browser/6.1.0.7.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   -1

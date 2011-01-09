@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_f250_ver1'
 module Mobiles
  module Repository
-   class SamsungSghF250Ver1Subua < SamsungSghF250Ver1
+   class Samsung_sgh_f250_ver1_subua < Samsung_sgh_f250_ver1
 def self.user_agent
- "SAMSUNG-SGH-F250"
+ "SAMSUNG-SGH-F250".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/SGH-F250.xml"

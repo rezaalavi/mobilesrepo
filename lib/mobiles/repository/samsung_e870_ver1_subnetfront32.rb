@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e870_ver1'
 module Mobiles
  module Repository
-   class SamsungE870Ver1Subnetfront32 < SamsungE870Ver1
+   class Samsung_e870_ver1_subnetfront32 < Samsung_e870_ver1
 def self.user_agent
- "SEC-SGHE870/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SEC-SGHE870/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

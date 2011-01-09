@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class Vodafone880shVer1 < GenericNetfrontVer34
+   class Vodafone_880sh_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "Vodafone/1.0/880SH/1.104 Browser/VF-NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Vodafone/1.0/880SH/1.104 Browser/VF-NetFront/3.3 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   3.3

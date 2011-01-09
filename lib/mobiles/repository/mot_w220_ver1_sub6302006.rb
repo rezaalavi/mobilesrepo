@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_w220_ver1'
 module Mobiles
  module Repository
-   class MotW220Ver1Sub6302006 < MotW220Ver1
+   class Mot_w220_ver1_sub6302006 < Mot_w220_ver1
 def self.user_agent
- "MOT-W220/1.0 Release/6.30.2006 Browser/CMCS1.0 Software/0.280"
+ "MOT-W220/1.0 Release/6.30.2006 Browser/CMCS1.0 Software/0.280".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

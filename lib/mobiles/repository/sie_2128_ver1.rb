@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class Sie2128Ver1 < UpguiGeneric
+   class Sie_2128_ver1 < Upgui_generic
 def self.user_agent
- "SIE-2128"
+ "SIE-2128".gsub(/\a/, '\\')
 end
   def j2me_midi?
   true

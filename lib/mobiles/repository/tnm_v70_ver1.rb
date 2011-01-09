@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v70_ver1'
 module Mobiles
  module Repository
-   class TnmV70Ver1 < MotV70Ver1
+   class Tnm_v70_ver1 < Mot_v70_ver1
 def self.user_agent
- "TNM-V70/1.0 Release/11.22.2008 Browser/Obigo2.0"
+ "TNM-V70/1.0 Release/11.22.2008 Browser/Obigo2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

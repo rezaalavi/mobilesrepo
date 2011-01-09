@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e590_ver1'
 module Mobiles
  module Repository
-   class SamsungE590Ver1Sub106233c1101 < SamsungE590Ver1
+   class Samsung_e590_ver1_sub106233c1101 < Samsung_e590_ver1
 def self.user_agent
- "SAMSUNG-SGH-E590/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-E590/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_c357_ver1'
 module Mobiles
  module Repository
-   class MotC357Ver1Sub10 < MotC357Ver1
+   class Mot_c357_ver1_sub10 < Mot_c357_ver1
 def self.user_agent
- "MOT-C357/1.0 UP.Browser 6.2.2.1 (GUI) MMP-2.0 /M4 3.02"
+ "MOT-C357/1.0 UP.Browser 6.2.2.1 (GUI) MMP-2.0 /M4 3.02".gsub(/\a/, '\\')
 end
   def model_name
   "C357"

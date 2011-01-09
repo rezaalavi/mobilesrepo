@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/bloody_transcoder'
 module Mobiles
  module Repository
-   class StupidOpenwebProxy < BloodyTranscoder
+   class Stupid_openweb_proxy < Bloody_transcoder
 def self.user_agent
- "Mozilla/5.0 (compatible; OpenWeb 5.6.1.3-03) Opera 8.54"
+ "Mozilla/5.0 (compatible; OpenWeb 5.6.1.3-03) Opera 8.54".gsub(/\a/, '\\')
 end
   def model_name
   "reformatting proxy"

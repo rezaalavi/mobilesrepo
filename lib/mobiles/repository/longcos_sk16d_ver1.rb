@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LongcosSk16dVer1 < GenericXhtml
+   class Longcos_sk16d_ver1 < Generic_xhtml
 def self.user_agent
- "LONGCOS_SK16D"
+ "LONGCOS_SK16D".gsub(/\a/, '\\')
 end
   def model_name
   "SK16D"

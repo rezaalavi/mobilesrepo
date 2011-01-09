@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upg1_ver1_subblazer40'
 module Mobiles
  module Repository
-   class PalmTreo680Ver1Subblazer45 < Upg1Ver1Subblazer40
+   class Palm_treo680_ver1_subblazer45 < Upg1_ver1_subblazer40
 def self.user_agent
- "PalmSource/Palm-D053; Blazer/4.5"
+ "PalmSource/Palm-D053; Blazer/4.5".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

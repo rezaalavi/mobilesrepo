@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class ZteA261Ver1 < GenericXhtml
+   class Zte_a261_ver1 < Generic_xhtml
 def self.user_agent
- "ZTE-A261/P103B9V1.0.0/WAP2.0 Profile"
+ "ZTE-A261/P103B9V1.0.0/WAP2.0 Profile".gsub(/\a/, '\\')
 end
   def uaprof
   "http://zte.com.cn/mobile/uaprof/zte-A261.xml"

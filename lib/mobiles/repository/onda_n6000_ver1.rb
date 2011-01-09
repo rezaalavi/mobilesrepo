@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/onda_n5050_ver1'
 module Mobiles
  module Repository
-   class OndaN6000Ver1 < OndaN5050Ver1
+   class Onda_n6000_ver1 < Onda_n5050_ver1
 def self.user_agent
- "N6000/1.0 ACS-NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "N6000/1.0 ACS-NF/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access Netfront"

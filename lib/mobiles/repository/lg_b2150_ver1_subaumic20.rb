@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_b2150_ver1'
 module Mobiles
  module Repository
-   class LgB2150Ver1Subaumic20 < LgB2150Ver1
+   class Lg_b2150_ver1_subaumic20 < Lg_b2150_ver1
 def self.user_agent
- "LG-B2150 MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
+ "LG-B2150 MIC/WAP2.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

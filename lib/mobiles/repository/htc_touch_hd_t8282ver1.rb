@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_blackstone_ver1'
 module Mobiles
  module Repository
-   class HtcTouchHdT8282ver1 < HtcBlackstoneVer1
+   class Htc_touch_hd_t8282ver1 < Htc_blackstone_ver1
 def self.user_agent
- "HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "HTC_Touch_HD_T8282 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

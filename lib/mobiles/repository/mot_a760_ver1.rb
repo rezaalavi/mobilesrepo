@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_mib22_generic'
 module Mobiles
  module Repository
-   class MotA760Ver1 < MotMib22Generic
+   class Mot_a760_ver1 < Mot_mib22_generic
 def self.user_agent
- "MOT-A760"
+ "MOT-A760".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/a760/Profile/a760.rdf"

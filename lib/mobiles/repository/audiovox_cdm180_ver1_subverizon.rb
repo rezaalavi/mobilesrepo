@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/audiovox_cdm180_ver1'
 module Mobiles
  module Repository
-   class AudiovoxCdm180Ver1Subverizon < AudiovoxCdm180Ver1
+   class Audiovox_cdm180_ver1_subverizon < Audiovox_cdm180_ver1
 def self.user_agent
- "audio180"
+ "audio180".gsub(/\a/, '\\')
 end
   def model_name
   "CDM-180"

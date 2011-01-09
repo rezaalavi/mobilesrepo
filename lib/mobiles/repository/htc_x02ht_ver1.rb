@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_cavalier_ver1'
 module Mobiles
  module Repository
-   class HtcX02htVer1 < HtcCavalierVer1
+   class Htc_x02ht_ver1 < Htc_cavalier_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC/X02HT"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) HTC/X02HT".gsub(/\a/, '\\')
 end
   def model_name
   "X02HT"

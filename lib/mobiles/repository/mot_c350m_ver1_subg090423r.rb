@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_c350m_ver1'
 module Mobiles
  module Repository
-   class MotC350mVer1Subg090423r < MotC350mVer1
+   class Mot_c350m_ver1_subg090423r < Mot_c350m_ver1
 def self.user_agent
- "MOT-c350M/G_09.04.23R MIB/2.0"
+ "MOT-c350M/G_09.04.23R MIB/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

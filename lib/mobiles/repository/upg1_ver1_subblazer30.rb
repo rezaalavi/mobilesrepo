@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upg1_ver1_subblazer10'
 module Mobiles
  module Repository
-   class Upg1Ver1Subblazer30 < Upg1Ver1Subblazer10
+   class Upg1_ver1_subblazer30 < Upg1_ver1_subblazer10
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16;160x160"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows 95; PalmSource; Blazer 3.0) 16;160x160".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

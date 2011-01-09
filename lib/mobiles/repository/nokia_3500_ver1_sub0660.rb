@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_3500_ver1'
 module Mobiles
  module Repository
-   class Nokia3500Ver1Sub0660 < Nokia3500Ver1
+   class Nokia_3500_ver1_sub0660 < Nokia_3500_ver1
 def self.user_agent
- "Nokia3500c/2.0 (06.60) Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "Nokia3500c/2.0 (06.60) Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k770i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK770iVer1Subr8ba < SonyericssonK770iVer1
+   class Sonyericsson_k770i_ver1_subr8ba < Sonyericsson_k770i_ver1
 def self.user_agent
- "SonyEricssonK770i/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0"
+ "SonyEricssonK770i/R8BA Browser/NetFront/3.3 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

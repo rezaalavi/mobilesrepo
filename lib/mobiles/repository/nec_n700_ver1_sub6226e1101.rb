@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_n700_ver1'
 module Mobiles
  module Repository
-   class NecN700Ver1Sub6226e1101 < NecN700Ver1
+   class Nec_n700_ver1_sub6226e1101 < Nec_n700_ver1
 def self.user_agent
- "NEC-N700/1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0"
+ "NEC-N700/1.0 UP.Browser/6.2.2.6.e.1.101 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

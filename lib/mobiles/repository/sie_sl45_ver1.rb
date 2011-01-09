@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SieSl45Ver1 < UptextGeneric
+   class Sie_sl45_ver1 < Uptext_generic
 def self.user_agent
- "SIE-SL45"
+ "SIE-SL45".gsub(/\a/, '\\')
 end
   def model_name
   "SL45"

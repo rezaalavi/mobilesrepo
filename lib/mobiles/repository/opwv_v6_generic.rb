@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/upgui_generic'
 module Mobiles
  module Repository
-   class OpwvV6Generic < UpguiGeneric
+   class Opwv_v6_generic < Upgui_generic
 def self.user_agent
- "DO_NOT_MATCH_UP.Browser/6"
+ "DO_NOT_MATCH_UP.Browser/6".gsub(/\a/, '\\')
 end
   def html_wi_imode_htmlx_1?
   true

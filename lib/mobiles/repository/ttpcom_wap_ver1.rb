@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class TtpcomWapVer1 < Generic
+   class Ttpcom_wap_ver1 < Generic
 def self.user_agent
- "TTPCom WAP"
+ "TTPCom WAP".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.zte.com.cn/mobile/uaprof/ZTEA37.xml"

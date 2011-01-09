@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class Fly2040Ver1 < GenericXhtml
+   class Fly_2040_ver1 < Generic_xhtml
 def self.user_agent
- "Fly_2040"
+ "Fly_2040".gsub(/\a/, '\\')
 end
   def model_name
   2040

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_polaris_ver1'
 module Mobiles
  module Repository
-   class VodafoneSfrV3650Ver1 < HtcPolarisVer1
+   class Vodafone_sfr_v3650_ver1 < Htc_polaris_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/SFR_v3650/1.25.163.3"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6) Vodafone/1.0/SFR_v3650/1.25.163.3".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.6

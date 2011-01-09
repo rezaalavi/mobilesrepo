@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w395_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW395Ver1Sud < SonyericssonW395Ver1
+   class Sonyericsson_w395_ver1_sud < Sonyericsson_w395_ver1
 def self.user_agent
- "SonyEricssonW395/R1CB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "SonyEricssonW395/R1CB Browser/OpenWave/1.0 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sonyericsson.com/downloads/W395R101.xml"

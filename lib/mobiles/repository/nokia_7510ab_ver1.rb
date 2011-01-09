@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_7510_supernova_ver1'
 module Mobiles
  module Repository
-   class Nokia7510abVer1 < Nokia7510SupernovaVer1
+   class Nokia_7510ab_ver1 < Nokia_7510_supernova_ver1
 def self.user_agent
- "Mozilla/5.0 ( Nokia7510a-b/2.0 (03.60) Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+ "Mozilla/5.0 ( Nokia7510a-b/2.0 (03.60) Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/420+ (KHTML, like Gecko) Safari/420+".gsub(/\a/, '\\')
 end
   def model_name
   "7510a-b"

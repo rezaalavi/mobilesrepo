@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g5400_01_ver1'
 module Mobiles
  module Repository
-   class LgG540001Ver1Subaumic410 < LgG540001Ver1
+   class Lg_g5400_01_ver1_subaumic410 < Lg_g5400_01_ver1
 def self.user_agent
- "LG-G5400_01 AU/4.10 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "LG-G5400_01 AU/4.10 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

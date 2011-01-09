@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_dolfin2_0'
 module Mobiles
  module Repository
-   class SamsungGtB2710Ver1 < GenericDolfin20
+   class Samsung_gt_b2710_ver1 < Generic_dolfin2_0
 def self.user_agent
- "SAMSUNG-GT-B2710/B2710XXJI4 SHP/VPP/R5 Dolfin/2.0 QTV/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B"
+ "SAMSUNG-GT-B2710/B2710XXJI4 SHP/VPP/R5 Dolfin/2.0 QTV/5.3 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.samsungmobile.com/uaprof/GT-B2710.rdf"

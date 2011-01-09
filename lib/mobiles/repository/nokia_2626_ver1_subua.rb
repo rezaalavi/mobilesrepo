@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_2626_ver1'
 module Mobiles
  module Repository
-   class Nokia2626Ver1Subua < Nokia2626Ver1
+   class Nokia_2626_ver1_subua < Nokia_2626_ver1
 def self.user_agent
- "Nokia-2626"
+ "Nokia-2626".gsub(/\a/, '\\')
 end
   
 end

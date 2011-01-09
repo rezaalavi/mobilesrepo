@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class AudiovoxPm8920kitVer1 < OpwvV62Generic
+   class Audiovox_pm8920kit_ver1 < Opwv_v62_generic
 def self.user_agent
- "AUDIOVOX-PM8920KIT"
+ "AUDIOVOX-PM8920KIT".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Audiovox/PM8920KIT/T120SP0T19.rdf"

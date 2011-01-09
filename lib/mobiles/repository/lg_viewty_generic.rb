@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q5'
 module Mobiles
  module Repository
-   class LgViewtyGeneric < LgGenericObigoQ5
+   class Lg_viewty_generic < Lg_generic_obigo_q5
 def self.user_agent
- "LG-VIEWTY-GENERIC-DO-NOT-MATCH"
+ "LG-VIEWTY-GENERIC-DO-NOT-MATCH".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

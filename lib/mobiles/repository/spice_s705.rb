@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SpiceS705 < GenericXhtml
+   class Spice_s705 < Generic_xhtml
 def self.user_agent
- "Spice S705"
+ "Spice S705".gsub(/\a/, '\\')
 end
   def model_name
   "S705"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_p1i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonP1iVer1Subr100636 < SonyericssonP1iVer1
+   class Sonyericsson_p1i_ver1_subr100_636 < Sonyericsson_p1i_ver1
 def self.user_agent
- "SonyEricssonP1i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 636) Opera 8.65 [sv]"
+ "SonyEricssonP1i/R100 Mozilla/4.0 (compatible; MSIE 6.0; Symbian OS; 636) Opera 8.65 [sv]".gsub(/\a/, '\\')
 end
   
 end

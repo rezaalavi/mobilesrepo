@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HuaweiT209Ver1 < GenericXhtml
+   class Huawei_t209_ver1 < Generic_xhtml
 def self.user_agent
- "Huawei-T209_CMCC/0.1 NXP/1.0 Release/01.04.2009 Browser/mBrowser4.0 Profile/MIDP-1.0 Configration/CLDC-1.0"
+ "Huawei-T209_CMCC/0.1 NXP/1.0 Release/01.04.2009 Browser/mBrowser4.0 Profile/MIDP-1.0 Configration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def model_name
   "T209"

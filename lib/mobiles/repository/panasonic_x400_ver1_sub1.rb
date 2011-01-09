@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_x400_ver1'
 module Mobiles
  module Repository
-   class PanasonicX400Ver1Sub1 < PanasonicX400Ver1
+   class Panasonic_x400_ver1_sub1 < Panasonic_x400_ver1
 def self.user_agent
- "Panasonic-X400/R01 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "Panasonic-X400/R01 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2'
 module Mobiles
  module Repository
-   class MotV3xxiVer1 < PortalmmmVer2
+   class Mot_v3xxi_ver1 < Portalmmm_ver2
 def self.user_agent
- "portalmmm/2.0 v3xximode"
+ "portalmmm/2.0 v3xximode".gsub(/\a/, '\\')
 end
   def model_name
   "RAZR V3xxi iZar"

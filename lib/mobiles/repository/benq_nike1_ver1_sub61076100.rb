@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benq_nike1_ver1'
 module Mobiles
  module Repository
-   class BenqNike1Ver1Sub61076100 < BenqNike1Ver1
+   class Benq_nike1_ver1_sub61076100 < Benq_nike1_ver1
 def self.user_agent
- "BENQ-NIKE1/CLDC_1.0 UP.Browser/6.1.0.7.6.100 (GUI) MMP/1.0"
+ "BENQ-NIKE1/CLDC_1.0 UP.Browser/6.1.0.7.6.100 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

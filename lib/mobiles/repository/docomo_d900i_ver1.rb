@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_jap_ver2'
 module Mobiles
  module Repository
-   class DocomoD900iVer1 < DocomoGenericJapVer2
+   class Docomo_d900i_ver1 < Docomo_generic_jap_ver2
 def self.user_agent
- "DoCoMo/2.0 D900i(c100;TB;W20H10)"
+ "DoCoMo/2.0 D900i(c100;TB;W20H10)".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

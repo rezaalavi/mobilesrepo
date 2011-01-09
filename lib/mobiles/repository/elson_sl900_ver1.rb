@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/el490_ver1'
 module Mobiles
  module Repository
-   class ElsonSl900Ver1 < El490Ver1
+   class Elson_sl900_ver1 < El490_ver1
 def self.user_agent
- "SL900"
+ "SL900".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/SL900.xml"

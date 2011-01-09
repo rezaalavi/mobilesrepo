@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_so505i_ver1'
 module Mobiles
  module Repository
-   class Docomo505iVer1Subso505iw18 < DocomoSo505iVer1
+   class Docomo_505i_ver1_subso505iw18 < Docomo_so505i_ver1
 def self.user_agent
- "DoCoMo/1.0/SO505i/c20/TB/W18H08"
+ "DoCoMo/1.0/SO505i/c20/TB/W18H08".gsub(/\a/, '\\')
 end
   def columns
   18

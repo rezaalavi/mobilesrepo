@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_v365_ver1'
 module Mobiles
  module Repository
-   class MotV365Ver1Sub08cc0fr < MotV365Ver1
+   class Mot_v365_ver1_sub08cc0fr < Mot_v365_ver1
 def self.user_agent
- "MOT-V365/08.CC.0FR MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-V365/08.CC.0FR MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   5000000

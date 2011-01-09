@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/telit_g80_ver1'
 module Mobiles
  module Repository
-   class TelitGu1100Ver1 < TelitG80Ver1
+   class Telit_gu1100_ver1 < Telit_g80_ver1
 def self.user_agent
- "GU1100"
+ "GU1100".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.curitel.com/UAProf/GU1100UAProf.xml"

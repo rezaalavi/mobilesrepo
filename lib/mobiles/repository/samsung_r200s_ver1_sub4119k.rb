@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_r200s_ver1'
 module Mobiles
  module Repository
-   class SamsungR200sVer1Sub4119k < SamsungR200sVer1
+   class Samsung_r200s_ver1_sub4119k < Samsung_r200s_ver1
 def self.user_agent
- "SAMSUNG-SGH-R200S/1.0 UP/4.1.19k"
+ "SAMSUNG-SGH-R200S/1.0 UP/4.1.19k".gsub(/\a/, '\\')
 end
   
 end

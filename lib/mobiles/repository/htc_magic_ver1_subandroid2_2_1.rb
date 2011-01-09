@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_magic_ver1'
 module Mobiles
  module Repository
-   class HtcMagicVer1Subandroid221 < HtcMagicVer1
+   class Htc_magic_ver1_subandroid2_2_1 < Htc_magic_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 2.2.1; es-es; HTC Magic Build/FRG57) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533"
+ "Mozilla/5.0 (Linux; U; Android 2.2.1; es-es; HTC Magic Build/FRG57) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533".gsub(/\a/, '\\')
 end
   def device_os_version
   "2.2.1"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SamsungGts9402Ver1 < GenericNetfrontVer34
+   class Samsung_gts9402_ver1 < Generic_netfront_ver3_4
 def self.user_agent
- "SAMSUNG-S9402/S9402XEIA2 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-S9402/S9402XEIA2 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "S9402"

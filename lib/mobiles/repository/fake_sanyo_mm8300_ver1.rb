@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_scp8300_ver1'
 module Mobiles
  module Repository
-   class FakeSanyoMm8300Ver1 < SanyoScp8300Ver1
+   class Fake_sanyo_mm8300_ver1 < Sanyo_scp8300_ver1
 def self.user_agent
- "FAKE_USER_AGENT Sanyo MM-8300"
+ "FAKE_USER_AGENT Sanyo MM-8300".gsub(/\a/, '\\')
 end
   def model_name
   "MM-8300"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_j750_ver1'
 module Mobiles
  module Repository
-   class SamsungSghJ750Ver1Subbngi4 < SamsungSghJ750Ver1
+   class Samsung_sgh_j750_ver1_subbngi4 < Samsung_sgh_j750_ver1
 def self.user_agent
- "SAMSUNG-SGH-J750BNGI4"
+ "SAMSUNG-SGH-J750BNGI4".gsub(/\a/, '\\')
 end
   
 end

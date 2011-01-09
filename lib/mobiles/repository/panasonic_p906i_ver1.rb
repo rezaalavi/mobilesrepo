@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_901i'
 module Mobiles
  module Repository
-   class PanasonicP906iVer1 < DocomoGeneric901i
+   class Panasonic_p906i_ver1 < Docomo_generic_901i
 def self.user_agent
- "Mozilla/4.08 (P906i;FOMA;c500;TB)"
+ "Mozilla/4.08 (P906i;FOMA;c500;TB)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Access"

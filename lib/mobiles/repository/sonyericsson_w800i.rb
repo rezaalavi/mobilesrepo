@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w800'
 module Mobiles
  module Repository
-   class SonyericssonW800i < SonyericssonW800
+   class Sonyericsson_w800i < Sonyericsson_w800
 def self.user_agent
- "SonyEricssonW800i"
+ "SonyEricssonW800i".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/W800iR101.xml"

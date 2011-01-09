@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class NecN200Ver1 < GenericXhtml
+   class Nec_n200_ver1 < Generic_xhtml
 def self.user_agent
- "NEC-N200"
+ "NEC-N200".gsub(/\a/, '\\')
 end
   def can_skip_aligned_link_row?
   true

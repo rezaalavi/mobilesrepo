@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/portalmmm_ver2_subnk601i'
 module Mobiles
  module Repository
-   class PortalmmmVer2Subnk601ic100tb < PortalmmmVer2Subnk601i
+   class Portalmmm_ver2_subnk601ic100tb < Portalmmm_ver2_subnk601i
 def self.user_agent
- "portalmmm/2.0 NK601i(c100;TB)"
+ "portalmmm/2.0 NK601i(c100;TB)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Nokia"

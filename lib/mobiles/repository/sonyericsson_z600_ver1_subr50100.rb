@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_z600_ver1_subr401'
 module Mobiles
  module Repository
-   class SonyericssonZ600Ver1Subr50100 < SonyericssonZ600Ver1Subr401
+   class Sonyericsson_z600_ver1_subr50100 < Sonyericsson_z600_ver1_subr401
 def self.user_agent
- "SonyEricssonZ600/R501"
+ "SonyEricssonZ600/R501".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

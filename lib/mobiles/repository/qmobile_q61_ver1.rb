@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class QmobileQ61Ver1 < GenericXhtml
+   class Qmobile_q61_ver1 < Generic_xhtml
 def self.user_agent
- "Q-MOBILE-Q61/WAP2.0"
+ "Q-MOBILE-Q61/WAP2.0".gsub(/\a/, '\\')
 end
   def model_name
   "Q61"

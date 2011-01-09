@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo5'
 module Mobiles
  module Repository
-   class HpIpaqRw6800Ver1 < GenericMsWinmo5
+   class Hp_ipaq_rw6800_ver1 < Generic_ms_winmo5
 def self.user_agent
- "HPiPAQrw6800"
+ "HPiPAQrw6800".gsub(/\a/, '\\')
 end
   def model_name
   "iPAQ rw6800"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo6_5'
 module Mobiles
  module Repository
-   class HtcMegaVer1 < GenericMsWinmo65
+   class Htc_mega_ver1 < Generic_ms_winmo6_5
 def self.user_agent
- "HTC_Mega Opera/9.5 (Microsoft Windows; PPC Opera Mobi /17753; U; es-ES)"
+ "HTC_Mega Opera/9.5 (Microsoft Windows; PPC Opera Mobi /17753; U; es-ES)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

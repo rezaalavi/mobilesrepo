@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mu500_ver1'
 module Mobiles
  module Repository
-   class LgMu515Ver1 < LgMu500Ver1
+   class Lg_mu515_ver1 < Lg_mu500_ver1
 def self.user_agent
- "LG-MU515 Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "LG-MU515 Obigo/Q05A Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-MU515.xml"

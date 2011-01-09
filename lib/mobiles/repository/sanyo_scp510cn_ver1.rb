@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SanyoScp510cnVer1 < UptextGeneric
+   class Sanyo_scp510cn_ver1 < Uptext_generic
 def self.user_agent
- "Sanyo-SCP510CN"
+ "Sanyo-SCP510CN".gsub(/\a/, '\\')
 end
   def model_name
   "SCP 510CN"

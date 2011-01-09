@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class HedyM881Ver1 < Generic
+   class Hedy_m881_ver1 < Generic
 def self.user_agent
- "HEDY_M881_PLXBROW"
+ "HEDY_M881_PLXBROW".gsub(/\a/, '\\')
 end
   def model_name
   "M881"

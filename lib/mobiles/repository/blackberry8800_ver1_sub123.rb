@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry8800_ver1'
 module Mobiles
  module Repository
-   class Blackberry8800Ver1Sub123 < Blackberry8800Ver1
+   class Blackberry8800_ver1_sub123 < Blackberry8800_ver1
 def self.user_agent
- "BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/123"
+ "BlackBerry8800/4.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 VendorID/123".gsub(/\a/, '\\')
 end
   def model_name
   "BlackBerry 8800"

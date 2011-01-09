@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_u9_ver1'
 module Mobiles
  module Repository
-   class MotU9Ver1Subr6632g < MotU9Ver1
+   class Mot_u9_ver1_subr6632g < Mot_u9_ver1
 def self.user_agent
- "MOT-U9/R6632_G_81.11.46R"
+ "MOT-U9/R6632_G_81.11.46R".gsub(/\a/, '\\')
 end
   def ringtone_mp3?
   true

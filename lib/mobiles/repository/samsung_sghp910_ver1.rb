@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_p910_ver1'
 module Mobiles
  module Repository
-   class SamsungSghp910Ver1 < SecP910Ver1
+   class Samsung_sghp910_ver1 < Sec_p910_ver1
 def self.user_agent
- "SAMSUNG-SGH-P910"
+ "SAMSUNG-SGH-P910".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

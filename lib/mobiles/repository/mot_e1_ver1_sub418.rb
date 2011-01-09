@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_e1_ver1'
 module Mobiles
  module Repository
-   class MotE1Ver1Sub418 < MotE1Ver1
+   class Mot_e1_ver1_sub418 < Mot_e1_ver1
 def self.user_agent
- "MOT-E1/4.1.8 UP.Browser/4.1.23"
+ "MOT-E1/4.1.8 UP.Browser/4.1.23".gsub(/\a/, '\\')
 end
   
 end

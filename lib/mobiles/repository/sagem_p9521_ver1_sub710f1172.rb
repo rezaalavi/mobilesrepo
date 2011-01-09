@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_p9521_ver1'
 module Mobiles
  module Repository
-   class SagemP9521Ver1Sub710f1172 < SagemP9521Ver1
+   class Sagem_p9521_ver1_sub710f1172 < Sagem_p9521_ver1
 def self.user_agent
- "PORSCHE-DESIGN-P-9521/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.172 (GUI)"
+ "PORSCHE-DESIGN-P-9521/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.172 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

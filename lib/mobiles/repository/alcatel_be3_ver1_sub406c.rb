@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_be3_ver1'
 module Mobiles
  module Repository
-   class AlcatelBe3Ver1Sub406c < AlcatelBe3Ver1
+   class Alcatel_be3_ver1_sub406c < Alcatel_be3_ver1
 def self.user_agent
- "Alcatel-BE3/1.0 UP/4.0.6c"
+ "Alcatel-BE3/1.0 UP/4.0.6c".gsub(/\a/, '\\')
 end
   
 end

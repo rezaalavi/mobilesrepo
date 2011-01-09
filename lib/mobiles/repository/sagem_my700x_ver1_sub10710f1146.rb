@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_my700x_ver1'
 module Mobiles
  module Repository
-   class SagemMy700xVer1Sub10710f1146 < SagemMy700xVer1
+   class Sagem_my700x_ver1_sub10710f1146 < Sagem_my700x_ver1
 def self.user_agent
- "SAGEM-my700x/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.146 (GUI)"
+ "SAGEM-my700x/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 Browser/UP.Browser/7.1.0.f.1.146 (GUI)".gsub(/\a/, '\\')
 end
   
 end

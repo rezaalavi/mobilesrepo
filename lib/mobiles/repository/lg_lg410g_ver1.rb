@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LgLg410gVer1 < GenericXhtml
+   class Lg_lg410g_ver1 < Generic_xhtml
 def self.user_agent
- "LG-LG410/v10b[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Teleca/WAP2.0"
+ "LG-LG410/v10b[TFXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX] Teleca/WAP2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-LG410G.xml"

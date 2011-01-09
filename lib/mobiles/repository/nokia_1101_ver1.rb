@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series20'
 module Mobiles
  module Repository
-   class Nokia1101Ver1 < NokiaGenericSeries20
+   class Nokia_1101_ver1 < Nokia_generic_series20
 def self.user_agent
- "Nokia1101"
+ "Nokia1101".gsub(/\a/, '\\')
 end
   def device_os
   "Symbian OS"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i907_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI907Subucid1 < SamsungSghI907Ver1
+   class Samsung_sgh_i907_subucid1 < Samsung_sgh_i907_ver1
 def self.user_agent
- "SAMSUNG-SGH-I907/UCID1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)"
+ "SAMSUNG-SGH-I907/UCID1 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
   
 end

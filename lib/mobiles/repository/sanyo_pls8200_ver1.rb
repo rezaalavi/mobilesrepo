@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_1'
 module Mobiles
  module Repository
-   class SanyoPls8200Ver1 < GenericNetfrontVer31
+   class Sanyo_pls8200_ver1 < Generic_netfront_ver3_1
 def self.user_agent
- "Mozilla/4.0 (MobilePhone PLS8200KTQ/US/1.0) NetFront/3.1 MMP/2.0"
+ "Mozilla/4.0 (MobilePhone PLS8200KTQ/US/1.0) NetFront/3.1 MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.sprintpcs.com/Sanyo/PLS8200/1001QW.rdf"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_gt_i8320_ver1'
 module Mobiles
  module Repository
-   class SamsungGtI8320Ver1Subua < SamsungGtI8320Ver1
+   class Samsung_gt_i8320_ver1_subua < Samsung_gt_i8320_ver1
 def self.user_agent
- "SAMSUNG-GT-I8320-Vodafone/I8320BUIH8 Linux/X2/R1 Opera/9.6 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1"
+ "SAMSUNG-GT-I8320-Vodafone/I8320BUIH8 Linux/X2/R1 Opera/9.6 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

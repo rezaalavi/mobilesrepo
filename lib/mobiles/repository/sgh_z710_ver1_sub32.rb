@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sgh_z710_ver1'
 module Mobiles
  module Repository
-   class SghZ710Ver1Sub32 < SghZ710Ver1
+   class Sgh_z710_ver1_sub32 < Sgh_z710_ver1
 def self.user_agent
- "SGH-Z710/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SGH-Z710/1.0 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

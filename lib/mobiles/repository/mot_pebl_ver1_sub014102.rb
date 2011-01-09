@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_pebl_ver1'
 module Mobiles
  module Repository
-   class MotPeblVer1Sub014102 < MotPeblVer1
+   class Mot_pebl_ver1_sub014102 < Mot_pebl_ver1
 def self.user_agent
- "MOT-PEBL U6/01.41.02 MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-PEBL U6/01.41.02 MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

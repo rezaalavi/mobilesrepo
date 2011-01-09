@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver3_sub70'
 module Mobiles
  module Repository
-   class BlackberryGenericVer4 < BlackberryGenericVer3Sub70
+   class Blackberry_generic_ver4 < Blackberry_generic_ver3_sub70
 def self.user_agent
- "DO_NOT_MATCH_BLACKBERRY_4"
+ "DO_NOT_MATCH_BLACKBERRY_4".gsub(/\a/, '\\')
 end
   def table_support?
   true

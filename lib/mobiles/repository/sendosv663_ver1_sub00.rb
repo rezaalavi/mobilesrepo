@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sendosv663_ver1'
 module Mobiles
  module Repository
-   class Sendosv663Ver1Sub00 < Sendosv663Ver1
+   class Sendosv663_ver1_sub00 < Sendosv663_ver1
 def self.user_agent
- "SendoSV663/00"
+ "SendoSV663/00".gsub(/\a/, '\\')
 end
   
 end

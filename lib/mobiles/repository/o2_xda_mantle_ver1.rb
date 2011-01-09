@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p6500_sedna_ver1'
 module Mobiles
  module Repository
-   class O2XdaMantleVer1 < HtcP6500SednaVer1
+   class O2_xda_mantle_ver1 < Htc_p6500_sedna_ver1
 def self.user_agent
- "Xda_Mantle/240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "Xda_Mantle/240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/Sedna-1.0.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_n905i_ver1_submozilla'
 module Mobiles
  module Repository
-   class DocomoN905iC100 < DocomoN905iVer1Submozilla
+   class Docomo_n905i_c100 < Docomo_n905i_ver1_submozilla
 def self.user_agent
- "DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)"
+ "DoCoMo/2.0 N905i(c100;TB;W24H16) (compatible; Googlebot-Mobile/2.1; +http://www.google.com/bot.html)".gsub(/\a/, '\\')
 end
   def wallpaper?
   true

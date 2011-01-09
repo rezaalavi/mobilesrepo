@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_k850i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK850ivSubr1da < SonyericssonK850iVer1
+   class Sonyericsson_k850iv_subr1da < Sonyericsson_k850i_ver1
 def self.user_agent
- "Mozilla/4.0 SonyEricssonK850iv/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "Mozilla/4.0 SonyEricssonK850iv/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

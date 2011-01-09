@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class SieS88Ver1 < OpwvV7Generic
+   class Sie_s88_ver1 < Opwv_v7_generic
 def self.user_agent
- "SIE-S88"
+ "SIE-S88".gsub(/\a/, '\\')
 end
   def uaprof
   "http://uap.benq.com/mb_s88/benq_s88_v3_300k.xml"

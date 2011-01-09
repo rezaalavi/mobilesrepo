@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_c3300_ver1'
 module Mobiles
  module Repository
-   class LgC3300Ver1Sub10 < LgC3300Ver1
+   class Lg_c3300_ver1_sub10 < Lg_c3300_ver1
 def self.user_agent
- "LG-C3300 MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
+ "LG-C3300 MIC/WAP2.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_g600_ver1'
 module Mobiles
  module Repository
-   class SamsungSghG600Ver1Subvoda < SamsungSghG600Ver1
+   class Samsung_sgh_g600_ver1_subvoda < Samsung_sgh_g600_ver1
 def self.user_agent
- "SAMSUNG-SGH-G600-VODA/G600ACGL1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "SAMSUNG-SGH-G600-VODA/G600ACGL1 NetFront/3.4 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-G600"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HaierHgV70Ver1 < GenericXhtml
+   class Haier_hg_v70_ver1 < Generic_xhtml
 def self.user_agent
- "Haier-HG-V70-CMCC/1.0 Release/03.25.2008 Browser/Obigo2.0"
+ "Haier-HG-V70-CMCC/1.0 Release/03.25.2008 Browser/Obigo2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

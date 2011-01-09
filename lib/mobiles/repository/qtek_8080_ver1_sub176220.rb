@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/qtek_8080_ver1'
 module Mobiles
  module Repository
-   class Qtek8080Ver1Sub176220 < Qtek8080Ver1
+   class Qtek_8080_ver1_sub176220 < Qtek_8080_ver1
 def self.user_agent
- "Qtek8080/DBK (;; 4.20.13291.0; Windows Mobile 2003; Smartphone; 176x220)"
+ "Qtek8080/DBK (;; 4.20.13291.0; Windows Mobile 2003; Smartphone; 176x220)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

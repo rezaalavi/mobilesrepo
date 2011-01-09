@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SpiceC810Ver1 < GenericXhtml
+   class Spice_c810_ver1 < Generic_xhtml
 def self.user_agent
- "Spice C-810/1.0 TMSS-Browser/1.0.0"
+ "Spice C-810/1.0 TMSS-Browser/1.0.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.spicegang.in/uaprofile/SPICE-C-810.xml"

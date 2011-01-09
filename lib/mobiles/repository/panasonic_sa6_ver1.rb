@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class PanasonicSa6Ver1 < Generic
+   class Panasonic_sa6_ver1 < Generic
 def self.user_agent
- "Panasonic-SA6"
+ "Panasonic-SA6".gsub(/\a/, '\\')
 end
   def model_name
   "SA6"

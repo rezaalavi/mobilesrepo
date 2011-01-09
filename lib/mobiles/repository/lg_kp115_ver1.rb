@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kp110_ver1'
 module Mobiles
  module Repository
-   class LgKp115Ver1 < LgKp110Ver1
+   class Lg_kp115_ver1 < Lg_kp110_ver1
 def self.user_agent
- "LG-KP115 Obigo/WAP2.0"
+ "LG-KP115 Obigo/WAP2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KP115.xml"

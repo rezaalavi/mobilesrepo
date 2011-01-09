@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/docomo_generic_jap_ver1'
 module Mobiles
  module Repository
-   class DocomoSh505isVer1 < DocomoGenericJapVer1
+   class Docomo_sh505is_ver1 < Docomo_generic_jap_ver1
 def self.user_agent
- "DoCoMo/1.0/SH505iS/c20/TB/W24H12"
+ "DoCoMo/1.0/SH505iS/c20/TB/W24H12".gsub(/\a/, '\\')
 end
   def j2me_storage_size
   1512

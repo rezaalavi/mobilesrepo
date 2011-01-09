@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i900_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI900Ver1Subvoda < SamsungSghI900Ver1
+   class Samsung_sgh_i900_ver1_subvoda < Samsung_sgh_i900_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SAMSUNG-SGH-i900V"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11) SAMSUNG-SGH-i900V".gsub(/\a/, '\\')
 end
   def physical_screen_height
   70

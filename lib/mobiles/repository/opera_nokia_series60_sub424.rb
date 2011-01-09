@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opera_nokia_series60_sub432'
 module Mobiles
  module Repository
-   class OperaNokiaSeries60Sub424 < OperaNokiaSeries60Sub432
+   class Opera_nokia_series60_sub424 < Opera_nokia_series60_sub432
 def self.user_agent
- "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Series 60;424) Opera 6.10 [en]"
+ "Mozilla/4.1 (compatible; MSIE 5.0; Symbian OS; Series 60;424) Opera 6.10 [en]".gsub(/\a/, '\\')
 end
   
 end

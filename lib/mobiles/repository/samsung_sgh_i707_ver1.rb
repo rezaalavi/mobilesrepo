@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_phone_os7'
 module Mobiles
  module Repository
-   class SamsungSghI707Ver1 < GenericMsPhoneOs7
+   class Samsung_sgh_i707_ver1 < Generic_ms_phone_os7
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) SAMSUNG;SGH-i707"
+ "Mozilla/4.0 (compatible; MSIE 7.0; Windows Phone OS 7.0; Trident/3.1; IEMobile/7.0) SAMSUNG;SGH-i707".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   true

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3'
 module Mobiles
  module Repository
-   class Sonypegtj37Ver1 < GenericNetfrontVer3
+   class Sonypegtj37_ver1 < Generic_netfront_ver3
 def self.user_agent
- "Mozilla/4.08 (PDA; PalmOS/sony/model luke"
+ "Mozilla/4.08 (PDA; PalmOS/sony/model luke".gsub(/\a/, '\\')
 end
   def model_name
   "PEG-TJ37"

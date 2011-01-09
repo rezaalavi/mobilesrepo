@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class LgL1100Ver1 < OpwvV62Generic
+   class Lg_l1100_ver1 < Opwv_v62_generic
 def self.user_agent
- "LG-L1100 UP.Browser/6.2"
+ "LG-L1100 UP.Browser/6.2".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-L1100.xml"

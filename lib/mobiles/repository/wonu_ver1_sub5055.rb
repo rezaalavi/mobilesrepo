@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/wonu_ver1'
 module Mobiles
  module Repository
-   class WonuVer1Sub5055 < WonuVer1
+   class Wonu_ver1_sub5055 < Wonu_ver1
 def self.user_agent
- "Wonu S1 UP.Browser/5.0.5.5 (GUI)"
+ "Wonu S1 UP.Browser/5.0.5.5 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

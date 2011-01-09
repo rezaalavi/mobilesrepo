@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class Utstarcom7176Ver1 < OpwvV62Generic
+   class Utstarcom_7176_ver1 < Opwv_v62_generic
 def self.user_agent
- "UTS-7176M/1.0 UP.Browser/6.3.0.7 (GUI) MMP/2.0"
+ "UTS-7176M/1.0 UP.Browser/6.3.0.7 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.3

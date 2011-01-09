@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class WellcomW929Ver1 < GenericXhtml
+   class Wellcom_w929_ver1 < Generic_xhtml
 def self.user_agent
- "WellcoM W929 WAP Browser"
+ "WellcoM W929 WAP Browser".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

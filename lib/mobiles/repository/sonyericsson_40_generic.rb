@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_33_generic'
 module Mobiles
  module Repository
-   class Sonyericsson40Generic < Sonyericsson33Generic
+   class Sonyericsson_40_generic < Sonyericsson_33_generic
 def self.user_agent
- "DO_NOT_MATCH_SONYERICSSON_XHTML_BROWSER_4_0"
+ "DO_NOT_MATCH_SONYERICSSON_XHTML_BROWSER_4_0".gsub(/\a/, '\\')
 end
   def svgt_1_1?
   true

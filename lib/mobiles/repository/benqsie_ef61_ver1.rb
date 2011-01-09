@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/benqsie_ef51_ver1'
 module Mobiles
  module Repository
-   class BenqsieEf61Ver1 < BenqsieEf51Ver1
+   class Benqsie_ef61_ver1 < Benqsie_ef51_ver1
 def self.user_agent
- "BenQ-EF61"
+ "BenQ-EF61".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.3

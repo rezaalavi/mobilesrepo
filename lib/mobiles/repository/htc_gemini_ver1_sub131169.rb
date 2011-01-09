@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_gemini_ver1'
 module Mobiles
  module Repository
-   class HtcGeminiVer1Sub131169 < HtcGeminiVer1
+   class Htc_gemini_ver1_sub131169 < Htc_gemini_ver1
 def self.user_agent
- "HTCGemini/131169 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)"
+ "HTCGemini/131169 Mozilla/4.0 (compatible; MSIE 4.01; Windows CE; PPC; 240x320)".gsub(/\a/, '\\')
 end
   
 end

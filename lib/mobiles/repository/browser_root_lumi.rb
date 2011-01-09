@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/browser_root'
 module Mobiles
  module Repository
-   class BrowserRootLumi < BrowserRoot
+   class Browser_root_lumi < Browser_root
 def self.user_agent
- "DO_NOT_MATCH_BROWSER_LUMI_ROOT"
+ "DO_NOT_MATCH_BROWSER_LUMI_ROOT".gsub(/\a/, '\\')
 end
   
 end

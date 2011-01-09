@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_x1i_ver1_subua2'
 module Mobiles
  module Repository
-   class SonyericssonX1iVer1Subie711Submozila < SonyericssonX1iVer1Subua2
+   class Sonyericsson_x1i_ver1_subie711_submozila < Sonyericsson_x1i_ver1_subua2
 def self.user_agent
- "X1i Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11 )"
+ "X1i Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11 )".gsub(/\a/, '\\')
 end
   def pointing_method
   "touchscreen"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_265_ver1'
 module Mobiles
  module Repository
-   class Lg265Ver1Subopwv62 < Lg265Ver1
+   class Lg_265_ver1_subopwv62 < Lg_265_ver1
 def self.user_agent
- "LGE-LG265/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0"
+ "LGE-LG265/1.0 UP.Browser/6.2.3.8 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

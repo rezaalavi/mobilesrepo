@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/fly_2080_ver1'
 module Mobiles
  module Repository
-   class Fly2080Ver1Subua < Fly2080Ver1
+   class Fly_2080_ver1_subua < Fly_2080_ver1
 def self.user_agent
- "Fly 2080, Fly 2080"
+ "Fly 2080, Fly 2080".gsub(/\a/, '\\')
 end
   
 end

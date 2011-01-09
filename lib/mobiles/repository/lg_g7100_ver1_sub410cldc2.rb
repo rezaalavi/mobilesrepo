@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_g7100_ver1'
 module Mobiles
  module Repository
-   class LgG7100Ver1Sub410cldc2 < LgG7100Ver1
+   class Lg_g7100_ver1_sub410cldc2 < Lg_g7100_ver1
 def self.user_agent
- "LG-G7100 AU/4.10 Profile/MIDP-2.0 Configuration/CLDC-2.0"
+ "LG-G7100 AU/4.10 Profile/MIDP-2.0 Configuration/CLDC-2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

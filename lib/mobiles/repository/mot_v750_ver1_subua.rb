@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class MotV750Ver1Subua < OpwvV62Generic
+   class Mot_v750_ver1_subua < Opwv_v62_generic
 def self.user_agent
- "MOT-CHARL/00.62 UP.Browser/6.2.3.4.c.1.124 (GUI) MMP/2.0"
+ "MOT-CHARL/00.62 UP.Browser/6.2.3.4.c.1.124 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "V750"

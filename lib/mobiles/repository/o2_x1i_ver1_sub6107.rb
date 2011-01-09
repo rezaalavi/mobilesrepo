@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/o2_x1i_ver1'
 module Mobiles
  module Repository
-   class O2X1iVer1Sub6107 < O2X1iVer1
+   class O2_x1i_ver1_sub6107 < O2_x1i_ver1
 def self.user_agent
- "O2-X1i/6.1.0.7 UP.Browser/6.1.0.7.8.c.1.100 (GUI) MMP/1.0"
+ "O2-X1i/6.1.0.7 UP.Browser/6.1.0.7.8.c.1.100 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

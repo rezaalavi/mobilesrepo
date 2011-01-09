@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v72_generic'
 module Mobiles
  module Repository
-   class MotVe240Ver1 < OpwvV72Generic
+   class Mot_ve240_ver1 < Opwv_v72_generic
 def self.user_agent
- "MOT-VE240/00.72 UP.Browser/7.2.7.5.541 (GUI) MMP/2.0"
+ "MOT-VE240/00.72 UP.Browser/7.2.7.5.541 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://pix.cellularsouth.com/UA/profile/motorola/VE240/ve240.xml"

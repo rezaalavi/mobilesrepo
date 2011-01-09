@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SonyericssonW910iVer1 < GenericSonyericssonNetfrontVer34
+   class Sonyericsson_w910i_ver1 < Generic_sonyericsson_netfront_ver3_4
 def self.user_agent
- "SonyEricssonW910i"
+ "SonyEricssonW910i".gsub(/\a/, '\\')
 end
   def model_name
   "W910i"

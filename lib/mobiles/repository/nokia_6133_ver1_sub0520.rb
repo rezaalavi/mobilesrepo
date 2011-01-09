@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6133_ver1'
 module Mobiles
  module Repository
-   class Nokia6133Ver1Sub0520 < Nokia6133Ver1
+   class Nokia_6133_ver1_sub0520 < Nokia_6133_ver1
 def self.user_agent
- "Nokia6133/2.0 (05.20)"
+ "Nokia6133/2.0 (05.20)".gsub(/\a/, '\\')
 end
   def accept_third_party_cookie?
   false

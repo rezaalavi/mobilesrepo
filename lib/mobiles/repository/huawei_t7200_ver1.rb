@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_generic_obigo_q5'
 module Mobiles
  module Repository
-   class HuaweiT7200Ver1 < LgGenericObigoQ5
+   class Huawei_t7200_ver1 < Lg_generic_obigo_q5
 def self.user_agent
- "Huawei/1.0/HuaweiT7200/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0"
+ "Huawei/1.0/HuaweiT7200/B100 Browser/Obigo-Browser/Q05A MMS/Obigo-MMS/Q05A SyncML/HW-SyncML/1.0 Java/HWJa/1.0 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/smarttrust_wib_ver1'
 module Mobiles
  module Repository
-   class SmarttrustWibVer1Sub11gw60 < SmarttrustWibVer1
+   class Smarttrust_wib_ver1_sub11gw60 < Smarttrust_wib_ver1
 def self.user_agent
- "WIG Browser/1.1 Gateway/6.0"
+ "WIG Browser/1.1 Gateway/6.0".gsub(/\a/, '\\')
 end
   
 end

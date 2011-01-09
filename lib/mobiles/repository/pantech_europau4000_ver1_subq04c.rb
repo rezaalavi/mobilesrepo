@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_europau4000_ver1'
 module Mobiles
  module Repository
-   class PantechEuropau4000Ver1Subq04c < PantechEuropau4000Ver1
+   class Pantech_europau4000_ver1_subq04c < Pantech_europau4000_ver1
 def self.user_agent
- "PANTECH-EUROPA-U4000/1.0 Obigo/Q04C MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "PANTECH-EUROPA-U4000/1.0 Obigo/Q04C MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

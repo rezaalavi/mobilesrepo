@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_wap20_generic'
 module Mobiles
  module Repository
-   class KddiSt2cVer1 < KddiWap20Generic
+   class Kddi_st2c_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-ST2C"
+ "KDDI-ST2C".gsub(/\a/, '\\')
 end
   def model_name
   "Sweets cute"

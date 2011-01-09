@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_gt950_ver1'
 module Mobiles
  module Repository
-   class LgGt950Ver1SubObigo73 < LgGt950Ver1
+   class Lg_gt950_ver1_sub_obigo73 < Lg_gt950_ver1
 def self.user_agent
- "LG-GT950/V09a Obigo/Q7.3 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "LG-GT950/V09a Obigo/Q7.3 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.3

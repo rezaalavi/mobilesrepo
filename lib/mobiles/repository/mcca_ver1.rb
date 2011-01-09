@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class MccaVer1 < UptextGeneric
+   class Mcca_ver1 < Uptext_generic
 def self.user_agent
- "MCCA UP"
+ "MCCA UP".gsub(/\a/, '\\')
 end
   def model_name
   "ST7867"

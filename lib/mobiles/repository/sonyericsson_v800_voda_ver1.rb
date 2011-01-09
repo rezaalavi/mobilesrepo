@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_v800_ver1'
 module Mobiles
  module Repository
-   class SonyericssonV800VodaVer1 < SonyericssonV800Ver1
+   class Sonyericsson_v800_voda_ver1 < Sonyericsson_v800_ver1
 def self.user_agent
- "Vodafone/SonyEricssonV800"
+ "Vodafone/SonyEricssonV800".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

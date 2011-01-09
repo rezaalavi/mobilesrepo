@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_generic_series60'
 module Mobiles
  module Repository
-   class PanasonicX700Ver1 < NokiaGenericSeries60
+   class Panasonic_x700_ver1 < Nokia_generic_series60
 def self.user_agent
- "Panasonic-X700"
+ "Panasonic-X700".gsub(/\a/, '\\')
 end
   def uaprof
   "http://mobileinternet.panasonicbox.com/UAprof/X700/X700R1.xml"

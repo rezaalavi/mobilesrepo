@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e700_ver1'
 module Mobiles
  module Repository
-   class SamsungE700Ver2 < SamsungE700Ver1
+   class Samsung_e700_ver2 < Samsung_e700_ver1
 def self.user_agent
- "SAMSUNG-SGH-E700/BSI UP.Browser/6.2"
+ "SAMSUNG-SGH-E700/BSI UP.Browser/6.2".gsub(/\a/, '\\')
 end
   def xhtml_format_as_css_property?
   true

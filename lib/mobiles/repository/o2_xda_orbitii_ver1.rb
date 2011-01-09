@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_polaris_ver1'
 module Mobiles
  module Repository
-   class O2XdaOrbitiiVer1 < HtcPolarisVer1
+   class O2_xda_orbitii_ver1 < Htc_polaris_ver1
 def self.user_agent
- "Xda_orbit_2; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "Xda_orbit_2; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.6

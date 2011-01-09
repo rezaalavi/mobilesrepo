@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_j750_ver1'
 module Mobiles
  module Repository
-   class SamsungSghJ750Ver1Subr5n34 < SamsungSghJ750Ver1
+   class Samsung_sgh_j750_ver1_subr5n34 < Samsung_sgh_j750_ver1
 def self.user_agent
- "SAMSUNG-SGH-J750/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1"
+ "SAMSUNG-SGH-J750/1.0 SHP/VPP/R5 NetFront/3.4 SMM-MMS/1.2.0 profile/MIDP-2.0 configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

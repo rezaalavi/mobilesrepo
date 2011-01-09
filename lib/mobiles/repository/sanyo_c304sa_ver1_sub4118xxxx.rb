@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_c304sa_ver1'
 module Mobiles
  module Repository
-   class SanyoC304saVer1Sub4118xxxx < SanyoC304saVer1
+   class Sanyo_c304sa_ver1_sub4118xxxx < Sanyo_c304sa_ver1
 def self.user_agent
- "Sanyo-C304SA/1.0 UP/4.1.18 UP.Browser/4.1.18-XXXX"
+ "Sanyo-C304SA/1.0 UP/4.1.18 UP.Browser/4.1.18-XXXX".gsub(/\a/, '\\')
 end
   
 end

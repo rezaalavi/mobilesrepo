@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tmobile_dash_ver1_subie612'
 module Mobiles
  module Repository
-   class TmobileDashVer1Subie612Subua < TmobileDashVer1Subie612
+   class Tmobile_dash_ver1_subie612_subua < Tmobile_dash_ver1_subie612
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) T-Mobile Dash"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) T-Mobile Dash".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

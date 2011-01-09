@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_generic'
 module Mobiles
  module Repository
-   class SonyericssonT280aVer1 < SonyericssonGeneric
+   class Sonyericsson_t280a_ver1 < Sonyericsson_generic
 def self.user_agent
- "SonyEricssonT280a/R1BA003 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0"
+ "SonyEricssonT280a/R1BA003 TelecaBrowser/Q04C1-1 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

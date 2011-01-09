@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class CompalA618Ver1 < OpwvV62Generic
+   class Compal_a618_ver1 < Opwv_v62_generic
 def self.user_agent
- "Compal-A618"
+ "Compal-A618".gsub(/\a/, '\\')
 end
   def model_name
   "A618"

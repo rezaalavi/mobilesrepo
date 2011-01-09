@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class SamsungSphi500Ver1 < UptextGeneric
+   class Samsung_sphi500_ver1 < Uptext_generic
 def self.user_agent
- "SEC05"
+ "SEC05".gsub(/\a/, '\\')
 end
   def device_os
   "Palm OS"

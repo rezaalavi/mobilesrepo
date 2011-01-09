@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class SharpTqGxA15Ver1 < OpwvV62Generic
+   class Sharp_tq_gx_a15_ver1 < Opwv_v62_generic
 def self.user_agent
- "SHARP-TQ-GX-A15"
+ "SHARP-TQ-GX-A15".gsub(/\a/, '\\')
 end
   def model_name
   "GX-A15"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_star_trek_ver1'
 module Mobiles
  module Repository
-   class HtcS411Ver1 < HtcStarTrekVer1
+   class Htc_s411_ver1 < Htc_star_trek_ver1
 def self.user_agent
- "HTC-S411"
+ "HTC-S411".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/strk-1.0.xml"

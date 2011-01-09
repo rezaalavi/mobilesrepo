@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class LgeAd5235Ver1 < UptextGeneric
+   class Lge_ad5235_ver1 < Uptext_generic
 def self.user_agent
- "LGE-AD5235"
+ "LGE-AD5235".gsub(/\a/, '\\')
 end
   def model_name
   "AD 5235"

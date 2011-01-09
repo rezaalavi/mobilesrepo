@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_diamondii_ver1_subvodafone'
 module Mobiles
  module Repository
-   class HtcTouchDiamondiiVer1SubvodafoneSubua < HtcTouchDiamondiiVer1Subvodafone
+   class Htc_touch_diamondii_ver1_subvodafone_subua < Htc_touch_diamondii_ver1_subvodafone
 def self.user_agent
- "Vodafone/1.0/HTC_Touch_Diamond_II_T5353/1.03.164.1 (40543) Opera/9.50 (Windows NT 5.1; U; es-ES)"
+ "Vodafone/1.0/HTC_Touch_Diamond_II_T5353/1.03.164.1 (40543) Opera/9.50 (Windows NT 5.1; U; es-ES)".gsub(/\a/, '\\')
 end
   
 end

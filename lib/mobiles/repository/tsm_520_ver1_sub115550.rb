@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tsm_520_ver1'
 module Mobiles
  module Repository
-   class Tsm520Ver1Sub115550 < Tsm520Ver1
+   class Tsm_520_ver1_sub115550 < Tsm_520_ver1
 def self.user_agent
- "TSM520/1.1.55.50 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "TSM520/1.1.55.50 Mozilla/4.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_4'
 module Mobiles
  module Repository
-   class SonyericssonV640iVer1 < GenericSonyericssonNetfrontVer34
+   class Sonyericsson_v640i_ver1 < Generic_sonyericsson_netfront_ver3_4
 def self.user_agent
- "SonyEricssonV640i/R1x Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "SonyEricssonV640i/R1x Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/V640iR101.xml"

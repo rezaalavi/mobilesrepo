@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/tsm340_ver1'
 module Mobiles
  module Repository
-   class Tsm340Ver1Sub121 < Tsm340Ver1
+   class Tsm340_ver1_sub121 < Tsm340_ver1
 def self.user_agent
- "TSM340/83228611 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "TSM340/83228611 Browser/1.2.1 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

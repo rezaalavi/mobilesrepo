@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/huawei_u120_ver1'
 module Mobiles
  module Repository
-   class HuaweiU120Ver1Subua < HuaweiU120Ver1
+   class Huawei_u120_ver1_subua < Huawei_u120_ver1
 def self.user_agent
- "HUAWEI/1.0/HUAWEI U120/B000 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0"
+ "HUAWEI/1.0/HUAWEI U120/B000 Java/QVM/4.1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UNTRUSTED/1.0".gsub(/\a/, '\\')
 end
   
 end

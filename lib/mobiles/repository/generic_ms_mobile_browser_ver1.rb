@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_mobile'
 module Mobiles
  module Repository
-   class GenericMsMobileBrowserVer1 < GenericMsMobile
+   class Generic_ms_mobile_browser_ver1 < Generic_ms_mobile
 def self.user_agent
- "DO_NOT_MATCH_REMOVE_GENERIC_MS_MOBILE_BROWSER_VER1"
+ "DO_NOT_MATCH_REMOVE_GENERIC_MS_MOBILE_BROWSER_VER1".gsub(/\a/, '\\')
 end
   
 end

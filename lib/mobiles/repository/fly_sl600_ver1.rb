@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class FlySl600Ver1 < Generic
+   class Fly_sl600_ver1 < Generic
 def self.user_agent
- "FLY-SL600"
+ "FLY-SL600".gsub(/\a/, '\\')
 end
   def uaprof
   "http://211.42.201.70/ua_profile/SL600.xml"

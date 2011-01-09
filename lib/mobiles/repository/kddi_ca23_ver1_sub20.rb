@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_ca23_ver1'
 module Mobiles
  module Repository
-   class KddiCa23Ver1Sub20 < KddiCa23Ver1
+   class Kddi_ca23_ver1_sub20 < Kddi_ca23_ver1
 def self.user_agent
- "KDDI-CA23 UP.Browser/6.2.0.5.136 (GUI) MMP/2.0"
+ "KDDI-CA23 UP.Browser/6.2.0.5.136 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

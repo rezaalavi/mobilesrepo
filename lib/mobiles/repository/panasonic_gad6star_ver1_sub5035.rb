@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_gad6star_ver1'
 module Mobiles
  module Repository
-   class PanasonicGad6starVer1Sub5035 < PanasonicGad6starVer1
+   class Panasonic_gad6star_ver1_sub5035 < Panasonic_gad6star_ver1
 def self.user_agent
- "Panasonic-GAD6*/1.0 UP.Browser/5.0.3.5 (GUI)"
+ "Panasonic-GAD6*/1.0 UP.Browser/5.0.3.5 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

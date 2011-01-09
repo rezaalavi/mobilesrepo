@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_generic'
 module Mobiles
  module Repository
-   class PantechPgc300Ver1 < PantechGeneric
+   class Pantech_pgc300_ver1 < Pantech_generic
 def self.user_agent
- "PG-C300"
+ "PG-C300".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

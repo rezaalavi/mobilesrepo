@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opera_nokia_3650_ver1'
 module Mobiles
  module Repository
-   class OperaNokia3650Ver1Subopera610 < OperaNokia3650Ver1
+   class Opera_nokia_3650_ver1_subopera610 < Opera_nokia_3650_ver1
 def self.user_agent
- "Mozilla/5.0 (Symbian OS; U) Opera 6.10 [Nokia 3650]"
+ "Mozilla/5.0 (Symbian OS; U) Opera 6.10 [Nokia 3650]".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

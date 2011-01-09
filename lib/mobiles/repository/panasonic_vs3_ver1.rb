@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/panasonic_vs2_ver1'
 module Mobiles
  module Repository
-   class PanasonicVs3Ver1 < PanasonicVs2Ver1
+   class Panasonic_vs3_ver1 < Panasonic_vs2_ver1
 def self.user_agent
- "Panasonic-VS3/#Vodafone/1.0/Panasonic-VS3"
+ "Panasonic-VS3/#Vodafone/1.0/Panasonic-VS3".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Teleca-Obigo"

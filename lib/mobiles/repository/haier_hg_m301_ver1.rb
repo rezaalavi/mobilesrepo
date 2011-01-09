@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class HaierHgM301Ver1 < GenericXhtml
+   class Haier_hg_m301_ver1 < Generic_xhtml
 def self.user_agent
- "Haier-HG-M301/CMCC Release/8.21.2007 Browser/WAP2.0"
+ "Haier-HG-M301/CMCC Release/8.21.2007 Browser/WAP2.0".gsub(/\a/, '\\')
 end
   def model_name
   "HG M301"

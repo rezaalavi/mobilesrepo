@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_x3_00_ver1'
 module Mobiles
  module Repository
-   class NokiaX300Ver1Sub0050 < NokiaX300Ver1
+   class Nokia_x3_00_ver1_sub0050 < Nokia_x3_00_ver1
 def self.user_agent
- "NokiaX3-00/5.0 (p) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+"
+ "NokiaX3-00/5.0 (p) Profile/MIDP-2.1 Configuration/CLDC-1.1 Mozilla/5.0 AppleWebKit/420+ (KHTML, like Gecko) Safari/420+".gsub(/\a/, '\\')
 end
   
 end

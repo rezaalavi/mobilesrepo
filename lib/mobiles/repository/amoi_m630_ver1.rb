@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class AmoiM630Ver1 < OpwvV62Generic
+   class Amoi_m630_ver1 < Opwv_v62_generic
 def self.user_agent
- "Amoi-M630/Plat-V-VIM/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.2.3.8.c.1.100 (GUI) MMP/2.0"
+ "Amoi-M630/Plat-V-VIM/WAP2.0/MIDP2.0/CLDC1.0 UP.Browser/6.2.3.8.c.1.100 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "M630"

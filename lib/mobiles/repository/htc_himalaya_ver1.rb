@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_ms_winmo2003'
 module Mobiles
  module Repository
-   class HtcHimalayaVer1 < GenericMsWinmo2003
+   class Htc_himalaya_ver1 < Generic_ms_winmo2003
 def self.user_agent
- "NON_UNIQUE_HTC_HIMALAYA"
+ "NON_UNIQUE_HTC_HIMALAYA".gsub(/\a/, '\\')
 end
   def pointing_method
   "stylus"

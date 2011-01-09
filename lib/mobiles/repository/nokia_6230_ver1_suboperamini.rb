@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6230_ver1'
 module Mobiles
  module Repository
-   class Nokia6230Ver1Suboperamini < Nokia6230Ver1
+   class Nokia_6230_ver1_suboperamini < Nokia_6230_ver1
 def self.user_agent
- "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.2292/hifi/nordic/int; Nokia 6230; en; U; ssr)"
+ "Opera/8.01 (J2ME/MIDP; Opera Mini/1.1.2292/hifi/nordic/int; Nokia 6230; en; U; ssr)".gsub(/\a/, '\\')
 end
   def resolution_height
   128

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_x55i_ver1'
 module Mobiles
  module Repository
-   class SieX55iVer1Sub6105c4 < SieX55iVer1
+   class Sie_x55i_ver1_sub6105c4 < Sie_x55i_ver1
 def self.user_agent
- "SIE-X55i FULLPOWER! UP.Browser/6.1.0.5.c.4 (GUI) MMP/1.0"
+ "SIE-X55i FULLPOWER! UP.Browser/6.1.0.5.c.4 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

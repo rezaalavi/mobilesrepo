@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kddi_st24_ver1'
 module Mobiles
  module Repository
-   class KddiSt24Ver1Subua < KddiSt24Ver1
+   class Kddi_st24_ver1_subua < Kddi_st24_ver1
 def self.user_agent
- "KDDI-ST24"
+ "KDDI-ST24".gsub(/\a/, '\\')
 end
   
 end

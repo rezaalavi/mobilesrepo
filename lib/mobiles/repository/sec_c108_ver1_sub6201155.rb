@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_c108_ver1'
 module Mobiles
  module Repository
-   class SecC108Ver1Sub6201155 < SecC108Ver1
+   class Sec_c108_ver1_sub6201155 < Sec_c108_ver1
 def self.user_agent
- "SEC-SGHC108/1.0 UP.Browser/6.2.0.1.155 (GUI) MMP/1.0"
+ "SEC-SGHC108/1.0 UP.Browser/6.2.0.1.155 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   
 end

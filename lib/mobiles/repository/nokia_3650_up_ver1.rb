@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class Nokia3650UpVer1 < OpwvV62Generic
+   class Nokia_3650_up_ver1 < Opwv_v62_generic
 def self.user_agent
- "Nokia3650/1.0 UP.Browser/6.2"
+ "Nokia3650/1.0 UP.Browser/6.2".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/android_dev_ver1'
 module Mobiles
  module Repository
-   class AndroidDevVer1Subplatrc33 < AndroidDevVer1
+   class Android_dev_ver1_subplatrc33 < Android_dev_ver1
 def self.user_agent
- "Mozilla/5.0 (Linux; U; Android 1.5; en-us; Android Dev Phone 1 Build/PLAT-RC33) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1"
+ "Mozilla/5.0 (Linux; U; Android 1.5; en-us; Android Dev Phone 1 Build/PLAT-RC33) AppleWebKit/528.5+ (KHTML, like Gecko) Version/3.1.2 Mobile Safari/525.20.1".gsub(/\a/, '\\')
 end
   
 end

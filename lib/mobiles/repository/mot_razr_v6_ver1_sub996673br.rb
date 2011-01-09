@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_razr_v6_ver1'
 module Mobiles
  module Repository
-   class MotRazrV6Ver1Sub996673br < MotRazrV6Ver1
+   class Mot_razr_v6_ver1_sub996673br < Mot_razr_v6_ver1
 def self.user_agent
- "MOT-RAZRV6/96.66.73BR BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 11033063) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [it]"
+ "MOT-RAZRV6/96.66.73BR BER2.2 Mozilla/4.0 (compatible; MSIE 6.0; 11033063) Profile/MIDP-2.0 Configuration/CLDC-1.1 Opera 8.00 [it]".gsub(/\a/, '\\')
 end
   def max_data_rate
   384

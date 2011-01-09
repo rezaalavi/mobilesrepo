@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_sf65_ver2'
 module Mobiles
  module Repository
-   class SieSf65Ver2Sub00 < SieSf65Ver2
+   class Sie_sf65_ver2_sub00 < Sie_sf65_ver2
 def self.user_agent
- "SIE-SF65v2 ObigoInternetBrowser/Q03C"
+ "SIE-SF65v2 ObigoInternetBrowser/Q03C".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/cdm_8450sp_ver1'
 module Mobiles
  module Repository
-   class FakeCdm8450spVer1 < Cdm8450spVer1
+   class Fake_cdm_8450sp_ver1 < Cdm_8450sp_ver1
 def self.user_agent
- "FAKE_USER_AGENT Audiovox VI600"
+ "FAKE_USER_AGENT Audiovox VI600".gsub(/\a/, '\\')
 end
   def model_name
   "VI600"

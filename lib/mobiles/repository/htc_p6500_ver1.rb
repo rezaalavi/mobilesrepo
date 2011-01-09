@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_p6500_sedna_ver1'
 module Mobiles
  module Repository
-   class HtcP6500Ver1 < HtcP6500SednaVer1
+   class Htc_p6500_ver1 < Htc_p6500_sedna_ver1
 def self.user_agent
- "HTC-P6500"
+ "HTC-P6500".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.htcmms.com.tw/gen/sedna-1.0.xml"

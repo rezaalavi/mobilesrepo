@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_c902_ver1'
 module Mobiles
  module Repository
-   class SonyericssonK111iVer1 < SonyericssonC902Ver1
+   class Sonyericsson_k111i_ver1 < Sonyericsson_c902_ver1
 def self.user_agent
- "SonyEricssonK111i/R1EA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 SonyEricssonK111i/R1EC Profile/MIDP-2.1 Configuration/CLDC-1.1"
+ "SonyEricssonK111i/R1EA Profile/MIDP-2.1 Configuration/CLDC-1.1 UNTRUSTED/1.0 SonyEricssonK111i/R1EC Profile/MIDP-2.1 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/K111iR101.xml"

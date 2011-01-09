@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic'
 module Mobiles
  module Repository
-   class Virgin1Ver1 < Generic
+   class Virgin_1_ver1 < Generic
 def self.user_agent
- "Virgin_1"
+ "Virgin_1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://asmobile.ehosting.com.tw/uaprof/Virgin_1.xml"

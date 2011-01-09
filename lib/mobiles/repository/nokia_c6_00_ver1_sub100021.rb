@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_c6_00_ver1'
 module Mobiles
  module Repository
-   class NokiaC600Ver1Sub100021 < NokiaC600Ver1
+   class Nokia_c6_00_ver1_sub100021 < Nokia_c6_00_ver1
 def self.user_agent
- "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/10.0.021; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6 3gpp-gba"
+ "Mozilla/5.0 (SymbianOS/9.4; Series60/5.0 NokiaC6-00/10.0.021; Profile/MIDP-2.1 Configuration/CLDC-1.1) AppleWebKit/525 (KHTML, like Gecko) BrowserNG/7.2.6 3gpp-gba".gsub(/\a/, '\\')
 end
   def image_inlining?
   true

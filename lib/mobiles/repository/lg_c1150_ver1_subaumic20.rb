@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_c1150_ver1'
 module Mobiles
  module Repository
-   class LgC1150Ver1Subaumic20 < LgC1150Ver1
+   class Lg_c1150_ver1_subaumic20 < Lg_c1150_ver1
 def self.user_agent
- "LG-C1150 MIC/WAP2.0 MIDP-2.0/CLDC-1.0"
+ "LG-C1150 MIC/WAP2.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

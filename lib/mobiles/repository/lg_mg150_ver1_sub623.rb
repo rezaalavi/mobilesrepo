@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_mg150_ver1'
 module Mobiles
  module Repository
-   class LgMg150Ver1Sub623 < LgMg150Ver1
+   class Lg_mg150_ver1_sub623 < Lg_mg150_ver1
 def self.user_agent
- "LG-MG150 UP.Browser/6.2.3 (GUI) MMP/1.0"
+ "LG-MG150 UP.Browser/6.2.3 (GUI) MMP/1.0".gsub(/\a/, '\\')
 end
   def max_image_width
   121

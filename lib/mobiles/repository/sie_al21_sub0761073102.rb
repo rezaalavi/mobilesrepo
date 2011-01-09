@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_al21_ver1'
 module Mobiles
  module Repository
-   class SieAl21Sub0761073102 < SieAl21Ver1
+   class Sie_al21_sub0761073102 < Sie_al21_ver1
 def self.user_agent
- "SIE-AL21/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI)"
+ "SIE-AL21/07 Profile/MIDP-1.0 Configuration/CLDC-1.0 UP.Browser/6.1.0.7.3.102 (GUI)".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

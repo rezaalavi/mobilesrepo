@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_a88_ver1'
 module Mobiles
  module Repository
-   class MotA88Ver1Sub0003 < MotA88Ver1
+   class Mot_a88_ver1_sub0003 < Mot_a88_ver1
 def self.user_agent
- "MOT-A-88/00.03 UP.Browser/4.1.26m.737"
+ "MOT-A-88/00.03 UP.Browser/4.1.26m.737".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   50000

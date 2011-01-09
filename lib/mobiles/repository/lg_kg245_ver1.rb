@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_kg240_ver1'
 module Mobiles
  module Repository
-   class LgKg245Ver1 < LgKg240Ver1
+   class Lg_kg245_ver1 < Lg_kg240_ver1
 def self.user_agent
- "LG-KG245"
+ "LG-KG245".gsub(/\a/, '\\')
 end
   def uaprof
   "http://gsm.lge.com/html/gsm/LG-KG245.xml"

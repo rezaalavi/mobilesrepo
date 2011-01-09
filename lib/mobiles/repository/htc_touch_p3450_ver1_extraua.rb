@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_touch_p3450_ver1'
 module Mobiles
  module Repository
-   class HtcTouchP3450Ver1Extraua < HtcTouchP3450Ver1
+   class Htc_touch_p3450_ver1_extraua < Htc_touch_p3450_ver1
 def self.user_agent
- "HTC-P3450"
+ "HTC-P3450".gsub(/\a/, '\\')
 end
   
 end

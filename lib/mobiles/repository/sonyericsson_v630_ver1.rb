@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_sonyericsson_netfront_ver3_3'
 module Mobiles
  module Repository
-   class SonyericssonV630Ver1 < GenericSonyericssonNetfrontVer33
+   class Sonyericsson_v630_ver1 < Generic_sonyericsson_netfront_ver3_3
 def self.user_agent
- "SonyEricssonV630"
+ "SonyEricssonV630".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   false

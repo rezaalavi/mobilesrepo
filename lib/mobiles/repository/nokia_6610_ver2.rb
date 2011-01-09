@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6610_ver1'
 module Mobiles
  module Repository
-   class Nokia6610Ver2 < Nokia6610Ver1
+   class Nokia_6610_ver2 < Nokia_6610_ver1
 def self.user_agent
- "Nokia6610/1.0 r200"
+ "Nokia6610/1.0 r200".gsub(/\a/, '\\')
 end
   def mms_max_size
   46080

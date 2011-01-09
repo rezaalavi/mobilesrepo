@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_android_ver2'
 module Mobiles
  module Repository
-   class BarnesandnobleNookVer1 < GenericAndroidVer2
+   class Barnesandnoble_nook_ver1 < Generic_android_ver2
 def self.user_agent
- "nook browser/1.0"
+ "nook browser/1.0".gsub(/\a/, '\\')
 end
   def has_qwerty_keyboard?
   false

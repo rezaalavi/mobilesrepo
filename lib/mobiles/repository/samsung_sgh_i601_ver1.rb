@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_sgh_i600_ver1'
 module Mobiles
  module Repository
-   class SamsungSghI601Ver1 < SamsungSghI600Ver1
+   class Samsung_sgh_i601_ver1 < Samsung_sgh_i600_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SAMSUNG-SGH-i601/WM534"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 6.12) SAMSUNG-SGH-i601/WM534".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   6.12

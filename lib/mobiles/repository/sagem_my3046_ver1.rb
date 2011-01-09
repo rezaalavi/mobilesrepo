@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sagem_3xxx_ver1'
 module Mobiles
  module Repository
-   class SagemMy3046Ver1 < Sagem3xxxVer1
+   class Sagem_my3046_ver1 < Sagem_3xxx_ver1
 def self.user_agent
- "SAGEM-my3046"
+ "SAGEM-my3046".gsub(/\a/, '\\')
 end
   def model_name
   "my 3046"

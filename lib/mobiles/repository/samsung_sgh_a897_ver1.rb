@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class SamsungSghA897Ver1 < GenericXhtml
+   class Samsung_sgh_a897_ver1 < Generic_xhtml
 def self.user_agent
- "SAMSUNG-SGH-A897"
+ "SAMSUNG-SGH-A897".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera Mini"

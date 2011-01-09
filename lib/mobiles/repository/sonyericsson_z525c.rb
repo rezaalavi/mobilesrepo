@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_z525'
 module Mobiles
  module Repository
-   class SonyericssonZ525c < SonyericssonZ525
+   class Sonyericsson_z525c < Sonyericsson_z525
 def self.user_agent
- "SonyEricssonZ525c"
+ "SonyEricssonZ525c".gsub(/\a/, '\\')
 end
   def model_name
   "Z525c"

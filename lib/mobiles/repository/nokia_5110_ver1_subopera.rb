@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_5110_ver1'
 module Mobiles
  module Repository
-   class Nokia5110Ver1Subopera < Nokia5110Ver1
+   class Nokia_5110_ver1_subopera < Nokia_5110_ver1
 def self.user_agent
- "Mozilla/9.5 (Opera 9.5; Nokia5110c; 0S/8.2;) [en] (Symbian OS; U)"
+ "Mozilla/9.5 (Opera 9.5; Nokia5110c; 0S/8.2;) [en] (Symbian OS; U)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Opera"

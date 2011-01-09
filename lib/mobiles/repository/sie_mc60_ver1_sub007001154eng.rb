@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sie_mc60_ver1'
 module Mobiles
  module Repository
-   class SieMc60Ver1Sub007001154eng < SieMc60Ver1
+   class Sie_mc60_ver1_sub007001154eng < Sie_mc60_ver1
 def self.user_agent
- "SIE-MC60/00 UP.Browser/7.0.0.1.154eng (GUI) MMP/2.0"
+ "SIE-MC60/00 UP.Browser/7.0.0.1.154eng (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def html_wi_oma_xhtmlmp_1_0?
   true

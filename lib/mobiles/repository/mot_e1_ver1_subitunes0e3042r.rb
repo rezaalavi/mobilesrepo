@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/mot_e1_ver1_subitunes'
 module Mobiles
  module Repository
-   class MotE1Ver1Subitunes0e3042r < MotE1Ver1Subitunes
+   class Mot_e1_ver1_subitunes0e3042r < Mot_e1_ver1_subitunes
 def self.user_agent
- "MOT-E1 iTunes/0E.30.42R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "MOT-E1 iTunes/0E.30.42R MIB/2.2.1 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_g705_ver1'
 module Mobiles
  module Repository
-   class SonyericssonG705uVer1 < SonyericssonG705Ver1
+   class Sonyericsson_g705u_ver1 < Sonyericsson_g705_ver1
 def self.user_agent
- "SonyEricssonG705u/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 model-orange JavaPlatform/JP-8.4.1"
+ "SonyEricssonG705u/R1DA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 model-orange JavaPlatform/JP-8.4.1".gsub(/\a/, '\\')
 end
   def model_name
   "G705u"

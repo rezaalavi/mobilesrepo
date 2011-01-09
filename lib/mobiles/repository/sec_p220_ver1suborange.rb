@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sec_p220_ver1'
 module Mobiles
  module Repository
-   class SecP220Ver1suborange < SecP220Ver1
+   class Sec_p220_ver1suborange < Sec_p220_ver1
 def self.user_agent
- "SAMSUNG-SGH-P220-ORANGE/P220BVGI1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-P220-ORANGE/P220BVGI1 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3.c.1.101 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

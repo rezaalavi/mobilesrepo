@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class LenovoV707Ver1 < GenericXhtml
+   class Lenovo_v707_ver1 < Generic_xhtml
 def self.user_agent
- "LENOVO-V707_RUS_ENG_FLY/(06.04.26)Ver01.10/WAP2.0"
+ "LENOVO-V707_RUS_ENG_FLY/(06.04.26)Ver01.10/WAP2.0".gsub(/\a/, '\\')
 end
   def model_name
   "V707"

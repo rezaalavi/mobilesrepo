@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/optimay_seville_ver1'
 module Mobiles
  module Repository
-   class OptimaySevilleVer1Sub5032 < OptimaySevilleVer1
+   class Optimay_seville_ver1_sub5032 < Optimay_seville_ver1
 def self.user_agent
- "Optimay-Seville/1.4 UP.Browser/5.0.3.2 (GUI)"
+ "Optimay-Seville/1.4 UP.Browser/5.0.3.2 (GUI)".gsub(/\a/, '\\')
 end
   
 end

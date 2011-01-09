@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/palm_tungsten_t3_ver1'
 module Mobiles
  module Repository
-   class PalmTungstenT3Ver1Subua < PalmTungstenT3Ver1
+   class Palm_tungsten_t3_ver1_subua < Palm_tungsten_t3_ver1
 def self.user_agent
- "Mozilla/4.76 [en] (PalmOS; U; WebPro/3.0.1a; Palm-Arz1)"
+ "Mozilla/4.76 [en] (PalmOS; U; WebPro/3.0.1a; Palm-Arz1)".gsub(/\a/, '\\')
 end
   
 end

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v62_generic'
 module Mobiles
  module Repository
-   class MotC261Ver1 < OpwvV62Generic
+   class Mot_c261_ver1 < Opwv_v62_generic
 def self.user_agent
- "MOT-C261/0.1.44 UP.Browser/6.2.3.9.c.6 (GUI) MMP/2.0"
+ "MOT-C261/0.1.44 UP.Browser/6.2.3.9.c.6 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://motorola.handango.com/phoneconfig/c261/Profile/c261.rdf"

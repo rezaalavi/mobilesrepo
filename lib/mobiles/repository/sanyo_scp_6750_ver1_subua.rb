@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sanyo_scp_6750_ver1'
 module Mobiles
  module Repository
-   class SanyoScp6750Ver1Subua < SanyoScp6750Ver1
+   class Sanyo_scp_6750_ver1_subua < Sanyo_scp_6750_ver1
 def self.user_agent
- "Sanyo_SCP-6750CA Access-NetFront/3.4 MMP/2.0"
+ "Sanyo_SCP-6750CA Access-NetFront/3.4 MMP/2.0".gsub(/\a/, '\\')
 end
   
 end

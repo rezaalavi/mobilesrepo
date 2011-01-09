@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6280_ver1'
 module Mobiles
  module Repository
-   class Nokia6280Ver1Sub413 < Nokia6280Ver1
+   class Nokia_6280_ver1_sub413 < Nokia_6280_ver1
 def self.user_agent
- "Nokia6280/2.0 (04.13) Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Mozilla/4.0; YGoJ/1.0)"
+ "Nokia6280/2.0 (04.13) Profile/MIDP-2.0 Configuration/CLDC-1.1 (compatible; MSIE 6.0; Mozilla/4.0; YGoJ/1.0)".gsub(/\a/, '\\')
 end
   
 end

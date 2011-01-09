@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_2'
 module Mobiles
  module Repository
-   class AmoiV810Ver1 < GenericNetfrontVer32
+   class Amoi_v810_ver1 < Generic_netfront_ver3_2
 def self.user_agent
- "AMOI-V810 NetFront/3.2"
+ "AMOI-V810 NetFront/3.2".gsub(/\a/, '\\')
 end
   def uaprof
   "https://servicios.iusacell.com.mx/amoi/v810/v810v1.xml"

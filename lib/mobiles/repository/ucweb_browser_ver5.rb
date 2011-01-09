@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_xhtml'
 module Mobiles
  module Repository
-   class UcwebBrowserVer5 < GenericXhtml
+   class Ucweb_browser_ver5 < Generic_xhtml
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 4.01 ) Browser/NetFront/3.3 LinuxOS/2.4.20 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ucweb/5.1"
+ "Mozilla/4.0 (compatible; MSIE 4.01 ) Browser/NetFront/3.3 LinuxOS/2.4.20 Profile/MIDP-2.0 Configuration/CLDC-1.1 Ucweb/5.1".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   5.1

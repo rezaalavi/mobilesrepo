@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_8700_ver1'
 module Mobiles
  module Repository
-   class Lg8700Ver1Parrot < Lg8700Ver1
+   class Lg_8700_ver1_parrot < Lg_8700_ver1
 def self.user_agent
- "LG8700-parrot/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0"
+ "LG8700-parrot/1.0 UP.Browser/6.2.3.9 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def uaprof
   "http://device.telusmobility.com/lg/LG8700-parrot-0.rdf"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/uptext_generic'
 module Mobiles
  module Repository
-   class PantechC816Ver1 < UptextGeneric
+   class Pantech_c816_ver1 < Uptext_generic
 def self.user_agent
- "Pantech c8816"
+ "Pantech c8816".gsub(/\a/, '\\')
 end
   def model_name
   "C8816"

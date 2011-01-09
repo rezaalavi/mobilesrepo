@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_hd_mini_ver1'
 module Mobiles
  module Repository
-   class HtcHdMiniVer1Subiem6 < HtcHdMiniVer1
+   class Htc_hd_mini_ver1_subiem6 < Htc_hd_mini_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HD_mini_T5555; Windows Phone 6.5.3.5)"
+ "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; HD_mini_T5555; Windows Phone 6.5.3.5)".gsub(/\a/, '\\')
 end
   def mobile_browser
   "IEMobile"

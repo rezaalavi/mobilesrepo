@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6275_ver1'
 module Mobiles
  module Repository
-   class Nokia6275Sub20bl100v0400 < Nokia6275Ver1
+   class Nokia_6275_sub20bl100v0400 < Nokia_6275_ver1
 def self.user_agent
- "Nokia6275/2.0 (BL100V0400.nep) UP.Browser/6.2.3.8 MMP/2.0"
+ "Nokia6275/2.0 (BL100V0400.nep) UP.Browser/6.2.3.8 MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   9

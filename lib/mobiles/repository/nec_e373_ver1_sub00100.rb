@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nec_e373_ver1'
 module Mobiles
  module Repository
-   class NecE373Ver1Sub00100 < NecE373Ver1
+   class Nec_e373_ver1_sub00100 < Nec_e373_ver1
 def self.user_agent
- "NEC-e373/001.00 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Qtv/1.00"
+ "NEC-e373/001.00 NetFront/3.2 Profile/MIDP-2.0 Configuration/CLDC-1.1 Qtv/1.00".gsub(/\a/, '\\')
 end
   
 end

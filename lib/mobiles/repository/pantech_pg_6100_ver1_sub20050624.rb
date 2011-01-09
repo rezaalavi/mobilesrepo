@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_pg_6100_ver1'
 module Mobiles
  module Repository
-   class PantechPg6100Ver1Sub20050624 < PantechPg6100Ver1
+   class Pantech_pg_6100_ver1_sub20050624 < Pantech_pg_6100_ver1
 def self.user_agent
- "PANTECH_PG-6100/(2005.06.24)Ver1.00/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1"
+ "PANTECH_PG-6100/(2005.06.24)Ver1.00/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/blackberry_generic_ver5'
 module Mobiles
  module Repository
-   class Blackberry9700Ver1 < BlackberryGenericVer5
+   class Blackberry9700_ver1 < Blackberry_generic_ver5
 def self.user_agent
- "BlackBerry9700/5.0.0.207 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/175"
+ "BlackBerry9700/5.0.0.207 Profile/MIDP-2.1 Configuration/CLDC-1.1 VendorID/175".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.blackberry.net/go/mobile/profiles/uaprof/9700_umts/5.0.0.rdf"

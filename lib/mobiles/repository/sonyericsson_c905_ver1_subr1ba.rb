@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_c905_ver1'
 module Mobiles
  module Repository
-   class SonyericssonC905Ver1Subr1ba < SonyericssonC905Ver1
+   class Sonyericsson_c905_ver1_subr1ba < Sonyericsson_c905_ver1
 def self.user_agent
- "SonyEricssonC905/R1BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.0"
+ "SonyEricssonC905/R1BA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.4.0".gsub(/\a/, '\\')
 end
   def flash_lite_version
   2_0

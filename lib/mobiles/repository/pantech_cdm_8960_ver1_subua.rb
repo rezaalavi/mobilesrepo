@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pantech_cdm_8960_ver1'
 module Mobiles
  module Repository
-   class PantechCdm8960Ver1Subua < PantechCdm8960Ver1
+   class Pantech_cdm_8960_ver1_subua < Pantech_cdm_8960_ver1
 def self.user_agent
- "cdm8960 UP.Browser/6.2.2.1 (GUI) MMP/2.0"
+ "cdm8960 UP.Browser/6.2.2.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "CDM8960"

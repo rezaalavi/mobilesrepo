@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_z720_ver1'
 module Mobiles
  module Repository
-   class SamsungZ720Ver1Subz720 < SamsungZ720Ver1
+   class Samsung_z720_ver1_subz720 < Samsung_z720_ver1
 def self.user_agent
- "SAMSUNG-SGH-Z720"
+ "SAMSUNG-SGH-Z720".gsub(/\a/, '\\')
 end
   def j2me_max_jar_size
   1000000

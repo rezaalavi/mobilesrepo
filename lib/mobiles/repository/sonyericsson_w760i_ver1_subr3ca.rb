@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/sonyericsson_w760i_ver1'
 module Mobiles
  module Repository
-   class SonyericssonW760iVer1Subr3ca < SonyericssonW760iVer1
+   class Sonyericsson_w760i_ver1_subr3ca < Sonyericsson_w760i_ver1
 def self.user_agent
- "SonyEricssonW760i/R3CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.1"
+ "SonyEricssonW760i/R3CA Browser/NetFront/3.4 Profile/MIDP-2.1 Configuration/CLDC-1.1 JavaPlatform/JP-8.3.1".gsub(/\a/, '\\')
 end
   def uaprof
   "http://wap.sonyericsson.com/UAprof/W760iR101.xml"

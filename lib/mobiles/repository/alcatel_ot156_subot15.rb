@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/alcatel_ot156_ver1'
 module Mobiles
  module Repository
-   class AlcatelOt156Subot15 < AlcatelOt156Ver1
+   class Alcatel_ot156_subot15 < Alcatel_ot156_ver1
 def self.user_agent
- "Alcatel-OT156"
+ "Alcatel-OT156".gsub(/\a/, '\\')
 end
   
 end

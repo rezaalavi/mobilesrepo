@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/pt_g310_ver1'
 module Mobiles
  module Repository
-   class PtG310cVer1 < PtG310Ver1
+   class Pt_g310c_ver1 < Pt_g310_ver1
 def self.user_agent
- "PT-G310c"
+ "PT-G310c".gsub(/\a/, '\\')
 end
   def model_name
   "PT-G310c"

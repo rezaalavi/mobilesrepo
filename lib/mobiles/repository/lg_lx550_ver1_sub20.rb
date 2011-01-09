@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/lg_lx550_ver1'
 module Mobiles
  module Repository
-   class LgLx550Ver1Sub20 < LgLx550Ver1
+   class Lg_lx550_ver1_sub20 < Lg_lx550_ver1
 def self.user_agent
- "LG-LX550 AU-MIC-LX550/2.0 MMP/2.0 Profile/MIDP-2.0"
+ "LG-LX550 AU-MIC-LX550/2.0 MMP/2.0 Profile/MIDP-2.0".gsub(/\a/, '\\')
 end
   
 end

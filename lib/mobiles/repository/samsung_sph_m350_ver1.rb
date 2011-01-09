@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3_1'
 module Mobiles
  module Repository
-   class SamsungSphM350Ver1 < GenericNetfrontVer31
+   class Samsung_sph_m350_ver1 < Generic_netfront_ver3_1
 def self.user_agent
- "Samsung-SPHM350 Access-NetFront/3.1.5 MMP/2.0"
+ "Samsung-SPHM350 Access-NetFront/3.1.5 MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "SPH-M350"

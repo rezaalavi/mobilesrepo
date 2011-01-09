@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e800_ver1'
 module Mobiles
  module Repository
-   class SamsungE800Ver1Sub6233midp < SamsungE800Ver1
+   class Samsung_e800_ver1_sub6233midp < Samsung_e800_ver1
 def self.user_agent
- "SAMSUNG-SGH-E800/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3 (GUI) MMP/2.0"
+ "SAMSUNG-SGH-E800/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 UP.Browser/6.2.3.3 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def max_data_rate
   40

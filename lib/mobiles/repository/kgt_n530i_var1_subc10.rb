@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/kgt_n530i_ver1'
 module Mobiles
  module Repository
-   class KgtN530iVar1Subc10 < KgtN530iVer1
+   class Kgt_n530i_var1_subc10 < Kgt_n530i_ver1
 def self.user_agent
- "KGT/1.0 N530i-10(c10)"
+ "KGT/1.0 N530i-10(c10)".gsub(/\a/, '\\')
 end
   
 end

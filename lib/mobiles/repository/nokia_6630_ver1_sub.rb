@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/nokia_6630_ver1'
 module Mobiles
  module Repository
-   class Nokia6630Ver1Sub < Nokia6630Ver1
+   class Nokia_6630_ver1_sub < Nokia_6630_ver1
 def self.user_agent
- "Mozilla/4.0 (compatible; MSIE 5.0; Series60/2.6 Nokia6630"
+ "Mozilla/4.0 (compatible; MSIE 5.0; Series60/2.6 Nokia6630".gsub(/\a/, '\\')
 end
   def max_data_rate
   200

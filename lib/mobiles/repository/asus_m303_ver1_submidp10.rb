@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/asus_m303_ver1'
 module Mobiles
  module Repository
-   class AsusM303Ver1Submidp10 < AsusM303Ver1
+   class Asus_m303_ver1_submidp10 < Asus_m303_ver1
 def self.user_agent
- "ASUS-M303/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0"
+ "ASUS-M303/1.0 Profile/MIDP-1.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
   
 end

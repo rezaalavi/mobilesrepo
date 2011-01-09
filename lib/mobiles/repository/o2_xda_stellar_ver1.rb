@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/htc_kaiser_ver1'
 module Mobiles
  module Repository
-   class O2XdaStellarVer1 < HtcKaiserVer1
+   class O2_xda_stellar_ver1 < Htc_kaiser_ver1
 def self.user_agent
- "Xda_Stellar; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)"
+ "Xda_Stellar; 240x320 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
   def mobile_browser_version
   7.6

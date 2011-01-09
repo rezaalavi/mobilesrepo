@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/generic_netfront_ver3'
 module Mobiles
  module Repository
-   class SecP910Ver1 < GenericNetfrontVer3
+   class Sec_p910_ver1 < Generic_netfront_ver3
 def self.user_agent
- "SEC-SGHP910"
+ "SEC-SGHP910".gsub(/\a/, '\\')
 end
   def model_name
   "SGH-P910"

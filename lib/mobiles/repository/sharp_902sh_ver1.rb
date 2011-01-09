@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/opwv_v7_generic'
 module Mobiles
  module Repository
-   class Sharp902shVer1 < OpwvV7Generic
+   class Sharp_902sh_ver1 < Opwv_v7_generic
 def self.user_agent
- "Vodafone/Sharp902SH"
+ "Vodafone/Sharp902SH".gsub(/\a/, '\\')
 end
   def uaprof
   "http://www.sharp-mobile.com/UAProf/902SH_G001_base.xml"

@@ -11,12 +11,12 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-
+require 'mobiles/repository/samsung_e820_ver1'
 module Mobiles
  module Repository
-   class SamsungE820Ver1Subsece850 < SamsungE820Ver1
+   class Samsung_e820_ver1_subsece850 < Samsung_e820_ver1
 def self.user_agent
- "SEC-SGHE820"
+ "SEC-SGHE820".gsub(/\a/, '\\')
 end
   
 end
