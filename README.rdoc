@@ -10,7 +10,27 @@ Author:	    Reza Alavi,2010
 This is a collection of Ruby classes representing all the mobile phones in wurlf.
 This library can be used to retrieve a mobile specification.
 
+
+== INSTALL:
+
+sudo gem install mobilesrepo --no-ri --no-rdoc
+
+Please remember to use --no-ri --no-rdoc parameters.
+The library has more than 1300 classes and the rdoc generation during installation
+might take up to an hour.
+
+The best place to look for documentation is in lib/mobiles/repository/generic.rb
+
+
 == EXAMPLE:
+
+
+=== Obtaining a device object based on user-agent
+
+ require 'mobiles/device_locator'
+ Mobiles::DeviceLocator.init #should be called once for the life or your app
+ device = Mobiles::DeviceLocator.locate("AUDIOVOX-CDM8450");
+ puts device.max_image_width
 
 === Initializing the device repository
     require 'mobile_device'
@@ -18,20 +38,10 @@ This library can be used to retrieve a mobile specification.
     pantech_g300 = PantechG300Ver1.new
     puts pantech_g300.max_image_width
 
-The above method is time consuming and slow. Unless you want to initialize all
-the devices it is better to retrieve a device based on its user-agent similar to
-the next example
+The require part in the above method is time consuming and slow.
+Unless you want to initialize all the devices it is better to retrieve a device
+based on its user-agent similar to the previous example.
 
-=== Obtaining a device object based on user-agent
-
-    require 'mobiles/device_locator'
-    Mobiles::DeviceLocator.init #should be called only once
-    device = Mobiles::DeviceLocator.locate("AUDIOVOX-CDM8450");
-    puts device.uaprof
-
-== INSTALL:
-
-sudo gem install mobilesrepo
 
 == LICENSE:
 

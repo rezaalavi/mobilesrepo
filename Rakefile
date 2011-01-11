@@ -12,17 +12,17 @@ require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
   s.name = 'mobilesrepo'
-  s.version = '1.1.0'
+  s.version = '1.1.1'
   s.homepage = "http://mobilesrepo.rubyforge.org"
   s.rubyforge_project = "mobilesrepo"
   s.has_rdoc = true
   s.extra_rdoc_files = ['README.rdoc', 'LICENSE']
-  s.summary = 'This is a collection of Ruby classes representing all the mobile phones in wurlf. This library can be used to retrieve a mobile specification.'
+  s.summary = 'This is a collection of Ruby classes representing all the mobile phones in wurlf. Providing user-agent parameter this library returns a mobile objects that covers all relevant web specifications of that device'
   s.description = s.summary
   s.author = 'Reza Alavi'
   s.email = 'rezaalavi@rubyforge.org'
   # s.executables = ['your_executable_here']
-  s.files = %w(LICENSE README.rdoc Rakefile) + Dir.glob("{bin,lib,spec}/**/*")
+  s.files = %w(LICENSE README.rdoc Rakefile) + Dir.glob("{bin,lib,spec,repo}/**/*") - Dir.glob("lib/main.rb") - Dir.glob("lib/db/*")
   s.require_path = "lib"
   s.bindir = "bin"
 end
@@ -34,7 +34,7 @@ Rake::GemPackageTask.new(spec) do |p|
 end
 
 Rake::RDocTask.new do |rdoc|
-  files =['README.rdoc', 'LICENSE', 'lib/**/*.rb']
+  files =['README.rdoc', 'LICENSE', 'lib/mobiles/repository/generic.rb']
   rdoc.rdoc_files.add(files)
   rdoc.main = "README.rdoc" # page to start on
   rdoc.title = "mobilesrepo Docs"
