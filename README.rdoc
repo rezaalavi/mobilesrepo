@@ -13,34 +13,30 @@ This library can be used to retrieve a mobile specification.
 
 == INSTALL:
 
-sudo gem install mobilesrepo --no-ri --no-rdoc
+sudo gem install mobilesrepo 
 
-Please remember to use --no-ri --no-rdoc parameters.
-The library has more than 1300 classes and the rdoc generation during installation
-might take up to an hour.
 
-The best place to look for documentation is in lib/mobiles/repository/generic.rb
 
+== Documentation:
+ Please check mobiles/generic.rb for the list of methods available in each device object
 
 == EXAMPLE:
 
 
 === Obtaining a device object based on user-agent
 
- require 'mobiles/device_locator'
- Mobiles::DeviceLocator.init #should be called once for the life or your app
- device = Mobiles::DeviceLocator.locate("AUDIOVOX-CDM8450");
- puts device.max_image_width
+    require 'mobiles/device_locator'
+ 
+    device = Mobiles::DeviceLocator.find_device_by_user_agent("AUDIOVOX-CDM8450")
+    puts device.max_image_width
 
-=== Initializing the device repository
-    require 'mobile_device'
+=== Obtaining a device object based on device_id
+    require 'mobiles/device_locator'
 
-    pantech_g300 = PantechG300Ver1.new
-    puts pantech_g300.max_image_width
+    device = Mobiles::DeviceLocator.find_device_by_device_id("panasonic_x70_ver1");
+    puts device.max_image_width
 
-The require part in the above method is time consuming and slow.
-Unless you want to initialize all the devices it is better to retrieve a device
-based on its user-agent similar to the previous example.
+
 
 
 == LICENSE:

@@ -14,11 +14,16 @@
 
 
 module Mobiles
+  # Use this class to retrieve a mobile class for a particular user-agent or
+  # based on the device name.
+  # This class uses a build in cache mechanism to improve the performance
+
   class DeviceLocator
       
     @@mobiles_map = Hash.new
     @@devices_cache = Hash.new
 
+    # used for internal use. Unfortunately we can't declare it as a private method
     def self.eval_file filename
       abs_filename = File.dirname(__FILE__)+'/../../repo/'+filename
       eval(File.new(abs_filename).read)
@@ -26,20 +31,27 @@ module Mobiles
 
     eval_file 'device_map.rbx'
 
-    def self.locate user_agent
-      device = @@devices_cache.fetch(user_agent , nil)
-      if device.nil?
-        device_id = @@mobiles_map.fetch(user_agent , nil)
+    # returns an instance of a device class for the provided user-agent parameter
+    def self.find_device_by_user_agent user_agent
+      device_id = @@mobiles_map.fetch(user_agent , nil)
         unless device_id.nil?
-          class_name = class_name_for_device_id device_id
+          find_device_by_device_id device_id
+         
+        end      
+    end
+
+    # returns an instance of a device class for the provided device_id parameter
+    def self.find_device_by_device_id device_id
+      device = @@devices_cache.fetch(device_id , nil)
+       if device.nil?
+             class_name = class_name_for_device_id device_id
           device = eval  <<-command
-eval_file '#{device_id}.rbx'
-Mobiles::Repository::#{class_name}.new
-          command
-          @@devices_cache.update({user_agent => device})
-        end
-      end
-      device
+                          eval_file '#{device_id}.rbx'
+                          Mobiles::Repository::#{class_name}.new
+                        command
+          @@devices_cache.update({device_id => device})
+          end
+          device
     end
     private
     def self.class_name_for_device_id device_id
