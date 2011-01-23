@@ -1,8 +1,3 @@
-# 
-# To change this template, choose Tools | Templates
-# and open the template in the editor.
- 
-
 require 'rubygems'
 require 'rake'
 require 'rake/clean'
@@ -17,7 +12,7 @@ spec = Gem::Specification.new do |s|
   s.rubyforge_project = "mobilesrepo"
   s.has_rdoc = true
   s.extra_rdoc_files = ['README.rdoc', 'LICENSE']
-  s.summary = 'This is a collection of Ruby classes representing all the mobile phones in wurlf. Providing user-agent parameter this library returns a mobile objects that covers all relevant web specifications of that device'
+  s.summary = 'This is a collection of Ruby classes representing all the mobile phones in wurfl. Providing user-agent parameter this library returns a mobile objects that covers all relevant web specifications of that device'
   s.description = s.summary
   s.author = 'Reza Alavi'
   s.email = 'rezaalavi@rubyforge.org'
