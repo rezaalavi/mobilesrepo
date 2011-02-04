@@ -145,6 +145,9 @@ end
 def imelody?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

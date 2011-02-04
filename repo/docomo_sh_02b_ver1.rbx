@@ -28,6 +28,9 @@ end
 def model_name
   "SH-02B"
 end
+def flash_lite_version
+  3_1
+end
 
 end
 

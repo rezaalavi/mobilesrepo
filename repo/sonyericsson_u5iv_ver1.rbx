@@ -22,6 +22,9 @@ end
   def model_name
   "U5iv"
 end
+def css_spriting?
+  true
+end
 
 end
 

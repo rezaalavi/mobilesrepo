@@ -247,6 +247,9 @@ end
 def playback_3g2?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

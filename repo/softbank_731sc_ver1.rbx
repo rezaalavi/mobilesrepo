@@ -31,6 +31,9 @@ end
 def max_data_rate
   1800
 end
+def flash_lite_version
+  ""
+end
 
 end
 

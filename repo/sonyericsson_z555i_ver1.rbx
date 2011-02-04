@@ -169,6 +169,9 @@ end
 def playback_acodec_aac
   "heaac2"
 end
+def css_spriting?
+  true
+end
 
 end
 

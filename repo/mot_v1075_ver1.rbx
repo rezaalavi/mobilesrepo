@@ -181,6 +181,9 @@ end
 def max_data_rate
   384
 end
+def css_spriting?
+  true
+end
 
 end
 

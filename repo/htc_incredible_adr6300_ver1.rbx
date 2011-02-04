@@ -55,6 +55,9 @@ end
 def playback_wmv
   7
 end
+def playback_vcodec_mpeg4_sp
+  2
+end
 
 end
 

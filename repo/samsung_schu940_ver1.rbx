@@ -22,6 +22,9 @@ end
   def model_name
   "SCH-U940"
 end
+def css_spriting?
+  true
+end
 
 end
 

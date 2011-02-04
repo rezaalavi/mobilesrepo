@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_st2c_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-ST2C".gsub(/\a/, '\\')
+ "KDDI-ST2C UP.Browser/6.2.0.11.1.2.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "Sweets cute"

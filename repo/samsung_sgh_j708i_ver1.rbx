@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "SAMSUNG-SGH-J708i_CMCC/1.0 RTK-E/1.0 DF/1.0 Release/12.18.2008 Browser/OpenWave6.2.3.3.c.1.101 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
-  def model_name
+  def uaprof
+  "http://wap.samsungmobile.com/uaprof/SGH-J708.xml"
+end
+def model_name
   "SGH J708i"
 end
 def brand_name

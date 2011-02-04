@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_ts34_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-TS34".gsub(/\a/, '\\')
+ "KDDI-TS34 UP.Browser/6.2.0.10.2.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"

@@ -367,6 +367,9 @@ end
 def xhtml_can_embed_video
   "plain"
 end
+def css_spriting?
+  true
+end
 
 end
 

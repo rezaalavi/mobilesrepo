@@ -47,7 +47,7 @@ def rows
   21
 end
 def max_image_width
-  460
+  320
 end
 def resolution_width
   480
@@ -56,7 +56,7 @@ def resolution_height
   800
 end
 def max_image_height
-  760
+  480
 end
 def jpg?
   true

@@ -34,6 +34,9 @@ end
 def model_name
   "P253iS"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

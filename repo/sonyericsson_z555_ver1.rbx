@@ -88,7 +88,22 @@ end
 def max_deck_size
   20000
 end
+def utf8_support?
+  true
+end
+def connectionless_service_load?
+  true
+end
+def iso8859_support?
+  true
+end
+def ascii_support?
+  true
+end
 def wap_push_support?
+  true
+end
+def mms_3gpp?
   true
 end
 def mms_png?
@@ -109,6 +124,9 @@ end
 def mms_gif_static?
   true
 end
+def mms_midi_polyphonic?
+  true
+end
 def mms_wav?
   true
 end
@@ -124,6 +142,12 @@ end
 def mms_bmp?
   true
 end
+def mms_vcalendar?
+  true
+end
+def mms_mp3?
+  true
+end
 def mms_wbmp?
   true
 end
@@ -136,7 +160,16 @@ end
 def mms_jpeg_baseline?
   true
 end
+def mms_gif_animated?
+  true
+end
+def awb?
+  true
+end
 def wav?
+  true
+end
+def aac?
   true
 end
 def sp_midi?
@@ -154,10 +187,22 @@ end
 def imelody?
   true
 end
+def midi_polyphonic?
+  true
+end
 def max_data_rate
   200
 end
 def j2me_midp_2_0?
+  true
+end
+def j2me_mmapi_1_0?
+  true
+end
+def j2me_wmapi_1_0?
+  true
+end
+def j2me_3dapi?
   true
 end
 def j2me_cldc_1_0?
@@ -172,8 +217,17 @@ end
 def oma_support?
   true
 end
+def oma_v_1_0_combined_delivery?
+  true
+end
+def oma_v_1_0_forwardlock?
+  true
+end
 def oma_v_1_0_separate_delivery?
   true
+end
+def flash_lite_version
+  1_1
 end
 
 end

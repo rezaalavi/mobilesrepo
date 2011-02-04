@@ -163,6 +163,9 @@ end
 def streaming_vcodec_h263_3
   45
 end
+def css_spriting?
+  true
+end
 
 end
 

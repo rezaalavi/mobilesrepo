@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_sn3n_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-SN3N".gsub(/\a/, '\\')
+ "KDDI-SN3N UP.Browser/6.2_7.2.7.1.K.4.304 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "URBANO BARONE"

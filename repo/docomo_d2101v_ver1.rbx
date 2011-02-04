@@ -37,6 +37,9 @@ end
 def model_name
   "D2101V"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

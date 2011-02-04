@@ -58,6 +58,9 @@ end
 def video?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

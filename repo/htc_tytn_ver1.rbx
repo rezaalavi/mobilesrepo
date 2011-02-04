@@ -232,6 +232,9 @@ end
 def streaming_mp4?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

@@ -151,6 +151,9 @@ end
 def j2me_midp_1_0?
   true
 end
+def css_spriting?
+  false
+end
 
 end
 

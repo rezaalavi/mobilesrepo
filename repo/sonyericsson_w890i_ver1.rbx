@@ -337,6 +337,9 @@ end
 def xhtml_can_embed_video
   "play_and_stop"
 end
+def css_spriting?
+  true
+end
 
 end
 

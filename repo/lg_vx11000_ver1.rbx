@@ -115,6 +115,9 @@ end
 def directdownload_support?
   true
 end
+def css_spriting?
+  false
+end
 
 end
 

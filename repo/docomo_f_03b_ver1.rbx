@@ -25,6 +25,9 @@ end
 def model_name
   "F-03B"
 end
+def flash_lite_version
+  3_1
+end
 
 end
 

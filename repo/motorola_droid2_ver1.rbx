@@ -31,6 +31,21 @@ end
 def release_date
   "2010_december"
 end
+def max_image_width
+  480
+end
+def resolution_width
+  480
+end
+def resolution_height
+  854
+end
+def max_image_height
+  600
+end
+def full_flash_support?
+  true
+end
 
 end
 

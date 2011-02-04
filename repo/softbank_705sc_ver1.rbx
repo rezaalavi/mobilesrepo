@@ -178,6 +178,9 @@ end
 def oma_v_1_0_separate_delivery?
   true
 end
+def flash_lite_version
+  ""
+end
 
 end
 

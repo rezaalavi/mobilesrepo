@@ -160,6 +160,9 @@ end
 def flash_lite_version
   3_0
 end
+def css_spriting?
+  true
+end
 
 end
 

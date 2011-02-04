@@ -52,6 +52,9 @@ end
 def playback_vcodec_h263_0
   10
 end
+def flash_lite_version
+  2_0
+end
 
 end
 

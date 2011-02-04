@@ -31,6 +31,9 @@ end
 def uaprof2
   "http://www.blackberry.net/go/mobile/profiles/uaprof/9800_umts/6.0.0.rdf"
 end
+def uaprof3
+  "http://www.blackberry.net/go/mobile/profiles/uaprof/9800_80211g/6.0.0.rdf"
+end
 def brand_name
   "RIM"
 end
@@ -107,10 +110,10 @@ def streaming_vcodec_h263_0
   10
 end
 def streaming_vcodec_h264_bp
-  1
+  1.1
 end
 def streaming_vcodec_mpeg4_sp
-  0
+  2
 end
 def wap_push_support?
   true

@@ -25,6 +25,9 @@ end
 def model_name
   "902T"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

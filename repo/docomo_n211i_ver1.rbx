@@ -40,6 +40,9 @@ end
 def model_name
   "N211i"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

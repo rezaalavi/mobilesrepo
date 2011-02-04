@@ -103,6 +103,9 @@ end
 def ajax_support_events?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

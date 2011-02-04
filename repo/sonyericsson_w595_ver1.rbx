@@ -229,6 +229,9 @@ end
 def wallpaper_preferred_height
   320
 end
+def css_spriting?
+  true
+end
 
 end
 

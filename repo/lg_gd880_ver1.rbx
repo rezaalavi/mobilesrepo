@@ -232,6 +232,9 @@ end
 def ajax_support_javascript?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

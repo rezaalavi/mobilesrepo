@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Linux; U; Android 2.2; en-ca; GT-P1000M Build/FROYO) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1".gsub(/\a/, '\\')
 end
-  
+  def uaprof
+  "http://wap.samsungmobile.com/uaprof/GT-P1000M.xml"
+end
+
 end
 
 end

@@ -49,6 +49,9 @@ end
 def uaprof
   "http://wap.sonyericsson.com/UAprof/W350iR201.xml"
 end
+def css_spriting?
+  true
+end
 
 end
 

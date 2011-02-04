@@ -85,6 +85,9 @@ end
 def xhtml_support_level
   3
 end
+def css_spriting?
+  true
+end
 
 end
 

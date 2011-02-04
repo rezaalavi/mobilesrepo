@@ -22,12 +22,6 @@ end
   def device_os_version
   2.1
 end
-def max_image_width
-  320
-end
-def max_image_height
-  480
-end
 
 end
 

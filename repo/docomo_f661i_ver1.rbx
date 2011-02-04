@@ -37,6 +37,9 @@ end
 def model_name
   "F661i"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

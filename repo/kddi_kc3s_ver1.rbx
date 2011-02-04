@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_kc3s_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-KC3S".gsub(/\a/, '\\')
+ "KDDI-KC3S UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def flash_lite_version
   2_0

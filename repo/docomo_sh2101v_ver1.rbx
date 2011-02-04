@@ -40,6 +40,9 @@ end
 def model_name
   "SH2101V"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

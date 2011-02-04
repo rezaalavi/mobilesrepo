@@ -118,6 +118,9 @@ end
 def midi_monophonic?
   true
 end
+def css_spriting?
+  false
+end
 
 end
 

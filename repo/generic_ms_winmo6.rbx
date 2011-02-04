@@ -67,6 +67,9 @@ end
 def streaming_3g2?
   true
 end
+def max_data_rate
+  384
+end
 
 end
 

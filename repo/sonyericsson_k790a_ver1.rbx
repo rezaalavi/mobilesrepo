@@ -49,6 +49,9 @@ end
 def streaming_real_media
   "none"
 end
+def css_spriting?
+  true
+end
 
 end
 

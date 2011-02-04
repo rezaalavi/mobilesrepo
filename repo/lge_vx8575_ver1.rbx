@@ -82,6 +82,9 @@ end
 def mp3?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

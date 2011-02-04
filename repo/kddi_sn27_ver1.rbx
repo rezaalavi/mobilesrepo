@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_sn27_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-SN27".gsub(/\a/, '\\')
+ "KDDI-SN27 UP.Browser/6.2.0.6.2 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def mobile_browser
   "Openwave Mobile Browser"
@@ -66,6 +66,9 @@ def max_image_height
 end
 def streaming_real_media
   "none"
+end
+def flash_lite_version
+  ""
 end
 
 end

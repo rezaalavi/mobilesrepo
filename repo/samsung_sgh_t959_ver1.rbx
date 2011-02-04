@@ -34,6 +34,27 @@ end
 def marketing_name
   "Vibrant"
 end
+def physical_screen_height
+  86
+end
+def dual_orientation?
+  true
+end
+def physical_screen_width
+  52
+end
+def max_image_width
+  480
+end
+def resolution_width
+  480
+end
+def resolution_height
+  800
+end
+def max_image_height
+  800
+end
 
 end
 

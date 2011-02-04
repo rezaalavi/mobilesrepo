@@ -85,6 +85,9 @@ end
 def ajax_xhr_type
   "none"
 end
+def css_spriting?
+  true
+end
 
 end
 

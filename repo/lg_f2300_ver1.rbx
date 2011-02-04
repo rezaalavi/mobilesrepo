@@ -19,7 +19,13 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "LG-F2300".gsub(/\a/, '\\')
 end
-  def uaprof
+  def mobile_browser
+  "Teleca-Obigo"
+end
+def mobile_browser_version
+  2.0
+end
+def uaprof
   "http://gsm.lge.com/html/gsm/LG-F2300.xml"
 end
 def model_name

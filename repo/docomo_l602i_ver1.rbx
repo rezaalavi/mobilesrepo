@@ -49,6 +49,9 @@ end
 def html_wi_imode_htmlx_1_1?
   true
 end
+def flash_lite_version
+  ""
+end
 
 end
 

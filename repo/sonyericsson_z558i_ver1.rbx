@@ -58,6 +58,9 @@ end
 def playback_acodec_aac
   "heaac"
 end
+def css_spriting?
+  true
+end
 
 end
 

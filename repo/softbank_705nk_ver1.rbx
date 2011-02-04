@@ -25,6 +25,9 @@ end
 def model_name
   "705NK"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

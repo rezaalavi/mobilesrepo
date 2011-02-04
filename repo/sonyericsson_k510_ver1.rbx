@@ -175,6 +175,9 @@ end
 def playback_vcodec_h263_0
   10
 end
+def css_spriting?
+  true
+end
 
 end
 

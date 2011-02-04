@@ -37,6 +37,9 @@ end
 def model_extra_info
   "Red"
 end
+def css_spriting?
+  true
+end
 
 end
 

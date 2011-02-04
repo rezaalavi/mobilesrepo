@@ -22,6 +22,9 @@ end
   def has_qwerty_keyboard?
   false
 end
+def is_tablet?
+  true
+end
 def model_name
   "Streak"
 end

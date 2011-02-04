@@ -67,15 +67,6 @@ end
 def css_supports_width_as_percentage?
   true
 end
-def physical_screen_height
-  57
-end
-def physical_screen_width
-  43
-end
-def max_image_width
-  234
-end
 def streaming_real_media
   8
 end

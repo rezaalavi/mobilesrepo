@@ -58,6 +58,9 @@ end
 def physical_screen_width
   43
 end
+def css_spriting?
+  true
+end
 
 end
 

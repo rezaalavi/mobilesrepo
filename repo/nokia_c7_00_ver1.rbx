@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaC7-00/011.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.6 3gpp-gba".gsub(/\a/, '\\')
 end
-  def model_name
+  def pointing_method
+  "touchscreen"
+end
+def model_name
   "C7-00"
 end
 def brand_name
@@ -56,7 +59,7 @@ def resolution_height
   640
 end
 def max_image_height
-  500
+  620
 end
 def jpg?
   true
@@ -89,10 +92,10 @@ def max_deck_size
   357000
 end
 def streaming_vcodec_h264_bp
-  1
+  1.2
 end
 def streaming_vcodec_mpeg4_sp
-  0
+  2
 end
 def wap_push_support?
   true

@@ -19,13 +19,7 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "LG-F2300 MIC/WAP2.0 MIDP-2.0/CLDC-1.0".gsub(/\a/, '\\')
 end
-  def uaprof
-  "http://gsm.lge.com/html/gsm/LG-C2100.xml"
-end
-def model_name
-  "LG-C2100"
-end
-def columns
+  def columns
   15
 end
 def rows

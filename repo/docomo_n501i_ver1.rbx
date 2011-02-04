@@ -49,6 +49,9 @@ end
 def colors
   2
 end
+def flash_lite_version
+  ""
+end
 
 end
 

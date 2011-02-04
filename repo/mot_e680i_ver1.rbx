@@ -295,6 +295,9 @@ end
 def cookie_support?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

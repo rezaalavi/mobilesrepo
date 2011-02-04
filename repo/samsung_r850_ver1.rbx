@@ -46,6 +46,9 @@ end
 def max_image_height
   360
 end
+def css_spriting?
+  true
+end
 
 end
 

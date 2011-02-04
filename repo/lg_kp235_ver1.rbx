@@ -136,6 +136,9 @@ end
 def oma_support?
   true
 end
+def css_spriting?
+  false
+end
 
 end
 

@@ -91,6 +91,9 @@ end
 def xhtml_can_embed_video
   "plain"
 end
+def css_spriting?
+  true
+end
 def css_supports_width_as_percentage?
   true
 end

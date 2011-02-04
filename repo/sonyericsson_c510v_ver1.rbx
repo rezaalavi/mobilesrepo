@@ -22,6 +22,9 @@ end
   def max_image_width
   228
 end
+def css_spriting?
+  true
+end
 
 end
 

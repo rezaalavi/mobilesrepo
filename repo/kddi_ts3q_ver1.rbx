@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_ts3q_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-TS3Q".gsub(/\a/, '\\')
+ "KDDI-TS3Q UP.Browser/6.2_7.2.7.1.K.4.301 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "PLY[iida]"

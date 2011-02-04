@@ -130,6 +130,9 @@ end
 def image_inlining?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

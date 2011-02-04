@@ -43,6 +43,9 @@ end
 def model_name
   "P2101V"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

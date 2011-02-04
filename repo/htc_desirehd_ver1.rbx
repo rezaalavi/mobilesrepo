@@ -19,11 +19,20 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Linux; U; Android 2.2; en-gb; Desire HD Build/FRF91) AppleWebKit/525.10+ (KHTML, like Gecko) Version/3.0.4 Mobile Safari/523.12.2".gsub(/\a/, '\\')
 end
-  def model_name
+  def uaprof
+  ""
+end
+def model_name
   "Desire HD"
 end
 def brand_name
   "HTC"
+end
+def resolution_width
+  480
+end
+def resolution_height
+  800
 end
 
 end

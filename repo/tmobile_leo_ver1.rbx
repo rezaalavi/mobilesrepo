@@ -34,6 +34,9 @@ end
 def image_inlining?
   false
 end
+def css_spriting?
+  true
+end
 
 end
 

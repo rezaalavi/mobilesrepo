@@ -256,6 +256,9 @@ end
 def playback_acodec_amr
   "nb"
 end
+def css_spriting?
+  true
+end
 
 end
 

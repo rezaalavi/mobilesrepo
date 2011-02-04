@@ -136,6 +136,9 @@ end
 def midi_polyphonic?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

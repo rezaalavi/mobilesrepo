@@ -25,6 +25,9 @@ end
 def model_name
   "DSi"
 end
+def css_spriting?
+  true
+end
 
 end
 

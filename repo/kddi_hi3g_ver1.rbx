@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_hi3g_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-HI3G".gsub(/\a/, '\\')
+ "KDDI-HI3G UP.Browser/6.2_7.2.7.1.K.3.349 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "Mobile Hi-Vision CAM Wooo"

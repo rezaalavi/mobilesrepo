@@ -50,7 +50,7 @@ def physical_screen_width
   43
 end
 def max_image_width
-  232
+  234
 end
 def rows
   15
@@ -62,7 +62,7 @@ def resolution_height
   320
 end
 def max_image_height
-  280
+  273
 end
 def jpg?
   true

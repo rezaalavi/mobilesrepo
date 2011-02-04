@@ -40,6 +40,9 @@ end
 def model_name
   "P651ps"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

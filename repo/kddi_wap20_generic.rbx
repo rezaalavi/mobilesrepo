@@ -67,6 +67,9 @@ end
 def streaming_video?
   true
 end
+def flash_lite_version
+  2_0
+end
 
 end
 

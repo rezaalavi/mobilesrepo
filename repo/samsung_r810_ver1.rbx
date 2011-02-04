@@ -127,6 +127,9 @@ end
 def playback_vcodec_h264_bp
   0
 end
+def css_spriting?
+  true
+end
 
 end
 

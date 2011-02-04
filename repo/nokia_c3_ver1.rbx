@@ -163,6 +163,9 @@ end
 def j2me_cldc_1_1?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

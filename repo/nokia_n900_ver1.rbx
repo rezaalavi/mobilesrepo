@@ -80,7 +80,7 @@ def xhtml_supports_iframe
   "full"
 end
 def xhtmlmp_preferred_mime_type
-  "application/xhtml+xml"
+  "text/html"
 end
 def xhtml_honors_bgcolor?
   true

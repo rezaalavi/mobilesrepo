@@ -52,6 +52,9 @@ end
 def streaming_real_media
   "none"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

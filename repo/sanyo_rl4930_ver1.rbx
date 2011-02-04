@@ -20,13 +20,13 @@ def self.user_agent
  "Mozilla/4.0 (MobilePhone RL-4930/US/1.0) NetFront/3.1 MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
-  "HTML Web browser"
+  "RL-4930"
 end
 def uaprof
   "http://device.sprintpcs.com/Sanyo/SCP4930/1004SP.rdf"
 end
 def brand_name
-  "Desktop"
+  "Sanyo"
 end
 def softkey_support?
   true

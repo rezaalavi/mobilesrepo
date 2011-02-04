@@ -40,6 +40,9 @@ end
 def model_name
   "A5303H"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

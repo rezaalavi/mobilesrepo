@@ -77,7 +77,7 @@ def wml_1_1?
   false
 end
 def preferred_markup
-  "html_wi_oma_xhtmlmp_1_0"
+  "html_web_4_0"
 end
 def xhtml_support_level
   4
@@ -86,7 +86,7 @@ def xhtml_supports_css_cell_table_coloring?
   true
 end
 def xhtmlmp_preferred_mime_type
-  "application/xhtml+xml"
+  "text/html"
 end
 def xhtml_supports_forms_in_table?
   true

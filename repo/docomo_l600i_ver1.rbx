@@ -40,6 +40,9 @@ end
 def model_name
   "L600i"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

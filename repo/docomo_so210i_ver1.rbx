@@ -40,6 +40,9 @@ end
 def model_name
   "SO210i"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

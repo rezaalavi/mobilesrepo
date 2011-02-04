@@ -160,6 +160,9 @@ end
 def xhtml_avoid_accesskeys?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

@@ -310,6 +310,9 @@ end
 def streaming_vcodec_mpeg4_sp
   0
 end
+def css_spriting?
+  true
+end
 
 end
 

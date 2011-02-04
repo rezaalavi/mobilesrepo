@@ -55,6 +55,9 @@ end
 def xhtml_table_support?
   true
 end
+def flash_lite_version
+  1_1
+end
 
 end
 

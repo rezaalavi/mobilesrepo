@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_hi24_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-HI24".gsub(/\a/, '\\')
+ "KDDI-HI24 UP.Browser/6.0.8.3 (GUI) MMP/1.1".gsub(/\a/, '\\')
 end
   def model_name
   "A5303H II"
@@ -36,6 +36,9 @@ def max_image_height
 end
 def colors
   260000
+end
+def flash_lite_version
+  ""
 end
 
 end

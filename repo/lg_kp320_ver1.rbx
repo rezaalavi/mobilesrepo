@@ -55,6 +55,9 @@ end
 def xhtml_support_level
   2
 end
+def css_spriting?
+  false
+end
 
 end
 

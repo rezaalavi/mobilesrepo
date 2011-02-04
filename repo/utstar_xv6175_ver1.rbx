@@ -28,6 +28,9 @@ end
 def brand_name
   "UTStarcom"
 end
+def css_spriting?
+  true
+end
 
 end
 

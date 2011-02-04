@@ -328,6 +328,9 @@ end
 def streaming_video?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

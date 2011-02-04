@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Kddi_kc3q_ver1 < Kddi_wap20_generic
 def self.user_agent
- "KDDI-KC3Q".gsub(/\a/, '\\')
+ "KDDI-KC3Q UP.Browser/6.2.0.15.1.1 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
   def model_name
   "misora[iida]"

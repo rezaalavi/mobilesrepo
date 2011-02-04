@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "RT240X320/WAP2.0 Profile/MIDP-2.0 Configuration/CLDC-1.0".gsub(/\a/, '\\')
 end
-  
+  def device_os
+  "MTK/Nucleus OS"
+end
+
 end
 
 end

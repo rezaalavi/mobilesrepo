@@ -22,6 +22,9 @@ end
   def model_name
   "X1a"
 end
+def css_spriting?
+  true
+end
 
 end
 

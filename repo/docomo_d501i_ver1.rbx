@@ -43,6 +43,9 @@ end
 def preferred_markup
   "html_wi_imode_html_1"
 end
+def flash_lite_version
+  ""
+end
 
 end
 

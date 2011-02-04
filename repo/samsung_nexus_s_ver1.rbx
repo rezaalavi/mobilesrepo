@@ -19,7 +19,19 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Linux; U; Android 2.3; en-us; Nexus S Build/GRH41B) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1".gsub(/\a/, '\\')
 end
-  
+  def model_name
+  "Nexus S"
+end
+def brand_name
+  "Samsung"
+end
+def resolution_width
+  480
+end
+def resolution_height
+  800
+end
+
 end
 
 end

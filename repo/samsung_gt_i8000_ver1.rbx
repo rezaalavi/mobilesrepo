@@ -88,6 +88,9 @@ end
 def max_deck_size
   40000
 end
+def css_spriting?
+  true
+end
 
 end
 

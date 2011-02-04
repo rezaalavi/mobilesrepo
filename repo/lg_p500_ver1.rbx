@@ -19,8 +19,11 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Linux; U; Android 2.2; es-; LG-P500 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1 MMS/LG-Android-MMS-V1.0/1.2".gsub(/\a/, '\\')
 end
-  def model_name
-  "LG/P500/V1.0"
+  def uaprof
+  "http://gsm.lge.com/html/gsm/P500-M6-D1.xml"
+end
+def model_name
+  "P500"
 end
 def brand_name
   "LG"

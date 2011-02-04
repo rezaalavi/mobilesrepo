@@ -145,6 +145,9 @@ end
 def wifi?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

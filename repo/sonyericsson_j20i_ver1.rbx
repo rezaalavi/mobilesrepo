@@ -184,6 +184,9 @@ end
 def fl_standalone?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

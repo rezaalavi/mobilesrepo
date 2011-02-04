@@ -37,6 +37,9 @@ end
 def release_date
   "2009_august"
 end
+def css_spriting?
+  true
+end
 
 end
 

@@ -28,6 +28,9 @@ end
 def marketing_name
   "8575 Touch"
 end
+def css_spriting?
+  true
+end
 
 end
 

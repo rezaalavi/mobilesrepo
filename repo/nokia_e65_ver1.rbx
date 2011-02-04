@@ -265,6 +265,9 @@ end
 def playback_vcodec_h264_bp
   1
 end
+def css_spriting?
+  true
+end
 def css_supports_width_as_percentage?
   true
 end

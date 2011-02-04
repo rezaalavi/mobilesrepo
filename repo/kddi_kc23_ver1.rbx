@@ -34,6 +34,9 @@ end
 def max_image_height
   136
 end
+def flash_lite_version
+  ""
+end
 
 end
 

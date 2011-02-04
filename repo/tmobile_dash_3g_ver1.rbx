@@ -76,6 +76,9 @@ end
 def mms_max_height
   1280
 end
+def css_spriting?
+  true
+end
 
 end
 

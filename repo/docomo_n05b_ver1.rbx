@@ -31,6 +31,9 @@ end
 def rows
   16
 end
+def flash_lite_version
+  3_1
+end
 
 end
 

@@ -238,6 +238,9 @@ end
 def oma_v_1_0_forwardlock?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

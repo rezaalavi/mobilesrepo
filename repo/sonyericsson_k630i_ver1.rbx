@@ -202,6 +202,9 @@ end
 def oma_v_1_0_separate_delivery?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

@@ -23,7 +23,7 @@ end
   "Teleca-Obigo"
 end
 def mobile_browser_version
-  7.0
+  "Q07"
 end
 def release_date
   "2008_july"

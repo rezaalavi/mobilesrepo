@@ -43,6 +43,9 @@ end
 def colors
   65536
 end
+def flash_lite_version
+  ""
+end
 
 end
 

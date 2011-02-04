@@ -31,6 +31,9 @@ end
 def playback_wmv
   7
 end
+def css_spriting?
+  true
+end
 
 end
 

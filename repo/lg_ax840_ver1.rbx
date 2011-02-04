@@ -40,6 +40,9 @@ end
 def streaming_video?
   true
 end
+def css_spriting?
+  false
+end
 
 end
 

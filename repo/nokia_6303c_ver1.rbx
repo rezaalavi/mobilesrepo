@@ -184,6 +184,9 @@ end
 def fl_screensaver?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

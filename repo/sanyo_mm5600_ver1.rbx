@@ -196,6 +196,9 @@ end
 def streaming_3gpp?
   true
 end
+def css_spriting?
+  true
+end
 
 end
 

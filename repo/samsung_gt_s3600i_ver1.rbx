@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "SAMSUNG-GT-S3600i/S3600iDDIK2 NetFront/3.5 Profile/MIDP-2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
-  
+  def css_spriting?
+  true
+end
+
 end
 
 end

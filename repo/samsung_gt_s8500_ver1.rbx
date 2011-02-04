@@ -125,7 +125,7 @@ def streaming_video?
   true
 end
 def streaming_vcodec_mpeg4_sp
-  1
+  2
 end
 def streaming_mp4?
   true

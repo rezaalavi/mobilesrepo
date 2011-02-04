@@ -244,6 +244,9 @@ end
 def playback_wmv
   7
 end
+def flash_lite_version
+  ""
+end
 
 end
 

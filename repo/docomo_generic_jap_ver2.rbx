@@ -52,6 +52,9 @@ end
 def preferred_markup
   "docomo_imode_html_3"
 end
+def flash_lite_version
+  1_1
+end
 
 end
 

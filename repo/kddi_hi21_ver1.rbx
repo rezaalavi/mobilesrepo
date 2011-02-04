@@ -40,6 +40,9 @@ end
 def colors
   4096
 end
+def flash_lite_version
+  ""
+end
 
 end
 
