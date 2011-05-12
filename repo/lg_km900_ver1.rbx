@@ -58,6 +58,9 @@ end
 def wml_1_2?
   true
 end
+def preferred_markup
+  "html_web_4_0"
+end
 def wml_1_3?
   true
 end
@@ -210,6 +213,9 @@ def wallpaper_preferred_width
 end
 def wallpaper_preferred_height
   800
+end
+def xhtmlmp_preferred_mime_type
+  "text/html"
 end
 def xhtml_can_embed_video
   "play_and_stop"

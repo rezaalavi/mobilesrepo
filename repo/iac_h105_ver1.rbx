@@ -157,6 +157,9 @@ end
 def streaming_real_media
   "none"
 end
+def ems?
+  true
+end
 
 end
 

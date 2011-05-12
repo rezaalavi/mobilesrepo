@@ -28,6 +28,9 @@ end
 def brand_name
   "Verizon"
 end
+def max_image_width
+  320
+end
 def resolution_width
   480
 end
@@ -36,6 +39,9 @@ def resolution_height
 end
 def max_deck_size
   131071
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

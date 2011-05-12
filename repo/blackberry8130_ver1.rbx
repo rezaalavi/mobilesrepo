@@ -97,6 +97,9 @@ end
 def mp3?
   true
 end
+def xhtml_support_level
+  2
+end
 
 end
 

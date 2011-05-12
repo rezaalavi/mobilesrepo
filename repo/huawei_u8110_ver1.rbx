@@ -118,6 +118,9 @@ end
 def streaming_vcodec_h263_3
   45
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

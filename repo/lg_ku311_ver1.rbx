@@ -82,6 +82,9 @@ end
 def xhtmlmp_preferred_mime_type
   "application/xhtml+xml"
 end
+def xhtml_file_upload
+  "supported"
+end
 def xhtml_honors_bgcolor?
   true
 end

@@ -76,6 +76,9 @@ end
 def xhtml_support_level
   3
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

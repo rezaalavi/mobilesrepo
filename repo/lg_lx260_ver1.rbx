@@ -56,7 +56,7 @@ def wml_1_2?
   true
 end
 def xhtml_support_level
-  3
+  2
 end
 def wml_1_3?
   true

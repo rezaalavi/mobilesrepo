@@ -25,6 +25,9 @@ end
 def model_name
   "P300"
 end
+def uaprof2
+  "http://device.sprintpcs.com/Hitachi/SH-P300/S2A34.rdf"
+end
 def brand_name
   "Hitachi"
 end

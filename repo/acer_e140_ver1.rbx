@@ -32,7 +32,7 @@ def brand_name
   "Acer"
 end
 def marketing_name
-  "beTouch"
+  "beTouch E140"
 end
 def release_date
   "2011_january"

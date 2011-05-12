@@ -31,6 +31,9 @@ end
 def marketing_name
   "Intercept"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

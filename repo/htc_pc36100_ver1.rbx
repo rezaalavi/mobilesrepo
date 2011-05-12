@@ -46,6 +46,9 @@ end
 def max_image_height
   760
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

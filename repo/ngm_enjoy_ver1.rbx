@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "NGM_Enjoy/ObigoInternetBrowser/QO3C Profile/MIDP2.0 Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
-  def model_name
+  def uaprof
+  "http://www.ngm-mobile.com/UserAgentProfiles/ngmenjoy.xml"
+end
+def model_name
   "Enjoy"
 end
 def brand_name

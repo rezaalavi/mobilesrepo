@@ -31,6 +31,9 @@ end
 def model_name
   "N97 mini"
 end
+def device_os_version
+  9.4
+end
 def uaprof2
   "http://nds1.nds.nokia.com/uaprof/NN97-4r100-3G.xml"
 end

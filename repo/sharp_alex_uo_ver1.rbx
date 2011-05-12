@@ -23,7 +23,7 @@ end
   "Alex-uo"
 end
 def brand_name
-  "SHARP"
+  "Sharp"
 end
 def release_date
   "2010_october"

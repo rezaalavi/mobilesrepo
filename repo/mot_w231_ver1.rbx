@@ -19,7 +19,16 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "MOT-W231/0.0.41 UP.Browser/6.3.0.6.c.22 (GUI) MMP/2.0".gsub(/\a/, '\\')
 end
-  def release_date
+  def uaprof
+  "http://uaprof.motorola.com/phoneconfig/w231/Profile/w231.rdf"
+end
+def model_name
+  "W231"
+end
+def uaprof2
+  ""
+end
+def release_date
   "2008_july"
 end
 def physical_screen_height

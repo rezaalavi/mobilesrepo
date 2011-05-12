@@ -412,6 +412,9 @@ end
 def xhtml_send_sms_string
   "sms:"
 end
+def xhtml_file_upload
+  "supported"
+end
 def playback_acodec_aac
   "heaac2"
 end

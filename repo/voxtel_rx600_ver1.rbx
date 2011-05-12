@@ -26,7 +26,7 @@ def model_name
   "RX600"
 end
 def brand_name
-  "VOXTEL"
+  "Voxtel"
 end
 def softkey_support?
   true

@@ -34,6 +34,9 @@ end
 def columns
   25
 end
+def max_image_width
+  320
+end
 def rows
   21
 end
@@ -42,6 +45,9 @@ def resolution_width
 end
 def resolution_height
   800
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

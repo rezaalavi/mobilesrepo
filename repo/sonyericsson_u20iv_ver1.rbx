@@ -71,7 +71,7 @@ def colors
   65536
 end
 def streaming_vcodec_h264_bp
-  1
+  1.2
 end
 def streaming_vcodec_mpeg4_sp
   0

@@ -32,7 +32,7 @@ def model_name
   "Xda_Diamond_2"
 end
 def brand_name
-  "HTC Corporation"
+  "HTC"
 end
 def release_date
   "2011_february"

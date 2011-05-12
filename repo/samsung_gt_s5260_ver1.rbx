@@ -19,11 +19,20 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "SAMSUNG-GT-S5260-VODAFONE/S5260BUKA1 SHP/VPP/R5 Dolfin/2.0 NexPlayer/3.0 SMM-MMS/1.2.0 profile/MIDP-2.1 configuration/CLDC-1.1 OPN-B".gsub(/\a/, '\\')
 end
-  def model_name
+  def pointing_method
+  "touchscreen"
+end
+def uaprof
+  "http://wap.samsungmobile.com/uaprof/GT-S5260.rdf"
+end
+def model_name
   "GT-S5260"
 end
 def brand_name
   "Samsung"
+end
+def marketing_name
+  "Star II"
 end
 def release_date
   "2011_january"
@@ -45,6 +54,9 @@ def wml_1_3?
 end
 def columns
   20
+end
+def dual_orientation?
+  true
 end
 def rows
   16

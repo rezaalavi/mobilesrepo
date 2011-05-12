@@ -22,6 +22,9 @@ end
   def model_name
   "LG-KM385"
 end
+def uaprof2
+  "http://gsm.lge.com/html/gsm/LG-KM385.xml"
+end
 def release_date
   "2008_november"
 end

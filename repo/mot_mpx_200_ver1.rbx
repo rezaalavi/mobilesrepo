@@ -26,10 +26,10 @@ def uaprof
   "http://motorola.handango.com/phoneconfig/mpx200/Profile/mpx200.rdf"
 end
 def model_name
-  "Smartphone"
+  "MPx200"
 end
 def brand_name
-  "Windows Mobile"
+  "Motorola"
 end
 def release_date
   "2003_november"

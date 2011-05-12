@@ -25,6 +25,18 @@ end
 def j2me_midp_1_0?
   true
 end
+def mobile_browser_version
+  5.0
+end
+def uaprof
+  "http://www.blackberry.net/go/mobile/profiles/uaprof/8900_80211g/4.6.1.rdf"
+end
+def device_os_version
+  5.0
+end
+def release_date
+  "2010_october"
+end
 
 end
 

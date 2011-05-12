@@ -277,6 +277,9 @@ end
 def cookie_support?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

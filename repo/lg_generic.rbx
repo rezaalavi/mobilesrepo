@@ -17,7 +17,7 @@ module Mobiles #:nodoc: all
  module Repository
    class Lg_generic < Generic_xhtml
 def self.user_agent
- "LG".gsub(/\a/, '\\')
+ "DO_NOT_MATCH_LG_GENERIC".gsub(/\a/, '\\')
 end
   def brand_name
   "LG"

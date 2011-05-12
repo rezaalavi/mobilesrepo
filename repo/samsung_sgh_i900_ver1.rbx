@@ -235,6 +235,9 @@ end
 def xhtml_can_embed_video
   "play_and_stop"
 end
+def xhtml_file_upload
+  "supported"
+end
 def oma_support?
   true
 end

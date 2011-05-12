@@ -28,6 +28,15 @@ end
 def streaming_real_media
   "none"
 end
+def colors
+  65536
+end
+def resolution_width
+  120
+end
+def resolution_height
+  160
+end
 
 end
 

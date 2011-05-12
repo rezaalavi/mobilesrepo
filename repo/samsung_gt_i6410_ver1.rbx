@@ -196,6 +196,9 @@ end
 def xhtml_can_embed_video
   "plain"
 end
+def xhtml_file_upload
+  "supported"
+end
 def j2me_midp_2_0?
   true
 end

@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "NGM_Premier/ObigoInternetBrowser/QO3C Profile".gsub(/\a/, '\\')
 end
-  def model_name
+  def uaprof
+  "http://www.ngm-mobile.com/UserAgentProfiles/ngmpremier.xml"
+end
+def model_name
   "Premier"
 end
 def brand_name

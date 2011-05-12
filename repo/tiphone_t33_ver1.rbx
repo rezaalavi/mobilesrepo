@@ -26,7 +26,7 @@ def model_name
   "T33"
 end
 def brand_name
-  "Tiphone"
+  "TiPhone"
 end
 def marketing_name
   "Opick"
@@ -42,6 +42,9 @@ def j2me_cldc_1_1?
 end
 def j2me_midp_1_0?
   true
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

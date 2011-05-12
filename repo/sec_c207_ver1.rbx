@@ -28,6 +28,9 @@ end
 def softkey_support?
   true
 end
+def xhtml_support_level
+  -1
+end
 def wml_1_3?
   true
 end

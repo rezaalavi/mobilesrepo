@@ -28,6 +28,9 @@ end
 def model_name
   "GT-I9000"
 end
+def uaprof2
+  "http://wap.samsungmobile.com/uaprof/GT-I9000.xml"
+end
 def brand_name
   "Samsung"
 end
@@ -60,6 +63,9 @@ def colors
 end
 def streaming_vcodec_h264_bp
   1.2
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

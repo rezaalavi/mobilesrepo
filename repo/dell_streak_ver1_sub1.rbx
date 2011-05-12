@@ -22,21 +22,6 @@ end
   def device_os_version
   2.2
 end
-def dual_orientation?
-  true
-end
-def max_image_width
-  480
-end
-def resolution_width
-  480
-end
-def resolution_height
-  800
-end
-def max_image_height
-  800
-end
 
 end
 

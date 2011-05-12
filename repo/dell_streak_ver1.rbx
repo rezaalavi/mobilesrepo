@@ -31,6 +31,9 @@ end
 def brand_name
   "Dell"
 end
+def dual_orientation?
+  true
+end
 def max_image_width
   760
 end
@@ -45,6 +48,9 @@ def max_image_height
 end
 def max_data_rate
   7200
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

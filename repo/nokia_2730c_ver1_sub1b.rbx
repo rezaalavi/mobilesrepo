@@ -53,7 +53,7 @@ def max_deck_size
   131072
 end
 def streaming_vcodec_h264_bp
-  "1.b"
+  "1b"
 end
 def mms_max_size
   614400

@@ -37,6 +37,18 @@ end
 def release_date
   "2010_october"
 end
+def max_image_width
+  320
+end
+def resolution_width
+  320
+end
+def resolution_height
+  480
+end
+def max_image_height
+  480
+end
 
 end
 

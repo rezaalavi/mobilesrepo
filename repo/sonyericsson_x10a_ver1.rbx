@@ -25,6 +25,9 @@ end
 def model_name
   "X10a"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

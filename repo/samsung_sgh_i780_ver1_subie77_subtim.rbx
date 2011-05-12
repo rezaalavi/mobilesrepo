@@ -19,20 +19,8 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "SAMSUNG-SGH-i780TIM/AIHA3 (compatible; MSIE 6.0; Windows CE; IEMobile 7.7)".gsub(/\a/, '\\')
 end
-  def pointing_method
-  "touchscreen"
-end
-def model_name
-  "SGH i780"
-end
-def uaprof
-  "http://wap.samsungmobile.com/uaprof/SGH-i780TIM.xml"
-end
-def model_extra_info
+  def model_extra_info
   "tim"
-end
-def release_date
-  "2008_november"
 end
 def softkey_support?
   true

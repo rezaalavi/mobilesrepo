@@ -25,6 +25,9 @@ end
 def brand_name
   "Samsung"
 end
+def marketing_name
+  "Galaxy Mini"
+end
 def release_date
   "2011_january"
 end

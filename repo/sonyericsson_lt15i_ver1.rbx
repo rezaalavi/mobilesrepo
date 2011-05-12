@@ -35,7 +35,7 @@ def brand_name
   "SonyEricsson"
 end
 def marketing_name
-  "Arc"
+  "Xperia Arc"
 end
 def release_date
   "2011_january"
@@ -74,10 +74,10 @@ def colors
   16777216
 end
 def streaming_vcodec_h264_bp
-  1
+  1.2
 end
 def streaming_vcodec_mpeg4_sp
-  0
+  2
 end
 def wap_push_support?
   true

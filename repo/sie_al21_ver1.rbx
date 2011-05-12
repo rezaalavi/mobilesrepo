@@ -20,13 +20,16 @@ def self.user_agent
  "SIE-AL21".gsub(/\a/, '\\')
 end
   def uaprof
-  "http://communicationmarket.siemens.de/portal/UAProf/UAP.aspx?device=AL21"
+  "http://communication-market.siemens.de/portal/UAProf/UAP.aspx?device=AL21"
 end
 def model_name
   "AL21"
 end
 def brand_name
   "Siemens"
+end
+def release_date
+  "2005_november"
 end
 def html_wi_oma_xhtmlmp_1_0?
   true
@@ -117,6 +120,63 @@ def j2me_midp_1_0?
 end
 def streaming_real_media
   "none"
+end
+def ems?
+  true
+end
+def mms_png?
+  true
+end
+def mms_max_size
+  51200
+end
+def mms_max_width
+  640
+end
+def mms_gif_static?
+  true
+end
+def mms_max_height
+  480
+end
+def sender?
+  true
+end
+def mms_vcard?
+  true
+end
+def mms_midi_polyphonic?
+  true
+end
+def built_in_recorder?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_bmp?
+  true
+end
+def built_in_camera?
+  true
+end
+def mms_vcalendar?
+  true
+end
+def receiver?
+  true
+end
+def mms_amr?
+  true
+end
+def mms_wbmp?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
+def mms_gif_animated?
+  true
 end
 
 end

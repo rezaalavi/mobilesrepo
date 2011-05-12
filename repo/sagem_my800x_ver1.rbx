@@ -26,7 +26,7 @@ def model_name
   "MY800X"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def html_wi_oma_xhtmlmp_1_0?
   true

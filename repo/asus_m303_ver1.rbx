@@ -26,7 +26,7 @@ def can_skip_aligned_link_row?
   true
 end
 def brand_name
-  "ASUS"
+  "Asus"
 end
 def release_date
   "2006_may"

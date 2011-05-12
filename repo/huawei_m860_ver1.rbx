@@ -28,6 +28,21 @@ end
 def brand_name
   "Huawei"
 end
+def marketing_name
+  "Ascend"
+end
+def xhtml_file_upload
+  "supported"
+end
+def max_image_width
+  320
+end
+def resolution_height
+  480
+end
+def resolution_width
+  320
+end
 
 end
 

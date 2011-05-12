@@ -7,7 +7,7 @@ require 'rake/testtask'
 
 spec = Gem::Specification.new do |s|
   s.name = 'mobilesrepo'
-  s.version = '1.2.1'
+  s.version = '1.2.2'
   s.homepage = "http://mobilesrepo.rubyforge.org"
   s.rubyforge_project = "mobilesrepo"
   s.has_rdoc = true

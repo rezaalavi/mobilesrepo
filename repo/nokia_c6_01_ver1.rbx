@@ -55,6 +55,9 @@ end
 def columns
   17
 end
+def max_image_width
+  340
+end
 def rows
   13
 end
@@ -63,6 +66,9 @@ def resolution_width
 end
 def resolution_height
   640
+end
+def max_image_height
+  600
 end
 def jpg?
   true

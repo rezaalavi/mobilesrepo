@@ -115,6 +115,12 @@ end
 def xhtml_make_phone_call_string
   "none"
 end
+def aac?
+  true
+end
+def mp3?
+  true
+end
 
 end
 

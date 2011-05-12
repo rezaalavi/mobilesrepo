@@ -25,21 +25,6 @@ end
 def release_date
   "2010_february"
 end
-def softkey_support?
-  true
-end
-def table_support?
-  true
-end
-def wml_1_1?
-  true
-end
-def wml_1_2?
-  true
-end
-def wml_1_3?
-  true
-end
 def max_image_width
   460
 end
@@ -48,24 +33,6 @@ def rows
 end
 def max_image_height
   760
-end
-def jpg?
-  true
-end
-def gif?
-  true
-end
-def bmp?
-  true
-end
-def wbmp?
-  true
-end
-def png?
-  true
-end
-def colors
-  65536
 end
 def nokia_voice_call?
   true

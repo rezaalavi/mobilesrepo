@@ -32,7 +32,7 @@ def model_name
   "821P"
 end
 def brand_name
-  "SoftBank"
+  "Softbank"
 end
 def release_date
   "2008_november"

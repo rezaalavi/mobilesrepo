@@ -325,6 +325,9 @@ end
 def accept_third_party_cookie?
   false
 end
+def xhtml_file_upload
+  "supported"
+end
 def playback_mp4?
   true
 end

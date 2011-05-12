@@ -25,6 +25,18 @@ end
 def brand_name
   "Sharp"
 end
+def xhtml_file_upload
+  "supported"
+end
+def max_image_width
+  320
+end
+def resolution_height
+  960
+end
+def resolution_width
+  640
+end
 
 end
 

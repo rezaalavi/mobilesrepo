@@ -28,6 +28,9 @@ end
 def brand_name
   "K-Touch"
 end
+def release_date
+  "2009_september"
+end
 def j2me_midp_2_0?
   true
 end
@@ -51,6 +54,108 @@ def resolution_height
 end
 def max_image_height
   130
+end
+def xhtml_file_upload
+  "supported"
+end
+def colors
+  65536
+end
+def awb?
+  true
+end
+def wav?
+  true
+end
+def aac?
+  true
+end
+def sp_midi?
+  true
+end
+def voices
+  64
+end
+def mp3?
+  true
+end
+def amr?
+  true
+end
+def imelody?
+  true
+end
+def midi_monophonic?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def playback_3gpp?
+  true
+end
+def playback_mp4?
+  true
+end
+def mms_png?
+  true
+end
+def mms_3gpp?
+  true
+end
+def mms_max_width
+  640
+end
+def mms_max_height
+  480
+end
+def mms_gif_static?
+  true
+end
+def mms_spmidi?
+  true
+end
+def sender?
+  true
+end
+def mms_wav?
+  true
+end
+def mms_video?
+  true
+end
+def mms_midi_polyphonic?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_bmp?
+  true
+end
+def mms_wbmp?
+  true
+end
+def receiver?
+  true
+end
+def mms_mp3?
+  true
+end
+def mms_amr?
+  true
+end
+def mms_mp4?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
+def mms_gif_animated?
+  true
+end
+def max_data_rate
+  40
 end
 
 end

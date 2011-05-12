@@ -29,7 +29,7 @@ def model_name
   "MYV-85"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def softkey_support?
   true

@@ -23,7 +23,7 @@ end
   "MY405X"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def max_image_width
   124

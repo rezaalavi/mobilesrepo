@@ -19,7 +19,13 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; XV6875.1)".gsub(/\a/, '\\')
 end
-  
+  def xhtmlmp_preferred_mime_type
+  "text/html"
+end
+def preferred_markup
+  "html_web_4_0"
+end
+
 end
 
 end

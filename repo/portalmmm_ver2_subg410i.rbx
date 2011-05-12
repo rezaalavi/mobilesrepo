@@ -43,6 +43,9 @@ end
 def bmp?
   true
 end
+def gif_animated?
+  true
+end
 def colors
   65536
 end
@@ -75,6 +78,96 @@ def screensaver?
 end
 def streaming_real_media
   "none"
+end
+def voices
+  32
+end
+def mp3?
+  true
+end
+def amr?
+  true
+end
+def midi_monophonic?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def max_data_rate
+  40
+end
+def doja_1_5?
+  true
+end
+def doja_1_0?
+  true
+end
+def mms_3gpp?
+  true
+end
+def mms_png?
+  true
+end
+def mms_max_size
+  102400
+end
+def mms_max_width
+  1280
+end
+def mms_max_height
+  1024
+end
+def mms_gif_static?
+  true
+end
+def sender?
+  true
+end
+def mms_video?
+  true
+end
+def mms_midi_polyphonic?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_bmp?
+  true
+end
+def receiver?
+  true
+end
+def mms_mp3?
+  true
+end
+def mms_amr?
+  true
+end
+def mms_wbmp?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
+def mms_gif_animated?
+  true
+end
+def oma_v_1_0_forwardlock?
+  true
+end
+def ems?
+  true
+end
+def playback_3gpp?
+  true
+end
+def playback_acodec_amr
+  "nb"
+end
+def playback_vcodec_h263_0
+  10
 end
 
 end

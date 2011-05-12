@@ -217,6 +217,9 @@ end
 def mms_jpeg_baseline?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

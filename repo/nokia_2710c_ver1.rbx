@@ -86,7 +86,7 @@ def streaming_vcodec_h263_0
   45
 end
 def streaming_vcodec_h264_bp
-  "1.b"
+  "1b"
 end
 def wap_push_support?
   true

@@ -49,6 +49,9 @@ end
 def mp3?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

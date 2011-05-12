@@ -91,6 +91,9 @@ end
 def xhtml_can_embed_video
   "plain"
 end
+def xhtml_file_upload
+  "supported"
+end
 def aac?
   true
 end

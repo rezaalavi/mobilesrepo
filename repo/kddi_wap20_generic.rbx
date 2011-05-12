@@ -23,7 +23,7 @@ end
   "Generic WAP 2"
 end
 def brand_name
-  "kddi"
+  "KDDI"
 end
 def max_image_width
   232

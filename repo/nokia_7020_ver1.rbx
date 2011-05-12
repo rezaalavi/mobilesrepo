@@ -89,7 +89,7 @@ def streaming_acodec_amr
   "wb"
 end
 def streaming_vcodec_h264_bp
-  "1.b"
+  "1b"
 end
 def wap_push_support?
   true

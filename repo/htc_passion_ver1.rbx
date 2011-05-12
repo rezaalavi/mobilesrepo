@@ -28,6 +28,9 @@ end
 def model_extra_info
   "Google Phone"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

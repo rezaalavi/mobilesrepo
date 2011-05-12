@@ -178,6 +178,9 @@ end
 def oma_support?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

@@ -22,6 +22,9 @@ end
   def model_name
   "Wildfire"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

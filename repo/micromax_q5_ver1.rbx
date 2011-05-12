@@ -55,6 +55,9 @@ end
 def css_spriting?
   false
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

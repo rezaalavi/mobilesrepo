@@ -58,6 +58,9 @@ end
 def playback_vcodec_mpeg4_sp
   2
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

@@ -145,6 +145,9 @@ end
 def imelody?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

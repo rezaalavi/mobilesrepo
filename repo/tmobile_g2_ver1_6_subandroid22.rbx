@@ -23,7 +23,7 @@ end
   "G2"
 end
 def brand_name
-  "HTC Corporation"
+  "HTC"
 end
 def release_date
   "2010_october"

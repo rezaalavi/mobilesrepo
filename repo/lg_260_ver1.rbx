@@ -109,6 +109,9 @@ end
 def wallpaper_preferred_height
   220
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

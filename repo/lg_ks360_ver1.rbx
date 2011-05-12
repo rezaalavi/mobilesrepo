@@ -368,7 +368,7 @@ def xhtml_honors_bgcolor?
   true
 end
 def xhtml_file_upload
-  "not_supported"
+  "supported"
 end
 
 end

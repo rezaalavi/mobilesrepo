@@ -23,13 +23,16 @@ end
   "E88"
 end
 def brand_name
-  "Tiphone"
+  "TiPhone"
 end
 def j2me_cldc_1_1?
   true
 end
 def image_inlining?
   true
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

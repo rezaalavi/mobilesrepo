@@ -95,7 +95,7 @@ def xhtml_can_embed_video
   "none"
 end
 def xhtml_send_sms_string
-  "none"
+  "sms:"
 end
 def xhtml_honors_bgcolor?
   true

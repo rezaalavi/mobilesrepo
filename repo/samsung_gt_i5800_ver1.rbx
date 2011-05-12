@@ -19,10 +19,7 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Linux; U; Android 2.1-update1; es-es; GT-I5800 Build/ECLAIR) AppleWebKit/530.17 (KHTML, like Gecko) Version/4.0 Mobile Safari/530.17".gsub(/\a/, '\\')
 end
-  def mobile_browser_version
-  4.0
-end
-def uaprof
+  def uaprof
   "http://wap.samsungmobile.com/uaprof/GT-i5800.xml"
 end
 def model_name
@@ -132,6 +129,9 @@ def imelody?
 end
 def max_data_rate
   1800
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

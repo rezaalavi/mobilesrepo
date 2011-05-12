@@ -22,6 +22,9 @@ end
   def device_os_version
   2.2
 end
+def full_flash_support?
+  true
+end
 
 end
 

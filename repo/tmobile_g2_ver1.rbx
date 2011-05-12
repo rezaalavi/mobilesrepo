@@ -34,6 +34,9 @@ end
 def physical_screen_width
   45
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

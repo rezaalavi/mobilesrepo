@@ -73,6 +73,63 @@ end
 def streaming_real_media
   "none"
 end
+def sp_midi?
+  true
+end
+def voices
+  32
+end
+def amr?
+  true
+end
+def midi_monophonic?
+  true
+end
+def imelody?
+  true
+end
+def midi_polyphonic?
+  true
+end
+def mms_max_size
+  51200
+end
+def mms_max_width
+  640
+end
+def mms_gif_static?
+  true
+end
+def mms_spmidi?
+  true
+end
+def mms_max_height
+  480
+end
+def sender?
+  true
+end
+def mms_midi_polyphonic?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_bmp?
+  true
+end
+def receiver?
+  true
+end
+def mms_amr?
+  true
+end
+def mms_wbmp?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
 
 end
 

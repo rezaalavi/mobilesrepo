@@ -26,7 +26,7 @@ def model_name
   "A88"
 end
 def brand_name
-  "Wellcom"
+  "WellcoM"
 end
 def max_image_width
   300

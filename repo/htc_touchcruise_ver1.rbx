@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "HTC_Touch_Cruise_T4242 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.11)".gsub(/\a/, '\\')
 end
-  def uaprof
+  def pointing_method
+  "touchscreen"
+end
+def uaprof
   "http://www.htcmms.com.tw/gen/HTC_Touch_Cruise_T4242-1.0.xml"
 end
 def model_name

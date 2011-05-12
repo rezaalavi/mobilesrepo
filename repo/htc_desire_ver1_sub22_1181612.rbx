@@ -11,11 +11,11 @@
 #  WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
 #  See the License for the specific language governing permissions and
 #  limitations under the License.
-eval_file 'htc_desire_ver1_sub22.rbx'
+eval_file 'htc_desirehd_ver1.rbx'
 module Mobiles #:nodoc: all 
 
  module Repository
-   class Htc_desire_ver1_sub22_1181612 < Htc_desire_ver1_sub22
+   class Htc_desire_ver1_sub22_1181612 < Htc_desirehd_ver1
 def self.user_agent
  "Mozilla/5.0 (Linux; U; Android 2.2; de-de; HTC Desire HD 1.18.161.2 Build/FRF91) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1".gsub(/\a/, '\\')
 end

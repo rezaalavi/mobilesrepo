@@ -28,6 +28,9 @@ end
 def marketing_name
   "Aria"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

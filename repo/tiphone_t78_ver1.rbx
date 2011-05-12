@@ -23,7 +23,7 @@ end
   "T78"
 end
 def brand_name
-  "Tiphone"
+  "TiPhone"
 end
 def j2me_midp_2_0?
   true

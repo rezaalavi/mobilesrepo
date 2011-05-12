@@ -239,7 +239,7 @@ def max_data_rate
   1800
 end
 def xhtml_file_upload
-  "not_supported"
+  "supported"
 end
 def ajax_support_getelementbyid?
   true

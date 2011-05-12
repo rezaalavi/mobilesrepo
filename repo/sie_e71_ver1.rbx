@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "SIE-E71".gsub(/\a/, '\\')
 end
-  def model_name
+  def uaprof
+  "http://market.benqmobile.com/portal/UAProf/UAP.aspx?DeviceID=E71&amp;v=42"
+end
+def model_name
   "E71"
 end
 def brand_name
@@ -103,19 +106,61 @@ end
 def j2me_midp_2_0?
   true
 end
+def j2me_3gpp?
+  true
+end
+def j2me_mmapi_1_0?
+  true
+end
+def j2me_wmapi_1_0?
+  true
+end
+def j2me_wmapi_2_0?
+  true
+end
+def j2me_wmapi_1_1?
+  true
+end
+def j2me_3dapi?
+  true
+end
 def j2me_cldc_1_0?
   true
 end
 def j2me_cldc_1_1?
   true
 end
+def j2me_amr?
+  true
+end
+def j2me_locapi?
+  true
+end
+def j2me_jtwi?
+  true
+end
+def j2me_btapi?
+  true
+end
 def j2me_midp_1_0?
+  true
+end
+def wav?
   true
 end
 def aac?
   true
 end
+def mld?
+  true
+end
 def mp3?
+  true
+end
+def amr?
+  true
+end
+def imelody?
   true
 end
 def midi_monophonic?
@@ -124,11 +169,83 @@ end
 def midi_polyphonic?
   true
 end
+def playback_3gpp?
+  true
+end
 def playback_mp4?
   true
 end
 def streaming_real_media
   "none"
+end
+def mms_3gpp?
+  true
+end
+def mms_png?
+  true
+end
+def mms_max_size
+  307200
+end
+def mms_max_width
+  640
+end
+def mms_gif_static?
+  true
+end
+def mms_max_height
+  480
+end
+def sender?
+  true
+end
+def mms_vcard?
+  true
+end
+def mms_wav?
+  true
+end
+def mms_video?
+  true
+end
+def mms_midi_polyphonic?
+  true
+end
+def built_in_recorder?
+  true
+end
+def mms_midi_monophonic?
+  true
+end
+def mms_bmp?
+  true
+end
+def built_in_camera?
+  true
+end
+def mms_vcalendar?
+  true
+end
+def receiver?
+  true
+end
+def mms_mp3?
+  true
+end
+def mms_amr?
+  true
+end
+def mms_wbmp?
+  true
+end
+def mms_mp4?
+  true
+end
+def mms_jpeg_baseline?
+  true
+end
+def mms_gif_animated?
+  true
 end
 
 end

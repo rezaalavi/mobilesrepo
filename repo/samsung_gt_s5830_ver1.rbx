@@ -25,6 +25,9 @@ end
 def brand_name
   "Samsung"
 end
+def marketing_name
+  "Galaxy Ace"
+end
 def release_date
   "2011_january"
 end
@@ -37,17 +40,11 @@ end
 def rows
   21
 end
-def max_image_width
-  228
-end
 def resolution_width
-  240
-end
-def resolution_height
   320
 end
-def max_image_height
-  280
+def resolution_height
+  480
 end
 def jpg?
   true

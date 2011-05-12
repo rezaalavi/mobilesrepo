@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "HTC_P3650 Mozilla/4.0 (compatible; MSIE 6.0; Windows CE; IEMobile 7.6)".gsub(/\a/, '\\')
 end
-  def mobile_browser_version
+  def pointing_method
+  "touchscreen"
+end
+def mobile_browser_version
   7.6
 end
 def uaprof
@@ -72,6 +75,9 @@ def oma_v_1_0_separate_delivery?
 end
 def css_spriting?
   true
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

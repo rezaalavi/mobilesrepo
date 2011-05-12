@@ -26,7 +26,7 @@ def model_name
   "MY300C"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def softkey_support?
   true

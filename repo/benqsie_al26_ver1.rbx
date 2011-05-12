@@ -25,6 +25,9 @@ end
 def brand_name
   "Siemens"
 end
+def marketing_name
+  "Butterfly / Hello Kitty"
+end
 def midi_monophonic?
   true
 end
@@ -78,6 +81,12 @@ def preferred_markup
 end
 def streaming_real_media
   "none"
+end
+def resolution_width
+  130
+end
+def resolution_height
+  130
 end
 
 end

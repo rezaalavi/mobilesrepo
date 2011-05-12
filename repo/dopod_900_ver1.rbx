@@ -115,6 +115,9 @@ end
 def streaming_real_media
   "none"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

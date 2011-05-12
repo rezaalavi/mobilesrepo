@@ -83,7 +83,7 @@ def streaming_vcodec_h263_0
   45
 end
 def streaming_vcodec_h264_bp
-  "1.b"
+  "1b"
 end
 def streaming_vcodec_mpeg4_sp
   "0b"

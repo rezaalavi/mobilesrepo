@@ -22,17 +22,8 @@ end
   def mobile_browser
   "Opera"
 end
-def has_qwerty_keyboard?
-  true
-end
-def pointing_method
-  "touchscreen"
-end
 def mobile_browser_version
   9.5
-end
-def uaprof
-  "http://wap.samsungmobile.com/uaprof/GT-B7610_2G.xml"
 end
 def softkey_support?
   true
@@ -45,24 +36,6 @@ def xhtml_support_level
 end
 def wml_1_3?
   true
-end
-def columns
-  31
-end
-def max_image_width
-  400
-end
-def rows
-  18
-end
-def resolution_width
-  480
-end
-def resolution_height
-  800
-end
-def max_image_height
-  600
 end
 def jpg?
   true

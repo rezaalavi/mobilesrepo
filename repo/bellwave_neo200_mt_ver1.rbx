@@ -26,7 +26,7 @@ def can_skip_aligned_link_row?
   true
 end
 def brand_name
-  "BellWave"
+  "Bellwave"
 end
 def max_image_width
   120

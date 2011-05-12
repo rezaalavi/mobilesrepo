@@ -40,26 +40,11 @@ end
 def table_support?
   true
 end
-def columns
-  28
-end
 def dual_orientation?
   false
 end
 def rows
   24
-end
-def max_image_width
-  320
-end
-def resolution_width
-  320
-end
-def resolution_height
-  480
-end
-def max_image_height
-  480
 end
 def jpg?
   true

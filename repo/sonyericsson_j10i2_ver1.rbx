@@ -31,6 +31,9 @@ end
 def brand_name
   "SonyEricsson"
 end
+def marketing_name
+  "Elm"
+end
 def release_date
   "2009_december"
 end
@@ -73,6 +76,12 @@ end
 def wbmp?
   true
 end
+def svgt_1_1?
+  true
+end
+def svgt_1_1_plus?
+  true
+end
 def png?
   true
 end
@@ -94,7 +103,22 @@ end
 def streaming_vcodec_mpeg4_sp
   0
 end
+def utf8_support?
+  true
+end
+def connectionless_service_load?
+  true
+end
+def iso8859_support?
+  true
+end
+def ascii_support?
+  true
+end
 def wap_push_support?
+  true
+end
+def mms_3gpp?
   true
 end
 def mms_png?
@@ -106,6 +130,9 @@ end
 def mms_max_width
   2592
 end
+def sender?
+  true
+end
 def mms_spmidi?
   true
 end
@@ -113,6 +140,12 @@ def mms_max_height
   1944
 end
 def mms_gif_static?
+  true
+end
+def mms_video?
+  true
+end
+def mms_midi_polyphonic?
   true
 end
 def mms_wav?
@@ -130,6 +163,15 @@ end
 def mms_bmp?
   true
 end
+def receiver?
+  true
+end
+def mms_vcalendar?
+  true
+end
+def mms_mp3?
+  true
+end
 def mms_wbmp?
   true
 end
@@ -139,10 +181,19 @@ end
 def mms_amr?
   true
 end
+def mms_mp4?
+  true
+end
 def mms_jpeg_baseline?
   true
 end
+def mms_gif_animated?
+  true
+end
 def wav?
+  true
+end
+def aac?
   true
 end
 def sp_midi?
@@ -160,26 +211,113 @@ end
 def imelody?
   true
 end
+def midi_polyphonic?
+  true
+end
 def max_data_rate
   384
 end
+def j2me_http?
+  true
+end
 def j2me_midp_2_0?
+  true
+end
+def j2me_wmapi_1_0?
+  true
+end
+def j2me_mmapi_1_0?
+  true
+end
+def j2me_wmapi_1_1?
+  true
+end
+def j2me_wmapi_2_0?
+  true
+end
+def j2me_mmapi_1_1?
+  true
+end
+def j2me_jpg?
+  true
+end
+def j2me_bits_per_pixel
+  16
+end
+def j2me_3dapi?
   true
 end
 def j2me_cldc_1_0?
   true
 end
+def j2me_audio_capture_enabled?
+  true
+end
 def j2me_cldc_1_1?
+  true
+end
+def j2me_https?
+  true
+end
+def j2me_mpeg4?
+  true
+end
+def j2me_nokia_ui?
+  true
+end
+def j2me_photo_capture_enabled?
+  true
+end
+def j2me_amr?
+  true
+end
+def j2me_locapi?
+  true
+end
+def j2me_video_capture_enabled?
+  true
+end
+def j2me_btapi?
+  true
+end
+def j2me_jtwi?
   true
 end
 def j2me_midp_1_0?
   true
 end
+def playback_acodec_aac
+  "heaac2"
+end
+def playback_vcodec_h263_3
+  45
+end
+def playback_3gpp?
+  true
+end
 def playback_mp4?
   true
 end
+def playback_acodec_amr
+  "wb"
+end
+def playback_wmv
+  9
+end
+def playback_real_media
+  8
+end
+def playback_vcodec_mpeg4_sp
+  3
+end
+def playback_vcodec_h263_0
+  45
+end
+def playback_vcodec_h264_bp
+  "1b"
+end
 def flash_lite_version
-  2_0
+  3_0
 end
 def fl_wallpaper?
   true
@@ -194,6 +332,12 @@ def fl_standalone?
   true
 end
 def oma_support?
+  true
+end
+def oma_v_1_0_combined_delivery?
+  true
+end
+def oma_v_1_0_forwardlock?
   true
 end
 def oma_v_1_0_separate_delivery?

@@ -46,6 +46,9 @@ end
 def release_date
   "2010_february"
 end
+def xhtml_supports_iframe
+  "full"
+end
 def xhtml_file_upload
   "supported"
 end
@@ -201,6 +204,12 @@ def pdf_support?
 end
 def rss_support?
   true
+end
+def wifi?
+  true
+end
+def max_data_rate
+  384
 end
 
 end

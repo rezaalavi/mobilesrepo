@@ -28,6 +28,9 @@ end
 def brand_name
   "LG"
 end
+def marketing_name
+  "Optimus 2X"
+end
 def release_date
   "2011_january"
 end
@@ -114,6 +117,9 @@ def midi_monophonic?
 end
 def imelody?
   true
+end
+def streaming_vcodec_mpeg4_sp
+  1
 end
 
 end

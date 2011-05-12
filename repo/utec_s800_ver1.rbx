@@ -26,7 +26,7 @@ def model_name
   "S800"
 end
 def brand_name
-  "UTEC"
+  "Utec"
 end
 def softkey_support?
   true

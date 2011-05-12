@@ -31,6 +31,9 @@ end
 def model_name
   "BlackBerry 9520"
 end
+def uaprof2
+  "http://www.blackberry.net/go/mobile/profiles/uaprof/9520_umts/5.0.0.rdf"
+end
 def model_extra_info
   "Oden"
 end

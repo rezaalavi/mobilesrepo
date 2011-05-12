@@ -91,6 +91,9 @@ end
 def xhtml_supports_forms_in_table?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 def xhtml_honors_bgcolor?
   true
 end

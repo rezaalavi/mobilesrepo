@@ -37,6 +37,9 @@ end
 def brand_name
   "Acer"
 end
+def marketing_name
+  "newTouch S200"
+end
 def release_date
   "2010_january"
 end

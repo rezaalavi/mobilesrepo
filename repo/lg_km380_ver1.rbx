@@ -106,6 +106,9 @@ end
 def wap_push_support?
   true
 end
+def mms_3gpp?
+  true
+end
 def mms_png?
   true
 end
@@ -115,6 +118,9 @@ end
 def mms_max_width
   2048
 end
+def sender?
+  true
+end
 def mms_spmidi?
   true
 end
@@ -122,6 +128,12 @@ def mms_max_height
   1536
 end
 def mms_gif_static?
+  true
+end
+def mms_video?
+  true
+end
+def mms_midi_polyphonic?
   true
 end
 def mms_wav?
@@ -136,13 +148,31 @@ end
 def mms_bmp?
   true
 end
+def mms_mmf?
+  true
+end
+def mms_vcalendar?
+  true
+end
+def receiver?
+  true
+end
+def mms_mp3?
+  true
+end
 def mms_wbmp?
   true
 end
 def mms_amr?
   true
 end
+def mms_mp4?
+  true
+end
 def mms_jpeg_baseline?
+  true
+end
+def mms_gif_animated?
   true
 end
 def wav?
@@ -201,6 +231,9 @@ def image_inlining?
 end
 def css_spriting?
   true
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

@@ -52,6 +52,12 @@ end
 def mp3?
   true
 end
+def physical_screen_height
+  53
+end
+def physical_screen_width
+  40
+end
 
 end
 

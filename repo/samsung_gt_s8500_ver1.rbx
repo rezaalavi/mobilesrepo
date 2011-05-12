@@ -253,6 +253,15 @@ end
 def image_inlining?
   true
 end
+def playback_3gpp?
+  true
+end
+def playback_mp4?
+  true
+end
+def playback_vcodec_h263_0
+  30
+end
 
 end
 

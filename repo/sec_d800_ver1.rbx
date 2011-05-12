@@ -196,6 +196,9 @@ end
 def xhtml_format_as_css_property?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 def xhtml_honors_bgcolor?
   true
 end

@@ -55,6 +55,9 @@ end
 def mms_max_height
   1024
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

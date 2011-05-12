@@ -26,7 +26,7 @@ def model_name
   "MY214X"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def softkey_support?
   true

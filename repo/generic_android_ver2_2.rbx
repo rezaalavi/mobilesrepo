@@ -19,10 +19,7 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "DO_NOT_MATCH_ANDROID_2_2".gsub(/\a/, '\\')
 end
-  def uaprof
-  ""
-end
-def device_os_version
+  def device_os_version
   2.2
 end
 def full_flash_support?

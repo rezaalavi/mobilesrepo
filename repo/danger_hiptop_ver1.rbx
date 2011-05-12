@@ -35,12 +35,15 @@ def device_claims_web_support?
   true
 end
 def model_name
-  "II"
+  "Hiptop"
 end
 def is_wireless_device?
   true
 end
 def brand_name
+  "Danger"
+end
+def marketing_name
   "Sidekick"
 end
 def html_web_3_2?

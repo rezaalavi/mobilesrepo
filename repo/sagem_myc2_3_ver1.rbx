@@ -23,7 +23,7 @@ end
   "myC2-3"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def max_image_width
   101

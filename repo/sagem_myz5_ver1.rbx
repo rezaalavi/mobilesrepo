@@ -23,7 +23,7 @@ end
   "MYZ-5"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def max_image_width
   118

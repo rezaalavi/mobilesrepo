@@ -19,11 +19,20 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "portalmmm/2.0 G500i".gsub(/\a/, '\\')
 end
-  def model_name
+  def device_os
+  "Linux Smartphone OS"
+end
+def model_name
   "G500i"
 end
 def brand_name
-  "DreamPhone"
+  "Grundig"
+end
+def marketing_name
+  "DreamPhone G500i"
+end
+def release_date
+  "2006_march"
 end
 def max_image_width
   176

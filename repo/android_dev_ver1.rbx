@@ -31,6 +31,9 @@ end
 def brand_name
   "Android"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

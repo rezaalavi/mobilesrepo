@@ -34,9 +34,6 @@ end
 def device_claims_web_support?
   true
 end
-def uaprof
-  "http://www.google.com/oha/rdf/ua-profile-kila.xml"
-end
 def model_name
   "SDK"
 end
@@ -279,6 +276,9 @@ def oma_support?
 end
 def pdf_support?
   true
+end
+def gif_animated?
+  false
 end
 
 end

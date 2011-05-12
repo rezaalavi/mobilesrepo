@@ -23,10 +23,13 @@ end
   "IS03"
 end
 def brand_name
-  "SHARP"
+  "Sharp"
 end
 def release_date
   "2010_november"
+end
+def max_image_width
+  320
 end
 def resolution_height
   960

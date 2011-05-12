@@ -19,8 +19,11 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "I2300".gsub(/\a/, '\\')
 end
-  def model_name
-  2300
+  def uaprof
+  "http://wap.innostream.com/uaprof/I2300.xml"
+end
+def model_name
+  "I2300"
 end
 def brand_name
   "Innostream"

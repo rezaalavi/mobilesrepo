@@ -46,6 +46,9 @@ end
 def columns
   25
 end
+def dual_orientation?
+  true
+end
 def rows
   21
 end

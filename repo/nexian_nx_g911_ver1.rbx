@@ -25,6 +25,9 @@ end
 def brand_name
   "Nexian"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

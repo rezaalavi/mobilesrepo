@@ -55,6 +55,9 @@ end
 def css_spriting?
   true
 end
+def streaming_vcodec_h264_bp
+  1.2
+end
 
 end
 

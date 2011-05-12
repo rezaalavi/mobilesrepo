@@ -26,7 +26,7 @@ def model_name
   "Fino30"
 end
 def brand_name
-  "BellWave"
+  "Bellwave"
 end
 def max_image_width
   168

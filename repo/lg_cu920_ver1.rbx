@@ -400,6 +400,9 @@ end
 def playback_vcodec_h264_bp
   1
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

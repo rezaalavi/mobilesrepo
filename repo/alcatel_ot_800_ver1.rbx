@@ -32,7 +32,7 @@ def uaprof
   "http://www-ccpp.tcl-ta.com/files/ALCATEL-OT-800.rdf"
 end
 def model_name
-  "OT 800"
+  "Alcatel one touch Phone"
 end
 def brand_name
   "Alcatel"
@@ -186,6 +186,9 @@ def oma_support?
 end
 def oma_v_1_0_separate_delivery?
   true
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

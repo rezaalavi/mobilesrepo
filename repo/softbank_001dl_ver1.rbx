@@ -31,6 +31,9 @@ end
 def flash_lite_version
   4_0
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

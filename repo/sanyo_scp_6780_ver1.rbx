@@ -29,7 +29,7 @@ def model_name
   "SCP-6780"
 end
 def brand_name
-  "SANYO"
+  "Sanyo"
 end
 def model_extra_info
   "Sprint"

@@ -55,6 +55,12 @@ end
 def columns
   17
 end
+def dual_orientation?
+  true
+end
+def max_image_width
+  360
+end
 def rows
   13
 end
@@ -62,6 +68,9 @@ def resolution_width
   360
 end
 def resolution_height
+  640
+end
+def max_image_height
   640
 end
 def jpg?

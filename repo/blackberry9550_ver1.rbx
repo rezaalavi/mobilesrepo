@@ -22,6 +22,9 @@ end
   def has_qwerty_keyboard?
   false
 end
+def pointing_method
+  "touchscreen"
+end
 def uaprof
   "http://www.blackberry.net/go/mobile/profiles/uaprof/9550_unknown/5.0.0.rdf"
 end

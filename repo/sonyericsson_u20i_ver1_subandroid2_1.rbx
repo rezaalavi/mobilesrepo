@@ -28,6 +28,12 @@ end
 def release_date
   "2010_september"
 end
+def streaming_vcodec_h264_bp
+  1.2
+end
+def streaming_vcodec_mpeg4_sp
+  1
+end
 
 end
 

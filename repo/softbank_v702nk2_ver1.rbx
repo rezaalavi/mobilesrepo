@@ -97,6 +97,9 @@ end
 def flash_lite_version
   ""
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

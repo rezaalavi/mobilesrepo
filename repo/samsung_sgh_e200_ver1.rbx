@@ -277,6 +277,9 @@ end
 def streaming_3gpp?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

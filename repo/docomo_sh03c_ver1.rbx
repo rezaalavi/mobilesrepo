@@ -25,8 +25,14 @@ end
 def brand_name
   "DoCoMo"
 end
+def marketing_name
+  "Lynx 3D"
+end
 def release_date
   "2010_december"
+end
+def max_image_width
+  320
 end
 def resolution_height
   800

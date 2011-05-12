@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "TELME_T919".gsub(/\a/, '\\')
 end
-  def uaprof
+  def pointing_method
+  "stylus"
+end
+def uaprof
   "http://download.telme.at/wap/UAprofileTelme_T919.xml"
 end
 def model_name
@@ -27,6 +30,9 @@ def model_name
 end
 def brand_name
   "Tel.Me."
+end
+def release_date
+  "2002_november"
 end
 def wml_1_2?
   true
@@ -44,6 +50,9 @@ def gif?
   true
 end
 def bmp?
+  true
+end
+def gif_animated?
   true
 end
 def png?
@@ -82,7 +91,13 @@ end
 def mms_vcard?
   true
 end
+def mms_midi_monophonic?
+  true
+end
 def mms_bmp?
+  true
+end
+def built_in_camera?
   true
 end
 def mms_wbmp?
@@ -97,7 +112,13 @@ end
 def mms_jpeg_baseline?
   true
 end
+def mms_gif_animated?
+  true
+end
 def amr?
+  true
+end
+def midi_monophonic?
   true
 end
 def imelody?
@@ -117,6 +138,27 @@ def max_image_height
 end
 def streaming_real_media
   "none"
+end
+def ems?
+  true
+end
+def ems_variablesizedpictures?
+  true
+end
+def ems_version
+  5.0
+end
+def ems_imelody?
+  true
+end
+def ringtone_midi_monophonic?
+  true
+end
+def connectionless_service_indication?
+  true
+end
+def wap_push_support?
+  true
 end
 
 end

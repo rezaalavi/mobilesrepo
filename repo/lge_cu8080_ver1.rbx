@@ -25,8 +25,20 @@ end
 def brand_name
   "LG"
 end
+def release_date
+  "2002_october"
+end
 def streaming_real_media
   "none"
+end
+def colors
+  65536
+end
+def resolution_width
+  120
+end
+def resolution_height
+  133
 end
 
 end

@@ -25,9 +25,6 @@ end
 def uaprof
   "http://www.htcmms.com.tw/Android/Common/DesireZ/ua-profile.xml"
 end
-def marketing_name
-  "Desire Z"
-end
 
 end
 

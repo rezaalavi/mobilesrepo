@@ -28,6 +28,9 @@ end
 def brand_name
   "Haier"
 end
+def release_date
+  "2005_August"
+end
 def table_support?
   false
 end
@@ -55,13 +58,22 @@ end
 def wbmp?
   true
 end
+def colors
+  4096
+end
 def max_deck_size
   4096
 end
 def wap_push_support?
   true
 end
+def voices
+  32
+end
 def midi_monophonic?
+  true
+end
+def midi_polyphonic?
   true
 end
 def max_data_rate

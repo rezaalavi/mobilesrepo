@@ -32,7 +32,7 @@ def can_skip_aligned_link_row?
   true
 end
 def brand_name
-  "SoftBank"
+  "Softbank"
 end
 def marketing_name
   "Disney Cinderella"

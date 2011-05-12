@@ -25,6 +25,9 @@ end
 def streaming_vcodec_h264_bp
   1.2
 end
+def max_data_rate
+  384
+end
 
 end
 

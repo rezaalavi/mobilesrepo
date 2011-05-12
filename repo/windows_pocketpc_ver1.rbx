@@ -67,6 +67,9 @@ end
 def xhtml_send_sms_string
   "sms:"
 end
+def xhtml_file_upload
+  "supported"
+end
 def ringtone_voices
   16
 end

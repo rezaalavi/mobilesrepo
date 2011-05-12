@@ -46,6 +46,9 @@ end
 def accept_third_party_cookie?
   false
 end
+def xhtml_file_upload
+  "supported"
+end
 def streaming_real_media
   "none"
 end

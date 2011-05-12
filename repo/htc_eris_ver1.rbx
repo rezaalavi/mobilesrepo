@@ -28,6 +28,9 @@ end
 def release_date
   "2009_october"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

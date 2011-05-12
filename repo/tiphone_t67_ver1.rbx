@@ -26,7 +26,7 @@ def model_name
   "T67"
 end
 def brand_name
-  "Tiphone"
+  "TiPhone"
 end
 def max_image_width
   300
@@ -54,6 +54,9 @@ def j2me_midp_1_0?
 end
 def image_inlining?
   true
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

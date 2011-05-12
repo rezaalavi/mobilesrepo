@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Alcatel-OT-800A/1.0 Profile/MIDP-2.0 Configuration/CLDC-1.1 ObigoInternetBrowser/Q05A".gsub(/\a/, '\\')
 end
-  
+  def model_name
+  "Alcatel one touch Phone"
+end
+
 end
 
 end

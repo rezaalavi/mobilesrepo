@@ -49,6 +49,12 @@ end
 def j2me_midp_1_0?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
+def colors
+  65536
+end
 
 end
 

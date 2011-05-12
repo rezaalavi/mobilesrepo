@@ -26,10 +26,10 @@ def uaprof
   "http://www-ccpp.tcl-ta.com/files/ALCATEL-OT-890.xml"
 end
 def is_tablet?
-  true
+  false
 end
 def model_name
-  "OT-890"
+  "one touch 890"
 end
 def brand_name
   "Alcatel"

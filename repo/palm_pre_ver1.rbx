@@ -187,6 +187,12 @@ end
 def css_spriting?
   true
 end
+def preferred_markup
+  "html_web_4_0"
+end
+def xhtmlmp_preferred_mime_type
+  "text/html"
+end
 
 end
 

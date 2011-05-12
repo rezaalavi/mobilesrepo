@@ -26,7 +26,7 @@ def model_name
   "MC2007"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def softkey_support?
   true
@@ -123,6 +123,9 @@ def directdownload_support?
 end
 def oma_support?
   true
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

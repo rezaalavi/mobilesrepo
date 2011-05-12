@@ -23,7 +23,7 @@ end
   "MY501X"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def physical_screen_height
   38

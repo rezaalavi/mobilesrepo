@@ -22,6 +22,9 @@ end
   def model_name
   "T918"
 end
+def release_date
+  "2003_january"
+end
 def max_image_width
   128
 end
@@ -36,6 +39,12 @@ def max_image_height
 end
 def streaming_real_media
   "none"
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_midp_1_0?
+  true
 end
 
 end

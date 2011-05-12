@@ -19,7 +19,13 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (SymbianOS/9.3; Series60/3.2 NokiaC5-00/031.013; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.1.5".gsub(/\a/, '\\')
 end
-  def uaprof
+  def mobile_browser
+  "Nokia BrowserNG"
+end
+def mobile_browser_version
+  7.1
+end
+def uaprof
   "http://nds1.nds.nokia.com/uaprof/NC5-00r100.xml"
 end
 def model_name

@@ -73,6 +73,12 @@ end
 def max_image_height
   360
 end
+def aac?
+  true
+end
+def mp3?
+  true
+end
 
 end
 

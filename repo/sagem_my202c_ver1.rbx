@@ -26,7 +26,7 @@ def model_name
   "MY202C"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def max_image_width
   118

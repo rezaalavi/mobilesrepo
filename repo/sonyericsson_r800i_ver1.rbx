@@ -19,11 +19,17 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Linux; U; Android 2.3.1; es-es; SonyEricssonR800i Build/3.0.A.0.326) AppleWebKit/533.1 (KHTML, like Gecko) Version/4.0 Mobile Safari/533.1".gsub(/\a/, '\\')
 end
-  def model_name
+  def uaprof
+  "http://wap.sonyericsson.com/UAprof/R800iR301.xml"
+end
+def model_name
   "R800i"
 end
 def brand_name
   "SonyEricsson"
+end
+def marketing_name
+  "Xperia PLAY"
 end
 def release_date
   "2011_january"

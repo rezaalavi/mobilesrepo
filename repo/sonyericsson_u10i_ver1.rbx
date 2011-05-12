@@ -107,7 +107,7 @@ def streaming_vcodec_h264_bp
   1
 end
 def streaming_vcodec_mpeg4_sp
-  2
+  1
 end
 def wap_push_support?
   true

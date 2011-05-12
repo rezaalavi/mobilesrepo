@@ -61,6 +61,9 @@ end
 def playback_vcodec_h263_0
   20
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

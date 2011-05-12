@@ -26,7 +26,7 @@ def model_name
   "MY901C"
 end
 def brand_name
-  "SAGEM"
+  "Sagem"
 end
 def physical_screen_height
   39

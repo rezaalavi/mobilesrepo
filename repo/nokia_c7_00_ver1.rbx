@@ -19,14 +19,29 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Mozilla/5.0 (Symbian/3; Series60/5.2 NokiaC7-00/011.003; Profile/MIDP-2.1 Configuration/CLDC-1.1 ) AppleWebKit/525 (KHTML, like Gecko) Version/3.0 BrowserNG/7.2.6.6 3gpp-gba".gsub(/\a/, '\\')
 end
-  def pointing_method
+  def mobile_browser
+  "Nokia BrowserNG"
+end
+def has_qwerty_keyboard?
+  true
+end
+def pointing_method
   "touchscreen"
+end
+def mobile_browser_version
+  7.2
+end
+def uaprof
+  "http://nds1.nds.nokia.com/uaprof/NC7-00r100.xml"
 end
 def model_name
   "C7-00"
 end
 def brand_name
   "Nokia"
+end
+def marketing_name
+  "C7"
 end
 def release_date
   "2010_september"

@@ -23,7 +23,7 @@ end
   "BD60"
 end
 def brand_name
-  "VOXTEL"
+  "Voxtel"
 end
 def streaming_real_media
   "none"

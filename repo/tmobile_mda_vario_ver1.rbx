@@ -79,6 +79,9 @@ end
 def playback_acodec_amr
   "nb"
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

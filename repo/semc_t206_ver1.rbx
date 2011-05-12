@@ -23,7 +23,7 @@ end
   "T206"
 end
 def brand_name
-  "Semc"
+  "SonyEricsson"
 end
 
 end

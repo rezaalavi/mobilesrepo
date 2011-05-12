@@ -64,6 +64,9 @@ end
 def image_inlining?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

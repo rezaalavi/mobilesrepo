@@ -28,6 +28,15 @@ end
 def marketing_name
   "Fascinate"
 end
+def max_image_width
+  320
+end
+def resolution_height
+  800
+end
+def resolution_width
+  480
+end
 
 end
 

@@ -37,6 +37,15 @@ end
 def release_date
   "2010_march"
 end
+def xhtml_file_upload
+  "supported"
+end
+def physical_screen_height
+  80
+end
+def physical_screen_width
+  49
+end
 
 end
 

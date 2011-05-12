@@ -23,7 +23,7 @@ end
   "IS06"
 end
 def brand_name
-  "kddi"
+  "KDDI"
 end
 def release_date
   "2011_january"

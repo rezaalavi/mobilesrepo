@@ -28,6 +28,9 @@ end
 def streaming_real_media
   "none"
 end
+def colors
+  262144
+end
 
 end
 

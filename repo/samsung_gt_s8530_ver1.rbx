@@ -31,6 +31,9 @@ end
 def model_name
   "GT-S8530"
 end
+def device_os_version
+  1.2
+end
 def uaprof2
   "http://wap.samsungmobile.com/uaprof/GT-S8530_2G.rdf"
 end
@@ -158,6 +161,9 @@ def midi_monophonic?
   true
 end
 def imelody?
+  true
+end
+def wifi?
   true
 end
 

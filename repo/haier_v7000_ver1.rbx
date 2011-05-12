@@ -79,6 +79,9 @@ end
 def mms_gif_static?
   true
 end
+def mms_midi_polyphonic?
+  true
+end
 def mms_vcard?
   true
 end

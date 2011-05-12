@@ -23,7 +23,7 @@ end
   "SCH-M569"
 end
 def brand_name
-  "SEC"
+  "Samsung"
 end
 def release_date
   "2009_july"

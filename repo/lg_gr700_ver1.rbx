@@ -61,6 +61,9 @@ end
 def max_data_rate
   3600
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

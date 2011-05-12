@@ -32,7 +32,7 @@ def model_name
   "JAQ"
 end
 def brand_name
-  "IMate"
+  "i-mate"
 end
 def release_date
   "2006_august"
@@ -63,6 +63,9 @@ def playback_3g2?
 end
 def streaming_real_media
   "none"
+end
+def xhtml_file_upload
+  "supported"
 end
 
 end

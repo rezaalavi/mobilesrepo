@@ -127,6 +127,9 @@ end
 def oma_v_1_0_separate_delivery?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

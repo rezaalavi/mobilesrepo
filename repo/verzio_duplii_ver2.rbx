@@ -19,7 +19,10 @@ module Mobiles #:nodoc: all
 def self.user_agent
  "Duplii/1.0 TMSS-Browser/1.0.0 Profile/MIDP/2.0-compatible Configuration/CLDC-1.1".gsub(/\a/, '\\')
 end
-  def uaprof
+  def device_os
+  "MTK/Nucleus OS"
+end
+def uaprof
   "http://www.verzioworld.com/Duplii.xml"
 end
 def model_name
@@ -55,7 +58,22 @@ end
 def max_deck_size
   357000
 end
+def utf8_support?
+  true
+end
+def iso8859_support?
+  true
+end
+def connectionless_service_indication?
+  true
+end
+def ascii_support?
+  true
+end
 def wap_push_support?
+  true
+end
+def mms_3gpp?
   true
 end
 def mms_png?
@@ -67,6 +85,9 @@ end
 def mms_max_width
   640
 end
+def sender?
+  true
+end
 def mms_spmidi?
   true
 end
@@ -74,6 +95,12 @@ def mms_max_height
   480
 end
 def mms_gif_static?
+  true
+end
+def mms_midi_polyphonic?
+  true
+end
+def mms_video?
   true
 end
 def mms_wav?
@@ -88,19 +115,49 @@ end
 def mms_bmp?
   true
 end
+def mms_mmf?
+  true
+end
+def receiver?
+  true
+end
+def mms_mp3?
+  true
+end
 def mms_wbmp?
   true
 end
 def mms_amr?
   true
 end
+def mms_mp4?
+  true
+end
 def mms_jpeg_baseline?
+  true
+end
+def mms_gif_animated?
+  true
+end
+def qcelp?
   true
 end
 def wav?
   true
 end
+def aac?
+  true
+end
 def sp_midi?
+  true
+end
+def voices
+  64
+end
+def mp3?
+  true
+end
+def mmf?
   true
 end
 def amr?
@@ -112,11 +169,38 @@ end
 def imelody?
   true
 end
+def midi_polyphonic?
+  true
+end
 def max_data_rate
   384
 end
 def streaming_real_media
   "none"
+end
+def playback_mp4?
+  true
+end
+def playback_3gpp?
+  true
+end
+def playback_acodec_amr
+  "nb"
+end
+def playback_vcodec_h263_0
+  10
+end
+def j2me_midp_2_0?
+  true
+end
+def j2me_cldc_1_0?
+  true
+end
+def j2me_cldc_1_1?
+  true
+end
+def j2me_midp_1_0?
+  true
 end
 
 end

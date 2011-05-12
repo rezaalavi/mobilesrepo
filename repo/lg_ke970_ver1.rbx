@@ -190,6 +190,9 @@ end
 def css_spriting?
   true
 end
+def xhtml_file_upload
+  "supported"
+end
 
 end
 

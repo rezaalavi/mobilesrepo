@@ -56,7 +56,7 @@ def preferred_markup
   "html_wi_oma_xhtmlmp_1_0"
 end
 def xhtml_support_level
-  3
+  2
 end
 def multipart_support?
   true
