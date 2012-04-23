@@ -37,6 +37,13 @@ sudo gem install mobilesrepo
     puts device.max_image_width
 
 
+=== How to update
+    Recently there was a change to licensing of wurlf and therefore I will not be able to update this list.
+    To update the database simply download the xml file and put in in the lib/db/ and then run lib/update.rb
+
+=== Other Projects
+There are couple of other rails project that I am actively involved with including:
+* A {free ASX stock screener}[http://www.stockvalue.com.au/] mainly focused on Australian stock exchange and all based on open source projects. 
 
 
 == LICENSE:
